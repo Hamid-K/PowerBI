@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9131872-875B-4D7F-B449-BDB51D200621}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataMovement.Pipeline.PowerBIPipeline</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataMovement.Pipeline.PowerBIPipeline</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.PowerBI.DataMovement.ExternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.ExternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.CompressionInterop">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.CompressionInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.Dataflow">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.DotNetUtilities">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.DotNetUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.ExceptionUtilities">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.ExceptionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.InternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.InternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.JsonClient" />
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.JsonSerialization" />
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.RelayPacketContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.RelayPacketContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.RowsetSerialization">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.RowsetSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.TaskUtilities">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.TaskUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\CommaSeparatedValuesStreamWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Compression\CompressionBehavior.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Compression\RawDataCompressor.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Compression\RawDataDecompressor.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\DataRowExtensionsMethods.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\DataStreamWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\ExcelStreamWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\ExcelStreamWriterMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Extensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\IRawDataPageReader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PageReaderView.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PageViewExtensionsMethods.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRawDataClientPipeline.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRawDataProxyPipeline.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRawDataRowsetReadStream.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRawDataServerPipeline.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRawDataTraceSource.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRelayPacketStreamReader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\PowerBIRelayPacketStreamWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\RawDataFlowContext.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\RawDataPageReaderAdapter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\RelayPacketFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Serialization\OleDbBinaryPacketWriteStream.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Serialization\OleDbBinaryWriterSerializer.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Serialization\RawDataSerializationContext.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\PowerBIPipeline\Serialization\RawDataSerializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="ThisAssembly.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

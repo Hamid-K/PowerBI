@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E7B6FE1-98A7-4487-95FC-2562A7D6F1FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.InfoNav.Data.Edm</RootNamespace>
+    <AssemblyName>Microsoft.InfoNav.Data.Edm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Edm" />
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Annotations\ColumnGroupingAnnotationsProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Annotations\ErrorStateAnnotationProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Annotations\StatisticsAnnotationProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Annotations\TranslationsAnnotationProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\ConceptualNavigationProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\ConceptualPodParameter.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Contracts\Utils\CsdlParserUtil.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualColumn.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualColumnGroupingBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualColumnGroupingMetadataBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualDataChangeDetectionMetadataBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualDisplayFolder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualEntity.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualEntityStatisticsComputer.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualHierarchy.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualHierarchyLevel.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualKpi.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualMeasure.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualMeasureTemplateBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualParameterMetadataBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualPod.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchemaBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchemaBuilderOptions.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchemaLoadError.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchemaStatisticsComputer.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualSchemaUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ConceptualVariationSource.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\DaxCapabilitiesAnnotationProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\EdmConstants.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\EdmDistributiveBy.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\EdmExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\EdmKpi.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\EdmVariation.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ExtendedProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ExtendedPropertyType.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\FieldRelationshipAnnotationsProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ModelDaxCapabilities.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\ParsedEdmStructuralProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\RowNumberAnnotationProviderBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Data\Edm\WritableFieldRelationshipAnnotation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

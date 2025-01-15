@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{207E38E2-FE5C-4618-BB95-CC6B54246C40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.Owin.Security</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Owin\Security\AppBuilderSecurityExtensions.cs" />
+    <Compile Include="Owin\Security\AuthenticationMode.cs" />
+    <Compile Include="Owin\Security\AuthenticationOptions.cs" />
+    <Compile Include="Owin\Security\AuthenticationTicket.cs" />
+    <Compile Include="Owin\Security\CertificateSubjectKeyIdentifierValidator.cs" />
+    <Compile Include="Owin\Security\CertificateSubjectPublicKeyInfoValidator.cs" />
+    <Compile Include="Owin\Security\CertificateThumbprintValidator.cs" />
+    <Compile Include="Owin\Security\Constants.cs" />
+    <Compile Include="Owin\Security\DataHandler\Encoder\Base64TextEncoder.cs" />
+    <Compile Include="Owin\Security\DataHandler\Encoder\Base64UrlTextEncoder.cs" />
+    <Compile Include="Owin\Security\DataHandler\Encoder\ITextEncoder.cs" />
+    <Compile Include="Owin\Security\DataHandler\Encoder\TextEncodings.cs" />
+    <Compile Include="Owin\Security\DataHandler\PropertiesDataFormat.cs" />
+    <Compile Include="Owin\Security\DataHandler\SecureDataFormat.cs" />
+    <Compile Include="Owin\Security\DataHandler\Serializer\DataSerializers.cs" />
+    <Compile Include="Owin\Security\DataHandler\Serializer\IDataSerializer.cs" />
+    <Compile Include="Owin\Security\DataHandler\Serializer\PropertiesSerializer.cs" />
+    <Compile Include="Owin\Security\DataHandler\Serializer\TicketSerializer.cs" />
+    <Compile Include="Owin\Security\DataHandler\TicketDataFormat.cs" />
+    <Compile Include="Owin\Security\DataProtection\AppBuilderExtensions.cs" />
+    <Compile Include="Owin\Security\DataProtection\DpapiDataProtectionProvider.cs" />
+    <Compile Include="Owin\Security\DataProtection\DpapiDataProtector.cs" />
+    <Compile Include="Owin\Security\DataProtection\IDataProtectionProvider.cs" />
+    <Compile Include="Owin\Security\DataProtection\IDataProtector.cs" />
+    <Compile Include="Owin\Security\ICertificateValidator.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationHandler.2.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationHandler.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationMiddleware.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationTokenCreateContext.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationTokenProvider.cs" />
+    <Compile Include="Owin\Security\Infrastructure\AuthenticationTokenReceiveContext.cs" />
+    <Compile Include="Owin\Security\Infrastructure\Constants.cs" />
+    <Compile Include="Owin\Security\Infrastructure\IAuthenticationTokenProvider.cs" />
+    <Compile Include="Owin\Security\Infrastructure\OwinRequestExtensions.cs" />
+    <Compile Include="Owin\Security\Infrastructure\SecurityHelper.cs" />
+    <Compile Include="Owin\Security\ISecureDataFormat.cs" />
+    <Compile Include="Owin\Security\Notifications\AuthenticationFailedNotification.cs" />
+    <Compile Include="Owin\Security\Notifications\BaseNotification.cs" />
+    <Compile Include="Owin\Security\Notifications\MessageReceivedNotification.cs" />
+    <Compile Include="Owin\Security\Notifications\NotificationResultState.cs" />
+    <Compile Include="Owin\Security\Notifications\RedirectToIdentityProviderNotification.cs" />
+    <Compile Include="Owin\Security\Notifications\SecurityTokenReceivedNotification.cs" />
+    <Compile Include="Owin\Security\Notifications\SecurityTokenValidatedNotification.cs" />
+    <Compile Include="Owin\Security\Provider\BaseContext.2.cs" />
+    <Compile Include="Owin\Security\Provider\BaseContext.cs" />
+    <Compile Include="Owin\Security\Provider\EndpointContext.2.cs" />
+    <Compile Include="Owin\Security\Provider\EndpointContext.cs" />
+    <Compile Include="Owin\Security\Provider\ReturnEndpointContext.cs" />
+    <Compile Include="Owin\Security\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Owin\Security\SubjectPublicKeyInfoAlgorithm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Win32\NativeMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Owin\Security\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AM" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="CacheInvalidateScheduleHanlder" xml:space="preserve">
+    <value>Alla data di scadenza pianificata per il report memorizzato nella cache.</value>
+  </data>
+  <data name="CacheRefreshPlans" xml:space="preserve">
+    <value>In base a una pianificazione.</value>
+  </data>
+  <data name="CanNotSubscribe" xml:space="preserve">
+    <value>Impossibile sottoscrivere questo evento.</value>
+  </data>
+  <data name="DataDrivenSubscriptionError" xml:space="preserve">
+    <value>Errore: {0}</value>
+  </data>
+  <data name="DeliveryExtensionFailedToLoad" xml:space="preserve">
+    <value>Impossibile caricare l'estensione per il recapito per questa sottoscrizione.</value>
+  </data>
+  <data name="DeliveryExtensionRemoved" xml:space="preserve">
+    <value>L'estensione per il recapito associata a questa sottoscrizione non è disponibile in questo server di report. Verificare che l'estensione per il recapito sia installata.</value>
+  </data>
+  <data name="DisallowedExcelFileExtensionChange" xml:space="preserve">
+    <value>La modifica dell'estensione del file di Excel non è consentita.</value>
+  </data>
+  <data name="DisallowedResourceExtensionError" xml:space="preserve">
+    <value>Il caricamento o il salvataggio di file con estensione {0} non è consentito. In caso di domande, contattare l'amministratore.</value>
+  </data>
+  <data name="DisallowedResourceMimeType" xml:space="preserve">
+    <value>Il caricamento o il salvataggio di file con il tipo MIME {0} non è consentito. In caso di domande, contattare l'amministratore.</value>
+  </data>
+  <data name="ExecutionAccountLogonError" xml:space="preserve">
+    <value>Accesso non riuscito per l'account di esecuzione automatica.</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>Impossibile aprire {0}: {1}</value>
+  </data>
+  <data name="MyReportsFolderDescription" xml:space="preserve">
+    <value>Usare questa cartella per archiviare i report personalizzati.</value>
+  </data>
+  <data name="MyReportsFolderName" xml:space="preserve">
+    <value>Report personali</value>
+  </data>
+  <data name="NewCacheRefreshPlan" xml:space="preserve">
+    <value>Nuovo piano di aggiornamento della cache</value>
+  </data>
+  <data name="NewScheduledRefreshPlan" xml:space="preserve">
+    <value>Nuovo piano di aggiornamento pianificato</value>
+  </data>
+  <data name="NewSubscription" xml:space="preserve">
+    <value>Nuova sottoscrizione</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="ParentDirectoryLink" xml:space="preserve">
+    <value>Vai alla directory padre</value>
+  </data>
+  <data name="PreviewImageDataInvalid" xml:space="preserve">
+    <value>Il valore del parametro dell'immagine di anteprima contiene dati non validi.</value>
+  </data>
+  <data name="ProgressMessage" xml:space="preserve">
+    <value>{0} iterazioni completate.</value>
+  </data>
+  <data name="RPCErrorStringFormat" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="RefreshCachePlanCachingIsNotEnabled" xml:space="preserve">
+    <value>Memorizzazione nella cache dell'elemento non abilitata.</value>
+  </data>
+  <data name="RefreshCachePlanError" xml:space="preserve">
+    <value>Errore: {0}.</value>
+  </data>
+  <data name="RefreshCachePlanParametersInvalid" xml:space="preserve">
+    <value>Il piano di aggiornamento della cache contiene valori di parametri non validi.</value>
+  </data>
+  <data name="RefreshCachePlanRefreshed" xml:space="preserve">
+    <value>Aggiornamento</value>
+  </data>
+  <data name="RefreshCachePlanSharedDataSourceRemoved" xml:space="preserve">
+    <value>Ripristina origine dati condivisa.</value>
+  </data>
+  <data name="RefreshCachePlanSuccess" xml:space="preserve">
+    <value>Cache aggiornata correttamente.</value>
+  </data>
+  <data name="ReportExecutionSnapshotUpdateHandler" xml:space="preserve">
+    <value> Quando la copia del report memorizzata nella cache viene aggiornata da un'esecuzione del report pianificata.</value>
+  </data>
+  <data name="ReportHistorySnapShotCreatedHandler" xml:space="preserve">
+    <value>Quando viene creato uno snapshot della cronologia del report.</value>
+  </data>
+  <data name="ReportServiceCategoryName" xml:space="preserve">
+    <value>Report Server</value>
+  </data>
+  <data name="ScheduleFiredEventHandlerName" xml:space="preserve">
+    <value>Gestore evento SCHEDULE FIRED</value>
+  </data>
+  <data name="ServerProductName" xml:space="preserve">
+    <value>SQL Server 2019 CTP2.1 Reporting Services</value>
+  </data>
+  <data name="SharePointModeCatalogNotSupported" xml:space="preserve">
+    <value>Il database del catalogo si trova in modalità integrata SharePoint. Tale modalità non è più supportata da questa istanza di Reporting Services.</value>
+  </data>
+  <data name="SharedDatasetCacheUpdatePlans" xml:space="preserve">
+    <value>Aggiornamento della cache dei set di dati condivisi.</value>
+  </data>
+  <data name="SimpleMessage" xml:space="preserve">
+    <value>Questo è un semplice messaggio di prova.</value>
+  </data>
+  <data name="SubscriptionDisabled" xml:space="preserve">
+    <value>Disabilitata</value>
+  </data>
+  <data name="SubscriptionDone" xml:space="preserve">
+    <value>Completato: elaborati {0} di {1}; errori {2}.</value>
+  </data>
+  <data name="SubscriptionError" xml:space="preserve">
+    <value>Errore: {0}</value>
+  </data>
+  <data name="SubscriptionExecuted" xml:space="preserve">
+    <value>In esecuzione</value>
+  </data>
+  <data name="SubscriptionMissingEncryptedContent" xml:space="preserve">
+    <value>Il contenuto crittografato della sottoscrizione è stato rimosso.</value>
+  </data>
+  <data name="SubscriptionParametersInvalid" xml:space="preserve">
+    <value>La sottoscrizione contiene valori di parametri non validi.</value>
+  </data>
+  <data name="SubscriptionPending" xml:space="preserve">
+    <value>In sospeso</value>
+  </data>
+  <data name="SubscriptionProcessing" xml:space="preserve">
+    <value>In elaborazione: elaborati {0} di {1}; errori {2}.</value>
+  </data>
+  <data name="SubscriptionReady" xml:space="preserve">
+    <value>Pronta</value>
+  </data>
+  <data name="TaskComment" xml:space="preserve">
+    <value>Questo è un processo di un processo del server di report. L'eventuale modifica di questo processo potrebbe causare incompatibilità a livello di database. Per aggiornare il processo, utilizzare Gestione report o Management Studio.</value>
+  </data>
+  <data name="TimedSubscriptions" xml:space="preserve">
+    <value>In base a una pianificazione.</value>
+  </data>
+  <data name="UnableToAllocateILockBytes" xml:space="preserve">
+    <value>Impossibile allocare ILockBytes.</value>
+  </data>
+  <data name="UnableToCreateStorage" xml:space="preserve">
+    <value>Impossibile creare il file di archiviazione strutturato.</value>
+  </data>
+  <data name="UnableToReadData" xml:space="preserve">
+    <value>Impossibile leggere i dati dal file di archiviazione strutturato.</value>
+  </data>
+  <data name="UsersFolderName" xml:space="preserve">
+    <value>Cartelle utenti</value>
+  </data>
+</root>

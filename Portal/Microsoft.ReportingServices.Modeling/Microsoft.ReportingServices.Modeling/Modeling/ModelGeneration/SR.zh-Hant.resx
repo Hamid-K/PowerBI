@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreateColumnEntityRule_ColumnEntityName" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="CreateEntityRule_NoPrimaryKey" xml:space="preserve">
+    <value>資料表沒有主索引鍵。</value>
+  </data>
+  <data name="CreateEntityRule_NonPrimaryDataSource" xml:space="preserve">
+    <value>資料表有非主要資料來源。</value>
+  </data>
+  <data name="CreateRoleRule_RoleNameWithEntity" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="CreateRoleRule_SelfRelationWithMatchingColumns" xml:space="preserve">
+    <value>自我關聯性有相符的父和子資料行名稱，資料來源檢視可能已損毀。</value>
+  </data>
+  <data name="CreateRoleRule_SourceOrTargetEntityDoesNotExist" xml:space="preserve">
+    <value>來源或目標實體不存在。</value>
+  </data>
+  <data name="ModelGen_AlreadyExecuting" xml:space="preserve">
+    <value>模型產生已在執行中 (先取消)。</value>
+  </data>
+  <data name="ModelGen_PassHeader" xml:space="preserve">
+    <value>---------------- PASS {0} ------------------</value>
+  </data>
+  <data name="ModelGen_RelationProgressLine1" xml:space="preserve">
+    <value>行程 {0}: 處理關聯性的規則</value>
+  </data>
+  <data name="ModelGen_TableProgressLine1" xml:space="preserve">
+    <value>行程 {0}: 處理資料表和資料行的規則</value>
+  </data>
+  <data name="ModelGen_TableProgressLine2" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="Rules_AttributeDoesNotExist" xml:space="preserve">
+    <value>屬性不存在。</value>
+  </data>
+  <data name="Rules_CreatedModelItem" xml:space="preserve">
+    <value>已建立 {0}</value>
+  </data>
+  <data name="Rules_DependentRuleOnExistingItem" xml:space="preserve">
+    <value>父項目不是由此模型產生建立: {0}</value>
+  </data>
+  <data name="Rules_EntityDoesNotExist" xml:space="preserve">
+    <value>實體不存在。</value>
+  </data>
+  <data name="Rules_FoundExistingModelItem" xml:space="preserve">
+    <value>找到現有的項目: {0}</value>
+  </data>
+  <data name="Rules_ModifiedModelItem" xml:space="preserve">
+    <value>已修改 {0}</value>
+  </data>
+  <data name="Rules_ParentEntityDoesNotExist" xml:space="preserve">
+    <value>父實體不存在。</value>
+  </data>
+  <data name="Rules_UnsupportedDataType" xml:space="preserve">
+    <value>不支援資料類型 '{0}'。</value>
+  </data>
+  <data name="SetEntityAttributesRule_AlreadySet" xml:space="preserve">
+    <value>{0} 已設定: {0}</value>
+  </data>
+  <data name="SetEntityAttributesRule_EntityHasNoFields" xml:space="preserve">
+    <value>{0} 沒有欄位。</value>
+  </data>
+  <data name="SetEntityAttributesRule_SetEntityAttributes" xml:space="preserve">
+    <value>設定 {0}: {1}</value>
+  </data>
+  <data name="SetEntityAttributesRule_TargetCountTooLow" xml:space="preserve">
+    <value>TargetCount 必須為 1 或以上。</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingColumnWidths" xml:space="preserve">
+    <value>正在計算資料行寬度</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingTableRowCounts" xml:space="preserve">
+    <value>正在計算資料表的資料列計數</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingUniqueness" xml:space="preserve">
+    <value>正在計算資料行唯一性</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CommandException" xml:space="preserve">
+    <value>執行命令時發生錯誤。
+訊息: {0}
+命令:
+{1}</value>
+  </data>
+</root>

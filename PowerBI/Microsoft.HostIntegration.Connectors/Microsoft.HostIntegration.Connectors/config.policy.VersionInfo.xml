@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!---
+  This XML is used to define the set of other CodeVersions that are supported during any release.
+  It should be updated everytime we change the CodeVersion.
+  OtherSupportedOldClientVersions - client versions which the earlier release was also supporting
+  and would be supported by current release during upgrade
+  OtherSupportedNewClientVersions - client versions which the current release is supporting
+-->
+<VersionInfo>
+  
+  <!-- To be updated during VAS releases. -->
+  <Project type="VAS">
+    <Release codeversion="1000" name="VAS1.0">
+      <OtherSupportedOldClientVersions />
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <Release codeversion="1001" name="VAS_Nov">
+      <OtherSupportedOldClientVersions>
+        <version>3</version>
+      </OtherSupportedOldClientVersions>
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <Release codeversion="1002" name="DedicatedCTP">
+      <OtherSupportedOldClientVersions>
+        <version>3</version>
+      </OtherSupportedOldClientVersions>
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+  </Project>
+  
+  <!-- To be updated during On-Prem releases. -->
+  <Project type="OnPrem">    
+    <Release codeversion="1" name="V1.0">
+      <OtherSupportedOldClientVersions />
+      <OtherSupportedNewClientVersions />
+    </Release>    
+    <Release codeversion="3" name="V1.1">
+      <OtherSupportedOldClientVersions>
+      </OtherSupportedOldClientVersions>
+      <OtherSupportedNewClientVersions>
+        <version>1000</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <Release codeversion="1000" name="VAS1.0">
+      <OtherSupportedOldClientVersions />
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <Release codeversion="1001" name="VAS_Nov">
+      <OtherSupportedOldClientVersions>
+        <version>3</version>
+      </OtherSupportedOldClientVersions>
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <Release codeversion="1002" name="DedicatedCTP">
+      <OtherSupportedOldClientVersions>
+        <version>3</version>
+      </OtherSupportedOldClientVersions>
+      <OtherSupportedNewClientVersions>
+        <version>3</version>
+      </OtherSupportedNewClientVersions>
+    </Release>
+    <!-- Bug in LoadSupportedClientVersions needs the entries to be added here also -->    
+  </Project>
+</VersionInfo>

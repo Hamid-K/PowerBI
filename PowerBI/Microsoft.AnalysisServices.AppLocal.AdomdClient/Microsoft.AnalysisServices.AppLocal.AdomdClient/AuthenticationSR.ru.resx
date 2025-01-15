@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataverseRequest_GetDatasetDetails" xml:space="preserve">
+    <value>Получение сведений о наборе данных Dataverse</value>
+  </data>
+  <data name="DataverseRequest_GetEmbeddedToken" xml:space="preserve">
+    <value>Создание токена внедрения Dataverse</value>
+  </data>
+  <data name="DataverseRequest_UnexpectedResponse" xml:space="preserve">
+    <value>Непредвиденный ответ</value>
+  </data>
+  <data name="Exception_ADTranslationNotSupportedOnNonWindows" xml:space="preserve">
+    <value>Преобразование AD не поддерживается на платформах, отличных от Windows.</value>
+  </data>
+  <data name="Exception_AcquireTokenFailure" xml:space="preserve">
+    <value>Невозможно получить маркер проверки подлинности с указанными учетными данными.</value>
+  </data>
+  <data name="Exception_AdalIsNoLongerSupported" xml:space="preserve">
+    <value>Использование библиотеки ADAL AAD для конечной точки проверки подлинности V! больше не поддерживается.</value>
+  </data>
+  <data name="Exception_AssemblyMissingInEmbeddedResources" xml:space="preserve">
+    <value>"{0}" отсутствует во внедренных ресурсах.</value>
+  </data>
+  <data name="Exception_CantObtainUserInfoOnTokenRefresh" xml:space="preserve">
+    <value>Не удается получить сведения об учетной записи для "{0}" при попытке обновить токен.</value>
+  </data>
+  <data name="Exception_DataverseRequestFailed" xml:space="preserve">
+    <value>Сбой запроса Dataverse.{3}{3}Действие: {0}{3}{3}Описание: {1}{2}</value>
+  </data>
+  <data name="Exception_EnumValueMissingInAdalAssembly" xml:space="preserve">
+    <value>Значение перечисления "{0}.{1}" отсутствует во внедренной сборке ADAL "{2}".</value>
+  </data>
+  <data name="Exception_InteractiveLoginRequired" xml:space="preserve">
+    <value>Невозможно получить маркер проверки подлинности с указанными учетными данными. Если администратор клиента Active Directory настроил многофакторную проверку подлинности или вы используете учетную запись Майкрософт, удалите имя пользователя и пароль из строки подключения и повторите попытку. Вы получите запрос на ввод учетных данных.</value>
+  </data>
+  <data name="Exception_InvalidAuthorityFormat" xml:space="preserve">
+    <value>"{0}" является недопустимым значением для центра ClaimsToken.</value>
+  </data>
+  <data name="Exception_InvalidCertificateThumbprint" xml:space="preserve">
+    <value>Не удалось найти сертификат с отпечатком "{0}".</value>
+  </data>
+  <data name="Exception_InvalidEndpointType" xml:space="preserve">
+    <value>Конечная точка типа {0} не поддерживается!</value>
+  </data>
+  <data name="Exception_InvalidIdentityProvider" xml:space="preserve">
+    <value>"{0}" является недопустимым значением для индикатора IdentityProvider.</value>
+  </data>
+  <data name="Exception_InvalidPBIPCapacity" xml:space="preserve">
+    <value>Внутренняя ошибка: универсальный код ресурса (URI) рабочей области Power BI Premium имеет значение NULL или пуст.</value>
+  </data>
+  <data name="Exception_InvalidServiceAppId" xml:space="preserve">
+    <value>Указанный идентификатор приложения службы "{0}" недопустим.</value>
+  </data>
+  <data name="Exception_MFARequiredAndSupported" xml:space="preserve">
+    <value>Не удалось получить токен проверки подлинности с помощью предоставленных учетных данных. Администратор клиента Active Directory требует многофакторной проверки подлинности.</value>
+  </data>
+  <data name="Exception_MethodMissingInAdalAssembly" xml:space="preserve">
+    <value>Метод "{0}.{1}({2})" отсутствует во внедренной сборке ADAL "{3}".</value>
+  </data>
+  <data name="Exception_MissingDeviceCodeCallback" xml:space="preserve">
+    <value>Требуется поток проверки подлинности кода устройства, но обратный вызов уведомления не был предоставлен!</value>
+  </data>
+  <data name="Exception_PbiRequestFailed" xml:space="preserve">
+    <value>Сбой запроса PowerBI.{3}{3}Действие: {0}{3}{3}Описание: {1}{2}</value>
+  </data>
+  <data name="Exception_PropertyMissingInAdalAssembly" xml:space="preserve">
+    <value>Свойство "{0}.{1}" отсутствует во внедренной сборке ADAL "{2}".</value>
+  </data>
+  <data name="Exception_RedirectionFailWithThrottling" xml:space="preserve">
+    <value>Служба Power BI сейчас занята, и запрос был ограничен. Повторите попытку позже.</value>
+  </data>
+  <data name="Exception_RedirectionInfoNotFound" xml:space="preserve">
+    <value>Не удалось найти необходимые данные для выполнения этого подключения. Это может быть связано с тем, что клиентское приложение сейчас не имеет необходимых компонентов. Установите последнюю версию клиентского приложения или обратитесь за помощью в службу технической поддержки.</value>
+  </data>
+  <data name="Exception_RedirectionTokenAsPasswordIsNotSupported" xml:space="preserve">
+    <value>Не удается получить доступ к перенаправленному серверу AS Azure, когда токен внешнего доступа не является допустимым токеном AAD для ресурса Power BI.</value>
+  </data>
+  <data name="Exception_S2STokenMissing" xml:space="preserve">
+    <value>При применении дополнительных разрешений для подключения необходимо указать S2SToken.</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutPassword" xml:space="preserve">
+    <value>Чтобы получить токены для субъекта-службы, требуется пароль\отпечаток сертификата.</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutTenant" xml:space="preserve">
+    <value>Не удается подключиться к набору данных из-за неполных сведений об учетной записи. Для субъектов-служб укажите идентификатор клиента вместе с идентификатором приложения, используя формат &lt;ИД приложения&gt;@&lt;ИД клиента&gt;. Затем повторите попытку.</value>
+  </data>
+  <data name="Exception_TypeMissingInAdalAssembly" xml:space="preserve">
+    <value>Тип "{0}" отсутствует во внедренной сборке ADAL "{1}".</value>
+  </data>
+  <data name="Exception_UnknownAuthenticationInfo" xml:space="preserve">
+    <value>Не удалось выполнить проверку подлинности; не удается найти Azure Active Directory в вашей среде. Это может быть связано с тем, что клиентское приложение сейчас не имеет необходимых компонентов. Установите последнюю версию клиентского приложения или обратитесь за помощью в службу технической поддержки.</value>
+  </data>
+  <data name="Exception_UserAuthenticationWithServicePrincipalProfile" xml:space="preserve">
+    <value>Профиль субъекта-службы поддерживается только в потоках проверки подлинности субъекта-службы.</value>
+  </data>
+  <data name="PbiRequest_GetDatabaseName" xml:space="preserve">
+    <value>Получение имени общей базы данных PBI</value>
+  </data>
+  <data name="PbiRequest_GetMwcToken" xml:space="preserve">
+    <value>Создание токена MWC</value>
+  </data>
+  <data name="PbiRequest_GetRedirectInfo" xml:space="preserve">
+    <value>Получение сведений о перенаправлении AS Azure</value>
+  </data>
+  <data name="PbiRequest_ResolveWorkspace" xml:space="preserve">
+    <value>Разрешение рабочей области PBI</value>
+  </data>
+</root>

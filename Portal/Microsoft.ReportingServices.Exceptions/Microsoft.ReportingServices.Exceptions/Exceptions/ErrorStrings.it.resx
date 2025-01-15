@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CouldNotFindElement" xml:space="preserve">
+    <value>Errore durante l'analisi del file di configurazione. Manca l'elemento {0}.</value>
+  </data>
+  <data name="DataSourceConnectionErrorNotVisible" xml:space="preserve">
+    <value>Impossibile connettersi all'origine dati. Non è disponibile alcuna informazione dettagliata poiché i messaggi di errore della connessione di origine sono disabilitati sul server.</value>
+  </data>
+  <data name="DuplicateConfigElement" xml:space="preserve">
+    <value>L'elemento {0} è presente più volte nel file di configurazione.</value>
+  </data>
+  <data name="EmptyExtensionName" xml:space="preserve">
+    <value>Trovata un'estensione priva di nome.</value>
+  </data>
+  <data name="GetExternalImagesInvalidNamespace" xml:space="preserve">
+    <value>Lo spazio dei nomi della richiesta GetExternalImages non è valido.</value>
+  </data>
+  <data name="GetExternalImagesInvalidSyntax" xml:space="preserve">
+    <value>La sintassi della richiesta GetExternalImages non è valida o non è supportata da questa versione di Reporting Services.</value>
+  </data>
+  <data name="InvalidConfigElement" xml:space="preserve">
+    <value>Il file di configurazione contiene un elemento non valido. {0} non è un elemento di un file di configurazione.</value>
+  </data>
+  <data name="InvalidKeyValue" xml:space="preserve">
+    <value>Combinazione di chiave e valore non valida.</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidNamespace" xml:space="preserve">
+    <value>Lo spazio dei nomi della richiesta LogClientTraceEvents non è valido.</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidSyntax" xml:space="preserve">
+    <value>La sintassi della richiesta LogClientTraceEvents non è valida o non è supportata da questa versione di Reporting Services.</value>
+  </data>
+  <data name="MultipleSessionCatalogItemsNotSupported" xml:space="preserve">
+    <value>La proprietà 'sessionCatalogItems' può contenere al massimo un elemento. La pubblicazione di più elementi in una sessione non è supportata.</value>
+  </data>
+  <data name="NoEventForEventProcessor" xml:space="preserve">
+    <value>Nessun evento configurato per il processore di eventi {0}.</value>
+  </data>
+  <data name="ProductNamePBIRS" xml:space="preserve">
+    <value>Server di report di Microsoft Power BI</value>
+  </data>
+  <data name="ProductNamePBIRSAndVersion" xml:space="preserve">
+    <value>Server di report di Microsoft Power BI versione {0}</value>
+  </data>
+  <data name="ProductNameSSRS" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services</value>
+  </data>
+  <data name="ProductNameSSRSAndVersion" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services versione {0}</value>
+  </data>
+  <data name="SameEventType" xml:space="preserve">
+    <value>Trovata più di una definizione per il tipo di evento "{0}".</value>
+  </data>
+  <data name="SameExtensionName" xml:space="preserve">
+    <value>A più di un'estensione di questo tipo è assegnato lo stesso nome. Rinominare una delle estensioni, assegnandole un nome diverso da {0}.</value>
+  </data>
+  <data name="SkuCaching" xml:space="preserve">
+    <value>Caching dei report</value>
+  </data>
+  <data name="SkuCommentAlerting" xml:space="preserve">
+    <value>Notifiche dei commenti del report</value>
+  </data>
+  <data name="SkuComponentLibrary" xml:space="preserve">
+    <value>Raccolta parti del report</value>
+  </data>
+  <data name="SkuCrescent" xml:space="preserve">
+    <value>Power View</value>
+  </data>
+  <data name="SkuCustomAuth" xml:space="preserve">
+    <value>Estensioni di sicurezza personalizzate</value>
+  </data>
+  <data name="SkuCustomRolesSecurity" xml:space="preserve">
+    <value>Personalizzazione dei ruoli di sicurezza</value>
+  </data>
+  <data name="SkuDataAlerting" xml:space="preserve">
+    <value>Invio avvisi dati</value>
+  </data>
+  <data name="SkuDataDrivenSubscriptions" xml:space="preserve">
+    <value>Sottoscrizioni di report guidate dai dati</value>
+  </data>
+  <data name="SkuDelivery" xml:space="preserve">
+    <value>Recapito dei report</value>
+  </data>
+  <data name="SkuDynamicDrillthrough" xml:space="preserve">
+    <value>Drill-through senza limiti con Report Builder</value>
+  </data>
+  <data name="SkuEventGeneration" xml:space="preserve">
+    <value>Generazione eventi</value>
+  </data>
+  <data name="SkuExecutionSnapshots" xml:space="preserve">
+    <value>Snapshot di esecuzione dei report</value>
+  </data>
+  <data name="SkuExtensibility" xml:space="preserve">
+    <value>Estensioni del server di report</value>
+  </data>
+  <data name="SkuHistory" xml:space="preserve">
+    <value>Snapshot di cronologia dei report</value>
+  </data>
+  <data name="SkuKpiItems" xml:space="preserve">
+    <value>Elementi KPI</value>
+  </data>
+  <data name="SkuMobileReportItems" xml:space="preserve">
+    <value>Elementi del report per dispositivi mobili</value>
+  </data>
+  <data name="SkuModelItemSecurity" xml:space="preserve">
+    <value>Sicurezza degli elementi dei modelli di report</value>
+  </data>
+  <data name="SkuNoCpuThrottling" xml:space="preserve">
+    <value>Numero illimitato di processori</value>
+  </data>
+  <data name="SkuNoMemoryThrottling" xml:space="preserve">
+    <value>Quantità di memoria senza restrizioni</value>
+  </data>
+  <data name="SkuNonSqlDataSources" xml:space="preserve">
+    <value>L'edizione di Reporting Services in uso supporta solo database relazionali di SQL Server come origini dati per i report.</value>
+  </data>
+  <data name="SkuOtherSkuDatasources" xml:space="preserve">
+    <value>L'istanza del motore di database selezionata non è valida per questa edizione di Reporting Services. Il motore di database non soddisfa i requisiti dell'edizione per le origini dati del report o per il database del server di report.</value>
+  </data>
+  <data name="SkuRemoteDataSources" xml:space="preserve">
+    <value>L'edizione di Reporting Services in uso richiede l'utilizzo dei database relazionali di SQL Server locale per le origini dati del report e il database del server di report.</value>
+  </data>
+  <data name="SkuReportBuilder" xml:space="preserve">
+    <value>Report Builder e modelli di report</value>
+  </data>
+  <data name="SkuScaleOut" xml:space="preserve">
+    <value>Distribuzione con scalabilità orizzontale</value>
+  </data>
+  <data name="SkuScheduling" xml:space="preserve">
+    <value>Esecuzione pianificata dei report</value>
+  </data>
+  <data name="SkuSharedDataset" xml:space="preserve">
+    <value>Set di dati condiviso</value>
+  </data>
+  <data name="SkuSharepoint" xml:space="preserve">
+    <value>Integrazione con Windows SharePoint Services</value>
+  </data>
+  <data name="SkuSubscriptions" xml:space="preserve">
+    <value>Sottoscrizioni dei report</value>
+  </data>
+  <data name="UIServerLoopback" xml:space="preserve">
+    <value>Nel file di configurazione del server di report è specificato localhost come nome del server Web. Per il server di report è necessario, invece, che sia specificato il nome del computer.</value>
+  </data>
+  <data name="UserNameUnknown" xml:space="preserve">
+    <value>[Sconosciuto]</value>
+  </data>
+  <data name="cannotBuildExternalConnectionString" xml:space="preserve">
+    <value>È stato effettuato un tentativo di creare la stringa di connessione per un'origine dati esterna '{0}'.</value>
+  </data>
+  <data name="internalDataSourceNotFound" xml:space="preserve">
+    <value>Non è stato possibile trovare l'origine dati interna nell'elenco di token per l'origine dati.</value>
+  </data>
+  <data name="rFeedColumnTypeMismatchException" xml:space="preserve">
+    <value>La colonna del feed di dati '{0}' presenta un tipo di dati imprevisto.</value>
+  </data>
+  <data name="rsAccessDenied" xml:space="preserve">
+    <value>Le autorizzazioni concesse all'utente '{0}' non sono sufficienti per eseguire questa operazione.</value>
+  </data>
+  <data name="rsAccessDeniedToSecureData" xml:space="preserve">
+    <value>Il servizio Web ReportServer non è in grado di accedere a informazioni protette nel server di report. Verificare che nel file config del server di report il valore WebServiceAccount sia specificato in modo corretto.</value>
+  </data>
+  <data name="rsApiVersionDiscontinued" xml:space="preserve">
+    <value>La versione minima supportata dal server è '{0}' e la versione del client è '{1}'. Aggiornare il client.</value>
+  </data>
+  <data name="rsApiVersionNotRecognized" xml:space="preserve">
+    <value>La versione del server è '{0}' e non riconosce la versione del client '{1}'.</value>
+  </data>
+  <data name="rsAppDomainManagerError" xml:space="preserve">
+    <value>Si è verificato un errore durante il tentativo di avvio del dominio applicazione {0} nel servizio del server di report.</value>
+  </data>
+  <data name="rsAssemblyNotPermissioned" xml:space="preserve">
+    <value>Impossibile caricare l'assembly '{0}', perché per esso non sono state definite autorizzazioni per il codice.</value>
+  </data>
+  <data name="rsAuthenticationExtensionError" xml:space="preserve">
+    <value>L'estensione di autenticazione ha generato un'eccezione imprevista o ha restituito un valore non valido: {0}.</value>
+  </data>
+  <data name="rsAuthorizationExtensionError" xml:space="preserve">
+    <value>Errore durante la chiamata dell'estensione di autorizzazione.</value>
+  </data>
+  <data name="rsAuthorizationTokenInvalidOrExpired" xml:space="preserve">
+    <value>Il token di autorizzazione non è valido o è scaduto</value>
+  </data>
+  <data name="rsBackupKeyPasswordInvalid" xml:space="preserve">
+    <value>La password per la chiave di backup non è corretta.</value>
+  </data>
+  <data name="rsBatchNotFound" xml:space="preserve">
+    <value>Impossibile trovare il batch '{0}'. Questo errore si verifica se il batch non è stato precedentemente aperto dal metodo CreateBatch. Si verifica, inoltre, quando un batch è rimasto aperto troppo a lungo e si è determinato un timeout.</value>
+  </data>
+  <data name="rsCacheRefreshPlanNotFound" xml:space="preserve">
+    <value>Impossibile trovare il piano di aggiornamento della cache '{0}'. Impossibile trovare nel database del server di report l'identificatore del piano di aggiornamento della cache fornito alle operazioni.</value>
+  </data>
+  <data name="rsCachingNotEnabled" xml:space="preserve">
+    <value>Memorizzazione nella cache dell'elemento '{0}' non abilitata. Per completare questa operazione è necessario che la memorizzazione nella cache sia abilitata.</value>
+  </data>
+  <data name="rsCannotActivateSubscription" xml:space="preserve">
+    <value>Impossibile attivare la sottoscrizione selezionata. L'estensione per il recapito non esiste più.</value>
+  </data>
+  <data name="rsCannotDeleteRootPolicy" xml:space="preserve">
+    <value>Impossibile eliminare l'assegnazione di ruolo associata alla cartella radice. Alla cartella principale deve essere sempre associata almeno una assegnazione di ruolo.</value>
+  </data>
+  <data name="rsCannotPrepareQuery" xml:space="preserve">
+    <value>Impossibile generare il set di dati. Si è verificato un errore durante la connessione a un'origine dati oppure la query non è valida per l'origine dati.</value>
+  </data>
+  <data name="rsCannotRetrieveModel" xml:space="preserve">
+    <value>Errore durante il caricamento del modello per l'elemento o l'origine dati '{0}'. Verificare che le informazioni di connessione siano corrette e di disporre delle autorizzazioni per accedere all'origine dati.</value>
+  </data>
+  <data name="rsCannotSubscribeToEvent" xml:space="preserve">
+    <value>Impossibile sottoscrivere il tipo di evento '{0}'.</value>
+  </data>
+  <data name="rsCannotValidateEncryptedData" xml:space="preserve">
+    <value>Impossibile convalidare l'integrità dei dati crittografati nel database.</value>
+  </data>
+  <data name="rsCertificateMissingOrInvalid" xml:space="preserve">
+    <value>Il certificato {0} è mancante o non valido.</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenError" xml:space="preserve">
+    <value>Non è possibile convertire l'identità basata sulle attestazioni in token di windows.</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenLoginTypeError" xml:space="preserve">
+    <value>Impossibile convertire l'identità basata sulle attestazioni in token di windows, probabilmente a causa di un accesso utente effettuato senza utilizzare le credenziali di Windows.</value>
+  </data>
+  <data name="rsClosingRegisteredStreamException" xml:space="preserve">
+    <value>Errore durante la chiusura di un flusso registrato.</value>
+  </data>
+  <data name="rsComponentPublishingError" xml:space="preserve">
+    <value>Errore durante la pubblicazione del componente.</value>
+  </data>
+  <data name="rsContainerNotSupported" xml:space="preserve">
+    <value>Il percorso di destinazione specificato non è supportato dal server di report. I file delle definizioni di report (file rdl), dei modelli di report (file smdl), delle risorse o delle origini dati condivise (file rsds) devono trovarsi in una raccolta o in una cartella all'interno di una raccolta.</value>
+  </data>
+  <data name="rsDataCacheMismatch" xml:space="preserve">
+    <value>La cache dei dati per la sessione di modifica del report non è valida. Rieseguire il report per creare una nuova cache dei dati valida.</value>
+  </data>
+  <data name="rsDataExtensionNotFound" xml:space="preserve">
+    <value>Si è tentato di utilizzare un'estensione per i dati '{0}' non registrata per questo server di report o non supportata in questa edizione di Reporting Services.</value>
+  </data>
+  <data name="rsDataSetExecutionError" xml:space="preserve">
+    <value>Esecuzione non riuscita per il set di dati condiviso '{0}'.</value>
+  </data>
+  <data name="rsDataSetNotFound" xml:space="preserve">
+    <value>Impossibile trovare il set di dati '{0}'.</value>
+  </data>
+  <data name="rsDataSetParameterValueNotSet" xml:space="preserve">
+    <value>In questo set di dati, il parametro del set di dati '{0}' richiede un valore predefinito o un valore definito dall'utente. Per eseguire questo set di dati è necessario specificare un valore per il parametro.</value>
+  </data>
+  <data name="rsDataSourceDisabled" xml:space="preserve">
+    <value>Un'origine dati associata al report è stata disabilitata.</value>
+  </data>
+  <data name="rsDataSourceNoPromptException" xml:space="preserve">
+    <value>Si è tentato di impostare le credenziali per un'origine dati '{0}' associata al report. Le impostazioni dell'origine dati del report impediscono l'invio delle credenziali al server di report.</value>
+  </data>
+  <data name="rsDataSourceNotFound" xml:space="preserve">
+    <value>Impossibile trovare l'origine dati '{0}'.</value>
+  </data>
+  <data name="rsDatasourceCredentialsNoLongerValid" xml:space="preserve">
+    <value>Le credenziali per una o più origini dati non sono più valide.</value>
+  </data>
+  <data name="rsDeliverError" xml:space="preserve">
+    <value>Errore di recapito.</value>
+  </data>
+  <data name="rsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>Si è tentato di utilizzare un'estensione per il recapito non registrata per questo server di report.</value>
+  </data>
+  <data name="rsElementTypeMismatch" xml:space="preserve">
+    <value>Il valore fornito per il campo {0} non è valido per questo tipo di campo. Impossibile convertire il valore stringa nel tipo richiesto.</value>
+  </data>
+  <data name="rsEmptyRole" xml:space="preserve">
+    <value>Il ruolo personalizzato che si desidera creare non contiene attività. Una definizione di ruolo deve contenere almeno un'attività.</value>
+  </data>
+  <data name="rsEncryptedDataUnavailable" xml:space="preserve">
+    <value>Il server di report non è in grado di accedere ai dati crittografati. Applicare una chiave di backup o eliminare tutto il contenuto crittografato.</value>
+  </data>
+  <data name="rsErrorNotVisibleToRemoteBrowsers" xml:space="preserve">
+    <value>Per altre informazioni su questo errore, passare al server di report nel server locale oppure abilitare gli errori remoti</value>
+  </data>
+  <data name="rsErrorOpeningConnection" xml:space="preserve">
+    <value>Non è possibile creare una connessione all'origine dati '{0}'.</value>
+  </data>
+  <data name="rsEvaluationCopyExpired" xml:space="preserve">
+    <value>Il periodo di valutazione di questa istanza di Microsoft SQL Server Reporting Services è scaduto. È necessaria una licenza.</value>
+  </data>
+  <data name="rsEventExtensionNotFoundException" xml:space="preserve">
+    <value>Nessuna estensione definita per l'evento {0}.</value>
+  </data>
+  <data name="rsEventLogSourceNotFound" xml:space="preserve">
+    <value>L'origine eventi "{0}" non esiste.</value>
+  </data>
+  <data name="rsEventMaxRetryExceededException" xml:space="preserve">
+    <value>Il numero massimo di tentativi per l'evento {0} è stato superato. L'elaborazione dell'evento verrà ignorata.</value>
+  </data>
+  <data name="rsExecuteQueriesFailure" xml:space="preserve">
+    <value>Si è verificato un errore di esecuzione della query sull'origine dati '{0}'.</value>
+  </data>
+  <data name="rsExecutionNotFound" xml:space="preserve">
+    <value>L'esecuzione {0} del report è scaduta o non è stata trovata.</value>
+  </data>
+  <data name="rsFailedToDecryptConfigInformation" xml:space="preserve">
+    <value>Impossibile decrittografare il valore crittografato dell'impostazione di configurazione "{0}".</value>
+  </data>
+  <data name="rsFailedToExportSymmetricKey" xml:space="preserve">
+    <value>Impossibile esportare la chiave simmetrica utilizzando la chiave pubblica dell'installazione corrente.</value>
+  </data>
+  <data name="rsFeedValueOutOfRange" xml:space="preserve">
+    <value>Il valore della colonna del feed di dati, '{0}', non è compreso nell'intervallo dei valori validi per il tipo di dati della colonna.</value>
+  </data>
+  <data name="rsFileExtensionRequired" xml:space="preserve">
+    <value>Impossibile completare l'operazione perché l'estensione del file manca o non è valida. Le estensioni di file valide includono: rdl per le definizioni di report, smdl per i modelli di report, rsds per le origini dati condivise, rsd per i set di dati condivisi e rsc per i componenti di report. Immettere un'estensione per il file e ripetere l'operazione.</value>
+  </data>
+  <data name="rsFileExtensionViolation" xml:space="preserve">
+    <value>L'estensione '{0}' del file di destinazione non corrisponde all'estensione '{1}' del file di origine. Le estensioni di file rdl, rsds, odc, rsd, rsc e smdl devono corrispondere per i file di destinazione e di origine. Aggiornare l'estensione del file di destinazione in modo che corrisponda a quella del file di origine.</value>
+  </data>
+  <data name="rsFileSize" xml:space="preserve">
+    <value>Il file è più grande del limite impostato per questo server di report.</value>
+  </data>
+  <data name="rsFileSizeNotSupported" xml:space="preserve">
+    <value>Il file è più grande del limite di sistema attualmente supportato di 2.000 MB.</value>
+  </data>
+  <data name="rsHasUserProfileDependencies" xml:space="preserve">
+    <value>Il report '{0}' o il set di dati condiviso non può essere eseguito in modo automatico, perché dipende dal profilo utente.</value>
+  </data>
+  <data name="rsHttpRuntimeClientDisconnectionError" xml:space="preserve">
+    <value>Client disconnesso dal dominio applicazione del servizio Web ReportServer {0}. Nessuna azione correttiva necessaria. È stato inviato un codice di errore a ASP.NET per rilasciare la connessione. Codice di errore {1}.</value>
+  </data>
+  <data name="rsHttpRuntimeError" xml:space="preserve">
+    <value>Si è verificato un errore nell'oggetto HTTP Runtime per il dominio applicazione {0}. È molto probabile che la richiesta HTTP contenga un verbo non supportato o sintassi non valida.</value>
+  </data>
+  <data name="rsHttpRuntimeInternalError" xml:space="preserve">
+    <value>Si è verificato un errore interno o di sistema nell'oggetto HTTP Runtime per il dominio dell'applicazione {0}.</value>
+  </data>
+  <data name="rsIdentityClaimsMissingOrInvalid" xml:space="preserve">
+    <value>Le attestazioni di identità '{0}' per una connessione locale mancano o non sono valide.</value>
+  </data>
+  <data name="rsInheritedPolicy" xml:space="preserve">
+    <value>L'elemento '{0}' eredita i criteri di sicurezza dall'elemento padre. Impossibile eliminare i criteri ereditati.</value>
+  </data>
+  <data name="rsInheritedPolicyModelItem" xml:space="preserve">
+    <value>L'elemento '{0}' con ID '{1}' eredita i criteri di sicurezza dall'elemento padre. Impossibile eliminare i criteri ereditati.</value>
+  </data>
+  <data name="rsInternalError" xml:space="preserve">
+    <value>Errore interno nel server di report. Per altre informazioni, vedere il log degli errori.</value>
+  </data>
+  <data name="rsInternalResourceNotFoundError" xml:space="preserve">
+    <value>Il server di report non è in grado di trovare la risorsa interna '{0}'.</value>
+  </data>
+  <data name="rsInternalResourceNotSpecifiedError" xml:space="preserve">
+    <value>Quando si utilizza il comando 'Get' del server di report, è necessario specificare il nome della risorsa interna. Verificare che sia specificato il nome della risorsa interna e riprovare.</value>
+  </data>
+  <data name="rsInvalidCatalogRecord" xml:space="preserve">
+    <value>Rilevato record non corretto nel catalogo. Per altre informazioni, vedere il log degli errori.</value>
+  </data>
+  <data name="rsInvalidConcurrentRenderEditSessionRequest" xml:space="preserve">
+    <value>La richiesta RenderEdit simultanea per la sessione {0} non è valida.</value>
+  </data>
+  <data name="rsInvalidDataSetReference" xml:space="preserve">
+    <value>Impossibile elaborare il report. Riferimento per il set di dati condiviso '{0}' non valido.</value>
+  </data>
+  <data name="rsInvalidDataSourceCount" xml:space="preserve">
+    <value>Il modello per il report '{0}' non può essere caricato dal server di report perché non fa riferimento ad alcuna origine dati o fa riferimento a più origini dati. È possibile caricare i modelli solo per i report che fanno riferimento a una sola origine dati.</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSetting" xml:space="preserve">
+    <value>Impossibile completare l'operazione in corso. Le credenziali per l'origine dati utente non soddisfano i requisiti per eseguire il report o il set di dati condiviso. Le credenziali per l'origine dati utente non sono archiviate nel database del server di report oppure l'origine dati utente è configurata per non richiedere credenziali, ma l'account di esecuzione automatica non è specificato.</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSettingForITokenDataExtension" xml:space="preserve">
+    <value>Impossibile completare l'operazione in corso. Le credenziali per l'origine dati utente non soddisfano i requisiti per eseguire il report o il set di dati condiviso. Solo le credenziali utente Windows supportano le opzioni di richiesta di credenziali o di utilizzo delle credenziali archiviate per un'estensione per i dati che implementa ITokenDataExtension per un server di report configurato in modalità integrata SharePoint. Specificare credenziali Windows oppure configurare l'origine dati con opzioni diverse.</value>
+  </data>
+  <data name="rsInvalidDataSourceReference" xml:space="preserve">
+    <value>Il server di report non può elaborare il report o il set di dati condiviso. L'origine dati condivisa '{0}' per il server di report non è valida. Selezionare un'origine dati condivisa nel server o nel sito.</value>
+  </data>
+  <data name="rsInvalidDataSourceType" xml:space="preserve">
+    <value>Impossibile completare l'azione corrente. Il tipo di estensione per i dati per l'origine dati '{0}' non è valido per questa operazione.</value>
+  </data>
+  <data name="rsInvalidDestination" xml:space="preserve">
+    <value>Gli elementi {0} e {1} necessari per questa operazione non possono trovarsi in siti di SharePoint diversi. Se si sta spostando un elemento, selezionare una raccolta nello stesso sito di SharePoint. Se si sta creando una sottoscrizione per un report con una pianificazione condivisa specifica, il report e la pianificazione devono trovarsi nello stesso sito di SharePoint.</value>
+  </data>
+  <data name="rsInvalidElement" xml:space="preserve">
+    <value>Il campo {0} contiene un valore non valido.</value>
+  </data>
+  <data name="rsInvalidElementCombination" xml:space="preserve">
+    <value>La combinazione di valori dei campi {0} e {1} non è valida.</value>
+  </data>
+  <data name="rsInvalidExtensionParameter" xml:space="preserve">
+    <value>Uno dei parametri di estensione non è valido per il motivo seguente: {0}</value>
+  </data>
+  <data name="rsInvalidItemName" xml:space="preserve">
+    <value>Il nome dell'elemento '{0}' non è valido. Il nome deve contenere meno di {1} caratteri, non deve iniziare con una barra né contenere un carattere riservato, ed è soggetto ad altre restrizioni. Per altre informazioni sui nomi di elemento validi, vedere https://go.microsoft.com/fwlink/?LinkId=398858.</value>
+  </data>
+  <data name="rsInvalidItemPath" xml:space="preserve">
+    <value>Il percorso dell'elemento '{0}' non è valido. Il percorso completo deve contenere meno di {1} caratteri e rispettare altre condizioni. Se il server di report è in modalità nativa, il percorso deve iniziare con una barra.</value>
+  </data>
+  <data name="rsInvalidModelDrillthroughReport" xml:space="preserve">
+    <value>Il report {0} non è un report drill-through valido.</value>
+  </data>
+  <data name="rsInvalidMove" xml:space="preserve">
+    <value>Impossibile spostare la cartella "{0}" nella cartella di destinazione. La cartella di destinazione "{1}" è una sottocartella della cartella di origine "{0}".</value>
+  </data>
+  <data name="rsInvalidMultipleElementCombination" xml:space="preserve">
+    <value>La combinazione di valori per i campi {0}, {1} e {2} non è valida.</value>
+  </data>
+  <data name="rsInvalidOperation" xml:space="preserve">
+    <value>L'operazione specificata non è valida.</value>
+  </data>
+  <data name="rsInvalidParameter" xml:space="preserve">
+    <value>Valore del parametro "{0}" non valido.</value>
+  </data>
+  <data name="rsInvalidParameterCombination" xml:space="preserve">
+    <value>La combinazione dei valori dei parametri forniti alla funzione non è valida.</value>
+  </data>
+  <data name="rsInvalidPolicyDefinition" xml:space="preserve">
+    <value>I criteri per l'utente o il gruppo '{0}' non sono validi. L'assegnazione di ruolo è vuota oppure specifica un nome utente o un nome di gruppo già utilizzato in un'assegnazione di ruolo esistente per l'elemento corrente o specifica ruoli duplicati per lo stesso utente o gruppo.</value>
+  </data>
+  <data name="rsInvalidProgressiveFormatError" xml:space="preserve">
+    <value>Formato del comando {0} non valido.</value>
+  </data>
+  <data name="rsInvalidRSDSSchema" xml:space="preserve">
+    <value>Il file con estensione rsds selezionato non è valido. Non presenta la struttura XML prevista per il relativo tipo di file.</value>
+  </data>
+  <data name="rsInvalidReportLink" xml:space="preserve">
+    <value>Impossibile eseguire l'operazione sul report. Il collegamento al report non è più valido.</value>
+  </data>
+  <data name="rsInvalidReportParameter" xml:space="preserve">
+    <value>Il valore predefinito o il valore specificato per il parametro del report '{0}' non è un valore valido.</value>
+  </data>
+  <data name="rsInvalidReportServerDatabase" xml:space="preserve">
+    <value>La versione del database del server di report è in un formato non valido oppure non è leggibile. Versione trovata: '{0}'. Versione prevista: '{1}'.</value>
+  </data>
+  <data name="rsInvalidSearchOperator" xml:space="preserve">
+    <value>Operatore di ricerca "{0}" non valido.</value>
+  </data>
+  <data name="rsInvalidSessionCatalogItems" xml:space="preserve">
+    <value>La proprietà 'sessionCatalogItems' non è specificata o il relativo contenuto non è valido o non è supportato da questa versione di Reporting Services. Dettagli: {0}.</value>
+  </data>
+  <data name="rsInvalidSessionId" xml:space="preserve">
+    <value>L'ID {0} della sessione non è valido.</value>
+  </data>
+  <data name="rsInvalidSqlAgentJob" xml:space="preserve">
+    <value>Trovato un processo di SQL Server Agent '{0}' non valido.</value>
+  </data>
+  <data name="rsInvalidSubscription" xml:space="preserve">
+    <value>Trovata una sottoscrizione '{0}' non valida. È necessario eliminare e ricreare la sottoscrizione.</value>
+  </data>
+  <data name="rsInvalidXml" xml:space="preserve">
+    <value>Il codice XML di input non è conforme allo schema. La grammatica XML è descritta nella documentazione dell'API. Per l'utilizzo di XML nei report, fare riferimento alla sintassi del linguaggio RDL.</value>
+  </data>
+  <data name="rsItemAlreadyExists" xml:space="preserve">
+    <value>L'elemento '{0}' esiste già.</value>
+  </data>
+  <data name="rsItemContentInvalid" xml:space="preserve">
+    <value>Il contenuto dell'elemento '{0}' non è valido.</value>
+  </data>
+  <data name="rsItemNotFound" xml:space="preserve">
+    <value>Impossibile trovare l'elemento '{0}'.</value>
+  </data>
+  <data name="rsItemPathLengthExceeded" xml:space="preserve">
+    <value>Il percorso dell'elemento '{0}' supera la lunghezza massima, pari a {1}. Il percorso include il nome dell'elemento stesso, più i nomi delle cartelle padre che lo contengono.</value>
+  </data>
+  <data name="rsJobWasCanceled" xml:space="preserve">
+    <value>Processo annullato da un amministratore.</value>
+  </data>
+  <data name="rsKeyStateNotValid" xml:space="preserve">
+    <value>Impossibile accedere alla chiave privata dell'account del servizio. Tale chiave viene utilizzata per decrittografare la chiave simmetrica che protegge il contenuto del database del server di report. Questa condizione può verificarsi dopo la reimpostazione della password dell'account del servizio del server di report. Ripristinare una chiave di backup oppure eliminare tutto il contenuto crittografato.</value>
+  </data>
+  <data name="rsLogonFailed" xml:space="preserve">
+    <value>Accesso non riuscito. Verificare che il nome utente e la password siano corretti.</value>
+  </data>
+  <data name="rsMalformedXml" xml:space="preserve">
+    <value>Il codice XML di input non è corretto. Uno o più elementi sono privi di un tag di chiusura oppure hanno tag non corrispondenti: {0}.</value>
+  </data>
+  <data name="rsMaxCountComments" xml:space="preserve">
+    <value>È stato raggiunto il numero massimo di commenti.</value>
+  </data>
+  <data name="rsMissingElement" xml:space="preserve">
+    <value>Nella struttura di input manca il campo obbligatorio {0}.</value>
+  </data>
+  <data name="rsMissingFeedColumnException" xml:space="preserve">
+    <value>Impossibile trovare la colonna del feed di dati '{0}'.</value>
+  </data>
+  <data name="rsMissingParameter" xml:space="preserve">
+    <value>Il valore del parametro '{0}' non è specificato. Manca nella chiamata alla funzione oppure è impostato su Null.</value>
+  </data>
+  <data name="rsMissingRequiredPropertyForItemType" xml:space="preserve">
+    <value>Valore della proprietà '{0}' non specificato. La proprietà è mancante o il valore è Null.</value>
+  </data>
+  <data name="rsMissingSessionId" xml:space="preserve">
+    <value>Manca l'identificatore di sessione. Per questa operazione è necessario specificare un identificatore di sessione.</value>
+  </data>
+  <data name="rsMixedTasks" xml:space="preserve">
+    <value>Per un ruolo personalizzato non possono coesistere attività di sistema e non di sistema nella stessa definizione di ruolo. È necessario specificare ruoli diversi per ogni categoria di attività.</value>
+  </data>
+  <data name="rsModelGenerationError" xml:space="preserve">
+    <value>Errore durante la generazione del modello.</value>
+  </data>
+  <data name="rsModelGenerationNotSupported" xml:space="preserve">
+    <value>L'estensione per i dati non supporta la generazione di modelli.</value>
+  </data>
+  <data name="rsModelIDMismatch" xml:space="preserve">
+    <value>L'ID modello del modello inviato deve corrispondere a quello del modello corrente.</value>
+  </data>
+  <data name="rsModelItemNotFound" xml:space="preserve">
+    <value>Impossibile trovare l'elemento di modello "{1}" nel modello "{0}".</value>
+  </data>
+  <data name="rsModelNotGenerated" xml:space="preserve">
+    <value>Il modello specificato deve essere un modello generato.</value>
+  </data>
+  <data name="rsModelRetrievalCanceled" xml:space="preserve">
+    <value>Il recupero del modello è stato annullato.</value>
+  </data>
+  <data name="rsModelRootPolicyRequired" xml:space="preserve">
+    <value>Richiesto criterio per il nodo radice del modello</value>
+  </data>
+  <data name="rsNotEnabled" xml:space="preserve">
+    <value>La funzionalità richiesta non è attualmente abilitata.</value>
+  </data>
+  <data name="rsNotSupported" xml:space="preserve">
+    <value>Al momento la funzionalità richiesta non è supportata.</value>
+  </data>
+  <data name="rsODCVersionNotSupported" xml:space="preserve">
+    <value>Il server di report supporta solo file ODC generati da Office 12 o versione successiva. Verificare che il file ODC sia stato generato da Office 12, quindi riprovare.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderConnectionStringMissing" xml:space="preserve">
+    <value>La stringa di connessione per una connessione locale è Null o vuota.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderMissingEffectiveUsername" xml:space="preserve">
+    <value>Manca la proprietà effettiva username necessaria per una connessione locale.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderUnknownError" xml:space="preserve">
+    <value>Si è verificato un errore sconosciuto durante la compilazione della stringa di connessione locale. Per altri dettagli, vedere l'eccezione interna.</value>
+  </data>
+  <data name="rsOperationNotSupported" xml:space="preserve">
+    <value>Funzionalità "{0}" non supportata in questa edizione di Reporting Services.</value>
+  </data>
+  <data name="rsOperationNotSupportedNativeMode" xml:space="preserve">
+    <value>L'operazione non è supportata nei server di report eseguiti in modalità nativa.</value>
+  </data>
+  <data name="rsOperationNotSupportedSharePointMode" xml:space="preserve">
+    <value>L'operazione non è supportata nei server di report configurati per essere eseguiti nella modalità di integrazione con SharePoint.</value>
+  </data>
+  <data name="rsOperationPreventsUnattendedExecution" xml:space="preserve">
+    <value>La modifica dei parametri del report o delle origini dei dati in base ai valori specificati non è consentita. Per il report è configurata l'esecuzione automatica. L'utilizzo dei valori specificati impedirebbe l'esecuzione automatica del report.</value>
+  </data>
+  <data name="rsPBIServiceUnavailable" xml:space="preserve">
+    <value>Power BI non riesce al momento a elaborare le richieste. Contattare PowerBI Support Correlation: {0}</value>
+  </data>
+  <data name="rsParameterTypeMismatch" xml:space="preserve">
+    <value>Il valore di parametro fornito per '{0}' non è compatibile con il tipo di parametro.</value>
+  </data>
+  <data name="rsProcessingError" xml:space="preserve">
+    <value>Errori durante l'elaborazione del report.</value>
+  </data>
+  <data name="rsProgressiveFormatElementMissingError" xml:space="preserve">
+    <value>Elemento del messaggio '{0}' mancante.</value>
+  </data>
+  <data name="rsProgressiveMessageWriteElementError" xml:space="preserve">
+    <value>Errore durante la scrittura dell'elemento del messaggio '{0}' per il comando {1}.</value>
+  </data>
+  <data name="rsProgressiveMessageWriteError" xml:space="preserve">
+    <value>Errore durante la scrittura di una risposta per il comando {0}.</value>
+  </data>
+  <data name="rsPropertyDisabled" xml:space="preserve">
+    <value>Impossibile impostare o recuperare un valore di proprietà per SiteName, EnableMyReports o MyReportsRole in un server di report in esecuzione in modalità di integrazione con SharePoint. Escludere queste proprietà dalla richiesta, quindi riprovare.</value>
+  </data>
+  <data name="rsPropertyDisabledNativeMode" xml:space="preserve">
+    <value>Impossibile impostare o recuperare un valore di proprietà per RDLXReportTimeout in un server di report eseguito in modalità nativa. Escludere queste proprietà dalla richiesta e riprovare.</value>
+  </data>
+  <data name="rsQueryExecutionNotAllowed" xml:space="preserve">
+    <value>Operazione non supportata se l'esecuzione di query non è consentita.</value>
+  </data>
+  <data name="rsQueryTimeout" xml:space="preserve">
+    <value>Errore durante il tentativo di convalidare i parametri di questo report. Si è verificato un timeout della query per l'origine dati.</value>
+  </data>
+  <data name="rsRdceExtraElementError" xml:space="preserve">
+    <value>Impossibile specificare più di un elemento '{0}' nel linguaggio RDL personalizzato. Rimuovere gli elementi duplicati e riprovare.</value>
+  </data>
+  <data name="rsRdceInvalidCacheOptionError" xml:space="preserve">
+    <value>Impossibile configurare le proprietà RDCE (Report Definition Customization Extension) in un report il cui rendering viene eseguito da un report nella cache. Modificare l'opzione di memorizzazione dei report nella cache e riprovare.</value>
+  </data>
+  <data name="rsRdceInvalidConfigurationError" xml:space="preserve">
+    <value>Impossibile configurare le proprietà RDCE (Report Definition Customization Extension) poiché RDCE è disabilitato o non configurato nel server di report. Verificare che RDCE sia abilitato e configurato nel server di report e che lo stesso nome di estensione RDCE sia specificato sia per il server di report che per la proprietà RDCE.</value>
+  </data>
+  <data name="rsRdceInvalidExecutionOptionError" xml:space="preserve">
+    <value>Impossibile configurare le proprietà RDCE (Report Definition Customization Extension) in un report se è abilitata la cronologia dei report o se il rendering del report viene eseguito da uno snapshot. Modificare l'opzione di esecuzione del report e riprovare.</value>
+  </data>
+  <data name="rsRdceInvalidItemTypeError" xml:space="preserve">
+    <value>Impossibile configurare le proprietà RDCE (Report Definition Customization Extension) in un elemento di tipo '{0}'. Le proprietà RDCE possono essere impostate solo nel tipo di elemento del report. Non è possibile impostare le proprietà RDCE sui report collegati o altri tipi di elemento.</value>
+  </data>
+  <data name="rsRdceInvalidRdlError" xml:space="preserve">
+    <value>L'estensione RDCE (Report Definition Customization Extension) ha restituito un RDL Null o non valido. Assicurarsi che l'RDL contenga XML valido.</value>
+  </data>
+  <data name="rsRdceMismatchError" xml:space="preserve">
+    <value>Il nome RDCE (Report Definition Customization Extension) specificato nel report non corrisponde al nome RDCE configurato per il server di report. L'estensione nel report è '{0}', ma quella nel server di report è '{1}'. Assicurarsi che venga specificato lo stesso nome di estensione per il report e per il server di report.</value>
+  </data>
+  <data name="rsRdceMismatchRdlVersion" xml:space="preserve">
+    <value>L'estensione RDCE (Report Definition Customization Extension) ha restituito una versione del file RDL diversa di quella passata in origine. Le versioni dei file RDL in ingresso e in uscita devono corrispondere.</value>
+  </data>
+  <data name="rsRdceWrappedException" xml:space="preserve">
+    <value>Errore durante il richiamo dell'estensione RDCE (Report Definition Customization Extension).</value>
+  </data>
+  <data name="rsReadOnlyDataSetParameter" xml:space="preserve">
+    <value>Il parametro del set di dati '{0}' è di sola lettura e non può essere modificato.</value>
+  </data>
+  <data name="rsReadOnlyProperty" xml:space="preserve">
+    <value>La proprietà '{0}' è di sola lettura e non può essere modificata né eliminata.</value>
+  </data>
+  <data name="rsReadOnlyReportParameter" xml:space="preserve">
+    <value>Il parametro di report '{0}' è di sola lettura e non può essere modificato.</value>
+  </data>
+  <data name="rsRemotePublicKeyUnavailable" xml:space="preserve">
+    <value>La chiave pubblica del nuovo nodo della Web farm non è stata inserita nel database. È possibile che il nodo non sia connesso al database corretto o che il relativo servizio Windows non sia stato avviato correttamente.</value>
+  </data>
+  <data name="rsReportBuilderFileTransmissionError" xml:space="preserve">
+    <value>Il server di report non è in grado di trasmettere il file. Il file {0} non è installato o non si dispone delle autorizzazioni corrette per accedervi.</value>
+  </data>
+  <data name="rsReportHistoryNotFound" xml:space="preserve">
+    <value>Impossibile trovare lo snapshot '{1}' del report '{0}'. Impossibile trovare l'identificatore dello snapshot nel database del server di report.</value>
+  </data>
+  <data name="rsReportNotReady" xml:space="preserve">
+    <value>Il report selezionato non è pronto per la visualizzazione. Il rendering del report è ancora in corso oppure non è disponibile uno snapshot del report.</value>
+  </data>
+  <data name="rsReportParameterTypeMismatch" xml:space="preserve">
+    <value>Il valore fornito per il parametro di report '{0}' non è compatibile con il tipo di parametro.</value>
+  </data>
+  <data name="rsReportParameterValueNotSet" xml:space="preserve">
+    <value>In questo report, il parametro di report '{0}' richiede un valore predefinito o un valore definito dall'utente. Per eseguire o sottoscrivere questo report è necessario specificare un valore per il parametro.</value>
+  </data>
+  <data name="rsReportSerializationError" xml:space="preserve">
+    <value>Si è verificato un errore durante la serializzazione del report.</value>
+  </data>
+  <data name="rsReportServerDatabaseError" xml:space="preserve">
+    <value>Si è verificato un errore nel database del server di report, probabilmente a causa di un errore di connessione, un timeout o una condizione di spazio su disco insufficiente nel database.</value>
+  </data>
+  <data name="rsReportServerDatabaseLogonFailed" xml:space="preserve">
+    <value>Impossibile stabilire una connessione al database del server di report. Accesso non riuscito.</value>
+  </data>
+  <data name="rsReportServerDatabaseUnavailable" xml:space="preserve">
+    <value>Impossibile stabilire una connessione al database del server di report. È necessaria una connessione al database per tutte le richieste e le elaborazioni.</value>
+  </data>
+  <data name="rsReportServerDisabled" xml:space="preserve">
+    <value>Impossibile decrittografare la chiave simmetrica utilizzata per accedere a dati sensibili o crittografati in un database del server di report. Ripristinare una chiave di backup oppure eliminare tutto il contenuto crittografato.</value>
+  </data>
+  <data name="rsReportServerKeyContainerError" xml:space="preserve">
+    <value>Impossibile abilitare Reporting Services utilizzando l'account {0}.</value>
+  </data>
+  <data name="rsReportServerNotActivated" xml:space="preserve">
+    <value>Installazione del server di report non inizializzata.</value>
+  </data>
+  <data name="rsReportServerServiceUnavailable" xml:space="preserve">
+    <value>Il servizio Windows ReportServer '{0}' non è in esecuzione. Per utilizzare il server di report è necessario che il servizio sia in esecuzione.</value>
+  </data>
+  <data name="rsReportServerStorageRefreshConnectionNotValidated" xml:space="preserve">
+    <value>La connessione di aggiornamento con ID '{1}' per il modello con ID '{0}' non è stata convalidata.</value>
+  </data>
+  <data name="rsReportServerStorageSingleRefreshConnectionExpected" xml:space="preserve">
+    <value>È supportata una sola connessione di aggiornamento, mentre sono state trovate {1} connessioni di aggiornamento per il modello con ID {0}.</value>
+  </data>
+  <data name="rsReportSnapshotEnabled" xml:space="preserve">
+    <value>L'operazione non è supportata per i report che vengono eseguiti come snapshot dell'esecuzione del report.</value>
+  </data>
+  <data name="rsReportSnapshotNotEnabled" xml:space="preserve">
+    <value>Le impostazioni per l'esecuzione del report o per la cronologia del report impediscono la creazione di snapshot o aggiornamenti.</value>
+  </data>
+  <data name="rsReportTimeoutExpired" xml:space="preserve">
+    <value>Timeout dell'operazione. Operazione annullata dal server di report.</value>
+  </data>
+  <data name="rsRequestEncodingFormatException" xml:space="preserve">
+    <value>Non è possibile completare l'operazione perché il formato di codifica della richiesta non corrisponde al formato specificato nell'intestazione della richiesta.</value>
+  </data>
+  <data name="rsRequestThroughHttpRedirectorNotSupportedError" xml:space="preserve">
+    <value>Impossibile elaborare la richiesta utilizzando il redirector HTTP. Per altre informazioni, vedere il log di traccia del server di report.</value>
+  </data>
+  <data name="rsReservedItem" xml:space="preserve">
+    <value>La cartella '{0}' è riservata e non può essere creata, eliminata o spostata.</value>
+  </data>
+  <data name="rsReservedRole" xml:space="preserve">
+    <value>Il ruolo {0} è riservato o in uso e non può essere eliminato.</value>
+  </data>
+  <data name="rsResolutionFailureException" xml:space="preserve">
+    <value>Si è verificato un errore di Reporting Services durante il tentativo di risolvere i metadati per il database {0}.</value>
+  </data>
+  <data name="rsRestrictedItem" xml:space="preserve">
+    <value>L'elemento '{0}' è limitato dallo SKU.</value>
+  </data>
+  <data name="rsRoleAlreadyExists" xml:space="preserve">
+    <value>Il ruolo '{0}' esiste già e non può essere creato.</value>
+  </data>
+  <data name="rsRoleNotFound" xml:space="preserve">
+    <value>Impossibile trovare il ruolo '{0}'.</value>
+  </data>
+  <data name="rsSPSiteNotFound" xml:space="preserve">
+    <value>Impossibile trovare il sito di SharePoint con ID {0}.</value>
+  </data>
+  <data name="rsScheduleAlreadyExists" xml:space="preserve">
+    <value>La pianificazione '{0}' esiste già e non può essere creata o rinominata. Questo errore si verifica quando il nome della pianificazione non è univoco.</value>
+  </data>
+  <data name="rsScheduleDateTimeRangeException" xml:space="preserve">
+    <value>La definizione della pianificazione contiene una data non valida. L'intervallo di date valido è compreso tra 1/1/1990 e 31/12/9999.</value>
+  </data>
+  <data name="rsScheduleNotFound" xml:space="preserve">
+    <value>Impossibile trovare la pianificazione '{0}'. Impossibile trovare nel catalogo l'identificatore della pianificazione che viene fornito alle operazioni.</value>
+  </data>
+  <data name="rsSchedulerNotResponding" xml:space="preserve">
+    <value>Il servizio Agente SQL Server non è in esecuzione. Questa operazione richiede il servizio Agente SQL Server.</value>
+  </data>
+  <data name="rsSchedulerNotRespondingPreventsPinning" xml:space="preserve">
+    <value>Non è possibile al momento aggiungere un elemento a Power BI perché il servizio che pianifica gli aggiornamenti dei riquadri del dashboard (SQL Server Agent) non è in esecuzione nel server di report.</value>
+  </data>
+  <data name="rsSecureConnectionRequired" xml:space="preserve">
+    <value>L'operazione desiderata richiede una connessione protetta (HTTPS).</value>
+  </data>
+  <data name="rsSecureStoreAmbiguousCredentialFields" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura. L'applicazione di destinazione '{0}' ha restituito più campi dello stesso tipo, ad esempio due nomi utente Windows, mentre deve restituire al massimo un campo di un tipo specificato.</value>
+  </data>
+  <data name="rsSecureStoreCannotRetrieveCredentials" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura: {0}</value>
+  </data>
+  <data name="rsSecureStoreContextUrlNotSpecified" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura. Il contesto SharePoint per la sessione corrente è sconosciuto. La richiesta di stabilire una sessione non ha specificato l'intestazione HTTP X-BI-Context-URL.</value>
+  </data>
+  <data name="rsSecureStoreInvalidLookupContext" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura. LookupContext è impostato su Automatico, ma l'account di esecuzione automatica del server di report non è configurato. Configurare l'account di esecuzione automatica per consentire il recupero delle credenziali per l'account.</value>
+  </data>
+  <data name="rsSecureStoreMissingCredentialFields" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura. Nell'applicazione di destinazione '{0}' manca un campo necessario. L'applicazione deve restituire un solo nome utente Windows e una sola password Windows.</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedCredentialField" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura. L'applicazione di destinazione '{0}' ha restituito un campo di un tipo non supportato, mentre deve restituire un solo nome utente Windows e una sola password Windows.</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedSharePointVersion" xml:space="preserve">
+    <value>Non è possibile recuperare le credenziali dal servizio di archiviazione sicura di SharePoint. In Reporting Services non è supportato il servizio di archiviazione sicura per la versione di SharePoint installata.</value>
+  </data>
+  <data name="rsSecurityZoneNotSupported" xml:space="preserve">
+    <value>Il percorso specificato si riferisce a un'area di SharePoint non supportata. È necessario utilizzare il percorso dell'area predefinita.</value>
+  </data>
+  <data name="rsSemanticQueryExtensionNotFound" xml:space="preserve">
+    <value>Si è tentato di utilizzare un'estensione per query semantiche associata all'estensione per i dati '{0}' non registrata per questo server di report.</value>
+  </data>
+  <data name="rsServerBusy" xml:space="preserve">
+    <value>Impossibile elaborare ulteriori richieste finché non saranno disponibili altre risorse o altra memoria.</value>
+  </data>
+  <data name="rsServerConfigurationError" xml:space="preserve">
+    <value>Il server di report ha rilevato un errore di configurazione. {0}</value>
+  </data>
+  <data name="rsSessionNotFound" xml:space="preserve">
+    <value>Non è possibile trovare la sessione '{0}' per l'utente:'{1}'.</value>
+  </data>
+  <data name="rsSharePointContentDBAccessError" xml:space="preserve">
+    <value>Non è stato possibile accedere al database di contenuto dell'applicazione Web dal server di report. È possibile che l'account del pool di applicazioni non abbia l'autorizzazione. Passare alla pagina di proprietà dell'applicazione di servizio SQL Server Reporting Services e verificare che abbia le autorizzazioni appropriate.</value>
+  </data>
+  <data name="rsSharePointError" xml:space="preserve">
+    <value>Server di report: errore di SharePoint.</value>
+  </data>
+  <data name="rsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Il parametro di configurazione SharePointIntegrated è impostato su True, ma non è possibile caricare il modello a oggetti di SharePoint. Errore: {0}.</value>
+  </data>
+  <data name="rsSharePoitScheduleAlreadyExists" xml:space="preserve">
+    <value>La pianificazione '{0}' esiste già nel sito di SharePoint '{1}' e non può essere creata o rinominata. Questo errore si verifica quando il nome della pianificazione non è univoco nell'ambito di un sito.</value>
+  </data>
+  <data name="rsSnapshotVersionMismatch" xml:space="preserve">
+    <value>Rilevato snapshot della versione SQL Reporting Services 2000. È possibile che venga tentata un'operazione di aggiornamento automatico.</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleError" xml:space="preserve">
+    <value>Preambolo non valido.</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleLengthError" xml:space="preserve">
+    <value>Lunghezza del preambolo non valida. La lunghezza è di {0} byte.</value>
+  </data>
+  <data name="rsStoredCredentialsOutOfSync" xml:space="preserve">
+    <value>Il file dell'origine dati {0} non è valido. È stato modificato senza eseguire la sincronizzazione con il server di report.</value>
+  </data>
+  <data name="rsStoredParameterNotFound" xml:space="preserve">
+    <value>Impossibile trovare il parametro identificato da '{0}'.</value>
+  </data>
+  <data name="rsStreamNotFound" xml:space="preserve">
+    <value>Impossibile trovare il flusso. Impossibile trovare nel database del server di report l'identificatore di flusso che viene fornito alle operazioni.</value>
+  </data>
+  <data name="rsStreamOperationFailed" xml:space="preserve">
+    <value>Si è verificato un errore interno durante l'esecuzione di un'operazione di flusso. Per altri dettagli, vedere il log degli errori.</value>
+  </data>
+  <data name="rsSubreportFromSnapshot" xml:space="preserve">
+    <value>Operazione non supportata quando il sottoreport è configurato per essere eseguito come uno snapshot del report.</value>
+  </data>
+  <data name="rsSubscriptionNotFound" xml:space="preserve">
+    <value>Impossibile trovare la sottoscrizione '{0}'. Impossibile trovare nel database del server di report l'identificatore di sottoscrizione che viene fornito alle operazioni.</value>
+  </data>
+  <data name="rsSystemResourcePackageItemContentTypeMismatch" xml:space="preserve">
+    <value>Il tipo di pacchetto di risorse di sistema richiede che l'elemento '{0}' contenga il tipo di contenuto '{1}'.</value>
+  </data>
+  <data name="rsSystemResourcePackageItemExtensionMismatch" xml:space="preserve">
+    <value>Il tipo di pacchetto di risorse di sistema richiede che l'elemento '{0}' contenga l'estensione di file '{1}'.</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataInvalid" xml:space="preserve">
+    <value>Il file di metadati del pacchetto di risorse di sistema non è valido.</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataNotFound" xml:space="preserve">
+    <value>Il pacchetto di risorse di sistema non contiene un file metadata.xml.</value>
+  </data>
+  <data name="rsSystemResourcePackageReferencedItemMissing" xml:space="preserve">
+    <value>I metadati del pacchetto di risorse di sistema fanno riferimento all'elemento '{0}' che però non è stato trovato.</value>
+  </data>
+  <data name="rsSystemResourcePackageRequiredItemMissing" xml:space="preserve">
+    <value>Il tipo di pacchetto di risorse di sistema richiede l'elemento '{0}' che però non è stato trovato.</value>
+  </data>
+  <data name="rsSystemResourcePackageValidationFailed" xml:space="preserve">
+    <value>Il pacchetto di risorse di sistema non è valido.</value>
+  </data>
+  <data name="rsSystemResourcePackageWrongType" xml:space="preserve">
+    <value>Il pacchetto di risorse di sistema fornito non è di tipo '{0}'.</value>
+  </data>
+  <data name="rsTaskNotFound" xml:space="preserve">
+    <value>L'attività '{0}' non esiste.</value>
+  </data>
+  <data name="rsUnhandledHttpApplicationError" xml:space="preserve">
+    <value>Il server di report ha rilevato un'eccezione non gestita in HttpApplication.</value>
+  </data>
+  <data name="rsUnknownDataSetParameter" xml:space="preserve">
+    <value>Tentativo di impostare un parametro del set di dati '{0}' che non è definito in questo set di dati.</value>
+  </data>
+  <data name="rsUnknownEventType" xml:space="preserve">
+    <value>Si è tentato di utilizzare il tipo di evento '{0}', che non è registrato in questo server di report per l'utilizzo esterno.</value>
+  </data>
+  <data name="rsUnknownFeedColumnType" xml:space="preserve">
+    <value>La colonna del feed di dati '{0}' presenta un tipo di dati non supportato.</value>
+  </data>
+  <data name="rsUnknownReportParameter" xml:space="preserve">
+    <value>Si è tentato di impostare un parametro di report '{0}', che non è definito in questo report.</value>
+  </data>
+  <data name="rsUnknownUserName" xml:space="preserve">
+    <value>Nome utente o nome di gruppo '{0}' non riconosciuto.</value>
+  </data>
+  <data name="rsUnrecognizedXmlElement" xml:space="preserve">
+    <value>Il codice XML di input non è conforme alla documentazione API: elemento '{0}' non riconosciuto nel codice XML di input.</value>
+  </data>
+  <data name="rsUnsupportedParameterForMode" xml:space="preserve">
+    <value>Parametro '{1}' non supportato in un server di report in esecuzione in modalità {0}. Deve essere impostato su Null.</value>
+  </data>
+  <data name="rsUrlRemapError" xml:space="preserve">
+    <value>Impossibile eseguire il mapping dell'URL '{0}' a un URL pubblico in questo ambiente di SharePoint.</value>
+  </data>
+  <data name="rsUserCannotOwnSubscription" xml:space="preserve">
+    <value>Impossibile impostare l'utente specificato come proprietario di questa sottoscrizione. L'utente non ha le autorizzazioni necessarie per sottoscrivere il report associato alla sottoscrizione.</value>
+  </data>
+  <data name="rsVersionMismatch" xml:space="preserve">
+    <value>Le versioni del Componente aggiuntivo di Reporting Services per SharePoint e dell'applicazione di servizio Reporting Services non sono compatibili o non supportano questa funzionalità.</value>
+  </data>
+  <data name="rsWinAuthz" xml:space="preserve">
+    <value>Windows restituisce l'errore {1} quando Reporting Services prova a chiamare le API Windows Authz. Se questo problema persiste, Windows potrebbe avere problemi di connessione al dominio o l'account Reporting Services potrebbe non avere l'autorizzazione a eseguire i controlli di autenticazione. Per altre informazioni e dettagli sulla diagnosi dei problemi, vedere la documentazione di Windows Authz. Metodo Authz: {0}, codice errore: {1}, nome utente: {2}.</value>
+  </data>
+  <data name="rsWinAuthz1355" xml:space="preserve">
+    <value>Windows restituisce l'errore ERROR_NO_SUCH_DOMAIN quando Reporting Services prova a chiamare le API Windows Authz. Se questo problema persiste, Windows potrebbe avere problemi di connessione al dominio. Per altre informazioni e dettagli sulla diagnosi dei problemi, vedere la documentazione di Windows Authz. Metodo Authz: {0}, codice errore: 1355, nome utente: {1}.</value>
+  </data>
+  <data name="rsWinAuthz5" xml:space="preserve">
+    <value>Windows restituisce l'errore ERROR_ACCESS_DENIED quando Reporting Services prova a chiamare le API Windows Authz. Se questo problema persiste, l'account Reporting Services potrebbe non avere l'autorizzazione a eseguire i controlli di autenticazione. Per altre informazioni e dettagli sulla diagnosi dei problemi, vedere la documentazione di Windows Authz. Metodo Authz: {0}, codice errore: 5, nome utente: {1}.</value>
+  </data>
+  <data name="rsWindowsIntegratedSecurityDisabled" xml:space="preserve">
+    <value>L'origine dati è configurata per l'utilizzo della sicurezza integrata di Windows. In questo server di report la sicurezza integrata di Windows è disattivata o il server di report usa la modalità Account attendibile.</value>
+  </data>
+  <data name="rsWrongItemType" xml:space="preserve">
+    <value>L'operazione che si sta tentando di eseguire su "{0}" non è consentita per questo tipo di elemento.</value>
+  </data>
+</root>

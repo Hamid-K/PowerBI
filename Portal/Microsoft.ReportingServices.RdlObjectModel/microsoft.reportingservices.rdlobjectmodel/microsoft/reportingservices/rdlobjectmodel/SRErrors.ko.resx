@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeserializationFailed" xml:space="preserve">
+    <value>역직렬화 실패: {0}</value>
+  </data>
+  <data name="DeserializationFailedMethod" xml:space="preserve">
+    <value>{0} 메서드의 역직렬화에 실패했습니다.</value>
+  </data>
+  <data name="InvalidColor" xml:space="preserve">
+    <value>{0}은(는) 잘못된 색입니다.</value>
+  </data>
+  <data name="InvalidIdentifier" xml:space="preserve">
+    <value>'{0}' 식별자가 잘못되었습니다.</value>
+  </data>
+  <data name="InvalidParam" xml:space="preserve">
+    <value>값 '{1}'이(가) {0}에 맞지 않습니다.</value>
+  </data>
+  <data name="InvalidParamBetween" xml:space="preserve">
+    <value>{0}의 값은 {1}에서 {2} 사이여야 합니다.</value>
+  </data>
+  <data name="InvalidParamGreaterThan" xml:space="preserve">
+    <value>{0}의 값은 {1} 이상이어야 합니다.</value>
+  </data>
+  <data name="InvalidParamLessThan" xml:space="preserve">
+    <value>{0}의 값은 {1} 이하여야 합니다.</value>
+  </data>
+  <data name="InvalidUnitType" xml:space="preserve">
+    <value>{0}은(는) 잘못된 단위 지정자입니다. 올바른 단위 지정자는 in, mm, cm, pt, pc입니다.</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>{0}은(는) 잘못된 값입니다.</value>
+  </data>
+  <data name="NoRootElement" xml:space="preserve">
+    <value>Report 요소를 찾을 수 없습니다.</value>
+  </data>
+  <data name="TextParseFailedFormat" xml:space="preserve">
+    <value>{0} 텍스트를 구문 분석하지 못했습니다. 텍스트는 {1} 형식이어야 합니다.</value>
+  </data>
+  <data name="UnitParseNoDigits" xml:space="preserve">
+    <value>{0}에 숫자 값이 없으므로 단위로 구문 분석할 수 없습니다. 올바른 단위 문자열의 예에는 "1pt"와 ".5in"가 있습니다.</value>
+  </data>
+  <data name="UnitParseNoUnit" xml:space="preserve">
+    <value>{0}에 단위가 지정되지 않았습니다. 올바른 단위 문자열의 예에는 "1pt"와 "0.5in"가 있습니다.</value>
+  </data>
+  <data name="UnitParseNumericPart" xml:space="preserve">
+    <value>{0}의 숫자 부분을 {2} 유형의 단위로 구문 분석할 수 없습니다.</value>
+  </data>
+</root>

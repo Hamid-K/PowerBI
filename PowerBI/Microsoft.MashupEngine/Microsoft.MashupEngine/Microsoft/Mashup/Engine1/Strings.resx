@@ -1,0 +1,2665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AadAuthorizationUriMustEndInAuthorize" xml:space="preserve">
+    <value>The AAD AuthorizationUri must end in "/authorize".</value>
+  </data>
+  <data name="AadMustHaveResource" xml:space="preserve">
+    <value>For data sources which aren't of type 'Uri', you must supply a Resource in the AAD authentication definition.</value>
+  </data>
+  <data name="AccessControlEntry_ConditionConversionToIdentitiesNotSupported" xml:space="preserve">
+    <value>Cannot convert the access control entry condition to a list of identities.</value>
+  </data>
+  <data name="AccessDatabaseEngine2010BitnessMismatch" xml:space="preserve">
+    <value>{0} Both the 32 and 64-bit versions of the Access Database Engine OLEDB provider are installed. This is causing problems with the {1}-bit version, which may be required to read this type of file. To download the client software, visit the following site: {2}.</value>
+  </data>
+  <data name="AccessDatabaseEngine2010BitnessMismatch_WithFileName" xml:space="preserve">
+    <value>{0} Both the 32 and 64-bit versions of the Access Database Engine OLEDB provider are installed. This is causing problems with the {1}-bit version, which may be required to read '{2}'. To download the client software, visit the following site: {3}.</value>
+  </data>
+  <data name="AccessDatabaseEngine2010Missing" xml:space="preserve">
+    <value>{0} The {1}-bit version of the Access Database Engine OLEDB provider may be required to read this type of file. To download the client software, visit the following site: {2}.</value>
+  </data>
+  <data name="AccessDatabaseEngine2010Missing_WithFileName" xml:space="preserve">
+    <value>{0} The {1}-bit version of the Access Database Engine OLEDB provider may be required to read '{2}'. To download the client software, visit the following site: {3}.</value>
+  </data>
+  <data name="ActionNotPermitted" xml:space="preserve">
+    <value>We haven't been given permission to perform actions against this resource.</value>
+  </data>
+  <data name="Action_NativeStatementsNotSupported" xml:space="preserve">
+    <value>Native statements aren't supported by this value.</value>
+  </data>
+  <data name="ActiveDirectory_AttributeNotFound" xml:space="preserve">
+    <value>The attribute '{0}' wasn't found. </value>
+  </data>
+  <data name="ActiveDirectory_DomainNotFound" xml:space="preserve">
+    <value>The active directory domain '{0}' couldn't be found.</value>
+  </data>
+  <data name="ActiveDirectory_NotDomainJoined" xml:space="preserve">
+    <value>This operation requires your computer to be joined to a domain.</value>
+  </data>
+  <data name="ActiveDirectory_ObjectClassNotFound" xml:space="preserve">
+    <value>The object class '{0}' couldn't be found.</value>
+  </data>
+  <data name="ActiveDirectory_ObjectNotFound" xml:space="preserve">
+    <value>The object with distinguished name '{0}' couldn't be found.</value>
+  </data>
+  <data name="ActiveDirectory_QueryTooComplex" xml:space="preserve">
+    <value>The query is too complex to be processed by Active Directory.</value>
+  </data>
+  <data name="ActiveDirectory_ServerError" xml:space="preserve">
+    <value>An unexpected error occurred when querying Active Directory: '{0}'</value>
+  </data>
+  <data name="ActiveDirectory_UnsupportedSyntax" xml:space="preserve">
+    <value>The attribute '{0}' has a syntax '{1}'  that isn't supported.</value>
+  </data>
+  <data name="Adls_FileNotFound" xml:space="preserve">
+    <value>The specified path does not exist.</value>
+  </data>
+  <data name="AdoDotNetChallengeTitle" xml:space="preserve">
+    <value>ADO.NET provider</value>
+  </data>
+  <data name="AdoDotNetInvalidParameterType" xml:space="preserve">
+    <value>ADO.NET parameters do not support {0} values.</value>
+  </data>
+  <data name="AdoDotNetNoParameterValue" xml:space="preserve">
+    <value>Records specifying ADO.NET parameter properties must contain a 'Value' property.</value>
+  </data>
+  <data name="AdoDotNetNoneAuth" xml:space="preserve">
+    <value>Don't specify any credentials or only connection string properties.</value>
+  </data>
+  <data name="AdoDotNetParameterDirectionNotSupported" xml:space="preserve">
+    <value>ADO.NET Parameter Direction '{0}' is not supported.</value>
+  </data>
+  <data name="AdoDotNetParametersMustBeRecordOrList" xml:space="preserve">
+    <value>The parameters value passed in to ADO.NET must be a record or list.</value>
+  </data>
+  <data name="AdoDotNetSqlAuth" xml:space="preserve">
+    <value>Use a username and password to access a data source with an ADO.NET provider.</value>
+  </data>
+  <data name="AdoDotNetWindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access a data source with an ADO.NET provider.</value>
+  </data>
+  <data name="AdobeAnalyticsChallengeTitle" xml:space="preserve">
+    <value>Adobe Account</value>
+  </data>
+  <data name="AdobeAnalyticsGlobalCompanyIdIsNull" xml:space="preserve">
+    <value>The Adobe Global Company ID cannot be null.</value>
+  </data>
+  <data name="AdobeAnalyticsOrgCompaniesNotFound" xml:space="preserve">
+    <value>We are unable to obtain necessary information for using your Adobe Analytics account with PowerBI.  This is likely a result of your account not being set up properly.  Please contact Adobe for help setting up your account and then try again.</value>
+  </data>
+  <data name="AdobeAnalyticsServerError" xml:space="preserve">
+    <value>Adobe Analytics encountered an internal server error.  Please contact Adobe for help or try again later.</value>
+  </data>
+  <data name="AdobeCredentialDeprecated" xml:space="preserve">
+    <value>The Adobe connector has been updated to use the newer Adobe authentication endpoint. Please re-authenticate.</value>
+  </data>
+  <data name="AdobeDateRangeParameterDescription" xml:space="preserve">
+    <value>Date range of report</value>
+  </data>
+  <data name="AdobeDefaultCompany" xml:space="preserve">
+    <value>Default Company</value>
+  </data>
+  <data name="AdobeReportNotAvailable" xml:space="preserve">
+    <value>The report is unavailable.</value>
+  </data>
+  <data name="AdobeReportNotReady" xml:space="preserve">
+    <value>Maximum retry count has been reached, and the report is not ready.  Try increasing the max retry count.</value>
+  </data>
+  <data name="AdobeSegmentParameterDescription" xml:space="preserve">
+    <value>Defined segments to filter results</value>
+  </data>
+  <data name="AdobeStartAndEndMustBeOfSameType" xml:space="preserve">
+    <value>Start and End parameters must be of the same type.</value>
+  </data>
+  <data name="AdobeStartAndEndOnlySupportDateTimeWithV2" xml:space="preserve">
+    <value>Start and end parameters of type Datetime are only supported with implementation 2.0.</value>
+  </data>
+  <data name="AdobeStartOrEndMustBeDateOrDateTime" xml:space="preserve">
+    <value>Start and end parameters must be of type Date or Datetime.</value>
+  </data>
+  <data name="AdobeTopDimensionParameterAllDimensions" xml:space="preserve">
+    <value>All selected dimensions</value>
+  </data>
+  <data name="AdobeTopParameterDescription" xml:space="preserve">
+    <value>Number of values to return for each dimension and sub-dimension</value>
+  </data>
+  <data name="AnalysisServicesChallengeTitle" xml:space="preserve">
+    <value>Access SQL Server Analysis Services</value>
+  </data>
+  <data name="AnalysisServicesCultureNotSupported" xml:space="preserve">
+    <value>Analysis Services does not support the '{0}' culture. A different culture can be specified using the Culture option of the AnalysisServices.Databases function.</value>
+  </data>
+  <data name="AnalysisServicesInvalidDatabaseName" xml:space="preserve">
+    <value>The database name provided is invalid.</value>
+  </data>
+  <data name="AnalysisServicesInvalidServer" xml:space="preserve">
+    <value>The server parameter must be a valid host name or HTTP URL.</value>
+  </data>
+  <data name="AnalysisServicesInvalidServiceResponse" xml:space="preserve">
+    <value>The service provided an invalid response. {0}</value>
+  </data>
+  <data name="AnalysisServicesKpiGoal" xml:space="preserve">
+    <value>Goal</value>
+  </data>
+  <data name="AnalysisServicesKpiStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AnalysisServicesKpiTrend" xml:space="preserve">
+    <value>Trend</value>
+  </data>
+  <data name="AnalysisServicesKpiValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="AnalysisServicesProviderMissing" xml:space="preserve">
+    <value>The {0} version of '{1}' is required to run this query.  The provider can be downloaded from '{2}'.</value>
+  </data>
+  <data name="AnalysisServicesUnsupportedServiceVersion" xml:space="preserve">
+    <value>SQL Server versions prior to SQL Server 2008 R2 RTM aren't supported.</value>
+  </data>
+  <data name="AnalysisServices_AadIsPaasOnly" xml:space="preserve">
+    <value>This server does not support Microsoft account authentication.</value>
+  </data>
+  <data name="AnalysisServices_WindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access Analysis Services.</value>
+  </data>
+  <data name="ArgumentOutOfRange" xml:space="preserve">
+    <value>The '{0}' argument is out of range.</value>
+  </data>
+  <data name="Auth_Ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="Auth_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Auth_SAS" xml:space="preserve">
+    <value>Shared access signature (SAS)</value>
+  </data>
+  <data name="Auth_Token" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="Auth_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="AuthenticationPropertyTypeNotSupported" xml:space="preserve">
+    <value>We don't support the type of authentication property {0}.</value>
+  </data>
+  <data name="AzureInvalidAccountName" xml:space="preserve">
+    <value>The Account name must be 3 to 24 lower case letters and numbers.</value>
+  </data>
+  <data name="AzureInvalidAccountQueryParameters" xml:space="preserve">
+    <value>The Account URL shouldn't have query parameters.</value>
+  </data>
+  <data name="AzureInvalidAccountScheme" xml:space="preserve">
+    <value>The Account URL scheme must be https.</value>
+  </data>
+  <data name="AzureInvalidAccountURL" xml:space="preserve">
+    <value>The Account URL is not a valid URL.</value>
+  </data>
+  <data name="AzureInvalidContainerName" xml:space="preserve">
+    <value>The Container name must be 3 to 63 lower case letters and numbers. It must start with a letter or number and can contain only letters, numbers, and the dash (-) character. No consecutive dashes are allowed. Every dash (-) character must be immediately preceded and followed by a letter or number.</value>
+  </data>
+  <data name="AzureStorageIOException" xml:space="preserve">
+    <value>{0} failed to get contents from '{1}'. The operation might succeed on a retry.</value>
+  </data>
+  <data name="AzureTableInvalidAccountUrl" xml:space="preserve">
+    <value>The Account URL shouldn't have query parameters or path parts.</value>
+  </data>
+  <data name="BinaryFormat_7BitEncodedValueTooLarge" xml:space="preserve">
+    <value>There was a problem reading the binary format.  The 7-bit encoded integer was greater than 63 bits.</value>
+  </data>
+  <data name="BinaryFormat_CountMayNotBeNegative" xml:space="preserve">
+    <value>The 'count' parameter cannot be negative.</value>
+  </data>
+  <data name="BinaryFormat_CountOrConditionInvalid" xml:space="preserve">
+    <value>The 'countOrCondition' parameter must be either a number or function.</value>
+  </data>
+  <data name="BinaryFormat_CountReadTooLarge" xml:space="preserve">
+    <value>The count read from the input is too large.</value>
+  </data>
+  <data name="BinaryFormat_DoesNotProduceBinary" xml:space="preserve">
+    <value>The Binary format value doesn't produce a binary value.</value>
+  </data>
+  <data name="BinaryFormat_DoesNotProduceList" xml:space="preserve">
+    <value>The binary format value doesn't produce a list value.</value>
+  </data>
+  <data name="BinaryFormat_EndOfInput" xml:space="preserve">
+    <value>There was a problem reading the binary format at position {0}.  The end of the input was reached before the value could be read.</value>
+  </data>
+  <data name="BinaryFormat_ExpectBinaryFormat" xml:space="preserve">
+    <value>The value isn't a binary format value.</value>
+  </data>
+  <data name="BinaryFormat_GroupItemInvalid" xml:space="preserve">
+    <value>The specified binary format group item was invalid.</value>
+  </data>
+  <data name="BinaryFormat_GroupItemRequired" xml:space="preserve">
+    <value>An item was expected but didn't appear in the input.</value>
+  </data>
+  <data name="BinaryFormat_GroupItemUnknown" xml:space="preserve">
+    <value>An unknown item was encountered in the input.</value>
+  </data>
+  <data name="BinaryFormat_InvalidDecimalBytes" xml:space="preserve">
+    <value>The binary data didn't represent a valid decimal value.</value>
+  </data>
+  <data name="BinaryFormat_InvalidType" xml:space="preserve">
+    <value>We expected type List, Binary, or Any.</value>
+  </data>
+  <data name="BinaryFormat_InvalidTypeWhenCombining" xml:space="preserve">
+    <value>A type of 'list' or 'binary' cannot be specified when using a combine function.</value>
+  </data>
+  <data name="BinaryFormat_LengthMayNotBeNegative" xml:space="preserve">
+    <value>The length cannot be negative.</value>
+  </data>
+  <data name="BinaryFormat_LengthReadTooLarge" xml:space="preserve">
+    <value>The length read from the input is too large.</value>
+  </data>
+  <data name="BinaryFormat_NotEnoughRead" xml:space="preserve">
+    <value>There was a problem reading the binary format.  {0} bytes were not read.</value>
+  </data>
+  <data name="BinaryFormat_NotSupportedForCount" xml:space="preserve">
+    <value>The specified binary format cannot be used to read a count.</value>
+  </data>
+  <data name="BinaryFormat_NotSupportedForLength" xml:space="preserve">
+    <value>The specified binary format value cannot be used to read a length.</value>
+  </data>
+  <data name="Binary_InvalidEncoding" xml:space="preserve">
+    <value>Invalid binary encoding.</value>
+  </data>
+  <data name="Binary_NotConvertibleToBinary" xml:space="preserve">
+    <value>We couldn't convert to Binary.</value>
+  </data>
+  <data name="Binary_UnexpectedPreamble" xml:space="preserve">
+    <value>The unicode byte order marks didn't match the specified encoding.</value>
+  </data>
+  <data name="BoundFunctionNotFound" xml:space="preserve">
+    <value>Couldn't find a matched bound function type.</value>
+  </data>
+  <data name="BuiltinIntrospectionNotSupported" xml:space="preserve">
+    <value>We don't currently support introspection of the built-in library.</value>
+  </data>
+  <data name="Bytes_FromHexString_HexStringRequiresEvenLength" xml:space="preserve">
+    <value>Hex string must contain an even number of characters.</value>
+  </data>
+  <data name="Bytes_GetHexDigit_InvalidHexDigit" xml:space="preserve">
+    <value>Invalid hex digit.</value>
+  </data>
+  <data name="CacheManagerNotAvailable" xml:space="preserve">
+    <value>We were unable to access a cache using that cache group identifier.</value>
+  </data>
+  <data name="CacheNotReplaceable" xml:space="preserve">
+    <value>We were unable to substitute a different cache for this operation.</value>
+  </data>
+  <data name="Cache_NotFound" xml:space="preserve">
+    <value>We can't find a cache with the given identifier.</value>
+  </data>
+  <data name="Calendar_InvalidDayOfWeekError" xml:space="preserve">
+    <value>The day specified isn't a valid day of the week.</value>
+  </data>
+  <data name="CallbacksMustBeOnMainThread" xml:space="preserve">
+    <value>Callbacks must happen on the same thread that was used to call into the ADO.NET provider.</value>
+  </data>
+  <data name="CannotBuildCanonicalUrl" xml:space="preserve">
+    <value>We couldn't build the OData Url to write against.</value>
+  </data>
+  <data name="CannotImportDataFromAPasswordProtectedWorkbook" xml:space="preserve">
+    <value>Cannot import data from a password protected workbook.</value>
+  </data>
+  <data name="Catalog_CreateSchemaNoCrossDatabaseFolding" xml:space="preserve">
+    <value>Creation of schema when the EnableCrossDatabaseFolding option is true is unsupported.</value>
+  </data>
+  <data name="Catalog_CreateSchemaNoDataAllowed" xml:space="preserve">
+    <value>Creation of schema with tables is not supported.</value>
+  </data>
+  <data name="Catalog_CreateViewNoCrossDatabaseFolding" xml:space="preserve">
+    <value>Creation of views when the EnableCrossDatabaseFolding option is true is unsupported.</value>
+  </data>
+  <data name="Catalog_DropSchemaNoCrossDatabaseFolding" xml:space="preserve">
+    <value>Dropping of schema when the EnableCrossDatabaseFolding option is true is unsupported.</value>
+  </data>
+  <data name="Catalog_DropViewNoCrossDatabaseFolding" xml:space="preserve">
+    <value>Dropping of views when the EnableCrossDatabaseFolding option is true is unsupported.</value>
+  </data>
+  <data name="Catalog_InsertKindMustBeTable" xml:space="preserve">
+    <value>The object to create must have a Kind of 'Table'.</value>
+  </data>
+  <data name="Catalog_InsertKindMustBeTableOrView" xml:space="preserve">
+    <value>The object to create must have a Kind of 'Table' or 'View'.</value>
+  </data>
+  <data name="Catalog_InsertKindMustHaveOneColumn" xml:space="preserve">
+    <value>The object to create must have at least one column.</value>
+  </data>
+  <data name="Catalog_InsertNameMustMatchSchemaItem" xml:space="preserve">
+    <value>The object to create must have a Name that matches its Schema and Item.</value>
+  </data>
+  <data name="Catalog_OnlyInsertAndDeleteSupported" xml:space="preserve">
+    <value>Only insertion and deletion of objects is supported by this navigation table.</value>
+  </data>
+  <data name="Catalog_UnsupportedColumnType" xml:space="preserve">
+    <value>The type of column '{0}' isn't supported by this data source.</value>
+  </data>
+  <data name="Cdpa_CantCreateCube" xml:space="preserve">
+    <value>We couldn't understand how to access the database.</value>
+  </data>
+  <data name="Cdpa_CantLoadMetadata" xml:space="preserve">
+    <value>We couldn't load metadata for the database.</value>
+  </data>
+  <data name="Cdpa_ChallengeTitle" xml:space="preserve">
+    <value>Access CDPA</value>
+  </data>
+  <data name="Cdpa_GranularityNotSupported" xml:space="preserve">
+    <value>Grouping by a time granularity of {0} is not supported.</value>
+  </data>
+  <data name="Cdpa_RequestError" xml:space="preserve">
+    <value>An error occurred while making a request to the service (request ID: {0}): {1}</value>
+  </data>
+  <data name="Cdpa_RequestId_None" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="Cdpa_ResponseError" xml:space="preserve">
+    <value>An error occurred while processing the response from the service (request ID: {0}).</value>
+  </data>
+  <data name="Cdpa_TruncatedResult" xml:space="preserve">
+    <value>The result was truncated.</value>
+  </data>
+  <data name="Cdpa_UriNotSupported" xml:space="preserve">
+    <value>The URI '{0}' is not supported.</value>
+  </data>
+  <data name="Certificate_NoPrivateKey" xml:space="preserve">
+    <value>We need a certificate which has a private key to perform this operation.</value>
+  </data>
+  <data name="Certificate_NoSingleThumbprint" xml:space="preserve">
+    <value>We found {0} certificates matching this thumbprint.</value>
+  </data>
+  <data name="Certificate_VerificationFailed" xml:space="preserve">
+    <value>Certificate verification failed. Please check the certificate properties to see if it is expired or untrusted.</value>
+  </data>
+  <data name="Character_FromFunction_NotConvertibleToCharacter" xml:space="preserve">
+    <value>We couldn't convert to Character.</value>
+  </data>
+  <data name="ColumnSelectorInvalid" xml:space="preserve">
+    <value>The specified column selector is invalid.</value>
+  </data>
+  <data name="CommaFollowedByTerminator" xml:space="preserve">
+    <value>A ',' cannot precede a {0}.</value>
+  </data>
+  <data name="ComparisonCriteria_NoFunctions" xml:space="preserve">
+    <value>We don't support using functions for comparison in this context.</value>
+  </data>
+  <data name="Compression_InvalidType" xml:space="preserve">
+    <value>We don't support that type of compression in this context.</value>
+  </data>
+  <data name="ConfigurationErrorsExceptionMessage" xml:space="preserve">
+    <value>{0}. This is a configuration issue with the file '{1}'.</value>
+  </data>
+  <data name="ConfigurationPropertyTypeError" xml:space="preserve">
+    <value>We got an unexpected value for configuration property '{0}'; it had the type '{1}', but we were expecting the type '{2}'.</value>
+  </data>
+  <data name="ConflictingProperties" xml:space="preserve">
+    <value>'{0}' and '{1}' can't be used together.</value>
+  </data>
+  <data name="Constants_ExpectedConstantValue" xml:space="preserve">
+    <value>Expected a constant value. {0} is not a constant.</value>
+  </data>
+  <data name="ContentTypeParameterValidationError" xml:space="preserve">
+    <value>The parameter is expected to be of type Text.Type or Binary.Type.</value>
+  </data>
+  <data name="CountOrCondition_CountOrConditionValueExpectedError" xml:space="preserve">
+    <value>We expected a CountOrCondition value.</value>
+  </data>
+  <data name="CubeAddAndExpandDimensionColumn_AttributeNamesAndNewColumnNamesMustHaveSameCount" xml:space="preserve">
+    <value>We expected newColumnNames to have the same number of items as attributeNames.</value>
+  </data>
+  <data name="Cube_ColumnNotDimensionAttribute" xml:space="preserve">
+    <value>The column '{0}' of the table isn't a dimension attribute.</value>
+  </data>
+  <data name="Cube_FunctionNotAMeasure" xml:space="preserve">
+    <value>The function isn't a measure.</value>
+  </data>
+  <data name="Cube_FunctionNotAParameter" xml:space="preserve">
+    <value>The function is not a cube parameter.</value>
+  </data>
+  <data name="Cube_InvalidParameterFunction" xml:space="preserve">
+    <value>The provided function is not a cube parameter function.</value>
+  </data>
+  <data name="Cube_NotInSameMeasureGroup" xml:space="preserve">
+    <value>The query cannot be evaluated because it involves dimensions or measures that aren't related.</value>
+  </data>
+  <data name="Cube_ParameterMissing" xml:space="preserve">
+    <value>A variable required by the data source has not been provided.</value>
+  </data>
+  <data name="Cube_PropertyRequiresDimensionAttribute" xml:space="preserve">
+    <value>Column '{0}' is a property of dimension attribute '{1}' and must be removed before the dimension attribute can be collapsed.</value>
+  </data>
+  <data name="Cube_QueryNotSupported" xml:space="preserve">
+    <value>The query cannot be evaluated because it isn't supported by the cube.</value>
+  </data>
+  <data name="Cube_ValueNotACube" xml:space="preserve">
+    <value>The value is not a cube.</value>
+  </data>
+  <data name="CultureUnawareComparer" xml:space="preserve">
+    <value>The specified comparer does not support culture sensitive comparisons.</value>
+  </data>
+  <data name="Culture_NotSupported_Parsing" xml:space="preserve">
+    <value>Culture '{0}' is a neutral culture. It cannot be used to convert to or from text.</value>
+  </data>
+  <data name="CurrencyOutOfRange" xml:space="preserve">
+    <value>The number is out of range of a currency value. Valid values are from {0} to {1}. </value>
+  </data>
+  <data name="CustomComparersNotAllowed" xml:space="preserve">
+    <value>A custom comparer cannot be used in this context.</value>
+  </data>
+  <data name="CustomComparersResultedInInvalidSort" xml:space="preserve">
+    <value>The custom comparer resulted in an invalid sort.</value>
+  </data>
+  <data name="DataComponent_" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataComponent_Date" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="DataComponent_Time" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="DataComponent_Zone" xml:space="preserve">
+    <value>time zone</value>
+  </data>
+  <data name="DataSourceChanged" xml:space="preserve">
+    <value>{0}: The data source appears to have been modified since it was last accessed. Refreshing may resolve this error.</value>
+  </data>
+  <data name="DataSourceExceptionMessage" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="DataSourceLocation_Address_account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="DataSourceLocation_Address_channel" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="DataSourceLocation_Address_class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="DataSourceLocation_Address_clientId" xml:space="preserve">
+    <value>Client ID</value>
+  </data>
+  <data name="DataSourceLocation_Address_container" xml:space="preserve">
+    <value>Container</value>
+  </data>
+  <data name="DataSourceLocation_Address_contentType" xml:space="preserve">
+    <value>Content Type</value>
+  </data>
+  <data name="DataSourceLocation_Address_database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="DataSourceLocation_Address_domain" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="DataSourceLocation_Address_emailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="DataSourceLocation_Address_itemName" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="DataSourceLocation_Address_loginServer" xml:space="preserve">
+    <value>Login Server</value>
+  </data>
+  <data name="DataSourceLocation_Address_logonGroup" xml:space="preserve">
+    <value>Logon Group</value>
+  </data>
+  <data name="DataSourceLocation_Address_model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="DataSourceLocation_Address_name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DataSourceLocation_Address_object" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="DataSourceLocation_Address_objectId" xml:space="preserve">
+    <value>Object Id</value>
+  </data>
+  <data name="DataSourceLocation_Address_objectType" xml:space="preserve">
+    <value>Object Type</value>
+  </data>
+  <data name="DataSourceLocation_Address_options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="DataSourceLocation_Address_path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="DataSourceLocation_Address_prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="DataSourceLocation_Address_property" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="DataSourceLocation_Address_queue" xml:space="preserve">
+    <value>Queue</value>
+  </data>
+  <data name="DataSourceLocation_Address_queueManager" xml:space="preserve">
+    <value>Queue Manager</value>
+  </data>
+  <data name="DataSourceLocation_Address_resource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="DataSourceLocation_Address_schema" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="DataSourceLocation_Address_server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="DataSourceLocation_Address_systemId" xml:space="preserve">
+    <value>System ID</value>
+  </data>
+  <data name="DataSourceLocation_Address_systemNumber" xml:space="preserve">
+    <value>System Number</value>
+  </data>
+  <data name="DataSourceLocation_Address_url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="DataSourceLocation_Address_view" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="DatabaseClientMissingExceptionMessage32bit" xml:space="preserve">
+    <value>This error could've been the result of provider-specific client software being required, but missing on this computer.  To download client software for this provider, visit the following site and choose the 32-bit (x86) version of, at minimum, '{0}': {1}</value>
+  </data>
+  <data name="DatabaseClientMissingExceptionMessage64bit" xml:space="preserve">
+    <value>This error could've been the result of provider-specific client software being required, but missing on this computer.  To download client software for this provider, visit the following site and choose the 64-bit (x64) version of, at minimum, '{0}': {1}</value>
+  </data>
+  <data name="DatabaseProviderConfigurationErrorExceptionMessage" xml:space="preserve">
+    <value>Your client software isn't configured properly for '{0}'.
+'{0}' returned the error: '{1}'.</value>
+  </data>
+  <data name="DatabaseProviderDowngradeMessage" xml:space="preserve">
+    <value>Please install {0} version {1} or earlier.</value>
+  </data>
+  <data name="DatabaseProviderIncompatibleNETVersionMessage" xml:space="preserve">
+    <value>The installed database provider '{0}' targets an incompatible .NET Framework.</value>
+  </data>
+  <data name="DatabaseProviderMissingExceptionMessage" xml:space="preserve">
+    <value>We were unable to find a database provider with invariant name '{0}'.</value>
+  </data>
+  <data name="DatabaseProviderUpgradeMessage" xml:space="preserve">
+    <value> The installed database provider '{0}' returned the error: '{1}'. Updating the provider to a more recent version might resolve the issue. Please visit {2} to install the latest provider.</value>
+  </data>
+  <data name="DateTimeZone_CannotParseTextAsDateTimeError" xml:space="preserve">
+    <value>We couldn't parse the input provided as a DateTimeZone value.</value>
+  </data>
+  <data name="DateTimeZone_InvalidOutputFormatError" xml:space="preserve">
+    <value>The output DateTimeZone format specified isn't supported.</value>
+  </data>
+  <data name="DateTimeZone_NotConvertibleToDateTimeZone" xml:space="preserve">
+    <value>We couldn't convert to DateTimeZone.</value>
+  </data>
+  <data name="DateTimeZone_OutOfRangeError" xml:space="preserve">
+    <value>The DateTimeZone operation failed because the resulting value falls outside the range of allowed values.</value>
+  </data>
+  <data name="DateTime_CannotParseTextAsDateTimeError" xml:space="preserve">
+    <value>We couldn't parse the input provided as a DateTime value.</value>
+  </data>
+  <data name="DateTime_DateTimeMissingComponent" xml:space="preserve">
+    <value>The DateTime.{0} function expects an input of type DateTime or DateTimeZone.</value>
+  </data>
+  <data name="DateTime_InvalidDayValue" xml:space="preserve">
+    <value>The Day value provided is invalid.</value>
+  </data>
+  <data name="DateTime_InvalidOutputFormatError" xml:space="preserve">
+    <value>The output DateTime format specified isn't supported.</value>
+  </data>
+  <data name="DateTime_NotConvertibleToDateTime" xml:space="preserve">
+    <value>We couldn't convert to DateTime.</value>
+  </data>
+  <data name="DateTime_OutOfRangeError" xml:space="preserve">
+    <value>The DateTime operation failed because the resulting value falls outside the range of allowed values.</value>
+  </data>
+  <data name="Date_CannotParseTextAsDateTimeError" xml:space="preserve">
+    <value>We couldn't parse the input provided as a Date value.</value>
+  </data>
+  <data name="Date_DateTimeMissingComponent" xml:space="preserve">
+    <value>The Date value must contain the {0} component.</value>
+  </data>
+  <data name="Date_DateTimeValueWithDaysPartExpectedError" xml:space="preserve">
+    <value>We expected a Date value with a Days part.</value>
+  </data>
+  <data name="Date_DaysMayNotBeNegative" xml:space="preserve">
+    <value>The days parameter cannot be negative.</value>
+  </data>
+  <data name="Date_MonthsMayNotBeNegative" xml:space="preserve">
+    <value>The months parameter cannot be negative.</value>
+  </data>
+  <data name="Date_NotConvertibleToDate" xml:space="preserve">
+    <value>We couldn't convert to Date.</value>
+  </data>
+  <data name="Date_OutOfRangeError" xml:space="preserve">
+    <value>The Date operation failed because the resulting value falls outside the range of allowed values.</value>
+  </data>
+  <data name="Date_QuartersMayNotBeNegative" xml:space="preserve">
+    <value>The quarters parameter cannot be negative.</value>
+  </data>
+  <data name="Date_WeeksMayNotBeNegative" xml:space="preserve">
+    <value>The weeks parameter cannot be negative.</value>
+  </data>
+  <data name="Date_YearsMayNotBeNegative" xml:space="preserve">
+    <value>The years parameter cannot be negative.</value>
+  </data>
+  <data name="DecompileFunctionFailed" xml:space="preserve">
+    <value>We are unable to decompile native functions of type '{0}'.</value>
+  </data>
+  <data name="DelayedTableTypeMismatch" xml:space="preserve">
+    <value>The delayed table has a different type than the ascribed type.</value>
+  </data>
+  <data name="Delta_SinceNotSupported" xml:space="preserve">
+    <value>The value does not support deltas.</value>
+  </data>
+  <data name="DimensionContainsRollup" xml:space="preserve">
+    <value>We can't report a single value for this dimension as it represents a rollup of multiple values whose details are not available.</value>
+  </data>
+  <data name="DocumentReader_BadCatch" xml:space="preserve">
+    <value>The 'catch' clause of a try/catch expression must be followed by a function definition with 0 or 1 arguments and no type constraints.</value>
+  </data>
+  <data name="DocumentReader_DuplicateSection" xml:space="preserve">
+    <value>The section '{0}' is already defined in this document.</value>
+  </data>
+  <data name="DocumentReader_ExpectedToken" xml:space="preserve">
+    <value>Token {0} expected.</value>
+  </data>
+  <data name="DocumentReader_InvalidPrimitiveType" xml:space="preserve">
+    <value>The type identifier is invalid.</value>
+  </data>
+  <data name="DocumentReader_InvalidRequiredArgument" xml:space="preserve">
+    <value>You cannot have a required argument following an optional argument.</value>
+  </data>
+  <data name="DocumentReader_ParseDepth" xml:space="preserve">
+    <value>This query is too complicated to run.</value>
+  </data>
+  <data name="DuplicateContinuationToken" xml:space="preserve">
+    <value>We received multiple duplicate continuation tokens from Azure Storage.</value>
+  </data>
+  <data name="DuplicateProtocol" xml:space="preserve">
+    <value>The DSR protocol '{0}' already has a handler registered.</value>
+  </data>
+  <data name="DuplicateResourceMapping" xml:space="preserve">
+    <value>The resource kind '{0}' is already mapped to protocol '{1}'.</value>
+  </data>
+  <data name="DurationIsTooLarge" xml:space="preserve">
+    <value>The value of '{0}' is too large. The maximum allowed value is {1} seconds.</value>
+  </data>
+  <data name="DurationIsTooSmall" xml:space="preserve">
+    <value>The value of '{0}' is too small. The minimum allowed value is {1} seconds.</value>
+  </data>
+  <data name="DurationToTextFormatUnsupported" xml:space="preserve">
+    <value>The "format" parameter of Duration.ToText has no effect and is no longer supported.</value>
+  </data>
+  <data name="Duration_CannotParseDurationLiteralError" xml:space="preserve">
+    <value>We couldn't parse the Duration literal.</value>
+  </data>
+  <data name="Duration_NotConvertibleToDuration" xml:space="preserve">
+    <value>We couldn't convert to Duration.</value>
+  </data>
+  <data name="Duration_OutOfRangeError" xml:space="preserve">
+    <value>The Duration operation failed because the resulting duration falls outside the range of allowed values.</value>
+  </data>
+  <data name="Duration_TicksExceedsMaximumValueError" xml:space="preserve">
+    <value>We cannot build a Duration value with 'ticks' greater than {0}.</value>
+  </data>
+  <data name="EncryptedWorkbook_AccessDenied" xml:space="preserve">
+    <value>You don't have permission to decrypt this workbook.</value>
+  </data>
+  <data name="EncryptedWorkbook_NoCredentials" xml:space="preserve">
+    <value>Credentials are required to decrypt this workbook, but none were provided.</value>
+  </data>
+  <data name="EncryptedWorkbook_NotSupported" xml:space="preserve">
+    <value>We don't support reading encrypted workbooks.</value>
+  </data>
+  <data name="Encryption_InvalidAlgorithm" xml:space="preserve">
+    <value>Invalid encryption algorithm.</value>
+  </data>
+  <data name="ErrorFetchingSalesforceData" xml:space="preserve">
+    <value>There was an error while reading data.</value>
+  </data>
+  <data name="EssbaseChallengeTitle" xml:space="preserve">
+    <value>Access Essbase</value>
+  </data>
+  <data name="EssbaseInvalidServer" xml:space="preserve">
+    <value>The server parameter must be a valid HTTP URL.</value>
+  </data>
+  <data name="Evaluate_EvaluatedTextCannotContainSections" xml:space="preserve">
+    <value>The evaluated text cannot contain sections.</value>
+  </data>
+  <data name="EvaluationCanceled" xml:space="preserve">
+    <value>The evaluation was canceled.</value>
+  </data>
+  <data name="ExcelCantFindPart" xml:space="preserve">
+    <value>We couldn't find a part named '{0}' in the Excel package.</value>
+  </data>
+  <data name="ExcelCellReferenceInvalid" xml:space="preserve">
+    <value>The Excel source contains an invalid cell Reference: {0}.</value>
+  </data>
+  <data name="ExcelInvalidInput" xml:space="preserve">
+    <value>The input couldn't be recognized as a valid Excel document.</value>
+  </data>
+  <data name="ExchangeDeserializationException" xml:space="preserve">
+    <value>There was an invalid response from the Exchange service.</value>
+  </data>
+  <data name="ExpectedSingleDataSourceFunction" xml:space="preserve">
+    <value>Expected a single data source access function.</value>
+  </data>
+  <data name="ExpectingMetadataToContainTypeInfoFor" xml:space="preserve">
+    <value>"Expecting Metadata to contain type info for '{0}'"</value>
+  </data>
+  <data name="Expression_CantGetExpression" xml:space="preserve">
+    <value>We can't get the expression for the specified value.</value>
+  </data>
+  <data name="Extensibility_CantReplaceBuiltin" xml:space="preserve">
+    <value>We are unable to overwrite built-in resource kinds.</value>
+  </data>
+  <data name="Extensibility_InvalidCredentialType" xml:space="preserve">
+    <value>The credential type isn't supported.</value>
+  </data>
+  <data name="Extensibility_MissingOrInvalidProperty" xml:space="preserve">
+    <value>A property '{0}' is missing or invalid for data source '{1}'.</value>
+  </data>
+  <data name="Extensibility_MissingOrInvalidResourceKind" xml:space="preserve">
+    <value>The data source kind is missing or invalid.</value>
+  </data>
+  <data name="Extensibility_NoAuthenticationTypes" xml:space="preserve">
+    <value>There weren't any authentication types specified for data source '{0}'.</value>
+  </data>
+  <data name="Extensibility_NoResources" xml:space="preserve">
+    <value>This library doesn't have any resources.</value>
+  </data>
+  <data name="Extensibility_NotAvailable" xml:space="preserve">
+    <value>We can only perform this operation while using a custom data connector.</value>
+  </data>
+  <data name="Extensibility_PropertiesNotSupported" xml:space="preserve">
+    <value>Custom properties are not supported for authentication type '{0}' (data source '{1}').</value>
+  </data>
+  <data name="Extensibility_PropertyInvalidType" xml:space="preserve">
+    <value>A property '{0}' has invalid type '{1}'.</value>
+  </data>
+  <data name="Extensibility_TestConnectionFailed" xml:space="preserve">
+    <value>OnTestConnection did not return true.</value>
+  </data>
+  <data name="Extensibility_UnknownAuthenticationType" xml:space="preserve">
+    <value>Invalid authentication type '{0}' for data source '{1}'.</value>
+  </data>
+  <data name="Extensibility_UnknownFieldType" xml:space="preserve">
+    <value>Unknown parameterized authentication field type '{0}' for data source '{1}</value>
+  </data>
+  <data name="Extension_MissingDataSourceParameter" xml:space="preserve">
+    <value>The data source function is missing a parameter named '{0}'.</value>
+  </data>
+  <data name="FabricCapacityExceeded" xml:space="preserve">
+    <value>Unable to complete the action because your organization's Fabric compute capacity has exceeded its limits. Try again later.</value>
+  </data>
+  <data name="FailedToCreateUniqueColumnName" xml:space="preserve">
+    <value>Unique column names could not be created with given name generator and options.</value>
+  </data>
+  <data name="FieldsSelector_FieldsSelectorValueExpectedError" xml:space="preserve">
+    <value>We expected a FieldsSelector value.</value>
+  </data>
+  <data name="FileAccessDenied" xml:space="preserve">
+    <value>Access is denied to file '{0}'.</value>
+  </data>
+  <data name="FileDirectoryNotFound" xml:space="preserve">
+    <value>We couldn't find the folder '{0}'.</value>
+  </data>
+  <data name="FileIOError" xml:space="preserve">
+    <value>We got the IO error '{0}' while trying to access the path '{1}'.</value>
+  </data>
+  <data name="FileLoadingException" xml:space="preserve">
+    <value>Loading assembly file '{0}' failed for data source type '{1}'</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>We couldn't find the file '{0}'.</value>
+  </data>
+  <data name="FilePathExpected" xml:space="preserve">
+    <value>The path '{0}' is a folder path. A file path is expected.</value>
+  </data>
+  <data name="FilePathInvalid" xml:space="preserve">
+    <value>The file name '{0}' contains invalid characters.</value>
+  </data>
+  <data name="FilePathTooLong" xml:space="preserve">
+    <value>The file name '{0}' is longer than the system-defined maximum length.</value>
+  </data>
+  <data name="File_CannotRetrieveAccessControlEntryTable" xml:space="preserve">
+    <value>Could not retrieve access control entries for '{0}'.</value>
+  </data>
+  <data name="File_CannotUnderstandAccessControlRule" xml:space="preserve">
+    <value>Could not understand access control rule.</value>
+  </data>
+  <data name="File_ExtensionMustMatchName" xml:space="preserve">
+    <value>The file to create must have a Extension that matches its Name.</value>
+  </data>
+  <data name="File_FileExists" xml:space="preserve">
+    <value>The file '{0}' already exists.</value>
+  </data>
+  <data name="File_NoPathInName" xml:space="preserve">
+    <value>The value for 'Name' must not contain a path.</value>
+  </data>
+  <data name="File_PathMustBeSubPath" xml:space="preserve">
+    <value>The file or folder to create must be a subpath of '{0}'.</value>
+  </data>
+  <data name="File_SetAttributeContentTypeTooLarge" xml:space="preserve">
+    <value>We don't support setting a file content-type attribute larger than 127 characters.</value>
+  </data>
+  <data name="File_SetAttributesNotSupported" xml:space="preserve">
+    <value>We don't support setting file attributes other than 'Directory'.</value>
+  </data>
+  <data name="File_SetAttributesNotSupported_All" xml:space="preserve">
+    <value>We don't support setting file attributes.</value>
+  </data>
+  <data name="File_SetAttributesNotSupported_But" xml:space="preserve">
+    <value>We don't support setting file attributes other than '{0}'.</value>
+  </data>
+  <data name="File_SetDatesNotSupported" xml:space="preserve">
+    <value>We don't support setting file creation, modification, or access times.</value>
+  </data>
+  <data name="File_SetFolderPathNotSupported" xml:space="preserve">
+    <value>We don't support setting the folder path.</value>
+  </data>
+  <data name="File_UpdateNotSupported" xml:space="preserve">
+    <value>This type of table update is not supported.</value>
+  </data>
+  <data name="FoldableFunction_MustReturnTableType" xml:space="preserve">
+    <value>A foldable function must have a return type that is a concrete table type.</value>
+  </data>
+  <data name="FoldingFailure" xml:space="preserve">
+    <value>We couldn't fold the expression to the data source. Please try a simpler expression.</value>
+  </data>
+  <data name="FormatValueDoesNotHaveComponent" xml:space="preserve">
+    <value>We couldn't convert the text value to {0} using the specified format. The format includes a {1} component.</value>
+  </data>
+  <data name="FormatValueUnknownFailure" xml:space="preserve">
+    <value>The format string is invalid.</value>
+  </data>
+  <data name="FunctionAlreadyEnumerated" xml:space="preserve">
+    <value>An enumeration function can only be invoked once.</value>
+  </data>
+  <data name="FunctionCannotBeInvoked" xml:space="preserve">
+    <value>The function does not support invocation.</value>
+  </data>
+  <data name="FunctionOperatesOnlyOnNonNegativeIntegers" xml:space="preserve">
+    <value>This function operates only on Unsigned values, but value {0} doesn't match the Unsigned pattern.</value>
+  </data>
+  <data name="FunctionScalarVectorMultipleEnumeration" xml:space="preserve">
+    <value>Vector functions passed to Function.ScalarVector may not enumerate their input table more than once.</value>
+  </data>
+  <data name="FunctionScalarVectorRowCountMismatch" xml:space="preserve">
+    <value>An operation was vectorized, but the length of the output did not match the length of the input.</value>
+  </data>
+  <data name="FunctionScalarVectorVectorFunctionSingleInput" xml:space="preserve">
+    <value>The vector function passed to Function.ScalarVector must have exactly one parameter.</value>
+  </data>
+  <data name="FuzzyUtilInvalidColumnKeyType" xml:space="preserve">
+    <value>We only support text columns for fuzzy join operations. The column '{0}' is not of type text.</value>
+  </data>
+  <data name="FuzzyUtilInvalidColumnKeysCount" xml:space="preserve">
+    <value>We expect the same number of columns to be selected in both tables.</value>
+  </data>
+  <data name="FuzzyUtilInvalidConcurrentRequestCount" xml:space="preserve">
+    <value>We support between {0} and {1} concurrent requests.</value>
+  </data>
+  <data name="FuzzyUtilInvalidFuzzyOptionArgument" xml:space="preserve">
+    <value>We were unable to process the request because an invalid fuzzy merge option was provided. Error: {0}</value>
+  </data>
+  <data name="FuzzyUtilInvalidTransformationTableColumnType" xml:space="preserve">
+    <value>We expect a type text column with the name '{0}' in the selected fuzzy transformation table.</value>
+  </data>
+  <data name="GenericCredentialError" xml:space="preserve">
+    <value>Access was denied.</value>
+  </data>
+  <data name="GenericInvalidOption" xml:space="preserve">
+    <value>'{0}' isn't a valid option for this function.</value>
+  </data>
+  <data name="GenericProvider_InvalidResourcePath" xml:space="preserve">
+    <value>The resource path is invalid.</value>
+  </data>
+  <data name="GenericProvidersNoneAuthLabel" xml:space="preserve">
+    <value>Default or Custom</value>
+  </data>
+  <data name="GenericProviders_EmptyConnectionString" xml:space="preserve">
+    <value>No properties were defined.</value>
+  </data>
+  <data name="GenericProviders_InvalidConnectionString" xml:space="preserve">
+    <value>The connection string is invalid. {0}</value>
+  </data>
+  <data name="GenericProviders_InvalidCredentialProperty" xml:space="preserve">
+    <value>The connection property '{0}' cannot be used in credentials.</value>
+  </data>
+  <data name="GenericProviders_InvalidSourceProperty" xml:space="preserve">
+    <value>The connection property '{0}' can only be provided using credentials.</value>
+  </data>
+  <data name="GenericProviders_PropertyNotSupported" xml:space="preserve">
+    <value>The connection property '{0}' isn't supported.</value>
+  </data>
+  <data name="GenericProviders_UnsupportedConnectionStringType" xml:space="preserve">
+    <value>The argument '{0}' was of type {1}, but we expected {2} or {3}.</value>
+  </data>
+  <data name="GenericProviders_UnsupportedConnectionStringValueType" xml:space="preserve">
+    <value>The value for property '{0}' was of type {1}, but we expected {2} or {3}</value>
+  </data>
+  <data name="GenericProviders_WindowsAlternateAuthNotSupported" xml:space="preserve">
+    <value>Windows alternate authentication is not supported for resource '{0}'.</value>
+  </data>
+  <data name="GenericUnsupported" xml:space="preserve">
+    <value>We attempted an unsupported operation while evaluating this request.</value>
+  </data>
+  <data name="GeographyFunctionArgumentError" xml:space="preserve">
+    <value>Geospatial function '{0}' requires its first argument to be a list of values of type '{1}'.</value>
+  </data>
+  <data name="GoogleAnalyticsChallengeTitle" xml:space="preserve">
+    <value>Google Account</value>
+  </data>
+  <data name="GoogleAnalyticsUnexpectedResponse" xml:space="preserve">
+    <value>We received unexpected data for a column of type '{0}'.</value>
+  </data>
+  <data name="GoogleAnalytics_Error_MeasureRequired" xml:space="preserve">
+    <value>Google Analytics requires that at least one measure be specified.</value>
+  </data>
+  <data name="Guid_FromFunction_NotConvertibleToGuid" xml:space="preserve">
+    <value>We couldn't convert to a guid.</value>
+  </data>
+  <data name="HDInsightFailed" xml:space="preserve">
+    <value>{0} failed to get contents from '{1}'. Status code: {2}, description: '{3}'.</value>
+  </data>
+  <data name="HDInsightFailedJsonException" xml:space="preserve">
+    <value>{0} failed to get contents from '{1}'. Json response couldn't be parsed: '{2}'.</value>
+  </data>
+  <data name="HDInsightFailedXmlException" xml:space="preserve">
+    <value>{0} failed to get contents from '{1}'. Xml response couldn't be parsed: '{2}'.</value>
+  </data>
+  <data name="HdfsEmptyUrl" xml:space="preserve">
+    <value>URL cannot be empty.</value>
+  </data>
+  <data name="HdfsFailed" xml:space="preserve">
+    <value>HDFS failed to get contents from '{0}'. Status code: {1}, description: '{2}'.</value>
+  </data>
+  <data name="HdfsFailedToResolveServer" xml:space="preserve">
+    <value>HDFS cannot connect to server '{0}'. {1}.</value>
+  </data>
+  <data name="HdfsFileStatusExpected" xml:space="preserve">
+    <value>HDFS: Response from server '{0}' was a JSON document that didn't match the expected structure.</value>
+  </data>
+  <data name="HdfsInvalidUrl" xml:space="preserve">
+    <value>The URL '{0}' is invalid.</value>
+  </data>
+  <data name="HtmlPageProgress" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="HttpCredentialsBasicAuthRequiresHttps" xml:space="preserve">
+    <value>Basic authentication credential can only be used with SSL.</value>
+  </data>
+  <data name="HttpCredentialsFeedKeyRequiresHttps" xml:space="preserve">
+    <value>Feed key credential can only be used with SSL.</value>
+  </data>
+  <data name="HttpCredentialsWebApiKeyOnlyUsedWithApiKeyName" xml:space="preserve">
+    <value>A web API key can only be specified when a web API key name is provided.</value>
+  </data>
+  <data name="HttpCredentialsWebApiKeyRequiresApiKeyName" xml:space="preserve">
+    <value>A web API key credential is required when a web API key name is provided.</value>
+  </data>
+  <data name="HttpResponseDetectionFailed" xml:space="preserve">
+    <value>We were unable to detect required payload information.</value>
+  </data>
+  <data name="IdentityProvider_NotSupported" xml:space="preserve">
+    <value>The specified identity provider is not supported.</value>
+  </data>
+  <data name="Identity_NotSupportedAtRuntime" xml:space="preserve">
+    <value>Identity expressions are not supported at runtime.</value>
+  </data>
+  <data name="IntrospectionNotAvailable" xml:space="preserve">
+    <value>Introspection functions aren't available in this context.</value>
+  </data>
+  <data name="InvalidArgument" xml:space="preserve">
+    <value>The argument value isn't valid.</value>
+  </data>
+  <data name="InvalidBinaryCodePage" xml:space="preserve">
+    <value>BinaryCodePage '{0}' is not supported. Valid value is between 0 and 65535.</value>
+  </data>
+  <data name="InvalidCellValue" xml:space="preserve">
+    <value>Invalid cell value '{0}'.</value>
+  </data>
+  <data name="InvalidComparerFormat" xml:space="preserve">
+    <value>The specified comparer doesn't have the correct format.</value>
+  </data>
+  <data name="InvalidCsvParameter" xml:space="preserve">
+    <value>The Csv.Document parameter '{0}' is invalid.</value>
+  </data>
+  <data name="InvalidCsvStyle" xml:space="preserve">
+    <value>The specified CsvStyle is invalid.</value>
+  </data>
+  <data name="InvalidDelimiterIndexParameter" xml:space="preserve">
+    <value>The specified index parameter is invalid.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>The specified email address is invalid.</value>
+  </data>
+  <data name="InvalidEnumValue" xml:space="preserve">
+    <value>The value for a '{0}' enumeration was not one of the allowed values: '{1}'.</value>
+  </data>
+  <data name="InvalidExcelWorkbookParameter" xml:space="preserve">
+    <value>The Excel.Workbook parameter '{0}' is invalid.</value>
+  </data>
+  <data name="InvalidFileTypeForInferSheetDimensionsParameter" xml:space="preserve">
+    <value>The Excel.Workbook parameter 'InferSheetDimensions' is only supported for Open XML Excel files (such as .xlsx), not for legacy Excel files (such as .xls).</value>
+  </data>
+  <data name="InvalidHeaderValueType" xml:space="preserve">
+    <value>The header with name '{0}' has a value type '{1}' that is invalid. Only DateTime, Logical, Number, and Text are supported.</value>
+  </data>
+  <data name="InvalidJoinAlgorithm" xml:space="preserve">
+    <value>The specified join algorithm isn't valid.</value>
+  </data>
+  <data name="InvalidJoinAlgorithmForJoinKind" xml:space="preserve">
+    <value>The specified join algorithm doesn't support the specified join kind.</value>
+  </data>
+  <data name="InvalidJoinKind" xml:space="preserve">
+    <value>The specified join kind isn't valid.</value>
+  </data>
+  <data name="InvalidJoinSide" xml:space="preserve">
+    <value>The specified join side isn't valid.</value>
+  </data>
+  <data name="InvalidMetadataDocument" xml:space="preserve">
+    <value>The feed's metadata document appears to be invalid. Error: {0}</value>
+  </data>
+  <data name="InvalidMissingFieldMode_ErrorOrUseNull" xml:space="preserve">
+    <value>The 'missingField' argument must be either MissingField.Error or MissingField.UseNull.</value>
+  </data>
+  <data name="InvalidOption" xml:space="preserve">
+    <value>'{0}' isn't a valid {1} option. Valid options are:
+{2}</value>
+  </data>
+  <data name="InvalidOptionValue" xml:space="preserve">
+    <value>The value for option '{0}' is invalid.</value>
+  </data>
+  <data name="InvalidOptionWithNoValidOptions" xml:space="preserve">
+    <value>'{0}' isn't a valid option for this function. Valid options are: (none)</value>
+  </data>
+  <data name="InvalidPermission" xml:space="preserve">
+    <value>We don't support this permission.</value>
+  </data>
+  <data name="InvalidQueryParameter" xml:space="preserve">
+    <value>We don't support query strings containing keys without values in this context.</value>
+  </data>
+  <data name="InvalidQuoteStyle" xml:space="preserve">
+    <value>The specified QuoteStyle is invalid.</value>
+  </data>
+  <data name="InvalidSalesforceApiVersion" xml:space="preserve">
+    <value>You specified an unsupported Salesforce API version {0}. Please specify a supported Salesforce API version.</value>
+  </data>
+  <data name="InvalidSalesforceLoginUri" xml:space="preserve">
+    <value>Uri '{0}' isn't a supported Salesforce.com login URI.</value>
+  </data>
+  <data name="InvalidSalesforceUri" xml:space="preserve">
+    <value>We were unable to get a valid instance URL from the Salesforce authentication server. The value received was {0}.</value>
+  </data>
+  <data name="InvalidTraceEventType" xml:space="preserve">
+    <value>Invalid trace level {0}.</value>
+  </data>
+  <data name="InvalidValueForOption" xml:space="preserve">
+    <value>Invalid value '{0}' for option '{1}'.</value>
+  </data>
+  <data name="IoError" xml:space="preserve">
+    <value>There was a network error while reading data from '{0}'. The read might succeed on a retry.</value>
+  </data>
+  <data name="JS_Error" xml:space="preserve">
+    <value>Something went wrong while executing the script: {0}.</value>
+  </data>
+  <data name="Join_LocalEvaluationWithKeyEqualityComparersNotSupported" xml:space="preserve">
+    <value>Local evaluation of Table.Join or Table.NestedJoin with key equality comparers is not supported.</value>
+  </data>
+  <data name="JsonDuplicateNameError" xml:space="preserve">
+    <value>Duplicate name '{0}'.</value>
+  </data>
+  <data name="JsonExtraCharactersAtTheEnd" xml:space="preserve">
+    <value>We found extra characters at the end of the JSON input.</value>
+  </data>
+  <data name="JsonExtraCloseBraceError" xml:space="preserve">
+    <value>We found an extra closing brace '{0}' in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidBooleanError" xml:space="preserve">
+    <value>We found an invalid boolean in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidCharacterBeforeRecordError" xml:space="preserve">
+    <value>We found an invalid character between object key and value in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidEscapeSequence" xml:space="preserve">
+    <value>We found an invalid escape sequence in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidHexDigitError" xml:space="preserve">
+    <value>We found an invalid hex digit in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidJsonTextError" xml:space="preserve">
+    <value>We found an invalid text in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidListFormatError" xml:space="preserve">
+    <value>We found an invalid array in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidNumberError" xml:space="preserve">
+    <value>We found an invalid number in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidRecordFormatError" xml:space="preserve">
+    <value>We found an invalid object in the JSON input.</value>
+  </data>
+  <data name="JsonInvalidRecordKeyError" xml:space="preserve">
+    <value>We found an invalid object key in the JSON input.</value>
+  </data>
+  <data name="JsonLiteralUnsupported" xml:space="preserve">
+    <value>We found an invalid value in the JSON input. Only 'true', 'false', or 'null' are supported.</value>
+  </data>
+  <data name="JsonTooLongNumericLiteralError" xml:space="preserve">
+    <value>We found a numeric literal that is too long in the JSON input.</value>
+  </data>
+  <data name="JsonUnexpectedEndOfContent" xml:space="preserve">
+    <value>We expected {0}, but found end of content at position {1}.</value>
+  </data>
+  <data name="JsonUnexpectedToken" xml:space="preserve">
+    <value>We found an unexpected character in the JSON input.</value>
+  </data>
+  <data name="KeyEqualityComparersNotSupportedForFuzzyJoins" xml:space="preserve">
+    <value>We don't support equality comparers for fuzzy joins.</value>
+  </data>
+  <data name="Lines_Length_Invalid" xml:space="preserve">
+    <value>A length must be greater than or equal to zero.</value>
+  </data>
+  <data name="Lines_LineTooLong" xml:space="preserve">
+    <value>We can't read text files with lines longer than {0} characters.</value>
+  </data>
+  <data name="Lines_LineTooLongOom" xml:space="preserve">
+    <value>We ran out of memory when we tried to read a line of text with more than {0} characters.</value>
+  </data>
+  <data name="Lines_Position_Invalid" xml:space="preserve">
+    <value>A position must be numeric and greater than or equal to the previous position.</value>
+  </data>
+  <data name="Lines_RangeLength_OutOfRange" xml:space="preserve">
+    <value>A range length cannot be negative.</value>
+  </data>
+  <data name="Lines_RangeList_Invalid" xml:space="preserve">
+    <value>A range must consist of an offset and a length.</value>
+  </data>
+  <data name="Lines_RangeOffset_OutOfRange" xml:space="preserve">
+    <value>A range offset cannot be negative.</value>
+  </data>
+  <data name="ListComparisonCriteria_ListComparisonCriteriaValueExpectedError" xml:space="preserve">
+    <value>We expected a ListComparisonCriteria value.</value>
+  </data>
+  <data name="ListParallelInvoke_ConcurrencyMustBePositive" xml:space="preserve">
+    <value>The concurrency argument must be greater than 0.</value>
+  </data>
+  <data name="ListReplacementOperations_ListReplacementOperationsValueExpectedError" xml:space="preserve">
+    <value>We expected a ListReplacementOperations value.</value>
+  </data>
+  <data name="List_CountTooLarge" xml:space="preserve">
+    <value>The number of items in the list is too large.  Buffered lists can support up to {0} items and streamed lists can support up to {1} items.</value>
+  </data>
+  <data name="List_IndexCannotBeNegative" xml:space="preserve">
+    <value>The index cannot be negative.</value>
+  </data>
+  <data name="List_Normalize_Count_Invalid" xml:space="preserve">
+    <value>The specified column count is invalid.</value>
+  </data>
+  <data name="List_Normalizer_TooManyColumns" xml:space="preserve">
+    <value>There were more columns in the result than expected.</value>
+  </data>
+  <data name="Logical_NotConvertibleToLogical" xml:space="preserve">
+    <value>We couldn't convert to Logical.</value>
+  </data>
+  <data name="MalformedFormat_Truncation" xml:space="preserve">
+    <value>We couldn't parse your format string as it appears to be truncated.</value>
+  </data>
+  <data name="MalformedQueryString" xml:space="preserve">
+    <value>We couldn't parse your query string because it was improperly formatted.</value>
+  </data>
+  <data name="MaxColumnNameLengthCantBeNegative" xml:space="preserve">
+    <value>Maximum length of column names can't be negative.</value>
+  </data>
+  <data name="Microsoft_OAuth" xml:space="preserve">
+    <value>Microsoft account</value>
+  </data>
+  <data name="ModuleCannotBeReplaced" xml:space="preserve">
+    <value>The module named '{0}' cannot be replaced.</value>
+  </data>
+  <data name="ModuleDisabled" xml:space="preserve">
+    <value>The module named '{0}' has been disabled in this context.</value>
+  </data>
+  <data name="ModuleLoadFailed" xml:space="preserve">
+    <value>We failed to load the module named '{0}'.</value>
+  </data>
+  <data name="ModuleMultipleSourceFiles" xml:space="preserve">
+    <value>Found multiple source files in extension: {0} and {1}.</value>
+  </data>
+  <data name="ModuleNameDuplicate" xml:space="preserve">
+    <value>A module named '{0}' has already been loaded.</value>
+  </data>
+  <data name="ModuleNameMismatch" xml:space="preserve">
+    <value>Expected a module named '{0}'; got a module named '{1}'.</value>
+  </data>
+  <data name="ModuleNameNotFound" xml:space="preserve">
+    <value>A module named '{0}' hasn't been loaded.</value>
+  </data>
+  <data name="MqUnsupportedQueryOption" xml:space="preserve">
+    <value>This MQ function doesn't support the query option '{0}' with value '{1}'.</value>
+  </data>
+  <data name="Mq_ColumnNotWritable" xml:space="preserve">
+    <value>Column '{0}' cannot be set on an outgoing MQ message.</value>
+  </data>
+  <data name="Mq_MessageDataMissing" xml:space="preserve">
+    <value>Missing required column 'MessageData'.</value>
+  </data>
+  <data name="Mq_MessageInvalidValue" xml:space="preserve">
+    <value>The value '{0}' is invalid for column '{1}'.</value>
+  </data>
+  <data name="Mq_NoMessagesToSend" xml:space="preserve">
+    <value>No messages to send.</value>
+  </data>
+  <data name="MultiSubnetFailover_DotNetFourFive" xml:space="preserve">
+    <value>You must have at least .NET 4.5 installed in order to use the MultiSubnetFailover option.</value>
+  </data>
+  <data name="MySqlFormatException" xml:space="preserve">
+    <value>Data on the server had an unexpected format. It might be possible to fix this by setting the 'OldGuids' option to true.</value>
+  </data>
+  <data name="NativeQuery_NoParameters" xml:space="preserve">
+    <value>This query doesn't support parameters.</value>
+  </data>
+  <data name="NativeQuery_NotSupported" xml:space="preserve">
+    <value>Native queries aren't supported by this value.</value>
+  </data>
+  <data name="NativeQuery_NotSupported_CrossDatabaseFolding" xml:space="preserve">
+    <value>Native queries are unsupported when the EnableCrossDatabaseFolding option is true.</value>
+  </data>
+  <data name="NativeQuery_NullSchema" xml:space="preserve">
+    <value>This native database query isn't currently supported.</value>
+  </data>
+  <data name="NativeQuery_TypeNotSupported" xml:space="preserve">
+    <value>This native database query returned a type which isn't currently supported. Column: '{0}'.</value>
+  </data>
+  <data name="NativeQuery_Unspecified" xml:space="preserve">
+    <value>The native query wasn't properly specified.</value>
+  </data>
+  <data name="NativeStatement_NoParameters" xml:space="preserve">
+    <value>This statement doesn't support parameters.</value>
+  </data>
+  <data name="NewerCLRNeeded" xml:space="preserve">
+    <value>This feature requires installing a newer version of the .NET framework. To use it, you must install at least '{0}': {1}</value>
+  </data>
+  <data name="NoMetadataDocument" xml:space="preserve">
+    <value>The feed doesn't have a metadata document. This isn't supported.</value>
+  </data>
+  <data name="NoOdacDriverIsFound" xml:space="preserve">
+    <value>No ODAC driver is found on the system. Please visit {0} to install the provider.</value>
+  </data>
+  <data name="NoWebContentsWithFileAndImpersonation" xml:space="preserve">
+    <value>The file URL provided cannot be used with Web Import and the selected credential type. Try using the File Import instead.</value>
+  </data>
+  <data name="NonDomainUserCannotUseSAMName" xml:space="preserve">
+    <value>A non-domain user cannot be specified with a Security Account Manager (SAM) name. These names have the form: domain\user.</value>
+  </data>
+  <data name="NotImplementedFunction_NotImplemented" xml:space="preserve">
+    <value>Value was not specified.</value>
+  </data>
+  <data name="NullCharNotallowedInUrl" xml:space="preserve">
+    <value>Null characters aren't allowed in a Url.</value>
+  </data>
+  <data name="NumberOutOfRangeByte" xml:space="preserve">
+    <value>The number is out of range of a byte value.</value>
+  </data>
+  <data name="NumberOutOfRangeDecimal" xml:space="preserve">
+    <value>The number is out of range of a decimal value.</value>
+  </data>
+  <data name="NumberOutOfRangeInt16" xml:space="preserve">
+    <value>The number is out of range of a 16 bit integer value.</value>
+  </data>
+  <data name="NumberOutOfRangeInt32" xml:space="preserve">
+    <value>The number is out of range of a 32 bit integer value.</value>
+  </data>
+  <data name="NumberOutOfRangeInt64" xml:space="preserve">
+    <value>The number is out of range of a 64 bit integer value.</value>
+  </data>
+  <data name="NumberOutOfRangeInt8" xml:space="preserve">
+    <value>The number is out of range of an 8 bit integer value.</value>
+  </data>
+  <data name="Number_FormatFunction_ExpectedIntegerValue" xml:space="preserve">
+    <value>We expected an integer value.</value>
+  </data>
+  <data name="Number_FromFunction_NotConvertibleToNumber" xml:space="preserve">
+    <value>We couldn't convert to Number.</value>
+  </data>
+  <data name="Number_RandBetween_TopLessThanBottom" xml:space="preserve">
+    <value>The 'top' argument cannot be less than 'bottom'.</value>
+  </data>
+  <data name="OAuth1_UnsupportedType" xml:space="preserve">
+    <value>We don't support this hash type for OAuth 1.0.</value>
+  </data>
+  <data name="OAuth_InvalidAadSettings" xml:space="preserve">
+    <value>The AAD settings for this operation are invalid.</value>
+  </data>
+  <data name="OAuth_NotSupported" xml:space="preserve">
+    <value>This data source does not support OAuth-compatible authentication.</value>
+  </data>
+  <data name="OAuth_RequiresClientApplication" xml:space="preserve">
+    <value>This data source requires a client application to be specified.</value>
+  </data>
+  <data name="ODataAnnotationInvalidPatternEmptySegment" xml:space="preserve">
+    <value>We don't support the pattern '{0}' for matching an annotation. The pattern must not contain a namespace or name segment that is empty.</value>
+  </data>
+  <data name="ODataAnnotationInvalidPatternMissingDot" xml:space="preserve">
+    <value>We don't support the pattern '{0}' for matching an annotation. The pattern must contain at least one '.' separating the namespace and the name segment.</value>
+  </data>
+  <data name="ODataAnnotationInvalidPatternWildCardInSegment" xml:space="preserve">
+    <value>We don't support the pattern '{0}' for matching an annotation. The pattern must not contain '' as part of a segment.</value>
+  </data>
+  <data name="ODataAnnotationInvalidPatternWildCardMustBeInLastSegment" xml:space="preserve">
+    <value>We don't support the pattern '{0}' for matching an annotation. The '' must be in the last segment of the pattern.</value>
+  </data>
+  <data name="ODataBatchError" xml:space="preserve">
+    <value>An error was encountered while reading the OData batch response.</value>
+  </data>
+  <data name="ODataBatchInnerPayloadKindNotSupported" xml:space="preserve">
+    <value>We failed to parse the OData batch response. There is no support for reading an inner batch payload of kind '{0}'; only BinaryValue, Collection, Error, Property and Value are supported.</value>
+  </data>
+  <data name="ODataBatchMultiPartMimeContentTypeHeaderInvalid" xml:space="preserve">
+    <value>The OData batch response contained an invalid multipart mime Content-Type header '{0}' without a boundary part specified</value>
+  </data>
+  <data name="ODataBatchPayloadStateNotSupported" xml:space="preserve">
+    <value>We failed to parse the OData batch response. There is no support for reading an OData batch payload that has a '{0}' part;  Only an Operation part is supported.</value>
+  </data>
+  <data name="ODataBatchSupportsOnlyOneInnerPayload" xml:space="preserve">
+    <value>We failed to parse the OData batch response. A batch response must only contain a single inner payload.</value>
+  </data>
+  <data name="ODataCannotDeleteSingleton" xml:space="preserve">
+    <value>Singleton entities can't be deleted.</value>
+  </data>
+  <data name="ODataCannotDetermineEntityType" xml:space="preserve">
+    <value>Cannot get feed for '{0}', as we could not resolve its entity type from metadata. </value>
+  </data>
+  <data name="ODataCannotReadWrittenData" xml:space="preserve">
+    <value>Write seemed successful, but we couldn't retrieve the written data.</value>
+  </data>
+  <data name="ODataCannotWriteData" xml:space="preserve">
+    <value>We couldn't write your changes to the data source.</value>
+  </data>
+  <data name="ODataCommonError" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="ODataConstantNotSupported" xml:space="preserve">
+    <value>We do not know how to send {0} parameters to OData services.</value>
+  </data>
+  <data name="ODataDeleteRestriction" xml:space="preserve">
+    <value>We can't delete this data because of restrictions in the source.</value>
+  </data>
+  <data name="ODataDuplicateProperty" xml:space="preserve">
+    <value>We don't support duplicate properties in the feed.</value>
+  </data>
+  <data name="ODataFailedToParseODataResult" xml:space="preserve">
+    <value>We couldn't parse OData response result.  Error: {0}</value>
+  </data>
+  <data name="ODataFeedContainsNoServiceUri" xml:space="preserve">
+    <value>OData: The URL '{0}' points to a(n) {1} but doesn't contain a base service URL, therefore it cannot be consumed.  Please retry with a service URL instead.</value>
+  </data>
+  <data name="ODataFunctionParameterCollectionTypeMismatch" xml:space="preserve">
+    <value>Error when converting value to OData parameter. A list was expected but the actual kind is '{0}'</value>
+  </data>
+  <data name="ODataFunctionParameterConversionNotSupported" xml:space="preserve">
+    <value>Error when converting value to OData parameter. The type '{0}' cannot be converted</value>
+  </data>
+  <data name="ODataFunctionParameterRecordTypeMismatch" xml:space="preserve">
+    <value>Error when converting value to OData parameter. A record was expected but the actual kind is '{0}'</value>
+  </data>
+  <data name="ODataFunctionParameterRecordTypeMissingProperties" xml:space="preserve">
+    <value>Error when converting value to OData parameter. The record is missing the following properties '{0}' for complex type '{1}'</value>
+  </data>
+  <data name="ODataImplementationUnsupportedOption" xml:space="preserve">
+    <value>OData implementation '{0}' does not support option '{1}'</value>
+  </data>
+  <data name="ODataInsertRestriction" xml:space="preserve">
+    <value>We can't insert this data because of restrictions in the source.</value>
+  </data>
+  <data name="ODataInvalidQueryOption" xml:space="preserve">
+    <value>OData.Feed custom query options cannot start with '$'.</value>
+  </data>
+  <data name="ODataInvalidReaderState" xml:space="preserve">
+    <value>We detected an invalid reader state '{0}' when processing request '{1}'.</value>
+  </data>
+  <data name="ODataInvalidUriError" xml:space="preserve">
+    <value>OData: The given URL neither points to an OData service or a feed: '{0}'.</value>
+  </data>
+  <data name="ODataJsonLightContextUriInvalid" xml:space="preserve">
+    <value>The odata.context url '{0}' is invalid</value>
+  </data>
+  <data name="ODataJsonLightContextUriParserUnableToConvertEdmTypeToTypeReference" xml:space="preserve">
+    <value>We were unable to convert EdmType '{0}' to an IEdmTypeReference</value>
+  </data>
+  <data name="ODataJsonLightContextUriParserUnableToResolveByTypeName" xml:space="preserve">
+    <value>We were unable to resolve the type name '{0}' to an EdmType</value>
+  </data>
+  <data name="ODataMetadataDuplicatePropertyNames" xml:space="preserve">
+    <value>The type {0} has conflicting definitions for the property {1}.</value>
+  </data>
+  <data name="ODataMetadataDuplicatePropertyNamesUnknownTypeName" xml:space="preserve">
+    <value>Some type has conflicting definitions for the property {0}.</value>
+  </data>
+  <data name="ODataMissingProperty" xml:space="preserve">
+    <value>We expected a property '{0}', but the OData service omitted it from the response data. This can occur for a number of reasons and does not necessarily imply that the data does not exist or is of a default value.</value>
+  </data>
+  <data name="ODataNavigationPropertyWithoutUrl" xml:space="preserve">
+    <value>We were unable to compute or parse a URL for this navigation property.</value>
+  </data>
+  <data name="ODataNavigationPropertyWithoutUrlWithMessage" xml:space="preserve">
+    <value>We were unable to compute or parse a URL for this navigation property. Error: {0}</value>
+  </data>
+  <data name="ODataNonTerminatingContextUrl" xml:space="preserve">
+    <value>We cannot interpret the context URL; the recursive expansion of the path '{0}' is not well-defined.</value>
+  </data>
+  <data name="ODataOptionOnlySupportedInVersion" xml:space="preserve">
+    <value>The option '{0}' is only supported with OData Version {1}.</value>
+  </data>
+  <data name="ODataQueryTooLong" xml:space="preserve">
+    <value>The query on the OData source is too long to fold into a valid OData query URI.</value>
+  </data>
+  <data name="ODataServiceDocumentCouldNotBeAccessed" xml:space="preserve">
+    <value>The OData service URL points to an inaccessible or unparsable service document: '{0}'.</value>
+  </data>
+  <data name="ODataServiceDocumentCouldNotBeParsed" xml:space="preserve">
+    <value>The OData service URL points to an unparsable service document. Error: {0}</value>
+  </data>
+  <data name="ODataSpatialTypeIncorrectFormat" xml:space="preserve">
+    <value>We couldn't understand the provided spatial value.</value>
+  </data>
+  <data name="ODataTwoHeaderOptions" xml:space="preserve">
+    <value>You cannot specify 'Headers' as both a parameter and an option.</value>
+  </data>
+  <data name="ODataUnknownOptionType" xml:space="preserve">
+    <value>An OData.Feed requires the option parameter to be a record or logical value.</value>
+  </data>
+  <data name="ODataUnsupportedFormat" xml:space="preserve">
+    <value>OData: The format '{0}' is not supported.</value>
+  </data>
+  <data name="ODataUnsupportedPayload" xml:space="preserve">
+    <value>The OData result is of an unsupported payload format: '{0}'.</value>
+  </data>
+  <data name="ODataUnsupportedUri" xml:space="preserve">
+    <value>OData: The supplied URI isn't supported: '{0}'.</value>
+  </data>
+  <data name="ODataUpdateRestriction" xml:space="preserve">
+    <value>We can't update this data because of restrictions in the source.</value>
+  </data>
+  <data name="ODataVersion2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ODataVersion3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ODataVersion3And4" xml:space="preserve">
+    <value>3 and 4</value>
+  </data>
+  <data name="ODataVersion4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="OdbcChallengeTitle" xml:space="preserve">
+    <value>ODBC driver</value>
+  </data>
+  <data name="OdbcConnectionPoolingInitError" xml:space="preserve">
+    <value>We couldn't create a connection pool ({0}).</value>
+  </data>
+  <data name="OdbcDataSourceInvalidSqlCapability" xml:space="preserve">
+    <value>The value provided for SQL capability '{0}' in Odbc.DataSource is invalid.</value>
+  </data>
+  <data name="OdbcDataSourceUnknownNamedOption" xml:space="preserve">
+    <value>The provided options are not valid.</value>
+  </data>
+  <data name="OdbcDataSourceUnknownSqlCapability" xml:space="preserve">
+    <value>The provided options for SqlCapabilities are not valid.</value>
+  </data>
+  <data name="OdbcErrorWithNoDiagnosticRecord" xml:space="preserve">
+    <value>An error occurred but no ODBC error information was available.</value>
+  </data>
+  <data name="OdbcImplicitTypeConversionDuplicate" xml:space="preserve">
+    <value>An implicit conversion mapping was specified more than once.</value>
+  </data>
+  <data name="OdbcInvalidDecimalValue" xml:space="preserve">
+    <value>The ODBC driver returned a decimal value for column '{0}' that we couldn't understand or is out of range.</value>
+  </data>
+  <data name="OdbcInvalidParameterType" xml:space="preserve">
+    <value>ODBC parameters do not support {0} values.</value>
+  </data>
+  <data name="OdbcInvalidSQLGetInfoValue" xml:space="preserve">
+    <value>The ODBC driver returned an invalid value '{0}' for the info of type '{1}'.</value>
+  </data>
+  <data name="OdbcInvalidValue" xml:space="preserve">
+    <value>The ODBC driver returned an invalid value.</value>
+  </data>
+  <data name="OdbcMismatchArchitectureInX64App" xml:space="preserve">
+    <value>The specified DSN contains an architecture mismatch between the Driver (32-bit) and Application (64-bit)</value>
+  </data>
+  <data name="OdbcMismatchArchitectureInX86App" xml:space="preserve">
+    <value>The specified DSN contains an architecture mismatch between the Driver (64-bit) and Application (32-bit)</value>
+  </data>
+  <data name="OdbcNoParameterValue" xml:space="preserve">
+    <value>Records specifying ODBC parameter properties must contain a 'Value' property.</value>
+  </data>
+  <data name="OdbcNoneAuth" xml:space="preserve">
+    <value>Don't specify any credentials or only connection string properties.</value>
+  </data>
+  <data name="OdbcParametersMustBeList" xml:space="preserve">
+    <value>The parameters value must be a list.</value>
+  </data>
+  <data name="OdbcSqlAuth" xml:space="preserve">
+    <value>Use a username and password to access a data source with an ODBC driver.</value>
+  </data>
+  <data name="OdbcWindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access a data source with an ODBC driver.</value>
+  </data>
+  <data name="Odbc_InvalidConnectionAttributes" xml:space="preserve">
+    <value>We did not understand the provided ODBC connection attributes.</value>
+  </data>
+  <data name="Odbc_InvalidDriverName" xml:space="preserve">
+    <value>The 'Driver' property with value '{0}' doesn't correspond to an installed ODBC driver.</value>
+  </data>
+  <data name="Odbc_InvalidLimitClauseKind" xml:space="preserve">
+    <value>The specified ODBC LimitClauseKind is not supported.</value>
+  </data>
+  <data name="Odbc_InvalidSQLGetInfoOverride" xml:space="preserve">
+    <value>The specified SQLGetInfo override is not supported.</value>
+  </data>
+  <data name="Odbc_MissingDriver32bit" xml:space="preserve">
+    <value>The ODBC 32-bit driver '{0}' could not be found. To download client software for this driver, visit: {1}</value>
+  </data>
+  <data name="Odbc_MissingDriver64bit" xml:space="preserve">
+    <value>The ODBC 64-bit driver '{0}' could not be found. To download client software for this driver, visit: {1}</value>
+  </data>
+  <data name="Odbc_NoSupportTopAndLimitClauseKind" xml:space="preserve">
+    <value>We don't support using 'LimitClauseKind' and 'SupportTop' options together.</value>
+  </data>
+  <data name="Odbc_NoTableAvailable" xml:space="preserve">
+    <value>We can't find any tables or views from this ODBC data source.</value>
+  </data>
+  <data name="Odbc_SetQueryNoPooling" xml:space="preserve">
+    <value>You cannot use SetQuery for this connection without connection pooling.</value>
+  </data>
+  <data name="OleDbCellBadAccessor" xml:space="preserve">
+    <value>The cell did not correctly request data from the provider.</value>
+  </data>
+  <data name="OleDbCellCantConvertValue" xml:space="preserve">
+    <value>The provider could not convert the cell to the type requested.</value>
+  </data>
+  <data name="OleDbCellCantCreate" xml:space="preserve">
+    <value>The provider was unable to return data into the cell.</value>
+  </data>
+  <data name="OleDbCellDataOverflow" xml:space="preserve">
+    <value>Data in the cell overflowed the requested type.</value>
+  </data>
+  <data name="OleDbCellSignMismatch" xml:space="preserve">
+    <value>The provider could not store signed data into an unsigned cell.</value>
+  </data>
+  <data name="OleDbCellTruncated" xml:space="preserve">
+    <value>The data in the cell was truncated by the provider.</value>
+  </data>
+  <data name="OleDbCellUnavailable" xml:space="preserve">
+    <value>The provider could not determine the value.</value>
+  </data>
+  <data name="OleDbCellUnknownStatus" xml:space="preserve">
+    <value>The provider returned an unknown error for the cell.</value>
+  </data>
+  <data name="OleDbChallengeTitle" xml:space="preserve">
+    <value>OLEDB provider</value>
+  </data>
+  <data name="OleDbMsdaSqlNotSupported" xml:space="preserve">
+    <value>The MSDASQL provider is not supported. Data from ODBC can be retrieved using the Odbc.Query or Odbc.DataSource functions.</value>
+  </data>
+  <data name="OleDbMultipleMetadataValuesError" xml:space="preserve">
+    <value>The provider {0} returned invalid metadata.</value>
+  </data>
+  <data name="OleDbNoneAuth" xml:space="preserve">
+    <value>Don't specify any credentials or only connection string properties.</value>
+  </data>
+  <data name="OleDbOlapNotSupported" xml:space="preserve">
+    <value>OleDb.DataSource does not currently support multidimensional data sources.</value>
+  </data>
+  <data name="OleDbSqlAuth" xml:space="preserve">
+    <value>Use a username and password to access a data source with an OLE DB provider.</value>
+  </data>
+  <data name="OleDbWindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access a data source with an OLE DB provider.</value>
+  </data>
+  <data name="Oledb_ProviderPropertyRequiredError" xml:space="preserve">
+    <value>The connection property Provider must be specified.</value>
+  </data>
+  <data name="OnlyAnonymousSupported" xml:space="preserve">
+    <value>Driver '{0}' supports only anonymous credentials.</value>
+  </data>
+  <data name="OpenApiApiAuthInFieldMustBeQueryOrHeader" xml:space="preserve">
+    <value>Invalid value {0} in "In" field. Accepted values are query and header.</value>
+  </data>
+  <data name="OpenApiApiKeyNotSupportedInHeader" xml:space="preserve">
+    <value>Api keys in header are not supported.</value>
+  </data>
+  <data name="OpenApiArrayTypeMustHaveItems" xml:space="preserve">
+    <value>Open API Array type does not have items property defined.</value>
+  </data>
+  <data name="OpenApiAuthNotSupported" xml:space="preserve">
+    <value>{0} security is not supported for Open API.</value>
+  </data>
+  <data name="OpenApiCollectionFormatNotSupported" xml:space="preserve">
+    <value>{0} collection format is not supported.</value>
+  </data>
+  <data name="OpenApiContentTypeNotSupported" xml:space="preserve">
+    <value>The content type is not supported.</value>
+  </data>
+  <data name="OpenApiCyclicallyDefinedTypeCantBeCreated" xml:space="preserve">
+    <value>Cyclically defined type can not be created</value>
+  </data>
+  <data name="OpenApiDuplicateOperationIds" xml:space="preserve">
+    <value>Duplicate operationId {0} found.  Multiple operations with the same operationId are not allowed.</value>
+  </data>
+  <data name="OpenApiHostNotDefined" xml:space="preserve">
+    <value>Host name is not defined in the Open API document.</value>
+  </data>
+  <data name="OpenApiObjectTypeOnlyPermittedInBodyParameterItem" xml:space="preserve">
+    <value>The 'Object' type is only permitted in a 'body' ParameterItem.</value>
+  </data>
+  <data name="OpenApiParameterTypeNotSupported" xml:space="preserve">
+    <value>{0} parameter type is not supported.</value>
+  </data>
+  <data name="OpenApiReferenceDefinitionNotFound" xml:space="preserve">
+    <value>Referenced definition {0} could not be found. Expected format '#/XXXXX/XXXX'</value>
+  </data>
+  <data name="OpenApiReferenceNotTextType" xml:space="preserve">
+    <value>Reference value is of Type {0}, and is expected to be of type Text.</value>
+  </data>
+  <data name="OpenApiSecurityDefinitionNotDefined" xml:space="preserve">
+    <value>The referenced security definition is not defined in the Open API document.</value>
+  </data>
+  <data name="OpenApiSecurityDefinitionNotFound" xml:space="preserve">
+    <value>{0} security definition is not defined in the Open API document.</value>
+  </data>
+  <data name="OpenApiUnsupportedParameterPropertyIn" xml:space="preserve">
+    <value>Unsupported Parameter property "In". Value: {0}</value>
+  </data>
+  <data name="OptionNotSupportedInImplementation" xml:space="preserve">
+    <value>The option '{0}' with value '{1}' is not supported in implementation '{2}'.</value>
+  </data>
+  <data name="OptionOnlySupportedInImplementation" xml:space="preserve">
+    <value>The option '{0}' is only supported in implementation '{1}'.</value>
+  </data>
+  <data name="OptionsRecord_Unsupported" xml:space="preserve">
+    <value>'{0}' doesn't support the option '{1}'.</value>
+  </data>
+  <data name="OptionsRecord_UnsupportedKey" xml:space="preserve">
+    <value>We don't support the option '{0}'.</value>
+  </data>
+  <data name="PageReader_UnsupportedShape" xml:space="preserve">
+    <value>We cannot return the data produced by this query because of its complexity.</value>
+  </data>
+  <data name="Pattern_ValueDidNotMatchPattern" xml:space="preserve">
+    <value>The value didn't match the specified pattern.</value>
+  </data>
+  <data name="Percentile_MixedType" xml:space="preserve">
+    <value>List.Percentile requires a list where all the values have the same type or are null.</value>
+  </data>
+  <data name="Percentile_ProbabilityOutOfRange" xml:space="preserve">
+    <value>Percentile values must be between 0.0 and 1.0, inclusive.</value>
+  </data>
+  <data name="Percentile_UnsupportedType" xml:space="preserve">
+    <value>List.Percentile requires a list of dates, datetimes, datetimezones, durations, numbers or times.</value>
+  </data>
+  <data name="PivotColumn_NestedData_Error" xml:space="preserve">
+    <value>We cannot apply a Pivot operation over a table that contains columns with nested data. Please remove those columns first.</value>
+  </data>
+  <data name="PrivateAdoNetDriverMissingAssemblyMessage" xml:space="preserve">
+    <value>This error could've been the result of provider-specific client software being required, but missing on this computer. Loading assembly from: {0}</value>
+  </data>
+  <data name="R_BrokenTimeDiff" xml:space="preserve">
+    <value>We cannot convert an R TimeDiff object to a Value.</value>
+  </data>
+  <data name="R_DataTypeNotSupported" xml:space="preserve">
+    <value>We cannot convert this value from its .RData representation.</value>
+  </data>
+  <data name="R_DuplicateColumnNames" xml:space="preserve">
+    <value>We cannot convert the input due to duplicate column names: {0}</value>
+  </data>
+  <data name="ReadingFromProviderError" xml:space="preserve">
+    <value>An error happened while reading data from the provider: '{0}'</value>
+  </data>
+  <data name="RecordValue_New_MismatchedKeysAndValues" xml:space="preserve">
+    <value>{0} keys were specified, but {1} values were provided.</value>
+  </data>
+  <data name="RelationalAlgebra_JoinMustHaveSameColumnCountAndType" xml:space="preserve">
+    <value>A join operation requires the same number and type of columns for each key.</value>
+  </data>
+  <data name="RelationalAlgebra_JoinMustNotHaveColumnOverlap" xml:space="preserve">
+    <value>A join operation cannot result in a table with duplicate column names ("{0}").</value>
+  </data>
+  <data name="RelativePositionTypeDescription" xml:space="preserve">
+    <value>Indicates whether indexing should be done from the start or end of the input.</value>
+  </data>
+  <data name="RenameOperations_RenameOperationsValueExpectedError" xml:space="preserve">
+    <value>We expected a RenameOperations value.</value>
+  </data>
+  <data name="RequestFailedUsingDifferentVersions" xml:space="preserve">
+    <value>OData Version: {0}, Error: {1}</value>
+  </data>
+  <data name="RequestFailedWithStatusCode" xml:space="preserve">
+    <value>{0}: Request failed ({1}): {2}</value>
+  </data>
+  <data name="RequestFailedWithoutStatusCode" xml:space="preserve">
+    <value>{0}: Request failed: {1}</value>
+  </data>
+  <data name="RequestRedirectLocationMissing" xml:space="preserve">
+    <value>The server responded with a redirection status code but did not provide a 'location' header.</value>
+  </data>
+  <data name="RequestRedirectionMaximumReach" xml:space="preserve">
+    <value>The maximum number of redirections allowed was reached.</value>
+  </data>
+  <data name="RequestRedirectionProtocolError" xml:space="preserve">
+    <value>We cannot handle redirect from HTTP/HTTPS protocols to other dissimilar ones.</value>
+  </data>
+  <data name="ResourceAlreadyRegistered" xml:space="preserve">
+    <value>The resource kind '{0}' has already been registered.</value>
+  </data>
+  <data name="Resource_AttachmentType_NotSupported" xml:space="preserve">
+    <value>The given attachment type is not yet supported. Attachment Name: {0}.</value>
+  </data>
+  <data name="Resource_AutoDiscoverService_Failed" xml:space="preserve">
+    <value>We were unable to contact the Microsoft Exchange Autodiscover Service. Please make sure the Autodiscover Service is properly set up and your credential is valid.</value>
+  </data>
+  <data name="Resource_AutoDiscoverService_GetEwsUrl_Failed" xml:space="preserve">
+    <value>We failed to get the Exchange Server address from the Autodiscover service.</value>
+  </data>
+  <data name="Resource_AutoDiscoverService_GetServerVersion_Failed" xml:space="preserve">
+    <value>We failed to get the supported Exchange Server version from the Autodiscover service.</value>
+  </data>
+  <data name="Resource_AutoDiscoverService_Https_Failed" xml:space="preserve">
+    <value>The Microsoft Exchange Autodiscover Service isn't configured to use https to encrypt the authentication credentials. Please contact your Exchange admin.</value>
+  </data>
+  <data name="Resource_CurrentWorkbookPath_Invalid" xml:space="preserve">
+    <value>The supplied workbook path must be empty.</value>
+  </data>
+  <data name="Resource_DbPath_Invalid" xml:space="preserve">
+    <value>The supplied server or database name is invalid.</value>
+  </data>
+  <data name="Resource_DomainName_Invalid" xml:space="preserve">
+    <value>The specified domain name isn't valid.</value>
+  </data>
+  <data name="Resource_EmailAddressAndMailboxNull" xml:space="preserve">
+    <value>You must provide an email address either as part of your query or as part of the credential.</value>
+  </data>
+  <data name="Resource_ExchangeCredental_Invalid" xml:space="preserve">
+    <value>We were unable to use the provided Exchange credential to connect.</value>
+  </data>
+  <data name="Resource_ExchangeServerVersion_NotSupported" xml:space="preserve">
+    <value>The version of the Exchange Server is not supported. We only support Exchange Server version 2007 SP1 or later.</value>
+  </data>
+  <data name="Resource_FilePath_Absolute" xml:space="preserve">
+    <value>The supplied file path must be a valid absolute path.</value>
+  </data>
+  <data name="Resource_FileUrl_Absolute" xml:space="preserve">
+    <value>The supplied URL must be a valid 'file:' URL.</value>
+  </data>
+  <data name="Resource_FolderPath_Absolute" xml:space="preserve">
+    <value>The supplied folder path must be a valid absolute path.</value>
+  </data>
+  <data name="Resource_FtpUrl_Invalid" xml:space="preserve">
+    <value>The supplied URL must be a valid 'ftp:' URL.</value>
+  </data>
+  <data name="Resource_Invalid" xml:space="preserve">
+    <value>The specified resource kind is not valid.</value>
+  </data>
+  <data name="Resource_Mq_Invalid" xml:space="preserve">
+    <value>The supplied server, queue manager, channel or queue is invalid.</value>
+  </data>
+  <data name="Resource_ServerAddress_Invalid" xml:space="preserve">
+    <value>The supplied Exchange Server address isn't valid.</value>
+  </data>
+  <data name="Resource_WebUrl_Invalid" xml:space="preserve">
+    <value>The supplied URL must be a valid 'http:' or 'https:' URL.</value>
+  </data>
+  <data name="RowExpression_CantGetRowExpression" xml:space="preserve">
+    <value>We can't get the row expression for the specified value.</value>
+  </data>
+  <data name="SP_DeltaTagDeserializationError" xml:space="preserve">
+    <value>Error deserializing delta tag '#{0}'.</value>
+  </data>
+  <data name="SP_InvalidChangeToken" xml:space="preserve">
+    <value>SharePoint could not identify the change token '#{0}'.</value>
+  </data>
+  <data name="SP_InvalidDeltaTag" xml:space="preserve">
+    <value>DeltaTag is invalid. Valid fields are: '#{0}'.</value>
+  </data>
+  <data name="SalesforceApiVersionRequired" xml:space="preserve">
+    <value>You need to specify a Salesforce API version.</value>
+  </data>
+  <data name="SalesforceChallengeTitle" xml:space="preserve">
+    <value>Access Salesforce</value>
+  </data>
+  <data name="Salesforce_OAuth" xml:space="preserve">
+    <value>Salesforce account</value>
+  </data>
+  <data name="Salesforce_Warning" xml:space="preserve">
+    <value>{0}
+ Warning: {1}</value>
+  </data>
+  <data name="SapBwAssemblyNotInGac" xml:space="preserve">
+    <value>Assembly '{0}' was not found in the GAC. Verify that 'Install assemblies in GAC' was selected while installing the SAP .NET Connector. Assembly '{1}' is also supported but was not found.</value>
+  </data>
+  <data name="SapBwBapiExecutionError" xml:space="preserve">
+    <value>The SAP BW server reported an error: '{0}'. To find more information about this error, visit the SAP support site and search for '{1}'.</value>
+  </data>
+  <data name="SapBwBapiExecutionErrorAdditionalInfo" xml:space="preserve">
+    <value>The SAP BW server reported an error: '{0}'. To find more information about this error, visit the SAP support site and search for '{1}'. Additional information may be available in SAP Note '{2}'.</value>
+  </data>
+  <data name="SapBwChallengeTitle" xml:space="preserve">
+    <value>SAP Business Warehouse server</value>
+  </data>
+  <data name="SapBwDuplicateMeasure" xml:space="preserve">
+    <value>The SAP BW server returned two measures with the same Measure Unique Name: '{0}' with captions '{1}' and '{2}'. Please ensure that query '{3}' doesn't use the same measure multiple times.</value>
+  </data>
+  <data name="SapBwInvalidClientId" xml:space="preserve">
+    <value>The provided client id is invalid. It must be a three digit number (e.g. 800).</value>
+  </data>
+  <data name="SapBwInvalidLogonGroup" xml:space="preserve">
+    <value>The provided logon group is invalid.</value>
+  </data>
+  <data name="SapBwInvalidQuery" xml:space="preserve">
+    <value>The provided native query must not be empty.</value>
+  </data>
+  <data name="SapBwInvalidRouterString" xml:space="preserve">
+    <value>The provided router string is invalid.</value>
+  </data>
+  <data name="SapBwInvalidServerName" xml:space="preserve">
+    <value>The provided server name is invalid.</value>
+  </data>
+  <data name="SapBwInvalidSystemId" xml:space="preserve">
+    <value>The provided system id is invalid.</value>
+  </data>
+  <data name="SapBwInvalidSystemNumber" xml:space="preserve">
+    <value>The provided system number is invalid. It must be a two digit number (e.g. 00).</value>
+  </data>
+  <data name="SapBwParameterValueNotValid" xml:space="preserve">
+    <value>The parameter value is not a valid MDX identifier.</value>
+  </data>
+  <data name="SapBwPasswordInRouterString" xml:space="preserve">
+    <value>Router strings may not contain passwords.</value>
+  </data>
+  <data name="SapBwRouterInvalidMessageServerStation" xml:space="preserve">
+    <value>Message Server destinations are only allowed as the last station in a router string.</value>
+  </data>
+  <data name="SapBwRouterStringGroupMustMatch" xml:space="preserve">
+    <value>When the Message Server destination in a router string includes a Logon Group (/G/), it must match the Logon Group parameter ('{0}' != '{1}').</value>
+  </data>
+  <data name="SapBwRouterStringMustContainMessageServer" xml:space="preserve">
+    <value>The destination in a router string for a load balanced connection must describe a Message Server.</value>
+  </data>
+  <data name="SapBwRouterStringMustNotContainMessageServer" xml:space="preserve">
+    <value>Message Server destinations are not allowed in router strings for Application Server connections.</value>
+  </data>
+  <data name="SapBwSapClientDeprecated" xml:space="preserve">
+    <value>Implementation 1.0 of the SAP Business Warehouse connector has been deprecated. Switch to Implementation '2.0' by following these instructions: https://go.microsoft.com/fwlink/?linkid=2226680</value>
+  </data>
+  <data name="SapBwUnsupportedCulture" xml:space="preserve">
+    <value>The culture '{0}' is not supported by SAP Business Warehouse.</value>
+  </data>
+  <data name="SapBwUnsupportedQuerySameDimensionMultipleHierarchies" xml:space="preserve">
+    <value>Querying multiple hierarchies of the same dimension is not supported with SAP Business Warehouse.</value>
+  </data>
+  <data name="SapBwWindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access SAP Business Warehouse.</value>
+  </data>
+  <data name="SapBwWindowsAuthInvalidSncLibrary" xml:space="preserve">
+    <value>The provided SNCLibrary is invalid. It must be 'NTLM', 'KERBEROS', or an absolute path pointing to the SNC Library DLL.</value>
+  </data>
+  <data name="SapBwWindowsAuthInvalidSncLibraryEnvironment" xml:space="preserve">
+    <value>SncLibrary was not specified and the {0} environment variable is empty or missing.</value>
+  </data>
+  <data name="SapBwWindowsAuthInvalidSncPartnerName" xml:space="preserve">
+    <value>SNCPartnerName is required when using Windows authentication.</value>
+  </data>
+  <data name="SapBw_UnsupportedCulture" xml:space="preserve">
+    <value>The culture '{0}' can't be converted to an SAP Language Code. Try the 'LanguageCode' option instead.</value>
+  </data>
+  <data name="SapContextResolutionNotSupported" xml:space="preserve">
+    <value>This query requires resolution of prompts or contexts, which aren't currently supported.</value>
+  </data>
+  <data name="SapHanaAuthInvalidSslCryptoProvider" xml:space="preserve">
+    <value>The provided SSLCryptoProvider is invalid. It must be 'commoncrypto', 'sapcrypto', 'openssl', or 'mscrypto'.</value>
+  </data>
+  <data name="SapHanaAuthInvalidSslKeyStore" xml:space="preserve">
+    <value>The value for SSLKeyStore must be an absolute path pointing to the key store file.</value>
+  </data>
+  <data name="SapHanaAuthInvalidSslTrustStore" xml:space="preserve">
+    <value>The value for SSLTrustStore must be an absolute path pointing to the trust store file.</value>
+  </data>
+  <data name="SapHanaAuthInvalidSslValidateServerCertificate" xml:space="preserve">
+    <value>The value for SSLValidateServerCertificate must be 'true' or 'false'.</value>
+  </data>
+  <data name="SapHanaChallengeTitle" xml:space="preserve">
+    <value>SAP HANA database</value>
+  </data>
+  <data name="SapHanaColumnBindingError" xml:space="preserve">
+    <value>Column {0} of type {1} cannot be bound ({2} &gt; {3}).</value>
+  </data>
+  <data name="SapHanaHDICubeError" xml:space="preserve">
+    <value>The cube '{0}' appears to be an HDI-object but does not have a qualified name.</value>
+  </data>
+  <data name="SapHanaOdbcColumnBindingError" xml:space="preserve">
+    <value>ODBC exception while binding column {0} of type {1}: {2}</value>
+  </data>
+  <data name="SapHanaRangeOperator_BetweenCaption" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="SapHanaRangeOperator_EqualsCaption" xml:space="preserve">
+    <value>Equals</value>
+  </data>
+  <data name="SapHanaRangeOperator_GreaterThanCaption" xml:space="preserve">
+    <value>Greater than</value>
+  </data>
+  <data name="SapHanaRangeOperator_GreaterThanOrEqualsCaption" xml:space="preserve">
+    <value>Greater than or equals</value>
+  </data>
+  <data name="SapHanaRangeOperator_LessThanCaption" xml:space="preserve">
+    <value>Less than</value>
+  </data>
+  <data name="SapHanaRangeOperator_LessThanOrEqualsCaption" xml:space="preserve">
+    <value>Less than or equals</value>
+  </data>
+  <data name="SapHanaRangeOperator_NotEqualsCaption" xml:space="preserve">
+    <value>Not equals</value>
+  </data>
+  <data name="SapHanaSharedColumnVariableErrorDetail" xml:space="preserve">
+    <value>This error can be caused by an issue on the SAP HANA side that impacts HDI-based views on SAP HANA servers with a version lower than SAP HANA 2 SPS04 revision 42 or SAP HANA 2 SPS03 revision 37.02. Upgrading to one of these revisions or higher may fix this error.</value>
+  </data>
+  <data name="SapHanaSharedColumnVariableErrorTitle" xml:space="preserve">
+    <value>Unable to determine which dimension to apply the variable '{0}' to.</value>
+  </data>
+  <data name="SapHanaUnsupportedParameterValueKind" xml:space="preserve">
+    <value>SAP HANA connector does not support parameter value of kind '{0}'</value>
+  </data>
+  <data name="SapHanaWindowsAuth" xml:space="preserve">
+    <value>Use your Windows credentials to access SAP HANA.</value>
+  </data>
+  <data name="SapHana_InvalidRangeOperator" xml:space="preserve">
+    <value>'{0}' is not a valid value for an SAP HANA range operator. See SapHanaRangeOperator.Type.</value>
+  </data>
+  <data name="SapInvalidResponse" xml:space="preserve">
+    <value>The service returned an invalid response.</value>
+  </data>
+  <data name="SapServiceError" xml:space="preserve">
+    <value>The service returned an error.</value>
+  </data>
+  <data name="SapServiceErrorWithMessage" xml:space="preserve">
+    <value>The service returned an error: {0}</value>
+  </data>
+  <data name="SapUniversesAccessDeniedError" xml:space="preserve">
+    <value>Access to the list of universes was denied by the service.</value>
+  </data>
+  <data name="SemanticError_DuplicateField" xml:space="preserve">
+    <value>Duplicate field named '{0}'.</value>
+  </data>
+  <data name="SemanticError_DuplicateInitializer" xml:space="preserve">
+    <value>Duplicate initializer named '{0}'.</value>
+  </data>
+  <data name="SemanticError_DuplicateParameter" xml:space="preserve">
+    <value>Duplicate parameter named '{0}'.</value>
+  </data>
+  <data name="SemanticsBuilder_ExpressionExpected" xml:space="preserve">
+    <value>Expression expected.</value>
+  </data>
+  <data name="SemanticsBuilder_InvalidIdentifier" xml:space="preserve">
+    <value>Invalid identifier.</value>
+  </data>
+  <data name="SemanticsBuilder_InvalidLiteral" xml:space="preserve">
+    <value>Invalid literal.</value>
+  </data>
+  <data name="SemanticsBuilder_VebatimLiteralDoesNotContainError" xml:space="preserve">
+    <value>Consider removing the verbatim literal brackets ( #!" ... " ) to enable evaluation of the bracketed expression.</value>
+  </data>
+  <data name="ServerDoesNotSupportWindowsCredentialTryMicrosoftAccount" xml:space="preserve">
+    <value>This server does not support Windows credentials. Please try Microsoft account authentication.</value>
+  </data>
+  <data name="SharePointCannotEnumerateDocumentAsTable" xml:space="preserve">
+    <value>The given URL points to a folder not a table. Please use the SharePoint.Contents or SharePoint.Files functions instead.</value>
+  </data>
+  <data name="SharePointInvalidFileUrl" xml:space="preserve">
+    <value>The input URL is invalid. Please provide a URL to the file path on SharePoint up to the file name only (with no query or fragment part).</value>
+  </data>
+  <data name="SharePointInvalidFileUrlWebEqualsOne" xml:space="preserve">
+    <value>The input URL is invalid because it ends with '?web=1'. Please remove '?web=1' from the end of the URL and try again.</value>
+  </data>
+  <data name="SharePointInvalidUrl" xml:space="preserve">
+    <value>The input URL is invalid. Please provide a URL to the root of a SharePoint site, or to the service document or entity of its OData feed (with no query or fragment part).</value>
+  </data>
+  <data name="SharePointList_Impl2_DisableAppendNoteColumns" xml:space="preserve">
+    <value>Valid values are true and null</value>
+  </data>
+  <data name="SharePointList_Impl2_InvalidOptionsKey" xml:space="preserve">
+    <value>The following are not valid SharePoint list 2.0 options: #{0}. Valid options are: #{1}</value>
+  </data>
+  <data name="SharePointList_Impl2_InvalidOptionsValue" xml:space="preserve">
+    <value>This SharePoint list 2.0 function does not support the option '#{0}' with value '#{1}'. #{2}</value>
+  </data>
+  <data name="SharePointList_Impl2_ValidViewMode" xml:space="preserve">
+    <value>Valid view modes are: 'All', 'Default'.</value>
+  </data>
+  <data name="SharePointNotSupportedApi" xml:space="preserve">
+    <value>API Unsupported: 'RenderListDataAsStream' is not available. Please use option [ApiVersion=14] to connect to this SharePoint server.</value>
+  </data>
+  <data name="SingleInvocation_MultipleEvaluations" xml:space="preserve">
+    <value>An input was evaluated multiple times.</value>
+  </data>
+  <data name="Skip_CountTooLarge" xml:space="preserve">
+    <value>The specified skip value is too large.  It can be at most {0} items.</value>
+  </data>
+  <data name="SncLibraryLabel" xml:space="preserve">
+    <value>SNC Library</value>
+  </data>
+  <data name="SncPartnerNameLabel" xml:space="preserve">
+    <value>SNC Partner Name</value>
+  </data>
+  <data name="SourceError_DuplicateExport" xml:space="preserve">
+    <value>The export '{0}' is already defined in this scope.</value>
+  </data>
+  <data name="SourceError_DuplicateFieldName" xml:space="preserve">
+    <value>The field named '{0}' is already defined in this scope.</value>
+  </data>
+  <data name="SourceError_DuplicateLocal" xml:space="preserve">
+    <value>The variable named '{0}' is already defined in this scope.</value>
+  </data>
+  <data name="SourceError_DuplicateMember" xml:space="preserve">
+    <value>The member named '{0}' is already defined in this scope.</value>
+  </data>
+  <data name="SourceError_DuplicateParameter" xml:space="preserve">
+    <value>The parameter name '{0}' is a duplicate.</value>
+  </data>
+  <data name="SourceError_DuplicateSection" xml:space="preserve">
+    <value>Two sections have the same name '{0}'.</value>
+  </data>
+  <data name="SourceError_UnderscoreOutsideEach" xml:space="preserve">
+    <value>There is an unknown identifier. Did you use the [field] shorthand for a _[field] outside of an 'each' expression?</value>
+  </data>
+  <data name="SourceError_UnknownIdentifier" xml:space="preserve">
+    <value>The name '{0}' doesn't exist in the current context.</value>
+  </data>
+  <data name="SourceError_UnknownSection" xml:space="preserve">
+    <value>The section '{0}' doesn't exist in the current context.</value>
+  </data>
+  <data name="SourceError_UnknownSectionIdentifier" xml:space="preserve">
+    <value>The name '{1}' doesn't exist in section '{0}'.</value>
+  </data>
+  <data name="SpatialArgumentInvalidWKT" xml:space="preserve">
+    <value>Spatial text parsing failed. Either the input '{0}' is not valid Well Known Text input or it uses features that are not supported.</value>
+  </data>
+  <data name="SpatialInconsistenSRID" xml:space="preserve">
+    <value>Cannot serialize a spatial object if different components of it reference different spatial reference identifiers. Seen: '{0}'</value>
+  </data>
+  <data name="SpatialInvalidRecordFormat" xml:space="preserve">
+    <value>The given record does not appear to conform to what is expected for spatial values. Verify that the record and all nested records have Kind fields, that points have either Longitude and Latitude or X and Y coordinates, and that collection values have a Components field with valid records.</value>
+  </data>
+  <data name="SpatialInvalidToken" xml:space="preserve">
+    <value>Token '{0}' is not a valid spatial kind. Valid kinds are: POINT, LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON, GEOMETRYCOLLECTION, and for geographic data only, FULLGLOBE.</value>
+  </data>
+  <data name="Splitter_Delimiter_Invalid" xml:space="preserve">
+    <value>A delimiter must be text at least 1 character in length.</value>
+  </data>
+  <data name="SqlContextInfoValueTooLong" xml:space="preserve">
+    <value>The value provided to the ContextInfo option must be {0} bytes or smaller.</value>
+  </data>
+  <data name="SqlExpression_ExpressionNotSupported" xml:space="preserve">
+    <value>The command '{0}' isn't supported.</value>
+  </data>
+  <data name="SqlRelationshipQueryFailed" xml:space="preserve">
+    <value>Relationships couldn't be identified for this table.</value>
+  </data>
+  <data name="SqlUnsortedPagingNotSupported" xml:space="preserve">
+    <value>Paging operations aren't implemented yet for unsorted queries.</value>
+  </data>
+  <data name="Sql_Aad_DotNetFourSix" xml:space="preserve">
+    <value>You must have at least .NET 4.6 installed for us to use Azure Active Directory to connect to SQL Server.</value>
+  </data>
+  <data name="SslCryptoProvider" xml:space="preserve">
+    <value>SSL crypto provider</value>
+  </data>
+  <data name="SslKeyStore" xml:space="preserve">
+    <value>SSL key store</value>
+  </data>
+  <data name="SslTrustStore" xml:space="preserve">
+    <value>SSL trust store</value>
+  </data>
+  <data name="Storage_EmptyDirectoryOnly" xml:space="preserve">
+    <value>We don't support creating directories in Azure Storage unless they are empty.</value>
+  </data>
+  <data name="Storage_NeedsFolderPath" xml:space="preserve">
+    <value>You must supply a folder path when inserting into the root of the Azure Storage account.</value>
+  </data>
+  <data name="Storage_NoAttributes" xml:space="preserve">
+    <value>We don't support setting attributes when creating files or directories in Azure Storage.</value>
+  </data>
+  <data name="Storage_NoDirectoryCreation" xml:space="preserve">
+    <value>We don't support creating directories in non-hierarchical file system views.</value>
+  </data>
+  <data name="TableAction_Tee_ErrorInAction" xml:space="preserve">
+    <value>An error occurred in one of the actions to the tee.</value>
+  </data>
+  <data name="TableAction_Tee_InputTableMustHavePrimitiveValues" xml:space="preserve">
+    <value>TableAction.Tee supports tables with only primitive-typed columns.</value>
+  </data>
+  <data name="TableAddKey_PrimaryKeyAlreadyExists" xml:space="preserve">
+    <value>A primary key already exists on the given table type.</value>
+  </data>
+  <data name="TableDistinctInvalidDistinctCriteria" xml:space="preserve">
+    <value>The specified distinct criteria is invalid.</value>
+  </data>
+  <data name="TableExpandRecordColumn_FieldAndNewColumnNamesMustHaveSameCount" xml:space="preserve">
+    <value>We expected newColumnNames to have the same number of items as fieldNames.</value>
+  </data>
+  <data name="TableExpandTableColumn_ColumnAndNewColumnNamesMustHaveSameCount" xml:space="preserve">
+    <value>We expected newColumnNames to have the same number of items as columnNames.</value>
+  </data>
+  <data name="TableFromPartitions_InvalidPartition" xml:space="preserve">
+    <value>The specified partition is invalid.  Each partition should be a two item list consisting of a unique key and an associated table.</value>
+  </data>
+  <data name="TableFromRecordsColumnTypesMustBeNullable" xml:space="preserve">
+    <value>The columns of the specified table type must be nullable.</value>
+  </data>
+  <data name="TableHasNoVisibleColumns" xml:space="preserve">
+    <value>The table has no visible columns and cannot be queried.</value>
+  </data>
+  <data name="TableSortInvalidColumnSelector" xml:space="preserve">
+    <value>The specified column selector is invalid.</value>
+  </data>
+  <data name="TableSortInvalidSortCriteria" xml:space="preserve">
+    <value>The specified sort criteria is invalid.</value>
+  </data>
+  <data name="TableSortInvalidSortCriterion" xml:space="preserve">
+    <value>The specified sort criterion is invalid.</value>
+  </data>
+  <data name="TableSortInvalidSortDirection" xml:space="preserve">
+    <value>The specified sort direction is invalid.</value>
+  </data>
+  <data name="TableSortMustHaveCriterion" xml:space="preserve">
+    <value>'Table.Sort' requires at least one sort criterion.</value>
+  </data>
+  <data name="TableSplitColumnArgumentTypeError" xml:space="preserve">
+    <value>The argument 'columnNamesOrNumber' should be a list or a non-negative number.</value>
+  </data>
+  <data name="TableType_FromValue" xml:space="preserve">
+    <value>The columns parameter must be null, specify the number of columns, specify a list of column names, or specify a table type.</value>
+  </data>
+  <data name="Table_ColumnAlreadyExistsInTable" xml:space="preserve">
+    <value>The column '{0}' already exists in the table.</value>
+  </data>
+  <data name="Table_FromColumns_ColumnsAndColumnNamesCountMismatch" xml:space="preserve">
+    <value>The count of 'columns' ({0}) doesn't match that of 'columnNames' ({1}).</value>
+  </data>
+  <data name="Table_FromList_ExtraValueListRequiresAtLeastOneColumn" xml:space="preserve">
+    <value>ExtraValues.List requires at least one column.</value>
+  </data>
+  <data name="Table_RelationshipsWithoutKey" xml:space="preserve">
+    <value>We can't get the relationships. A primary or unique key is required to perform the operation against the table.</value>
+  </data>
+  <data name="Table_ReplaceError_ColumnAlreadyExists" xml:space="preserve">
+    <value>The column '{0}' already exists in the list.</value>
+  </data>
+  <data name="Table_TransformColumnTypes_UnrecognizedType" xml:space="preserve">
+    <value>The type specified wasn't recognized.</value>
+  </data>
+  <data name="Table_UpdateNotSupportedWithoutKey" xml:space="preserve">
+    <value>We can't update the table. A primary or unique key is required to perform the operation against the table.</value>
+  </data>
+  <data name="Table_UpdateNotSupportedWrongColumnType" xml:space="preserve">
+    <value>We can't update the table. The type of column '{0}' doesn't match the type of the column in the table.</value>
+  </data>
+  <data name="TextFormat_InvalidArguments" xml:space="preserve">
+    <value>We expect Text.Format arguments to be of type Record or type List.</value>
+  </data>
+  <data name="TextFormat_InvalidReference" xml:space="preserve">
+    <value>Invalid placeholder or value in format string. Underlying error message: {0}</value>
+  </data>
+  <data name="TextFormat_NotUnsignedInteger" xml:space="preserve">
+    <value>We couldn't convert to an unsigned integer.</value>
+  </data>
+  <data name="TextFormat_OpenWithoutClose" xml:space="preserve">
+    <value>Text format placeholders must be closed.</value>
+  </data>
+  <data name="Text_At_IndexOutOfRange" xml:space="preserve">
+    <value>The index is outside the bounds of the text value.</value>
+  </data>
+  <data name="Text_GetEncoding_InvalidEncoding" xml:space="preserve">
+    <value>The text encoding is invalid.</value>
+  </data>
+  <data name="Text_InvalidUnicodeCodePoints" xml:space="preserve">
+    <value>The string couldn't be decoded because it contained an invalid unicode code point.</value>
+  </data>
+  <data name="Time_CannotParseTextAsDateTimeError" xml:space="preserve">
+    <value>We couldn't parse the input provided as a Time value.</value>
+  </data>
+  <data name="Time_DateTimeMissingComponent" xml:space="preserve">
+    <value>The Time value must contain the {0} component.</value>
+  </data>
+  <data name="Time_InvalidOutputFormatError" xml:space="preserve">
+    <value>The output Time format specified isn't supported.</value>
+  </data>
+  <data name="Time_NotConvertibleToTime" xml:space="preserve">
+    <value>We couldn't convert to Time.</value>
+  </data>
+  <data name="Time_OutOfRangeError" xml:space="preserve">
+    <value>The Time operation failed because the resulting value falls outside the range of allowed values.</value>
+  </data>
+  <data name="TransformOperation_TransformOperationValueExpectedError" xml:space="preserve">
+    <value>We expected a TransformOperation value.</value>
+  </data>
+  <data name="TransformOperations_TransformOperationsValueExpectedError" xml:space="preserve">
+    <value>Expected a TransformOperations value.</value>
+  </data>
+  <data name="TypeFacets_MustHaveNonNegativeValues" xml:space="preserve">
+    <value>The NumericPrecisionBase, NumericPrecision, NumericScale, DateTimePrecision, and MaxLength facets must have non-negative values.</value>
+  </data>
+  <data name="TypeFacets_NumericPrecisionBaseNotSpecified" xml:space="preserve">
+    <value>The NumericPrecisionBase facet must be specified when either of the NumericPrecision or NumericScale facets are specified.</value>
+  </data>
+  <data name="TypeFacets_UnknownFacet" xml:space="preserve">
+    <value>The facet '{0}' is not supported.</value>
+  </data>
+  <data name="UDTNotSupport" xml:space="preserve">
+    <value>Values of column '{0}' have type '{1}' which is not supported.</value>
+  </data>
+  <data name="UnableToInferResourcePathInfo" xml:space="preserve">
+    <value>We were unable to infer data source path information from the set of functions associated with the data source kind '{0}'.</value>
+  </data>
+  <data name="UnboundFunctionNotFound" xml:space="preserve">
+    <value>Couldn't find a matched function import type.</value>
+  </data>
+  <data name="UnexpectedEndOfBuffer" xml:space="preserve">
+    <value>We reached the end of the buffer.</value>
+  </data>
+  <data name="UnexpectedProtocol" xml:space="preserve">
+    <value>We expected protocol '{0}' but got '{1}'.</value>
+  </data>
+  <data name="UnknownNumberPattern" xml:space="preserve">
+    <value>We couldn't match '{0}' with any known number pattern.</value>
+  </data>
+  <data name="UnreachableCodePath" xml:space="preserve">
+    <value>Program execution reached an invalid state. The execution should have never reached this code.</value>
+  </data>
+  <data name="UnsupportedClrType" xml:space="preserve">
+    <value>We don't support CLR type '{0}'.</value>
+  </data>
+  <data name="UnsupportedConcurrentRequestsForLeftOuterJoin" xml:space="preserve">
+    <value>We don't support ConcurrentRequests for LeftOuter joins.</value>
+  </data>
+  <data name="UnsupportedCulture" xml:space="preserve">
+    <value>The specified culture is not supported.</value>
+  </data>
+  <data name="UnsupportedExpressionKind" xml:space="preserve">
+    <value>Expression nodes of type '{0}' aren't supported.</value>
+  </data>
+  <data name="UnsupportedFunctionParameterType" xml:space="preserve">
+    <value>Database functions with non-scalar parameters aren't supported.</value>
+  </data>
+  <data name="UnsupportedHeader" xml:space="preserve">
+    <value>The header value is not supported. Supported values are: {0}.</value>
+  </data>
+  <data name="UnsupportedJoinKindForFuzzyJoins" xml:space="preserve">
+    <value>We don't support this join kind for fuzzy joins.</value>
+  </data>
+  <data name="UnsupportedJsonType" xml:space="preserve">
+    <value>We can't convert values of this type to JSON.</value>
+  </data>
+  <data name="UnsupportedMAStKind" xml:space="preserve">
+    <value>M ASTs of kind '{0}' aren't supported.</value>
+  </data>
+  <data name="UnsupportedODataImplementation" xml:space="preserve">
+    <value>The OData implementation '{0}' isn't supported.</value>
+  </data>
+  <data name="UnsupportedODataVersion" xml:space="preserve">
+    <value>The OData version '{0}' isn't supported. Please use version 3 or 4.</value>
+  </data>
+  <data name="UnsupportedQueryOption" xml:space="preserve">
+    <value>This function doesn't support the query option '{0}' with value '{1}'.</value>
+  </data>
+  <data name="UnsupportedSharePointListImplementation" xml:space="preserve">
+    <value>The SharePoint List Implementation '{0}' isn't supported. {1}</value>
+  </data>
+  <data name="UnsupportedSharePointVersion" xml:space="preserve">
+    <value>The SharePoint version '{0}' isn't supported. Please use version 14, 15 or Auto.</value>
+  </data>
+  <data name="UnsupportedSharePointVersionNumber" xml:space="preserve">
+    <value>The SharePoint version '{0}' isn't supported. Please use version 14 or 15.</value>
+  </data>
+  <data name="Unsupported_CodedCharSetId" xml:space="preserve">
+    <value>Unsupported Coded Character Set Identifier: {0}</value>
+  </data>
+  <data name="UriInputInvalid" xml:space="preserve">
+    <value>The input cannot be parsed as a valid URI: '{0}'.</value>
+  </data>
+  <data name="UriInvalidArgument" xml:space="preserve">
+    <value>The function requires a valid absolute 'http:' or 'https:' URL.</value>
+  </data>
+  <data name="UriInvalidHttps" xml:space="preserve">
+    <value>The input URL must use an https scheme.</value>
+  </data>
+  <data name="UsernamePasswordNotSupported" xml:space="preserve">
+    <value>Driver '{0}' doesn't support credentials with a user name and password.</value>
+  </data>
+  <data name="ValidSharePointListImplementation" xml:space="preserve">
+    <value>Valid values are: '2.0', null</value>
+  </data>
+  <data name="ValidateServerCertificate" xml:space="preserve">
+    <value>Validate server certificate</value>
+  </data>
+  <data name="ValueAction_Transaction_NotSupported" xml:space="preserve">
+    <value>Transactions are not supported against this set of values.</value>
+  </data>
+  <data name="ValueException_ApproximateLength_Unsupported" xml:space="preserve">
+    <value>We don't support Binary.ApproximateLength for this data source.</value>
+  </data>
+  <data name="ValueException_ApproximateRowCount_Unsupported" xml:space="preserve">
+    <value>We don't support Table.ApproximateRowCount for this data source.</value>
+  </data>
+  <data name="ValueException_BinaryOperatorAddTypeMismatch" xml:space="preserve">
+    <value>We cannot apply operator {0} to types {1} and {2} - consider using operator &amp;.</value>
+  </data>
+  <data name="ValueException_BinaryOperatorTypeMismatch" xml:space="preserve">
+    <value>We cannot apply operator {0} to types {1} and {2}.</value>
+  </data>
+  <data name="ValueException_CaptureVariableHasMultipleDeclarations" xml:space="preserve">
+    <value>The capture variable '{0}' was declared multiple times in the pattern.</value>
+  </data>
+  <data name="ValueException_CastTypeMismatch" xml:space="preserve">
+    <value>We cannot convert the specified value to the specified type.</value>
+  </data>
+  <data name="ValueException_CastTypeMismatch_Complex" xml:space="preserve">
+    <value>We cannot convert a value of type {0} to type {1}.</value>
+  </data>
+  <data name="ValueException_CastTypeMismatch_OleDb" xml:space="preserve">
+    <value>We cannot return a value of type {0} in this context.</value>
+  </data>
+  <data name="ValueException_CastTypeMismatch_Simple" xml:space="preserve">
+    <value>We cannot convert the value {0} to type {1}.</value>
+  </data>
+  <data name="ValueException_CastTypeMismatch_Types" xml:space="preserve">
+    <value>We cannot convert Type to {0} type.</value>
+  </data>
+  <data name="ValueException_ChannelCannotBeEmpty" xml:space="preserve">
+    <value>The channel parameter cannot be empty.</value>
+  </data>
+  <data name="ValueException_CharacterError" xml:space="preserve">
+    <value>The value isn't a single-character string.</value>
+  </data>
+  <data name="ValueException_CyclicReference" xml:space="preserve">
+    <value>A cyclic reference was encountered during evaluation.</value>
+  </data>
+  <data name="ValueException_DatabaseCannotBeEmpty" xml:space="preserve">
+    <value>The database parameter cannot be empty.</value>
+  </data>
+  <data name="ValueException_DuplicateExport" xml:space="preserve">
+    <value>The export {0} was exported multiple times.</value>
+  </data>
+  <data name="ValueException_DuplicateField" xml:space="preserve">
+    <value>The field '{0}' already exists in the record.</value>
+  </data>
+  <data name="ValueException_DuplicatedField" xml:space="preserve">
+    <value>The field '{0}' appears in both data records.</value>
+  </data>
+  <data name="ValueException_ElementAccessByKeyTypeMismatch" xml:space="preserve">
+    <value>We cannot apply field access to the type {0}.</value>
+  </data>
+  <data name="ValueException_ElementAccessIndexTypeMismatch" xml:space="preserve">
+    <value>We cannot apply an index of type {0}.</value>
+  </data>
+  <data name="ValueException_ElementAccessTypeMismatch" xml:space="preserve">
+    <value>We cannot apply indexing to the type {0}.</value>
+  </data>
+  <data name="ValueException_ExcelTableNotFound" xml:space="preserve">
+    <value>We couldn't find an Excel table named '{0}'.</value>
+  </data>
+  <data name="ValueException_FunctionTypeIsAbstract" xml:space="preserve">
+    <value>Function.Type is abstract and has no defined parameters.</value>
+  </data>
+  <data name="ValueException_HistogramBucketCountError" xml:space="preserve">
+    <value>BucketCount must be greater than zero.</value>
+  </data>
+  <data name="ValueException_HistogramStartAndEnd" xml:space="preserve">
+    <value>The Start and End must be specified as a list of two numbers.</value>
+  </data>
+  <data name="ValueException_HistogramStartLessThanEnd" xml:space="preserve">
+    <value>Start must not be greater than End.</value>
+  </data>
+  <data name="ValueException_InsufficientElements" xml:space="preserve">
+    <value>There weren't enough elements in the enumeration to complete the operation.</value>
+  </data>
+  <data name="ValueException_InvalidArguments_Generic" xml:space="preserve">
+    <value>Invalid argument types were passed to function {0}. See Help for correct argument types.</value>
+  </data>
+  <data name="ValueException_InvalidArguments_WrongListLength" xml:space="preserve">
+    <value>A list of exactly {0} items was expected.</value>
+  </data>
+  <data name="ValueException_InvalidArguments_WrongNumber_Exact" xml:space="preserve">
+    <value>{0} arguments were passed to a function which expects {1}.</value>
+  </data>
+  <data name="ValueException_InvalidArguments_WrongNumber_TooFew" xml:space="preserve">
+    <value>{0} arguments were passed to a function which expects at least {1}.</value>
+  </data>
+  <data name="ValueException_InvalidArguments_WrongNumber_TooFewOrTooMany" xml:space="preserve">
+    <value>{0} arguments were passed to a function which expects between {1} and {2}.</value>
+  </data>
+  <data name="ValueException_InvalidDimensionAttribute" xml:space="preserve">
+    <value>The dimension attribute '{0}' does not exist in the data source.</value>
+  </data>
+  <data name="ValueException_InvalidMeasure" xml:space="preserve">
+    <value>The measure '{0}' does not exist in the data source.</value>
+  </data>
+  <data name="ValueException_KeyNotFound" xml:space="preserve">
+    <value>The key didn't match any rows in the table.</value>
+  </data>
+  <data name="ValueException_KeyNotUnique" xml:space="preserve">
+    <value>The key matched more than one row in the table.</value>
+  </data>
+  <data name="ValueException_MissingColumn" xml:space="preserve">
+    <value>The column '{0}' of the table wasn't found.</value>
+  </data>
+  <data name="ValueException_MissingCubeColumn" xml:space="preserve">
+    <value>The column '{0}' of cube '{1}' wasn't found. If it was removed from the cube you'll need to update the query.</value>
+  </data>
+  <data name="ValueException_MissingField" xml:space="preserve">
+    <value>The field '{0}' of the record wasn't found.</value>
+  </data>
+  <data name="ValueException_NoMatch" xml:space="preserve">
+    <value>The value didn't match the specified pattern.</value>
+  </data>
+  <data name="ValueException_QueueCannotBeEmpty" xml:space="preserve">
+    <value>The queue parameter cannot be empty.</value>
+  </data>
+  <data name="ValueException_QueuemanagerCannotBeEmpty" xml:space="preserve">
+    <value>The queuemanager parameter cannot be empty.</value>
+  </data>
+  <data name="ValueException_ReasonMessageFormat" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="ValueException_RecordIndexOutOfRange" xml:space="preserve">
+    <value>The index is outside the bounds of the record.</value>
+  </data>
+  <data name="ValueException_RowTypeExpected" xml:space="preserve">
+    <value>The row type of a table type must be a closed record type with no optional fields.</value>
+  </data>
+  <data name="ValueException_ServerCannotBeEmpty" xml:space="preserve">
+    <value>The server parameter cannot be empty.</value>
+  </data>
+  <data name="ValueException_TextIndexOutOfRange" xml:space="preserve">
+    <value>The index is outside the bounds of the text.</value>
+  </data>
+  <data name="ValueException_TooManyElements" xml:space="preserve">
+    <value>There were too many elements in the enumeration to complete the operation.</value>
+  </data>
+  <data name="ValueException_UnaryOperatorTypeMismatch" xml:space="preserve">
+    <value>We cannot apply operator {0} to the type {1}.</value>
+  </data>
+  <data name="ValueException_UnderscoreOutsideEach" xml:space="preserve">
+    <value>There is an unknown identifier. Did you use the [field] shorthand for a _[field] outside of an 'each' expression?</value>
+  </data>
+  <data name="ValueException_UnexpectedField" xml:space="preserve">
+    <value>The field '{0}' of the record wasn't expected.</value>
+  </data>
+  <data name="ValueException_UnexpectedKind" xml:space="preserve">
+    <value>Table Kind '{0}' was not in the list of valid Kinds ({1})</value>
+  </data>
+  <data name="ValueException_UnknownImport" xml:space="preserve">
+    <value>The import {0} matches no exports. Did you miss a module reference?</value>
+  </data>
+  <data name="ValueExpression_NotSupported" xml:space="preserve">
+    <value>Value.Expression can only resolve optimized expressions, use: Value.Expression(Value.Optimize(...))</value>
+  </data>
+  <data name="ValueIsNotGraph" xml:space="preserve">
+    <value>We don't support this operation for values which aren't graphs.</value>
+  </data>
+  <data name="ValueMarshaller_CannotMarshalToClr" xml:space="preserve">
+    <value>We cannot convert a Value to a CLR object.</value>
+  </data>
+  <data name="ValueMarshaller_CannotMarshalToValue" xml:space="preserve">
+    <value>We cannot convert a CLR object to a Value.</value>
+  </data>
+  <data name="ValueNotUpdatable" xml:space="preserve">
+    <value>The value is not updatable.</value>
+  </data>
+  <data name="Value_Enumeration_NotSupported" xml:space="preserve">
+    <value>The value does not support enumeration.</value>
+  </data>
+  <data name="Value_NotCache" xml:space="preserve">
+    <value>The value is not an instance of a cache.</value>
+  </data>
+  <data name="Value_UpdateNotSupported" xml:space="preserve">
+    <value>We can't update the value. The operation or its arguments aren't supported by the value.</value>
+  </data>
+  <data name="Value_Versions_NotSupported" xml:space="preserve">
+    <value>The value does not support versioning.</value>
+  </data>
+  <data name="VariableNotFound" xml:space="preserve">
+    <value>The variable '{0}' could not be found.</value>
+  </data>
+  <data name="VolatileFunctionsNotSupported" xml:space="preserve">
+    <value>We don't support volatile functions in this context.</value>
+  </data>
+  <data name="WebActionSchemeUnsupported" xml:space="preserve">
+    <value>The scheme '{0}' of the input URL isn't supported.  The supported schemes are 'http' and 'https'.</value>
+  </data>
+  <data name="WebContentsFailed" xml:space="preserve">
+    <value>Web.Contents failed to get contents from '{0}' ({1}): {2}</value>
+  </data>
+  <data name="WebContentsHtmlNotExpected" xml:space="preserve">
+    <value>The downloaded data is HTML, which isn't the expected type. The URL may be wrong or you might not have provided the right credentials to the server.</value>
+  </data>
+  <data name="WebContentsInvalidOption" xml:space="preserve">
+    <value>Option '{0}' isn't supported for File and Ftp requests.</value>
+  </data>
+  <data name="WebContentsInvalidPagedOption" xml:space="preserve">
+    <value>Option '{0}' isn't supported when making paged HTTP requests.</value>
+  </data>
+  <data name="WebContentsManualStatusHandlingInvalidStatus" xml:space="preserve">
+    <value>'{0}' is not supported by the ManualStatusHandling option.</value>
+  </data>
+  <data name="WebContentsRequestWithCredentialsError" xml:space="preserve">
+    <value>Web.Contents with the Content option is only supported when connecting anonymously.</value>
+  </data>
+  <data name="WebContentsSchemeUnsupported" xml:space="preserve">
+    <value>The scheme '{0}' of the input URL isn't supported.  The supported schemes are 'http', 'https', 'file', and 'ftp'.</value>
+  </data>
+  <data name="WebContentsWithUnapprovedHeaders" xml:space="preserve">
+    <value>The '{0}' header is only supported when connecting anonymously. These headers can be used with all authentication types: {1}</value>
+  </data>
+  <data name="WebPageContentsNotSupported" xml:space="preserve">
+    <value>The Web.Contents 'Content' option isn't supported with Web.Page.</value>
+  </data>
+  <data name="WebPageHttpError" xml:space="preserve">
+    <value>The remote server return an HTTP status code '{0}' when trying to access '{1}'.</value>
+  </data>
+  <data name="WebPageInvalidCertificate" xml:space="preserve">
+    <value>We couldn't establish an SSL connection. The host certificate appears to be invalid.</value>
+  </data>
+  <data name="WebPageJavascriptDisabled" xml:space="preserve">
+    <value>The Web.Page function requires Active Scripting to be enabled in Internet Explorer options. See https://go.microsoft.com/fwlink/?LinkId=506565 for details on how to enable Active Scripting.</value>
+  </data>
+  <data name="WebPageParseError" xml:space="preserve">
+    <value>The resource at '{0}' cannot be retrieved using Web.Page. It doesn't appear to be a web page.</value>
+  </data>
+  <data name="WebPageResourceNotFound" xml:space="preserve">
+    <value>The server or proxy wasn't found.</value>
+  </data>
+  <data name="WebPageTimedOut" xml:space="preserve">
+    <value>The Web.Page function didn't finish within timeout of {0} seconds.</value>
+  </data>
+  <data name="WebPageUnknownError" xml:space="preserve">
+    <value>An unknown error occurred when navigating to the web page.</value>
+  </data>
+  <data name="WebPageUnsupportedAuth" xml:space="preserve">
+    <value>The Web.Page function does not support this authentication type.</value>
+  </data>
+  <data name="WebRequestFailed" xml:space="preserve">
+    <value>{0} failed to get the response: '{1}'.</value>
+  </data>
+  <data name="WebResponseMalformed" xml:space="preserve">
+    <value>We received a malformed web response from {0}.</value>
+  </data>
+  <data name="WindowsNotSupported" xml:space="preserve">
+    <value>Driver '{0}' doesn't support Windows credentials.</value>
+  </data>
+  <data name="XmlError" xml:space="preserve">
+    <value>Xml processing failed. Either the input is invalid or it isn't supported. (Internal error: {0})</value>
+  </data>
+  <data name="XmlFileProgress" xml:space="preserve">
+    <value>XML</value>
+  </data>
+</root>

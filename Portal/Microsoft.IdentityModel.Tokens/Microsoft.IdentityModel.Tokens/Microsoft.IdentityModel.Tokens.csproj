@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BE2FBE2-B580-4E7F-94C7-F9AF5270E1DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.IdentityModel.Tokens</RootNamespace>
+    <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonArray.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonBinary.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonBinaryType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonBinaryWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonBoolean.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonEmpty.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonObject.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonObjectId.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonProperty.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonRegex.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonString.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonToken.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonValue.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Bson\BsonWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\ConstructorHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\BinaryConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\BsonObjectIdConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\CustomCreationConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\DataSetConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\DataTableConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\DateTimeConverterBase.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\DiscriminatedUnionConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\EntityKeyMemberConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\ExpandoObjectConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IsoDateTimeConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IXmlDeclaration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IXmlDocument.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IXmlDocumentType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IXmlElement.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\IXmlNode.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\KeyValuePairConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\RegexConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\StringEnumConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\UnixDateTimeConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\VersionConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XAttributeWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XCommentWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XContainerWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XDeclarationWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XDocumentTypeWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XDocumentWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XElementWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlDeclarationWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlDocumentTypeWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlDocumentWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlElementWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XmlNodeWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XObjectWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XProcessingInstructionWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Converters\XTextWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\DateFormatHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\DateParseHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\DateTimeZoneHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\DefaultJsonNameTable.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\DefaultValueHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\FloatFormatHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\FloatParseHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Formatting.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\IArrayPool.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\IJsonLineInfo.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonArrayAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConstructorAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonContainerAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonContainerType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConvert.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConverter.2.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConverterAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonConverterCollection.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonDictionaryAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonExtensionDataAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonIgnoreAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonNameTable.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonObjectAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonPosition.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonPropertyAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonReaderException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonRequiredAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonSerializationException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonSerializer.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonSerializerSettings.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonTextReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonTextWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonToken.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonValidatingReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\JsonWriterException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\CommentHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\DuplicatePropertyNameHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\Extensions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\IJEnumerable.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JArray.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JConstructor.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JContainer.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JEnumerable.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JObject.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JProperty.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JPropertyDescriptor.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JPropertyKeyedCollection.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JRaw.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonLoadSettings.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonMergeSettings.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\ArrayIndexFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\ArrayMultipleIndexFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\ArraySliceFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\BooleanQueryExpression.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\CompositeExpression.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\FieldFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\FieldMultipleFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\JPath.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\PathFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\QueryExpression.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\QueryFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\QueryOperator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\QueryScanFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\RootFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\ScanFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonPath\ScanMultipleFilter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JsonSelectSettings.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JToken.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JTokenEqualityComparer.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JTokenReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JTokenType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JTokenWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\JValue.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\LineInfoHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\MergeArrayHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Linq\MergeNullValueHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\MemberSerialization.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\MetadataPropertyHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\MissingMemberHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\NullValueHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\ObjectCreationHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\PreserveReferencesHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\ReadType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\ReferenceLoopHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Required.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\Extensions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchema.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaModel.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaNode.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\ValidationEventArgs.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Schema\ValidationEventHandler.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\CachedAttributeGetter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\CamelCaseNamingStrategy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DefaultContractResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DefaultNamingStrategy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DefaultReferenceResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DefaultSerializationBinder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DiagnosticsTraceWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\DynamicValueProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ErrorContext.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ErrorEventArgs.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ExpressionValueProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ExtensionDataGetter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ExtensionDataSetter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\IAttributeProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\IContractResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\IReferenceResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ISerializationBinder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ITraceWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\IValueProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonArrayContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonContainerContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonContractType.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonDictionaryContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonDynamicContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonFormatterConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonISerializableContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonLinqContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonObjectContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonPrimitiveContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonProperty.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonPropertyCollection.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonSerializerInternalBase.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonSerializerInternalReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonSerializerInternalWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonSerializerProxy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonStringContract.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\JsonTypeReflector.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\KebabCaseNamingStrategy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\MemoryTraceWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\NamingStrategy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ObjectConstructor.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\OnErrorAttribute.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ReflectionAttributeProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\SerializationBinderAdapter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\SerializationCallback.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\SerializationErrorCallback.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\SnakeCaseNamingStrategy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\TraceJsonReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Serialization\TraceJsonWriter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\StringEscapeHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\TypeNameAssemblyFormatHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\TypeNameHandling.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\AsyncUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\Base64Encoder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\BidirectionalDictionary.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\BoxedPrimitives.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\BufferUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\CollectionUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\CollectionWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ConvertUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\Creator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DateTimeParser.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DateTimeUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DictionaryWrapper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DynamicProxy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DynamicProxyMetaObject.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DynamicReflectionDelegateFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\DynamicUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\EnumInfo.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\EnumUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ExpressionReflectionDelegateFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\FSharpFunction.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\FSharpUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ILGeneratorExtensions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ImmutableCollectionsUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\IWrappedCollection.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\IWrappedDictionary.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\JsonTokenUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\MathUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\MethodCall.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\NoThrowExpressionVisitor.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\NoThrowGetBinderMember.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\NoThrowSetBinderMember.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ParseResult.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ParserTimeZone.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\PrimitiveTypeCode.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ReflectionDelegateFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ReflectionMember.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ReflectionObject.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\StringBuffer.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\StringReference.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\StringReferenceExtensions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\StringUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\StructMultiKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ThreadSafeStore.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\TypeExtensions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\TypeInformation.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\Utilities\ValidationUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Json\WriteState.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AesAead.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AesBCryptModes.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AesGcm.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AlgorithmValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AsymmetricAdapter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AsymmetricSecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AsymmetricSignatureProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AudienceValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AuthenticatedEncryptionProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\AuthenticatedEncryptionResult.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Base64UrlEncoder.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Base64UrlEncoding.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\BaseConfiguration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\BaseConfigurationComparer.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\BaseConfigurationManager.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CallContext.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Cng.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CollectionUtilities.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CompressionAlgorithms.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CompressionProviderFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Configuration\LKGConfigurationCacheOptions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CreateECDsaDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CryptographicOperations.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CryptoProviderCache.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CryptoProviderCacheOptions.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CryptoProviderFactory.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\CryptoThrowHelper.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\DateTimeUtil.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\DecryptDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\DecryptionDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\DeflateCompressionProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\DisposableObjectPool.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ECDsaAdapter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ECDsaSecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EncodingUtils.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EncryptDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EncryptingCredentials.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EncryptionDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EpochTime.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\EventBasedLRUCache.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ICompressionProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ICryptoProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\InMemoryCryptoProviderCache.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\InternalValidators.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Interop.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ISecurityTokenValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerSigningKeyResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerSigningKeyResolverUsingConfiguration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerSigningKeyValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerSigningKeyValidatorUsingConfiguration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerValidatorAsync.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\IssuerValidatorUsingConfiguration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ITokenReplayCache.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebAlgorithmsKeyTypes.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeyConverter.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeyECTypes.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeyParameterNames.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeySet.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeySetParameterNames.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\JsonWebKeyUseNames.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\KeyWrapProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\LifetimeValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\LogMessages.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\LRUCacheItem.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\PrivateKeyStatus.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\RSACryptoServiceProviderProxy.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\RsaKeyWrapProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\RsaSecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SafeAlgorithmHandle.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SafeBCryptHandle.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SafeKeyHandle.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityAlgorithms.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityKeyIdentifierClause.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityToken.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenArgumentException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenCompressionFailedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenDecompressionFailedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenDecryptionFailedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenDescriptor.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenEncryptionFailedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenEncryptionKeyNotFoundException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenExpiredException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenHandler.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidAlgorithmException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidAudienceException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidIssuerException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidLifetimeException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidSignatureException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidSigningKeyException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenInvalidTypeException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenKeyWrapException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenMalformedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenNoExpirationException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenNotYetValidException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenReplayAddFailedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenReplayDetectedException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenSignatureKeyNotFoundException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenUnableToValidateException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SecurityTokenValidationException.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SignatureProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SignatureValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SignatureValidatorUsingConfiguration.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SignDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SigningCredentials.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SupportedAlgorithms.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SymmetricKeyWrapProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SymmetricSecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\SymmetricSignatureProvider.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenContext.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenDecryptionKeyResolver.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenHandler.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenReader.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenReplayValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenUtilities.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenValidationParameters.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TokenValidationResult.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TransformBeforeSignatureValidation.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\TypeValidator.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\UniqueId.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Utility.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\ValidationFailure.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\Validators.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\VerifyDelegate.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\VerifyDelegateWithLength.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\X509EncryptingCredentials.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\X509SecurityKey.cs" />
+    <Compile Include="Microsoft\IdentityModel\Tokens\X509SigningCredentials.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\AllowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnIfAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullWhenAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

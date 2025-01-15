@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CorruptBufferExceptionString" xml:space="preserve">
+    <value>A damaged buffer was found in file '{0}' at offset {1}, no further events will be read from the file.</value>
+  </data>
+  <data name="EventEnumerationExceptionString" xml:space="preserve">
+    <value>An exception occurred during event enumeration. Examine the inner exception for more information.</value>
+  </data>
+  <data name="EventLocationExceptionString" xml:space="preserve">
+    <value>The specified event location could not be set.</value>
+  </data>
+  <data name="FileInvalidExceptionString" xml:space="preserve">
+    <value>The file {0} is not a valid extended events log file and cannot be opened.</value>
+  </data>
+  <data name="FileReadExceptionString" xml:space="preserve">
+    <value>The operating system returned error {0} while reading from '{1}'.</value>
+  </data>
+  <data name="FileSizeExceptionString" xml:space="preserve">
+    <value>The operating system returned error {0} while setting the file size of file '{1}' to {2}.</value>
+  </data>
+  <data name="FileWriteExceptionString" xml:space="preserve">
+    <value>The operating system returned error {0} while writing to '{1}'.</value>
+  </data>
+  <data name="IncompatibleStreamVersion" xml:space="preserve">
+    <value>The event stream source version is incompatible with the reader. The reader needs to be upgraded in order to consume events from this source.</value>
+  </data>
+  <data name="MetadataDeserializeExceptionString" xml:space="preserve">
+    <value>Failed to deserialize metadata information for file '{0}.  This exception can occur if the event data source is damaged.</value>
+  </data>
+  <data name="MetadataDeserializeStreamExceptionString" xml:space="preserve">
+    <value>Failed to deserialize metadata information.</value>
+  </data>
+  <data name="MetadataSerializationExceptionString" xml:space="preserve">
+    <value>Metadata could not be serialized to the event log.</value>
+  </data>
+  <data name="TooManyFilesExceptionString" xml:space="preserve">
+    <value>Only {0} files can be processed at one time. Please reduce the number of files to be opened.</value>
+  </data>
+  <data name="TypeNotMappedExceptionString" xml:space="preserve">
+    <value>A data type was found in an event source that is not readable by this verion of the QueryableXEventData provider. This exception can occur if the event data source is damaged.</value>
+  </data>
+  <data name="UnknownFileOpenExceptionString" xml:space="preserve">
+    <value>Error {0} occurred while opening file(s) '{1}'.  Ensure that the files exist and are accessable.</value>
+  </data>
+</root>

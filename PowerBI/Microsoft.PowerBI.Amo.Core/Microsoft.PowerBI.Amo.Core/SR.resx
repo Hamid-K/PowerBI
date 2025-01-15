@@ -1,0 +1,1645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Aggregation" xml:space="preserve">
+    <value>Aggregation</value>
+  </data>
+  <data name="AggregationAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="AggregationDesign" xml:space="preserve">
+    <value>Aggregation Design</value>
+  </data>
+  <data name="AggregationDesignAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="AggregationDesignDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="AggregationDesign_DesignAggregations_QueriesCanOnlyBeUsedOnFirstCall" xml:space="preserve">
+    <value>Queries list can only be used on the first call of the DesignAggregations method.</value>
+  </data>
+  <data name="AggregationDesign_InitializeDesign_NoConnectedParentServer" xml:space="preserve">
+    <value>Cannot initialize the aggregation design without a connected parent server.</value>
+  </data>
+  <data name="AggregationDesign_InitializeDesign_NoParentDatabase" xml:space="preserve">
+    <value>Cannot initialize the aggregation design without a parent database.</value>
+  </data>
+  <data name="AggregationDesign_InvalidInternalState" xml:space="preserve">
+    <value>The internal state is not valid; re-initialize the design.</value>
+  </data>
+  <data name="AggregationDesign_NotInitialized" xml:space="preserve">
+    <value>The aggregation design is not initialized.</value>
+  </data>
+  <data name="AggregationDesign_WasCancelled" xml:space="preserve">
+    <value>The aggregation design has been cancelled.</value>
+  </data>
+  <data name="AggregationDesign_WasFinalized" xml:space="preserve">
+    <value>The aggregation design was finalized.</value>
+  </data>
+  <data name="AggregationDesign_WasInitialized" xml:space="preserve">
+    <value>The aggregation design was initialized.</value>
+  </data>
+  <data name="AggregationDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="AggregationInstance" xml:space="preserve">
+    <value>Aggregation Instance</value>
+  </data>
+  <data name="AggregationInstanceAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="AggregationInstanceDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="AggregationInstanceMeasure" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="Assembly" xml:space="preserve">
+    <value>Assembly</value>
+  </data>
+  <data name="AttributeIDIsAlreadyUsedByAHierarchy" xml:space="preserve">
+    <value>The attribute ID is already used by a hierarchy.</value>
+  </data>
+  <data name="AttributeNameIsAlreadyUsedByAHierarchy" xml:space="preserve">
+    <value>The attribute name is already used by a hierarchy.</value>
+  </data>
+  <data name="AttributePermission" xml:space="preserve">
+    <value>Attribute Permission</value>
+  </data>
+  <data name="AttributeRelationship" xml:space="preserve">
+    <value>Attribute Relationship</value>
+  </data>
+  <data name="AttributeRelationshipNameFromReservedName" xml:space="preserve">
+    <value>{0}_</value>
+  </data>
+  <data name="Binding_IsAlreadyUsedForAnotherObject" xml:space="preserve">
+    <value>The binding is already used in another object or collection; clone it instead of reusing it.</value>
+  </data>
+  <data name="CalculationProperty" xml:space="preserve">
+    <value>Calculation Property</value>
+  </data>
+  <data name="CannotDismissValidationErrors" xml:space="preserve">
+    <value>Cannot dismiss validation errors.</value>
+  </data>
+  <data name="CellPermission" xml:space="preserve">
+    <value>Cell Permission</value>
+  </data>
+  <data name="ClrAssemblyFile_FileNotFound" xml:space="preserve">
+    <value>The '{0}' file was not found.</value>
+  </data>
+  <data name="ClrAssembly_AssemblyFileNotFound" xml:space="preserve">
+    <value>The '{0}' assembly file was not found.</value>
+  </data>
+  <data name="ClrAssembly_MainAssemblyHasAMOsPublicKey" xml:space="preserve">
+    <value>The main assembly has the same public key as the components installed by SQL Server Setup, you cannot use it as the main file in a ClrAssembly object.</value>
+  </data>
+  <data name="Collections_AddingObjectOfInvalidType" xml:space="preserve">
+    <value>The item type '{0}' is not valid.</value>
+  </data>
+  <data name="Collections_CannotAddANullItem" xml:space="preserve">
+    <value>Cannot add a null item to a collection.</value>
+  </data>
+  <data name="Collections_CannotSetItems" xml:space="preserve">
+    <value>Cannot set the items of '{0}'. Use Add and Remove methods.</value>
+  </data>
+  <data name="Collections_IDIsNotUnique" xml:space="preserve">
+    <value>Another '{1}' object has the '{0}' ID.</value>
+  </data>
+  <data name="Collections_IndexOutOfRangeException" xml:space="preserve">
+    <value>Index is out of range (should be bigger or equal to 0 and smaller than Count).</value>
+  </data>
+  <data name="Collections_InvalidIndex" xml:space="preserve">
+    <value>The index specified is outside of the arrange of input array.</value>
+  </data>
+  <data name="Collections_ItemAlreadyExists" xml:space="preserve">
+    <value>The item already exists in the collection.</value>
+  </data>
+  <data name="Collections_ItemIsAlreadyInAnotherCollection" xml:space="preserve">
+    <value>The '{0}' is already in another '{1}'. Remove '{0}' from '{1}' first, or clone '{0}' to add to a new collection.</value>
+  </data>
+  <data name="Collections_ItemIsAlreadyInCollectionException" xml:space="preserve">
+    <value>The {1} named '{0}' is already in '{2}'.</value>
+  </data>
+  <data name="Collections_ItemNotInCollectionException" xml:space="preserve">
+    <value>The '{0}' item cannot be found.</value>
+  </data>
+  <data name="Collections_KeyIsNotUniqueException" xml:space="preserve">
+    <value>Another '{1}' object has the '{0}' key.</value>
+  </data>
+  <data name="Collections_KeyIsNull" xml:space="preserve">
+    <value>The '{0}' is null; the '{1}' could not be located.</value>
+  </data>
+  <data name="Collections_KeyNotFound" xml:space="preserve">
+    <value>The '{2}' with '{1}' = '{0}' doesn't exist in the collection.</value>
+  </data>
+  <data name="Collections_KeyPropertyNotDefined" xml:space="preserve">
+    <value>The key property (used as index in collection) is not defined.</value>
+  </data>
+  <data name="Collections_NameIsNotUnique" xml:space="preserve">
+    <value>Another '{1}' object has the '{0}' name.</value>
+  </data>
+  <data name="Collections_NoServiceForAddNew" xml:space="preserve">
+    <value>Cannot create new items in the '{0}' collection.</value>
+  </data>
+  <data name="Collections_RemoveInexistentObject" xml:space="preserve">
+    <value>The item could not be removed, as it does not exist in '{0}'.</value>
+  </data>
+  <data name="Collections_RemoveNullObject" xml:space="preserve">
+    <value>Cannot remove a NULL item from '{0}'.</value>
+  </data>
+  <data name="Collections_RemoveObjectOfInvalidType" xml:space="preserve">
+    <value>Cannot remove from '{0}' an item of unaccepted '{1}' type.</value>
+  </data>
+  <data name="Copy_DestinationIsSelf" xml:space="preserve">
+    <value>Destination and source cannot be the same object; cannot copy.</value>
+  </data>
+  <data name="Copy_InvalidDestination" xml:space="preserve">
+    <value>The destination for the copy operation is either null or not a valid type.</value>
+  </data>
+  <data name="Cube" xml:space="preserve">
+    <value>Cube</value>
+  </data>
+  <data name="CubeAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="CubeAttribute_AttributeHierarchyEnabled_CannotBeTrueIfSourceDisabled" xml:space="preserve">
+    <value>Cannot enable the attribute hierarchy of the cube attribute because it's disabled on the source dimension attribute '{0}'.</value>
+  </data>
+  <data name="CubeDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="CubeDimensionPermission" xml:space="preserve">
+    <value>Dimension Permission</value>
+  </data>
+  <data name="CubeHierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="CubeIDIsAlreadyUsedByAPerspective" xml:space="preserve">
+    <value>The '{0}' ID is already used by a perspective in the '{1}' cube.</value>
+  </data>
+  <data name="CubeNameIsAlreadyUsedByAPerspective" xml:space="preserve">
+    <value>The '{0}' name is already used by a perspective in the '{1}' cube.</value>
+  </data>
+  <data name="DataItem_IsAlreadyUsedForAnotherObject" xml:space="preserve">
+    <value>The DataItem object is already used in another object or collection; clone it instead of reusing it.</value>
+  </data>
+  <data name="DataItem_UnsupportedDataType" xml:space="preserve">
+    <value>The data type {0} is not supported.</value>
+  </data>
+  <data name="DataSource" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="DataSourceView" xml:space="preserve">
+    <value>Data Source View</value>
+  </data>
+  <data name="DataSource_MaxActiveConnections_OutOfRange" xml:space="preserve">
+    <value>The 'MaxActiveConnections' property for 'DataSource' should be a positive integer.</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="DependenciesCalculator_ObjectWillBeDeleted" xml:space="preserve">
+    <value>The {0} will be deleted.</value>
+  </data>
+  <data name="DependenciesCalculator_ObjectWillBeModified" xml:space="preserve">
+    <value>The {0} will be modified.</value>
+  </data>
+  <data name="DependenciesCalculator_ObjectWillRemainInvalid" xml:space="preserve">
+    <value>The {0} will no longer be valid.</value>
+  </data>
+  <data name="Deserialization_Failed" xml:space="preserve">
+    <value>Deserialization failed: {0}</value>
+  </data>
+  <data name="Deserialization_FailedInMethod" xml:space="preserve">
+    <value>Deserialization failed in method '{0}'.</value>
+  </data>
+  <data name="Deserialization_UnexpectedRoot" xml:space="preserve">
+    <value>Unexpected root '{0}' (namespace '{1}') when trying to read '{2}'.</value>
+  </data>
+  <data name="Dimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="DimensionAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="FriendlyKey" xml:space="preserve">
+    <value>{0} ({1} = '{2}')</value>
+  </data>
+  <data name="FriendlyName" xml:space="preserve">
+    <value>{0} '{1}'</value>
+  </data>
+  <data name="FriendlyPath" xml:space="preserve">
+    <value>{0} &gt; {1}</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="HierarchyIDIsAlreadyUsedByAnAttribute" xml:space="preserve">
+    <value>The hierarchy ID is already used by an attribute.</value>
+  </data>
+  <data name="HierarchyNameIsAlreadyUsedByAnAttribute" xml:space="preserve">
+    <value>The hierarchy name is already used by an attribute.</value>
+  </data>
+  <data name="ImpactAnalysisResult_ObjectReferenceMissing" xml:space="preserve">
+    <value>The object reference is missing in the impact analysis result.</value>
+  </data>
+  <data name="InvalidAnnotationValue" xml:space="preserve">
+    <value>Annotation is not a text.</value>
+  </data>
+  <data name="InvalidOperation_CannotSetModeOfDBUnderServer" xml:space="preserve">
+    <value>The Mode of this database is based on the active mode of the server it is connect to.</value>
+  </data>
+  <data name="InvalidOperation_NoConnectedParentServer" xml:space="preserve">
+    <value>The operation requires a connected parent Server.</value>
+  </data>
+  <data name="InvalidPath" xml:space="preserve">
+    <value>The '{0}' path is not valid.</value>
+  </data>
+  <data name="InvalidProcessType" xml:space="preserve">
+    <value>The '{0}' process type does not apply to '{1}' objects.</value>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>The '{1}' value is not valid for the '{0}' property of '{2}'.</value>
+  </data>
+  <data name="Kpi" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="MajorObject_Delete_NoConnectedParentServer" xml:space="preserve">
+    <value>Cannot delete the '{0}' object '{1}', it needs to be part of a connected Server object.</value>
+  </data>
+  <data name="MajorObject_Process_NoConnectedParentServer" xml:space="preserve">
+    <value>Cannot process the '{0}' object '{1}', it needs to be part of a connected Server object.</value>
+  </data>
+  <data name="MajorObject_Refresh_NoConnectedParentServer" xml:space="preserve">
+    <value>Cannot refresh the '{0}' object '{1}', it needs to be part of a connected Server object.</value>
+  </data>
+  <data name="MajorObject_Update_NoConnectedParentServer" xml:space="preserve">
+    <value>Cannot update the '{0}' object '{1}', it needs to be part of a connected Server object.</value>
+  </data>
+  <data name="MdxScript" xml:space="preserve">
+    <value>MdxScript</value>
+  </data>
+  <data name="Measure" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="MeasureGroup" xml:space="preserve">
+    <value>Measure Group</value>
+  </data>
+  <data name="MeasureGroupAttribute" xml:space="preserve">
+    <value>Measure Group Attribute</value>
+  </data>
+  <data name="MeasureGroupDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="Measure_IDShouldBeUniqueInCube" xml:space="preserve">
+    <value>The measure ID needs to be unique in the cube.</value>
+  </data>
+  <data name="Measure_NameShouldBeUniqueInCube" xml:space="preserve">
+    <value>The measure name needs to be unique in the cube.</value>
+  </data>
+  <data name="MergePartitions_InvalidSourceType" xml:space="preserve">
+    <value>The '{0}' type is not expected for merge partition sources.</value>
+  </data>
+  <data name="MergePartitions_NullSource" xml:space="preserve">
+    <value>Null source is not allowed for merge partitions.</value>
+  </data>
+  <data name="MiningModel" xml:space="preserve">
+    <value>Mining Model</value>
+  </data>
+  <data name="MiningModelColumn" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="MiningModelIDIsAlreadyUsedInAnotherStructure" xml:space="preserve">
+    <value>The '{0}' mining model ID is already used by a model in the '{1}' structure.</value>
+  </data>
+  <data name="MiningModelNameIsAlreadyUsedInAnotherStructure" xml:space="preserve">
+    <value>The '{0}' mining model name is already used by a model in the '{1}' structure .</value>
+  </data>
+  <data name="MiningStructure" xml:space="preserve">
+    <value>Mining Structure</value>
+  </data>
+  <data name="MiningStructureColumn" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="ObjectDoesNotExistOrYouDontHaveReadPermissions" xml:space="preserve">
+    <value>The object does not exist or read permissions are needed.</value>
+  </data>
+  <data name="OrderObjects_CircuitFound" xml:space="preserve">
+    <value>The objects depend on each other; they form part of a, or a whole, dependency circuit</value>
+  </data>
+  <data name="OutOfSyncException" xml:space="preserve">
+    <value>The client's metadata is out of sync with the engine's metadata. The reference returned by the engine is unknown in the client: '{0}'.</value>
+  </data>
+  <data name="Parent_DirectOrIndirectIsMissing" xml:space="preserve">
+    <value>The '{0}' does not have a '{1}' parent.</value>
+  </data>
+  <data name="Partition" xml:space="preserve">
+    <value>Partition</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="Perspective" xml:space="preserve">
+    <value>Perspective</value>
+  </data>
+  <data name="PerspectiveAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="PerspectiveAttribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="PerspectiveCalculation" xml:space="preserve">
+    <value>Calculation</value>
+  </data>
+  <data name="PerspectiveDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="PerspectiveHierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="PerspectiveIDIsAlreadyUsedByACube" xml:space="preserve">
+    <value>The '{0}' perspective ID is already used by a cube.</value>
+  </data>
+  <data name="PerspectiveIDIsAlreadyUsedInAnotherCube" xml:space="preserve">
+    <value>The '{1}' perspective ID is already used in the '{0}' cube .</value>
+  </data>
+  <data name="PerspectiveKpi" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="PerspectiveMeasure" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="PerspectiveMeasureGroup" xml:space="preserve">
+    <value>Measure Group</value>
+  </data>
+  <data name="PerspectiveNameIsAlreadyUsedByACube" xml:space="preserve">
+    <value>The '{0}' perspective name is already used by a cube.</value>
+  </data>
+  <data name="PerspectiveNameIsAlreadyUsedInAnotherCube" xml:space="preserve">
+    <value>The '{1}' perspective name is already used in the '{0}' cube.</value>
+  </data>
+  <data name="PropertyCannotBeChangedForObjectInCollection" xml:space="preserve">
+    <value>The '{0}' property cannot be changed when the '{1}' object is in a collection.</value>
+  </data>
+  <data name="PropertyCategory_Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="PropertyCategory_Algorithm" xml:space="preserve">
+    <value>Algorithm</value>
+  </data>
+  <data name="PropertyCategory_Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="PropertyCategory_Configurable" xml:space="preserve">
+    <value>Configurable</value>
+  </data>
+  <data name="PropertyCategory_DataType" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="PropertyCategory_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PropertyCategory_ParentChildRelated" xml:space="preserve">
+    <value>Parent-Child</value>
+  </data>
+  <data name="PropertyCategory_Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="PropertyCategory_SourceRelated" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="PropertyCategory_Storage" xml:space="preserve">
+    <value>Storage</value>
+  </data>
+  <data name="PropertyDescription_Action_Application" xml:space="preserve">
+    <value>Specifies the name of the application that executes the action.</value>
+  </data>
+  <data name="PropertyDescription_Action_Caption" xml:space="preserve">
+    <value>Specifies the caption of the action.</value>
+  </data>
+  <data name="PropertyDescription_Action_CaptionIsMdx" xml:space="preserve">
+    <value>Indicates whether the caption is defined as a Multidimensional Expressions (MDX) expression.</value>
+  </data>
+  <data name="PropertyDescription_Action_Condition" xml:space="preserve">
+    <value>Specifies the condition under which the action will be available. If not specified, then the action is always available for the target objects.</value>
+  </data>
+  <data name="PropertyDescription_Action_Invocation" xml:space="preserve">
+    <value>Specifies the recommended means of invoking the action.</value>
+  </data>
+  <data name="PropertyDescription_Action_Target" xml:space="preserve">
+    <value>Specifies the target object for which the action will be available.</value>
+  </data>
+  <data name="PropertyDescription_Action_TargetType" xml:space="preserve">
+    <value>Specifies the type of object for which the action will be available.</value>
+  </data>
+  <data name="PropertyDescription_Action_Type" xml:space="preserve">
+    <value>Specifies the type of action.</value>
+  </data>
+  <data name="PropertyDescription_AggregationAttribute_AttributeID" xml:space="preserve">
+    <value>Specifies the identifier of the source attribute.</value>
+  </data>
+  <data name="PropertyDescription_Assembly_ImpersonationInfo" xml:space="preserve">
+    <value>Specifies the Windows credentials used to execute the stored procedure.</value>
+  </data>
+  <data name="PropertyDescription_AttributeBinding_AttributeID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying attribute.</value>
+  </data>
+  <data name="PropertyDescription_AttributeBinding_Ordinal" xml:space="preserve">
+    <value>Specifies the position for binding within a collection (for example: the ordinal when binding to a KeyColumn of an attribute).</value>
+  </data>
+  <data name="PropertyDescription_AttributeBinding_Type" xml:space="preserve">
+    <value>Specifies to which part of the attribute to bind to (for example: to the Name, to the Key etc).</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_Attribute" xml:space="preserve">
+    <value>Specifies the attribute on which the attribute relationship is based.</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_Cardinality" xml:space="preserve">
+    <value>Indicates if the related attribute has a many-to-one or one-to-one relationship with this attribute.</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_Name" xml:space="preserve">
+    <value>Specifies the name of the attribute relationship. If not specified, then the name of the attribute is used. </value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_Optionality" xml:space="preserve">
+    <value>Indicates if each member of the related attribute is associated with at least one member of this attribute.</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_OverrideBehavior" xml:space="preserve">
+    <value>Determines how positioning on the related attribute affects the positioning on the attribute.</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_RelationshipType" xml:space="preserve">
+    <value>Indicates whether the relationship between attributes can change over time.</value>
+  </data>
+  <data name="PropertyDescription_AttributeRelationship_Visible" xml:space="preserve">
+    <value>Indicates whether the attribute relationship is visible to client applications.</value>
+  </data>
+  <data name="PropertyDescription_AttributeTranslation_CaptionColumn" xml:space="preserve">
+    <value>Specifies the details of the binding to a column containing the member caption in this language.</value>
+  </data>
+  <data name="PropertyDescription_AttributeTranslation_MembersWithDataCaption" xml:space="preserve">
+    <value>Specifies the template to use for the data member caption in this language.</value>
+  </data>
+  <data name="PropertyDescription_CalculatedMeasureBinding_MeasureName" xml:space="preserve">
+    <value>Specifies the name of the underlying measure.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_AssociatedMeasureGroupID" xml:space="preserve">
+    <value>Specifies the measure group to which the calculation is most strongly associated (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_BackColor" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the recommended background color to be used by clients when displaying the value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_CalculationReference" xml:space="preserve">
+    <value>Specifies the name of the calculation defined in the MDX script object.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_CalculationType" xml:space="preserve">
+    <value>Specifies the calculation type associated with a CalculationProperty object.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_Description" xml:space="preserve">
+    <value>Specifies the description in the calculation.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_DisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder for the measure (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_FontFlags" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the recommended font flags (bold, italic, and so on) used by clients when displaying the value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_FontName" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the recommended font used by clients when displaying the value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_FontSize" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the recommended font size used by clients when displaying the measure value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_ForeColor" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the recommended foreground color used by clients when displaying the value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_FormatString" xml:space="preserve">
+    <value>Specifies the format used by clients when displaying the measure value.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_Language" xml:space="preserve">
+    <value>Specifies the locale used for formatting.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_NonEmptyBehavior" xml:space="preserve">
+    <value>Specifies the set of base measures used to determine the non-empty behavior for a calculated member.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_SolveOrder" xml:space="preserve">
+    <value>Specifies the calculation solve order.</value>
+  </data>
+  <data name="PropertyDescription_CalculationProperty_Visible" xml:space="preserve">
+    <value>Indicates whether the object is visible to client applications. </value>
+  </data>
+  <data name="PropertyDescription_ClrAssembly_PermissionSet" xml:space="preserve">
+    <value>Specifies the permissions granted to the assembly.</value>
+  </data>
+  <data name="PropertyDescription_ColumnBinding_ColumnID" xml:space="preserve">
+    <value>Specifies the identifier of the source column.</value>
+  </data>
+  <data name="PropertyDescription_ColumnBinding_TableID" xml:space="preserve">
+    <value>Specifies the identifier of the source table.</value>
+  </data>
+  <data name="PropertyDescription_ComAssembly_Source" xml:space="preserve">
+    <value>Specifies the source file of the assembly. </value>
+  </data>
+  <data name="PropertyDescription_CubeAttributeBinding_AttributeID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying attribute.</value>
+  </data>
+  <data name="PropertyDescription_CubeAttributeBinding_CubeDimensionID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying cube dimension.</value>
+  </data>
+  <data name="PropertyDescription_CubeAttributeBinding_CubeID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying cube.</value>
+  </data>
+  <data name="PropertyDescription_CubeAttributeBinding_Ordinal" xml:space="preserve">
+    <value>Specifies the position for binding within a collection (for example: the ordinal when binding to a KeyColumn of an attribute).</value>
+  </data>
+  <data name="PropertyDescription_CubeAttributeBinding_Type" xml:space="preserve">
+    <value>Specifies to which part of the attribute to bind to (for example: to the Name, to the Key etc).</value>
+  </data>
+  <data name="PropertyDescription_CubeAttribute_AggregationUsage" xml:space="preserve">
+    <value>Specifies how the Storage Design Wizard will design aggregations for this attribute.</value>
+  </data>
+  <data name="PropertyDescription_CubeAttribute_AttributeHierarchyEnabled" xml:space="preserve">
+    <value>Indicates whether the attribute hierarchy is enabled on this cube dimension. This allows hierarchies to be disabled on specific cubes (or dimension roles). This has no effect if the underlying attribute hierarchy is disabled. </value>
+  </data>
+  <data name="PropertyDescription_CubeAttribute_AttributeHierarchyOptimizedState" xml:space="preserve">
+    <value>Indicates whether the attribute hierarchy is optimized on this cube dimension. This allows hierarchies to be optimized on specific cubes (or dimension roles). This has no effect if the underlying attribute hierarchy is not optimized. </value>
+  </data>
+  <data name="PropertyDescription_CubeAttribute_AttributeHierarchyVisible" xml:space="preserve">
+    <value>Indicates whether the attribute hierarchy is visible on this cube dimension. This allows hierarchies to be made invisible on specific cubes (or dimension roles). This has no effect if the underlying attribute hierarchy is not visible. </value>
+  </data>
+  <data name="PropertyDescription_CubeAttribute_AttributeID" xml:space="preserve">
+    <value>Specifies the identifier of the dimension attribute.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimensionBinding_CubeDimensionID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying cube dimension.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimensionBinding_CubeID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying cube.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimensionBinding_DataSourceID" xml:space="preserve">
+    <value>Specifies the data source containing the source cube dimension.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimensionBinding_Filter" xml:space="preserve">
+    <value>Any filter to be applied. This is an MDX expression that defines the members to be included.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimension_AllMemberAggregationUsage" xml:space="preserve">
+    <value>Specifies how aggregations will be designed by the StorageDesign Wizard.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimension_DimensionID" xml:space="preserve">
+    <value>Specifies the identifier of the database dimension on which the cube dimension is based.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimension_HierarchyUniqueNameStyle" xml:space="preserve">
+    <value>Indicates whether the dimension name will be included in the name of the hierarchies. If set to Default, then the system will apply a default behavior, and will include the dimension name in the case where there is more than one usage of the same dimension. </value>
+  </data>
+  <data name="PropertyDescription_CubeDimension_MemberUniqueNameStyle" xml:space="preserve">
+    <value>Indicates how member unique names will be formed.</value>
+  </data>
+  <data name="PropertyDescription_CubeDimension_Visible" xml:space="preserve">
+    <value>Indicates whether the cube dimension is visible to client applications. </value>
+  </data>
+  <data name="PropertyDescription_CubeHierarchy_Enabled" xml:space="preserve">
+    <value>Indicates whether the hierarchy is enabled on this cube dimension. This allows hierarchies to be disabled on specific cubes (or dimension roles). This has no effect if the underlying hierarchy is disabled. </value>
+  </data>
+  <data name="PropertyDescription_CubeHierarchy_HierarchyID" xml:space="preserve">
+    <value>Specifies the identifier of the dimension hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_CubeHierarchy_OptimizedState" xml:space="preserve">
+    <value>Indicates whether the hierarchy is optimized on this cube dimension. </value>
+  </data>
+  <data name="PropertyDescription_CubeHierarchy_Visible" xml:space="preserve">
+    <value>Indicates whether the hierarchy is visible on this cube dimension. This allows hierarchies to be made invisible on specific cubes (or dimension roles). This has no effect if the underlying hierarchy is not visible.</value>
+  </data>
+  <data name="PropertyDescription_Cube_AggregationPrefix" xml:space="preserve">
+    <value>Specifies the prefix appended to any materialized views created for the cube's partitions. This setting will be used as the default for new measure groups and partitions created for the cube.</value>
+  </data>
+  <data name="PropertyDescription_Cube_Collation" xml:space="preserve">
+    <value>Specifies the default collation for the cube.</value>
+  </data>
+  <data name="PropertyDescription_Cube_DefaultMeasure" xml:space="preserve">
+    <value>Specifies the measure used to resolve a Multidimensional Expressions (MDX) expression if a measure is not explicitly referenced in the expression.  If no default measure is specified, an arbitrary measure is used as the default measure.</value>
+  </data>
+  <data name="PropertyDescription_Cube_ErrorConfiguration" xml:space="preserve">
+    <value>Specifies the action taken by the server upon various types of errors during processing. This setting will be used as the default for new measure groups and partitions created for the cube.</value>
+  </data>
+  <data name="PropertyDescription_Cube_EstimatedRows" xml:space="preserve">
+    <value>Specifies the estimated number of rows in the fact tables. This is the estimated rows per partition, and provides the default used per measure group and partition. </value>
+  </data>
+  <data name="PropertyDescription_Cube_Language" xml:space="preserve">
+    <value>Specifies the default language for the cube The names defined for the cube and its contained objects will be used as the captions in this default language.</value>
+  </data>
+  <data name="PropertyDescription_Cube_ProactiveCaching" xml:space="preserve">
+    <value>Specifies the proactive caching settings for the cube. These settings will be used as the default for new measure groups and partitions created for the cube. </value>
+  </data>
+  <data name="PropertyDescription_Cube_ProcessingMode" xml:space="preserve">
+    <value>Indicates whether processed data is available after all aggregations have been computed (Regular) or immediately after the data has been loaded (LazyAggregations). This setting will be used as the default for new measure groups and partitions created for the cube. </value>
+  </data>
+  <data name="PropertyDescription_Cube_ProcessingPriority" xml:space="preserve">
+    <value>Specifies the priority for processing the cube.</value>
+  </data>
+  <data name="PropertyDescription_Cube_ScriptCacheProcessingMode" xml:space="preserve">
+    <value>Indicates whether processed data is available after all cached calculations have been computed (Regular) or immediately after the data has been loaded (Lazy).</value>
+  </data>
+  <data name="PropertyDescription_Cube_ScriptErrorHandlingMode" xml:space="preserve">
+    <value>Specifies how errors in the cube calculations will be handled.</value>
+  </data>
+  <data name="PropertyDescription_Cube_Source" xml:space="preserve">
+    <value>Specifies the data source view on which the cube is based.</value>
+  </data>
+  <data name="PropertyDescription_Cube_StorageLocation" xml:space="preserve">
+    <value>Specifies the default storage location of data for this cube. </value>
+  </data>
+  <data name="PropertyDescription_Cube_StorageMode" xml:space="preserve">
+    <value>Specifies the default storage mode for the cube. This provides the default for new measure groups and partitions created for the cube.</value>
+  </data>
+  <data name="PropertyDescription_Cube_Visible" xml:space="preserve">
+    <value>Indicates whether the cube is visible to client applications.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_Collation" xml:space="preserve">
+    <value>Specifies the collation.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_DataSize" xml:space="preserve">
+    <value>Specifies the data size used by Analysis Services. The data size specified for this property can differ from the data size in the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_DataType" xml:space="preserve">
+    <value>Specifies the data type used by Analysis Services. The data type specified for this property can differ from the data type in the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_Format" xml:space="preserve">
+    <value>Specifies the format string applied by Analysis Services.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_InvalidXmlCharacters" xml:space="preserve">
+    <value>Specifies the treatment of any characters in the data that are not valid in XML (for example, ASCII control characters). </value>
+  </data>
+  <data name="PropertyDescription_DataItem_MimeType" xml:space="preserve">
+    <value>Specifies the mime type.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_NullProcessing" xml:space="preserve">
+    <value>Specifies the processing of null values. Setting this property to Automatic means that Analysis Services uses default behavior.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_Source" xml:space="preserve">
+    <value>Specifies the source.</value>
+  </data>
+  <data name="PropertyDescription_DataItem_Trimming" xml:space="preserve">
+    <value>Specifies the trimming of strings to remove leading (left) and trailing (right) blanks.</value>
+  </data>
+  <data name="PropertyDescription_DataSourceViewBinding_DataSourceViewID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying data source view. </value>
+  </data>
+  <data name="PropertyDescription_DataSourceView_DataSourceID" xml:space="preserve">
+    <value>Specifies the primary data source from which the data source view is constructed.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_ConnectionString" xml:space="preserve">
+    <value>Specifies the connection string for the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_ConnectionStringSecurity" xml:space="preserve">
+    <value>Specifies if the password property was removed from the connection string.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_ImpersonationInfo" xml:space="preserve">
+    <value>Specifies the user credentials used to connect to the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_Isolation" xml:space="preserve">
+    <value>Specifies the isolation level to use when using this data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_ManagedProvider" xml:space="preserve">
+    <value>Specifies the name of the managed provider. This is not specified for a native OLE DB provider.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_MaxActiveConnections" xml:space="preserve">
+    <value>Specifies the maximum number of concurrent connections to the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_QueryHints" xml:space="preserve">
+    <value>Specifies the query hints to use while querying data directly from the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_QueryImpersonationInfo" xml:space="preserve">
+    <value>Specifies the user credentials used to query data directly from the data source.</value>
+  </data>
+  <data name="PropertyDescription_DataSource_Timeout" xml:space="preserve">
+    <value>Specifies the execution timeout to use for all commands issued against the data source.</value>
+  </data>
+  <data name="PropertyDescription_Database_AggregationPrefix" xml:space="preserve">
+    <value>Specifies the prefix appended to any materialized views created for the database's partitions. This setting will be used as the default for new measure groups and partitions created for the cube.</value>
+  </data>
+  <data name="PropertyDescription_Database_Collation" xml:space="preserve">
+    <value>Specifies the default collation for the database.</value>
+  </data>
+  <data name="PropertyDescription_Database_DataSourceImpersonationInfo" xml:space="preserve">
+    <value>Specifies the default user credentials used to connect to data sources.</value>
+  </data>
+  <data name="PropertyDescription_Database_DbStorageLocation" xml:space="preserve">
+    <value>Specifies the storage location for the database as an UNC path or as an empty string for the server "Data" directory.</value>
+  </data>
+  <data name="PropertyDescription_Database_DirectQueryMode" xml:space="preserve">
+    <value>Specifies whether queries retrieve the data from the VertiPaq cache or directly from the data source.</value>
+  </data>
+  <data name="PropertyDescription_Database_EstimatedSize" xml:space="preserve">
+    <value>Specifies the estimated size (in bytes) of the database.</value>
+  </data>
+  <data name="PropertyDescription_Database_ImagePath" xml:space="preserve">
+    <value>Specifies the path from which the database was loaded.</value>
+  </data>
+  <data name="PropertyDescription_Database_ImageUniqueID" xml:space="preserve">
+    <value>Specifies the image file ID.</value>
+  </data>
+  <data name="PropertyDescription_Database_ImageUrl" xml:space="preserve">
+    <value>Specifies the image URL.</value>
+  </data>
+  <data name="PropertyDescription_Database_ImageVersion" xml:space="preserve">
+    <value>Specifies the image file version.</value>
+  </data>
+  <data name="PropertyDescription_Database_IsBlocked" xml:space="preserve">
+    <value>Specifies whether the database is blocked or not. When a database is blocked, some operations on that database may be restricted.</value>
+  </data>
+  <data name="PropertyDescription_Database_Language" xml:space="preserve">
+    <value>Specifies the language for the database.</value>
+  </data>
+  <data name="PropertyDescription_Database_LastUpdate" xml:space="preserve">
+    <value>Specifies the date the database (or any of its contained major objects) was last altered.</value>
+  </data>
+  <data name="PropertyDescription_Database_MasterDataSourceID" xml:space="preserve">
+    <value>Specifies the master data source identifier for the database.</value>
+  </data>
+  <data name="PropertyDescription_Database_ProcessingPriority" xml:space="preserve">
+    <value>Specifies the priority for processing the database.</value>
+  </data>
+  <data name="PropertyDescription_Database_ReadWriteMode" xml:space="preserve">
+    <value>Indicates whether the database is in read-only or read-write mode.</value>
+  </data>
+  <data name="PropertyDescription_Database_StorageEngineUsed" xml:space="preserve">
+    <value>Specifies whether this is a tabular database or a multidimensional database.</value>
+  </data>
+  <data name="PropertyDescription_Database_Version" xml:space="preserve">
+    <value>Specifies the the monotonically increasing version number of the database object. Returns 0 if the database type does not support version numbers.</value>
+  </data>
+  <data name="PropertyDescription_DegenerateMeasureGroupDimension_ShareDimensionStorage" xml:space="preserve">
+    <value>Indicates if the measure group and the dimension share the same storage.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyDisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder for the attribute hierarchy (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyEnabled" xml:space="preserve">
+    <value>Indicates whether an attribute hierarchy is enabled for this attribute. If the attribute hierarchy is not enabled, then the attribute cannot be used in a user-defined hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyOptimizedState" xml:space="preserve">
+    <value>Specifies the level of optimization applied to the attribute hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyOrdered" xml:space="preserve">
+    <value>Indicates whether the members of the attribute hierarchy are ordered.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the attribute Hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_AttributeHierarchyVisible" xml:space="preserve">
+    <value>Indicates whether the attribute hierarchy is visible to client applications. Even if the attribute hierarchy is not visible, it can still be used in a user-defined hierarchy and referenced in Multidimensional Expressions (MDX).</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_CustomRollupColumn" xml:space="preserve">
+    <value>Specifies a column that contains a Multidimensional Expressions (MDX) expression used to aggregate measures for the attribute. This property overrides the AggregateFunction property of the given measure.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_CustomRollupPropertiesColumn" xml:space="preserve">
+    <value>A column containing the properties of the custom rollup.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DataEncodingHint" xml:space="preserve">
+    <value>Specifies a hint for the type of data encoding.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DefaultMember" xml:space="preserve">
+    <value>A Multidimensional Expressions (MDX) expression that defines the default member for the attribute. If no default member is specified, then the default is the (All) member (if present), or an arbitrary member if the (All) member is not present.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DerivedFromColumnId" xml:space="preserve">
+    <value>Used only for attributes of CalcuatedTables. This property stores the information as to source column from which the current attribute was calculated from. This is managed by the engine currently. Client/User don't set this property.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DerivedFromTableId" xml:space="preserve">
+    <value>Used only for attributes of CalcuatedTables. This property stores the information as to source table from which the current attribute was calculated from. This is managed by the engine currently. Client/User don't set this property.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DiscretizationBucketCount" xml:space="preserve">
+    <value>Specifies the number of buckets in which to discretize (group) members of the attribute. The method used to discretize the members is set by the DiscretizationMethod property.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_DiscretizationMethod" xml:space="preserve">
+    <value>Specifies the method used to discretize (group) the members of the attribute. The number of buckets created by discretizing the members is set by the DiscretizationBucketCount.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_EstimatedCount" xml:space="preserve">
+    <value>Specifies the number of members in the attribute. This number is either the amount last counted by Analysis Services, or a user-provided estimate of the member count.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_ExtendedType" xml:space="preserve">
+    <value>Specifies type of information contained by the attribute when Type property is set to 'ExtendedType'. </value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_FormatString" xml:space="preserve">
+    <value>Specifies the format used by clients when displaying the member caption.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_GroupingBehavior" xml:space="preserve">
+    <value>Indicates whether client applications should discourage users from grouping on this attribute.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_HasLineage" xml:space="preserve">
+    <value>Used only for attributes of CalcuatedTables. This property stores the information as to whether the current column has direct lineage with the source column identified by DerivedFromTableId and DerivedFromColumnId. This is managed by the engine currently. Client/User don't set this property.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_InstanceSelection" xml:space="preserve">
+    <value>Specifies the recommended means by which a client UI should allow selection of a member.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_IsAggregatable" xml:space="preserve">
+    <value>Indicates whether the attribute can be aggregated in a hierarchy. The attribute hierarchy has an (All) level if is this is True.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_KeyColumns" xml:space="preserve">
+    <value>Specifies the details of the binding to the column(s) containing the member key(s).</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_MemberNamesUnique" xml:space="preserve">
+    <value>Indicates whether member names are unique for this attribute (affecting how member unique names are assigned).</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_MembersWithData" xml:space="preserve">
+    <value>Specifies the treatment of fact data associated with non-leaf members.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_MembersWithDataCaption" xml:space="preserve">
+    <value>Specifies a template string used to create captions for the system-generated data members.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_NameColumn" xml:space="preserve">
+    <value>Specifies the details of the binding to the column containing the member name.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_NamingTemplate" xml:space="preserve">
+    <value>Specifies the definition of how levels in a parent-child hierarchy are named (for example "CEO ; VP "). If not specified, then the system will assign names.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_OrderBy" xml:space="preserve">
+    <value>Specifies the method used to order the members of the attribute.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_ProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the attribute.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_RootMemberIf" xml:space="preserve">
+    <value>Specifies the criteria by which members of the highest level (ignoring the (All) level, if any) are identified. This property only applies to attributes where the Usage property is set to Parent.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_SkippedLevelsColumn" xml:space="preserve">
+    <value>Specifies the details of the binding to a column that contains the number of levels between a member and its parent. Only applies to attributes where the Usage property is set to Parent.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_TokenizationBehavior" xml:space="preserve">
+    <value>Specifies a behavior for the Vertipaq tokenization behavior.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_Type" xml:space="preserve">
+    <value>Specifies the type of information contained by the attribute. </value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_UnaryOperatorColumn" xml:space="preserve">
+    <value>Specifies the details of the binding to a column that provides unary operators to control how attribute members are aggregated into the value of their parent member. Only applies to attributes where the Usage property is set to Parent.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_Usage" xml:space="preserve">
+    <value>Specifies the usage of the attribute.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_UserEditFlag" xml:space="preserve">
+    <value>Used only for attributes of CalcuatedTables. This property stores the information as to whether user wants lineage to update the property field or not. This is managed by the engine currently. Client/User don't set this property.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_ValueColumn" xml:space="preserve">
+    <value>Specifies the details of the binding to the column containing the member value.</value>
+  </data>
+  <data name="PropertyDescription_DimensionAttribute_VertipaqCompressionHint" xml:space="preserve">
+    <value>Specifies a hint for the level of the Vertipaq compression algorithm.</value>
+  </data>
+  <data name="PropertyDescription_DimensionBinding_DataSourceID" xml:space="preserve">
+    <value>Specifies the identifier of the data source containing the underlying dimension.</value>
+  </data>
+  <data name="PropertyDescription_DimensionBinding_DimensionID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying dimension.</value>
+  </data>
+  <data name="PropertyDescription_DimensionBinding_Persistence" xml:space="preserve">
+    <value>Specifies the metadata cached for the linking object, as well as the behavior upon any changes to the underlying linked object. Either the linking object is refreshed (NotPersisted) or becomes invalid (Metadata) upon changes to the underlying object. The value of 'All' applies to local cubes.</value>
+  </data>
+  <data name="PropertyDescription_DimensionBinding_RefreshInterval" xml:space="preserve">
+    <value>Specifies the interval for checking the underlying object for changes.</value>
+  </data>
+  <data name="PropertyDescription_DimensionBinding_RefreshPolicy" xml:space="preserve">
+    <value>Specifies the policy used when checking the underlying object for changes.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_AttributeAllMemberName" xml:space="preserve">
+    <value>Specifies the name of the (All) member. This applies to all hierarchies in the dimension that have an (All) member.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_Collation" xml:space="preserve">
+    <value>Specifies the default collation for the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_CurrentStorageMode" xml:space="preserve">
+    <value>Specifies the current storage mode of the dimension, including proactive caching.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_CurrentStringStoresCompatibilityLevel" xml:space="preserve">
+    <value>Indicates the current level of compatibility for the string stores of the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_DependsOnDimensionID" xml:space="preserve">
+    <value>Specifies the identifier for any other dimension on which the current dimension depends. If set, this property indicates that the contents of the current dimension are dependent on the contents of the other dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_ErrorConfiguration" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering various types of errors during processing. These settings are used by default for new objects created in the database.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_Language" xml:space="preserve">
+    <value>Specifies the default language for the dimension. The names defined for the dimension and its subordinate objects are used as the captions for the specified language.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_MdxMissingMemberMode" xml:space="preserve">
+    <value>Specifies the action taken by the server when there is a reference to a member that does not exist. This property applies to both to calculations and queries that reference the dimension. </value>
+  </data>
+  <data name="PropertyDescription_Dimension_MiningModelID" xml:space="preserve">
+    <value>Specifies the identifier of the mining model (for a data mining dimension). </value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProactiveCaching" xml:space="preserve">
+    <value>Specifies the proactive caching settings for the dimension. </value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProcessingGroup" xml:space="preserve">
+    <value>Specifies the processing group setting for the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProcessingMode" xml:space="preserve">
+    <value>Indicates whether processed data is available after all aggregations have been computed (Regular) or immediately after the data has been loaded (LazyAggregations).</value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProcessingPriority" xml:space="preserve">
+    <value>Specifies the priority for processing the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProcessingRecommendation" xml:space="preserve">
+    <value>Indicates whether processing should be performed.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_ProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_Source" xml:space="preserve">
+    <value>Specifies the source of the dimension. </value>
+  </data>
+  <data name="PropertyDescription_Dimension_StorageMode" xml:space="preserve">
+    <value>Specifies the type of storage for the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_StringStoresCompatibilityLevel" xml:space="preserve">
+    <value>Indicates the level of compatibility for the string stores of the dimension which is used now or going to be used from the moment of the next full processing of the dimension.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_Type" xml:space="preserve">
+    <value>Specifies the type of information contained by the dimension. </value>
+  </data>
+  <data name="PropertyDescription_Dimension_UnknownMember" xml:space="preserve">
+    <value>Specifies the existence of an unknown member, and whether that member is visible or hidden. Fact data not associated with a member can be associated with the unknown member.</value>
+  </data>
+  <data name="PropertyDescription_Dimension_UnknownMemberName" xml:space="preserve">
+    <value>Specifies the caption for the unknown member in the default language. If not specified, the default value "Unknown" is used. </value>
+  </data>
+  <data name="PropertyDescription_Dimension_WriteEnabled" xml:space="preserve">
+    <value>Specifies the dimension can be updated by client applications. </value>
+  </data>
+  <data name="PropertyDescription_DrillThroughAction_Default" xml:space="preserve">
+    <value>Specifies the drillthrough action default.</value>
+  </data>
+  <data name="PropertyDescription_DrillThroughAction_MaximumRows" xml:space="preserve">
+    <value>Specifies the maximum number of rows that will be returned on drillthrough.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_CalculationError" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering a calculation error during recalc.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyDuplicate" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering duplicate keys.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyErrorAction" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering any key error.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyErrorLimit" xml:space="preserve">
+    <value>Specifies the maximum number of key errors that can occur before either processing stops, or processing continues but key errors are no longer logged. The KeyErrorLimitAction property specifies which action is taken.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyErrorLimitAction" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering the maximum number of key errors specified in the KeyErrorLimit property. The server either stops processing, or continues processing but no longer logs key errors.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyErrorLogFile" xml:space="preserve">
+    <value>Specifies the file to which all key errors will be logged.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_KeyNotFound" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering a key that cannot be found.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_NullKeyConvertedToUnknown" xml:space="preserve">
+    <value>Specifies the action taken by the server upon converting a null key to the key for the unknown member.</value>
+  </data>
+  <data name="PropertyDescription_ErrorConfiguration_NullKeyNotAllowed" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering a null key in the case where a null key is not valid.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_AllMemberName" xml:space="preserve">
+    <value>Specifies the name of the member in the (All) level.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_AllowDuplicateNames" xml:space="preserve">
+    <value>Indicates whether the members under a common parent can have the same name.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_DisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder for the hierarchy (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_MemberKeysUnique" xml:space="preserve">
+    <value>Indicates whether member keys are unique for this hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_MemberNamesUnique" xml:space="preserve">
+    <value>Indicates whether member names are unique for this hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_ProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the hierarchy.</value>
+  </data>
+  <data name="PropertyDescription_Hierarchy_StructureType" xml:space="preserve">
+    <value>Indicates whether the hierarchy is natural or not.</value>
+  </data>
+  <data name="PropertyDescription_Kpi_AssociatedMeasureGroupID" xml:space="preserve">
+    <value>Specifies the identifier for the measure group to which the key performance indicator (KPI) is most strongly associated (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_CurrentTimeMember" xml:space="preserve">
+    <value>Specifies the current time member. This is the time member that the client application should slice on by default.</value>
+  </data>
+  <data name="PropertyDescription_Kpi_DisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder for the key performance indicator (KPI) (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_Goal" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the goal of the key performance indicator (KPI).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_ParentKpiID" xml:space="preserve">
+    <value>Specifies the identifier for the parent of the key performance indicator (KPI), allowing KPIs to be organized in a hierarchical manner.</value>
+  </data>
+  <data name="PropertyDescription_Kpi_Status" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the status of the key performance indicator (KPI). This is a normalized expression returning values between -1 (bad) and 1 (good).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_StatusGraphic" xml:space="preserve">
+    <value>Specifies the recommended graphical representation for the status.</value>
+  </data>
+  <data name="PropertyDescription_Kpi_Trend" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the trend of the key performance indicator (KPI) over time. This is a normalized expression returning values between -1 (getting much worse over time) and 1 (getting much better over time).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_TrendGraphic" xml:space="preserve">
+    <value>Specifies the recommended graphical representation for the trend.</value>
+  </data>
+  <data name="PropertyDescription_Kpi_Value" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the actual value of the key performance indicator (KPI).</value>
+  </data>
+  <data name="PropertyDescription_Kpi_Weight" xml:space="preserve">
+    <value>Specifies a Multidimensional Expressions (MDX) expression that returns the weight of the key performance indicator (KPI). This is most applicable when the KPI has a parent KPI, where it provides information to the client as to the weight of the contribution to its parent.</value>
+  </data>
+  <data name="PropertyDescription_Level_HideMemberIf" xml:space="preserve">
+    <value>Specifies which members are hidden. This property supports ragged hierarchies containing logical gaps between members.</value>
+  </data>
+  <data name="PropertyDescription_Level_SourceAttribute" xml:space="preserve">
+    <value>Specifies the source attribute on which the level is based.</value>
+  </data>
+  <data name="PropertyDescription_MajorObject_LastSchemaUpdate" xml:space="preserve">
+    <value>Specifies the date that the object was last modified. This date does not reflect modifications to any major object contained in the object.    </value>
+  </data>
+  <data name="PropertyDescription_ManyToManyMeasureGroupDimension_DirectSlice" xml:space="preserve">
+    <value>An MDX expression identifying a member in the dimension. This is used as an optimization, and indicates that when slicing on this member, it is not necessary to perform any many-many lookup for any measure expressions.</value>
+  </data>
+  <data name="PropertyDescription_MeasureBinding_MeasureID" xml:space="preserve">
+    <value>Specifies the identifier for the source measure.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_CubeID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying cube.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_DataSourceID" xml:space="preserve">
+    <value>Specifies the identifier of the data source containing the underlying measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_Filter" xml:space="preserve">
+    <value>Specifies the MDX expression that filters the contents of the binding.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_MeasureGroupID" xml:space="preserve">
+    <value>Specifies the identifier of the underlying measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_Persistence" xml:space="preserve">
+    <value>Specifies the metadata cached for the linking object, as well as the behavior upon any changes to the underlying linked object. Either the linking object is refreshed (NotPersisted) or becomes invalid (Metadata) upon changes to the underlying object. The value of 'All' applies to local cubes.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_RefreshInterval" xml:space="preserve">
+    <value>Specifies the interval for checking the underlying object for changes.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupBinding_RefreshPolicy" xml:space="preserve">
+    <value>Specifies the policy used when checking the underlying object for changes.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroupDimension_Source" xml:space="preserve">
+    <value>Specifies the source.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_AggregationPrefix" xml:space="preserve">
+    <value>Specifies the prefix appended to any materialized views created for the measure group's partitions. This setting will be used as the default for new partitions created for the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_DataAggregation" xml:space="preserve">
+    <value>Indicates whether the server can aggregate data in MOLAP files or ROLAP tables, or in the cache (in memory).</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_ErrorConfiguration" xml:space="preserve">
+    <value>Specifies the action taken by the server upon various types of errors during processing. These settings will be used as the default for new partitions created for the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_EstimatedRows" xml:space="preserve">
+    <value>Specifies the estimated number of rows in the fact tables. This is the estimated rows per partition, and provides the default used per partition.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_EstimatedSize" xml:space="preserve">
+    <value>Specifies the estimated size (in bytes) of the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_IgnoreUnrelatedDimensions" xml:space="preserve">
+    <value>Indicates whether dimensions that are unrelated to the measure group are forced to their top level when their members are included in a query.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_ProactiveCaching" xml:space="preserve">
+    <value>Specifies the proactive caching settings for the measure group. These settings will be used as the default for new partitions created for the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_ProcessingMode" xml:space="preserve">
+    <value>Indicates whether processed data is available after all aggregations have been computed (Regular) or immediately after data has been loaded (LazyAggregations). This setting will be used as the default for new partitions created for the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_ProcessingPriority" xml:space="preserve">
+    <value>Specifies the priority for processing the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_Source" xml:space="preserve">
+    <value>Specifies the source of the measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_StorageLocation" xml:space="preserve">
+    <value>Specifies the default storage location of data for this measure group.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_StorageMode" xml:space="preserve">
+    <value>Specifies the default storage mode for the measure group. This provides the default for new partitions.</value>
+  </data>
+  <data name="PropertyDescription_MeasureGroup_Type" xml:space="preserve">
+    <value>Specifies the type of information the measure group contains. In some cases, this enables specific treatment by the server and client applications.</value>
+  </data>
+  <data name="PropertyDescription_Measure_AggregateFunction" xml:space="preserve">
+    <value>Specifies the function used to aggregate measure values.</value>
+  </data>
+  <data name="PropertyDescription_Measure_DataType" xml:space="preserve">
+    <value>Specifies the data type of the measure. For count and distinct count, this can be different from the data type defined on the source of the measure.</value>
+  </data>
+  <data name="PropertyDescription_Measure_DisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder for the measure (for use by client applications).</value>
+  </data>
+  <data name="PropertyDescription_Measure_FormatString" xml:space="preserve">
+    <value>Specifies the format used by clients when displaying the measure value.</value>
+  </data>
+  <data name="PropertyDescription_Measure_MeasureExpression" xml:space="preserve">
+    <value>Specifies a constrained Multidimensional Expressions (MDX) expression defining the value of the measure. The expression will be evaluated at the leaf level before being aggregated, and allows for the weighting of a value (for example, currency conversion where Sales amount is weighted by the exchange rate).</value>
+  </data>
+  <data name="PropertyDescription_Measure_Source" xml:space="preserve">
+    <value>Specifies the details of the binding to the column containing the measure.</value>
+  </data>
+  <data name="PropertyDescription_Measure_Visible" xml:space="preserve">
+    <value>Indicates whether the measure is visible to client applications. </value>
+  </data>
+  <data name="PropertyDescription_MiningModelColumn_ModelingFlags" xml:space="preserve">
+    <value>The mining model column specific flags.</value>
+  </data>
+  <data name="PropertyDescription_MiningModelColumn_SourceColumnID" xml:space="preserve">
+    <value>This property specifies the ID of the source column in a derived mining model.</value>
+  </data>
+  <data name="PropertyDescription_MiningModelColumn_Usage" xml:space="preserve">
+    <value>This property specifies the usage of this column.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_Algorithm" xml:space="preserve">
+    <value>The data mining algorithm used by this mining model.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_AlgorithmParameters" xml:space="preserve">
+    <value>A collection of mining model algorithm parameters associated with the mining model algorithm.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_AllowDrillThrough" xml:space="preserve">
+    <value>Specifies whether drillthrough is permitted on the mining model. </value>
+  </data>
+  <data name="PropertyDescription_MiningModel_Collation" xml:space="preserve">
+    <value>Specifies the default collation for the mining model.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_Filter" xml:space="preserve">
+    <value>Specifies the DMX filter to be applied to the mining structure cases when training the mining model.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_FoldingParameters" xml:space="preserve">
+    <value>Specifies the folding parameters to be used.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_Language" xml:space="preserve">
+    <value>Specifies the default language for the mining model. The names defined for the mining model and its subordinate objects are used as the captions for the specified language.</value>
+  </data>
+  <data name="PropertyDescription_MiningModel_NestedTable_Filter" xml:space="preserve">
+    <value>Specifies the DMX filter to be applied to the rows inside the nested table.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_CacheMode" xml:space="preserve">
+    <value>Specifies if all the source data, including the training and test sets used to process the mining structure, should be cached after processing.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_Collation" xml:space="preserve">
+    <value>Specifies the default collation for the mining structure.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_ErrorConfiguration" xml:space="preserve">
+    <value>Specifies the action taken by the server upon encountering various types of errors during processing. These settings are used by default for new objects created in the database.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_HoldoutActualSize" xml:space="preserve">
+    <value>Indicates the actual number of holdout cases for the mining structure.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_HoldoutMaxCases" xml:space="preserve">
+    <value>Specifies the maximum number of holdout cases for the mining structure.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_HoldoutMaxPercent" xml:space="preserve">
+    <value>Specifies the maximum percentage of holdout cases for the mining structure.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_HoldoutSeed" xml:space="preserve">
+    <value>Specifies the holdout seed for the mining structure.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_Language" xml:space="preserve">
+    <value>Specifies the default language for the mining structure. The names defined for the mining structure and its subordinate objects are used as the captions for the specified language.</value>
+  </data>
+  <data name="PropertyDescription_MiningStructure_Source" xml:space="preserve">
+    <value>Specifies the source of the mining structure. </value>
+  </data>
+  <data name="PropertyDescription_NamedComponent_Descripton" xml:space="preserve">
+    <value>Specifies the description of the object.</value>
+  </data>
+  <data name="PropertyDescription_NamedComponent_ID" xml:space="preserve">
+    <value>Specifies the identifier of the object.</value>
+  </data>
+  <data name="PropertyDescription_NamedComponent_Name" xml:space="preserve">
+    <value>Specifies the name of the object.</value>
+  </data>
+  <data name="PropertyDescription_Partition_AggregationDesignID" xml:space="preserve">
+    <value>Specifies the identifier of the aggregation design object for this partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_AggregationPrefix" xml:space="preserve">
+    <value>Specifies the prefix appended to any materialized views created for this partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_CurrentStorageMode" xml:space="preserve">
+    <value>Specifies the current storage mode of the partition. This reflects the current state of the partition if the ProactiveCaching property for the partition has been set.</value>
+  </data>
+  <data name="PropertyDescription_Partition_CurrentStringStoresCompatibilityLevel" xml:space="preserve">
+    <value>Indicates the current level of compatibility for the string stores of the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_DirectQueryUsage" xml:space="preserve">
+    <value>Indicates whether the partition supports queries to InMemory storage, directly to data source or both.</value>
+  </data>
+  <data name="PropertyDescription_Partition_ErrorConfiguration" xml:space="preserve">
+    <value>Specifies the action taken by the server when various types of errors occur during processing.</value>
+  </data>
+  <data name="PropertyDescription_Partition_EstimatedRows" xml:space="preserve">
+    <value>Specifies the estimated number of rows in the source table or query.</value>
+  </data>
+  <data name="PropertyDescription_Partition_EstimatedSize" xml:space="preserve">
+    <value>Specifies the estimated size (in bytes) of the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_ProactiveCaching" xml:space="preserve">
+    <value>Specifies the proactive caching setting for the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_ProcessingMode" xml:space="preserve">
+    <value>Indicates whether processed data is available after all aggregations have been computed (Regular) or immediately after the data has been loaded (LazyAggregations).</value>
+  </data>
+  <data name="PropertyDescription_Partition_ProcessingPriority" xml:space="preserve">
+    <value>Specifies the priority for processing the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_RemoteDataSourceID" xml:space="preserve">
+    <value>Specifies the identifier of the data source on which the partition resides (for a remote partition).</value>
+  </data>
+  <data name="PropertyDescription_Partition_Slice" xml:space="preserve">
+    <value>Specifies the tuple that defines the slice of data contained within the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_Source" xml:space="preserve">
+    <value>Specifies the table or query that is the source for the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_StorageLocation" xml:space="preserve">
+    <value>Specifies the storage location for the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_StorageMode" xml:space="preserve">
+    <value>Specifies the storage mode for the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_StringStoresCompatibilityLevel" xml:space="preserve">
+    <value>Indicates the level of compatibility for the string stores of the partition which is used now or going to be used from the moment of the next full processing of the partition.</value>
+  </data>
+  <data name="PropertyDescription_Partition_Type" xml:space="preserve">
+    <value>Indicates whether the partition is a regular partition storing data (Data), or it is used for writeback (Writeback).</value>
+  </data>
+  <data name="PropertyDescription_Perspective_DefaultMeasure" xml:space="preserve">
+    <value>Specifies the measure used to resolve a Multidimensional Expressions (MDX) expression if a measure is not explicitly referenced in the expression.  If no default measure is specified, an arbitrary measure is used as the default measure.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_AggregationStorage" xml:space="preserve">
+    <value>Specifies the storage mode for aggregations (applies to partitions only).</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_Enabled" xml:space="preserve">
+    <value>Indicates whether proactive caching is enabled for the object.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_ForceRebuildInterval" xml:space="preserve">
+    <value>Specifies the maximum amount of time that can elapse between the creation of a MOLAP cache and the creation of the next MOLAP cache, regardless of any notifications received from the underlying data sources.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_Latency" xml:space="preserve">
+    <value>This specifies the amount of time that can elapse before data contained in the MOLAP cache is considered too stale, and the object reverts to ROLAP mode until a fresh MOLAP cache is created.  A value of -1 indicates that there is no maximum latency.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_OnlineMode" xml:space="preserve">
+    <value>Indicates whether the newly created object will be available for query immediately, or only upon completion of the initial MOLAP cache.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_SilenceInterval" xml:space="preserve">
+    <value>Specifies the maximum amount of time that the data sources must be free of transactions before the server starts creation of a new MOLAP cache. Waiting for a transaction-free period protects against repeatedly rebuilding, dropping, and rebuilding the cache while there are many sequential updates on the data sources.</value>
+  </data>
+  <data name="PropertyDescription_ProactiveCaching_SilenceOverrideInterval" xml:space="preserve">
+    <value>Specifies the maximum amount of time following receipt of a notification before creation of a new MOLAP cache commences, regardless of whether there is a transaction-free period greater than the interval specified in the SilenceInterval property.</value>
+  </data>
+  <data name="PropertyDescription_ProcessableMajorObject_LastProcessed" xml:space="preserve">
+    <value>Specifies the date that the object was last processed. </value>
+  </data>
+  <data name="PropertyDescription_ProcessableMajorObject_State" xml:space="preserve">
+    <value>Specifies the current processed state of the object. </value>
+  </data>
+  <data name="PropertyDescription_ReferenceMeasureGroupDimension_Materialization" xml:space="preserve">
+    <value>Indicates whether the reference dimension is materialized.</value>
+  </data>
+  <data name="PropertyDescription_ReferenceMeasureGroupDimension_ProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the reference dimension.</value>
+  </data>
+  <data name="PropertyDescription_RegularMeasureGroupDimension_Cardinality" xml:space="preserve">
+    <value>Indicates if the measure group has a many-to-one or one-to-one relationship with the dimension.</value>
+  </data>
+  <data name="PropertyDescription_RelationshipEndAttribute_AttributeID" xml:space="preserve">
+    <value>Specifies the identifier of the source attribute.</value>
+  </data>
+  <data name="PropertyDescription_Relationship_ActiveState" xml:space="preserve">
+    <value>Specifies whether the relationship is active/inactive.</value>
+  </data>
+  <data name="PropertyDescription_Relationship_CFDirection" xml:space="preserve">
+    <value>Specifies the direction that cross filtering applies.</value>
+  </data>
+  <data name="PropertyDescription_Relationship_DefinitionType" xml:space="preserve">
+    <value>Specifies the type of the relationship (RuleBased/PK-FK).</value>
+  </data>
+  <data name="PropertyDescription_Relationship_FromRelationshipEnd" xml:space="preserve">
+    <value>(TODO)</value>
+  </data>
+  <data name="PropertyDescription_Relationship_ProcessingState" xml:space="preserve">
+    <value>Specifies the processing state of the relationship.</value>
+  </data>
+  <data name="PropertyDescription_Relationship_ToRelationshipEnd" xml:space="preserve">
+    <value>(TODO)</value>
+  </data>
+  <data name="PropertyDescription_Relationship_Visible" xml:space="preserve">
+    <value>Indicates whether the relationship is visible to client applications.</value>
+  </data>
+  <data name="PropertyDescription_ReportAction_Path" xml:space="preserve">
+    <value>Specifies the path to the report on the report server (for example, "ReportServer/Sales/YearlySalesByCategory").</value>
+  </data>
+  <data name="PropertyDescription_ReportAction_ReportServer" xml:space="preserve">
+    <value>Specifies the report server for the report (for example, "localhost").</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_ClassifiedColumns" xml:space="preserve">
+    <value>The identifiers of any columns that this column 'classifies'.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_Content" xml:space="preserve">
+    <value>This property specifies the content type of this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_DiscretizationBucketCount" xml:space="preserve">
+    <value>This property specifies the discretization buckets for this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_DiscretizationMethod" xml:space="preserve">
+    <value>This property specifies the discretization method for this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_Distribution" xml:space="preserve">
+    <value>This property specifies the distribution of this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_IsKey" xml:space="preserve">
+    <value>This property specifies whether this column is a key or not.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_KeyColumns" xml:space="preserve">
+    <value>This property specifies the bindings for this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_ModelingFlags" xml:space="preserve">
+    <value>The mining model specific flags.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_NameColumn" xml:space="preserve">
+    <value>Specifies the column that provides the name of ScalarMiningStructureColumn.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_Source" xml:space="preserve">
+    <value>Specifies the source of this column.</value>
+  </data>
+  <data name="PropertyDescription_ScalarMiningStructureColumn_Type" xml:space="preserve">
+    <value>This property specifies the data type of this column.</value>
+  </data>
+  <data name="PropertyDescription_StandardAction_Expression" xml:space="preserve">
+    <value>Specifies the MDX expression associated with a StandardAction object. </value>
+  </data>
+  <data name="PropertyDescription_TableMiningStructureColumn_ForeignKeyColumns" xml:space="preserve">
+    <value>This property specifies the bindings for this column.</value>
+  </data>
+  <data name="PropertyDescription_TableMiningStructureColumn_SourceMeasureGroup" xml:space="preserve">
+    <value>Specifies the source measure group associated with a TableMiningStructureColumn object.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_CalendarEndDate" xml:space="preserve">
+    <value>The end date of the calendar. The end date must be on or after the start date.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_CalendarLanguage" xml:space="preserve">
+    <value>This is the language in which the dimension member names will be created. As for captions, the language should be defined using LCID (locale identifier ID) codes. Only a limited set of languages will be supported.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_CalendarStartDate" xml:space="preserve">
+    <value>The start date of the calendar.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_FirstDayOfWeek" xml:space="preserve">
+    <value>The first day of the week {1|..|7} where 1 is Sunday.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_FiscalFirstDayOfMonth" xml:space="preserve">
+    <value>First day of the fiscal calendar {1|2|.. |31}.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_FiscalFirstMonth" xml:space="preserve">
+    <value>First month of the fiscal calendar {1|..|12} where 1 is January and 12 is December.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_FiscalYearName" xml:space="preserve">
+    <value>The naming convention for the year level {CalendarYearName | NextCalendarYearName}.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ManufacturingExtraMonthQuarter" xml:space="preserve">
+    <value>The quarter containing the extra month {1|2|3|4}.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ManufacturingFirstMonth" xml:space="preserve">
+    <value>First month of the manufacturing calendar {1|..|12} where 1 is January and 12 is December.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ManufacturingFirstWeekOfMonth" xml:space="preserve">
+    <value>First week of the Manufacturing calendar {1|2|..|4}.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ReportingFirstMonth" xml:space="preserve">
+    <value>First month of the reporting calendar {1|..|12} where 1 is January and 12 is December.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ReportingFirstWeekOfMonth" xml:space="preserve">
+    <value>First Week of the reporting calendar {1|2|..|4}.</value>
+  </data>
+  <data name="PropertyDescription_TimeBinding_ReportingWeekToMonthPattern" xml:space="preserve">
+    <value>{4-4-5 | 4-5-4 | 5-4-4}.</value>
+  </data>
+  <data name="PropertyDescription_Translation_Caption" xml:space="preserve">
+    <value>Specifies the caption in this language.</value>
+  </data>
+  <data name="PropertyDescription_Translation_Description" xml:space="preserve">
+    <value>Specifies the description in this language. </value>
+  </data>
+  <data name="PropertyDescription_Translation_DisplayFolder" xml:space="preserve">
+    <value>Specifies the display folder in this language.</value>
+  </data>
+  <data name="PropertyDescription_Translation_Language" xml:space="preserve">
+    <value>Specifies the language of the translation.</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="ScriptInfo_ErrorObjectDoesntHaveParentDatabase" xml:space="preserve">
+    <value>(TODO: NEED REVIEW)The '{0}' object '{1}', object needs to have parent database.</value>
+  </data>
+  <data name="ScriptInfo_InvalidObjectType" xml:space="preserve">
+    <value>The object type is not valid. Server objects cannot be scripted.</value>
+  </data>
+  <data name="ScriptInfo_IsNull" xml:space="preserve">
+    <value>ScriptInfo #{0} is null.</value>
+  </data>
+  <data name="ScriptInfo_ObjectAlreadyUsed" xml:space="preserve">
+    <value>ScriptInfo #{0}: object is used for multiple script operations.</value>
+  </data>
+  <data name="ScriptInfo_ObjectDoesntHaveParentDatabase" xml:space="preserve">
+    <value>ScriptInfo #{0}: object needs to have parent database.</value>
+  </data>
+  <data name="ScriptInfo_OptionExcludePartitionsNotApplicable" xml:space="preserve">
+    <value>The ExcludePartition option does not apply to the source object. This scripting option applies only to Database, Cube, and MeasureGroup objects.</value>
+  </data>
+  <data name="ScriptInfo_OptionExcludePermissionsNotApplicable" xml:space="preserve">
+    <value>The ExcludePermissions option does not apply to the source object. This scripting option applies to only Database, Dimension, Cube, MiningStructure, and MiningModel objects.</value>
+  </data>
+  <data name="ScriptInfo_OptionsIncompatibleWithDeleteAction" xml:space="preserve">
+    <value>The scripting options are incompatible with the delete action. Only default options allowed.</value>
+  </data>
+  <data name="ScriptInfo_UnexpectedScriptAction" xml:space="preserve">
+    <value>ScriptInfo #{0}: unexpected script action '{1}'.</value>
+  </data>
+  <data name="Serialization_EmptyXmlString" xml:space="preserve">
+    <value>The XML string is empty, cannot deserialize from it.</value>
+  </data>
+  <data name="Serialization_IDictionaryNotSupported" xml:space="preserve">
+    <value>IDictionary serialization is unsupported</value>
+  </data>
+  <data name="Serialization_InternalError" xml:space="preserve">
+    <value>Unexpected internal error occurred</value>
+  </data>
+  <data name="Serialization_InvalidType" xml:space="preserve">
+    <value>Specified xsi type {0} is invalid in this context.</value>
+  </data>
+  <data name="Serialization_NoAddMethod" xml:space="preserve">
+    <value>Collection does not have Add method</value>
+  </data>
+  <data name="Serialization_NoDefaultAccessors" xml:space="preserve">
+    <value>Collection does not have default accessors</value>
+  </data>
+  <data name="Serialization_UnexpectedElement" xml:space="preserve">
+    <value>The '{0}' element in the '{1}' namespace is unexpected.</value>
+  </data>
+  <data name="Serialization_UnexpectedMapping" xml:space="preserve">
+    <value>Unexpected mapping</value>
+  </data>
+  <data name="Serialization_UnexpectedPrimitive" xml:space="preserve">
+    <value>Unexpected primitive type</value>
+  </data>
+  <data name="Serialization_UnexpectedType" xml:space="preserve">
+    <value>Unexpected xsi type {0}</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="Server_CannotUpdateFull" xml:space="preserve">
+    <value>Cannot alter a Server object with full expansion because the engine API does not support this.</value>
+  </data>
+  <data name="Server_IsNotConnected" xml:space="preserve">
+    <value>The Server object is not connected.</value>
+  </data>
+  <data name="Server_NotifyTableChange_DataSourceIsInvalid" xml:space="preserve">
+    <value>The data source is not valid.</value>
+  </data>
+  <data name="Server_NotifyTableChange_DataSourceNotSpecified" xml:space="preserve">
+    <value>The data source is required.</value>
+  </data>
+  <data name="Server_NotifyTableChange_TableNotificationsNotSpecified" xml:space="preserve">
+    <value>The table notifications are required.</value>
+  </data>
+  <data name="SessionTrace_AlreadyStarted" xml:space="preserve">
+    <value>The session trace is already started.</value>
+  </data>
+  <data name="SessionTrace_NoConnectedParentServer" xml:space="preserve">
+    <value>The session trace no longer has a connected parent Server.</value>
+  </data>
+  <data name="SourceMeasureGroupForLinkingNeedsParentCube" xml:space="preserve">
+    <value>The source measure group must be in a cube before linked objects can be created.</value>
+  </data>
+  <data name="SystemTypeHasNoRestrictedOleDbTypeEquivalent" xml:space="preserve">
+    <value>The '{0}' system type has no OleDbType equivalent that is accepted by this version of Analysis Services.</value>
+  </data>
+  <data name="TimeBinding_DayOfMonth_OutOfRange" xml:space="preserve">
+    <value>The day of month must be a value between 1 and 31.</value>
+  </data>
+  <data name="TimeBinding_DayOfWeek_OutOfRange" xml:space="preserve">
+    <value>The day of the week should be a value from 1 to 7, where 1 represents Sunday.</value>
+  </data>
+  <data name="TimeBinding_Month_OutOfRange" xml:space="preserve">
+    <value>The month should be a value from 1 to 12, where 1 represents January.</value>
+  </data>
+  <data name="TimeBinding_Quarter_OutOfRange" xml:space="preserve">
+    <value>The quarter must be a value between 1 and 4.</value>
+  </data>
+  <data name="TimeBinding_WeekOfMonth_OutOfRange" xml:space="preserve">
+    <value>The week of month must be a value between 1 and 4.</value>
+  </data>
+  <data name="Trace" xml:space="preserve">
+    <value>Trace</value>
+  </data>
+  <data name="TraceEventsReader_AlreadyStarted" xml:space="preserve">
+    <value>The trace events reader is already started.</value>
+  </data>
+  <data name="TraceEventsReader_FailedStart" xml:space="preserve">
+    <value>The trace events reader has failed to start successfully.</value>
+  </data>
+  <data name="TraceEventsReader_FailedStop" xml:space="preserve">
+    <value>The trace events reader has failed to stop successfully.</value>
+  </data>
+  <data name="Trace_AlreadyStarted" xml:space="preserve">
+    <value>The '{0}' trace is already started.</value>
+  </data>
+  <data name="Trace_LogFileSize_InvalidValue" xml:space="preserve">
+    <value>The log file size value {0} is not valid.</value>
+  </data>
+  <data name="Trace_NoConnectedParentServer" xml:space="preserve">
+    <value>The '{0}' trace has no connected parent Server.</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>Translation</value>
+  </data>
+  <data name="ValueCannotBeReservedString" xml:space="preserve">
+    <value>The value of the '{0}' property cannot be the reserved string '{1}'.</value>
+  </data>
+  <data name="ValueHasInvalidCharacters" xml:space="preserve">
+    <value>The '{0}' property cannot contain any of the following characters: {1}</value>
+  </data>
+  <data name="ValueIsRequired" xml:space="preserve">
+    <value>The '{0}' property must be specified.</value>
+  </data>
+  <data name="ValueIsTooLong" xml:space="preserve">
+    <value>The '{0}' property is too long ({1} characters). The maximum number of characters is {2}.</value>
+  </data>
+</root>

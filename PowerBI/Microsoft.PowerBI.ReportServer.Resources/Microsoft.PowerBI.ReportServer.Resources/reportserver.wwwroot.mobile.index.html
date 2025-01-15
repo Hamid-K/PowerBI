@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Power BI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- This line is added to disable double tap to zoom on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script type="text/javascript" src="powerbi/assets/js/rs-utils.js"></script>
+    <script type="text/javascript">
+        var viewLoadingStarted = Date.now();
+        var initializeContainerStartTime = new Date();
+
+        var baseUrl = window.location.protocol + '//' + window.location.host;
+        var powerbi = {
+            session: {
+                userInfo: {}
+            }
+        };
+
+        var reportId = RSUtils.getQueryParameterValue('id');
+
+        // The Portal service knows if telemetry is enabled, we reuse this by passing it in via the url of the iframe
+        var rsHostData = RSUtils.getQueryParameterValue('hostdata', '{"IsEnabled":false}');
+
+        var hostData = JSON.parse(decodeURIComponent(rsHostData));
+
+        var isTelemetryDisabled = !hostData.IsEnabled;
+
+        // This is the global used by minerva to craft URL to make calls to get resources from.
+        var resourceLoaderUrl = '/explore/resourcePackageItem/' + reportId + '/';
+        var publicBuild = false;
+        powerbi.common = {};
+        powerbi.common.cultureInfo = 'en-US';
+        powerbi.common.unmappedCultureInfo = 'en-US';
+        powerbi.common.isCurrentContextRtl = 'False';
+        powerbi.common.disableMap = 'False';
+        powerbi.common.localizedStrings = '';
+
+        var featureSwitches = (function () { var acumaticaAppEnabled = true, adobeAnalyticsAppEnabled = true, alertsEnabled = true, allUpSaveReport = true, alpineMetricsAppEnabled = true, analyzeInExcelEnabled = true, analyzeInExcelSovereignFormatEnabled = false, anonymousEmbeddingEnabled = true, appInsightsAppEnabled = true, approvedResourcesEnabled = true, appSecretTraceEnabled = false, appsEnabled = false, atInternetBridgeAppEnabled = true, azmeAppEnabled = true, azureAuditAppEnabled = true, azureEnterpriseAppEnabled = true, azureSearchAppEnabled = true, azureUsageAndBillingAppEnabled = false, bingAdsAppEnabled = false, bingSocialAppEnabled = true, breadcrumbNavigationEnabled = true, builtInContentProvidersDisabled = false, cacheMetadataEnabled = false, capptainAppEnabled = false, circuitIdAppEnabled = true, closeAccountEnabled = true, cloudRlsEnabled = true, cloudRlsImpersonationEnabled = true, cloudRlsRoleMembershipEnabled = true, comscoreAppEnabled = true, csvContentProviderEnabled = true, dataClassificationEnabled = true, devCenterAppEnabled = false, developerToolsEnabled = true, devToolsNewVisual = true, devToolsVisualSettings = true, downloadReportEnabled = true, drillthroughToPods = true, dropDownSlicerEnabled = true, dynamicMessageEnabled = true, dynamicsNavAppEnabled = true, emailSubscriptionEnabled = false, embedFullFidelityWorkbooks = true, enableExportDataNewDialog = true, enterpriseGatewayEnabled = true, enterpriseGatewayETLEnabled = true, esriEnabled = true, excelWorkbooksInContentPackEnabled = true, exportReportToPowerPointEnabled = true, exportVisualToExcelEnabled = true, favoritesEnabled = true, ffxlChartSelectionEnabled = true, ffxlLocalFilesEnabled = true, fullFidelityExcelEnabled = true, globalAcceptCustomVisuals = true, homeDashboardEnabled = true, imageLayoutSeparationEnabled = true, importPbiviz = true, inFocusEditEnabled = false, inFocusEditModeEnabled = false, insightlyAppEnabled = true, insightsEnabled = true, insightsScopedEnabled = true, insightsStoreEnabled = true, isSovereignCloud = false, kittensEnabled = false, languageQueryParamEnabled = true, listViewEnabled = true, lithiumAppEnabled = true, localFileUploadAndReplaceEnabled = true, manageDatasetsEnabled = false, mandrillAppEnabled = true, microsoftOrgAppEnabled = false, newGetDataEnabled = true, newQnaEnabled = true, o365PowerBIEnabled = true, office365MonitorAppEnabled = true, oneGBUploadFileSizeEnabled = true, orgAppsEnabled = true, paasDynamicRoutingEnabled = true, permissionCenterEnabled = false, pivotTableVisualEnabled = false, planviewAppEnabled = true, preferHigherDataVolume = true, projectOnlineAppEnabled = true, projectplaceAppEnabled = true, psaAccountManagerAppEnabled = false, psaPracticeManagerAppEnabled = false, psaResourceManagerAppEnabled = false, pseudoLocEnabled = false, quotaEnabled = true, quotaEnforcementEnabled = true, readOnlyGroupEnabled = true, realTimeASAEnabled = false, realTimePubNubEnabled = true, realTimeWidget = true, saasMarketplace = true, salesforceAndOneDriveCredentialsEnabled = true, sandboxVisualsEnabled = true, scriptVisualAnonymousEmbeddingEnabled = false, scriptVisualAuthoringEnabled = false, scriptVisualEnabled = true, scriptVisualLaunchExternalIDEEnabled = false, selectiveRefreshEnabled = false, sharePointDocumentLibrariesEnabled = true, sharePointEmbedEnabled = false, showNonUserEntitiesEnabled = false, smartsheetAppEnabled = true, socialSharingEnabled = true, sparkAppEnabled = true, sparkPostAppEnabled = true, sqlSentryAppEnabled = true, stripeAppEnabled = true, templatePublishFlightingWorkAroundEnabled = false, trouxAppEnabled = true, tuplesFiltering = false, tyGraphAppEnabled = true, useBackendFSEnabled = false; userNotificationsEnabled = true, vMobAppEnabled = true, vsoVnextAppEnabled = false, webtrendsAppEnabled = true, withinDXT = false, workbookTilesEnabled = true, xeroAppEnabled = false, zuoraAppEnabled = true; return { acumaticaAppEnabled: function () { return acumaticaAppEnabled; }, adobeAnalyticsAppEnabled: function () { return adobeAnalyticsAppEnabled; }, alertsEnabled: function () { return alertsEnabled; }, allUpSaveReport: function () { return allUpSaveReport; }, alpineMetricsAppEnabled: function () { return alpineMetricsAppEnabled; }, analyzeInExcelEnabled: function () { return analyzeInExcelEnabled; }, analyzeInExcelSovereignFormatEnabled: function () { return analyzeInExcelSovereignFormatEnabled; }, anonymousEmbeddingEnabled: function () { return anonymousEmbeddingEnabled; }, appInsightsAppEnabled: function () { return appInsightsAppEnabled; }, approvedResourcesEnabled: function () { return approvedResourcesEnabled; }, appSecretTraceEnabled: function () { return appSecretTraceEnabled; }, appsEnabled: function () { return appsEnabled; }, atInternetBridgeAppEnabled: function () { return atInternetBridgeAppEnabled; }, azmeAppEnabled: function () { return azmeAppEnabled; }, azureAuditAppEnabled: function () { return azureAuditAppEnabled; }, azureEnterpriseAppEnabled: function () { return azureEnterpriseAppEnabled; }, azureSearchAppEnabled: function () { return azureSearchAppEnabled; }, azureUsageAndBillingAppEnabled: function () { return azureUsageAndBillingAppEnabled; }, bingAdsAppEnabled: function () { return bingAdsAppEnabled; }, bingSocialAppEnabled: function () { return bingSocialAppEnabled; }, breadcrumbNavigationEnabled: function () { return breadcrumbNavigationEnabled; }, builtInContentProvidersDisabled: function () { return builtInContentProvidersDisabled; }, cacheMetadataEnabled: function () { return cacheMetadataEnabled; }, capptainAppEnabled: function () { return capptainAppEnabled; }, circuitIdAppEnabled: function () { return circuitIdAppEnabled; }, closeAccountEnabled: function () { return closeAccountEnabled; }, cloudRlsEnabled: function () { return cloudRlsEnabled; }, cloudRlsImpersonationEnabled: function () { return cloudRlsImpersonationEnabled; }, cloudRlsRoleMembershipEnabled: function () { return cloudRlsRoleMembershipEnabled; }, comscoreAppEnabled: function () { return comscoreAppEnabled; }, csvContentProviderEnabled: function () { return csvContentProviderEnabled; }, dataClassificationEnabled: function () { return dataClassificationEnabled; }, devCenterAppEnabled: function () { return devCenterAppEnabled; }, developerToolsEnabled: function () { return developerToolsEnabled; }, devToolsNewVisual: function () { return devToolsNewVisual; }, devToolsVisualSettings: function () { return devToolsVisualSettings; }, downloadReportEnabled: function () { return downloadReportEnabled; }, drillthroughToPods: function () { return drillthroughToPods; }, dropDownSlicerEnabled: function () { return dropDownSlicerEnabled; }, dynamicMessageEnabled: function () { return dynamicMessageEnabled; }, dynamicsNavAppEnabled: function () { return dynamicsNavAppEnabled; }, emailSubscriptionEnabled: function () { return emailSubscriptionEnabled; }, embedFullFidelityWorkbooks: function () { return embedFullFidelityWorkbooks; }, enableExportDataNewDialog: function () { return enableExportDataNewDialog; }, enterpriseGatewayEnabled: function () { return enterpriseGatewayEnabled; }, enterpriseGatewayETLEnabled: function () { return enterpriseGatewayETLEnabled; }, esriEnabled: function () { return esriEnabled; }, excelWorkbooksInContentPackEnabled: function () { return excelWorkbooksInContentPackEnabled; }, exportReportToPowerPointEnabled: function () { return exportReportToPowerPointEnabled; }, exportVisualToExcelEnabled: function () { return exportVisualToExcelEnabled; }, favoritesEnabled: function () { return favoritesEnabled; }, ffxlChartSelectionEnabled: function () { return ffxlChartSelectionEnabled; }, ffxlLocalFilesEnabled: function () { return ffxlLocalFilesEnabled; }, fullFidelityExcelEnabled: function () { return fullFidelityExcelEnabled; }, globalAcceptCustomVisuals: function () { return globalAcceptCustomVisuals; }, homeDashboardEnabled: function () { return homeDashboardEnabled; }, imageLayoutSeparationEnabled: function () { return imageLayoutSeparationEnabled; }, importPbiviz: function () { return importPbiviz; }, inFocusEditEnabled: function () { return inFocusEditEnabled; }, inFocusEditModeEnabled: function () { return inFocusEditModeEnabled; }, insightlyAppEnabled: function () { return insightlyAppEnabled; }, insightsEnabled: function () { return insightsEnabled; }, insightsScopedEnabled: function () { return insightsScopedEnabled; }, insightsStoreEnabled: function () { return insightsStoreEnabled; }, isSovereignCloud: function () { return isSovereignCloud; }, kittensEnabled: function () { return kittensEnabled; }, languageQueryParamEnabled: function () { return languageQueryParamEnabled; }, listViewEnabled: function () { return listViewEnabled; }, lithiumAppEnabled: function () { return lithiumAppEnabled; }, localFileUploadAndReplaceEnabled: function () { return localFileUploadAndReplaceEnabled; }, manageDatasetsEnabled: function () { return manageDatasetsEnabled; }, mandrillAppEnabled: function () { return mandrillAppEnabled; }, microsoftOrgAppEnabled: function () { return microsoftOrgAppEnabled; }, newGetDataEnabled: function () { return newGetDataEnabled; }, newQnaEnabled: function () { return newQnaEnabled; }, o365PowerBIEnabled: function () { return o365PowerBIEnabled; }, office365MonitorAppEnabled: function () { return office365MonitorAppEnabled; }, oneGBUploadFileSizeEnabled: function () { return oneGBUploadFileSizeEnabled; }, orgAppsEnabled: function () { return orgAppsEnabled; }, paasDynamicRoutingEnabled: function () { return paasDynamicRoutingEnabled; }, permissionCenterEnabled: function () { return permissionCenterEnabled; }, pivotTableVisualEnabled: function () { return pivotTableVisualEnabled; }, planviewAppEnabled: function () { return planviewAppEnabled; }, preferHigherDataVolume: function () { return preferHigherDataVolume; }, projectOnlineAppEnabled: function () { return projectOnlineAppEnabled; }, projectplaceAppEnabled: function () { return projectplaceAppEnabled; }, psaAccountManagerAppEnabled: function () { return psaAccountManagerAppEnabled; }, psaPracticeManagerAppEnabled: function () { return psaPracticeManagerAppEnabled; }, psaResourceManagerAppEnabled: function () { return psaResourceManagerAppEnabled; }, pseudoLocEnabled: function () { return pseudoLocEnabled; }, quotaEnabled: function () { return quotaEnabled; }, quotaEnforcementEnabled: function () { return quotaEnforcementEnabled; }, readOnlyGroupEnabled: function () { return readOnlyGroupEnabled; }, realTimeASAEnabled: function () { return realTimeASAEnabled; }, realTimePubNubEnabled: function () { return realTimePubNubEnabled; }, realTimeWidget: function () { return realTimeWidget; }, saasMarketplace: function () { return saasMarketplace; }, salesforceAndOneDriveCredentialsEnabled: function () { return salesforceAndOneDriveCredentialsEnabled; }, sandboxVisualsEnabled: function () { return sandboxVisualsEnabled; }, scriptVisualAnonymousEmbeddingEnabled: function () { return scriptVisualAnonymousEmbeddingEnabled; }, scriptVisualAuthoringEnabled: function () { return scriptVisualAuthoringEnabled; }, scriptVisualEnabled: function () { return scriptVisualEnabled; }, scriptVisualLaunchExternalIDEEnabled: function () { return scriptVisualLaunchExternalIDEEnabled; }, selectiveRefreshEnabled: function () { return selectiveRefreshEnabled; }, sharePointDocumentLibrariesEnabled: function () { return sharePointDocumentLibrariesEnabled; }, sharePointEmbedEnabled: function () { return sharePointEmbedEnabled; }, showNonUserEntitiesEnabled: function () { return showNonUserEntitiesEnabled; }, smartsheetAppEnabled: function () { return smartsheetAppEnabled; }, socialSharingEnabled: function () { return socialSharingEnabled; }, sparkAppEnabled: function () { return sparkAppEnabled; }, sparkPostAppEnabled: function () { return sparkPostAppEnabled; }, sqlSentryAppEnabled: function () { return sqlSentryAppEnabled; }, stripeAppEnabled: function () { return stripeAppEnabled; }, templatePublishFlightingWorkAroundEnabled: function () { return templatePublishFlightingWorkAroundEnabled; }, trouxAppEnabled: function () { return trouxAppEnabled; }, tuplesFiltering: function () { return tuplesFiltering; }, tyGraphAppEnabled: function () { return tyGraphAppEnabled; }, useBackendFSEnabled: function () { return useBackendFSEnabled; }, userNotificationsEnabled: function () { return userNotificationsEnabled; }, vMobAppEnabled: function () { return vMobAppEnabled; }, vsoVnextAppEnabled: function () { return vsoVnextAppEnabled; }, webtrendsAppEnabled: function () { return webtrendsAppEnabled; }, withinDXT: function () { return withinDXT; }, workbookTilesEnabled: function () { return workbookTilesEnabled; }, xeroAppEnabled: function () { return xeroAppEnabled; }, zuoraAppEnabled: function () { return zuoraAppEnabled; } }; })();
+
+        // PowerBICommon scripts expect the variables below to be defined
+        var isReportControllerInitialized = false;
+        var powerBIAccessToken = 'any';
+        var skipCheckPowerBIAccessToken = true;
+        var previousTenantId = '';
+        var initialDashboardContainer;
+        var powerBIOperator = '';
+        var powerBIOperatorLocale = '';
+        var clusterUri = 'RSMobile';
+
+        // Temporarily setting these variables till Hao refactors StandaloneReportHost to accept config setting to skip tokenRefresh calls and authentication checks respecitvely
+        var powerBIResourceKey = 'any';
+        var isAppTokenEmbed = true;
+        var ngAppName = 'powerbi.explore.host';
+    </script>
+    <link rel="stylesheet" href="powerbi/libs/styles/powerbimobile.bundle.css" />
+    <link rel="stylesheet" href="powerbi/libs/styles/powerbiproviderscommon.css" />
+    <link rel="stylesheet" href="powerbi/libs/styles/mobile.bundle.css" />
+</head>
+<body>
+    <div id="pbiAppPlaceHolder">
+        <root></root>
+    </div>
+
+    <script type="text/javascript" src="powerbi/libs/scripts/globalize.js" defer></script>
+    <script type="text/javascript" src="powerbi/libs/scripts/globalize.cultures.js" defer></script>
+    <script type="text/javascript" src="powerbi/libs/scripts/powerbiportal.dependencies.externals.withoutangularjs.bundle.js"></script>
+    <script type="text/javascript" src="powerbi/libs/scripts/styleLibrary.js"></script>
+    <script type="text/javascript" src="powerbi/libs/scripts/powerBIResources.js"></script>
+    <script type="text/javascript" src="powerbi/libs/scripts/mobile.js"></script>
+
+    <script type="text/javascript">
+        if (!hostData || hostData.IsPublicBuild) {
+            // Disable Page Views since they can have PII
+            appInsights.trackPageView = function (name, url) { }
+        }
+    </script>
+</body>
+</html>

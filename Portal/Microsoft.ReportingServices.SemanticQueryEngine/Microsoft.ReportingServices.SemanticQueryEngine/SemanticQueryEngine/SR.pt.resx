@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateOfBinaryExpression" xml:space="preserve">
+    <value>A consulta usa uma função de agregação em uma expressão de tipo de valor grande. Expressões de tipo de valor grande não podem ser agregadas.</value>
+  </data>
+  <data name="ConnectionNotOpen" xml:space="preserve">
+    <value>A conexão não foi aberta.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>Mais de um parâmetro de consulta tem o nome "{0}".</value>
+  </data>
+  <data name="ErrorExecutingSemanticQuery" xml:space="preserve">
+    <value>Falha na execução da consulta semântica. {0}</value>
+  </data>
+  <data name="GroupingByBlob" xml:space="preserve">
+    <value>A consulta contém um agrupamento baseado na expressão "{0}" que retorna um tipo de valor grande. Expressões que retornam tipos de valor grande não podem ser usadas em agrupamentos.</value>
+  </data>
+  <data name="InvalidCommandType" xml:space="preserve">
+    <value>Comandos de consultas semânticas devem usar um CommandType.Text.</value>
+  </data>
+  <data name="InvalidConfiguration" xml:space="preserve">
+    <value>Não foi possível analisar a configuração de {0}. Verifique se a configuração está correta. Detalhes: {1}.</value>
+  </data>
+  <data name="QueryNotSet" xml:space="preserve">
+    <value>A consulta não foi definida. O método SetQuery deve ser chamado antes da execução da consulta.</value>
+  </data>
+  <data name="SemanticQueryCompilationError" xml:space="preserve">
+    <value>Falha na compilação da consulta semântica: {0}.</value>
+  </data>
+  <data name="SemanticQueryEngineLocalizedName" xml:space="preserve">
+    <value>Mecanismo de Consulta Semântica</value>
+  </data>
+  <data name="SemanticQueryEngineNotInitialized" xml:space="preserve">
+    <value>O mecanismo de consulta semântica não foi inicializado. O método Initialize deve ser chamado para definir o modelo e os nomes de extensão de dados.</value>
+  </data>
+  <data name="SqlModelGeneratorLocalizedName" xml:space="preserve">
+    <value>Gerador de Modelos Semânticos do SQL Server</value>
+  </data>
+</root>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37CF0316-439D-489B-BFCE-50AD8F103E97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Diagnostics.DiagnosticSource</RootNamespace>
+    <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FxResources\System\Diagnostics\DiagnosticSource\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Diagnostics\Activity.cs" />
+    <Compile Include="System\Diagnostics\ActivityContext.cs" />
+    <Compile Include="System\Diagnostics\ActivityCreationOptions.cs" />
+    <Compile Include="System\Diagnostics\ActivityEvent.cs" />
+    <Compile Include="System\Diagnostics\ActivityIdFormat.cs" />
+    <Compile Include="System\Diagnostics\ActivityKind.cs" />
+    <Compile Include="System\Diagnostics\ActivityLink.cs" />
+    <Compile Include="System\Diagnostics\ActivityListener.cs" />
+    <Compile Include="System\Diagnostics\ActivitySamplingResult.cs" />
+    <Compile Include="System\Diagnostics\ActivitySource.cs" />
+    <Compile Include="System\Diagnostics\ActivitySpanId.cs" />
+    <Compile Include="System\Diagnostics\ActivityStatusCode.cs" />
+    <Compile Include="System\Diagnostics\ActivityTagsCollection.cs" />
+    <Compile Include="System\Diagnostics\ActivityTraceFlags.cs" />
+    <Compile Include="System\Diagnostics\ActivityTraceId.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\AllowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DisallowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnIfAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicallyAccessedMemberTypes.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicDependencyAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MemberNotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MemberNotNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullIfNotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\RequiresUnreferencedCodeAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\UnconditionalSuppressMessageAttribute.cs" />
+    <Compile Include="System\Diagnostics\DiagLinkedList.cs" />
+    <Compile Include="System\Diagnostics\DiagNode.cs" />
+    <Compile Include="System\Diagnostics\DiagnosticListener.cs" />
+    <Compile Include="System\Diagnostics\DiagnosticSource.cs" />
+    <Compile Include="System\Diagnostics\DiagnosticSourceEventSource.cs" />
+    <Compile Include="System\Diagnostics\DistributedContextPropagator.cs" />
+    <Compile Include="System\Diagnostics\Enumerator.cs" />
+    <Compile Include="System\Diagnostics\HttpHandlerDiagnosticListener.cs" />
+    <Compile Include="System\Diagnostics\LegacyPropagator.cs" />
+    <Compile Include="System\Diagnostics\Metrics\AggregationManager.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Aggregator.cs" />
+    <Compile Include="System\Diagnostics\Metrics\AggregatorLookupFunc.cs" />
+    <Compile Include="System\Diagnostics\Metrics\AggregatorStore.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Counter.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ExponentialHistogramAggregator.cs" />
+    <Compile Include="System\Diagnostics\Metrics\FixedSizeLabelNameDictionary.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Histogram.cs" />
+    <Compile Include="System\Diagnostics\Metrics\HistogramStatistics.cs" />
+    <Compile Include="System\Diagnostics\Metrics\IAggregationStatistics.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Instrument.2.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Instrument.cs" />
+    <Compile Include="System\Diagnostics\Metrics\InstrumentState.2.cs" />
+    <Compile Include="System\Diagnostics\Metrics\InstrumentState.cs" />
+    <Compile Include="System\Diagnostics\Metrics\IObjectSequence.cs" />
+    <Compile Include="System\Diagnostics\Metrics\IStringSequence.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LabeledAggregationStatistics.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LabelInstruction.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LabelInstructionCompiler.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LabelInstructionInterpretter.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LastValue.cs" />
+    <Compile Include="System\Diagnostics\Metrics\LastValueStatistics.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ListenerSubscription.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Measurement.cs" />
+    <Compile Include="System\Diagnostics\Metrics\MeasurementCallback.cs" />
+    <Compile Include="System\Diagnostics\Metrics\Meter.cs" />
+    <Compile Include="System\Diagnostics\Metrics\MeterListener.cs" />
+    <Compile Include="System\Diagnostics\Metrics\MetricsEventSource.cs" />
+    <Compile Include="System\Diagnostics\Metrics\MultiSizeLabelNameDictionary.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObjectSequence1.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObjectSequence2.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObjectSequence3.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObjectSequenceMany.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObservableCounter.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObservableGauge.cs" />
+    <Compile Include="System\Diagnostics\Metrics\ObservableInstrument.cs" />
+    <Compile Include="System\Diagnostics\Metrics\QuantileAggregation.cs" />
+    <Compile Include="System\Diagnostics\Metrics\QuantileValue.cs" />
+    <Compile Include="System\Diagnostics\Metrics\RateAggregator.cs" />
+    <Compile Include="System\Diagnostics\Metrics\RateStatistics.cs" />
+    <Compile Include="System\Diagnostics\Metrics\RateSumAggregator.cs" />
+    <Compile Include="System\Diagnostics\Metrics\StringSequence1.cs" />
+    <Compile Include="System\Diagnostics\Metrics\StringSequence2.cs" />
+    <Compile Include="System\Diagnostics\Metrics\StringSequence3.cs" />
+    <Compile Include="System\Diagnostics\Metrics\StringSequenceMany.cs" />
+    <Compile Include="System\Diagnostics\NoOutputPropagator.cs" />
+    <Compile Include="System\Diagnostics\PassThroughPropagator.cs" />
+    <Compile Include="System\Diagnostics\RandomNumberGenerator.cs" />
+    <Compile Include="System\Diagnostics\SampleActivity.cs" />
+    <Compile Include="System\Diagnostics\SynchronizedList.cs" />
+    <Compile Include="System\Diagnostics\TagList.cs" />
+    <Compile Include="System\HexConverter.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullablePublicOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\OSPlatformAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\SupportedOSPlatformAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\SupportedOSPlatformGuardAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\TargetPlatformAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\UnsupportedOSPlatformAttribute.cs" />
+    <Compile Include="System\Runtime\Versioning\UnsupportedOSPlatformGuardAttribute.cs" />
+    <Compile Include="System\SR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FxResources\System\Diagnostics\DiagnosticSource\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ILLink.Substitutions.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

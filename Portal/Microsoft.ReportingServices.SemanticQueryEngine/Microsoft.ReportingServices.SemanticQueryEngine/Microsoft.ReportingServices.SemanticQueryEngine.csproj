@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{288484E3-9614-462A-94F3-44BEE93DE44B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.SemanticQueryEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.DataExtensions" />
+    <Reference Include="Microsoft.ReportingServices.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Modeling">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Modeling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Common\ArrayUtil.cs" />
+    <Compile Include="Common\AttributeUtil.cs" />
+    <Compile Include="Common\Bag.cs" />
+    <Compile Include="Common\CollectionUtil.cs" />
+    <Compile Include="Common\CreatorGetter.cs" />
+    <Compile Include="Common\DataExtensionsHelper.cs" />
+    <Compile Include="Common\DateTimeUtil.cs" />
+    <Compile Include="Common\EnumeratorMapping.cs" />
+    <Compile Include="Common\EnumUtil.cs" />
+    <Compile Include="Common\Iterators.cs" />
+    <Compile Include="Common\ObjectReferenceComparer.cs" />
+    <Compile Include="Common\Operation.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="Common\ThreadingUtil.cs" />
+    <Compile Include="Common\XmlConsts.cs" />
+    <Compile Include="Common\XmlConvertEx.cs" />
+    <Compile Include="Common\XmlFragmentUtil.cs" />
+    <Compile Include="Common\XmlRWFactory.cs" />
+    <Compile Include="Modeling\ModelGeneration\MSSQLADW\MsSqlAdwDsvGenerator.cs" />
+    <Compile Include="Modeling\ModelGeneration\MSSQLADW\MsSqlAdwDsvStatisticsProvider.cs" />
+    <Compile Include="Modeling\ModelGeneration\MSSQL\MsSqlDsvGenerator.cs" />
+    <Compile Include="Modeling\ModelGeneration\MSSQL\MsSqlDsvStatisticsProvider.cs" />
+    <Compile Include="Modeling\ModelGeneration\Oracle\OraSqlDsvGenerator.cs" />
+    <Compile Include="Modeling\ModelGeneration\Oracle\OraSqlDsvStatisticsProvider.cs" />
+    <Compile Include="Modeling\ModelGeneration\SqlDsvGenerator.cs" />
+    <Compile Include="Modeling\ModelGeneration\Teradata\TdSqlDsvGenerator.cs" />
+    <Compile Include="Modeling\ModelGeneration\Teradata\TdSqlDsvStatisticsProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicKeyConstants.cs" />
+    <Compile Include="SemanticQueryEngine\ISemanticQueryCommand.cs" />
+    <Compile Include="SemanticQueryEngine\ISetSemanticQueryConnection.cs" />
+    <Compile Include="SemanticQueryEngine\SemanticQueryCommandWrapper.cs" />
+    <Compile Include="SemanticQueryEngine\SemanticQueryConnection.cs" />
+    <Compile Include="SemanticQueryEngine\SemanticQueryEngineException.cs" />
+    <Compile Include="SemanticQueryEngine\SQEAssert.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\FormattedStringWriter.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\MSSQLADW\MsSqlAdwModelGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\MSSQLADW\MSSqlAdwSQCommand.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\MSSQLADW\MSSqlAdwSQDataReader.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\MSSQL\MsSqlModelGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\MSSQL\MSSqlSQCommand.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Oracle\OraSqlModelGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Oracle\OraSqlSQCommand.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Oracle\OraSqlSQDataReader.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\AggregationContext.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\ExpressionProcessInfo.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\ExpressionProcessInfoCollection.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\FilteredPath.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\FilteredPathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\FunctionContext.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\IQPExpressionInfo.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\IQPExpressionInfoCollection.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\NestedQueryCollection.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\NestedQueryKey.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\QueryPlanBuilder.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\ReducedSemanticQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SelfPathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlBlobWrapperQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlNestedQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryCollection.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnBaseEntity.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnEntity.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnEntityBase.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnInheritancePathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnNonUniqueSet.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnRelationBase.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnRolePathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryOnSelfPathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlQueryPlan.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\SqlTotalQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\QueryPlanGeneration\TotalAggregationPathItem.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\ReadOnlyItemCollectionBase.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\CompiledSql.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\INameGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\ISelectList.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\ISqlSnippet.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQLADW\MsSqlAdwBatch.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQLADW\MsSqlAdwFunctionExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQLADW\MsSqlAdwSelectQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQL\MsSqlAggregateExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQL\MsSqlBatch.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQL\MsSqlFunctionExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQL\MsSqlLiteralExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\MSSQL\MsSqlSelectQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Oracle\OraSqlAggregateExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Oracle\OraSqlBatch.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Oracle\OraSqlFunctionExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Oracle\OraSqlLiteralExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Oracle\OraSqlSelectQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlAggregateExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlBatch.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlColumnRefExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlCompositeSnippet.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlFunctionExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlLiteralExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlNullExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlPassThruExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlRefExpressionBase.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSelectExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSelectQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSelectTable.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSelectUnionedQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSnippetCollection.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlSnippetExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlStringSnippet.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlTableSource.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\SqlTupleExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Teradata\TdSqlAggregateExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Teradata\TdSqlBatch.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Teradata\TdSqlFunctionExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Teradata\TdSqlLiteralExpression.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\Teradata\TdSqlSelectQuery.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlGeneration\TraverseExpressionAlgorithm.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlModelGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlSQCommand.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\SqlSQDataReader.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Teradata\TdSqlModelGenerator.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Teradata\TdSqlSQCommand.cs" />
+    <Compile Include="SemanticQueryEngine\Sql\Teradata\TdSqlSQDataReader.cs" />
+    <Compile Include="SemanticQueryEngine\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SemanticQueryEngine\ModelGenerationRules.smgl" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.de.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.es.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.fr.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.it.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.ja.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.ko.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.pt.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SemanticQueryEngine\SR.ru.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.zh-Hans.resx" />
+    <EmbeddedResource Include="SemanticQueryEngine\SR.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

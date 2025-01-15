@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AM" xml:space="preserve">
+    <value>A.M.</value>
+  </data>
+  <data name="CacheInvalidateScheduleHanlder" xml:space="preserve">
+    <value>При истечении срока действия кэшированного отчета.</value>
+  </data>
+  <data name="CacheRefreshPlans" xml:space="preserve">
+    <value>Согласно расписанию.</value>
+  </data>
+  <data name="CanNotSubscribe" xml:space="preserve">
+    <value>Подписка на данное событие невозможна.</value>
+  </data>
+  <data name="DataDrivenSubscriptionError" xml:space="preserve">
+    <value>Ошибка: {0}</value>
+  </data>
+  <data name="DeliveryExtensionFailedToLoad" xml:space="preserve">
+    <value>Не удалось загрузить модуль доставки для данной подписки.</value>
+  </data>
+  <data name="DeliveryExtensionRemoved" xml:space="preserve">
+    <value>Модуль доставки, связанный с подпиской, недоступен на данном сервере отчетов. Проверьте, установлен ли модуль доставки.</value>
+  </data>
+  <data name="DisallowedExcelFileExtensionChange" xml:space="preserve">
+    <value>Изменение расширения файла Excel запрещено.</value>
+  </data>
+  <data name="DisallowedResourceExtensionError" xml:space="preserve">
+    <value>Не допускается отправка или сохранение файлов с расширением {0}. Если у вас возникли вопросы, обратитесь к администратору.</value>
+  </data>
+  <data name="DisallowedResourceMimeType" xml:space="preserve">
+    <value>Загрузка или сохранение файлов с типом MIME {0} недопустимы. При наличии вопросов обратитесь к своему администратору.</value>
+  </data>
+  <data name="ExecutionAccountLogonError" xml:space="preserve">
+    <value>Ошибка входа для учетной записи автоматического выполнения.</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>Не удается открыть {0}: {1}</value>
+  </data>
+  <data name="MyReportsFolderDescription" xml:space="preserve">
+    <value>Используйте данную папку для хранения личных отчетов.</value>
+  </data>
+  <data name="MyReportsFolderName" xml:space="preserve">
+    <value>Мои отчеты</value>
+  </data>
+  <data name="NewCacheRefreshPlan" xml:space="preserve">
+    <value>Создать план обновления кэша</value>
+  </data>
+  <data name="NewScheduledRefreshPlan" xml:space="preserve">
+    <value>Новое расписание обновления</value>
+  </data>
+  <data name="NewSubscription" xml:space="preserve">
+    <value>Создать подписку</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>P.M.</value>
+  </data>
+  <data name="ParentDirectoryLink" xml:space="preserve">
+    <value>В родительский каталог</value>
+  </data>
+  <data name="PreviewImageDataInvalid" xml:space="preserve">
+    <value>Значение параметра изображения для предварительного просмотра содержит недопустимые данные.</value>
+  </data>
+  <data name="ProgressMessage" xml:space="preserve">
+    <value>Выполнено итераций: {0}.</value>
+  </data>
+  <data name="RPCErrorStringFormat" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="RefreshCachePlanCachingIsNotEnabled" xml:space="preserve">
+    <value>Для элемента не включено кэширование.</value>
+  </data>
+  <data name="RefreshCachePlanError" xml:space="preserve">
+    <value>Ошибка: {0}.</value>
+  </data>
+  <data name="RefreshCachePlanParametersInvalid" xml:space="preserve">
+    <value>План обновления кэша содержит недопустимые значения параметров.</value>
+  </data>
+  <data name="RefreshCachePlanRefreshed" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="RefreshCachePlanSharedDataSourceRemoved" xml:space="preserve">
+    <value>Восстановите общий источник данных.</value>
+  </data>
+  <data name="RefreshCachePlanSuccess" xml:space="preserve">
+    <value>Обновление кэша выполнено успешно.</value>
+  </data>
+  <data name="ReportExecutionSnapshotUpdateHandler" xml:space="preserve">
+    <value> Когда кэшированная копия отчета обновляется при запланированном выполнении отчета.</value>
+  </data>
+  <data name="ReportHistorySnapShotCreatedHandler" xml:space="preserve">
+    <value>Когда создается моментальный снимок журнала отчета для данного отчета.</value>
+  </data>
+  <data name="ReportServiceCategoryName" xml:space="preserve">
+    <value>Report Server</value>
+  </data>
+  <data name="ScheduleFiredEventHandlerName" xml:space="preserve">
+    <value>Запускаемый по расписанию обработчик</value>
+  </data>
+  <data name="ServerProductName" xml:space="preserve">
+    <value>SQL Server 2019 CTP2.1 Reporting Services</value>
+  </data>
+  <data name="SharePointModeCatalogNotSupported" xml:space="preserve">
+    <value>База данных каталога находится в режиме интеграции с SharePoint. Это уже не поддерживается этим экземпляром служб Reporting Services.</value>
+  </data>
+  <data name="SharedDatasetCacheUpdatePlans" xml:space="preserve">
+    <value>Обновление кэша общего набора данных.</value>
+  </data>
+  <data name="SimpleMessage" xml:space="preserve">
+    <value>Это простое тестовое сообщение.</value>
+  </data>
+  <data name="SubscriptionDisabled" xml:space="preserve">
+    <value>отключена</value>
+  </data>
+  <data name="SubscriptionDone" xml:space="preserve">
+    <value>Выполнено: обработано {0} из общего числа в {1}; ошибок: {2}.</value>
+  </data>
+  <data name="SubscriptionError" xml:space="preserve">
+    <value>Ошибка: {0}</value>
+  </data>
+  <data name="SubscriptionExecuted" xml:space="preserve">
+    <value>Выполняется</value>
+  </data>
+  <data name="SubscriptionMissingEncryptedContent" xml:space="preserve">
+    <value>Удалено зашифрованное содержимое подписки.</value>
+  </data>
+  <data name="SubscriptionParametersInvalid" xml:space="preserve">
+    <value>Подписка содержит недопустимые значения параметров.</value>
+  </data>
+  <data name="SubscriptionPending" xml:space="preserve">
+    <value>Ожидает</value>
+  </data>
+  <data name="SubscriptionProcessing" xml:space="preserve">
+    <value>Обработка: обработано {0} из общего числа в {1}; ошибок: {2}.</value>
+  </data>
+  <data name="SubscriptionReady" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="TaskComment" xml:space="preserve">
+    <value>Владельцем этого задания является процесс сервера отчетов. Изменение этого задания может повлечь за собой несовместимость баз данных. Для обновления этого задания используйте диспетчер отчетов или среду Management Studio.</value>
+  </data>
+  <data name="TimedSubscriptions" xml:space="preserve">
+    <value>Согласно расписанию.</value>
+  </data>
+  <data name="UnableToAllocateILockBytes" xml:space="preserve">
+    <value>Не удалось выделить ILockBytes.</value>
+  </data>
+  <data name="UnableToCreateStorage" xml:space="preserve">
+    <value>Не удалось создать структурированный файл хранилища.</value>
+  </data>
+  <data name="UnableToReadData" xml:space="preserve">
+    <value>Невозможно считать данные из структурированного файла хранилища.</value>
+  </data>
+  <data name="UsersFolderName" xml:space="preserve">
+    <value>Папки пользователей</value>
+  </data>
+</root>

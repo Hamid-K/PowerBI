@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B90A213-D5A6-463F-9E02-709A825CAC69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Portal.ODataClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.OData.Client">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\AlertSubscription.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\AlertSubscriptionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\AllowedAction.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\AllowedActionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\BulkOperationsResult.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CacheOptions.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CacheRefreshPlan.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CacheRefreshPlanSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CatalogItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CatalogItemDrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CatalogItemParameter.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CatalogItemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CatalogItemType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Comment.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CommentSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Component.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ComponentSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Container.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CredentialRetrievalType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CredentialsStoredInServer.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\CredentialsSuppliedByUser.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DailyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataModelDataSource.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataModelDataSourceAuthType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataModelDataSourceKind.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataModelDataSourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataModelDataSourceType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSet.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetField.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetParameter.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetParameterInfo.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetSchema.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSetSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSource.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSourceCheckResult.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DataSourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DaysOfWeekSelector.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DefinitionItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DeliveryExtension.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\DrillthroughTargetType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExcelWorkbook.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExcelWorkbookSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExpirationReference.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Extension.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExtensionMethods.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExtensionParameter.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExtensionSettings.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ExtensionType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Folder.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\FolderSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\HistorySnapshot.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\HistorySnapshotOptions.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\HistorySnapshotOptionsSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\HistorySnapshotSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\IssueType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ItemExecutionType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ItemHistoryOptions.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ItemPolicy.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Kpi.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiData.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiDataItemType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiSharedDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiSharedDataItemAggregation.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiStaticDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiValueFormat.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiValues.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\KpiVisualization.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\LinkedReport.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\LinkedReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MinuteRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReport.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReportDataSetType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReportManifest.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReportResourceGroupType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MobileReportThumbnailType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MonthlyDOWRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MonthlyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\MonthsOfYearSelector.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Notification.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\NotificationSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ParameterValue.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Policy.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\PowerBIReport.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\PowerBIReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\PowerBIUserInfo.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\PowerBIUserInfoSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\PowerBIUserStatus.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Property.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Query.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Report.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportHistorySnapshot.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportHistorySnapshotSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportHistorySnapshotsOptions.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportModel.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportModelSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportParameterDefinition.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportParameterDefinitionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportParameterState.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportParameterType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportParameterVisibility.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportServerInfo.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportServerInfoSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Resource.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ResourceGroup.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ResourceItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ResourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Role.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Schedule.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ScheduleDefinition.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ScheduleRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ScheduleReference.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ScheduleSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ScheduleStateEnum.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ServiceState.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Subscription.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SubscriptionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemPolicy.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemPolicySingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResource.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourceItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourceItemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourcePackage.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourcePackageSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\SystemResourceType.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\Telemetry.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\TelemetryHostData.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\TelemetrySingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ThumbnailItem.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\UrlDrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\User.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\UserSingle.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\ValidValue.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\WeeklyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V1\Model\WeekNumberEnum.cs" />
+    <Compile Include="Portal\ODataClient\V1\PowerBIIntegration\ExtensionMethods.cs" />
+    <Compile Include="Portal\ODataClient\V2\AlertSubscription.cs" />
+    <Compile Include="Portal\ODataClient\V2\AlertSubscriptionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\AllowedAction.cs" />
+    <Compile Include="Portal\ODataClient\V2\AllowedActionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\BulkOperationsResult.cs" />
+    <Compile Include="Portal\ODataClient\V2\CacheOptions.cs" />
+    <Compile Include="Portal\ODataClient\V2\CacheOptionsSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\CacheRefreshPlan.cs" />
+    <Compile Include="Portal\ODataClient\V2\CacheRefreshPlanSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItemAccessToken.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItemDrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItemParameter.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\CatalogItemType.cs" />
+    <Compile Include="Portal\ODataClient\V2\Comment.cs" />
+    <Compile Include="Portal\ODataClient\V2\CommentSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Component.cs" />
+    <Compile Include="Portal\ODataClient\V2\ComponentSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Container.cs" />
+    <Compile Include="Portal\ODataClient\V2\CredentialRetrievalType.cs" />
+    <Compile Include="Portal\ODataClient\V2\CredentialsStoredInServer.cs" />
+    <Compile Include="Portal\ODataClient\V2\CredentialsSuppliedByUser.cs" />
+    <Compile Include="Portal\ODataClient\V2\DailyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelDataSource.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelDataSourceAuthType.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelDataSourceKind.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelDataSourceType.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelParameter.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelParameterSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelRole.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelRoleAssignment.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelRoleAssignmentSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataModelRoleSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSet.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetField.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetParameter.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetParameterInfo.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetRow.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetRowSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetSchema.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSetSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSource.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSourceCheckResult.cs" />
+    <Compile Include="Portal\ODataClient\V2\DataSourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DaysOfWeekSelector.cs" />
+    <Compile Include="Portal\ODataClient\V2\DefinitionItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\DeliveryExtension.cs" />
+    <Compile Include="Portal\ODataClient\V2\DeliveryExtensionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\DrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V2\DrillthroughTargetType.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExcelWorkbook.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExcelWorkbookSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExpirationReference.cs" />
+    <Compile Include="Portal\ODataClient\V2\Extension.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExtensionMethods.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExtensionParameter.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExtensionSettings.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExtensionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ExtensionType.cs" />
+    <Compile Include="Portal\ODataClient\V2\FavoriteItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\FavoriteItemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Folder.cs" />
+    <Compile Include="Portal\ODataClient\V2\FolderSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\HistorySnapshot.cs" />
+    <Compile Include="Portal\ODataClient\V2\HistorySnapshotOptions.cs" />
+    <Compile Include="Portal\ODataClient\V2\HistorySnapshotOptionsSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\HistorySnapshotSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\IssueType.cs" />
+    <Compile Include="Portal\ODataClient\V2\ItemExecutionType.cs" />
+    <Compile Include="Portal\ODataClient\V2\ItemPolicy.cs" />
+    <Compile Include="Portal\ODataClient\V2\ItemPolicySingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Kpi.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiData.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiDataItemType.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiSharedDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiSharedDataItemAggregation.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiStaticDataItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiValueFormat.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiValues.cs" />
+    <Compile Include="Portal\ODataClient\V2\KpiVisualization.cs" />
+    <Compile Include="Portal\ODataClient\V2\LinkedReport.cs" />
+    <Compile Include="Portal\ODataClient\V2\LinkedReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\MinuteRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReport.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReportDataSetType.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReportManifest.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReportResourceGroupType.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\MobileReportThumbnailType.cs" />
+    <Compile Include="Portal\ODataClient\V2\MonthlyDOWRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\MonthlyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\MonthsOfYearSelector.cs" />
+    <Compile Include="Portal\ODataClient\V2\Notification.cs" />
+    <Compile Include="Portal\ODataClient\V2\NotificationSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ParameterValue.cs" />
+    <Compile Include="Portal\ODataClient\V2\Policy.cs" />
+    <Compile Include="Portal\ODataClient\V2\PowerBIReport.cs" />
+    <Compile Include="Portal\ODataClient\V2\PowerBIReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\PowerBIUserInfo.cs" />
+    <Compile Include="Portal\ODataClient\V2\PowerBIUserInfoSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\PowerBIUserStatus.cs" />
+    <Compile Include="Portal\ODataClient\V2\ProductType.cs" />
+    <Compile Include="Portal\ODataClient\V2\Property.cs" />
+    <Compile Include="Portal\ODataClient\V2\PropertySingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Query.cs" />
+    <Compile Include="Portal\ODataClient\V2\Report.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportHistorySnapshot.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportHistorySnapshotSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportHistorySnapshotsOptions.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportModel.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportModelSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportParameterDefinition.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportParameterDefinitionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportParameterState.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportParameterType.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportParameterVisibility.cs" />
+    <Compile Include="Portal\ODataClient\V2\ReportSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Resource.cs" />
+    <Compile Include="Portal\ODataClient\V2\ResourceGroup.cs" />
+    <Compile Include="Portal\ODataClient\V2\ResourceItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\ResourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Role.cs" />
+    <Compile Include="Portal\ODataClient\V2\Schedule.cs" />
+    <Compile Include="Portal\ODataClient\V2\ScheduleDefinition.cs" />
+    <Compile Include="Portal\ODataClient\V2\ScheduleRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\ScheduleReference.cs" />
+    <Compile Include="Portal\ODataClient\V2\ScheduleSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ScheduleStateEnum.cs" />
+    <Compile Include="Portal\ODataClient\V2\ServiceState.cs" />
+    <Compile Include="Portal\ODataClient\V2\Subscription.cs" />
+    <Compile Include="Portal\ODataClient\V2\SubscriptionExecutionType.cs" />
+    <Compile Include="Portal\ODataClient\V2\SubscriptionHistory.cs" />
+    <Compile Include="Portal\ODataClient\V2\SubscriptionHistorySingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SubscriptionSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SubscriptionStatus.cs" />
+    <Compile Include="Portal\ODataClient\V2\System.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemPolicy.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemPolicySingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResource.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourceItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourceItemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourcePackage.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourcePackageSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourceSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemResourceType.cs" />
+    <Compile Include="Portal\ODataClient\V2\SystemSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\Telemetry.cs" />
+    <Compile Include="Portal\ODataClient\V2\TelemetryHostData.cs" />
+    <Compile Include="Portal\ODataClient\V2\TelemetrySingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ThumbnailItem.cs" />
+    <Compile Include="Portal\ODataClient\V2\UrlDrillthroughTarget.cs" />
+    <Compile Include="Portal\ODataClient\V2\User.cs" />
+    <Compile Include="Portal\ODataClient\V2\UserSettings.cs" />
+    <Compile Include="Portal\ODataClient\V2\UserSettingsSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\UserSingle.cs" />
+    <Compile Include="Portal\ODataClient\V2\ValidValue.cs" />
+    <Compile Include="Portal\ODataClient\V2\WeeklyRecurrence.cs" />
+    <Compile Include="Portal\ODataClient\V2\WeekNumberEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicKeyConstants.cs" />
+    <Compile Include="TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

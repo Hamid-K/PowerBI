@@ -1,0 +1,177 @@
+<!-- These contain svgs with updated default colors; these should replace the original svgs
+and those in fieldListPaneIcons.svg when feature switch paneColorRefresh is being cleaned up (Task 165772). -->
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol height="16" id="fieldListCalculatedColumn_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListCalculatedColumn_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListCalculatedColumn_paneColorRefresh .cls-2{fill:#C8C6C4;}#fieldListCalculatedColumn_paneColorRefresh .cls-3{fill:#fff;}#fieldListCalculatedColumn_paneColorRefresh .cls-4{fill:#605E5C;}#fieldListCalculatedColumn_paneColorRefresh .cls-5{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M1,2V14H14V2ZM2,13V5H5v8Zm11,0H6V5h7Z"/>
+        <rect class="cls-2 fwns" height="8" width="3" x="2" y="5"/>
+        <path class="cls-3 fwns" d="M13,8.28V5H6v7.09c-.29.25-.74.14-1.1.07L4,11.86,3.39,14H8a3.63,3.63,0,0,0,.37-.4,6.34,6.34,0,0,0,.41-.6H13V10.93L14,10V8.29Z"/>
+        <path class="cls-4 fwns" d="M10,9.11a6.56,6.56,0,0,0,.24,1,5.46,5.46,0,0,0,.43,1L8.56,13h1L11,11.66a6.13,6.13,0,0,0,.41.65A7.35,7.35,0,0,0,12,13h1c-.32-.34-.59-.66-.83-1a4.51,4.51,0,0,1-.57-.91l2.19-2h-.93L11.3,10.58a6.4,6.4,0,0,1-.25-.7,6.62,6.62,0,0,1-.17-.76Z"/>
+        <path class="cls-4 fwns" d="M4.63,13.07l.56.09A1.82,1.82,0,0,0,6.42,13a2.64,2.64,0,0,0,.87-1.18,9.28,9.28,0,0,0,.28-.93l.71-3H7.13l.2-.78H8.49S9,5.45,9.11,5.2a2,2,0,0,1,.44-.63A2.15,2.15,0,0,1,11.14,4a2.34,2.34,0,0,1,1.17.27L12.06,5a2.21,2.21,0,0,0-.45-.15,2.31,2.31,0,0,0-.5-.05,1.25,1.25,0,0,0-.93.36,1,1,0,0,0-.22.31c-.07.16-.51,1.71-.51,1.71h1.68l-.2.78H9.24l-.72,3a11.59,11.59,0,0,1-.39,1.21,3.32,3.32,0,0,1-.54.9,2.59,2.59,0,0,1-.78.68A2.19,2.19,0,0,1,5.73,14a6.75,6.75,0,0,1-1.31-.15Z"/>
+        <rect class="cls-5 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListCalendar_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListCalendar_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListCalendar_paneColorRefresh .cls-2{fill:#fff;}#fieldListCalendar_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <polygon class="cls-1 nfws" points="12 2 12 1 11 1 11 2 5 2 5 1 4 1 4 2 2 2 2 14 14 14 14 2 12 2"/>
+        <path class="cls-2 fwns" d="M3,6v7H13V6Zm3,6H4V10H6ZM6,9H4V7H6Zm3,3H7V10H9ZM9,9H7V7H9Zm3,3H10V10h2Zm0-3H10V7h2Z"/>
+        <polygon class="cls-2 fwns" points="12 3 12 4 11 4 11 3 5 3 5 4 4 4 4 3 3 3 3 5 13 5 13 3 12 3"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListColumn_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListColumn_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListColumn_paneColorRefresh .cls-2{fill:#fff;}#fieldListColumn_paneColorRefresh .cls-3{fill:#C8C6C4;}#fieldListColumn_paneColorRefresh .cls-4{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="12" width="13" x="1" y="2"/>
+        <rect class="cls-2 fwns" height="8" width="11" x="2" y="5"/>
+        <path class="cls-3 fwns" d="M9,5V7H6V5H5V7H2V8H5v2H2v1H5v2H6V11H9v2h4V5Zm0,5H6V8H9Z"/>
+        <rect class="cls-4 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListEntity_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListEntity_paneColorRefresh .cls-1{opacity:1 !important;fill:#fff;}#fieldListEntity_paneColorRefresh .cls-2{fill:#252423;}#fieldListEntity_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 nfws" height="8" width="11" x="2" y="5"/>
+        <path class="cls-2 fwns" d="M1,2V14H14V2ZM5,13H2V11H5Zm0-3H2V8H5ZM5,7H2V5H5Zm4,6H6V11H9Zm0-3H6V8H9ZM9,7H6V5H9Zm4,6H10V11h3Zm0-3H10V8h3Zm0-3H10V5h3Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListEntityCalculated_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListEntityCalculated_paneColorRefresh .cls-1{opacity:1 !important;fill:#c1d4e6;}#fieldListEntityCalculated_paneColorRefresh .cls-2{fill:#252423;}#fieldListEntityCalculated_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="8" width="11" x="2" y="5"/>
+        <path class="cls-2 fwns" d="M1,2V14H14V2ZM5,13H2V11H5Zm0-3H2V8H5ZM5,7H2V5H5Zm4,6H6V11H9Zm0-3H6V8H9ZM9,7H6V5H9Zm4,6H10V11h3Zm0-3H10V8h3Zm0-3H10V5h3Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <!-- NOTE: there are no changes to this icon but keeping a duplicate version here for ease of access from field list property. -->
+    <symbol height="14" id="fieldListError_paneColorRefresh" viewBox="0 0 14 14" width="14">
+        <defs>
+            <style>#fieldListError_paneColorRefresh .cls-1{opacity:1 !important;fill:#edc87e;}#fieldListError_paneColorRefresh .cls-2{fill:#333;}#fieldListError_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="9.19" transform="translate(-2.9 7) rotate(-45)" width="9.19" x="2.4" y="2.4"/>
+        <rect class="cls-2 fwns" height="6" width="2" x="6" y="3"/>
+        <rect class="cls-2 fwns" height="1" width="2" x="6" y="10"/>
+        <rect class="cls-3 nfwns" height="14" width="14"/>
+    </symbol>
+    <symbol height="16" id="fieldListFolder_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListFolder_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListFolder_paneColorRefresh .cls-2{fill:#fff;}#fieldListFolder_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M9,1V2H8V3H.75A.75.75,0,0,0,0,3.75V14H15V1Z"/>
+        <rect class="cls-2 fwns" height="1" width="4.5" x="9.5" y="2"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListGeoData_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListGeoData_paneColorRefresh .cls-1{opacity:1 !important;fill:#fff;}#fieldListGeoData_paneColorRefresh .cls-2{fill:#252423;}#fieldListGeoData_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <circle class="cls-1 nfws" cx="8" cy="8" r="5.5"/>
+        <path class="cls-2 fwns" d="M8,2.1A5.9,5.9,0,1,0,13.9,8,5.9,5.9,0,0,0,8,2.1ZM13.1,8a5.06,5.06,0,0,1-.35,1.82,10.33,10.33,0,0,0-1.92-.56A11.83,11.83,0,0,0,10.9,8a11.83,11.83,0,0,0-.07-1.26,10.33,10.33,0,0,0,1.92-.56A5.06,5.06,0,0,1,13.1,8ZM8.31,13.07c-.1,0-.2,0-.31,0s-.21,0-.31,0C7,12.78,6.33,11.58,6,9.89a14.51,14.51,0,0,1,2-.14,14.51,14.51,0,0,1,2,.14C9.67,11.58,9,12.78,8.31,13.07ZM8,9a15.4,15.4,0,0,0-2.09.15,10.55,10.55,0,0,1,0-2.31A15.4,15.4,0,0,0,8,7a15.4,15.4,0,0,0,2.09-.15A11,11,0,0,1,10.15,8a11,11,0,0,1-.06,1.15A15.4,15.4,0,0,0,8,9ZM2.9,8a5.06,5.06,0,0,1,.35-1.82,10.33,10.33,0,0,0,1.92.56,11.74,11.74,0,0,0,0,2.52,10.33,10.33,0,0,0-1.92.56A5.06,5.06,0,0,1,2.9,8ZM7.69,2.93c.1,0,.2,0,.31,0s.21,0,.31,0C9,3.22,9.67,4.42,10,6.11a14.51,14.51,0,0,1-2,.14,14.51,14.51,0,0,1-2-.14C6.33,4.42,7,3.22,7.69,2.93ZM12.42,5.5a9.53,9.53,0,0,1-1.7.49,7.27,7.27,0,0,0-1-2.79A5.08,5.08,0,0,1,12.42,5.5ZM6.31,3.21A7.27,7.27,0,0,0,5.27,6a9.53,9.53,0,0,1-1.7-.49A5.08,5.08,0,0,1,6.31,3.21ZM3.58,10.5A9.53,9.53,0,0,1,5.27,10a7.27,7.27,0,0,0,1,2.79A5.08,5.08,0,0,1,3.58,10.5Zm6.11,2.29a7.27,7.27,0,0,0,1-2.79,9.53,9.53,0,0,1,1.7.49A5.08,5.08,0,0,1,9.69,12.79Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListGroup_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListGroup_paneColorRefresh .cls-1{opacity:1 !important;fill: #252423;}#fieldListGroup_paneColorRefresh .cls-2{fill: none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M0,1.07V0H1.07V1.07ZM0,3.2V2.13H1.07V3.2ZM0,5.33V4.27H1.07V5.33ZM0,7.47V6.4H1.07V7.47ZM0,9.6V8.53H1.07V9.6Zm0,2.13V10.67H1.07v1.06Zm0,2.14V12.8H1.07v1.07ZM0,16V14.93H1.07V16ZM3.2,0V1.07H2.13V0ZM2.13,16V14.93H3.2V16ZM12.8,3.2v9.6H3.2V3.2ZM5.33,0V1.07H4.27V0ZM7.47,4.27H4.27v3.2h3.2ZM4.27,8.53v3.2h3.2V8.53Zm0,7.47V14.93H5.33V16ZM7.47,0V1.07H6.4V0ZM6.4,16V14.93H7.47V16ZM9.6,0V1.07H8.53V0Zm2.13,7.47V4.27H8.53v3.2Zm-3.2,4.26h3.2V8.53H8.53Zm0,4.27V14.93H9.6V16Zm3.2-16V1.07H10.67V0ZM10.67,16V14.93h1.06V16ZM12.8,1.07V0h1.07V1.07ZM12.8,16V14.93h1.07V16ZM14.93,0H16V1.07H14.93Zm0,3.2V2.13H16V3.2Zm0,2.13V4.27H16V5.33Zm0,2.14V6.4H16V7.47Zm0,2.13V8.53H16V9.6Zm0,2.13V10.67H16v1.06Zm0,2.14V12.8H16v1.07Zm0,2.13V14.93H16V16Z"/>
+        <rect class="cls-2 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListHierarchy_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListHierarchy_paneColorRefresh .cls-1{opacity:1 !important;fill:none;}#fieldListHierarchy_paneColorRefresh .cls-2{fill:#f2c816;}#fieldListHierarchy_paneColorRefresh .cls-3{fill:#252423;}</style>
+        </defs>
+        <path class="cls-2 nfws" d="M9,11H12a.91.91,0,0,1,1,1v2a.91.91,0,0,1-1,1H9a.91.91,0,0,1-1-1V12A.91.91,0,0,1,9,11Z"/>
+        <path class="cls-3 nfwns" d="M12,12h0v2H9V12h3m0-1H9a.91.91,0,0,0-1,1v2a.91.91,0,0,0,1,1H12a.91.91,0,0,0,1-1V12a.91.91,0,0,0-1-1Z"/>
+        <rect class="cls-2 nfws" height="4" rx="1.04" ry="1.04" width="5" x="8" y="6"/>
+        <path class="cls-3 nfwns" d="M12,7a0,0,0,0,1,0,0V9a0,0,0,0,1,0,0H9A0,0,0,0,1,9,9V7A0,0,0,0,1,9,7H12m0-1H9A1,1,0,0,0,8,7V9a1,1,0,0,0,1,1H12a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1Z"/>
+        <rect class="cls-2 nfws" height="4" rx="1.03" ry="1.03" width="5" x="2" y="2"/>
+        <path class="cls-3 nfwns" d="M6,3,6,3,6,5,3,5,3,3H6M6,2H3A1,1,0,0,0,2,3V5A1,1,0,0,0,3,6H6A1,1,0,0,0,7,5V3A1,1,0,0,0,6,2Z"/>
+        <polygon class="cls-3 nfws" points="7 8 6 8 6 7 5 7 5 8 4 8 4 9 5 9 5 10 6 10 6 9 7 9 7 8"/>
+        <polygon class="cls-3 nfws" points="7 13 6 13 6 12 5 12 5 13 4 13 4 14 5 14 5 15 6 15 6 14 7 14 7 13"/>
+        <rect class="cls-1 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListIdentity_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListIdentity_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListIdentity_paneColorRefresh .cls-2{fill:#fff;}#fieldListIdentity_paneColorRefresh .cls-3{fill:#252423;}#fieldListIdentity_paneColorRefresh .cls-4{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fws" height="9" width="14" x="1" y="4"/>
+        <rect class="cls-2 fwns1" height="7" width="8" x="6" y="5"/>
+        <rect class="cls-3 fwns" height="1" width="5" x="8" y="7"/>
+        <rect class="cls-3 fwns" height="1" width="5" x="8" y="9"/>
+        <rect class="cls-4 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="14" id="fieldListKpi_paneColorRefresh" viewBox="0 0 7 14" width="7">
+        <defs>
+            <style>#fieldListKpi_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListKpi_paneColorRefresh .cls-2{fill:#e02516;}#fieldListKpi_paneColorRefresh .cls-3{fill:#fab400;}#fieldListKpi_paneColorRefresh .cls-4{fill:#46bb0a;}#fieldListKpi_paneColorRefresh .cls-5{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="13" rx="0.67" ry="0.67" width="7" y="1"/>
+        <circle class="cls-2 fwns" cx="3.5" cy="3.5" r="1.6"/>
+        <circle class="cls-3 fwns" cx="3.5" cy="7.5" r="1.6"/>
+        <circle class="cls-4 fwns" cx="3.5" cy="11.5" r="1.6"/>
+        <rect class="cls-5 nfwns" height="14" width="7"/>
+    </symbol>
+    <symbol height="16" id="fieldListMeasure_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListMeasure_paneColorRefresh .cls-1{opacity:1 !important;fill:#fff;}#fieldListMeasure_paneColorRefresh .cls-2{fill:#252423;}#fieldListMeasure_paneColorRefresh .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 nfws" height="10" width="7" x="4" y="3"/>
+        <path class="cls-2 fwns" d="M3,2.78V13.22a.78.78,0,0,0,.78.78h7.44a.78.78,0,0,0,.78-.78V2.78A.78.78,0,0,0,11.22,2H3.78A.78.78,0,0,0,3,2.78ZM6,12H5V11H6Zm0-2H5V9H6ZM6,8H5V7H6Zm2,4H7V11H8Zm0-2H7V9H8ZM8,8H7V7H8Zm2,4H9V11h1Zm0-2H9V9h1Zm0-2H9V7h1Zm0-2H5V4h5Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListMeasureGroup_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListMeasureGroup_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListMeasureGroup_paneColorRefresh .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M4,3.78V14.22a.78.78,0,0,0,.78.78h7.44a.78.78,0,0,0,.78-.78V3.78A.78.78,0,0,0,12.22,3H4.78A.78.78,0,0,0,4,3.78ZM7,13H6V12H7Zm0-2H6V10H7ZM7,9H6V8H7Zm2,4H8V12H9Zm0-2H8V10H9ZM9,9H8V8H9Zm2,4H10V12h1Zm0-2H10V10h1Zm0-2H10V8h1Zm0-2H6V5h5Z"/>
+        <path class="cls-1 fwns" d="M2.78,1A.78.78,0,0,0,2,1.78V14H3V2h9V1Z"/>
+        <rect class="cls-2 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListNumeric_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListNumeric_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListNumeric_paneColorRefresh .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M11.74,13H2.8L7.56,8.53,3.09,4H12V6.22h-.31a1.93,1.93,0,0,0-.09-.41c-.26-.83-.9-.75-1.47-.8-.26,0-1,0-1.27,0H6L9.2,8.35,5.38,12l4.14,0a2,2,0,0,0,2.1-1.68H12Z"/>
+        <rect class="cls-2 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListNumericCalculatedColumn_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListNumericCalculatedColumn_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListNumericCalculatedColumn_paneColorRefresh .cls-2{fill:#C8C6C4;}.cls-3,#fieldListNumericCalculatedColumn_paneColorRefresh .cls-4{fill:#fff;}#fieldListNumericCalculatedColumn_paneColorRefresh .cls-4{opacity:0.3;}#fieldListNumericCalculatedColumn_paneColorRefresh .cls-5{fill:#605E5C;}#fieldListNumericCalculatedColumn_paneColorRefresh .cls-6{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="12" width="13" x="1" y="2"/>
+        <rect class="cls-2 fwns" height="8" width="3" x="2" y="5"/>
+        <polygon class="cls-3 fwns" points="10 5 10 6 9 6 9 5 6 5 6 7 13 7 13 5 10 5"/>
+        <rect class="cls-3 fwns" height="5" width="7" x="6" y="8"/>
+        <rect class="cls-4 fwns" height="1" width="1" x="7" y="7"/>
+        <polygon class="cls-5 fwns" points="13 9 13 7 8 7 8 8 8.33 8 10.1 10 8.33 12 8 12 8 13 13 13 13 11 12 11 12 12 9.53 12 11.3 10 9.53 8 12 8 12 9 13 9"/>
+        <rect class="cls-6 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListParameter_paneColorRefresh" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListParameter_paneColorRefresh .cls-1{opacity:1 !important;fill:#252423;}#fieldListParameter_paneColorRefresh .cls-2{fill:#C8C6C4;}.cls-3,#fieldListParameter_paneColorRefresh .cls-5{fill:#fff;}#fieldListParameter_paneColorRefresh .cls-4{fill:#C8C6C4;}#fieldListParameter_paneColorRefresh .cls-5{opacity:0.7;}#fieldListParameter_paneColorRefresh .cls-6{fill:#605E5C;}#fieldListParameter_paneColorRefresh .cls-7{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 nfws" height="12" width="13" y="2"/>
+        <rect class="cls-2 fwns" height="8" width="3" x="1" y="5"/>
+        <rect class="cls-3 nfws" height="8" width="7" x="5" y="5"/>
+        <polygon class="cls-4 fwns" points="12 8 12 7 9 7 9 5 8 5 8 7 5 7 5 8 8 8 8 10 5 10 5 11 8 11 8 13 9 13 9 11 12 11 12 10 9 10 9 8 12 8"/>
+        <path class="cls-5 nfwns" d="M13,5.37A3.92,3.92,0,0,0,9,6.68,5.8,5.8,0,0,0,8.2,9.52L11,9.83c-.23.19-.28.5-.47,1.06a9.32,9.32,0,0,0-.3,3.1H13Z"/>
+        <path class="cls-6 fwns" d="M14.33,6.73A3.12,3.12,0,0,0,12.15,6a3,3,0,0,0-2.08.7,2.8,2.8,0,0,0-1,1.9l0,.25L10.66,9l0-.24a1.69,1.69,0,0,1,.52-1.07,1.33,1.33,0,0,1,1-.35,1.37,1.37,0,0,1,1,.4,1.21,1.21,0,0,1,.4.9,1,1,0,0,1-.13.5,3.27,3.27,0,0,1-.66.71,8,8,0,0,0-.79.76,2.72,2.72,0,0,0-.46.75,2.67,2.67,0,0,0-.19,1.06c0,.07,0,.18,0,.32V13h1.5v-.25a2.65,2.65,0,0,1,.08-.75,1.27,1.27,0,0,1,.2-.42,4.77,4.77,0,0,1,.64-.63,5.09,5.09,0,0,0,1.08-1.22,2.36,2.36,0,0,0,.29-1.16A2.41,2.41,0,0,0,14.33,6.73Z"/>
+        <rect class="cls-6 fwns" height="1.7" width="1.5" x="11.44" y="14.06"/>
+        <rect class="cls-7 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListChangeDetection_paneColorRefresh" viewBox="0 0 2048 2048" width="16">
+        <defs>
+            <style>.OfficeIconColors_m20 { fill : rgba(250, 250, 250, 1.000); }.OfficeIconColors_m22 { fill : rgba(58, 58, 56, 1.000); }.OfficeIconColors_m25 { fill : rgba(0, 99, 177, 1.000); }.OfficeIconColors_m26 { fill : rgba(131, 190, 236, 1.000); }</style>
+        </defs>
+        <path class='OfficeIconColors_HighContrast' d='M 1536 256 v 384 h -1024 v -384 m 896 128 h -768 v 128 h 768 m -545 1536 h -607 v -2048 h 1536 v 905 l -99 -265 h -29 v -512 h -1280 v 1792 h 529 m 1135 128 h -1013 l 505 -1280 h 30 m -418 1206 h 687 l -330 -938 m -357 -12 h -256 v -256 h 256 m 128 223 v -223 h 88 m -252 640 h -220 v -256 h 256 v 163 m -640 -163 h 256 v 256 h -256 m 0 -640 h 256 v 256 h -256 m 0 512 h 256 v 256 h -256 m 452 0 h -68 v -256 h 169 z' />
+        <path class='OfficeIconColors_m20 OfficeIconColors_HighContrast_Off' d='M 888 1984 h -568 v -1920 h 1408 v 670 l -35 -94 h -275 z' />
+        <path class='OfficeIconColors_m22 OfficeIconColors_HighContrast_Off' d='M 863 2048 h -607 v -2048 h 1536 v 905 l -99 -265 h -29 v -512 h -1280 v 1792 h 529 z' />
+        <path class='OfficeIconColors_m26 OfficeIconColors_HighContrast_Off' d='M 576 576 v -256 h 896 v 256 z' />
+        <path class='OfficeIconColors_m25 OfficeIconColors_HighContrast_Off' d='M 1536 256 v 384 h -1024 v -384 m 896 128 h -768 v 128 h 768 z' />
+        <path class='OfficeIconColors_m22 OfficeIconColors_HighContrast_Off' d='M 1152 1024 h -256 v -256 h 256 m 128 223 v -223 h 88 m -252 640 h -220 v -256 h 256 v 163 m -640 -163 h 256 v 256 h -256 m 0 -640 h 256 v 256 h -256 m 0 512 h 256 v 256 h -256 m 452 0 h -68 v -256 h 169 z' />
+        <path class='OfficeIconColors_m22 OfficeIconColors_HighContrast_Off' d='M 2048 2048 h -1013 l 505 -1280 h 30 m -418 1206 h 687 l -330 -938 z' />
+    </symbol>
+</svg>

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCodes_ASPNetNotRegistered" xml:space="preserve">
+    <value>ASP.Net 未在计算机上注册。
+
+</value>
+  </data>
+  <data name="ErrorCodes_AlreadyActivated" xml:space="preserve">
+    <value>报表服务器已初始化。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ApplicationPoolAlreadyExists" xml:space="preserve">
+    <value>该应用程序池已存在。请指定唯一的应用程序池名称。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPool" xml:space="preserve">
+    <value>该应用程序池不存在。请指定现有应用程序池的名称。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPoolName" xml:space="preserve">
+    <value>指定的应用程序池无效。请确保指定的名称不要太长并且不包含非法字符。(例如: /)
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadConfigurationFile" xml:space="preserve">
+    <value>报表服务器遇到配置问题。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadCredentialsType" xml:space="preserve">
+    <value>凭据类型无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadLcid" xml:space="preserve">
+    <value>区域设置标识符(LCID)无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadVerson" xml:space="preserve">
+    <value>该版本与支持的版本不匹配。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadWebsiteConfiguration" xml:space="preserve">
+    <value>该应用程序池无效。请指定一个可用的应用程序池，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_CantConnectCatalog" xml:space="preserve">
+    <value>无法与报表服务器数据库建立连接。请验证在网络上可以访问 SQL Server 数据库。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ConfigurationFileNotFound" xml:space="preserve">
+    <value>找不到报表服务器配置文件。
+
+</value>
+  </data>
+  <data name="ErrorCodes_FailedToEnumerateInstances" xml:space="preserve">
+    <value>枚举 WMI 实例时出错。</value>
+  </data>
+  <data name="ErrorCodes_FailedToLoadResources" xml:space="preserve">
+    <value>找不到完成此操作所需的资源。
+
+</value>
+  </data>
+  <data name="ErrorCodes_GrantLoginToPasswordRequired" xml:space="preserve">
+    <value>需要用户帐户的密码。
+
+</value>
+  </data>
+  <data name="ErrorCodes_IISNotInstalled" xml:space="preserve">
+    <value>计算机上未安装 Internet Information Services (IIS)。
+
+</value>
+  </data>
+  <data name="ErrorCodes_IllformedAccountString" xml:space="preserve">
+    <value>帐户名无效。请使用“域\别名”的格式指定帐户。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InsufficientPrivilege" xml:space="preserve">
+    <value>您不具备执行此任务的正确权限。请指定具有管理权限的用户帐户，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidIISPath" xml:space="preserve">
+    <value>使用 IIS 时指定的 ADSI 路径无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidParameter" xml:space="preserve">
+    <value>至少有一个参数无效。请指定所有参数，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidPortNumber" xml:space="preserve">
+    <value>端口号无效。报表服务器虚拟目录必须使用父级网站的端口号。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidSecureConnectionLevel" xml:space="preserve">
+    <value>安全连接级别无效。请指定以下值之一: 0、1、2、3。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUrlParameterSet" xml:space="preserve">
+    <value>调用 WMI 提供程序时传递的 URL 无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUser" xml:space="preserve">
+    <value>指定的用户帐户无效或密码不正确。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidVersionString" xml:space="preserve">
+    <value>版本字符串的格式无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_LocalServiceIsLocalOnly" xml:space="preserve">
+    <value>在您连接到远程数据库服务器时，不能指定 LocalSystem。
+
+</value>
+  </data>
+  <data name="ErrorCodes_MustCreateVirtualDirectory" xml:space="preserve">
+    <value>必须先创建虚拟目录，然后才能执行此操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAdmin" xml:space="preserve">
+    <value>您不具备执行此任务的正确权限。指定的用户帐户不具备对计算机“{0}”的管理员权限。请指定具有管理权限的用户帐户，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAnnounced" xml:space="preserve">
+    <value>报表服务器数据库中缺少报表服务器的密钥信息。若要添加密钥，请验证报表服务器 Windows 服务正在运行，然后连接到报表服务器 Web 服务。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInNativeMode" xml:space="preserve">
+    <value>只有配置为 SharePoint 集成模式的报表服务器支持此操作。无法在本机模式报表服务器上执行此操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInSharePointMode" xml:space="preserve">
+    <value>SharePoint 集成模式不支持此操作。有关支持的操作的详细信息，请参阅产品文档。
+
+</value>
+  </data>
+  <data name="ErrorCodes_OperatingSystemNotSupported" xml:space="preserve">
+    <value>不支持该操作系统。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RPCServerNotListening" xml:space="preserve">
+    <value>尝试连接到报表服务器远程过程调用(RPC)端点时出错。请确保报表服务器 Windows 服务正在运行，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionLevelType" xml:space="preserve">
+    <value>扩展保护级别无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionScenarioType" xml:space="preserve">
+    <value>扩展保护方案无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>配置文件中找不到电子邮件传递扩展插件。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidApplication" xml:space="preserve">
+    <value>应用程序无效。唯一有效的应用程序是 ReportServerWebService、ReportManager、ReportServerWebApp 和 PowerBIWebApp。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidSSLCertificate" xml:space="preserve">
+    <value>此证书不可信。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsIpAddressNotFound" xml:space="preserve">
+    <value>在计算机上找不到该 IP 地址。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsLocalServiceNotAllowedXP" xml:space="preserve">
+    <value>Local Service 帐户在 Windows XP 上无效。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineApplicationFirst" xml:space="preserve">
+    <value>找不到该应用程序。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineAuthenticationFirst" xml:space="preserve">
+    <value>未定义身份验证。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLBindingConflict" xml:space="preserve">
+    <value>对于指定的 IP 地址和端口组合，已存在 HTTPS 绑定。现有绑定使用的证书不同于当前请求的证书。只能对每个 IP 地址和端口组合使用一个证书。若要解决此问题，请使用与现有绑定相同的证书，或删除现有 SSL 绑定并使用当前请求的证书创建新绑定。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLCertificateNotRegistered" xml:space="preserve">
+    <value>此证书尚未注册。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsServerConfigurationError" xml:space="preserve">
+    <value>无法启动报表服务器。一个或多个配置文件无效。有关详细信息，请查看日志文件。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointError" xml:space="preserve">
+    <value>该操作失败，因为调用 Windows SharePoint Services 对象模型方法时出错。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>该操作失败，因为在报表服务器上未安装 Windows SharePoint Services 对象模型。请安装和配置 Windows SharePoint Services，然后重试请求。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLAlreadyReserved" xml:space="preserve">
+    <value>该 URL 已保留。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLMustNotExist" xml:space="preserve">
+    <value>报表服务器 WMI 提供程序无法创建虚拟目录。当你调用 SetVirtualDirectory 并且 UrlString 已经预留时会出现此错误。若要继续操作，请通过调用 RemoveURL 清除所有 URL 预留项，然后重试。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLNotReserved" xml:space="preserve">
+    <value>配置文件中列出了该 URL，但未使用 httpsys 将其保留。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsUrlAlreadyReservedDifferentName" xml:space="preserve">
+    <value>已使用其他用户帐户保留该 URL。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsexecRoleDoesNotExist" xml:space="preserve">
+    <value>数据库角色 RSExec 在数据库中不存在。请验证该数据库是报表服务器数据库。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceDisabled" xml:space="preserve">
+    <value>Reporting Services Windows 服务已禁用。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceNotActivated" xml:space="preserve">
+    <value>Reporting Services Windows 服务尚未激活。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SharePointNotInstalled" xml:space="preserve">
+    <value>未安装 Windows SharePoint Services。必须要有 Windows SharePoint Services 实例，才能执行当前操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SqlAdminUserInsufficientPrivilege" xml:space="preserve">
+    <value>您不具备在 SQL Server 数据库上执行此任务的正确权限。请指定具有管理权限的 SQL Server 用户帐户，然后重试该操作。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SslCertificateNotFound" xml:space="preserve">
+    <value>未在网站上配置 HTTPS 证书。
+
+</value>
+  </data>
+  <data name="ErrorCodes_Success" xml:space="preserve">
+    <value>该操作成功完成。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseError" xml:space="preserve">
+    <value>在 SQL Server 数据库引擎上运行脚本时出错。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseResult" xml:space="preserve">
+    <value>数据库查询产生了意外的结果。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnknownOrUnmappedException" xml:space="preserve">
+    <value>在 WMI 提供程序中出现了未知错误。错误代码 {0:X}
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryAlreadyExists" xml:space="preserve">
+    <value>指定的虚拟目录已存在。请指定其他名称。
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryInvalid" xml:space="preserve">
+    <value>指定的虚拟目录无效。请确保指定的名称不要太长并且不包含非法字符。(例如: ;)
+
+</value>
+  </data>
+  <data name="ErrorCodes_WebServiceAccountNotSet" xml:space="preserve">
+    <value>未设置报表服务器 Web 服务的服务帐户。
+
+</value>
+  </data>
+  <data name="ErrorCodes_WindowsServiceAccountNotSet" xml:space="preserve">
+    <value>未设置报表服务器 Windows 服务的服务帐户。
+
+</value>
+  </data>
+  <data name="Exception_Generic" xml:space="preserve">
+    <value>出现错误。详细信息:
+
+{0}</value>
+  </data>
+  <data name="GenericWMIError" xml:space="preserve">
+    <value>出现 WMI 错误，并且不存在其他错误信息。</value>
+  </data>
+  <data name="GenericWMIErrorWithCode" xml:space="preserve">
+    <value>出现 WMI 错误。返回的错误是:
+
+{0}.</value>
+  </data>
+  <data name="ManagementException_AccessDenied" xml:space="preserve">
+    <value>无法与计算机建立连接。</value>
+  </data>
+  <data name="ManagementException_Generic" xml:space="preserve">
+    <value>报表服务器 WMI 提供程序错误:
+
+{0}</value>
+  </data>
+  <data name="UnableToConnect" xml:space="preserve">
+    <value>无法连接到报表服务器 {0}。</value>
+  </data>
+</root>

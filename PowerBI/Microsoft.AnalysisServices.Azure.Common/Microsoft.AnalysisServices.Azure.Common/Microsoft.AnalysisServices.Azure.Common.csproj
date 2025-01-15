@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D15C191A-7604-4280-8A4A-E38D8A4FECA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.AnalysisServices</RootNamespace>
+    <AssemblyName>Microsoft.AnalysisServices.Azure.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ASAzure.Gateway.ClusterManagementContracts" />
+    <Reference Include="Microsoft.BusinessIntelligence.FeatureSwitch" />
+    <Reference Include="Microsoft.Cloud.ModelCommon" />
+    <Reference Include="Microsoft.Cloud.Platform">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Cloud.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Cloud.Platform.Azure" />
+    <Reference Include="Microsoft.Cloud.Platform.Watchdog" />
+    <Reference Include="Microsoft.CloudBI.ConfigurationCommon" />
+    <Reference Include="Microsoft.CloudBI.FeatureSwitches" />
+    <Reference Include="Microsoft.CloudBI.Routers" />
+    <Reference Include="Microsoft.CloudBI.Security.AccessToken" />
+    <Reference Include="Microsoft.CloudBI.ServiceCommon" />
+    <Reference Include="Microsoft.CloudBI.XmlaNextGen" />
+    <Reference Include="Microsoft.PowerBI.Amo.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Amo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ContentProviders.Common" />
+    <Reference Include="Microsoft.PowerBI.ServiceContracts" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Fabric" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Azure\CommonUtilities\ANSampleModelInfo.cs" />
+    <Compile Include="Azure\CommonUtilities\ISampleModelInfo.cs" />
+    <Compile Include="Azure\CommonUtilities\SampleModelConstants.cs" />
+    <Compile Include="Azure\CommonUtilities\SampleModelInfoMock.cs" />
+    <Compile Include="Azure\CommonUtilities\SampleModelProperty.cs" />
+    <Compile Include="Azure\Common\AddingVirtualServerOperationFailed.cs" />
+    <Compile Include="Azure\Common\AddKeyAlreadyExistsBehavior.cs" />
+    <Compile Include="Azure\Common\AddKeyValueItemRequest.cs" />
+    <Compile Include="Azure\Common\AddPersistableItemRequest.cs" />
+    <Compile Include="Azure\Common\AdminService\AdminProvisioningServiceException.cs" />
+    <Compile Include="Azure\Common\AdminService\AdvancedModelFeatureNotSupportedException.cs" />
+    <Compile Include="Azure\Common\AdminService\ApplyPowerBIDatabaseParametersFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\BuildPowerBIModelFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\CloneDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\CreateDatabaseServiceTimedOutException.cs" />
+    <Compile Include="Azure\Common\AdminService\CreateVirtualServerFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\DatabaseDoesNotExistException.cs" />
+    <Compile Include="Azure\Common\AdminService\DeleteDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\DeleteOrphanedBlobContainerFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\DeleteOrphanedBlobContainersDriverException.cs" />
+    <Compile Include="Azure\Common\AdminService\DirectQueryContentProviderNotFound.cs" />
+    <Compile Include="Azure\Common\AdminService\GetConnectionsFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\InterpretLicensingCheckQueryXmlResponseException.cs" />
+    <Compile Include="Azure\Common\AdminService\InvalidOrphanedBlobContainerSpecificationDeletionRequestExce.cs" />
+    <Compile Include="Azure\Common\AdminService\ModelOperationFailedDueToInvalidCapacityException.cs" />
+    <Compile Include="Azure\Common\AdminService\PopulateDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\PowerBIModelBuilderException.cs" />
+    <Compile Include="Azure\Common\AdminService\PreparePowerBIDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\ProvisionDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\AdminService\ServiceCouldNotBeCreatedException.cs" />
+    <Compile Include="Azure\Common\AdminService\ServiceCouldNotBeDeletedException.cs" />
+    <Compile Include="Azure\Common\AdminService\UnexpectedPbiRpsContainerFoundException.cs" />
+    <Compile Include="Azure\Common\AdvancedModelFeatures.cs" />
+    <Compile Include="Azure\Common\AggregatedClusterMetrics.cs" />
+    <Compile Include="Azure\Common\AggregatedServiceMetrics.cs" />
+    <Compile Include="Azure\Common\AnalyticsApplicationRootBase.cs" />
+    <Compile Include="Azure\Common\AnalyticsBlockBase.cs" />
+    <Compile Include="Azure\Common\AnalyticsBlockBaseConfiguration.cs" />
+    <Compile Include="Azure\Common\AnalyticsConfigurationManagerFactory.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorDatatypeConversionException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorInvalidMetadataException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorInvalidUserdataException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorManagedProviderException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorOnPremiseErrorException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorOperationFailedBenignException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorOperationFailedException.cs" />
+    <Compile Include="Azure\Common\AnalyticsCoordinatorSessionCancelledException.cs" />
+    <Compile Include="Azure\Common\AnalyticsSampleModelCollectionConfiguration.cs" />
+    <Compile Include="Azure\Common\AnalyticsUtilityApplicationRoot.cs" />
+    <Compile Include="Azure\Common\AnalyticsUtilityEntryPoint.cs" />
+    <Compile Include="Azure\Common\AnalyticsWatchdogApplicationRootBase.cs" />
+    <Compile Include="Azure\Common\AnalyticsWriteServiceInconsistentStateException.cs" />
+    <Compile Include="Azure\Common\ANCommonTrace.cs" />
+    <Compile Include="Azure\Common\ANFabricRuntime.cs" />
+    <Compile Include="Azure\Common\ANFabricRuntimeFactory.cs" />
+    <Compile Include="Azure\Common\ANPerformanceCountersConstants.cs" />
+    <Compile Include="Azure\Common\ANTraceSourceBase.cs" />
+    <Compile Include="Azure\Common\ANXmlaConstants.cs" />
+    <Compile Include="Azure\Common\ASConnectionInfo.cs" />
+    <Compile Include="Azure\Common\AuthType.cs" />
+    <Compile Include="Azure\Common\BackupEntity.cs" />
+    <Compile Include="Azure\Common\BackupStateOperationFailureException.cs" />
+    <Compile Include="Azure\Common\ClusterLowMemoryCapacityException.cs" />
+    <Compile Include="Azure\Common\ClusterNames\ClusterNames.cs" />
+    <Compile Include="Azure\Common\ClusterNames\ClusterNamesDisabledException.cs" />
+    <Compile Include="Azure\Common\ClusterNames\IClusterNames.cs" />
+    <Compile Include="Azure\Common\ClusterNames\IClusterNamesEventsKit.cs" />
+    <Compile Include="Azure\Common\ConnectionType.cs" />
+    <Compile Include="Azure\Common\ContentProviderDataSourceInfo.cs" />
+    <Compile Include="Azure\Common\CouldNotCreateWorkTicketShutdownInProgress.cs" />
+    <Compile Include="Azure\Common\CreateNewDatabaseInPremiumFilesNotSupportedException.cs" />
+    <Compile Include="Azure\Common\DatabaseAlreadyBeingProcessedException.cs" />
+    <Compile Include="Azure\Common\DatabaseAlreadyBoundException.cs" />
+    <Compile Include="Azure\Common\DatabaseAlreadyExistsException.cs" />
+    <Compile Include="Azure\Common\DatabaseAuthenticationInfo.cs" />
+    <Compile Include="Azure\Common\DatabaseBackupNotFoundException.cs" />
+    <Compile Include="Azure\Common\DatabaseBindingEntity.cs" />
+    <Compile Include="Azure\Common\DatabaseDeletionOptions.cs" />
+    <Compile Include="Azure\Common\DatabaseEntity.cs" />
+    <Compile Include="Azure\Common\DatabaseEvictionReason.cs" />
+    <Compile Include="Azure\Common\DatabaseLastAccessTimeEntity.cs" />
+    <Compile Include="Azure\Common\DatabaseLicensingData.cs" />
+    <Compile Include="Azure\Common\DatabaseMappingAlreadyExistException.cs" />
+    <Compile Include="Azure\Common\DatabaseMigrationFailureResult.cs" />
+    <Compile Include="Azure\Common\DatabaseMigrationFailureType.cs" />
+    <Compile Include="Azure\Common\DatabaseMigrationMoniker.cs" />
+    <Compile Include="Azure\Common\DatabaseMoniker.cs" />
+    <Compile Include="Azure\Common\DatabaseNameIsNullOrEmptyException.cs" />
+    <Compile Include="Azure\Common\DatabaseNotBoundException.cs" />
+    <Compile Include="Azure\Common\DatabaseNotFoundException.cs" />
+    <Compile Include="Azure\Common\DatabaseNotFoundOnEngine.cs" />
+    <Compile Include="Azure\Common\DatabaseParameter.cs" />
+    <Compile Include="Azure\Common\DatabasePoolStarvationException.cs" />
+    <Compile Include="Azure\Common\DatabaseResolutionInfo.cs" />
+    <Compile Include="Azure\Common\DatabaseResolveReason.cs" />
+    <Compile Include="Azure\Common\DatabaseResurrectionReason.cs" />
+    <Compile Include="Azure\Common\DatabaseServiceNotBoundToEachOther.cs" />
+    <Compile Include="Azure\Common\DatabaseSource.cs" />
+    <Compile Include="Azure\Common\DatabaseStorageMode.cs" />
+    <Compile Include="Azure\Common\DatabaseType.cs" />
+    <Compile Include="Azure\Common\DatabaseUnavailableDueStorageModeConversionException.cs" />
+    <Compile Include="Azure\Common\DatabaseVolatileWriteSource.cs" />
+    <Compile Include="Azure\Common\DataContracts\BindDatabaseResult.cs" />
+    <Compile Include="Azure\Common\DataContracts\DirectQueryPackageContentInfo.cs" />
+    <Compile Include="Azure\Common\DataContracts\ModelConnectionStrings.cs" />
+    <Compile Include="Azure\Common\DataContracts\ModelInfo.cs" />
+    <Compile Include="Azure\Common\DataContracts\PostDatabaseResult.cs" />
+    <Compile Include="Azure\Common\DataSourceDiscoveryException.cs" />
+    <Compile Include="Azure\Common\DataSourceDoesNotExistException.cs" />
+    <Compile Include="Azure\Common\DbLoadMetrics.cs" />
+    <Compile Include="Azure\Common\DeleteDatabaseNotUnboundException.cs" />
+    <Compile Include="Azure\Common\DeleteSingleUnboundServiceRequest.cs" />
+    <Compile Include="Azure\Common\DirectQuery\IContentProviderDirectQuery.cs" />
+    <Compile Include="Azure\Common\EngineRaisedErrorXEventException.cs" />
+    <Compile Include="Azure\Common\EntityOperationType.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ClusterSeparationDisabledExploreToDataRouterException.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ExploreToDataExternalRouter.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ExploreToDataExternalRouterBuilder.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ExploreToDataRouterException.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ExploreToDataRouterFactoryBlock.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\IExploreToDataRouterFactory.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\IRouterBuilder.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\LocalClusterRouterBuilder.cs" />
+    <Compile Include="Azure\Common\ExploreToDataRouter\ServiceTypeNotInConfigurationExploreToDataRouterException.cs" />
+    <Compile Include="Azure\Common\ExtendedAnalyticsServiceResolveResult.cs" />
+    <Compile Include="Azure\Common\FabricEndpoint.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseAlreadyBoundException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseBackupDownloaderNotCreatedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseBackupStreamNotCreatedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseBackupUploaderNotCreatedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseImageSaveAbortedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDatabaseNotBoundException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorDeleteServiceFailedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorInconsistentInternalStateException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorMigrateDatabaseBackuptoV2PermanentException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorMigrateDatabaseBackuptoV2TransientException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorNoAvailableServiceException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorProvisioningEvent.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorProvisioningEventArgs.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorProvisioningServiceShutdownInProgress.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorProvisioningServiceTimeOutException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorReplicatorNotCreatedException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorServiceNotFoundInServicePoolException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorUnableToFindBoundLocalDatabaseException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorUpdateEngineTraceFailureException.cs" />
+    <Compile Include="Azure\Common\FabricIntegratorUpdateV2StorageAccountException.cs" />
+    <Compile Include="Azure\Common\FailedToOpenXmlaConnectionException.cs" />
+    <Compile Include="Azure\Common\GetConnectionStringsException.cs" />
+    <Compile Include="Azure\Common\GetDatasetTablesResult.cs" />
+    <Compile Include="Azure\Common\HealthServiceMetricsDictionaryIsEmptyException.cs" />
+    <Compile Include="Azure\Common\HighDatabaseReplicationLagException.cs" />
+    <Compile Include="Azure\Common\IAdminProvisioningService.cs" />
+    <Compile Include="Azure\Common\IAMOIntegrator.cs" />
+    <Compile Include="Azure\Common\IBackupStateDatabaseContext.cs" />
+    <Compile Include="Azure\Common\IConnectionStringBuilder.cs" />
+    <Compile Include="Azure\Common\IConnectionStringBuilderFactory.cs" />
+    <Compile Include="Azure\Common\IDatabaseEntityLookup.cs" />
+    <Compile Include="Azure\Common\IDatabaseGeodrLink.cs" />
+    <Compile Include="Azure\Common\IDatabasePing.cs" />
+    <Compile Include="Azure\Common\IDataChangeNotification.cs" />
+    <Compile Include="Azure\Common\IDnsRegistration.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningEventListener.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningEventNotifier.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningService.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningServiceBoundRoutable.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningServiceRandomRoutable.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningServiceUnboundRoutable.cs" />
+    <Compile Include="Azure\Common\IFabricIntegratorProvisioningServiceUnboundServiceRoutable.cs" />
+    <Compile Include="Azure\Common\IFabricRuntime.cs" />
+    <Compile Include="Azure\Common\IFabricRuntimeFactory.cs" />
+    <Compile Include="Azure\Common\IFabricTransaction.cs" />
+    <Compile Include="Azure\Common\IHealthServiceDiagnostic.cs" />
+    <Compile Include="Azure\Common\IHealthServiceLookup.cs" />
+    <Compile Include="Azure\Common\IInMemoryCache.cs" />
+    <Compile Include="Azure\Common\IInMemoryCacheFactory.cs" />
+    <Compile Include="Azure\Common\IKeyValueStoreReplica.cs" />
+    <Compile Include="Azure\Common\ILongRunningAdminProvisioningService.cs" />
+    <Compile Include="Azure\Common\ILongRunningFabricIntegratorProvisioningService.cs" />
+    <Compile Include="Azure\Common\ILongRunningStateManagerService.cs" />
+    <Compile Include="Azure\Common\InconsistentPowerBIDedicatedCapacityException.cs" />
+    <Compile Include="Azure\Common\InMemoryCache.cs" />
+    <Compile Include="Azure\Common\InMemoryCacheFactory.cs" />
+    <Compile Include="Azure\Common\IntendedUsage.cs" />
+    <Compile Include="Azure\Common\InvalidBackupEntityOperationException.cs" />
+    <Compile Include="Azure\Common\InvalidDatabaseBlobUriFormatException.cs" />
+    <Compile Include="Azure\Common\InvalidDatabaseNameException.cs" />
+    <Compile Include="Azure\Common\InvalidVirtualServerNameException.cs" />
+    <Compile Include="Azure\Common\IPerformGarbageCollection.cs" />
+    <Compile Include="Azure\Common\IPersistable.cs" />
+    <Compile Include="Azure\Common\IPowerBIModelBuilder.cs" />
+    <Compile Include="Azure\Common\IPushDataService.cs" />
+    <Compile Include="Azure\Common\IRoleChangeUpdater.cs" />
+    <Compile Include="Azure\Common\IRoleChangeUpdateSubscriber.cs" />
+    <Compile Include="Azure\Common\ISerializerProvider.cs" />
+    <Compile Include="Azure\Common\IStateManagerService.cs" />
+    <Compile Include="Azure\Common\IXmlaService.cs" />
+    <Compile Include="Azure\Common\KeyValueItem.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\KeyValueAlreadyExists.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\KeyValueDoesNotExists.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\KeyValueInvalidOperation.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\KeyValueStoreOperationTimeOut.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\KeyValueStoreReplicaNotCreated.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\StateManagerInMemoryStoreNotInitializedException.cs" />
+    <Compile Include="Azure\Common\KeyValueStore\WriteServiceReplicaFactoryNotCreatedException.cs" />
+    <Compile Include="Azure\Common\LocalDatabaseIdentifierNotFoundException.cs" />
+    <Compile Include="Azure\Common\MessageContractWrappedUri.cs" />
+    <Compile Include="Azure\Common\MetricType.cs" />
+    <Compile Include="Azure\Common\MExpressionsException.cs" />
+    <Compile Include="Azure\Common\MigrateToUserDataV2Request.cs" />
+    <Compile Include="Azure\Common\ModelPowerBIDatasourceFormatVersion.cs" />
+    <Compile Include="Azure\Common\MonitoredAmoException.cs" />
+    <Compile Include="Azure\Common\OperationalStoreException.cs" />
+    <Compile Include="Azure\Common\OperationForPbiDedicatedDisabledOnBackupClusterException.cs" />
+    <Compile Include="Azure\Common\PersistableEntityContainer.cs" />
+    <Compile Include="Azure\Common\PersistableEntityFullInformation.cs" />
+    <Compile Include="Azure\Common\PersistableItemTypes.cs" />
+    <Compile Include="Azure\Common\PersistOperationFailedException.cs" />
+    <Compile Include="Azure\Common\PowerBIConstants.cs" />
+    <Compile Include="Azure\Common\PowerBIModelPopulateInfo.cs" />
+    <Compile Include="Azure\Common\PowerBIModelProvisioningInfo.cs" />
+    <Compile Include="Azure\Common\PowerBIProcessDatabaseInfo.cs" />
+    <Compile Include="Azure\Common\PremiumFilesAbfMustBeUploadedInAdvanceException.cs" />
+    <Compile Include="Azure\Common\PremiumFilesNotSupportedException.cs" />
+    <Compile Include="Azure\Common\PrepareProcessingXmlaException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedDatabaseDisabledException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedDatatypeConversionException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedInvalidCapacityException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedInvalidMetadataException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedInvalidUserdataException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedManagerProviderException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedOnPremiseErrorException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedResourceGovernanceException.cs" />
+    <Compile Include="Azure\Common\ProcessDatabaseFailedSessionCancelledException.cs" />
+    <Compile Include="Azure\Common\ProcessPremiumDatabaseDeduplicationException.cs" />
+    <Compile Include="Azure\Common\ProvisionANDatabaseResult.cs" />
+    <Compile Include="Azure\Common\ProvisioningConstants.cs" />
+    <Compile Include="Azure\Common\PublishBehavior.cs" />
+    <Compile Include="Azure\Common\PushDataAppendRowsBatch.cs" />
+    <Compile Include="Azure\Common\PushDataDataset.cs" />
+    <Compile Include="Azure\Common\PushDataPostRowsWithQuotaRequest.cs" />
+    <Compile Include="Azure\Common\PushDataRetentionPolicy.cs" />
+    <Compile Include="Azure\Common\PushDataService\DatabaseAlterException.cs" />
+    <Compile Include="Azure\Common\PushDataService\DatabaseConnectionException.cs" />
+    <Compile Include="Azure\Common\PushDataService\DatabaseCreationException.cs" />
+    <Compile Include="Azure\Common\PushDataService\ProcessAddFailedException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceDatabaseDeserializationException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceDiscoverXMLAMetadataException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceOfflineAmoOperationException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceOleDbTypeConversionException.cs" />
+    <Compile Include="Azure\Common\PushDataService\PushDataServiceXmlaMetadataException.cs" />
+    <Compile Include="Azure\Common\PushDataService\QuotaEnforcementException.cs" />
+    <Compile Include="Azure\Common\PushDataService\ResolveDatabaseException.cs" />
+    <Compile Include="Azure\Common\PushDataService\XmlaOperationTimeoutOverrunException.cs" />
+    <Compile Include="Azure\Common\PushDataVersion.cs" />
+    <Compile Include="Azure\Common\ReadDatabaseMetrics.cs" />
+    <Compile Include="Azure\Common\ResolveCommand.cs" />
+    <Compile Include="Azure\Common\RetriableResolveStatefulServiceCommand.cs" />
+    <Compile Include="Azure\Common\RoleChangedEventArgs.cs" />
+    <Compile Include="Azure\Common\SampleModelConfiguration.cs" />
+    <Compile Include="Azure\Common\SerializerProvider.cs" />
+    <Compile Include="Azure\Common\ServciePoolStarvationException.cs" />
+    <Compile Include="Azure\Common\ServiceAlreadyBoundException.cs" />
+    <Compile Include="Azure\Common\ServiceDatabaseMappingInvalidInputException.cs" />
+    <Compile Include="Azure\Common\ServiceDatabaseMappingOperationFailed.cs" />
+    <Compile Include="Azure\Common\ServiceEntity.cs" />
+    <Compile Include="Azure\Common\ServiceFactoryInterfaceToDelegate.cs" />
+    <Compile Include="Azure\Common\ServiceNotFoundException.cs" />
+    <Compile Include="Azure\Common\ServiceNotUnboundException.cs" />
+    <Compile Include="Azure\Common\StateManagerBaseException.cs" />
+    <Compile Include="Azure\Common\StateManagerConstants.cs" />
+    <Compile Include="Azure\Common\StateManagerFailedToLoadEntityFromOperationalStoreException.cs" />
+    <Compile Include="Azure\Common\StateManagerServiceOperationTimeOutException.cs" />
+    <Compile Include="Azure\Common\StateManagerServiceShutdownInProgress.cs" />
+    <Compile Include="Azure\Common\UnsupportedOperationForPbiSharedException.cs" />
+    <Compile Include="Azure\Common\UpdateKeyNotExistsBehavior.cs" />
+    <Compile Include="Azure\Common\UpdateKeyValueItemRequest.cs" />
+    <Compile Include="Azure\Common\UpdatePersistableItemRequest.cs" />
+    <Compile Include="Azure\Common\UpsupportedOperationForPbiDedicatedException.cs" />
+    <Compile Include="Azure\Common\Utils\AsAzureActivityScope.cs" />
+    <Compile Include="Azure\Common\Utils\CommonUtils.cs" />
+    <Compile Include="Azure\Common\Utils\IServiceStateChangePublisher.cs" />
+    <Compile Include="Azure\Common\Utils\IServiceStateChangeSubscriber.cs" />
+    <Compile Include="Azure\Common\Utils\MEMORYSTATUSEX.cs" />
+    <Compile Include="Azure\Common\Utils\MemoryUtilizationUtil.cs" />
+    <Compile Include="Azure\Common\Utils\ModelUtils.cs" />
+    <Compile Include="Azure\Common\Utils\MwcErrorCodeUtils.cs" />
+    <Compile Include="Azure\Common\Utils\NamingRules.cs" />
+    <Compile Include="Azure\Common\Utils\PowerBIDedicatedUtility.cs" />
+    <Compile Include="Azure\Common\Utils\StateManagerServcieWatchdogNaming.cs" />
+    <Compile Include="Azure\Common\Utils\WinFabricURI.cs" />
+    <Compile Include="Azure\Common\Utils\XmlaErrorCodeUtils.cs" />
+    <Compile Include="Azure\Common\VirtualServerDeletionException.cs" />
+    <Compile Include="Azure\Common\VirtualServerDeletionOptions.cs" />
+    <Compile Include="Azure\Common\VirtualServerDoesNotExistException.cs" />
+    <Compile Include="Azure\Common\VirtualServerEntity.cs" />
+    <Compile Include="Azure\Common\VirtualServerHasAssociatedDatabasesException.cs" />
+    <Compile Include="Azure\Common\VirtualServerIsNotEmptyException.cs" />
+    <Compile Include="Azure\Common\VirtualServerMappingExistsException.cs" />
+    <Compile Include="Azure\Common\VirtualServerNameGenerationOptions.cs" />
+    <Compile Include="Azure\Common\VirtualServerNameGenerator.cs" />
+    <Compile Include="Azure\Common\VirtualServerNameIsNullOrEmptyException.cs" />
+    <Compile Include="Azure\Common\WriteTransactionAttemptedOnReadFabricIntegratorException.cs" />
+    <Compile Include="Azure\Common\XmlaSchemaConstants.cs" />
+    <Compile Include="Azure\DatabaseResolver\IDatabaseResolver.cs" />
+    <Compile Include="Azure\DirectoryService\CommunicationWithHealthServiceLookupFailedException.cs" />
+    <Compile Include="Azure\DirectoryService\CommunicationWithStateManagerFailedException.cs" />
+    <Compile Include="Azure\DirectoryService\DirectoryServiceException.cs" />
+    <Compile Include="Azure\DirectoryService\FabricAnchorServiceEndpointsNotFoundException.cs" />
+    <Compile Include="Azure\DirectoryService\InconsistentDatabaseBindingException.cs" />
+    <Compile Include="Azure\DirectoryService\NoAvailableSlotFoundToBindException.cs" />
+    <Compile Include="Azure\DirectoryService\ProvisioningServiceDatabaseResurrectionFailedException.cs" />
+    <Compile Include="Azure\DirectoryService\UnableToResolveDatabaseException.cs" />
+    <Compile Include="Azure\DirectoryService\UnableToResolveO365DatabaseException.cs" />
+    <Compile Include="Azure\DirectoryService\UnableToResolveServiceException.cs" />
+    <Compile Include="Azure\Gateway\IClusterManagementService.cs" />
+    <Compile Include="Azure\Gateway\IDiagnosticsService.cs" />
+    <Compile Include="Azure\ModelGenerator\FailedToEnumerateExtendedPropertyException.cs" />
+    <Compile Include="Azure\ModelGenerator\FailedToGenerateXmlaException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resta\DatabaseIncorrectModeException.cs" />
+    <Compile Include="Resta\DatabaseProvisionException.cs" />
+    <Compile Include="Resta\ExternalDataManagerBaseException.cs" />
+    <Compile Include="Resta\ExternalDataManagerDataAccessException.cs" />
+    <Compile Include="Resta\ExternalDataManagerOperationException.cs" />
+    <Compile Include="Resta\RestaAmoOperationException.cs" />
+    <Compile Include="Resta\RestaBaseException.cs" />
+    <Compile Include="Resta\RestaDatasetMigrationException.cs" />
+    <Compile Include="Resta\RestaExternalDataStorageTableNotFoundException.cs" />
+    <Compile Include="Resta\RestaExternalInstancesUnavailableException.cs" />
+    <Compile Include="Resta\RestaExternalInstanceUnavailableException.cs" />
+    <Compile Include="Resta\RestaExternalSchemaMismatchException.cs" />
+    <Compile Include="Resta\RestaIncorrectSchemaException.cs" />
+    <Compile Include="Resta\RestaProcessorException.cs" />
+    <Compile Include="Resta\RestaRowSizeLimitExceededException.cs" />
+    <Compile Include="Resta\RestaSqlOperationException.cs" />
+    <Compile Include="Resta\RestaTableSizeLimitExceededException.cs" />
+    <Compile Include="Resta\RestaTomOperationException.cs" />
+    <Compile Include="Resta\RestaUnexpectedParsingException.cs" />
+    <Compile Include="Resta\RestaUnexpectedPdsVersionException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\AdminPortalSqlOperationException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\AdminPortalTomOperationException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\UsageMetricsAmoOperationException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\UsageMetricsBaseException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\UsageMetricsDatabaseIncorrectModeException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\UsageMetricsSchemaMismatchException.cs" />
+    <Compile Include="UsageMetricsDatabaseClient\UsageMetricsSqlOperationException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

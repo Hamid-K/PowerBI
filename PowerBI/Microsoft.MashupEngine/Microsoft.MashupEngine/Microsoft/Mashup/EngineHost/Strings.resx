@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cache_Certificate_Additional_Cert" xml:space="preserve">
+    <value>We found more than one certificate with thumbprint '{0}'.</value>
+  </data>
+  <data name="Cache_Certificate_Cryptographic_Exception" xml:space="preserve">
+    <value>We ran into the following problem when trying to use the certificate with thumbprint '{0}': {1}.</value>
+  </data>
+  <data name="Cache_Certificate_No_PrivateKey" xml:space="preserve">
+    <value>We didn't find a private key for the certificate with thumbprint '{0}'.</value>
+  </data>
+  <data name="Cache_Certificate_NotRSA" xml:space="preserve">
+    <value>We determined that the certificate with thumbprint '{0}' does not have the RSA keys needed to encrypt the cache.</value>
+  </data>
+  <data name="Cache_Certificate_Not_Found" xml:space="preserve">
+    <value>We couldn't find the certificate with thumbprint '{0}' for encrypting the cache.</value>
+  </data>
+  <data name="Cache_Certificate_Verification_Failed" xml:space="preserve">
+    <value>Verification failed for certificate with thumbprint '{0}'. Please check the certificate properties to see if it is expired or untrusted.</value>
+  </data>
+  <data name="Cache_EntryTooLarge" xml:space="preserve">
+    <value>The evaluation reached the allowed cache entry size limit. Try increasing the allowed cache size.</value>
+  </data>
+  <data name="CannotCreateDirectory" xml:space="preserve">
+    <value>A directory needed for evaluation could not be created. Directory: {0}. Details: ({1}) {2}</value>
+  </data>
+  <data name="ClientApplicationRequired" xml:space="preserve">
+    <value>This data source requires a client application to be specified.</value>
+  </data>
+  <data name="ConnectionGovernance_DeadlockAborted" xml:space="preserve">
+    <value>A request for a connection from the data source pool could not be granted. Retrying the evaluation may solve the issue.</value>
+  </data>
+  <data name="Firewall_Buffering_Failed" xml:space="preserve">
+    <value>Sorry, there was an error while buffering the data for {0}: {1}</value>
+  </data>
+  <data name="Firewall_CouldNotSerializeException" xml:space="preserve">
+    <value>The exception couldn't be serialized.</value>
+  </data>
+  <data name="InvalidCacheConfiguration" xml:space="preserve">
+    <value>We were unable to understand the given cache configuration.</value>
+  </data>
+  <data name="LibraryValidationFailed" xml:space="preserve">
+    <value>A library containing module '{0}' could not be validated.</value>
+  </data>
+  <data name="ModuleMultipleSourceFiles" xml:space="preserve">
+    <value>We found multiple source files in M library ({0} and {1}) but we only support one.</value>
+  </data>
+  <data name="ModuleNoSourceFile" xml:space="preserve">
+    <value>This library file does not contain any M source.</value>
+  </data>
+  <data name="NoWindowsAuth" xml:space="preserve">
+    <value>Windows authentication has been disabled in the current context.</value>
+  </data>
+  <data name="OutOfTempStorage" xml:space="preserve">
+    <value>The evaluation reached the allowed size limit for the temp directory. Try increasing the allowed size limit for the temp directory.</value>
+  </data>
+  <data name="Section_Exists" xml:space="preserve">
+    <value>The name '{0}' is defined more than once.</value>
+  </data>
+  <data name="Section_In_Error" xml:space="preserve">
+    <value>The section '{0}' is in error.  Correct the errors to restore this reference.</value>
+  </data>
+  <data name="Section_Name_In_Section_Not_Recognized" xml:space="preserve">
+    <value>The name '{0}' in section '{1}' wasn't recognized.  Make sure it's spelled correctly.</value>
+  </data>
+  <data name="Section_Name_Not_Recognized" xml:space="preserve">
+    <value>The name '{0}' wasn't recognized.  Make sure it's spelled correctly.</value>
+  </data>
+  <data name="Section_Not_Recognized" xml:space="preserve">
+    <value>The section '{0}' wasn't recognized.  Make sure it's spelled correctly.</value>
+  </data>
+  <data name="ShadowedLibrary" xml:space="preserve">
+    <value>This library has a conflict with another library.</value>
+  </data>
+  <data name="TraitFirewallRuleRequired" xml:space="preserve">
+    <value>Information about a data source is required.</value>
+  </data>
+</root>

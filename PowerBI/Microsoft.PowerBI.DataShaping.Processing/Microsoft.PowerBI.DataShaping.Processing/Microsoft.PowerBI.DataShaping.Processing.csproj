@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{375F86DC-2990-4BC5-90FB-207F9512BC1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataShaping.Processing</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataShaping.Processing</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Analytics.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Analytics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.InternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.InternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.ValueTuple.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\Column.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\DataRow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\DataRowFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\EnumerableToResultSetAdapter.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\FunctionalList.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\MappingDataRow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\MappingEnumerableToResultSetAdapter.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\ResultSetEnumerable.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\ResultSetEnumerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\SchemaRow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\SchemaRowExtensions.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\SchemaRowFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Analytics\SortInformation.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\CalculationGenerationTelemetry.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\CalculationSchemaInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\CalculationTypeTelemetry.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\CellScopeToIntersectionRangeMapping.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\CorrelationConstants.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\CorrelationGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\CorrelationGovernorFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\CorrelationStatus.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\DataIntersectionRangeGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\ICorrelationGovernorFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\IndexBasedCorrelationGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\IndexRange.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\JoinCorrelator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\ReadOnlyIndexBasedCorrelationGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\ValueBasedCorrelationGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Correlation\WritableIndexBasedCorrelationGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\AnalyticsExtensions.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\DataPreparer.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\DataTransformManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\IDataTransformManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\InMemoryResultSet.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\ResultSetCachingManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\RowSourceManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataPreparation\TransformResultToResultSetFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeProcessor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeProcessorContext.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\CalculationAsObjectGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\CalculationGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\DataShapeResultGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\DictionaryEncodingCoordinator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\DsrValuesDictionaryBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\ExpressionEvaluator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\ExpressionEvaluatorBase.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\ExpressionEvaluatorSingleRow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\ExpressionTypeEvaluator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\NullValueEncodingCoordinator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\OptimizedCalculationGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\RepeatedValueEncodingCoordinator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\RestartKindGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\RestartManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\ResultTableMetadataManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\RuntimeGrouping.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\RuntimeRow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataShapeResultGeneration\SegmentationManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataWindowsTelemetryInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DataWindowTelemetryInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\DictionaryEncodingInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\IDataShapeProcessor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\LimitsTelemetryInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\LimitTelemetryInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\ColumnMatchCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\ColumnMatchOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataContext.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataContextToken.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataLimitGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipeline.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineCapacityLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineCapacityWindow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineDbCountLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineDbCountVsCountLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineDbCountVsCountWindow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataPipelineWindow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataWindowGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\DataWindowToken.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\IDataPipelineRowMetadata.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\IReadOnlyRowCache.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\IRowSourceManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\MatchConditionGovernor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\MatchEvaluationResult.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\NestingManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\ReadOnlyRowCache.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Pipeline\WindowConstraintMode.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ProcessingDataShapeTelemetry.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ProcessingErrorMessages.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ProcessingException.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ProcessingTelemetry.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\CommandExecutorBase.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\ConnectionWrapper.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\ICommandExecutor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\OpenConnectionResult.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\QueryExecutionStatistics.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecutionCommon\QueryExecutor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\CommandExecutionContext.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\CommandExecutor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\DiagnosticDataRowBuffer.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\IQueryExecutionStrategy.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\IResultSet.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\IResultSetSource.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\IRowSource.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\ProcessingDataReader.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\QueryExecutionManager.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\QueryExecutionParallelStrategy.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\QueryExecutionSequentialStrategy.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\QueryExecutionStrategyFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\QueryExecutionUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExecution\ResultSetSchema.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\QueryExtensionErrorExtractor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\BinnedLineSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\BottomLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Calculation.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Collation.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataBinding.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataIntersection.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataLimits.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataMember.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataSet.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataShape.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataShapeDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataShapeDefinitionVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataSource.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransform.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransformColumn.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransformInput.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransformOutput.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransformParameter.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataTransformTableSchema.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataWindow.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataWindowReconciler.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DataWindows.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\DiscardCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\ExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\FieldValueExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\FunctionCallExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\FunctionKind.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\IExpressionEvaluator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\IExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Expressions\LiteralExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Field.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Group.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\GroupKey.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\JoinCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\LimitTelemetryRole.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\MatchCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Message.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\OverlappingPointsSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Relationship.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\RestartKindDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ResultEncodingHints.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ResultTable.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ResultTableLookupInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ResultTableMetadata.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\SampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\Scope.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ScopeIdDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\ScopeKey.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\SortDirection.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\SortInformation.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\StartPosition.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\TelemetryItem.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\TelemetryItems.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\TopLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\TopNPerLevelLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\ReconciledDataShapeDefinition\WritableResultEncodingHints.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\CellScopeToIntersectionRangeGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\DataLimitReconciler.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\DataShapeDefinitionReconciler.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\ExpressionReconciler.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\ReconciliationUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\ResultTableLookup.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Reconciliation\ScopeLookupTable.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Utils\DataExtensionConstants.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Utils\DataShapeDefinitionExtensions.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Utils\IKeyGenerator.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Utils\ProcessingCompareInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\Processing\Utils\StringKeyGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

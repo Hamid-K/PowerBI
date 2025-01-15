@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataSetProcessingException" xml:space="preserve">
+    <value>无法处理数据集。</value>
+  </data>
+  <data name="DataSetProcessingSoapException" xml:space="preserve">
+    <value>无法从报表服务器 Web 服务获取数据: {0}</value>
+  </data>
+  <data name="ErrorPbixUpload" xml:space="preserve">
+    <value>上传 .pbix 文件时出错。请验证文件没有损坏且文件扩展名与文件的格式匹配。</value>
+  </data>
+  <data name="Error_SearchTextNullOrEmpty" xml:space="preserve">
+    <value>搜索字符串为空。</value>
+  </data>
+  <data name="InvalidAggregation" xml:space="preserve">
+    <value>指定的聚合无效。</value>
+  </data>
+  <data name="InvalidDataSourceForTestConnectionPbi" xml:space="preserve">
+    <value>此报表的数据源对测试连接无效。</value>
+  </data>
+  <data name="NotExpectedTypeException" xml:space="preserve">
+    <value>自变量未采用预期类型。类型应为“{0}”。</value>
+  </data>
+  <data name="NotSupportedException" xml:space="preserve">
+    <value>功能不受支持。</value>
+  </data>
+  <data name="ParameterValueNotSupplied" xml:space="preserve">
+    <value>参数“{0}”需要非空值。</value>
+  </data>
+  <data name="PropertyNullException" xml:space="preserve">
+    <value>属性不能为 NULL 或空。</value>
+  </data>
+  <data name="SystemResourcePackageException" xml:space="preserve">
+    <value>系统资源包存在问题。</value>
+  </data>
+  <data name="SystemResourceProcessingException" xml:space="preserve">
+    <value>无法处理系统资源。</value>
+  </data>
+  <data name="UploadFileCanceled" xml:space="preserve">
+    <value>已取消文件上传。</value>
+  </data>
+</root>

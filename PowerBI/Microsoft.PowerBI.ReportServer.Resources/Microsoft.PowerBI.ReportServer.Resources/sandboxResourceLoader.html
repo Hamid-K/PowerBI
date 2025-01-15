@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sandbox Resource Loader</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <script>
+        var powerbi = {
+            common: {}
+        };
+        if (!window.define) {
+            window.define = function() {};
+        }
+    </script>
+    <script type="text/javascript" src="/minerva/scripts/globalize.js"></script>
+    <script type="text/javascript" src="/minerva/scripts/globalize.cultures.js"></script>
+    <script type="text/javascript" src="/pbi/Web/ts/visualSandboxErrorHandler.js"></script>
+
+    <script type="text/javascript" src="/opensource/jquery/jquery-2.2.4.js"> </script>
+    <script>
+        powerbi.common.localizedStrings = '';
+    </script>
+    <script type="text/javascript" src="/minerva/scripts/visualSandbox.externals.js"></script>
+    <script type="text/javascript" src="/minerva/scripts/customVisualsHost.js"></script>
+
+    <script>
+        BI.Shell.InterOp.VisualSandboxErrorHandler.initialize(window).then(() => {
+            window.onload = function () {
+                powerbi.visualSandbox.createResourceLoaderHost();
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rdlValidationInvalidElement" xml:space="preserve">
+    <value>レポート定義要素 '{0}' には、'{1}' 型の複数の子要素が行 {2}、桁 {3} に含まれています。</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedAttribute" xml:space="preserve">
+    <value>属性 '{0}' は要素 {1} 内では無効です。'{0}' は行 {2}、位置 {3} にあります。</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedElement" xml:space="preserve">
+    <value>要素 '{0}' は親要素 {1} 内で無効です。行 {2}、位置 {3} の '{0}'。</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceAttribute" xml:space="preserve">
+    <value>属性 '{0}' は有効な Rdl 属性ではありません。名前空間 '{1}' 内の属性は使用できません。'{0}' は行 {2}、位置 {3} にあります。</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceElement" xml:space="preserve">
+    <value>要素 '{0}' は有効な Rdl 要素ではありません。名前空間 '{1}' 内の要素は使用できません。'{0}' は行 {2}、位置 {3} にあります。</value>
+  </data>
+  <data name="rdlValidationInvalidParent" xml:space="preserve">
+    <value>名前空間 '{1}' のレポート定義要素 '{0}' には、無効な親 '{2}' が行 {3}、桁 {4} にあります。</value>
+  </data>
+  <data name="rdlValidationMissingChildElement" xml:space="preserve">
+    <value>行 {2}、桁 {3} のレポート定義要素 '{0}' が空です。'{1}' 型の必須の子要素がありません。</value>
+  </data>
+  <data name="rdlValidationMultipleUndefinedSchemaNamespaces" xml:space="preserve">
+    <value>属性'{1}' 内のプレフィックス '{0}' には定義されたスキーマが行 {2} 位置 {3} にありません。</value>
+  </data>
+  <data name="rdlValidationNoElementDecl" xml:space="preserve">
+    <value>名前空間 {2} の {3} 行目にレポート定義要素 '{0}' の宣言が見つかりません。要素 '{1}' の正しい名前空間を再検討し、適切なプレフィックスを使用して要素を変更してください。</value>
+  </data>
+  <data name="rdlValidationUndefinedSchemaNamespace" xml:space="preserve">
+    <value>'{1}' 属性内のプレフィックス'{0}' には定義されたスキーマが行{2}位置{3}にありません。</value>
+  </data>
+  <data name="rdlValidationUnknownRequiredNamespaces" xml:space="preserve">
+    <value>プレフィックス '{1}' のあるスキーマ '{0}' が必要とされますが {2} 行 {3} 位置 {4} で不明です。</value>
+  </data>
+  <data name="rdlValidationUnsupportedSchema" xml:space="preserve">
+    <value>プレフィックス '{1}' のあるスキーマ {0} の行 {2} で、位置 {3} はReporting Services のこのバージョンでサポートされていません。</value>
+  </data>
+</root>

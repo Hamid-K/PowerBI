@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccentSensitivity" xml:space="preserve">
+    <value>Gibt an, ob bei den Daten nach Akzent unterschieden wird.</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Eine Aktion, z. B. ein Link, die dem Berichtselement zugeordnet ist.</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Der Autor des Berichts.</value>
+  </data>
+  <data name="AutoRefresh" xml:space="preserve">
+    <value>Die Rate in Sekunden, mit der die Berichtsseite automatisch aktualisiert wird, wenn in HTML gerendert wird.</value>
+  </data>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>Die Farbe des Hintergrunds.</value>
+  </data>
+  <data name="BackgroundImage" xml:space="preserve">
+    <value>Ein Hintergrundbild für das Berichtselement. </value>
+  </data>
+  <data name="BackgroundRepeat" xml:space="preserve">
+    <value>Gibt an, wie das Hintergrundbild durch Wiederholung den verfügbaren Platz ausfüllt.</value>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>Das mögliche Ziel einer Lesezeichenaktion.</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>Die Farbe des Rahmens.</value>
+  </data>
+  <data name="BorderColorBottom" xml:space="preserve">
+    <value>Die Farbe des unteren Rahmens.</value>
+  </data>
+  <data name="BorderColorDefault" xml:space="preserve">
+    <value>Die Farbe des Rahmens, falls diese Eigenschaft nicht für eine bestimmte Seite überschrieben wird.</value>
+  </data>
+  <data name="BorderColorLeft" xml:space="preserve">
+    <value>Die Farbe des linken Rahmens.</value>
+  </data>
+  <data name="BorderColorRight" xml:space="preserve">
+    <value>Die Farbe des rechten Rahmens.</value>
+  </data>
+  <data name="BorderColorTop" xml:space="preserve">
+    <value>Die Farbe des oberen Rahmens.</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>Die Art des Rahmens.</value>
+  </data>
+  <data name="BorderStyleBottom" xml:space="preserve">
+    <value>Die Art des unteren Rahmens.</value>
+  </data>
+  <data name="BorderStyleDefault" xml:space="preserve">
+    <value>Die Art des Rahmens, außer diese Eigenschaft wird für eine bestimmte Seite überschrieben.</value>
+  </data>
+  <data name="BorderStyleLeft" xml:space="preserve">
+    <value>Die Art des linken Rahmens.</value>
+  </data>
+  <data name="BorderStyleRight" xml:space="preserve">
+    <value>Die Art des rechten Rahmens.</value>
+  </data>
+  <data name="BorderStyleTop" xml:space="preserve">
+    <value>Die Art des oberen Rahmens.</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>Die Breite des Rahmens.</value>
+  </data>
+  <data name="BorderWidthBottom" xml:space="preserve">
+    <value>Die Breite des unteren Rahmens.</value>
+  </data>
+  <data name="BorderWidthDefault" xml:space="preserve">
+    <value>Die Breite des Rahmens, außer diese Eigenschaft wird für eine bestimmte Seite überschrieben.</value>
+  </data>
+  <data name="BorderWidthLeft" xml:space="preserve">
+    <value>Die Breite des linken Rahmens.</value>
+  </data>
+  <data name="BorderWidthRight" xml:space="preserve">
+    <value>Die Breite des rechten Rahmens.</value>
+  </data>
+  <data name="BorderWidthTop" xml:space="preserve">
+    <value>Die Breite des oberen Rahmens.</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Gibt den für die Datumsformatierung zu verwendenden Kalender an.</value>
+  </data>
+  <data name="CanGrow" xml:space="preserve">
+    <value>Bestimmt, ob die Größe eines Textfelds für die Aufnahme eines langen Werts automatisch geändert wird.</value>
+  </data>
+  <data name="CanShrink" xml:space="preserve">
+    <value>Bestimmt, ob die Größe eines Textfelds für die Aufnahme eines kleineren Werts verringert wird.</value>
+  </data>
+  <data name="CaseSensitivity" xml:space="preserve">
+    <value>Gibt an, ob bei den Daten nach Groß-/Kleinschreibung unterschieden wird.</value>
+  </data>
+  <data name="CellDataElementName" xml:space="preserve">
+    <value>Der Name des Zellenelements.</value>
+  </data>
+  <data name="CellDataElementOutput" xml:space="preserve">
+    <value>Gibt an, ob der Zelleninhalt beim Datenrendering angezeigt werden soll.</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>Die Datenfelder, die im Diagramm angezeigt werden.</value>
+  </data>
+  <data name="ChartDefinition" xml:space="preserve">
+    <value>Die Diagrammdefinition.</value>
+  </data>
+  <data name="ChartParameters" xml:space="preserve">
+    <value>Die Parameter für das Diagramm.</value>
+  </data>
+  <data name="ClassID" xml:space="preserve">
+    <value>Der Klassenbezeichner des Steuerelements.</value>
+  </data>
+  <data name="Classes" xml:space="preserve">
+    <value>Klassen zum Instanziieren während der Berichtsinitialisierung.</value>
+  </data>
+  <data name="CodeBase" xml:space="preserve">
+    <value>Die URL der Codebasis, von der das Steuerelement heruntergeladen wird.</value>
+  </data>
+  <data name="CodeModules" xml:space="preserve">
+    <value>Assemblys, die dem Bericht zur Verwendung in Ausdrücken zur Verfügung stehen.</value>
+  </data>
+  <data name="Collation" xml:space="preserve">
+    <value>Das Gebietsschema für die Sortierreihenfolge beim Sortieren von Daten.</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Die Farbe des Texts.</value>
+  </data>
+  <data name="ColumnSpacing" xml:space="preserve">
+    <value>Der Abstand zwischen jeder Spalte.</value>
+  </data>
+  <data name="ColumnWidth" xml:space="preserve">
+    <value>Die Breite jeder Spalte.</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>Die Anzahl von Spalten im gerenderten Bericht.</value>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge für die Datenquelle.</value>
+  </data>
+  <data name="DataElementName" xml:space="preserve">
+    <value>Der Name des Datenelements bzw. -attributs für dieses Berichtselement.</value>
+  </data>
+  <data name="DataElementOutput" xml:space="preserve">
+    <value>Gibt an, ob das Element beim Datenrendering angezeigt werden soll.</value>
+  </data>
+  <data name="DataElementStyle" xml:space="preserve">
+    <value>Gibt an, ob Textfelder als Elemente oder Attribute gerendert werden sollen.</value>
+  </data>
+  <data name="DataInstanceElementOutput" xml:space="preserve">
+    <value>Gibt an, ob die Listeninstanzen beim Datenrendering angezeigt werden sollen.</value>
+  </data>
+  <data name="DataInstanceName" xml:space="preserve">
+    <value>Der zu verwendende Name für das Datenelement für jede Instanz dieser Liste.</value>
+  </data>
+  <data name="DataSchema" xml:space="preserve">
+    <value>Das Schema oder der Namespace zur Verwendung beim Rendern von Berichtsdaten.</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>Das Dataset, das für diesen Datenbereich verwendet wird.</value>
+  </data>
+  <data name="DataSourceType" xml:space="preserve">
+    <value>Der Datenquellentyp.</value>
+  </data>
+  <data name="DataTransform" xml:space="preserve">
+    <value>Transformation, die auf ein Berichtsdatenrendering angewendet werden soll.</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Die Beschreibung des Berichts.</value>
+  </data>
+  <data name="DetailDataCollectionName" xml:space="preserve">
+    <value>Gibt für alle Instanzen der Gruppe den Namen für das Datenelement der Auflistung an.</value>
+  </data>
+  <data name="DetailDataElementName" xml:space="preserve">
+    <value>Der Name des Datenelements für Instanzen dieser Gruppe.</value>
+  </data>
+  <data name="DetailDataElementOutput" xml:space="preserve">
+    <value>Gibt an, ob die Details beim Datenrendering angezeigt werden sollen.</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Gibt an, ob Text von links nach rechts oder von rechts nach links geschrieben wird.</value>
+  </data>
+  <data name="DrawGrid" xml:space="preserve">
+    <value>Gibt an, ob das Positionierungsraster angezeigt wird.</value>
+  </data>
+  <data name="EmbeddedImages" xml:space="preserve">
+    <value>Eingebettete Bilder für den Bericht.</value>
+  </data>
+  <data name="EndPoint" xml:space="preserve">
+    <value>Die Position des Zeilenendes.</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Eine Auflistung von Filtern, die auf den Datenbereich angewendet werden können.</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Die Schriftart für angezeigten Text.</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>Der Name der Schriftfamilie.</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Die Größe der Schriftart.</value>
+  </data>
+  <data name="FontStyle" xml:space="preserve">
+    <value>Der Schriftschnitt.</value>
+  </data>
+  <data name="FontWeight" xml:space="preserve">
+    <value>Die Schriftstärke.</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Die Formatierungszeichenfolge.</value>
+  </data>
+  <data name="GridSize" xml:space="preserve">
+    <value>Bestimmt die Größe des Positionierungsrasters.</value>
+  </data>
+  <data name="Grouping" xml:space="preserve">
+    <value>Die Ausdrücke, nach denen Daten gruppiert werden.</value>
+  </data>
+  <data name="GroupsBeforeRowHeaders" xml:space="preserve">
+    <value>Die Anzahl von Instanzen der äußersten Spaltengruppe, die links der Zeilenüberschriften angezeigt werden kann (oder rechts der Zeilenüberschriften bei Matrizen mit Leserichtung von rechts nach links).</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Die Höhe des Berichtsabschnitts.</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Gibt an, ob das Element ursprünglich ausgeblendet ist.</value>
+  </data>
+  <data name="HideDuplicates" xml:space="preserve">
+    <value>Blendet ein Element aus, wenn der Wert des Elements gleich dem Wert des gleichen Elements in der vorhergehenden Zeile ist. Der Wert dieser Eigenschaft entspricht dem Namen der Gruppierung oder des Datasets mit auszublendenden Elementen.</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>Der Typ der Bildquelle.</value>
+  </data>
+  <data name="ImageValue" xml:space="preserve">
+    <value>Die Quelle des Bilds.</value>
+  </data>
+  <data name="KanatypeSensitivity" xml:space="preserve">
+    <value>Gibt an, ob bei den Daten nach Kanatyp unterschieden wird.</value>
+  </data>
+  <data name="KeepTogether" xml:space="preserve">
+    <value>Zeigt an, dass der Datenbereich (alle wiederholten Abschnitte) nach Möglichkeit auf einer Seite zusammengehalten werden soll.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>Die Bezeichnung, die eine Instanz eines Berichtselements innerhalb der Dokumentstruktur identifiziert.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Die primäre Sprache des Texts.</value>
+  </data>
+  <data name="LayoutDirection" xml:space="preserve">
+    <value>Gibt an, ob die Matrixspalten von links nach rechts oder von rechts nach links erweitert werden.</value>
+  </data>
+  <data name="LineColor" xml:space="preserve">
+    <value>Die Farbe der Linie.</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>Die Höhe einer Textzeile.</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>Die Art der Linie.</value>
+  </data>
+  <data name="LineWidth" xml:space="preserve">
+    <value>Die Stärke der Linie.</value>
+  </data>
+  <data name="LinkToChild" xml:space="preserve">
+    <value>Der Name eines Berichtselements, das Ziel der Dokumentstrukturbezeichnung ist. Dieses Berichtselement muss direkt im aktuellen Berichtselement enthalten sein.</value>
+  </data>
+  <data name="ListFillPage" xml:space="preserve">
+    <value>Gibt an, ob die Liste bis zum Ende der Seite erweitert werden soll.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Die Position der linken oberen Ecke des Berichtselements in Beziehung zu seinem Container.</value>
+  </data>
+  <data name="MIMEType" xml:space="preserve">
+    <value>Der MIME-Typ für das Bild. </value>
+  </data>
+  <data name="Margins" xml:space="preserve">
+    <value>Ränder für den Bericht.</value>
+  </data>
+  <data name="MatrixGroupings" xml:space="preserve">
+    <value>Der Satz von Zeilen- und Spaltengruppierungen für die Matrix.</value>
+  </data>
+  <data name="MergeTransactions" xml:space="preserve">
+    <value>Zeigt an, dass Transaktionen für den Unterbericht mit Transaktionen für den übergeordneten Bericht zusammengeführt werden, wenn die Datenquellen für beide Berichte die gleiche Verbindung verwenden. Dadurch werden Transaktionen für beide Berichte in einer Transaktion kombiniert. </value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Der Name des Berichtselements.</value>
+  </data>
+  <data name="NoRows" xml:space="preserve">
+    <value>Die Meldung, die im Datenbereich angezeigt werden soll, wenn keine Datenzeilen verfügbar sind.</value>
+  </data>
+  <data name="NumeralLanguage" xml:space="preserve">
+    <value>Das zu verwendende Ziffernformat, wie durch die primäre Sprache beschrieben.</value>
+  </data>
+  <data name="NumeralVariant" xml:space="preserve">
+    <value>Die zu verwendende Variante des Ziffernformats.</value>
+  </data>
+  <data name="OverwriteDataSources" xml:space="preserve">
+    <value>Gibt an, ob Datenquellendefinitionen auf dem Berichtsserver überschrieben werden können, während das Projekt bereitgestellt wird.</value>
+  </data>
+  <data name="Padding" xml:space="preserve">
+    <value>Der Abstand innerhalb des Objekts.</value>
+  </data>
+  <data name="PaddingBottom" xml:space="preserve">
+    <value>Der Abstand unterhalb des Objekts.</value>
+  </data>
+  <data name="PaddingLeft" xml:space="preserve">
+    <value>Der Abstand links vom Objekt.</value>
+  </data>
+  <data name="PaddingRight" xml:space="preserve">
+    <value>Der Abstand rechts vom Objekt.</value>
+  </data>
+  <data name="PaddingTop" xml:space="preserve">
+    <value>Der Abstand oberhalb des Objekts.</value>
+  </data>
+  <data name="PageBreakAtEnd" xml:space="preserve">
+    <value>Gibt an, dass von der Renderingerweiterung ein Seitenumbruch am Ende der Gruppe eingefügt wird.</value>
+  </data>
+  <data name="PageBreakAtStart" xml:space="preserve">
+    <value>Gibt an, dass von der Renderingerweiterung ein Seitenumbruch am Anfang der Gruppe eingefügt wird.</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Die Standardgröße der Seiten im Bericht.</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Der Name des enthaltenden Berichtselements.</value>
+  </data>
+  <data name="PreviewAs" xml:space="preserve">
+    <value>PreviewAs</value>
+  </data>
+  <data name="PrintOnFirstPage" xml:space="preserve">
+    <value>Gibt an, dass die Kopf- oder Fußzeile auf der ersten Seite des Berichts enthalten ist.</value>
+  </data>
+  <data name="PrintOnLastPage" xml:space="preserve">
+    <value>Gibt an, dass die Kopf- oder Fußzeile auf der letzten Seite des Berichts enthalten ist.</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>Die auszuführende Abfrage, um die Daten für den Bericht abzurufen.</value>
+  </data>
+  <data name="RepeatFooterOnNewPage" xml:space="preserve">
+    <value>Gibt an, ob die Fußzeile auf jeder Seite angezeigt wird, die die Tabelle enthält.</value>
+  </data>
+  <data name="RepeatHeaderOnNewPage" xml:space="preserve">
+    <value>Gibt an, ob die Kopfzeile auf jeder Seite angezeigt wird, die die Tabelle enthält.</value>
+  </data>
+  <data name="RepeatOnNewPage" xml:space="preserve">
+    <value>Gibt an, ob alle Zeilen der Kopfzeile oder Fußzeile auf jeder Seite angezeigt werden, die die Tabelle enthält.</value>
+  </data>
+  <data name="RepeatWith" xml:space="preserve">
+    <value>Der Name des Datenbereichs, mit dem dieses Berichtselement wiederholt werden soll, wenn sich der Datenbereich über mehrere Seiten erstreckt.</value>
+  </data>
+  <data name="ReportDataElementName" xml:space="preserve">
+    <value>Name eines Elements der obersten Ebene, das die Berichtsdaten darstellt.</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>Die URL des Berichts, der als Unterbericht angezeigt werden soll.</value>
+  </data>
+  <data name="ReportParameters" xml:space="preserve">
+    <value>Die Parameter für den Bericht.</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>Die Höhe der Zeile.</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Die Größe des Berichtselements.</value>
+  </data>
+  <data name="Sizing" xml:space="preserve">
+    <value>Die Darstellung des Bilds, wenn es nicht der angegebenen Größe entspricht.</value>
+  </data>
+  <data name="SnapToGrid" xml:space="preserve">
+    <value>Bestimmt, ob Steuerelemente am Positionierungsraster ausgerichtet werden sollen.</value>
+  </data>
+  <data name="StartItem" xml:space="preserve">
+    <value>Der Bericht, der beim Start des Debuggers ausgeführt werden soll.</value>
+  </data>
+  <data name="SubreportParameters" xml:space="preserve">
+    <value>Parameter, die an den Unterbericht übergeben werden sollen.</value>
+  </data>
+  <data name="SubreportReportName" xml:space="preserve">
+    <value>Der Pfad zum Unterbericht.</value>
+  </data>
+  <data name="SubtotalDataElementName" xml:space="preserve">
+    <value>Der zu verwendende Name für dieses Teilergebnis.</value>
+  </data>
+  <data name="SubtotalPosition" xml:space="preserve">
+    <value>Gibt an, ob die Teilergebnisspalte oder -zeile vor (über oder links) oder nach (unter oder rechts) den Detailspalten und -zeilen angezeigt werden soll.</value>
+  </data>
+  <data name="TableFillPage" xml:space="preserve">
+    <value>Gibt an, ob die Tabelle bis zum Ende der Seite erweitert werden soll.</value>
+  </data>
+  <data name="TableGroups" xml:space="preserve">
+    <value>Die Gruppen für die Tabelle (Gruppenausdrücke, Kopfzeilen und Fußzeilen). </value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>Der Pfad des Ordners, der das bereitgestellte Projekt enthält.</value>
+  </data>
+  <data name="TargetServerURL" xml:space="preserve">
+    <value>Die URL des Berichtsservers, auf dem das Projekt bereitgestellt werden soll, beispielsweise: http://hostname/ReportServer.</value>
+  </data>
+  <data name="TextAlign" xml:space="preserve">
+    <value>Die horizontale Ausrichtung des Texts.</value>
+  </data>
+  <data name="TextDecoration" xml:space="preserve">
+    <value>Gibt eine spezielle Textformatierung an.</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>Der Ausdruck, dessen Wert im Textfeld angezeigt wird.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Die Textbezeichnung für das Berichtselement, das für Vorgänge wie das Rendern von TITLE- und ALT- Attributen in HTML-Berichten verwendet wird.</value>
+  </data>
+  <data name="ToggleImage" xml:space="preserve">
+    <value>Bestimmt den ursprünglichen Status des Umschaltbilds.</value>
+  </data>
+  <data name="ToggleItem" xml:space="preserve">
+    <value>Der Name des Textfelds, das zum Aus- bzw. Einblenden dieses Berichtselements verwendet wird.</value>
+  </data>
+  <data name="UnicodeBiDi" xml:space="preserve">
+    <value>Gibt an, wie bidirektionaler Text in den Haupttext eines Elements eingebettet wird.</value>
+  </data>
+  <data name="VerticalAlign" xml:space="preserve">
+    <value>Die vertikale Ausrichtung des Texts.</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Gibt an, ob das Element ausgeblendet werden soll.</value>
+  </data>
+  <data name="WidthSensitivity" xml:space="preserve">
+    <value>Gibt an, ob bei den Daten nach Breite unterschieden wird.</value>
+  </data>
+  <data name="WritingMode" xml:space="preserve">
+    <value>Gibt an, ob Text horizontal oder vertikal geschrieben wird.</value>
+  </data>
+  <data name="Zindex" xml:space="preserve">
+    <value>Die Zeichnungsreihenfolge des Berichtselements innerhalb des enthaltenden Objekts.</value>
+  </data>
+</root>

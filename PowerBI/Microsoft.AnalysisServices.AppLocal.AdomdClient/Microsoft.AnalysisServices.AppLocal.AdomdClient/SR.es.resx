@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentErrorInvalidSchemaObjectType" xml:space="preserve">
+    <value>El parámetro schemaObjectType debe ser un valor SchemaObjectType válido.</value>
+  </data>
+  <data name="ArgumentErrorUniqueNameEmpty" xml:space="preserve">
+    <value>El parámetro uniqueName no debe estar vacío.</value>
+  </data>
+  <data name="ArgumentErrorUnsupportedParameterType" xml:space="preserve">
+    <value>No se admiten los valores de parámetros de comando de tipo '{0}'.</value>
+  </data>
+  <data name="CellIndexer_IndexOutOfRange" xml:space="preserve">
+    <value>El índice del eje '{0}' está fuera del intervalo. Debe ser igual o mayor que '0' y menor que '{1}'.</value>
+  </data>
+  <data name="CellIndexer_InvalidIndexType" xml:space="preserve">
+    <value>El tipo de índice del eje '{0}' no es válido. El índice debe ser un número entero.</value>
+  </data>
+  <data name="CellIndexer_InvalidNumberOfAxesIndexers" xml:space="preserve">
+    <value>El número de indexadores de eje no es válido: hay '{0}' ejes y se intentó indexar por '{1}' ejes.</value>
+  </data>
+  <data name="CellSet_InvalidStateOfReader" xml:space="preserve">
+    <value>La propiedad State del objeto XMLReader de entrada no es válida: '{0}'.</value>
+  </data>
+  <data name="Cellset_propertyIsUnknown" xml:space="preserve">
+    <value>El proveedor no devolvió la propiedad '{0}'.</value>
+  </data>
+  <data name="Collection_IsReadOnly" xml:space="preserve">
+    <value>La colección es de solo lectura. Las propiedades que contiene no se pueden modificar.</value>
+  </data>
+  <data name="Command_CommandStreamDoesNotSupportReadingFrom" xml:space="preserve">
+    <value>No se puede establecer la propiedad CommandStream en un flujo que no admite operaciones de lectura.</value>
+  </data>
+  <data name="Command_CommandTextCommandStreamBothSet" xml:space="preserve">
+    <value>Ambas propiedades CommandText y CommandStream están establecidas. Solo se puede establecer una propiedad.</value>
+  </data>
+  <data name="Command_CommandTextCommandStreamNotSet" xml:space="preserve">
+    <value>Ni la propiedad CommandText ni la propiedad CommandStream están establecidas.</value>
+  </data>
+  <data name="Command_ConnectionIsNotOpened" xml:space="preserve">
+    <value>La conexión está abierta.</value>
+  </data>
+  <data name="Command_ConnectionIsNotSet" xml:space="preserve">
+    <value>No se estableció la propiedad Connection en el objeto Command.</value>
+  </data>
+  <data name="Command_InvalidTimeout" xml:space="preserve">
+    <value>El valor de la propiedad Timeout del objeto Command, '{0}', no es válido.</value>
+  </data>
+  <data name="Command_OnlyActiveTransactionCanBeAssigned" xml:space="preserve">
+    <value>No se puede asignar la transacción porque ya se completó.</value>
+  </data>
+  <data name="Command_OnlyAdomdTransactionObjectIsSupported" xml:space="preserve">
+    <value>No se puede asignar el objeto porque su tipo no es AdomdTransaction.</value>
+  </data>
+  <data name="Command_OnlyTransactionAssociatedWithTheSameConnectionCanBeAssigned" xml:space="preserve">
+    <value>No se puede asignar la transacción porque el objeto de conexión asociado a esta y el objeto de conexión asociado al comando son diferentes.</value>
+  </data>
+  <data name="Connection_ConnectionString_NotInitialized" xml:space="preserve">
+    <value>No se inicializó la propiedad ConnectionString.</value>
+  </data>
+  <data name="Connection_ConnectionToLocalServerNotSupported" xml:space="preserve">
+    <value>No se admiten conexiones al contexto de servidor que está activo actualmente.</value>
+  </data>
+  <data name="Connection_DatabaseNameEmpty" xml:space="preserve">
+    <value>El nombre de base de datos no puede estar vacío.</value>
+  </data>
+  <data name="Connection_EffectiveUserNameEmpty" xml:space="preserve">
+    <value>El nombre de usuario efectivo no puede estar vacío.</value>
+  </data>
+  <data name="Connection_FailedToSetProperty" xml:space="preserve">
+    <value>No se puede establecer la propiedad '{0}' en '{1}'. Compruebe que se puede escribir en la propiedad.</value>
+  </data>
+  <data name="Connection_InvalidProperty" xml:space="preserve">
+    <value>El servidor no devolvió la propiedad '{0}'.</value>
+  </data>
+  <data name="Connection_NoInformationAboutDataSourcesReturned" xml:space="preserve">
+    <value>El proveedor no devolvió ningún origen de datos o no devolvió un valor para la propiedad DataSourceInfo.</value>
+  </data>
+  <data name="Connection_PropertyNameEmpty" xml:space="preserve">
+    <value>El nombre de propiedad no puede estar vacío.</value>
+  </data>
+  <data name="Connection_SessionID_SessionIsAlreadyOpen" xml:space="preserve">
+    <value>No se puede establecer la propiedad SessionID una vez abierta la conexión.</value>
+  </data>
+  <data name="Connection_ShowHiddenObjects_ConnectionAlreadyOpen" xml:space="preserve">
+    <value>No se puede establecer la propiedad ShowHiddenObjects una vez abierta la conexión.</value>
+  </data>
+  <data name="DatasetResponse_HierarchyWithSameNameOnSameAxis" xml:space="preserve">
+    <value>La jerarquía '{0}' aparece más de una vez en el eje '{1}'.</value>
+  </data>
+  <data name="ICollection_CannotCopyToMultidimensionalArray" xml:space="preserve">
+    <value>Los elementos de la colección no se pueden copiar en una matriz multidimensional.</value>
+  </data>
+  <data name="ICollection_ItemWithThisNameDoesNotExistInTheCollection" xml:space="preserve">
+    <value>El elemento con el nombre especificado no existe en la colección.</value>
+  </data>
+  <data name="ICollection_NotEnoughSpaceToCopyTo" xml:space="preserve">
+    <value>No hay espacio suficiente en la matriz en la que se están copiando los elementos de la colección. Disponible: '{0}'. Necesario: '{1}'.</value>
+  </data>
+  <data name="Indexer_ObjectNotFound" xml:space="preserve">
+    <value>No se encontró el objeto '{0}'.</value>
+  </data>
+  <data name="InvalidArgument" xml:space="preserve">
+    <value>Argumento no válido.</value>
+  </data>
+  <data name="InvalidOperationPriorToFetchAllProperties" xml:space="preserve">
+    <value>La operación no es válida debido al estado actual del objeto. Puede usar el método FetchAllProperties para recuperar los datos necesarios del servidor para habilitar la operación.</value>
+  </data>
+  <data name="Member_MissingDisplayInfo" xml:space="preserve">
+    <value>Falta la propiedad DisplayInfo en el conjunto de datos devuelto por el proveedor.</value>
+  </data>
+  <data name="Member_MissingLevelDepth" xml:space="preserve">
+    <value>Falta la propiedad LevelDepth en el conjunto de datos devuelto por el proveedor.</value>
+  </data>
+  <data name="Member_MissingLevelName" xml:space="preserve">
+    <value>Falta la propiedad LevelUniqueName en el conjunto de datos devuelto por el proveedor.</value>
+  </data>
+  <data name="MetadataCache_Abandoned" xml:space="preserve">
+    <value>Este objeto pertenece a una caché de metadatos caducada. Debe dejar de usarse.</value>
+  </data>
+  <data name="Metadata_CubeHasbeenUpdated" xml:space="preserve">
+    <value>Se actualizó el cubo '{0}' en el servidor.</value>
+  </data>
+  <data name="Metadata_CubesCollectionHasbeenUpdated" xml:space="preserve">
+    <value>Se actualizó la colección Cubes en el servidor.</value>
+  </data>
+  <data name="Metadata_MiningServicesCollectionHasbeenUpdated" xml:space="preserve">
+    <value>Se actualizó la colección MiningServices en el servidor.</value>
+  </data>
+  <data name="NotSupportedByProvider" xml:space="preserve">
+    <value>El proveedor actual no admite el método especificado.</value>
+  </data>
+  <data name="NotSupportedOnNonCellsetMember" xml:space="preserve">
+    <value>No se admite el método especificado en los objetos Member que no forman parte de un conjunto de celdas.</value>
+  </data>
+  <data name="NotSupportedWhenConnectionMissing" xml:space="preserve">
+    <value>No se admite el método especificado porque el objeto no tiene ninguna conexión asociada.</value>
+  </data>
+  <data name="Parameter_Already_Exists" xml:space="preserve">
+    <value>El parámetro '{0}' ya existe en la colección.</value>
+  </data>
+  <data name="Parameter_Parent_Mismatch" xml:space="preserve">
+    <value>El parámetro ya pertenece a otra colección.</value>
+  </data>
+  <data name="Parameter_Value_Wrong_Type" xml:space="preserve">
+    <value>El valor debe ser del tipo AdomdParameter.</value>
+  </data>
+  <data name="Property_Already_Exists" xml:space="preserve">
+    <value>La propiedad ya existe en la colección.</value>
+  </data>
+  <data name="Property_DoesNotExist" xml:space="preserve">
+    <value>La propiedad no existe en la colección.</value>
+  </data>
+  <data name="Property_Key_Wrong_Type" xml:space="preserve">
+    <value>La clave tiene un tipo inesperado.</value>
+  </data>
+  <data name="Property_Parent_Mismatch" xml:space="preserve">
+    <value>La propiedad ya pertenece a otra colección.</value>
+  </data>
+  <data name="Property_PropertyNotFound" xml:space="preserve">
+    <value>No se encontró la propiedad '{0}'.</value>
+  </data>
+  <data name="Property_UnknownProperty" xml:space="preserve">
+    <value>No se reconoce la propiedad '{0}'.</value>
+  </data>
+  <data name="Property_Value_Wrong_Type" xml:space="preserve">
+    <value>El valor debe ser del tipo AdomdProperty.</value>
+  </data>
+  <data name="Restrictions_TypesMismatch" xml:space="preserve">
+    <value>No coincide el tipo para la restricción '{0}'. Se esperaba '{1}', pero se proporcionó '{2}'.</value>
+  </data>
+  <data name="Resultset_IsNotDataset" xml:space="preserve">
+    <value>El conjunto de resultados devuelto por el servidor no es ni un conjunto de celdas ni un conjunto de datos multidimensional.</value>
+  </data>
+  <data name="Schema_InvalidGuid" xml:space="preserve">
+    <value>El GUID proporcionado no es un GUID de conjunto de filas de esquema válido.</value>
+  </data>
+  <data name="Schema_PropertyIsMissingOrOfAnUnexpectedType" xml:space="preserve">
+    <value>Falta el valor de la propiedad '{0}' del esquema '{1}' o tiene un tipo inesperado.</value>
+  </data>
+  <data name="Schema_RestOutOfRange" xml:space="preserve">
+    <value>El número de restricciones está fuera del intervalo.</value>
+  </data>
+  <data name="Schema_UnexpectedResponseForSchema" xml:space="preserve">
+    <value>El formato de la respuesta es inesperado para el esquema '{0}'.</value>
+  </data>
+  <data name="Server_IsAlreadyConnected" xml:space="preserve">
+    <value>Ya hay una conexión abierta.</value>
+  </data>
+  <data name="Server_IsNotConnected" xml:space="preserve">
+    <value>La conexión está abierta.</value>
+  </data>
+  <data name="Server_NoServerName" xml:space="preserve">
+    <value>La cadena DataSource no es válida.</value>
+  </data>
+  <data name="TransactionAlreadyComplete" xml:space="preserve">
+    <value>La transacción ya se completó.</value>
+  </data>
+</root>

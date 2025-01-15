@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol height="16" id="alert" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#alert .cls-1{opacity:1 !important;fill:#eac282;}#alert .cls-2{fill:#505050;}#alert .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="11.31" transform="translate(-3.31 8) rotate(-45)" width="11.31" x="2.34" y="2.34"/>
+        <polygon class="cls-2 fwns" points="7 4 7.4 9 8.6 9 9 4 7 4"/>
+        <rect class="cls-2 fwns" height="1.6" width="2" x="7" y="10.4"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListEntity" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListEntity .cls-1{opacity:1 !important;fill:#fff;}#fieldListEntity .cls-2{fill:#a3a3a3;}#fieldListEntity .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="8" width="11" x="2" y="5"/>
+        <path class="cls-2 fwns" d="M1,2V14H14V2ZM5,13H2V11H5Zm0-3H2V8H5ZM5,7H2V5H5Zm4,6H6V11H9Zm0-3H6V8H9ZM9,7H6V5H9Zm4,6H10V11h3Zm0-3H10V8h3Zm0-3H10V5h3Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="14" id="fieldListError" viewBox="0 0 14 14" width="14">
+        <defs>
+            <style>#fieldListError .cls-1{opacity:1 !important;fill:#edc87e;}#fieldListError .cls-2{fill:#333;}#fieldListError .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="9.19" transform="translate(-2.9 7) rotate(-45)" width="9.19" x="2.4" y="2.4"/>
+        <rect class="cls-2 fwns" height="6" width="2" x="6" y="3"/>
+        <rect class="cls-2 fwns" height="1" width="2" x="6" y="10"/>
+        <rect class="cls-3 nfwns" height="14" width="14"/>
+    </symbol>
+    <symbol height="16" id="fieldListMeasure" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListMeasure .cls-1{opacity:1 !important;fill:#fff;}#fieldListMeasure .cls-2{fill:#a3a3a3;}#fieldListMeasure .cls-3{fill:none;}</style>
+        </defs>
+        <rect class="cls-1 fwns" height="10" width="7" x="4" y="3"/>
+        <path class="cls-2 fwns" d="M3,2.78V13.22a.78.78,0,0,0,.78.78h7.44a.78.78,0,0,0,.78-.78V2.78A.78.78,0,0,0,11.22,2H3.78A.78.78,0,0,0,3,2.78ZM6,12H5V11H6Zm0-2H5V9H6ZM6,8H5V7H6Zm2,4H7V11H8Zm0-2H7V9H8ZM8,8H7V7H8Zm2,4H9V11h1Zm0-2H9V9h1Zm0-2H9V7h1Zm0-2H5V4h5Z"/>
+        <rect class="cls-3 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="16" id="fieldListNumeric" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#fieldListNumeric .cls-1{opacity:1 !important;fill:#a3a3a3;}#fieldListNumeric .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M11.74,13H2.8L7.56,8.53,3.09,4H12V6.22h-.31a1.93,1.93,0,0,0-.09-.41c-.26-.83-.9-.75-1.47-.8-.26,0-1,0-1.27,0H6L9.2,8.35,5.38,12l4.14,0a2,2,0,0,0,2.1-1.68H12Z"/>
+        <rect class="cls-2 nfwns" height="16" width="16"/>
+    </symbol>
+</svg>

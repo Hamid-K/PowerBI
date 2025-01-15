@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6811BA4E-11C9-4CCE-B182-38E048E30B71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Powerbi.ReportServer.ExploreHost</RootNamespace>
+    <AssemblyName>Microsoft.Powerbi.ReportServer.ExploreHost</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ExploreHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ExploreHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ExploreHost.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ExploreHost.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportingServicesHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportingServicesHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Tabular.Json" />
+    <Reference Include="Microsoft.PowerBI.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\ASConnectionInfoForRS.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\ConnectionPoolConfig.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\DataSource\ExploreHostDataSourceConnectionInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Error\RSExploreHostException.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Error\RSExploreHostServiceErrorFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\IExploreClientFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\IRSDataSourceProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\IRSExploreHost.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\IRSPowerViewDataSourceProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Logging\IReportServerLogger.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Logging\LogLevel.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Logging\RSLoggerService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\ModelInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\ModelKey.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSConnectionPool.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSConnectionSecurity.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSConnectionTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSDataShapingConnectionPoolAdapter.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSDataShapingDataSourceInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSDataSourceConnection.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSExploreClientFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSExploreHost.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSFeatureSwitchesAdapter.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSModelCache.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSPowerViewDataSourceProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\RSPowerViewHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Telemetry\RSTelemetryConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\Telemetry\RSTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\UserIdentityConnectionImpersonatorFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportServer\ExploreHost\WindowsUserIdentityConnectionImpersonator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

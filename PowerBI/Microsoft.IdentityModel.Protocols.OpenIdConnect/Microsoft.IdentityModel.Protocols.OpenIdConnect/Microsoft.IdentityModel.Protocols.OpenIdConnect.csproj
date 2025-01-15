@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27B634FC-7695-415E-8AC4-AA7C315562C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.IdentityModel.Protocols.OpenIdConnect</RootNamespace>
+    <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveDirectoryOpenIdConnectEndpoints.cs" />
+    <Compile Include="Configuration\OpenIdConnectConfigurationValidator.cs" />
+    <Compile Include="IdTokenValidator.cs" />
+    <Compile Include="LogMessages.cs" />
+    <Compile Include="OpenIdConnectConfiguration.cs" />
+    <Compile Include="OpenIdConnectConfigurationRetriever.cs" />
+    <Compile Include="OpenIdConnectGrantTypes.cs" />
+    <Compile Include="OpenIdConnectMessage.cs" />
+    <Compile Include="OpenIdConnectParameterNames.cs" />
+    <Compile Include="OpenIdConnectPrompt.cs" />
+    <Compile Include="OpenIdConnectProtocolException.cs" />
+    <Compile Include="OpenIdConnectProtocolInvalidAtHashException.cs" />
+    <Compile Include="OpenIdConnectProtocolInvalidCHashException.cs" />
+    <Compile Include="OpenIdConnectProtocolInvalidNonceException.cs" />
+    <Compile Include="OpenIdConnectProtocolInvalidStateException.cs" />
+    <Compile Include="OpenIdConnectProtocolValidationContext.cs" />
+    <Compile Include="OpenIdConnectProtocolValidator.cs" />
+    <Compile Include="OpenIdConnectRequestType.cs" />
+    <Compile Include="OpenIdConnectResponseMode.cs" />
+    <Compile Include="OpenIdConnectResponseType.cs" />
+    <Compile Include="OpenIdConnectScope.cs" />
+    <Compile Include="OpenIdConnectSessionProperties.cs" />
+    <Compile Include="OpenIdProviderMetadataNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

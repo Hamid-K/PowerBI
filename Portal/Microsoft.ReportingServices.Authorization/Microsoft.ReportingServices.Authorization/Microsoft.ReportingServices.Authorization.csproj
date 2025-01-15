@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BFFCEF8-BDF0-4FF4-93D7-F1F64F0352FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Authorization</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Graph" />
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Editions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Editions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Authentication\FederationMetadata.cs" />
+    <Compile Include="Authentication\HttpContextResponseHandler.cs" />
+    <Compile Include="Authentication\IFederationMetadataProvider.cs" />
+    <Compile Include="Authentication\IResponseHandler.cs" />
+    <Compile Include="Authentication\IResponseHandlingExtension.cs" />
+    <Compile Include="Authentication\NoOpResponseHandler.cs" />
+    <Compile Include="Authentication\WindowsAuthentication.cs" />
+    <Compile Include="Authorization\AuthzConstants.cs" />
+    <Compile Include="Authorization\AuthzData.cs" />
+    <Compile Include="Authorization\CatalogFlags.cs" />
+    <Compile Include="Authorization\DatasourceFlags.cs" />
+    <Compile Include="Authorization\DefaultSecurityTokenHandler.cs" />
+    <Compile Include="Authorization\DirectoryServicesWrapper.cs" />
+    <Compile Include="Authorization\EncryptionService.cs" />
+    <Compile Include="Authorization\EnvironmentWrapper.cs" />
+    <Compile Include="Authorization\FolderFlags.cs" />
+    <Compile Include="Authorization\IAADGraphClientFactory.cs" />
+    <Compile Include="Authorization\IDirectoryServicesWrapper.cs" />
+    <Compile Include="Authorization\IEncryptionService.cs" />
+    <Compile Include="Authorization\IEnvironmentWrapper.cs" />
+    <Compile Include="Authorization\ISecurityTokenHandler.cs" />
+    <Compile Include="Authorization\ModelFlags.cs" />
+    <Compile Include="Authorization\ModelItemFlags.cs" />
+    <Compile Include="Authorization\Native.cs" />
+    <Compile Include="Authorization\NtPermMask.cs" />
+    <Compile Include="Authorization\ReportFlagsPrimary.cs" />
+    <Compile Include="Authorization\ReportFlagsSecondary.cs" />
+    <Compile Include="Authorization\ReportSecDescType.cs" />
+    <Compile Include="Authorization\ResourceFlags.cs" />
+    <Compile Include="Authorization\SdAndType.cs" />
+    <Compile Include="Authorization\SdStrAndType.cs" />
+    <Compile Include="Authorization\SecDescType.cs" />
+    <Compile Include="Authorization\WindowsAce.cs" />
+    <Compile Include="Authorization\WindowsAcl.cs" />
+    <Compile Include="Authorization\WindowsAuthorization.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicKeyConstants.cs" />
+    <Compile Include="TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

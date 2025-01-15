@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Visual Sandbox Host</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/powerbi/libs/styles/visuals.css" />
+    <link rel="stylesheet" href="/powerbi/libs/styles/visualsandbox.css" />
+</head>
+<body class="visual-sandbox">
+    <div id="sandbox-host" class="visual"></div>
+    <script>
+        var powerbi = {
+            common: {}
+        };
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/globalize.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/globalize.cultures.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/jQuery.js"></script>
+    <script>
+        if (!window.define) { window.define = function () { } }
+    </script>
+    <script>
+        powerbi.common.localizedStrings = '';
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visualSandbox.externals.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/customVisualsHost.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            powerbi.visualSandbox.createSandboxHost($('#sandbox-host'));
+        });
+    </script>
+</body>
+</html>

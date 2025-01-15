@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Common_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema 
+  id="Common"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      Common fuzzy matching elements.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:element name="Properties" type="Properties"/&gt;
+  &lt;xsd:element name="Property" type="Property"/&gt;
+
+  &lt;xsd:attributeGroup name="commonAttribs"&gt;
+    &lt;xsd:attribute name="name" type="xsd:string" use="required" /&gt;
+    &lt;xsd:attribute name="description" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:attributeGroup&gt;
+
+  &lt;xsd:attributeGroup name="commonAttribsNameOptional"&gt;
+    &lt;xsd:attribute name="name" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="description" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:attributeGroup&gt;
+
+  &lt;xsd:attributeGroup name="classNameAttribs"&gt;
+    &lt;xsd:attribute name="typeName" type="xsd:string" use="required" /&gt;
+    &lt;xsd:attribute name="assemblyName" type="xsd:string" use="optional" /&gt;    
+  &lt;/xsd:attributeGroup&gt;
+
+  &lt;xsd:complexType name="ComparisonType"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attribute name="ComparisonType" use="required" &gt;
+      &lt;xsd:simpleType&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+          &lt;xsd:enumeration value="Jaccard" /&gt;
+          &lt;xsd:enumeration value="Left Jaccard Containment" /&gt;
+        &lt;/xsd:restriction&gt;
+      &lt;/xsd:simpleType&gt;
+    &lt;/xsd:attribute&gt;
+  &lt;/xsd:complexType&gt;
+  
+  &lt;xsd:complexType name="Properties"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Property" type="Property" minOccurs="0" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Property" mixed="true"&gt;
+    &lt;xsd:attribute name="name" type="xsd:string" use="required"/&gt;
+    &lt;xsd:attribute name="dataType" type="PropertyDataType" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:simpleType name="PropertyDataType"&gt;
+    &lt;xsd:restriction base="xsd:string"&gt;
+      &lt;xsd:enumeration value="System.Boolean" /&gt;
+      &lt;xsd:enumeration value="System.Byte" /&gt;
+      &lt;xsd:enumeration value="System.SByte" /&gt;
+      &lt;xsd:enumeration value="System.Decimal" /&gt;
+      &lt;xsd:enumeration value="System.Double" /&gt;
+      &lt;xsd:enumeration value="System.Single" /&gt;
+      &lt;xsd:enumeration value="System.Int32" /&gt;
+      &lt;xsd:enumeration value="System.UInt32" /&gt;
+      &lt;xsd:enumeration value="System.Int64" /&gt;
+      &lt;xsd:enumeration value="System.UInt64" /&gt;
+      &lt;xsd:enumeration value="System.UInt16" /&gt;
+      &lt;xsd:enumeration value="System.String" /&gt;
+      &lt;xsd:enumeration value="System.DateTime" /&gt;
+    &lt;/xsd:restriction&gt;
+  &lt;/xsd:simpleType&gt;
+
+  &lt;xsd:simpleType name="JoinSideDataType"&gt;
+    &lt;xsd:restriction base="xsd:string"&gt;
+      &lt;xsd:enumeration value="Left" /&gt;
+      &lt;xsd:enumeration value="Right" /&gt;
+    &lt;/xsd:restriction&gt;
+  &lt;/xsd:simpleType&gt;
+  
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+  <data name="ComparisonDefinition_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="ComparisonDefinition"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      This schema defines a fuzzy query.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  &lt;xsd:include schemaLocation="DomainManager.xsd"/&gt;
+  &lt;xsd:include schemaLocation="IndexDefinition.xsd"/&gt;
+
+  &lt;xsd:element name="Comparison" type="Comparison"&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Defines a fuzzy comparison.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+  &lt;/xsd:element&gt;
+  
+  &lt;xsd:complexType name="Comparison"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Domains" type="DomainNames" minOccurs="1" maxOccurs="1"/&gt;
+      &lt;xsd:element name="ExactMatchDomains" type="DomainNames" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="Comparer" type="Comparer" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attribute name="name" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="description" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="leftRowsetName" type="xsd:string" use="required" /&gt;
+    &lt;xsd:attribute name="rightRowsetName" type="xsd:string" use="required" /&gt;
+  &lt;/xsd:complexType&gt;
+
+&lt;/xsd:schema&gt;</value>
+  </data>
+  <data name="Configuration_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema 
+  id="Configuration"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      Fuzzy Lookup Configuration
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  &lt;xsd:include schemaLocation="DomainManager.xsd"/&gt;
+  &lt;xsd:include schemaLocation="IndexDefinition.xsd"/&gt;
+  &lt;xsd:include schemaLocation="QueryDefinition.xsd"/&gt;
+  &lt;xsd:include schemaLocation="RowsetManager.xsd"/&gt;
+  &lt;xsd:include schemaLocation="ComparisonDefinition.xsd"/&gt;
+
+  &lt;xsd:element name="Configuration" type="Configuration"&gt;&lt;/xsd:element&gt;
+
+  &lt;xsd:complexType name="Configuration"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="RowsetManager" type="RowsetManager" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="DomainManager" type="DomainManager" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="FuzzyLookup" type="FuzzyLookup" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="FuzzyIndex" type="FuzzyIndex" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="RecordBinding" type="RecordBinding" minOccurs="0" maxOccurs="2"/&gt;
+      &lt;xsd:element name="SignatureGenerator" type="SignatureGenerator" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="Comparison" type="Comparison" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+  <data name="DomainManager_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="DomainManager"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      This schema defines a Domain Manager.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  &lt;xsd:include schemaLocation="RowsetManager.xsd"/&gt;
+
+  &lt;xsd:element name="DomainManager" type="DomainManager"&gt;&lt;/xsd:element&gt;
+  &lt;xsd:element name="Domain" type="Domain"&gt;&lt;/xsd:element&gt;
+  &lt;xsd:element name="TokenIdProvider" type="TokenIdProviderType"/&gt;
+  &lt;xsd:element name="Tokenizer" type="TokenizerType"/&gt;
+  &lt;xsd:element name="TokenWeightProvider" type="TokenWeightProvider"/&gt;
+  &lt;xsd:element name="TransformationProvider" type="TransformationProvider"/&gt;
+  &lt;xsd:element name="TransformationFilter" type="TransformationFilter"/&gt;
+
+  &lt;xsd:complexType name="DomainManager"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="RowsetManager" type="RowsetManager" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="TokenIdProvider" type="TokenIdProviderType" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="Domains" type="DomainsType" minOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attribute name="creationConnectionName" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:attributeGroup name="rowsetAttribs"&gt;
+    &lt;!--&lt;xsd:attribute name="rowsetName" type="xsd:string" use="optional" /&gt;--&gt;
+  &lt;/xsd:attributeGroup&gt;
+
+  &lt;xsd:complexType name="DomainNames"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;!--Having two elements with the name Domain is very problematic...--&gt;
+      &lt;xsd:element name="Domain" type="xsd:string" minOccurs="0" maxOccurs="unbounded"&gt;&lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TokenIdProviderType"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs" /&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TokenizerType"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs" /&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="DomainsType"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Domain" type="Domain" minOccurs="1" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TokenWeightProvider"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs" /&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attributeGroup ref="rowsetAttribs" /&gt;
+  &lt;/xsd:complexType&gt;
+  
+  &lt;xsd:complexType name="Domain"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Tokenizer" type="TokenizerType"  minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="TokenWeightProvider" type="TokenWeightProvider"  minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="LeftTransformationProviders" minOccurs="0" maxOccurs="1" &gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="TransformationProvider" type="TransformationProvider" minOccurs="0" maxOccurs="unbounded"/&gt;
+          &lt;/xsd:sequence&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+      &lt;xsd:element name="RightTransformationProviders" minOccurs="0" maxOccurs="1" &gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="TransformationProvider" type="TransformationProvider" minOccurs="0" maxOccurs="unbounded"/&gt;
+          &lt;/xsd:sequence&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+      &lt;xsd:element name="PairSpecificTransformationProviders" minOccurs="0" maxOccurs="1" &gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="TransformationProvider" type="TransformationProvider" minOccurs="0" maxOccurs="unbounded"/&gt;
+          &lt;/xsd:sequence&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribs" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TransformationProvider"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="TransformationFilters" type="TransformationFilters" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs" /&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attributeGroup ref="rowsetAttribs" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TransformationFilters"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="TransformationFilter" type="TransformationFilter" minOccurs="0" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TransformationFilter"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs" /&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attributeGroup ref="rowsetAttribs" /&gt;
+  &lt;/xsd:complexType&gt;
+
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+  <data name="IndexDefinition_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="FuzzyIndex"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      This schema defines a fuzzy match index.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  &lt;xsd:include schemaLocation="DomainManager.xsd"/&gt;
+
+  &lt;xsd:element name="FuzzyIndex" type="FuzzyIndex"&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Defines a fuzzy match index.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+  &lt;/xsd:element&gt;
+
+  &lt;xsd:element name="FuzzyLookup" type="FuzzyLookup"&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Defines a fuzzy lookup.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+  &lt;/xsd:element&gt;
+  
+  &lt;xsd:element name="Lookups" type="Lookups"/&gt;
+  &lt;xsd:element name="Lookup" type="Lookup"/&gt;
+  &lt;xsd:element name="Comparer" type="Comparer"/&gt;
+  &lt;xsd:element name="Objects" type="Objects"/&gt;
+  &lt;xsd:element name="Object" type="Object"/&gt;
+  &lt;xsd:element name="TunerSettings" type="TunerSettings"/&gt;
+  &lt;xsd:element name="SignatureGenerator" type="SignatureGenerator"/&gt;
+  &lt;xsd:element name="StateManager" type="StateManager"/&gt;
+
+  &lt;xsd:complexType name="FuzzyLookup"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="StateManager" type="StateManager" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="Lookups" type="Lookups" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="KeyColumns" type="KeyColumns" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="RecordBinding" type="RecordBinding" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attribute name="domainManagerName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="referenceRowsetName" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="KeyColumns"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Column" type="ColumnType" minOccurs="0" /&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  
+  &lt;xsd:complexType name="FuzzyIndex"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="RecordBinding" type="RecordBinding" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="Lookups" type="Lookups" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attribute name="domainManagerName" type="xsd:string" use="required" /&gt;
+    &lt;xsd:attribute name="rowsetName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="creationConnectionName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="joinSide" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="ridType" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="recordTableName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="recordContextTableName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="signatureTableName" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Comparer"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;xsd:element name="RecordBinding" type="RecordBinding" minOccurs="0" maxOccurs="2" /&gt;
+      &lt;xsd:element name="Domains" type="DomainNames" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="ExactMatchDomains" type="DomainNames" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs"/&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional"/&gt;    
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="StateManager"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs"/&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional"/&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Objects"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Object" type="Object" minOccurs="0" /&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  
+  &lt;xsd:complexType name="Object"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs"/&gt;
+    &lt;xsd:attributeGroup ref="commonAttribs"/&gt;
+    &lt;xsd:attribute name="acquireReferences" type="xsd:boolean" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Lookups"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Lookup" type="Lookup" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Lookup"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Domains" type="DomainNames" maxOccurs="1"/&gt;
+      &lt;xsd:element name="ExactMatchDomains" type="DomainNames" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="SignatureGenerator" type="SignatureGenerator" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="Comparer" type="Comparer" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="SignatureGenerator"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+      &lt;!-- MinQueryThreshold, LSH Settings--&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="classNameAttribs"/&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional"/&gt;
+    &lt;xsd:attribute name="joinSide" type="JoinSideDataType" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="TunerSettings"&gt;
+    &lt;xsd:attribute name="enabled" type="xsd:boolean" use="optional" /&gt;
+    &lt;xsd:attribute name="minQueryThreshold" type="xsd:double" use="optional" /&gt;
+    &lt;xsd:attribute name="comparisonType" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+  
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+  <data name="QueryDefinition_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="FuzzyQueryDefinition"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      This schema defines a fuzzy query.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  &lt;xsd:include schemaLocation="IndexDefinition.xsd"/&gt;
+  
+  &lt;xsd:element name="FuzzyQuery"&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Defines a fuzzy match query.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+
+    &lt;xsd:complexType&gt;
+      &lt;xsd:sequence&gt;
+        &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+
+        &lt;xsd:element name="Lookup" type="Lookup" minOccurs="0" maxOccurs="1" /&gt;
+        
+        &lt;xsd:element name="Comparer" minOccurs="0" maxOccurs="1"&gt;
+          &lt;xsd:complexType&gt;
+            &lt;xsd:sequence&gt;
+              &lt;xsd:element name="Properties" type="Properties" minOccurs="0" maxOccurs="1" /&gt;
+            &lt;/xsd:sequence&gt;
+            &lt;xsd:attributeGroup ref="classNameAttribs"/&gt;
+          &lt;/xsd:complexType&gt;
+        &lt;/xsd:element&gt;
+        
+      &lt;/xsd:sequence&gt;
+      
+      &lt;xsd:attributeGroup ref="commonAttribs" /&gt;
+      &lt;xsd:attribute name="indexName" type="xsd:string" use="optional" /&gt;
+      &lt;xsd:attribute name="lookupName" type="xsd:string" use="optional" /&gt;
+      &lt;xsd:attribute name="rowsetName" type="xsd:string" use="optional" /&gt;
+      
+    &lt;/xsd:complexType&gt;
+  &lt;/xsd:element&gt;
+&lt;/xsd:schema&gt;</value>
+  </data>
+  <data name="Results_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="Result"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      This schema defines fuzzy comparison and match results.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+  
+  &lt;xsd:element name="ComparisonResults"&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Defines a list of fuzzy comparison results.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+    &lt;xsd:complexType&gt;
+      &lt;xsd:sequence&gt;
+        &lt;xsd:element name="ComparisonResult" type="ComparisonResult" maxOccurs="unbounded"/&gt;
+      &lt;/xsd:sequence&gt;
+    &lt;/xsd:complexType&gt;
+  &lt;/xsd:element&gt;    
+
+  &lt;xsd:complexType name="ComparisonResult"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Score" type="xsd:double" /&gt;
+      
+      &lt;!-- LeftRecord, RightRecord, LeftRecordContext, RightRecordContext, LeftTransformationsApplied, RightTransformationsApplied --&gt;
+      
+    &lt;/xsd:sequence&gt;    
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+  <data name="RowsetManager_xsd" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xsd:schema
+  id="Data"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en"&gt;
+
+  &lt;xsd:annotation&gt;
+    &lt;xsd:documentation&gt;
+      Defines a rowset manager.
+    &lt;/xsd:documentation&gt;
+  &lt;/xsd:annotation&gt;
+  
+  &lt;xsd:include schemaLocation="Common.xsd"/&gt;
+
+  &lt;xsd:element name="RowsetManager" type="RowsetManager" /&gt;
+  &lt;xsd:element name="Connections" type="Connections" /&gt;
+  &lt;xsd:element name="Rowsets" type="Rowsets" /&gt;
+  &lt;xsd:element name="SqlRowset" type="SqlRowset" /&gt;
+  &lt;xsd:element name="InlineRowset" type="InlineRowset" /&gt;
+  &lt;xsd:element name="CsvFileRowset" type="CsvFileRowset" /&gt;
+  &lt;xsd:element name="RecordBindings" type="RecordBindings"/&gt;
+  &lt;xsd:element name="RecordBinding" type="RecordBinding"/&gt;
+  &lt;xsd:element name="Column" type="ColumnType"/&gt;
+  
+  &lt;xsd:complexType name="RowsetManager"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Connections" type="Connections" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="Rowsets" type="Rowsets" minOccurs="0" maxOccurs="1"/&gt;
+      &lt;xsd:element name="RecordBindings" type="RecordBindings" minOccurs="0" maxOccurs="1"/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  
+  &lt;xsd:complexType name="Connections"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Connection" minOccurs="0" maxOccurs="unbounded"&gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:attributeGroup ref="commonAttribs" /&gt;
+          &lt;xsd:attribute name="connectionString" type="xsd:string" use="required" /&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="Rowsets" &gt;
+    &lt;xsd:choice minOccurs="0" maxOccurs="unbounded"&gt;
+      &lt;!--&lt;xsd:element ref="SqlRowset" /&gt;
+      &lt;xsd:element ref="InlineRowset" /&gt;--&gt;
+      &lt;xsd:any namespace="##any" processContents="skip" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:choice&gt;
+    &lt;xsd:attribute name="default" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="SqlRowset"&gt;
+    &lt;xsd:simpleContent&gt;
+      &lt;xsd:extension base="xsd:string"&gt;
+        &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+        &lt;xsd:attribute name="ridColumnName" type="xsd:string" use="optional" /&gt;        
+        &lt;xsd:attribute name="connectionName" type="xsd:string" use="optional" /&gt;
+      &lt;/xsd:extension&gt;
+    &lt;/xsd:simpleContent&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="CsvFileRowset"&gt;
+    &lt;xsd:simpleContent&gt;
+      &lt;xsd:extension base="xsd:string"&gt;
+        &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+        &lt;xsd:attribute name="ridColumnName" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="fileName" type="xsd:string" use="required" /&gt;
+        &lt;xsd:attribute name="columnNames" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="delimiter" type="xsd:string" use="optional" /&gt;
+      &lt;/xsd:extension&gt;
+    &lt;/xsd:simpleContent&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="InlineRowset"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:any namespace="##any" processContents="skip" maxOccurs="unbounded"/&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attribute name="ridColumnName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="ridColumnType" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+ 
+  &lt;xsd:complexType name="Schema"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="Column"&gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:attributeGroup ref="commonAttribs" /&gt;
+          &lt;xsd:attribute name="dataType" type="xsd:string" use="required" /&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+
+  &lt;xsd:complexType name="ColumnType"&gt;
+    &lt;xsd:attribute name="description" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="name" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="ordinal" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="type" type="xsd:string" use="optional" /&gt;
+    &lt;!-- CLR type e.g., "System.String" --&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="RecordBinding"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="DomainBinding" maxOccurs="unbounded"&gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Column" minOccurs="1" maxOccurs="unbounded"/&gt;
+          &lt;/xsd:sequence&gt;
+          &lt;xsd:attribute name="domainName" type="xsd:string" use="required" /&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attributeGroup ref="commonAttribsNameOptional" /&gt;
+    &lt;xsd:attribute name="rowsetName" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="ridOrdinal" type="xsd:int" use="optional" /&gt;
+    &lt;xsd:attribute name="joinSide" type="xsd:string" use="optional" /&gt;
+  &lt;/xsd:complexType&gt;
+
+  &lt;xsd:complexType name="RecordBindings"&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="RecordBinding" minOccurs="0" maxOccurs="unbounded"&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+
+&lt;/xsd:schema&gt;
+</value>
+  </data>
+</root>

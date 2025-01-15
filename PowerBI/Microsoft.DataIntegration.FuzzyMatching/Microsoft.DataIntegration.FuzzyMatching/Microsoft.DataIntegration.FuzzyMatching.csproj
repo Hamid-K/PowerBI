@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B202D24-0D0B-408B-86AB-E2FAA5733696}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.DataIntegration.FuzzyMatching</RootNamespace>
+    <AssemblyName>Microsoft.DataIntegration.FuzzyMatching</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DataIntegration.FuzzyMatchingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.DataIntegration.FuzzyMatchingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRecord.cs" />
+    <Compile Include="AhoCorasick.cs" />
+    <Compile Include="BasicTransformationFilter.cs" />
+    <Compile Include="BcpTableWriter.cs" />
+    <Compile Include="BipartiteGraph.cs" />
+    <Compile Include="CacheWarmingOption.cs" />
+    <Compile Include="CharacterMergeTransformationProvider.cs" />
+    <Compile Include="Column.cs" />
+    <Compile Include="CompareMatchResultBySimilarityDescRidAsc.cs" />
+    <Compile Include="Comparer.cs" />
+    <Compile Include="ComparerInstance.cs" />
+    <Compile Include="ComparerPool.cs" />
+    <Compile Include="ComparisonDefinition.cs" />
+    <Compile Include="ComparisonProviderInfo.cs" />
+    <Compile Include="ComparisonResult.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="ConnectionCollection.cs" />
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="ConstantWeightProvider.cs" />
+    <Compile Include="ContextualTransformationFilter.cs" />
+    <Compile Include="CreateDataReaderDelegate.cs" />
+    <Compile Include="CreateDataReaderRowset.cs" />
+    <Compile Include="CsvFileDataReader.cs" />
+    <Compile Include="CsvFileRowset.cs" />
+    <Compile Include="CsvUtilities.cs" />
+    <Compile Include="CustomComparer.cs" />
+    <Compile Include="CustomEditTransformationFilter.cs" />
+    <Compile Include="CustomWeightProvider.cs" />
+    <Compile Include="DefaultRowsetFactory.cs" />
+    <Compile Include="delFillTextBuffer.cs" />
+    <Compile Include="DerivedToken.cs" />
+    <Compile Include="DistinctTokenProvider.cs" />
+    <Compile Include="DistinctValueManager.cs" />
+    <Compile Include="Domain.cs" />
+    <Compile Include="DomainBinding.cs" />
+    <Compile Include="DomainIdProvider.cs" />
+    <Compile Include="DomainInstance.cs" />
+    <Compile Include="DomainManager.cs" />
+    <Compile Include="DomainManagerDefinition.cs" />
+    <Compile Include="DomainName.cs" />
+    <Compile Include="DomainProviderInfo.cs" />
+    <Compile Include="EditTransformationDistanceComparer.cs" />
+    <Compile Include="EditTransformationMetadata.cs" />
+    <Compile Include="EditTransformationPrecomputationOptions.cs" />
+    <Compile Include="EditTransformationProvider.cs" />
+    <Compile Include="ExactMatchSignatureGenerator.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="FLMode.cs" />
+    <Compile Include="FLSerializationSurrogate.cs" />
+    <Compile Include="FLSurrogateSelector.cs" />
+    <Compile Include="FtsRecordTokenizer.cs" />
+    <Compile Include="FtsTokenizerContext.cs" />
+    <Compile Include="FuzzyComparer.cs" />
+    <Compile Include="FuzzyComparisonType.cs" />
+    <Compile Include="FuzzyIndexType.cs" />
+    <Compile Include="FuzzyLookup.cs" />
+    <Compile Include="FuzzyLookupBuilder.cs" />
+    <Compile Include="FuzzyLookupBuilderStatistics.cs" />
+    <Compile Include="FuzzyLookupConstants.cs" />
+    <Compile Include="FuzzyLookupDefinition.cs" />
+    <Compile Include="FuzzyLookupEntry.cs" />
+    <Compile Include="FuzzyLookupFormatter.cs" />
+    <Compile Include="FuzzyLookupTuner.cs" />
+    <Compile Include="FuzzyLookupXmlBuilder.cs" />
+    <Compile Include="FuzzyQuery.cs" />
+    <Compile Include="GlobalConfiguration.cs" />
+    <Compile Include="Graph.cs" />
+    <Compile Include="GreedyGraphClusterer.cs" />
+    <Compile Include="GreedyTokenClusterProvider.cs" />
+    <Compile Include="GroupMinHashDim.cs" />
+    <Compile Include="GroupMinHashDimAggr.cs" />
+    <Compile Include="HashingTokenIdProvider.cs" />
+    <Compile Include="IComponentManager.cs" />
+    <Compile Include="IConnectionManager.cs" />
+    <Compile Include="IdentitySignatureGenerator.cs" />
+    <Compile Include="IdentityTokenClusterProvider.cs" />
+    <Compile Include="IdfTokenWeightProvider.cs" />
+    <Compile Include="IDomainIdProvider.cs" />
+    <Compile Include="IDomainManager.cs" />
+    <Compile Include="IDropTables.cs" />
+    <Compile Include="IFuzzyComparer.cs" />
+    <Compile Include="IFuzzyLookupStateManager.cs" />
+    <Compile Include="IFuzzyLookupStateManagerInitialize.cs" />
+    <Compile Include="IInvertedIndexLookup.cs" />
+    <Compile Include="IInvertedIndexUpdate.cs" />
+    <Compile Include="IMatchResult.cs" />
+    <Compile Include="IMultiDimSignatureGenerator.cs" />
+    <Compile Include="IName.cs" />
+    <Compile Include="IndexedSubList.cs" />
+    <Compile Include="IndexUpdateContext.cs" />
+    <Compile Include="InlineRowset.cs" />
+    <Compile Include="InsertIntoTableWriter.cs" />
+    <Compile Include="IntVector.cs" />
+    <Compile Include="InvertedIndexSignatureGenerator.cs" />
+    <Compile Include="IObjectManager.cs" />
+    <Compile Include="IObjectReferenceContainer.cs" />
+    <Compile Include="IOneDimSignatureGenerator.cs" />
+    <Compile Include="IPairSpecificTransformationProvider.cs" />
+    <Compile Include="IPhraseSink.cs" />
+    <Compile Include="IPropertyBag.cs" />
+    <Compile Include="IProviderInitialize.cs" />
+    <Compile Include="IRecordContextCache.cs" />
+    <Compile Include="IRecordContextDistributor.cs" />
+    <Compile Include="IRecordContextUpdate.cs" />
+    <Compile Include="IRecordStore.cs" />
+    <Compile Include="IRecordTokenizer.cs" />
+    <Compile Include="IRecordUpdate.cs" />
+    <Compile Include="IRecordUpdateContextInitialize.cs" />
+    <Compile Include="IRecordWithIdLookup.cs" />
+    <Compile Include="IRecordWithIdUpdate.cs" />
+    <Compile Include="IRowsetConsumer.cs" />
+    <Compile Include="IRowsetDefinition.cs" />
+    <Compile Include="IRowsetDistributor.cs" />
+    <Compile Include="IRowsetFactory.cs" />
+    <Compile Include="IRowsetManager.cs" />
+    <Compile Include="IRowsetSink.cs" />
+    <Compile Include="IRuleApplEnumerator.cs" />
+    <Compile Include="ISession.cs" />
+    <Compile Include="ISessionable.cs" />
+    <Compile Include="ISignatureGeneratorInitialize.cs" />
+    <Compile Include="IsolatedStorageBcpTableWriter.cs" />
+    <Compile Include="ISqlInvertedIndex.cs" />
+    <Compile Include="ISqlInvertedIndexBuilder.cs" />
+    <Compile Include="ISqlInvertedIndexReader.cs" />
+    <Compile Include="ISqlObjectManager.cs" />
+    <Compile Include="ISqlTableWriter.cs" />
+    <Compile Include="IStemmer.cs" />
+    <Compile Include="IThreshold.cs" />
+    <Compile Include="ITokenClusterMapComputer.cs" />
+    <Compile Include="ITokenIdProvider.cs" />
+    <Compile Include="ITokenToClusterMap.cs" />
+    <Compile Include="ITokenWeightProvider.cs" />
+    <Compile Include="ITransformationFilter.cs" />
+    <Compile Include="ITransformationFiltering.cs" />
+    <Compile Include="ITransformationMatch.cs" />
+    <Compile Include="ITransformationProvider.cs" />
+    <Compile Include="IUpdateContext.cs" />
+    <Compile Include="IWordBreaker.cs" />
+    <Compile Include="IWordFormSink.cs" />
+    <Compile Include="IWordSink.cs" />
+    <Compile Include="JaccardComparer.cs" />
+    <Compile Include="JoinSide.cs" />
+    <Compile Include="KeyColumnEqualityComparer.cs" />
+    <Compile Include="LeftJaccardContainmentComparer.cs" />
+    <Compile Include="LhsLengthTransformationFilter.cs" />
+    <Compile Include="ListSpan.cs" />
+    <Compile Include="ListWithDefault.cs" />
+    <Compile Include="Lookup.cs" />
+    <Compile Include="LookupCollection.cs" />
+    <Compile Include="LookupUpdateContext.cs" />
+    <Compile Include="LshSignatureGenerator.cs" />
+    <Compile Include="LshSignatureGeneratorV1.cs" />
+    <Compile Include="MainMemoryRecordStore.cs" />
+    <Compile Include="MainMemoryRecordStore2.cs" />
+    <Compile Include="MainMemoryRidListStore.cs" />
+    <Compile Include="MainMemoryStateManager.cs" />
+    <Compile Include="MatchResult.cs" />
+    <Compile Include="MatchResultsReader.cs" />
+    <Compile Include="MatchResultStatistics.cs" />
+    <Compile Include="MinHashDim.cs" />
+    <Compile Include="MinHashGenerator.cs" />
+    <Compile Include="MinWtHashTable.cs" />
+    <Compile Include="MultiRuleApplEnumerator.cs" />
+    <Compile Include="NgramTokenizer.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="NodeType.cs" />
+    <Compile Include="NormalizationOptions.cs" />
+    <Compile Include="NullTokenIdProvider.cs" />
+    <Compile Include="NumericTransformationFilter.cs" />
+    <Compile Include="ObjectDefinition.cs" />
+    <Compile Include="ObjectManagerBase.cs" />
+    <Compile Include="ObjectReference.cs" />
+    <Compile Include="OneToOneTokenIdProvider.cs" />
+    <Compile Include="PairSpecificTransformationProviderAggregator.cs" />
+    <Compile Include="Populate.cs" />
+    <Compile Include="PrefixSignatureGenerator.cs" />
+    <Compile Include="PrefixTransformationMetadata.cs" />
+    <Compile Include="PrefixTransformationProvider.cs" />
+    <Compile Include="PrepareGraph.cs" />
+    <Compile Include="PrepareNode.cs" />
+    <Compile Include="PrepareNodeList.cs" />
+    <Compile Include="PrepareNodePtrList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="ProviderReference.cs" />
+    <Compile Include="QueryDefinition.cs" />
+    <Compile Include="Record.cs" />
+    <Compile Include="RecordBinding.cs" />
+    <Compile Include="RecordBindingCollection.cs" />
+    <Compile Include="RecordContext.cs" />
+    <Compile Include="RecordContextBuilder.cs" />
+    <Compile Include="RecordContextBuilderInstance.cs" />
+    <Compile Include="RecordContextBuilderPool.cs" />
+    <Compile Include="RecordQueueDataReader.cs" />
+    <Compile Include="RecordTokenizerBase.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RidList.cs" />
+    <Compile Include="RidListAllocator.cs" />
+    <Compile Include="RidListBlockList.cs" />
+    <Compile Include="RidSignaturesDataReader.cs" />
+    <Compile Include="RowsetCollection.cs" />
+    <Compile Include="RowsetDefinition.cs" />
+    <Compile Include="RowsetDistributor.cs" />
+    <Compile Include="RowsetManager.cs" />
+    <Compile Include="RowsetSinkBase.cs" />
+    <Compile Include="RuleApplConstraints.cs" />
+    <Compile Include="RuleApplEnumerator.cs" />
+    <Compile Include="RuleApplier.cs" />
+    <Compile Include="RuleGroup.cs" />
+    <Compile Include="RuleGroupPool.cs" />
+    <Compile Include="RuleMinHash.cs" />
+    <Compile Include="SessionTokenIdProvider.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="SignatureGenerator.cs" />
+    <Compile Include="SignatureGeneratorContext.cs" />
+    <Compile Include="SignatureGeneratorPool.cs" />
+    <Compile Include="SimpleMainMemoryRidListStore.cs" />
+    <Compile Include="SqlBulkCopyTableWriter.cs" />
+    <Compile Include="SqlClr.cs" />
+    <Compile Include="SqlClrFuzzyIndex.cs" />
+    <Compile Include="SqlClrObjectManager.cs" />
+    <Compile Include="SqlFuzzyQuery.cs" />
+    <Compile Include="SqlInvertedIndex.cs" />
+    <Compile Include="SqlRecordContextStore.cs" />
+    <Compile Include="SqlRecordStore.cs" />
+    <Compile Include="SqlRowsetDefinition.cs" />
+    <Compile Include="SqlStateManager.cs" />
+    <Compile Include="StateManager.cs" />
+    <Compile Include="StateManagerStatistics.cs" />
+    <Compile Include="StaticTransformationMetadata.cs" />
+    <Compile Include="StaticTransformationProvider.cs" />
+    <Compile Include="StringRecordTokenizer.cs" />
+    <Compile Include="StringResources.Designer.cs">
+      <DependentUpon>StringResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TemporalHandle.cs" />
+    <Compile Include="TemporalObjectPool.cs" />
+    <Compile Include="TEXT_SOURCE.cs" />
+    <Compile Include="Token2NodeMap.cs" />
+    <Compile Include="TokenIdProvider.cs" />
+    <Compile Include="TokenIdProviderReference.cs" />
+    <Compile Include="TokenizeFieldIterator.cs" />
+    <Compile Include="Tokenizer.cs" />
+    <Compile Include="TokenizerCommon.cs" />
+    <Compile Include="TokenizerContext.cs" />
+    <Compile Include="TokenMergeTransformationProvider.cs" />
+    <Compile Include="TokenSequence.cs" />
+    <Compile Include="TokenSequenceComparer.cs" />
+    <Compile Include="TokenSplitTransformationProvider.cs" />
+    <Compile Include="TokenSplitTrie.cs" />
+    <Compile Include="TokenWeightProvider.cs" />
+    <Compile Include="TokenWeightProviderReference.cs" />
+    <Compile Include="TopKTransformationFilter.cs" />
+    <Compile Include="TranPrefixTree.cs" />
+    <Compile Include="Transformation.cs" />
+    <Compile Include="TransformationAggregate.cs" />
+    <Compile Include="TransformationComparer.cs" />
+    <Compile Include="TransformationFilter.cs" />
+    <Compile Include="TransformationFilterAggregator.cs" />
+    <Compile Include="TransformationFilterReference.cs" />
+    <Compile Include="TransformationMatch.cs" />
+    <Compile Include="TransformationMatchSegment.cs" />
+    <Compile Include="TransformationProvider.cs" />
+    <Compile Include="TransformationProviderAggregator.cs" />
+    <Compile Include="TransformationProviderReference.cs" />
+    <Compile Include="TransformationRhsWeightComparer.cs" />
+    <Compile Include="TransformationType.cs" />
+    <Compile Include="TransientTokenIdProvider.cs" />
+    <Compile Include="TunerSettings.cs" />
+    <Compile Include="UnionFind.cs" />
+    <Compile Include="UnitRule.cs" />
+    <Compile Include="UnitRuleGroup.cs" />
+    <Compile Include="UnitRuleStatus.cs" />
+    <Compile Include="VowelFoldingTokenizer.cs" />
+    <Compile Include="VowelFoldingTokenizerContext.cs" />
+    <Compile Include="WeightedTokenSequence.cs" />
+    <Compile Include="WeightedTransformation.cs" />
+    <Compile Include="WeightedTransformationMatch.cs" />
+    <Compile Include="WeightModifier.cs" />
+    <Compile Include="WORDREP_BREAK_TYPE.cs" />
+    <Compile Include="WtBipartiteGraph.cs" />
+    <Compile Include="WtJaccSim.cs" />
+    <Compile Include="WtModifierType.cs" />
+    <Compile Include="WtNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

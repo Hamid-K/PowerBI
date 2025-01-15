@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddPropertyWrongFolderTag" xml:space="preserve">
+    <value>A property must be added to the properties folder with the correct name.</value>
+  </data>
+  <data name="AddPropertyWrongFolderType" xml:space="preserve">
+    <value>A property must be added to the right type of folder.</value>
+  </data>
+  <data name="AuthorizationPasswordReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, AuthorizationPassword cannot be changed.</value>
+  </data>
+  <data name="AuthorizationUserReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, AuthorizationUser cannot be changed.</value>
+  </data>
+  <data name="CcsidNamesValuesInvalid" xml:space="preserve">
+    <value>The CCSID used for Names and Values, {0}, is invalid. It must be one of: 1200, 13488, 17584 and 1208.</value>
+  </data>
+  <data name="CertificateCollectionReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, CertificateCollection cannot be changed.</value>
+  </data>
+  <data name="ChannelNameReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, the Channel Name cannot be changed.</value>
+  </data>
+  <data name="CicsImsHeaders" xml:space="preserve">
+    <value>Only one CICS Bridge or IMS Bridge header is allowed per SendMessage.</value>
+  </data>
+  <data name="CloseQueueException" xml:space="preserve">
+    <value>Closing a Queue failed: {0}</value>
+  </data>
+  <data name="ConnectAsReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, ConnectAs cannot be changed.</value>
+  </data>
+  <data name="ConnectQueueManagerException" xml:space="preserve">
+    <value>Connecting to a Queue Manager failed: {0}</value>
+  </data>
+  <data name="DisconnectQueueManagerException" xml:space="preserve">
+    <value>Disconnecting from a Queue Manager failed: {0}</value>
+  </data>
+  <data name="EmptyPropertyValueXml" xml:space="preserve">
+    <value>The folder string content contained an invalid empty property. Only 'string' and 'bin.hex' properties may be empty.</value>
+  </data>
+  <data name="FolderAlreadyInHeader" xml:space="preserve">
+    <value>The folder has already been added to this header.</value>
+  </data>
+  <data name="FolderContentsNotParseable" xml:space="preserve">
+    <value>The folder string content could not be parsed to obtain its type.</value>
+  </data>
+  <data name="FolderContentsNotTag" xml:space="preserve">
+    <value>The contents of the folder do not agree with the name of the folder being created.</value>
+  </data>
+  <data name="FolderContentsNotType" xml:space="preserve">
+    <value>The contents of the folder do not agree with the specific folder type being created.</value>
+  </data>
+  <data name="FolderEmpty" xml:space="preserve">
+    <value>Folders may not be null or empty</value>
+  </data>
+  <data name="FolderNoHeader" xml:space="preserve">
+    <value>The folder has not been added to any header.</value>
+  </data>
+  <data name="FolderNotInHeader" xml:space="preserve">
+    <value>A folder can only be removed from the header to which it has been added.</value>
+  </data>
+  <data name="FolderOneHeader" xml:space="preserve">
+    <value>A folder can only be added to one header.</value>
+  </data>
+  <data name="FolderUnknownProperty" xml:space="preserve">
+    <value>The RF2 Header folder '{0}' contains an unknown property '{1}'.</value>
+  </data>
+  <data name="HeaderNull" xml:space="preserve">
+    <value>Headers may not be null</value>
+  </data>
+  <data name="HostReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, the Host cannot be changed.</value>
+  </data>
+  <data name="InvalidQueueAlias" xml:space="preserve">
+    <value>The Queue Alias '{0}' is not valid.</value>
+  </data>
+  <data name="InvalidQueueManagerAlias" xml:space="preserve">
+    <value>The Queue Manager Alias '{0}' is not valid.</value>
+  </data>
+  <data name="MixedModeOccurs" xml:space="preserve">
+    <value>Adding the property would result in mixed mode.</value>
+  </data>
+  <data name="MixedUsageOfRulesAndFormattingHeader" xml:space="preserve">
+    <value>Mixing the usage of the properties 'Folders' and any of 'CcsidForNamesAndValues', 'NumericEncodingForLengths' or Bytes' is not allowed.</value>
+  </data>
+  <data name="NonTransactionalInTransaction" xml:space="preserve">
+    <value>Send and Receive calls to a Non-Transactional Queue must occur outside a Transaction.</value>
+  </data>
+  <data name="NonTransactionalQNeedsNonTransactionalQm" xml:space="preserve">
+    <value>A Queue (non-Transactional) must be associated with a QueueManager (non-Transactional).</value>
+  </data>
+  <data name="OpenDoesntAllowReceiveWithoutOptions" xml:space="preserve">
+    <value>Receive without ReceiveOptions is not compatible with the Options specified at OpenForReceive.</value>
+  </data>
+  <data name="OpenQueueException" xml:space="preserve">
+    <value>Opening a Queue failed: {0}</value>
+  </data>
+  <data name="OpenSendWithShared" xml:space="preserve">
+    <value>The Shared OpenOption is incompatible with opening a Queue for Send.</value>
+  </data>
+  <data name="OpenWithNoQueueManager" xml:space="preserve">
+    <value>The Queue cannot be opened without a Queue Manager.</value>
+  </data>
+  <data name="PortReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, the Port cannot be changed.</value>
+  </data>
+  <data name="PositiveOrNoTruncation" xml:space="preserve">
+    <value>Value must be positive or the special value 'NoTruncation'</value>
+  </data>
+  <data name="PositiveOrUnlimited" xml:space="preserve">
+    <value>Value must be positive or the special value 'Unlimited'</value>
+  </data>
+  <data name="PropertiesWithSameName" xml:space="preserve">
+    <value>A property with the same name already exists.</value>
+  </data>
+  <data name="PropertyAlreadyInFolder" xml:space="preserve">
+    <value>The property has already been added to this folder.</value>
+  </data>
+  <data name="PropertyDotted" xml:space="preserve">
+    <value>This folder does not allow multi-part property names.</value>
+  </data>
+  <data name="PropertyNameAndValueNameDiffer" xml:space="preserve">
+    <value>The property value name does not agree with the index string.</value>
+  </data>
+  <data name="PropertyNameInvalid" xml:space="preserve">
+    <value>A property name cannot start or end with a '.', nor contain '..'.</value>
+  </data>
+  <data name="PropertyNoFolder" xml:space="preserve">
+    <value>The property has not been added to any folder.</value>
+  </data>
+  <data name="PropertyNotFoundInFolder" xml:space="preserve">
+    <value>The property was not found in the associated folder.</value>
+  </data>
+  <data name="PropertyNotFoundInMessage" xml:space="preserve">
+    <value>The property was not found in the message.</value>
+  </data>
+  <data name="PropertyNotInFolder" xml:space="preserve">
+    <value>A property can only be removed from the folder to which it has been added.</value>
+  </data>
+  <data name="PropertyNotInJmsMcd" xml:space="preserve">
+    <value>A property cannot be added to the 'jms' and 'mcd' folders.</value>
+  </data>
+  <data name="PropertyNotInMessage" xml:space="preserve">
+    <value>A property can only be removed from the message to which it has been added.</value>
+  </data>
+  <data name="PropertyOneFolder" xml:space="preserve">
+    <value>A property can only be added to one folder.</value>
+  </data>
+  <data name="QueueAlreadyOpened" xml:space="preserve">
+    <value>The Queue is already open.</value>
+  </data>
+  <data name="QueueCloseFailed" xml:space="preserve">
+    <value>Could not close the Queue '{0}': {1}.</value>
+  </data>
+  <data name="QueueManagerAlreadyConnected" xml:space="preserve">
+    <value>The Queue Manager is already connected.</value>
+  </data>
+  <data name="QueueManagerConnectFailed" xml:space="preserve">
+    <value>Could not Connect the Queue Manager '{0}': {1}.</value>
+  </data>
+  <data name="QueueManagerConnectMissingAuthorizationUser" xml:space="preserve">
+    <value>When Queue Manager is connected, if AuthorizationPassword is non-null, then AuthorizationUser must be a non-empty string.</value>
+  </data>
+  <data name="QueueManagerNameReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, the Name cannot be changed.</value>
+  </data>
+  <data name="QueueManagerNotConnected" xml:space="preserve">
+    <value>The Queue Manager is not connected.</value>
+  </data>
+  <data name="QueueManagerReadonlyAfterOpen" xml:space="preserve">
+    <value>Once the Queue is opened, the Queue Manager cannot be changed.</value>
+  </data>
+  <data name="QueueNameReadonlyAfterOpen" xml:space="preserve">
+    <value>Once the Queue is opened, the Name cannot be changed.</value>
+  </data>
+  <data name="QueueNotOpened" xml:space="preserve">
+    <value>The Queue is not open.</value>
+  </data>
+  <data name="QueueNotOpenedForReceive" xml:space="preserve">
+    <value>The Queue is not open for Receive.</value>
+  </data>
+  <data name="QueueNotOpenedForSend" xml:space="preserve">
+    <value>The Queue is not open for Send.</value>
+  </data>
+  <data name="QueueOpenFailed" xml:space="preserve">
+    <value>Could not open the Queue '{0}': {1}.</value>
+  </data>
+  <data name="QueueOpenFailedQmDisconnected" xml:space="preserve">
+    <value>Could not open the Queue '{0}', the associated Queue Manager '{1}' is not connected or has failed.</value>
+  </data>
+  <data name="QueueReceiveFailed" xml:space="preserve">
+    <value>Could not read from the Queue '{0}': {1}.</value>
+  </data>
+  <data name="QueueReceiveFailedQmDisconnected" xml:space="preserve">
+    <value>Could not receive as the associated Queue Manager '{0}' is not connected or has failed.</value>
+  </data>
+  <data name="QueueSendDataTooLong" xml:space="preserve">
+    <value>Could not send to the Queue as the Data is longer than the maximum allowed by the Queue Manager's Channel.</value>
+  </data>
+  <data name="QueueSendFailed" xml:space="preserve">
+    <value>Could not send to the Queue '{0}': {1}.</value>
+  </data>
+  <data name="QueueSendFailedQmDisconnected" xml:space="preserve">
+    <value>Could not send as the associated Queue Manager '{0}' is not connected or has failed.</value>
+  </data>
+  <data name="ReceiveFromQueueException" xml:space="preserve">
+    <value>Receive from a Queue failed: {0}</value>
+  </data>
+  <data name="ReceiveQueueNotAvailableForContextQm" xml:space="preserve">
+    <value>Passing context will not work, as the associated Queue is not on the same Queue Manager.</value>
+  </data>
+  <data name="ReceiveQueueNotAvailableForContextState" xml:space="preserve">
+    <value>Passing context will not work, as the associated Queue is not available.</value>
+  </data>
+  <data name="ReceiveWaitWith0Timeout" xml:space="preserve">
+    <value>Receive with Wait requires a non-zero Timeout.</value>
+  </data>
+  <data name="RulesAndFormattingHeaderQuotationMarks" xml:space="preserve">
+    <value>Could not parse the Rules and Formatting header. Mismatched Quotation Marks</value>
+  </data>
+  <data name="RulesAndFormattingHeaderSingleEndInvalid" xml:space="preserve">
+    <value>Could not parse the Rules and Formatting header. Ending Quotation Mark followed immediately by a non-blank character</value>
+  </data>
+  <data name="RulesAndFormattingHeaderUnescapedQuotationMarks" xml:space="preserve">
+    <value>Could not parse the Rules and Formatting header. Unescaped Quotation Mark found</value>
+  </data>
+  <data name="RulesAndFormattingHeaderValue" xml:space="preserve">
+    <value>Could not parse the Rules and Formatting header. Missing Value</value>
+  </data>
+  <data name="SendToQueueException" xml:space="preserve">
+    <value>Send to a Queue failed: {0}</value>
+  </data>
+  <data name="ServerCertificateThumbprintsReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, ServerCertificateThumbprints cannot be changed.</value>
+  </data>
+  <data name="StringListLengths" xml:space="preserve">
+    <value>In a StringList parameter, the strings could not all be made the same length</value>
+  </data>
+  <data name="TransactionalNotInTransaction" xml:space="preserve">
+    <value>Send and Receive calls to a Transactional Queue must occur in a Transaction.</value>
+  </data>
+  <data name="TransactionalQNeedsTransactionalQm" xml:space="preserve">
+    <value>A TransactionalQueue must be associated with a TransactionalQueueManager.</value>
+  </data>
+  <data name="TransactionalWrongThread" xml:space="preserve">
+    <value>Send and Receive calls to a Transactional Queue must all occur on the same Thread.</value>
+  </data>
+  <data name="UnknownBoolXml" xml:space="preserve">
+    <value>The folder string content contained an unparseable 'boolean' property. Only 'true', 'false', '1' and '0' are recognized.</value>
+  </data>
+  <data name="UnparseableIntProperty" xml:space="preserve">
+    <value>The RF2 Header folder '{0}' defined property '{1}' has the value '{2}' - this cannot beed parsed to a 4 byte integer.</value>
+  </data>
+  <data name="UnparseableLongProperty" xml:space="preserve">
+    <value>The RF2 Header folder '{0}' defined property '{1}' has the value '{2}' - this cannot beed parsed to an 8 byte integer.</value>
+  </data>
+  <data name="UpdateAsyncCountersException" xml:space="preserve">
+    <value>Updating Async Counters on a Queue Manager failed: {0}</value>
+  </data>
+  <data name="UseSslReadonlyAfterConnect" xml:space="preserve">
+    <value>Once the Queue Manager is connected, UseSsl cannot be changed.</value>
+  </data>
+  <data name="UsrPropertyDotted" xml:space="preserve">
+    <value>The property cannot have a name starting with 'usr.'.</value>
+  </data>
+</root>

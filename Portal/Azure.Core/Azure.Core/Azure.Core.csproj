@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D988F7E-ABDE-4046-A357-FF52BC51C66E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Azure.Core</RootNamespace>
+    <AssemblyName>Azure.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Memory.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.ValueTuple.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Azure\AsyncPageable.cs" />
+    <Compile Include="Azure\AzureCoreExtensions.cs" />
+    <Compile Include="Azure\AzureKeyCredential.cs" />
+    <Compile Include="Azure\AzureNamedKeyCredential.cs" />
+    <Compile Include="Azure\AzureSasCredential.cs" />
+    <Compile Include="Azure\Core\AccessToken.cs" />
+    <Compile Include="Azure\Core\AppContextSwitchHelper.cs" />
+    <Compile Include="Azure\Core\Argument.cs" />
+    <Compile Include="Azure\Core\ArrayBackedPropertyBag.cs" />
+    <Compile Include="Azure\Core\AsyncLockWithValue.cs" />
+    <Compile Include="Azure\Core\AuthorizationChallengeParser.cs" />
+    <Compile Include="Azure\Core\AzureKeyCredentialPolicy.cs" />
+    <Compile Include="Azure\Core\AzureLocation.cs" />
+    <Compile Include="Azure\Core\AzureSasCredentialSynchronousPolicy.cs" />
+    <Compile Include="Azure\Core\Base64Url.cs" />
+    <Compile Include="Azure\Core\BufferedReadStream.cs" />
+    <Compile Include="Azure\Core\Buffers\AzureBaseBuffersExtensions.cs" />
+    <Compile Include="Azure\Core\CallerShouldAuditAttribute.cs" />
+    <Compile Include="Azure\Core\CancellationHelper.cs" />
+    <Compile Include="Azure\Core\ChainingClassifier.cs" />
+    <Compile Include="Azure\Core\ClientOptions.cs" />
+    <Compile Include="Azure\Core\ContentType.cs" />
+    <Compile Include="Azure\Core\Cryptography\IKeyEncryptionKey.cs" />
+    <Compile Include="Azure\Core\Cryptography\IKeyEncryptionKeyResolver.cs" />
+    <Compile Include="Azure\Core\DefaultClientOptions.cs" />
+    <Compile Include="Azure\Core\DelayStrategy.cs" />
+    <Compile Include="Azure\Core\DelegatedTokenCredential.cs" />
+    <Compile Include="Azure\Core\DiagnosticsOptions.cs" />
+    <Compile Include="Azure\Core\Diagnostics\AzureCoreEventSource.cs" />
+    <Compile Include="Azure\Core\Diagnostics\AzureEventSource.cs" />
+    <Compile Include="Azure\Core\Diagnostics\AzureEventSourceListener.cs" />
+    <Compile Include="Azure\Core\DictionaryHeaders.cs" />
+    <Compile Include="Azure\Core\ExponentialDelayStrategy.cs" />
+    <Compile Include="Azure\Core\Extensions\IAzureClientBuilder.cs" />
+    <Compile Include="Azure\Core\Extensions\IAzureClientFactoryBuilder.cs" />
+    <Compile Include="Azure\Core\Extensions\IAzureClientFactoryBuilderWithConfiguration.cs" />
+    <Compile Include="Azure\Core\Extensions\IAzureClientFactoryBuilderWithCredential.cs" />
+    <Compile Include="Azure\Core\FixedDelayStrategy.cs" />
+    <Compile Include="Azure\Core\FixedDelayWithNoJitterStrategy.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoArray.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoBoundingBox.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoCollection.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoJsonConverter.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoLinearRing.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoLineString.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoLineStringCollection.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoObject.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoObjectType.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoPoint.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoPointCollection.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoPolygon.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoPolygonCollection.cs" />
+    <Compile Include="Azure\Core\GeoJson\GeoPosition.cs" />
+    <Compile Include="Azure\Core\HashCodeBuilder.cs" />
+    <Compile Include="Azure\Core\HttpHeader.cs" />
+    <Compile Include="Azure\Core\HttpMessage.cs" />
+    <Compile Include="Azure\Core\HttpMessageSanitizer.cs" />
+    <Compile Include="Azure\Core\HttpPipelinePosition.cs" />
+    <Compile Include="Azure\Core\InitializationConstructorAttribute.cs" />
+    <Compile Include="Azure\Core\IOperation.2.cs" />
+    <Compile Include="Azure\Core\IOperation.cs" />
+    <Compile Include="Azure\Core\JsonPatch\JsonPatchOperation.cs" />
+    <Compile Include="Azure\Core\JsonPatch\JsonPatchOperationKind.cs" />
+    <Compile Include="Azure\Core\Json\MutableJsonChange.cs" />
+    <Compile Include="Azure\Core\Json\MutableJsonChangeKind.cs" />
+    <Compile Include="Azure\Core\Json\MutableJsonDocument.cs" />
+    <Compile Include="Azure\Core\Json\MutableJsonElement.cs" />
+    <Compile Include="Azure\Core\KeyValueAccumulator.cs" />
+    <Compile Include="Azure\Core\MemoryResponse.cs" />
+    <Compile Include="Azure\Core\MessageProcessingContext.cs" />
+    <Compile Include="Azure\Core\MultipartBoundary.cs" />
+    <Compile Include="Azure\Core\MultipartReader.cs" />
+    <Compile Include="Azure\Core\MultipartReaderStream.cs" />
+    <Compile Include="Azure\Core\MultipartResponse.cs" />
+    <Compile Include="Azure\Core\MultipartSection.cs" />
+    <Compile Include="Azure\Core\OperationInternal.2.cs" />
+    <Compile Include="Azure\Core\OperationInternal.cs" />
+    <Compile Include="Azure\Core\OperationInternalBase.cs" />
+    <Compile Include="Azure\Core\OperationPoller.cs" />
+    <Compile Include="Azure\Core\OperationState.2.cs" />
+    <Compile Include="Azure\Core\OperationState.cs" />
+    <Compile Include="Azure\Core\Pipeline\ActivityExtensions.cs" />
+    <Compile Include="Azure\Core\Pipeline\BearerTokenAuthenticationPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ClientDiagnostics.cs" />
+    <Compile Include="Azure\Core\Pipeline\ClientRequestIdPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ContentTypeUtilities.cs" />
+    <Compile Include="Azure\Core\Pipeline\DefaultRequestFailedDetailsParser.cs" />
+    <Compile Include="Azure\Core\Pipeline\DiagnosticScope.cs" />
+    <Compile Include="Azure\Core\Pipeline\DiagnosticScopeFactory.cs" />
+    <Compile Include="Azure\Core\Pipeline\DisposableHttpPipeline.cs" />
+    <Compile Include="Azure\Core\Pipeline\GeoRedundantFallbackPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpClientTransport.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpEnvironmentProxy.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpEnvironmentProxyCredentials.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipeline.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineBuilder.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineOptions.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelinePolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineSynchronousPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineTransport.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineTransportOptions.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpPipelineTransportPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\HttpWebRequestTransport.cs" />
+    <Compile Include="Azure\Core\Pipeline\LoggingPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ReadClientRequestIdPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ReadOnlyStream.cs" />
+    <Compile Include="Azure\Core\Pipeline\ReadTimeoutStream.cs" />
+    <Compile Include="Azure\Core\Pipeline\RedirectPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\RequestActivityPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ResponseBodyPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\RetryPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ServerCertificateCustomValidationArgs.cs" />
+    <Compile Include="Azure\Core\Pipeline\ServicePointHelpers.cs" />
+    <Compile Include="Azure\Core\Pipeline\TaskExtensions.cs" />
+    <Compile Include="Azure\Core\Pipeline\TelemetryPolicy.cs" />
+    <Compile Include="Azure\Core\Pipeline\ThreadSafeRandom.cs" />
+    <Compile Include="Azure\Core\Pipeline\UserAgentValueKey.cs" />
+    <Compile Include="Azure\Core\RehydrationToken.cs" />
+    <Compile Include="Azure\Core\Request.cs" />
+    <Compile Include="Azure\Core\RequestContent.cs" />
+    <Compile Include="Azure\Core\RequestFailedDetailsParser.cs" />
+    <Compile Include="Azure\Core\RequestHeaders.cs" />
+    <Compile Include="Azure\Core\RequestMethod.cs" />
+    <Compile Include="Azure\Core\RequestUriBuilder.cs" />
+    <Compile Include="Azure\Core\ResourceIdentifier.cs" />
+    <Compile Include="Azure\Core\ResourceType.cs" />
+    <Compile Include="Azure\Core\ResponseClassificationHandler.cs" />
+    <Compile Include="Azure\Core\ResponseClassifier.cs" />
+    <Compile Include="Azure\Core\ResponseHeaders.cs" />
+    <Compile Include="Azure\Core\RetryMode.cs" />
+    <Compile Include="Azure\Core\RetryOptions.cs" />
+    <Compile Include="Azure\Core\RuntimeInformationWrapper.cs" />
+    <Compile Include="Azure\Core\SequentialDelayStrategy.cs" />
+    <Compile Include="Azure\Core\SerializationConstructorAttribute.cs" />
+    <Compile Include="Azure\Core\Serialization\DynamicData.cs" />
+    <Compile Include="Azure\Core\Serialization\DynamicDataOptions.cs" />
+    <Compile Include="Azure\Core\Serialization\DynamicDataProperty.cs" />
+    <Compile Include="Azure\Core\Serialization\IMemberNameConverter.cs" />
+    <Compile Include="Azure\Core\Serialization\JsonObjectSerializer.cs" />
+    <Compile Include="Azure\Core\Serialization\JsonPropertyNames.cs" />
+    <Compile Include="Azure\Core\Serialization\ObjectSerializer.cs" />
+    <Compile Include="Azure\Core\Shared\EventSourceEventFormatting.cs" />
+    <Compile Include="Azure\Core\StatusCodeClassifier.cs" />
+    <Compile Include="Azure\Core\StreamHelperExtensions.cs" />
+    <Compile Include="Azure\Core\StringExtensions.cs" />
+    <Compile Include="Azure\Core\SyncAsyncEventHandler.cs" />
+    <Compile Include="Azure\Core\TelemetryDetails.cs" />
+    <Compile Include="Azure\Core\TokenCredential.cs" />
+    <Compile Include="Azure\Core\TokenRequestContext.cs" />
+    <Compile Include="Azure\Core\TypeReferenceTypeAttribute.cs" />
+    <Compile Include="Azure\Core\VoidValue.cs" />
+    <Compile Include="Azure\ErrorOptions.cs" />
+    <Compile Include="Azure\ETag.cs" />
+    <Compile Include="Azure\ETagConverter.cs" />
+    <Compile Include="Azure\HttpAuthorization.cs" />
+    <Compile Include="Azure\HttpRange.cs" />
+    <Compile Include="Azure\JsonPatchDocument.cs" />
+    <Compile Include="Azure\MatchConditions.cs" />
+    <Compile Include="Azure\Messaging\CloudEvent.cs" />
+    <Compile Include="Azure\Messaging\CloudEventConstants.cs" />
+    <Compile Include="Azure\Messaging\CloudEventConverter.cs" />
+    <Compile Include="Azure\Messaging\CloudEventDataFormat.cs" />
+    <Compile Include="Azure\Messaging\CloudEventExtensionAttributes.cs" />
+    <Compile Include="Azure\Messaging\MessageContent.cs" />
+    <Compile Include="Azure\NullableResponse.cs" />
+    <Compile Include="Azure\Operation.2.cs" />
+    <Compile Include="Azure\Operation.cs" />
+    <Compile Include="Azure\Page.cs" />
+    <Compile Include="Azure\Pageable.cs" />
+    <Compile Include="Azure\PageableOperation.cs" />
+    <Compile Include="Azure\RequestConditions.cs" />
+    <Compile Include="Azure\RequestContext.cs" />
+    <Compile Include="Azure\RequestFailedException.cs" />
+    <Compile Include="Azure\Response.2.cs" />
+    <Compile Include="Azure\Response.cs" />
+    <Compile Include="Azure\ResponseDebugView.cs" />
+    <Compile Include="Azure\ResponseError.cs" />
+    <Compile Include="Azure\ResponseInnerError.cs" />
+    <Compile Include="Azure\SyncAsyncEventArgs.cs" />
+    <Compile Include="Azure\ValueResponse.cs" />
+    <Compile Include="Azure\WaitUntil.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\AllowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DisallowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnIfAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicallyAccessedMembersAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicallyAccessedMemberTypes.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicDependencyAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullIfNotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\RequiresDynamicCodeAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\RequiresUnreferencedCodeAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\UnconditionalSuppressMessageAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsByRefLikeAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\ScopedRefAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

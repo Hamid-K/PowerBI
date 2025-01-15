@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccentSensitivity" xml:space="preserve">
+    <value>指出資料是否區分腔調字。</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>與報表項目相關聯的動作，例如超連結。</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>報表的作者。</value>
+  </data>
+  <data name="AutoRefresh" xml:space="preserve">
+    <value>在 HTML 中轉譯時，報表頁面自動重新整理的速率，以秒為單位。</value>
+  </data>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>背景色彩。</value>
+  </data>
+  <data name="BackgroundImage" xml:space="preserve">
+    <value>報表項目的背景影像。</value>
+  </data>
+  <data name="BackgroundRepeat" xml:space="preserve">
+    <value>指出背景影像如何重複，以填滿可用的空間。</value>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>書籤動作的可能目標。</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>框線色彩。</value>
+  </data>
+  <data name="BorderColorBottom" xml:space="preserve">
+    <value>下框線的色彩。</value>
+  </data>
+  <data name="BorderColorDefault" xml:space="preserve">
+    <value>框線的色彩，除非針對特定的邊覆寫此屬性。</value>
+  </data>
+  <data name="BorderColorLeft" xml:space="preserve">
+    <value>左框線的色彩。</value>
+  </data>
+  <data name="BorderColorRight" xml:space="preserve">
+    <value>右框線的色彩。</value>
+  </data>
+  <data name="BorderColorTop" xml:space="preserve">
+    <value>上框線的色彩。</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>框線的樣式。</value>
+  </data>
+  <data name="BorderStyleBottom" xml:space="preserve">
+    <value>下框線的樣式。</value>
+  </data>
+  <data name="BorderStyleDefault" xml:space="preserve">
+    <value>框線的樣式，除非針對特定的邊覆寫此屬性。</value>
+  </data>
+  <data name="BorderStyleLeft" xml:space="preserve">
+    <value>左框線的樣式。</value>
+  </data>
+  <data name="BorderStyleRight" xml:space="preserve">
+    <value>右框線的樣式。</value>
+  </data>
+  <data name="BorderStyleTop" xml:space="preserve">
+    <value>上框線的樣式。</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>框線的寬度。</value>
+  </data>
+  <data name="BorderWidthBottom" xml:space="preserve">
+    <value>下框線的寬度。</value>
+  </data>
+  <data name="BorderWidthDefault" xml:space="preserve">
+    <value>框線的寬度，除非針對特定的邊覆寫此屬性。</value>
+  </data>
+  <data name="BorderWidthLeft" xml:space="preserve">
+    <value>左框線的寬度。</value>
+  </data>
+  <data name="BorderWidthRight" xml:space="preserve">
+    <value>右框線的寬度。</value>
+  </data>
+  <data name="BorderWidthTop" xml:space="preserve">
+    <value>上框線的寬度。</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>指出用來格式化日期的日曆。</value>
+  </data>
+  <data name="CanGrow" xml:space="preserve">
+    <value>決定是否自動調整文字方塊的大小，以配合長度較長的值。</value>
+  </data>
+  <data name="CanShrink" xml:space="preserve">
+    <value>決定是否壓縮文字方塊，以符合較小的值。</value>
+  </data>
+  <data name="CaseSensitivity" xml:space="preserve">
+    <value>指出資料是否區分大小寫。</value>
+  </data>
+  <data name="CellDataElementName" xml:space="preserve">
+    <value>資料格元素的名稱。</value>
+  </data>
+  <data name="CellDataElementOutput" xml:space="preserve">
+    <value>指出在資料轉譯時是否顯示資料格內容。</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>要在圖表中顯示的資料欄位。</value>
+  </data>
+  <data name="ChartDefinition" xml:space="preserve">
+    <value>圖表定義。</value>
+  </data>
+  <data name="ChartParameters" xml:space="preserve">
+    <value>圖表的參數。</value>
+  </data>
+  <data name="ClassID" xml:space="preserve">
+    <value>控制項的類別識別碼。</value>
+  </data>
+  <data name="Classes" xml:space="preserve">
+    <value>報表初始化期間要具現化的類別。</value>
+  </data>
+  <data name="CodeBase" xml:space="preserve">
+    <value>用來下載控制項的程式碼基底 URL。</value>
+  </data>
+  <data name="CodeModules" xml:space="preserve">
+    <value>可在報表的運算式中使用的組件。</value>
+  </data>
+  <data name="Collation" xml:space="preserve">
+    <value>排序資料時用來定序的地區設定。</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>文字的色彩。</value>
+  </data>
+  <data name="ColumnSpacing" xml:space="preserve">
+    <value>各資料行之間的間距。</value>
+  </data>
+  <data name="ColumnWidth" xml:space="preserve">
+    <value>各資料行的寬度。</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>已轉譯報表的資料行數目。</value>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>資料來源的連接字串。</value>
+  </data>
+  <data name="DataElementName" xml:space="preserve">
+    <value>此報表項目的資料元素或屬性的名稱。</value>
+  </data>
+  <data name="DataElementOutput" xml:space="preserve">
+    <value>指出在資料轉譯時是否顯示此項目。</value>
+  </data>
+  <data name="DataElementStyle" xml:space="preserve">
+    <value>指出文字方塊應轉譯成元素或屬性。</value>
+  </data>
+  <data name="DataInstanceElementOutput" xml:space="preserve">
+    <value>指出在資料轉譯時是否顯示清單執行個體。</value>
+  </data>
+  <data name="DataInstanceName" xml:space="preserve">
+    <value>此清單中每一個執行個體的資料元素所用的名稱。</value>
+  </data>
+  <data name="DataSchema" xml:space="preserve">
+    <value>轉譯報表資料時所用的結構描述或命名空間。</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>此資料區域所用的資料集。</value>
+  </data>
+  <data name="DataSourceType" xml:space="preserve">
+    <value>資料來源類型。</value>
+  </data>
+  <data name="DataTransform" xml:space="preserve">
+    <value>套用至報表資料轉譯的轉換。</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>報表的描述。</value>
+  </data>
+  <data name="DetailDataCollectionName" xml:space="preserve">
+    <value>針對此群組的所有執行個體，指定集合的資料元素名稱。</value>
+  </data>
+  <data name="DetailDataElementName" xml:space="preserve">
+    <value>此群組之執行個體的資料元素名稱。</value>
+  </data>
+  <data name="DetailDataElementOutput" xml:space="preserve">
+    <value>指出在轉譯資料時是否顯示詳細資料。</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>指出是由左至右或由右至左撰寫文字。</value>
+  </data>
+  <data name="DrawGrid" xml:space="preserve">
+    <value>指出定位方格是否可見。</value>
+  </data>
+  <data name="EmbeddedImages" xml:space="preserve">
+    <value>報表的內嵌影像。</value>
+  </data>
+  <data name="EndPoint" xml:space="preserve">
+    <value>線條端點的位置。</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>套用至資料區域的篩選集合。</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>用來顯示文字的字型。</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>字型家族的名稱。</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>字型大小。</value>
+  </data>
+  <data name="FontStyle" xml:space="preserve">
+    <value>字型樣式。</value>
+  </data>
+  <data name="FontWeight" xml:space="preserve">
+    <value>字型粗細。</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>格式化字串。</value>
+  </data>
+  <data name="GridSize" xml:space="preserve">
+    <value>決定定位方格的大小。</value>
+  </data>
+  <data name="Grouping" xml:space="preserve">
+    <value>用來將資料分組的運算式。</value>
+  </data>
+  <data name="GroupsBeforeRowHeaders" xml:space="preserve">
+    <value>可以顯示在資料列標頭左邊的最外側資料行群組的執行個體數目 (若為由右至左的矩陣，則在資料列標頭右邊)。</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>報表區段的高度。</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>指出起初是否隱藏此項目。</value>
+  </data>
+  <data name="HideDuplicates" xml:space="preserve">
+    <value>當項目的值等於先前資料列中相同項目的值時，則會隱藏此項目。此屬性的值，是要隱藏的項目所屬群組或資料集的名稱。</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>影像來源的類型。</value>
+  </data>
+  <data name="ImageValue" xml:space="preserve">
+    <value>影像來源。</value>
+  </data>
+  <data name="KanatypeSensitivity" xml:space="preserve">
+    <value>指出資料是否區分假名。</value>
+  </data>
+  <data name="KeepTogether" xml:space="preserve">
+    <value>指出資料區域 (所有重複的區段) 應該盡可能保存在同一個頁面上。</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>識別文件引導模式中報表項目執行個體的標籤。</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>文字的主要語言。</value>
+  </data>
+  <data name="LayoutDirection" xml:space="preserve">
+    <value>指出矩陣資料行是由左至右或由右至左展開。</value>
+  </data>
+  <data name="LineColor" xml:space="preserve">
+    <value>線條的色彩。</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>文字行的高度。</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>線條的樣式。</value>
+  </data>
+  <data name="LineWidth" xml:space="preserve">
+    <value>線條的寬度。</value>
+  </data>
+  <data name="LinkToChild" xml:space="preserve">
+    <value>文件引導模式標籤之目標報表項目的名稱。此報表項目必須直接包含在目前的報表項目內。</value>
+  </data>
+  <data name="ListFillPage" xml:space="preserve">
+    <value>指出是否將清單展開至頁面下方。</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>報表項目左上角距離容器的位置。</value>
+  </data>
+  <data name="MIMEType" xml:space="preserve">
+    <value>影像的 MIME 類型。</value>
+  </data>
+  <data name="Margins" xml:space="preserve">
+    <value>報表的邊界。</value>
+  </data>
+  <data name="MatrixGroupings" xml:space="preserve">
+    <value>矩陣的資料列與資料行群組的集合。</value>
+  </data>
+  <data name="MergeTransactions" xml:space="preserve">
+    <value>指出如果父報表和子報表的資料來源使用相同的連接，則兩份報表的交易會合併。如此會將兩個報表的交易結合成單一交易。</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>報表項目的名稱。</value>
+  </data>
+  <data name="NoRows" xml:space="preserve">
+    <value>沒有資料列可用時，要在資料區域中顯示的訊息。</value>
+  </data>
+  <data name="NumeralLanguage" xml:space="preserve">
+    <value>依其主要語言所述要使用的數字格式。</value>
+  </data>
+  <data name="NumeralVariant" xml:space="preserve">
+    <value>要使用之數字格式的變數。</value>
+  </data>
+  <data name="OverwriteDataSources" xml:space="preserve">
+    <value>指出在部署專案時是否可以覆寫報表伺服器上的資料來源定義。</value>
+  </data>
+  <data name="Padding" xml:space="preserve">
+    <value>物件內填補的量。</value>
+  </data>
+  <data name="PaddingBottom" xml:space="preserve">
+    <value>物件下方填補的量。</value>
+  </data>
+  <data name="PaddingLeft" xml:space="preserve">
+    <value>物件左方填補的量。</value>
+  </data>
+  <data name="PaddingRight" xml:space="preserve">
+    <value>物件右方填補的量。</value>
+  </data>
+  <data name="PaddingTop" xml:space="preserve">
+    <value>物件上方填補的量。</value>
+  </data>
+  <data name="PageBreakAtEnd" xml:space="preserve">
+    <value>指定轉譯延伸模組在群組結尾插入分頁符號。</value>
+  </data>
+  <data name="PageBreakAtStart" xml:space="preserve">
+    <value>指定轉譯延伸模組在群組開頭插入分頁符號。</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>報表中頁面的預設大小。</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>包含報表項目的名稱。</value>
+  </data>
+  <data name="PreviewAs" xml:space="preserve">
+    <value>PreviewAs</value>
+  </data>
+  <data name="PrintOnFirstPage" xml:space="preserve">
+    <value>指定頁首或頁尾包含在報表的第一頁中。</value>
+  </data>
+  <data name="PrintOnLastPage" xml:space="preserve">
+    <value>指定頁首或頁尾包含在報表的最後一頁中。</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>取得報表資料所執行的查詢。</value>
+  </data>
+  <data name="RepeatFooterOnNewPage" xml:space="preserve">
+    <value>指出包含資料表的每一頁是否顯示頁尾。</value>
+  </data>
+  <data name="RepeatHeaderOnNewPage" xml:space="preserve">
+    <value>指出包含資料表的每一頁是否顯示頁首。</value>
+  </data>
+  <data name="RepeatOnNewPage" xml:space="preserve">
+    <value>指出包含資料表的每一頁是否顯示頁首或頁尾的所有資料列。</value>
+  </data>
+  <data name="RepeatWith" xml:space="preserve">
+    <value>資料區域跨越多頁時，此報表項目應該重複的資料區域名稱。</value>
+  </data>
+  <data name="ReportDataElementName" xml:space="preserve">
+    <value>代表報表資料的最上層元素名稱。</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>顯示為子報表的報表 URL。</value>
+  </data>
+  <data name="ReportParameters" xml:space="preserve">
+    <value>報表的參數。</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>資料列的高度。</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>報表項目的大小。</value>
+  </data>
+  <data name="Sizing" xml:space="preserve">
+    <value>影像與指定大小不一致時的外觀。</value>
+  </data>
+  <data name="SnapToGrid" xml:space="preserve">
+    <value>決定控制項是否貼齊定位方格。</value>
+  </data>
+  <data name="StartItem" xml:space="preserve">
+    <value>啟動偵錯工具時要執行的報表。</value>
+  </data>
+  <data name="SubreportParameters" xml:space="preserve">
+    <value>傳遞至子報表的參數。</value>
+  </data>
+  <data name="SubreportReportName" xml:space="preserve">
+    <value>子報表的路徑。</value>
+  </data>
+  <data name="SubtotalDataElementName" xml:space="preserve">
+    <value>此小計所用的名稱。</value>
+  </data>
+  <data name="SubtotalPosition" xml:space="preserve">
+    <value>指出此小計資料行或資料列是否應顯示在詳細資料的資料行與資料列之前 (上或左) 或之後 (下或右)。</value>
+  </data>
+  <data name="TableFillPage" xml:space="preserve">
+    <value>指出是否將資料表展開至頁面下方。</value>
+  </data>
+  <data name="TableGroups" xml:space="preserve">
+    <value>資料表群組 (群組運算式、頁首和頁尾)。</value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>包含已部署專案的資料夾路徑。</value>
+  </data>
+  <data name="TargetServerURL" xml:space="preserve">
+    <value>部署專案的報表伺服器 URL，例如 http://hostname/ReportServer。</value>
+  </data>
+  <data name="TextAlign" xml:space="preserve">
+    <value>水平對齊文字。</value>
+  </data>
+  <data name="TextDecoration" xml:space="preserve">
+    <value>指定特殊文字格式。</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>在文字方塊中顯示其值的運算式。</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>報表項目的文字標籤，可用於轉譯 HTML 報表中的 TITLE 和 ALT 屬性等用途上。</value>
+  </data>
+  <data name="ToggleImage" xml:space="preserve">
+    <value>決定切換影像的初始狀態。</value>
+  </data>
+  <data name="ToggleItem" xml:space="preserve">
+    <value>用來隱藏或顯示此報表項目的文字方塊名稱。</value>
+  </data>
+  <data name="UnicodeBiDi" xml:space="preserve">
+    <value>指出雙向文字如何內嵌於項目的主文字之中。</value>
+  </data>
+  <data name="VerticalAlign" xml:space="preserve">
+    <value>垂直對齊文字。</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>指出是否隱藏此項目。</value>
+  </data>
+  <data name="WidthSensitivity" xml:space="preserve">
+    <value>指出資料是否區分全半形。</value>
+  </data>
+  <data name="WritingMode" xml:space="preserve">
+    <value>指出是以水平或垂直方式撰寫文字。</value>
+  </data>
+  <data name="Zindex" xml:space="preserve">
+    <value>在包含物件之內，報表項目的繪圖順序。</value>
+  </data>
+</root>

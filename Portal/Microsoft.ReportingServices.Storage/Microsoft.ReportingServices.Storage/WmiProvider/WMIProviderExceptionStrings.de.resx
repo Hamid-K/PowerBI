@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCodes_ASPNetNotRegistered" xml:space="preserve">
+    <value>ASP.NET ist auf dem Computer nicht registriert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_AlreadyActivated" xml:space="preserve">
+    <value>Der Berichtsserver ist bereits initialisiert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ApplicationPoolAlreadyExists" xml:space="preserve">
+    <value>Der Anwendungspool ist bereits vorhanden. Geben Sie einen eindeutigen Namen für den Anwendungspool an.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPool" xml:space="preserve">
+    <value>Der Anwendungspool ist nicht vorhanden. Geben Sie den Namen eines vorhandenen Anwendungspools an.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPoolName" xml:space="preserve">
+    <value>Der angegebene Anwendungspool ist ungültig. Stellen Sie sicher, dass der angegebene Name nicht zu lang ist und keine unzulässigen Zeichen enthält. (Beispiel: /)
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadConfigurationFile" xml:space="preserve">
+    <value>Konfigurationsproblem beim Berichtsserver.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadCredentialsType" xml:space="preserve">
+    <value>Der Anmeldeinformationstyp ist ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadLcid" xml:space="preserve">
+    <value>Der Gebietsschemabezeichner (Locale ID, LCID) ist ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadVerson" xml:space="preserve">
+    <value>Die Version stimmt mit keiner unterstützten Version überein.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadWebsiteConfiguration" xml:space="preserve">
+    <value>Der Anwendungspool ist ungültig. Geben Sie einen verfügbaren Anwendungspool an, und wiederholen Sie den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_CantConnectCatalog" xml:space="preserve">
+    <value>Eine Verbindung mit der Berichtsserver-Datenbank kann nicht hergestellt werden. Überprüfen Sie, ob im Netzwerk auf die SQL Server-Datenbank zugegriffen werden kann.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ConfigurationFileNotFound" xml:space="preserve">
+    <value>Die Konfigurationsdatei für den Berichtsserver wurde nicht gefunden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_FailedToEnumerateInstances" xml:space="preserve">
+    <value>Fehler beim Aufzählen der WMI-Instanzen.   </value>
+  </data>
+  <data name="ErrorCodes_FailedToLoadResources" xml:space="preserve">
+    <value>Die zum Abschluss dieses Vorgangs erforderlichen Ressourcen wurden nicht gefunden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_GrantLoginToPasswordRequired" xml:space="preserve">
+    <value>Für das Benutzerkonto ist ein Kennwort erforderlich.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IISNotInstalled" xml:space="preserve">
+    <value>Die Internetinformationsdienste (IIS) sind auf diesem Computer nicht installiert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IllformedAccountString" xml:space="preserve">
+    <value>Der Kontoname ist ungültig. Geben Sie ein Konto im Format "Domäne"\"Alias" an.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InsufficientPrivilege" xml:space="preserve">
+    <value>Sie verfügen nicht über die erforderlichen Berechtigungen zum Ausführen dieses Tasks. Geben Sie ein Benutzerkonto mit Administratorprivilegien an, und wiederholen Sie dann den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidIISPath" xml:space="preserve">
+    <value>Ein bei der Verwendung von IIS angegebener ADSI-Pfad war ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidParameter" xml:space="preserve">
+    <value>Mindestens ein Parameter war ungültig. Geben Sie alle Parameter an, und wiederholen Sie den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidPortNumber" xml:space="preserve">
+    <value>Die Portnummer ist ungültig. Das virtuelle Verzeichnis für den Berichtsserver muss die Portnummer der übergeordneten Website verwenden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidSecureConnectionLevel" xml:space="preserve">
+    <value>Die sichere Verbindungsebene ist ungültig. Geben Sie einen der folgenden Werte an: "0", "1", "2" oder "3".
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUrlParameterSet" xml:space="preserve">
+    <value>Die beim Aufrufen des WMI-Anbieters übergebene URL war ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUser" xml:space="preserve">
+    <value>Das angegebene Benutzerkonto ist ungültig, oder das Kennwort ist falsch.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidVersionString" xml:space="preserve">
+    <value>Das Format der Versionszeichenfolge ist ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_LocalServiceIsLocalOnly" xml:space="preserve">
+    <value>Sie können "LocalSystem" nicht angeben, wenn Sie eine Verbindung mit einem Remote-Datenbankserver herstellen.
+
+</value>
+  </data>
+  <data name="ErrorCodes_MustCreateVirtualDirectory" xml:space="preserve">
+    <value>Vor der Ausführung dieses Vorgangs muss ein virtuelles Verzeichnis erstellt werden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAdmin" xml:space="preserve">
+    <value>Sie verfügen nicht über die erforderlichen Berechtigungen zum Ausführen dieses Tasks. Das angegebene Benutzerkonto hat keine Administratorprivilegien auf dem Computer "{0}". Geben Sie ein Benutzerkonto mit Administratorprivilegien an, und wiederholen Sie dann den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAnnounced" xml:space="preserve">
+    <value>In der Berichtsserver-Datenbank fehlen Schlüsselinformationen für den Berichtsserver. Überprüfen Sie zum Hinzufügen eines Schlüssels, ob der Berichtsserver-Windows-Dienst ausgeführt wird, und stellen Sie dann eine Verbindung mit dem Berichtsserver-Webdienst her.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInNativeMode" xml:space="preserve">
+    <value>Dieser Vorgang wird nur auf einem Berichtsserver unterstützt, der für den integrierten SharePoint-Modus konfiguriert ist. Dieser Vorgang kann auf einem Berichtsserver im einheitlichen Modus nicht ausgeführt werden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInSharePointMode" xml:space="preserve">
+    <value>Dieser Vorgang wird im integrierten SharePoint-Modus nicht unterstützt. Weitere Informationen zu unterstützten Vorgängen finden Sie in der Produktdokumentation.
+
+</value>
+  </data>
+  <data name="ErrorCodes_OperatingSystemNotSupported" xml:space="preserve">
+    <value>Das Betriebssystem wird nicht unterstützt.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RPCServerNotListening" xml:space="preserve">
+    <value>Fehler beim Herstellen einer Verbindung mit dem Endpunkt des Remoteprozeduraufrufs (RPC) für den Berichtsserver. Überprüfen Sie, ob der Berichtsserver-Windows-Dienst ausgeführt wird, und wiederholen Sie dann den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionLevelType" xml:space="preserve">
+    <value>Die erweiterte Schutzebene ist ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionScenarioType" xml:space="preserve">
+    <value>Das erweiterte Schutzszenario ist ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>Die E-Mail-Übermittlungserweiterung wurde in der Konfigurationsdatei nicht gefunden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidApplication" xml:space="preserve">
+    <value>Die Anwendung ist ungültig. Die einzigen gültigen Anwendungen sind ReportServerWebService, ReportManager, ReportServerWebApp und PowerBIWebApp.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidSSLCertificate" xml:space="preserve">
+    <value>Das Zertifikat ist nicht vertrauenswürdig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsIpAddressNotFound" xml:space="preserve">
+    <value>Die IP-Adresse wurde auf dem Computer nicht gefunden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsLocalServiceNotAllowedXP" xml:space="preserve">
+    <value>Das Konto "Lokaler Dienst" ist unter Windows XP ungültig.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineApplicationFirst" xml:space="preserve">
+    <value>Die Anwendung wurde nicht gefunden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineAuthenticationFirst" xml:space="preserve">
+    <value>Die Authentifizierung ist nicht definiert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLBindingConflict" xml:space="preserve">
+    <value>Es ist bereits eine HTTPS-Bindung für die angegebene Kombination aus IP-Adresse und Port vorhanden. In der vorhandenen Bindung wird ein anderes Zertifikat aus der aktuellen Anforderung verwendet. Für jede Kombination aus IP-Adresse und Port kann nur ein Zertifikat verwendet werden. Verwenden Sie entweder dasselbe Zertifikat wie in der vorhandenen Bindung, oder entfernen Sie die vorhandene HTTPS-Bindung, und erstellen Sie anhand des Zertifikats der aktuellen Anforderung eine neue Bindung, um das Problem zu beheben.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLCertificateNotRegistered" xml:space="preserve">
+    <value>Das Zertifikat ist nicht registriert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsServerConfigurationError" xml:space="preserve">
+    <value>Der Berichtsserver kann nicht gestartet werden. Mindestens eine Konfigurationsdatei ist ungültig. Weitere Informationen finden Sie in den Protokolldateien.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointError" xml:space="preserve">
+    <value>Der Vorgang konnte aufgrund eines Fehlers beim Aufrufen der Objektmodellmethoden von Windows SharePoint Services nicht erfolgreich ausgeführt werden.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Der Vorgang konnte nicht erfolgreich ausgeführt werden, da das Objektmodell von Windows SharePoint Services auf dem Berichtsserver nicht installiert ist.  Installieren und konfigurieren Sie Windows SharePoint Services, und wiederholen Sie dann die Anforderung.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLAlreadyReserved" xml:space="preserve">
+    <value>Die URL wurde bereits reserviert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLMustNotExist" xml:space="preserve">
+    <value>Der WMI-Anbieter für den Berichtsserver kann das virtuelle Verzeichnis nicht erstellen. Dieser Fehler tritt auf, wenn Sie "SetVirtualDirectory" aufrufen und "UrlString" bereits reserviert ist. Um fortzufahren, löschen Sie alle URL-Reservierungen, indem Sie "RemoveURL" aufrufen und den Vorgang dann wiederholen.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLNotReserved" xml:space="preserve">
+    <value>Die URL ist in der Konfigurationsdatei aufgeführt, sie ist jedoch nicht für "httpsys" reserviert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsUrlAlreadyReservedDifferentName" xml:space="preserve">
+    <value>Die URL wurde bereits für ein anderes Benutzerkonto reserviert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsexecRoleDoesNotExist" xml:space="preserve">
+    <value>Die RSExec-Datenbankrolle ist in der Datenbank nicht vorhanden. Überprüfen Sie, ob die Datenbank eine Berichtsserver-Datenbank ist.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceDisabled" xml:space="preserve">
+    <value>Der Reporting Services-Windows-Dienst wurde deaktiviert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceNotActivated" xml:space="preserve">
+    <value>Der Reporting Services-Windows-Dienst wurde nicht aktiviert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SharePointNotInstalled" xml:space="preserve">
+    <value>Windows SharePoint Services ist nicht installiert. Eine Instanz von Windows SharePoint Services ist zum Ausführen des aktuellen Vorgangs erforderlich.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SqlAdminUserInsufficientPrivilege" xml:space="preserve">
+    <value>Sie verfügen nicht über die erforderlichen Berechtigungen zum Ausführen dieses Tasks in der SQL Server-Datenbank. Geben Sie ein SQL Server-Benutzerkonto mit Administratorprivilegien an, und wiederholen Sie dann den Vorgang.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SslCertificateNotFound" xml:space="preserve">
+    <value>Für diese Website ist kein HTTPS-Zertifikat konfiguriert.
+
+</value>
+  </data>
+  <data name="ErrorCodes_Success" xml:space="preserve">
+    <value>Der Vorgang wurde erfolgreich abgeschlossen.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseError" xml:space="preserve">
+    <value>Fehler beim Ausführen eines Skripts für die SQL Server-Datenbank-Engine.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseResult" xml:space="preserve">
+    <value>Von der Datenbankabfrage wurde ein unerwartetes Ergebnis erstellt.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnknownOrUnmappedException" xml:space="preserve">
+    <value>Unbekannter Fehler des WMI-Anbieters. Fehlercode {0:X}
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryAlreadyExists" xml:space="preserve">
+    <value>Das angegebene virtuelle Verzeichnis ist bereits vorhanden. Geben Sie einen anderen Namen an.
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryInvalid" xml:space="preserve">
+    <value>Das angegebene virtuelle Verzeichnis ist ungültig. Stellen Sie sicher, dass der angegebene Name nicht zu lang ist und keine unzulässigen Zeichen enthält. (Beispiel: ";")
+
+</value>
+  </data>
+  <data name="ErrorCodes_WebServiceAccountNotSet" xml:space="preserve">
+    <value>Das Dienstkonto für den Berichtsserver-Webdienst ist nicht festgelegt.
+
+</value>
+  </data>
+  <data name="ErrorCodes_WindowsServiceAccountNotSet" xml:space="preserve">
+    <value>Das Dienstkonto für den Berichtsserver-Windows-Dienst ist nicht festgelegt.
+
+</value>
+  </data>
+  <data name="Exception_Generic" xml:space="preserve">
+    <value>Unerwarteter Fehler. Details:
+
+{0}</value>
+  </data>
+  <data name="GenericWMIError" xml:space="preserve">
+    <value>WMI-Fehler. Weitere Informationen sind nicht verfügbar.</value>
+  </data>
+  <data name="GenericWMIErrorWithCode" xml:space="preserve">
+    <value>WMI-Fehler. Folgender Fehler wurde zurückgegeben:
+
+{0}.</value>
+  </data>
+  <data name="ManagementException_AccessDenied" xml:space="preserve">
+    <value>Mit dem Computer kann keine Verbindung hergestellt werden.</value>
+  </data>
+  <data name="ManagementException_Generic" xml:space="preserve">
+    <value>Fehler beim WMI-Anbieter für den Berichtsserver:
+
+{0}</value>
+  </data>
+  <data name="UnableToConnect" xml:space="preserve">
+    <value>Die Verbindung mit dem Berichtsserver "{0}" kann nicht hergestellt werden.</value>
+  </data>
+</root>

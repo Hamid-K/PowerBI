@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>Создание, просмотр, изменение и удаление комментариев в отчетах.</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>Комментарий к отчетам</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>Просмотр и изменение настроек безопасности для отчетов, папок, ресурсов и общих источников данных.</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>Установка безопасности для отдельных элементов</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>Считывание определений отчетов</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>Использование отчетов</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>Создание связанных отчетов и их публикация в папке сервера отчетов.</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>Создание связанных отчетов</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>Выполнение начинается с определения отчета без его публикации на сервере отчетов.</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>Выполнение определений отчета</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>Приложение приобретает способность создавать события в рамках пространства имен сервера отчетов.</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>Создание событий</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>Просмотр, изменение и удаление любой подписки независимо от владельца такой подписки.</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>Управление всеми подписками</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>Удаление комментариев других пользователей в отчетах.</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>Управление комментариями</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>Создание и удаление совместно используемых элементов источника данных, изменение свойств источника данных.</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>Управление источниками данных</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>Создание, просмотр и удаление папок; просмотр и изменение свойств папок.</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>Управление папками</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>Просмотр и отмена текущих заданий.</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>Управление заданиями</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>Создание, просмотр и удаление моделей, просмотр и изменение свойств моделей.</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>Управление моделями</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>Создание, просмотр и удаление снимков журнала отчетов; изменение свойств журнала отчета.</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>Управление журналом отчета</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>Создание и удаление отчетов; изменение их свойств.</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>Управление отчетами</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>Создание, изменение и удаление ресурсов; изменение их свойств.</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>Управление ресурсами</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>Создание, просмотр, изменение и удаление определений ролей.</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>Управление ролями</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>Создание, просмотр, изменение и удаление общих расписаний, используемых для выполнения или обновления отчетов.</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>Управление общими расписаниями</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>Просмотр и изменение свойств, относящихся к серверу отчетов и к элементам, которыми управляет сервер отчетов.</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>Управление свойствами сервера отчетов</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>Просмотр и изменение назначений ролей в масштабе системы.</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>Управление безопасностью сервера отчетов</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>Любой пользователь может создавать, просматривать, изменять и удалять свои собственные подписки.</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>Управление отдельными подписками</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>Просмотр элементов общего источника данных в иерархии папок; просмотр свойств источника данных.</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>Просмотр источников данных</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>Просмотр элементов папок в иерархии папок; просмотр свойств папки.</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>Просмотр папок</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>Просмотр элементов конкретной модели.</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>Просмотр элементов модели</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>Просмотр моделей в иерархии папок, использование моделей как источников данных для отчета и выполнение запросов по модели для получения данных.</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>Просмотр моделей</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>Просмотр отчетов и связанных отчетов в иерархии папок, просмотр моментальных снимков журнала отчета и свойств отчетов.</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>Просмотр отчетов</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>Просмотр ресурсов в иерархии папок, просмотр свойств ресурса.</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>Просмотр ресурсов</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>Просмотр заданного расписания, доступного для общего использования.</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>Просмотр общих расписаний</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>Просмотр свойств, относящихся к серверу отчетов.</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>Просмотр свойств сервера отчетов</value>
+  </data>
+</root>

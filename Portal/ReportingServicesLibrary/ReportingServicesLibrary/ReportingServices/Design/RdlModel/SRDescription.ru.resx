@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccentSensitivity" xml:space="preserve">
+    <value>Указывает, могут ли данные учитывать диакритические знаки.</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Действие (например, гиперссылка), связанное с элементом отчета.</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Автор отчета.</value>
+  </data>
+  <data name="AutoRefresh" xml:space="preserve">
+    <value>Частота (в секундах), с которой сформированная в HTML страница отчета автоматически обновляется.</value>
+  </data>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>Цвет фона.</value>
+  </data>
+  <data name="BackgroundImage" xml:space="preserve">
+    <value>Фоновое изображение элемента отчета.</value>
+  </data>
+  <data name="BackgroundRepeat" xml:space="preserve">
+    <value>Указывает, каким образом повторяется фоновое изображение для заполнения всего доступного пространства.</value>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>Возможная цель при переходе по закладке.</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>Цвет границы.</value>
+  </data>
+  <data name="BorderColorBottom" xml:space="preserve">
+    <value>Цвет нижней границы.</value>
+  </data>
+  <data name="BorderColorDefault" xml:space="preserve">
+    <value>Цвет границы, если это свойство не переопределено для какой-либо конкретной стороны.</value>
+  </data>
+  <data name="BorderColorLeft" xml:space="preserve">
+    <value>Цвет левой границы.</value>
+  </data>
+  <data name="BorderColorRight" xml:space="preserve">
+    <value>Цвет правой границы.</value>
+  </data>
+  <data name="BorderColorTop" xml:space="preserve">
+    <value>Цвет верхней границы.</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>Стиль границы.</value>
+  </data>
+  <data name="BorderStyleBottom" xml:space="preserve">
+    <value>Стиль нижней границы.</value>
+  </data>
+  <data name="BorderStyleDefault" xml:space="preserve">
+    <value>Стиль границы, если это свойство не переопределено для какой-либо конкретной стороны.</value>
+  </data>
+  <data name="BorderStyleLeft" xml:space="preserve">
+    <value>Стиль левой границы.</value>
+  </data>
+  <data name="BorderStyleRight" xml:space="preserve">
+    <value>Стиль правой границы.</value>
+  </data>
+  <data name="BorderStyleTop" xml:space="preserve">
+    <value>Стиль верхней границы.</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>Толщина границы.</value>
+  </data>
+  <data name="BorderWidthBottom" xml:space="preserve">
+    <value>Толщина нижней границы.</value>
+  </data>
+  <data name="BorderWidthDefault" xml:space="preserve">
+    <value>Толщина границы, если это свойство не переопределено для какой-либо конкретной стороны.</value>
+  </data>
+  <data name="BorderWidthLeft" xml:space="preserve">
+    <value>Толщина левой границы.</value>
+  </data>
+  <data name="BorderWidthRight" xml:space="preserve">
+    <value>Толщина правой границы.</value>
+  </data>
+  <data name="BorderWidthTop" xml:space="preserve">
+    <value>Толщина верхней границы.</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Определяет календарь, используемый при форматировании дат.</value>
+  </data>
+  <data name="CanGrow" xml:space="preserve">
+    <value>Определяет, производится ли автоматическое изменение размера текстового поля, чтобы вместить длинное значение.</value>
+  </data>
+  <data name="CanShrink" xml:space="preserve">
+    <value>Определяет, подгоняется ли размер текстового поля до размеров короткого значения.</value>
+  </data>
+  <data name="CaseSensitivity" xml:space="preserve">
+    <value>Указывает, учитывают ли данные регистр.</value>
+  </data>
+  <data name="CellDataElementName" xml:space="preserve">
+    <value>Имя элемента ячейки.</value>
+  </data>
+  <data name="CellDataElementOutput" xml:space="preserve">
+    <value>Указывает, должно ли отображаться содержимое ячейки в данных, готовых для просмотра.</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>Поля данных для отображения в диаграмме.</value>
+  </data>
+  <data name="ChartDefinition" xml:space="preserve">
+    <value>Определение диаграммы.</value>
+  </data>
+  <data name="ChartParameters" xml:space="preserve">
+    <value>Параметры диаграммы.</value>
+  </data>
+  <data name="ClassID" xml:space="preserve">
+    <value>Идентификатор класса элемента управления.</value>
+  </data>
+  <data name="Classes" xml:space="preserve">
+    <value>Классы, объекты которых создаются при инициализации отчета.</value>
+  </data>
+  <data name="CodeBase" xml:space="preserve">
+    <value>URL-адрес базы кода, из которой загружается элемент управления.</value>
+  </data>
+  <data name="CodeModules" xml:space="preserve">
+    <value>Сборки, доступные отчету для использования в выражениях.</value>
+  </data>
+  <data name="Collation" xml:space="preserve">
+    <value>Локаль, используемый для определения параметров сортировки для данных.</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Цвет текста.</value>
+  </data>
+  <data name="ColumnSpacing" xml:space="preserve">
+    <value>Расстояние между столбцами.</value>
+  </data>
+  <data name="ColumnWidth" xml:space="preserve">
+    <value>Толщина каждого столбца.</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>Число столбцов в отчете, готовом для просмотра.</value>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>Строка соединения для источника данных.</value>
+  </data>
+  <data name="DataElementName" xml:space="preserve">
+    <value>Имя элемента данных или атрибута данного элемента отчета.</value>
+  </data>
+  <data name="DataElementOutput" xml:space="preserve">
+    <value>Указывает, должен ли элемент отображаться в данных, готовых для просмотра.</value>
+  </data>
+  <data name="DataElementStyle" xml:space="preserve">
+    <value>Указывает, как должны отображаться текстовые поля: как элементы или как атрибуты.</value>
+  </data>
+  <data name="DataInstanceElementOutput" xml:space="preserve">
+    <value>Указывает, должны ли в данных, готовых для просмотра, отображаться экземпляры списка.</value>
+  </data>
+  <data name="DataInstanceName" xml:space="preserve">
+    <value>Имя элемента данных для каждого из экземпляров данного списка.</value>
+  </data>
+  <data name="DataSchema" xml:space="preserve">
+    <value>Схема или пространство имен, используемые при подготовке данных отчета.</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>Набор данных для этой области данных.</value>
+  </data>
+  <data name="DataSourceType" xml:space="preserve">
+    <value>Тип источника данных.</value>
+  </data>
+  <data name="DataTransform" xml:space="preserve">
+    <value>Преобразование, применяемое для подготовки данных отчета.</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание отчета.</value>
+  </data>
+  <data name="DetailDataCollectionName" xml:space="preserve">
+    <value>Для всех экземпляров данной группы указывает имя элемента данных в коллекции.</value>
+  </data>
+  <data name="DetailDataElementName" xml:space="preserve">
+    <value>Имя элемента данных для экземпляров этой группы.</value>
+  </data>
+  <data name="DetailDataElementOutput" xml:space="preserve">
+    <value>Указывает, следует ли в данных, готовых для просмотра, отображать подробности.</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Указывает, выводится ли текст слева направо или справа налево.</value>
+  </data>
+  <data name="DrawGrid" xml:space="preserve">
+    <value>Указывает, отображается ли направляющая сетка.</value>
+  </data>
+  <data name="EmbeddedImages" xml:space="preserve">
+    <value>Внедренные изображения для отчета.</value>
+  </data>
+  <data name="EndPoint" xml:space="preserve">
+    <value>Позиция конца строки.</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Коллекция фильтров, применяемых к области данных.</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Шрифт, используемый при отображении текста.</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>Название семейства шрифта.</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Размер шрифта.</value>
+  </data>
+  <data name="FontStyle" xml:space="preserve">
+    <value>Стиль шрифта.</value>
+  </data>
+  <data name="FontWeight" xml:space="preserve">
+    <value>Толщина шрифта.</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Строка форматирования.</value>
+  </data>
+  <data name="GridSize" xml:space="preserve">
+    <value>Определяет шаг направляющей сетки.</value>
+  </data>
+  <data name="Grouping" xml:space="preserve">
+    <value>Выражения для группирования данных.</value>
+  </data>
+  <data name="GroupsBeforeRowHeaders" xml:space="preserve">
+    <value>Число экземпляров самой внешней группы столбцов, которые отображаются слева от заголовков строк (либо справа от заголовков строк для матриц, размещаемых справа налево).</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Высота раздела отчета.</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Указывает, является ли элемент изначально скрытым.</value>
+  </data>
+  <data name="HideDuplicates" xml:space="preserve">
+    <value>Делает элемент скрытым, если его значение равно значению того же элемента в предыдущей строке. Значение этого свойства - имя группирования или набора данных, содержащих скрываемые элементы.</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>Тип источника рисунка.</value>
+  </data>
+  <data name="ImageValue" xml:space="preserve">
+    <value>Источник рисунка.</value>
+  </data>
+  <data name="KanatypeSensitivity" xml:space="preserve">
+    <value>Указывает, учитывают ли данные тип японской азбуки.</value>
+  </data>
+  <data name="KeepTogether" xml:space="preserve">
+    <value>Указывает, что область данных (все повторяющиеся разделы) должны быть по возможности размещены на одной странице.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>Метка, идентифицирующая экземпляр элемента отчета внутри схемы документа.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Первичный язык текста.</value>
+  </data>
+  <data name="LayoutDirection" xml:space="preserve">
+    <value>Указывает, как раскрываются столбцы матрицы: слева направо или справа налево.</value>
+  </data>
+  <data name="LineColor" xml:space="preserve">
+    <value>Цвет строки.</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>Высота строки текста.</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>Стиль строки.</value>
+  </data>
+  <data name="LineWidth" xml:space="preserve">
+    <value>Ширина строки.</value>
+  </data>
+  <data name="LinkToChild" xml:space="preserve">
+    <value>Имя элемента отчета, который является целевым объектом для метки схемы документа. Данный элемент отчета должен содержаться непосредственно внутри текущего элемента отчета.</value>
+  </data>
+  <data name="ListFillPage" xml:space="preserve">
+    <value>Указывает, следует ли развертывать список вниз страницы.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Позиция верхнего левого угла элемента отчета относительно контейнера, в котором он содержится.</value>
+  </data>
+  <data name="MIMEType" xml:space="preserve">
+    <value>Тип MIME для рисунка.</value>
+  </data>
+  <data name="Margins" xml:space="preserve">
+    <value>Поля отчета.</value>
+  </data>
+  <data name="MatrixGroupings" xml:space="preserve">
+    <value>Набор группирований строк и столбцов для матрицы.</value>
+  </data>
+  <data name="MergeTransactions" xml:space="preserve">
+    <value>Указывает, что транзакции вложенного отчета сливаются с транзакциями родительского отчета при условии, что источники данных для обоих отчетов используют одно и то же соединение. При этом происходит объединение транзакций для обоих отчетов в единую транзакцию. </value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя элемента отчета.</value>
+  </data>
+  <data name="NoRows" xml:space="preserve">
+    <value>Сообщение, отображаемое в области данных, если не доступна ни одна строка данных.</value>
+  </data>
+  <data name="NumeralLanguage" xml:space="preserve">
+    <value>Цифровой формат, используемый в соответствии с правилами основного языка.</value>
+  </data>
+  <data name="NumeralVariant" xml:space="preserve">
+    <value>Используемый вариант цифрового формата.</value>
+  </data>
+  <data name="OverwriteDataSources" xml:space="preserve">
+    <value>Указывает, могут ли описания источников данных на сервере отчетов быть перезаписаны при развертывании проекта.</value>
+  </data>
+  <data name="Padding" xml:space="preserve">
+    <value>Количество битов разреживания между элементами объекта.</value>
+  </data>
+  <data name="PaddingBottom" xml:space="preserve">
+    <value>Количество битов разреживания снизу от объекта.</value>
+  </data>
+  <data name="PaddingLeft" xml:space="preserve">
+    <value>Количество битов разреживания слева от объекта.</value>
+  </data>
+  <data name="PaddingRight" xml:space="preserve">
+    <value>Количество битов разреживания справа от объекта.</value>
+  </data>
+  <data name="PaddingTop" xml:space="preserve">
+    <value>Количество битов разреживания сверху от объекта.</value>
+  </data>
+  <data name="PageBreakAtEnd" xml:space="preserve">
+    <value>Указывает, что модуль подготовки отчетов вставляет разрыв страницы в конце группы.</value>
+  </data>
+  <data name="PageBreakAtStart" xml:space="preserve">
+    <value>Указывает, что модуль подготовки отчетов вставляет разрыв страницы в начале группы.</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Размер страницы отчета по умолчанию.</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Имя объемлющего элемента отчета.</value>
+  </data>
+  <data name="PreviewAs" xml:space="preserve">
+    <value>PreviewAs</value>
+  </data>
+  <data name="PrintOnFirstPage" xml:space="preserve">
+    <value>Указывает, что верхний и нижний колонтитулы выводятся на первой странице отчета.</value>
+  </data>
+  <data name="PrintOnLastPage" xml:space="preserve">
+    <value>Указывает, что верхний и нижний колонтитулы страницы выводятся на последней странице отчета.</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>Запрос, выполняемый для получения данных отчета.</value>
+  </data>
+  <data name="RepeatFooterOnNewPage" xml:space="preserve">
+    <value>Указывает, выводится ли нижний колонтитул на всех страницах, содержащих таблицу.</value>
+  </data>
+  <data name="RepeatHeaderOnNewPage" xml:space="preserve">
+    <value>Указывает, выводится ли верхний колонтитул на всех страницах, содержащих таблицу.</value>
+  </data>
+  <data name="RepeatOnNewPage" xml:space="preserve">
+    <value>Указывает, все ли строки верхнего и нижнего колонтитулов выводятся на всех страницах, содержащих таблицу.</value>
+  </data>
+  <data name="RepeatWith" xml:space="preserve">
+    <value>Имя области данных, с которым должен повторяться данный элемент отчета, если область данных занимает несколько страниц.</value>
+  </data>
+  <data name="ReportDataElementName" xml:space="preserve">
+    <value>Имя элемента верхнего уровня, представляющего данные отчета.</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>URL-адрес отчета, отображаемого как вложенный отчет.</value>
+  </data>
+  <data name="ReportParameters" xml:space="preserve">
+    <value>Параметры отчета.</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>Высота строки.</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Размер элемента отчета.</value>
+  </data>
+  <data name="Sizing" xml:space="preserve">
+    <value>Внешний вид рисунка, если он не соответствует указанному размеру.</value>
+  </data>
+  <data name="SnapToGrid" xml:space="preserve">
+    <value>Определяет, привязаны ли элементы управления к направляющей сетке.</value>
+  </data>
+  <data name="StartItem" xml:space="preserve">
+    <value>Отчет, выполняющийся при запуске отладчика.</value>
+  </data>
+  <data name="SubreportParameters" xml:space="preserve">
+    <value>Параметры для передачи вложенному отчету.</value>
+  </data>
+  <data name="SubreportReportName" xml:space="preserve">
+    <value>Путь к вложенному отчету.</value>
+  </data>
+  <data name="SubtotalDataElementName" xml:space="preserve">
+    <value>Имя, используемое для этого подытога.</value>
+  </data>
+  <data name="SubtotalPosition" xml:space="preserve">
+    <value>Указывает, должны ли строка или столбец подытогов отображаться перед (выше или левее) или после (ниже или правее) столбцов и строк со сведениями.</value>
+  </data>
+  <data name="TableFillPage" xml:space="preserve">
+    <value>Указывает, следует ли продолжить таблицу до нижней границы страницы.</value>
+  </data>
+  <data name="TableGroups" xml:space="preserve">
+    <value>Группы для таблицы (выражения группирования, верхние и нижние колонтитулы). </value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>Путь к папке, содержащей развертываемый проект.</value>
+  </data>
+  <data name="TargetServerURL" xml:space="preserve">
+    <value>URL-адрес сервера отчетов, на котором развертывается проект. Например: http://hostname/ReportServer.</value>
+  </data>
+  <data name="TextAlign" xml:space="preserve">
+    <value>Горизонтальное выравнивание текста.</value>
+  </data>
+  <data name="TextDecoration" xml:space="preserve">
+    <value>Указывает специальные параметры форматирования текста.</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>Выражение, значение которого отображается в текстовом поле.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Текстовая метка элемента отчета, используемая, например для вывода атрибутов TITLE и ALT в отчетах HTML.</value>
+  </data>
+  <data name="ToggleImage" xml:space="preserve">
+    <value>Определяет начальное состояние рисунка-переключателя.</value>
+  </data>
+  <data name="ToggleItem" xml:space="preserve">
+    <value>Имя текстового поля, используемого, чтобы скрыть или показать этот элемент отчета.</value>
+  </data>
+  <data name="UnicodeBiDi" xml:space="preserve">
+    <value>Указывает, как двунаправленный текст внедряется в основной текст элемента.</value>
+  </data>
+  <data name="VerticalAlign" xml:space="preserve">
+    <value>Вертикальное выравнивание текста.</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Указывает, должен ли элемент быть скрытым.</value>
+  </data>
+  <data name="WidthSensitivity" xml:space="preserve">
+    <value>Указывает, учитывают ли данные ширину символов.</value>
+  </data>
+  <data name="WritingMode" xml:space="preserve">
+    <value>Указывает, выводится текст горизонтально или вертикально.</value>
+  </data>
+  <data name="Zindex" xml:space="preserve">
+    <value>Порядок отображения элемента отчета внутри объекта, в который он вложен.</value>
+  </data>
+</root>

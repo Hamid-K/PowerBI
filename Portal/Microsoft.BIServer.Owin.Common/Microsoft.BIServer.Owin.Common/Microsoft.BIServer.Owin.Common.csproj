@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DA890CC-E021-48B8-AC18-EE4A6389B99D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.BIServer.Owin.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BIServer.Configuration">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.HostingEnvironment">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.HostingEnvironment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="BIServer\Owin\Common\Enums\ErrorCode.cs" />
+    <Compile Include="BIServer\Owin\Common\Enums\ErrorReason.cs" />
+    <Compile Include="BIServer\Owin\Common\Enums\LogonType.cs" />
+    <Compile Include="BIServer\Owin\Common\Exceptions\AuthenticationExtensionException.cs" />
+    <Compile Include="BIServer\Owin\Common\IOwinSynchronizationContext.cs" />
+    <Compile Include="BIServer\Owin\Common\IPropertyProvider.cs" />
+    <Compile Include="BIServer\Owin\Common\LanguageUtils.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\AuthSchemeConfig.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\BasicAuthenticationMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\CustomAuthenticationMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\CustomHeadersMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\GlobalExceptionHandlerMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\HttpsRedirectMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\LanguageMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\LogonUserParametersProvider.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\PortalIdentity.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\RequestLoggingMiddleWare.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\RequestThrottlingMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\ResponseCompressionMiddleware.cs" />
+    <Compile Include="BIServer\Owin\Common\Middleware\RsUserContext.cs" />
+    <Compile Include="BIServer\Owin\Common\RsRequestContext.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\AuthenticationExtensionBackCompatProxy.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\AuthenticationService.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\AuthExtensionProvider.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\ExposureControl.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\IAuthenticationService.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\IAuthExtensionProvider.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\IExposureControl.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\IWebHostUserContext.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\OwinContextExtensions.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\OwinSynchronizationContext.cs" />
+    <Compile Include="BIServer\Owin\Common\Services\WindowsAuthenticationBackCompatProxy.cs" />
+    <Compile Include="BIServer\Owin\Common\SynchronizationContextExtensions.cs" />
+    <Compile Include="BIServer\Owin\Common\UserCredentialsContract.cs" />
+    <Compile Include="BusinessIntelligence\ExposureControl.cs" />
+    <Compile Include="BusinessIntelligence\ExposureControlProvider.cs" />
+    <Compile Include="BusinessIntelligence\ExposureLevel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingServices\Diagnostics\ReqInfo.cs" />
+    <Compile Include="ReportingServices\Diagnostics\RunningRequests.cs" />
+    <Compile Include="ReportingServices\Diagnostics\UserInfo.cs" />
+    <Compile Include="ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="ReportingServices\TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

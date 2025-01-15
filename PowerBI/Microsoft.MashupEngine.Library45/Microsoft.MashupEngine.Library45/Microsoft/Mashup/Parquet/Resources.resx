@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CyclicTypeError" xml:space="preserve">
+    <value>A cyclic type has been detected at {0}.</value>
+  </data>
+  <data name="DecimalOutOfRange" xml:space="preserve">
+    <value>The number is out of range of the given precision and scale.</value>
+  </data>
+  <data name="DecimalPrecisionInvalid" xml:space="preserve">
+    <value>The decimal precision does not fit within this column.</value>
+  </data>
+  <data name="DecimalScaleInvalid" xml:space="preserve">
+    <value>The decimal scale of this column is invalid.</value>
+  </data>
+  <data name="ExpectedFixedLengthError" xml:space="preserve">
+    <value>Length of binary value did not match the fixed binary length of the column.</value>
+  </data>
+  <data name="IncompatibleType" xml:space="preserve">
+    <value>The specified type is not compatible with the given document.</value>
+  </data>
+  <data name="InsufficientType" xml:space="preserve">
+    <value>The specified type does not have enough information to create a Parquet type.</value>
+  </data>
+  <data name="IntervalComponentOutOfRangeError" xml:space="preserve">
+    <value>Parquet Interval components must be 32-bit unsigned integers.</value>
+  </data>
+  <data name="LegacyColumnNameEncoding" xml:space="preserve">
+    <value>The option 'LegacyColumnNameEncoding' with value 'true' is no longer supported.</value>
+  </data>
+  <data name="LoadError" xml:space="preserve">
+    <value>An error occured while processing the data in this cell: {0}</value>
+  </data>
+  <data name="MaxDepthExceededError" xml:space="preserve">
+    <value>Maximum depth {0} exceeded.</value>
+  </data>
+  <data name="NegativeBinaryLength" xml:space="preserve">
+    <value>Invalid binary length.</value>
+  </data>
+  <data name="NonNullInNullColumn" xml:space="preserve">
+    <value>Non-null data was found in a null-only column.</value>
+  </data>
+  <data name="NullInNotNullColumn" xml:space="preserve">
+    <value>We can't insert null data into a non-nullable column.</value>
+  </data>
+  <data name="Parquet_Document" xml:space="preserve">
+    <value>Returns the contents of the Parquet document as a table.</value>
+  </data>
+  <data name="Parquet_Document_Category" xml:space="preserve">
+    <value>Accessing data</value>
+  </data>
+  <data name="Parquet_Document_Description" xml:space="preserve">
+    <value>Returns the contents of the Parquet document as a table. Options include:
+    &lt;ul&gt;
+    &lt;li&gt; &lt;code&gt;TypeMapping&lt;/code&gt; : A text value that controls the default type mapping when reading and writing files. The default value is null and attempts to preserve as much fidelity as possible to the original type. A value of "Sql" will produce results most compatible with Sql Server.&lt;/li&gt;
+    &lt;/ul&gt;</value>
+  </data>
+  <data name="Parquet_Metadata" xml:space="preserve">
+    <value>This function is intended for internal use only.</value>
+  </data>
+  <data name="Parquet_Metadata_Category" xml:space="preserve">
+    <value>Accessing data</value>
+  </data>
+  <data name="Parquet_Metadata_Description" xml:space="preserve">
+    <value>This function is intended for internal use only.</value>
+  </data>
+  <data name="Requires64Bit" xml:space="preserve">
+    <value>Parquet.Document is only supported on 64-bit systems.</value>
+  </data>
+  <data name="SeekableStreamRequired" xml:space="preserve">
+    <value>Parquet.Document cannot be used with streamed binary values.</value>
+  </data>
+  <data name="UnmappedType" xml:space="preserve">
+    <value>Parquet.Document cannot read values using the given type.</value>
+  </data>
+  <data name="UnrecognizedLogicalType" xml:space="preserve">
+    <value>The Parquet Document contains an unreadable Logical Type.</value>
+  </data>
+  <data name="UnusableFacet" xml:space="preserve">
+    <value>We cannot use the value given for the type facet {0}: {1}</value>
+  </data>
+  <data name="UserSchemaError" xml:space="preserve">
+    <value>An error occured while determining a type for the schema element {0}: {1}</value>
+  </data>
+  <data name="WriteDatetimezoneError" xml:space="preserve">
+    <value>We cannot write datetimezones to Parquet when using Sql type mapping.</value>
+  </data>
+  <data name="WriteDurationError" xml:space="preserve">
+    <value>We cannot write durations to Parquet.</value>
+  </data>
+  <data name="WriteError" xml:space="preserve">
+    <value>An error occurred while writing data: {0}</value>
+  </data>
+  <data name="WriteInsufficientMemory" xml:space="preserve">
+    <value>The current row is too large to write.</value>
+  </data>
+</root>

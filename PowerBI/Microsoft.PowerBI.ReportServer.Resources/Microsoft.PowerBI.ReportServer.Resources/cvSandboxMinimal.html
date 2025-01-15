@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Visual Host v2+</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/minerva/styles/visualsandbox.css" />
+</head>
+<body class="visual-sandbox">
+    <div id="sandbox-host" class="visual"></div>
+    <script>
+        var powerbi = {
+            common: {}
+        };
+    </script>
+    <script type="text/javascript" src="/pbi/Web/ts/visualSandboxErrorHandler.js"></script>
+
+    <script type="text/javascript" src="/minerva/scripts/visualSandbox.minimal.externals.js"></script>
+    <script type="text/javascript" src="/minerva/scripts/customVisualsHost.js"></script>
+
+    <script>
+        BI.Shell.InterOp.VisualSandboxErrorHandler.initialize(window).then(() => {
+            window.onload = function () {
+                powerbi.visualSandbox.createSandboxHost($('#sandbox-host'), /* Isolate jQuery/lodash dependencies */ true);
+            };
+        });
+    </script>
+</body>
+</html>

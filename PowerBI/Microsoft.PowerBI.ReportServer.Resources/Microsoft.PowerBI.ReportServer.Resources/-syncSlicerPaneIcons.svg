@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol height="7" id="arrow_top" viewBox="0 0 13 7" width="13">
+        <defs>
+            <style>#arrow_top .cls-1{opacity:1 !important;fill:#c6c6c6;}#arrow_top .cls-2{fill:none;}</style>
+        </defs>
+        <polygon class="cls-1 fwns" points="11 0 11 1 10 1 10 2 9 2 9 3 8 3 8 4 7 4 7 5 6 5 6 4 5 4 5 3 4 3 4 2 3 2 3 1 2 1 2 0 1 0 1 2 2 2 2 3 3 3 3 4 4 4 4 5 5 5 5 6 6 6 6 7 7 7 7 6 8 6 8 5 9 5 9 4 10 4 10 3 11 3 11 2 12 2 12 0 11 0"/>
+        <rect class="cls-2 nfwns" height="7" width="13"/>
+    </symbol>
+</svg>

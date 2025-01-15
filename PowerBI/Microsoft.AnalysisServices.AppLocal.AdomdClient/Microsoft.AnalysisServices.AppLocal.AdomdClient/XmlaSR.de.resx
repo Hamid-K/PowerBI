@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AfterExceptionAllTagsShouldCloseUntilMessagesSection" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Unerwartetes Serverantwortformat. Zwischen einem Exception-Element und dem Messages-Abschnitt müssen alle Tags geschlossen sein.</value>
+  </data>
+  <data name="AlreadyConnected" xml:space="preserve">
+    <value>Der Client ist bereits verbunden.</value>
+  </data>
+  <data name="Authentication_AsAzure_OnlySspiOrClaimsTokenSupported" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Azure Analysis Services-Verbindungen unterstützen nur SSPI oder die integrierte ClaimsToken-Sicherheit.</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AdalError" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Fehler bei Microsoft.IdentityModel.Clients.ActiveDirectory: "{0}".</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AdalLoadingError" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Fehler beim Laden von "{0}" durch Microsoft.IdentityModel.Clients.ActiveDirectory.</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AuthorityNotFound" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Keine Autorität für integrierte ClaimsToken-Sicherheit gefunden (es ist entweder ein gültiger Identitätsanbieter oder eine gültige Azure Analysis Services-Datenquelle erforderlich).</value>
+  </data>
+  <data name="Authentication_ClaimsToken_IdentityProviderFormatInvalid" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Das Identitätsanbieterformat für ClaimsToken ist ungültig, erwartetes Format: &lt;URL der AAD-Autorität&gt;[,&lt;AAD-Anwendungs-ID&gt;].</value>
+  </data>
+  <data name="Authentication_ClaimsToken_UserIdAndPasswordRequired" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Benutzer-ID- und Kennwort sind erforderlich, wenn keine Benutzeroberfläche verfügbar ist.</value>
+  </data>
+  <data name="Authentication_Failed" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung.</value>
+  </data>
+  <data name="Authentication_MsoID_InternalError" xml:space="preserve">
+    <value>Anmeldungsfehler aufgrund eines internen Fehlers im Microsoft Online Services-Anmelde-Assistenten.</value>
+  </data>
+  <data name="Authentication_MsoID_InvalidCredentials" xml:space="preserve">
+    <value>Anmeldungsfehler aufgrund einer falschen Benutzer-ID oder eines falschen Kennworts.</value>
+  </data>
+  <data name="Authentication_MsoID_MissingSignInAssistant" xml:space="preserve">
+    <value>Anmeldungsfehler. Eine für die Anmeldung verwendete Komponente (msoidcli.dll) wurde auf dem Computer nicht gefunden. Überprüfen Sie, ob der Microsoft Online Services-Anmelde-Assistent installiert ist.</value>
+  </data>
+  <data name="Authentication_MsoID_SsoFailed" xml:space="preserve">
+    <value>Ihre Anmeldung konnte vom Microsoft Online Services-Anmelde-Assistenten nicht ausgeführt werden.</value>
+  </data>
+  <data name="Authentication_MsoID_SsoFailedNonDomainUser" xml:space="preserve">
+    <value>Fehler beim einmaligen Anmelden, weil der Benutzer kein gültiges Konto in der Windows-Domäne aufweist.</value>
+  </data>
+  <data name="Authentication_PbiDedicated_OnlyClaimsTokenSupported" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Dedizierte PBI-Verbindungen unterstützen nur die integrierte ClaimsToken-Sicherheit.</value>
+  </data>
+  <data name="Authentication_Sspi_FlagNotEstablished" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Das SSPI-Flag "{0}" kann für den Server nicht eingerichtet werden.</value>
+  </data>
+  <data name="Authentication_Sspi_PackageDoesntSupportCapability" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: "{1}" wird vom SSPI-Paket "{0}" nicht unterstützt.</value>
+  </data>
+  <data name="Authentication_Sspi_PackageNotFound" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Das SSPI-Paket "{0}" wird nicht unterstützt.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelAnonymousAmbiguity" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Die Identitätswechselebene "Anonymous" weist darauf hin, dass "Certificate" in der Verbindungszeichenfolge nicht angegeben wird.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelCantDelegate" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Die Identitätswechselebene "Delegate" wird von Schannel nicht unterstützt.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelSupportsOnlyPrivacyLevel" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Nur die Schutzebene "Privacy" wird von Schannel unterstützt.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelUnsupportedImpersonationLevel" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Nicht unterstützte Identitätswechselebene für Schannel.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelUnsupportedProtectionLevel" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung: Nicht unterstützte Schutzebene für Schannel.</value>
+  </data>
+  <data name="Cancel_SessionIDNotSpecified" xml:space="preserve">
+    <value>Die SessionID-Eigenschaft wurde nicht angegeben.</value>
+  </data>
+  <data name="CannotConnect" xml:space="preserve">
+    <value>Es kann keine Verbindung hergestellt werden. Stellen Sie sicher, dass der Server ausgeführt wird.</value>
+  </data>
+  <data name="CannotConnectToRedirector" xml:space="preserve">
+    <value>Eine Verbindung mit dem Redirectordienst kann nicht hergestellt werden. Stellen Sie sicher, dass der SQL Browser-Dienst ausgeführt wird.</value>
+  </data>
+  <data name="Compression_InitializationFailed" xml:space="preserve">
+    <value>Fehler bei der Komprimierungsinitialisierung.</value>
+  </data>
+  <data name="Connect_RedirectorDidntReturnDatabaseInfo" xml:space="preserve">
+    <value>Die Verbindung kann nicht geöffnet werden, weil die erforderlichen Datenbankinformationen nicht vom Redirectordienst bereitgestellt wurden.</value>
+  </data>
+  <data name="ConnectionBroken" xml:space="preserve">
+    <value>Die Verbindung wurde unterbrochen oder wegen Zeitüberschreitung abgebrochen.</value>
+  </data>
+  <data name="ConnectionCannotBeUsedWhileXmlReaderOpened" xml:space="preserve">
+    <value>Die Verbindung kann nicht verwendet werden, während ein XmlReader-Objekt geöffnet ist.</value>
+  </data>
+  <data name="ConnectionString_ASAzure_FetchLinkReferenceFailed" xml:space="preserve">
+    <value>Die Linkdatei unter URI "{0}" konnte nicht abgerufen werden.</value>
+  </data>
+  <data name="ConnectionString_ASAzure_InvalidLinkReferenceCustomPort" xml:space="preserve">
+    <value>Der Link-URI "{0}" ist ungültig. Im URI darf kein benutzerdefinierter HTTPS-Port angegeben werden.</value>
+  </data>
+  <data name="ConnectionString_ASAzure_InvalidLinkReferenceUri" xml:space="preserve">
+    <value>Der Inhalt der Linkdatei unter URL {0} weist nicht das richtige Format auf. Er muss mit "asazure://" beginnen.</value>
+  </data>
+  <data name="ConnectionString_AsAzure_DataSourcePathMoreThanOneSegment" xml:space="preserve">
+    <value>Ungültiges Datenquellenformat für Azure Analysis Services-Verbindungen. Die Datenquelle muss das folgende Format aufweisen: "asazure://[Domäne]/[Servername]".</value>
+  </data>
+  <data name="ConnectionString_AsAzure_SspiAndUseAdalCacheTogetherNotSupported" xml:space="preserve">
+    <value>Wenn für Azure Analysis Services- und Power BI Premium-Verbindungen die Verbindungszeichenfolgen-Eigenschaft "Integrierte Sicherheit" auf "SSPI" festgelegt ist, kann die Verbindungszeichenfolgen-Eigenschaft "UseADALCache" nicht festgelegt werden.</value>
+  </data>
+  <data name="ConnectionString_DataSourceNotSpecified" xml:space="preserve">
+    <value>In der Verbindungszeichenfolge muss eine Datenquelle angegeben werden.</value>
+  </data>
+  <data name="ConnectionString_DataSourceTypeDoesntSupportQuery" xml:space="preserve">
+    <value>Der Datenquellentyp unterstützt keine Abfrageparameter.</value>
+  </data>
+  <data name="ConnectionString_ExpectedEqualSignNotFound" xml:space="preserve">
+    <value>Ein Gleichheitszeichen wurde nach Index "{0}" in der Verbindungszeichenfolge erwartet.</value>
+  </data>
+  <data name="ConnectionString_ExpectedSemicolonNotFound" xml:space="preserve">
+    <value>Ein Semikolon wurde bei Index "{0}" in der Verbindungszeichenfolge erwartet.</value>
+  </data>
+  <data name="ConnectionString_ExternalConnectionIsIncomplete" xml:space="preserve">
+    <value>Die erforderliche {0}-Eigenschaft fehlt in der Verbindungszeichenfolge für den externen Modellzugriff.</value>
+  </data>
+  <data name="ConnectionString_Invalid" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge ist ungültig.</value>
+  </data>
+  <data name="ConnectionString_InvalidCharInPropertyName" xml:space="preserve">
+    <value>Das Zeichen "{0}" (bei Index "{1}" in der Verbindungszeichenfolge) darf nicht in einem Eigenschaftennamen verwendet werden.</value>
+  </data>
+  <data name="ConnectionString_InvalidCharInUnquotedPropertyValue" xml:space="preserve">
+    <value>Der Eigenschaftswert, der das Zeichen "{0}" (bei Index "{1}" in der Verbindungszeichenfolge) enthält, muss in Anführungszeichen eingeschlossen werden.</value>
+  </data>
+  <data name="ConnectionString_InvalidIdentityProviderForIntegratedSecurityFederated" xml:space="preserve">
+    <value>Der angegebene Identitätsanbieter kann nicht verwendet werden, wenn die integrierte Sicherheit auf "Federated" festgelegt ist.</value>
+  </data>
+  <data name="ConnectionString_InvalidImpersonationLevelForHttp" xml:space="preserve">
+    <value>Die Identitätswechselebene "{0}" wird für HTTP-Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_InvalidImpersonationLevelForHttps" xml:space="preserve">
+    <value>Die Identitätswechselebene "{0}" wird für HTTPS-Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_InvalidIntegratedSecurityForHttpOrHttps" xml:space="preserve">
+    <value>Die integrierte Sicherheit "{0}" wird für HTTP- oder HTTPS-Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_InvalidIntegratedSecurityForNative" xml:space="preserve">
+    <value>Die integrierte Sicherheit "{0}" wird für systemeigene Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_InvalidPropertyNameFormat" xml:space="preserve">
+    <value>Der Eigenschaftenname "{0}" weist das falsche Format auf.</value>
+  </data>
+  <data name="ConnectionString_InvalidProtectionLevelForHttp" xml:space="preserve">
+    <value>Die Schutzebene "{0}" wird für HTTP-Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_InvalidProtectionLevelForHttps" xml:space="preserve">
+    <value>Die Schutzebene "{0}" wird für HTTPS-Verbindungen nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_LinkFileCannotDelegate" xml:space="preserve">
+    <value>Wenn keine Kerberos-Delegierung konfiguriert ist, sollte das allowDelegation-Flag aktiviert sein.</value>
+  </data>
+  <data name="ConnectionString_LinkFileCannotRevert" xml:space="preserve">
+    <value>Die Prozessidentität kann nicht wiederhergestellt werden.</value>
+  </data>
+  <data name="ConnectionString_LinkFileDownloadError" xml:space="preserve">
+    <value>Die Verbindungsdatei "{0}" konnte nicht heruntergeladen werden.</value>
+  </data>
+  <data name="ConnectionString_LinkFileDupEffectiveUsername" xml:space="preserve">
+    <value>Wenn keine Kerberos-Delegierung konfiguriert ist, muss die EffectiveUserName-Eigenschaft in der Verbindungszeichenfolge dem imitierten Benutzer entsprechen.</value>
+  </data>
+  <data name="ConnectionString_LinkFileInvalidServer" xml:space="preserve">
+    <value>BISM-Verbindungsdateien können nicht auf andere BISM-Verbindungsdateien verweisen. Um den Vorgang fortzusetzen, geben Sie eine tabellarische Datenbank an, die einer im tabellarischen Modus ausgeführten Analysis Services-Instanz bereitgestellt wird.</value>
+  </data>
+  <data name="ConnectionString_LinkFileMissingServer" xml:space="preserve">
+    <value>BISM-Verbindungsdateien müssen einen Verweis auf den Zielserver enthalten.</value>
+  </data>
+  <data name="ConnectionString_LinkFileParseError" xml:space="preserve">
+    <value>Die Verbindungsdatei ist entweder nicht wohlgeformt oder überschreitet den Höchstwert von {0} Zeichen.</value>
+  </data>
+  <data name="ConnectionString_MissingIdentityProviderForIntegratedSecurityFederated" xml:space="preserve">
+    <value>Anmeldungsfehler, weil die Eigenschaft für den Identitätsanbieter fehlt. Diese Eigenschaft ist erforderlich, wenn die integrierte Sicherheit auf "Federated" festgelegt ist.</value>
+  </data>
+  <data name="ConnectionString_MissingPassword" xml:space="preserve">
+    <value>In der Verbindungszeichenfolge fehlt eine Kennworteigenschaft.</value>
+  </data>
+  <data name="ConnectionString_OpenedQuoteIsNotClosed" xml:space="preserve">
+    <value>Das öffnende Anführungszeichen (bei Index "{1}" in der Verbindungszeichenfolge) erfordert ein schließendes Anführungszeichen.</value>
+  </data>
+  <data name="ConnectionString_PbiDataset_Missing_Metadata" xml:space="preserve">
+    <value>In der Verbindungszeichenfolge für diese PBI-Datasetverbindung fehlen Parameter ({0}).</value>
+  </data>
+  <data name="ConnectionString_PbiDedicated_MissingInitialCatalog" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge für dedizierte PBI-Verbindungen erfordert, dass die Eigenschaft "Anfangskatalog" angegeben wird.</value>
+  </data>
+  <data name="ConnectionString_PbiDedicated_MissingRestrictCatalog" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge für dedizierte PBI-Verbindungen erfordert, dass die Eigenschaft "Katalog einschränken" auf TRUE festgelegt wird.</value>
+  </data>
+  <data name="ConnectionString_PropertyNameNotDefined" xml:space="preserve">
+    <value>Der Eigenschaftenname ist nicht vor dem Gleichheitszeichen (bei Index "{0}" in der Verbindungszeichenfolge) definiert.</value>
+  </data>
+  <data name="ConnectionString_PropertyNotApplicableWithTheDataSourceType" xml:space="preserve">
+    <value>Die {0}-Eigenschaft der Verbindungszeichenfolge ist auf den angegebenen Datenquellentyp nicht anwendbar.</value>
+  </data>
+  <data name="ConnectionString_SPN_Profile_Not_Supported" xml:space="preserve">
+    <value>The connection-string property 'SPN Profile' is only supported in Public XMLA connection.</value>
+  </data>
+  <data name="ConnectionString_ShilohIsNoLongerSupported" xml:space="preserve">
+    <value>Der Wert "8.0" wird für die Eigenschaft "{0}" der Verbindungszeichenfolge nicht mehr unterstützt. Dieser Verbindungsmodus ist veraltet.</value>
+  </data>
+  <data name="ConnectionString_UnsupportedPropertyValue" xml:space="preserve">
+    <value>Der Wert "{1}" wird für die {0}-Eigenschaft der Verbindungszeichenfolge nicht unterstützt.</value>
+  </data>
+  <data name="ConnectionString_Untrusted_Endpoint" xml:space="preserve">
+    <value>Der Endpunkt für diese Verbindung ist kein vertrauenswürdiger Endpunkt.</value>
+  </data>
+  <data name="Connection_AnalysisServicesInstanceWasMoved" xml:space="preserve">
+    <value>Die Analysis Services-Instanz, mit der Sie eine Verbindung herstellen möchten, wurde verschoben. Stellen Sie erneut eine Verbindung her.</value>
+  </data>
+  <data name="Connection_WorkbookIsOutdated" xml:space="preserve">
+    <value>Die Verbindung mit der aktuellen Arbeitsmappe wurde getrennt, da in SharePoint eine neuere Version der Arbeitsmappe vorhanden ist. Zum Fortfahren öffnen Sie die Arbeitsmappe erneut, um die neue Version zu erhalten.</value>
+  </data>
+  <data name="DataReaderClosedError" xml:space="preserve">
+    <value>Das Datenleserobjekt ist geschlossen.</value>
+  </data>
+  <data name="DataReaderInvalidRowError" xml:space="preserve">
+    <value>Das Datenleserobjekt ist nicht in einer gültigen Zeile positioniert.</value>
+  </data>
+  <data name="DataReader_IndexOutOfRange" xml:space="preserve">
+    <value>Der Index in der Zeile, in der der Lesevorgang begonnen werden soll, liegt außerhalb des Bereichs.</value>
+  </data>
+  <data name="Decompression_Failed" xml:space="preserve">
+    <value>Fehler bei der Dekomprimierung von Daten. Komprimierte Datengröße: {0}. Erwartete dekomprimierte Datengröße: {1}. Tatsächliche dekomprimierte Datengröße: {2}.</value>
+  </data>
+  <data name="Decompression_InitializationFailed" xml:space="preserve">
+    <value>Fehler bei der Dekomprimierungsinitialisierung.</value>
+  </data>
+  <data name="DimeReader_CannotReadFromStream" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datenstrom kann nicht gelesen werden.</value>
+  </data>
+  <data name="DimeReader_IsClosed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Das DimeReader-Objekt ist geschlossen.</value>
+  </data>
+  <data name="DimeReader_PreviousRecordStreamStillOpened" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datenstrom des vorherigen Datensatzes ist noch geöffnet.</value>
+  </data>
+  <data name="DimeRecord_ContentLengthExceeded" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Anzahl von geschriebenen Bytes überschreitet die angegebene Inhaltslänge.</value>
+  </data>
+  <data name="DimeRecord_DataTypeIsOnlyForTheFirstChunk" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datentyp des Datensatzes kann nur im ersten Block angegeben werden.</value>
+  </data>
+  <data name="DimeRecord_DataTypeNotSupported" xml:space="preserve">
+    <value>DIME-Protokollfehler: Ein Datensatz weist den Datentyp "{0}" auf, der nicht unterstützt wird.</value>
+  </data>
+  <data name="DimeRecord_DataTypeShouldBeSpecifiedOnTheFirstChunk" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datentyp des Datensatzes muss im ersten Block angegeben werden.</value>
+  </data>
+  <data name="DimeRecord_EncodedTypeLengthExceeds8191" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Länge des codierten Typs überschreitet 8191 Bytes.</value>
+  </data>
+  <data name="DimeRecord_IDIsOnlyForFirstChunk" xml:space="preserve">
+    <value>DIME-Protokollfehler: Ein Datensatzheader kann nur für den ersten Block eine ID aufweisen.</value>
+  </data>
+  <data name="DimeRecord_InvalidChunkSize" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Blockgröße muss größer als 0 sein.</value>
+  </data>
+  <data name="DimeRecord_InvalidContentLength" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die ContentLength-Eigenschaft muss "-1" für eine aufgeteilte DIME-Nachricht sein. Andernfalls muss der Wert für "ContentLength" positiv sein.</value>
+  </data>
+  <data name="DimeRecord_InvalidHeaderFlags" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Headerkombination ist ungültig: BeginOfMessage={0}, EndOfMessage={1}, Chunked={2}.</value>
+  </data>
+  <data name="DimeRecord_InvalidUriFormat" xml:space="preserve">
+    <value>DIME-Protokollfehler: Das URI-Format "{0}" ist ungültig.</value>
+  </data>
+  <data name="DimeRecord_MediaTypeNotDefined" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die MediaType-Eigenschaft muss definiert sein.</value>
+  </data>
+  <data name="DimeRecord_NameMustNotBeDefinedForFormatNone" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Typname darf nicht definiert sein, wenn das Typformat auf "None" festgelegt ist.</value>
+  </data>
+  <data name="DimeRecord_OffsetAndCountShouldBePositive" xml:space="preserve">
+    <value>DIME-Protokollfehler: Offset und Anzahl müssen beide größer als oder gleich 0 sein.</value>
+  </data>
+  <data name="DimeRecord_OnlySingleRecordMessagesAreSupported" xml:space="preserve">
+    <value>DIME-Protokollfehler: Nachricht mit mehreren Datensätzen. Nur Nachrichten mit einem Datensatz werden unterstützt.</value>
+  </data>
+  <data name="DimeRecord_PropertyOnlyAvailableForReadRecords" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Eigenschaft wird nur während des Lesens eines Datensatzes unterstützt.</value>
+  </data>
+  <data name="DimeRecord_ReadNotAllowed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Lesevorgänge sind nicht zulässig.</value>
+  </data>
+  <data name="DimeRecord_ReservedFlagShouldBeZero" xml:space="preserve">
+    <value>DIME-Protokollfehler: Datensatz mit dem reservierten Flag "{0}". In dieser Version wird nur ein Wert von 0 unterstützt.</value>
+  </data>
+  <data name="DimeRecord_StreamIsClosed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datenstrom ist geschlossen.</value>
+  </data>
+  <data name="DimeRecord_StreamShouldBeReadable" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datenstrom kann nicht gelesen werden.</value>
+  </data>
+  <data name="DimeRecord_StreamShouldBeWriteable" xml:space="preserve">
+    <value>DIME-Protokollfehler: In den Datenstrom kann nicht geschrieben werden.</value>
+  </data>
+  <data name="DimeRecord_TypeFormatEnumUnchangedNotAllowed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der typeFormat-Parameter kann nicht auf "TypeFormatEnum.Unchanged" festgelegt werden.</value>
+  </data>
+  <data name="DimeRecord_TypeFormatShouldBeMedia" xml:space="preserve">
+    <value>DIME-Protokollfehler: Ein Block mit dem Typformat "{0}" wurde erkannt. Das Typformat muss für den ersten Block "Media" (Wert "0x01") sein.</value>
+  </data>
+  <data name="DimeRecord_TypeFormatShouldBeUnchanged" xml:space="preserve">
+    <value>DIME-Protokollfehler: Ein Block mit dem Typformat "{0}" wurde erkannt. Das Typformat muss für alle Blöcke außer dem ersten Block "Unchanged" (Wert "0x00") sein.</value>
+  </data>
+  <data name="DimeRecord_UnableToReadFromStream" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die erforderlichen Bytes können nicht aus dem Datenstrom gelesen werden.</value>
+  </data>
+  <data name="DimeRecord_VersionNotSupported" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die DIME-Version "{0}" wird nicht unterstützt. Nur Version 1 wird unterstützt.</value>
+  </data>
+  <data name="DimeRecord_WriteNotAllowed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Schreibvorgänge sind nicht zulässig.</value>
+  </data>
+  <data name="DimeWriter_CannotWriteToStream" xml:space="preserve">
+    <value>DIME-Protokollfehler: In den Datenstrom kann nicht geschrieben werden.</value>
+  </data>
+  <data name="DimeWriter_InvalidDefaultChunkSize" xml:space="preserve">
+    <value>DIME-Protokollfehler: Die Standardblockgröße muss größer als 0 sein.</value>
+  </data>
+  <data name="DimeWriter_WriterIsClosed" xml:space="preserve">
+    <value>DIME-Protokollfehler: Das DimeWriter-Objekt ist geschlossen.</value>
+  </data>
+  <data name="Dime_DataTypeNotSupported" xml:space="preserve">
+    <value>DIME-Protokollfehler: Der Datentyp "{0}" wird in dieser Version von DIME nicht unterstützt.</value>
+  </data>
+  <data name="DirectoryNotFound" xml:space="preserve">
+    <value>"Das Verzeichnis "{0}" ist nicht vorhanden."</value>
+  </data>
+  <data name="EmptyRootIsNotEmpty" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Das Stammelement muss leer sein.</value>
+  </data>
+  <data name="ErrorCodeIsMissingFromDatasetError" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Der Datasetfehler weist keinen Fehlercode auf.</value>
+  </data>
+  <data name="ErrorCodeIsMissingFromRowsetError" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Der Rowsetfehler weist keinen Fehlercode auf.</value>
+  </data>
+  <data name="ExceptionRequiresXmlaErrorsInMessagesSection" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Die Engine hat eine Ausnahme zurückgegeben, im Messages-Abschnitt wird jedoch kein Fehler angezeigt.</value>
+  </data>
+  <data name="FailedToResolveCluster" xml:space="preserve">
+    <value>Fehler beim Auflösen des Power BI-Clusters.</value>
+  </data>
+  <data name="HttpStream_InvalidReadRequest" xml:space="preserve">
+    <value>Ungültige Leseanforderung; Der HTTP-Stream befindet sich nicht in einem Zustand, der Lesevorgänge unterstützt, da der aktuelle Status {0}! lautet.</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_EndReadAlreadyCalled" xml:space="preserve">
+    <value>Ungültiges asynchrones Ergebnis. EndRead wurde für dieses asynchrone Ergebnis bereits aufgerufen.</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_ErrorInCallback" xml:space="preserve">
+    <value>Fehler beim Ausführen des Abschlussrückrufs.</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_ErrorInWrite" xml:space="preserve">
+    <value>Fehler beim Schreiben der XMLA-Nutzdaten in den ausgehenden Datenstrom.{1}{1}Fehler: {0}</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_InvalidAsyncResultType" xml:space="preserve">
+    <value>Ungültiges asynchrones Ergebnis. Stellen Sie sicher, dass Sie EndRead nur mit dem gültigen Ergebnis eines BeginRead-Aufrufs aufrufen!</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_InvalidStreamOperation" xml:space="preserve">
+    <value>Vorgänge wie Seek, SetLength oder das Ändern der Position werden für diesen Stream nicht unterstützt.</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_WriteAfterComplete" xml:space="preserve">
+    <value>Die Anforderungsnutzlast wurde als abgeschlossen markiert. Neue Hinzufügungen zur Nutzlast sind jetzt ungültig!</value>
+  </data>
+  <data name="HttpStream_ResponseWithFailedStatus" xml:space="preserve">
+    <value>Der Antwortstatuscode weist nicht auf einen erfolgreichen Vorgang hin: {0} ({1}).</value>
+  </data>
+  <data name="IXMLAInterop_OnlyZeroOffsetIsSupported" xml:space="preserve">
+    <value>Es wird nur ein Offset von 0 unterstützt.</value>
+  </data>
+  <data name="IXMLAInterop_StreamCannotBeCloned" xml:space="preserve">
+    <value>Der Datenstrom kann nicht geklont werden.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportLocking" xml:space="preserve">
+    <value>Der Datenstrom unterstützt die LockRegion-Methode nicht.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportReverting" xml:space="preserve">
+    <value>Der Datenstrom unterstützt die Revert-Methode nicht.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportUnlocking" xml:space="preserve">
+    <value>Der Datenstrom unterstützt die UnlockRegion-Methode nicht.</value>
+  </data>
+  <data name="Instance_NotFound" xml:space="preserve">
+    <value>Die Instanz "{0}" wurde auf dem Server "{1}" nicht gefunden.</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>Interner Fehler.</value>
+  </data>
+  <data name="InternalErrorAndInvalidBufferType" xml:space="preserve">
+    <value>Interner Fehler. Unerwarteter Sicherheitspuffer-Datentyp.</value>
+  </data>
+  <data name="InvalidArgument" xml:space="preserve">
+    <value>Ungültiges Argument.</value>
+  </data>
+  <data name="LocalCube_FileNotOpened" xml:space="preserve">
+    <value>Die lokale Cubedatei "{0}" kann nicht geöffnet werden.</value>
+  </data>
+  <data name="MessagesSectionIsEmpty" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Die Engine hat einen leeren Messages-Abschnitt zurückgegeben.</value>
+  </data>
+  <data name="MissingElement" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Das Element "{0}" im Namespace "{1}" wird erwartet.</value>
+  </data>
+  <data name="NetCore_NotSupportedFeature" xml:space="preserve">
+    <value>Dieses Feature wird für einen .NET Core-Client nicht unterstützt.</value>
+  </data>
+  <data name="NetCore_WindowsDesktopOnlySupportedFeature" xml:space="preserve">
+    <value>Dieses Feature wird für einen .NET Core-Client nur auf Windows-Systemen unterstützt, auf denen das .NET Core-Desktop-Framework installiert ist.</value>
+  </data>
+  <data name="NetCore_WindowsOnlySupportedFeature" xml:space="preserve">
+    <value>Dieses Feature wird für einen .NET Core-Client nur auf Windows-Systemen unterstützt.</value>
+  </data>
+  <data name="NonSequentialColumnAccessError" xml:space="preserve">
+    <value>Auf Spalten muss in sequenzieller Reihenfolge zugegriffen werden, wenn die CommandBehavior-Eigenschaft auf "SequentialAccess" festgelegt ist.</value>
+  </data>
+  <data name="NotConnected" xml:space="preserve">
+    <value>Der Client ist nicht verbunden.</value>
+  </data>
+  <data name="ProvidePath" xml:space="preserve">
+    <value>Der Pfad muss angegeben werden.</value>
+  </data>
+  <data name="Reconnect_ConnectionInfoIsMissing" xml:space="preserve">
+    <value>Eine Verbindung kann nicht wiederhergestellt werden, weil die Verbindungseigenschaften beim Beenden der Verbindung verloren gegangen sind oder nicht festgelegt wurden.</value>
+  </data>
+  <data name="Reconnect_SessionIDIsMissing" xml:space="preserve">
+    <value>Die Sitzung wurde getrennt oder nie hergestellt.</value>
+  </data>
+  <data name="Resultset_IsNotRowset" xml:space="preserve">
+    <value>Das vom Server zurückgegebene Resultset ist kein Rowset.</value>
+  </data>
+  <data name="ServerDidNotProvideErrorInfo" xml:space="preserve">
+    <value>Vom Server wurden keine ausführlicheren Fehlerinformationen bereitgestellt.</value>
+  </data>
+  <data name="SoapFormatter_ResponseIsNotDataset" xml:space="preserve">
+    <value>Die Antwort liegt nicht im Datasetformat vor.</value>
+  </data>
+  <data name="SoapFormatter_ResponseIsNotRowset" xml:space="preserve">
+    <value>Die Antwort liegt nicht im Rowsetformat vor.</value>
+  </data>
+  <data name="TcpStream_MaxSignatureExceedsProtocolLimit" xml:space="preserve">
+    <value>Die maximale Signaturgröße überschreitet die Protokollgrenze.</value>
+  </data>
+  <data name="UnexpectedElement" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Unerwartetes Element "{0}" im Namespace "{1}".</value>
+  </data>
+  <data name="UnexpectedXsiType" xml:space="preserve">
+    <value>Unerwarteter XSI-Typ "{0}".</value>
+  </data>
+  <data name="UnknownServerResponseFormat" xml:space="preserve">
+    <value>Der Server hat eine Antwort gesendet, die nicht erkannt wird.</value>
+  </data>
+  <data name="UnrecognizedElementInMessagesSection" xml:space="preserve">
+    <value>Protokollfehler bei XMLA (XML for Analysis): Unbekanntes Element "{0}" im Messages-Abschnitt.</value>
+  </data>
+  <data name="UnsupportedDataFormat" xml:space="preserve">
+    <value>Nicht unterstütztes Datenformat: {0}</value>
+  </data>
+  <data name="UnsupportedMethod" xml:space="preserve">
+    <value>"{0}" wird nicht unterstützt.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionFailedWithError" xml:space="preserve">
+    <value>Die Umleitungszuordnung für die AS Azure-Instanz kann nicht aufgelöst werden: {0}; Fehlercode: {1}.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionFailedWithThrottling" xml:space="preserve">
+    <value>Der Power BI-Dienst ist zurzeit ausgelastet, und die Anforderung wurde gedrosselt. Versuchen Sie es später noch mal.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionMissingTenantId" xml:space="preserve">
+    <value>Die Umleitungszuordnung für die AS Azure-Instanz kann nicht aufgelöst werden: {0}; Fehlende Mandanten-ID in der Antwort.</value>
+  </data>
+  <data name="XmlaClient_CannotConnectToLocalCubeWithRestictedClient" xml:space="preserve">
+    <value>Mit dem lokalen Cube kann keine Verbindung hergestellt werden, da die Restricted Client-Eigenschaft auf "True" festgelegt ist.</value>
+  </data>
+  <data name="XmlaClient_ConnectTimedOut" xml:space="preserve">
+    <value>Die Verbindung wurde wegen einer Zeitüberschreitung abgebrochen.</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNameDuplicated" xml:space="preserve">
+    <value>Der angegebene Power BI Arbeitsbereichsname („{1}“) verursacht einen Konflikt mit anderen Arbeitsbereichsnamen. Verwenden Sie „[workspaceName]-[objectIdGuid]“, um auf den Arbeitsbereich zu verweisen.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNotFound" xml:space="preserve">
+    <value>Der angegebene Power BI Arbeitsbereich („{1}“) wurde nicht gefunden.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNotOnPremium" xml:space="preserve">
+    <value>Der angegebene Power BI Arbeitsbereich („{1}“) ist kein Premium-Arbeitsbereich.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_Missing_InitialCatalog" xml:space="preserve">
+    <value>Der ursprüngliche Katalog muss als Einschränkung für die öffentliche XMLA-Verbindung mit Einbettungstoken angegeben werden.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_ToPBIShared_NotSupported" xml:space="preserve">
+    <value>Die Verbindung mit Power BI Pro-Arbeitsbereichen über einen öffentlichen XMLA-Endpunkt mit Einbettungstoken wird nicht unterstützt.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_UserId_Prop_NotSupported" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge für den öffentlichen XMLA-Endpunkt darf die Eigenschaft "User ID" nicht enthalten, wenn ein Einbettungstoken angegeben wird.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNameDuplicated" xml:space="preserve">
+    <value>Es wurden mehrere Power BI-Datasets mit dem angegebenen Anzeigenamen "{0}" gefunden. Benennen Sie die Datasets um, damit der Verweis eindeutig ist. Technische Details: {1}.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNotFound" xml:space="preserve">
+    <value>Das Power BI-Dataset mit dem angegebenen Anzeigenamen "{0}" wurde nicht gefunden. Technische Details: {1}.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNotSpecified" xml:space="preserve">
+    <value>Die Eigenschaft für den Anfangskatalog ist erforderlich, um eine Verbindung mit Power BI Pro-Arbeitsbereichen herzustellen.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_InvalidDataSourceUriFormat" xml:space="preserve">
+    <value>Der angegebene Datenquellen-URI "{0}" weist ein ungültiges Format auf.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_UnsupportedIdentityProvider" xml:space="preserve">
+    <value>Der Identitätsanbieter '{0}' wird für eine öffentliche XMLA-Verbindung nicht unterstützt.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_NoRequestWasCreated" xml:space="preserve">
+    <value>Die Anforderung wurde nicht erstellt.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_RequestStreamCannotBeRead" xml:space="preserve">
+    <value>Der Anforderungsdatenstrom kann nicht gelesen werden.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_ThereIsAnotherPendingResponse" xml:space="preserve">
+    <value>Ein geöffneter Antwortleser ist bereits vorhanden.</value>
+  </data>
+  <data name="XmlaClient_StartRequest_ThereIsAnotherPendingRequest" xml:space="preserve">
+    <value>Ein geöffneter Anforderungsschreiber ist bereits vorhanden.</value>
+  </data>
+  <data name="XmlaClient_StartRequest_ThereIsAnotherPendingResponse" xml:space="preserve">
+    <value>Ein geöffneter Antwortleser ist bereits vorhanden.</value>
+  </data>
+</root>

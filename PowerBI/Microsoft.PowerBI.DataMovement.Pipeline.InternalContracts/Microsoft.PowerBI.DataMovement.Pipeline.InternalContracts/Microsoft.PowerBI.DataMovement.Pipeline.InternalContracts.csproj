@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0D73409-229B-461B-B9CD-6F27DB7249D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataMovement.Pipeline.InternalContracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataMovement.Pipeline.InternalContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.PowerBI.DataMovement.ExternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.ExternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AcknowledgeAsyncPacketRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AcknowledgeAsyncPacketResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AdoColumnDescriptor.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AdoExtendedProperty.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AdoOutputParameter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AdoTableDescriptor.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AsyncOperationKeepAliveRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AsyncOperationRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AsyncOperationResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AsyncOperationStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\AsyncOperationStatusResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\CancelRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\CancelResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\CloseConnectionRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\CloseConnectionResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ClrTypeCode.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ContractConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DatabaseRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DatabaseResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DatabasesRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DataSourceAddressPart.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DataSourceReferenceMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DisconnectRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DisconnectResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DiscoverCustomConnectorsOnGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DiscoverCustomConnectorsOnGatewayResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DiscoverDataSourcesOnGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DiscoverDataSourcesOnGatewayResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\DiscoverDataSourcesOnGatewayUsingMashupDSRRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\EncryptCredentialsWithTestConnectionRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\EncryptCredentialsWithTestConnectionResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ExecuteQueryRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ExecuteQueryRequestParameter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ExecuteQueryRequestProperty.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ExecuteQueryResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayHttpWebRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayHttpWebResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayXmlWebRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GatewayXmlWebResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetAsyncOperationStatusRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetRequestProperty.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetRestriction.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetResultColumn.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetResultRow.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetResultTable.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetSchemaDataSetValueBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetStatusRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\GetStatusResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\NextResultRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\NextResultResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthFinishLoginOnGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthFinishLoginOnGatewayResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthInitiateLoginOnGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthInitiateLoginOnGatewayResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthRenewTokenOnGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthRenewTokenOnGatewayResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthResourceRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OAuthResourceResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbAxisInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbCancelRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbCancelResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbCreateRowsetRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbGetSchemaRowsetRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbInitializeDataSourceRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbInitializeDataSourceResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbParamCollection.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbProperty.2.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbProperty.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbQueryMultipleResults.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbQueryResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbQueryResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbQueryResultMdDataset.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbRestriction.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbSchema.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OleDbSessionId.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OpenConnectionRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OpenConnectionResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationDataContract.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationErrorResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationExecutingAsynchronouslyResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationRequestBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationResultBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\OperationTelemetry.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\PingAsyncOperationRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\RenewDiagnosticsStorageAccessRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\RenewDiagnosticsStorageAccessResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ResultStreamingBehavior.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\ResultStreamingBehaviorKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\SingleSignOnInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\StreamAsyncOperationOutputRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\StreamAsyncOperationResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\SurrogateOperationErrorResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\TestDataSourceConnectionRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\TestDataSourceConnectionResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\TestGatewayConnectionRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\Communication\TestGatewayConnectionResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\HttpClientPropertiesName.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\IGatewayTransferCallback.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\IGatewayTransferService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\IGatewayTransferServiceChannel.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\InternalContracts\XmlClientPropertiesName.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="ThisAssembly.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

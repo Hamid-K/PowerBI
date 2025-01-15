@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreateColumnEntityRule_ColumnEntityName" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="CreateEntityRule_NoPrimaryKey" xml:space="preserve">
+    <value>La tabla no tiene una clave principal.</value>
+  </data>
+  <data name="CreateEntityRule_NonPrimaryDataSource" xml:space="preserve">
+    <value>La tabla tiene un origen de datos no principal.</value>
+  </data>
+  <data name="CreateRoleRule_RoleNameWithEntity" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="CreateRoleRule_SelfRelationWithMatchingColumns" xml:space="preserve">
+    <value>Una relación self tiene nombres de columna principal y secundaria idénticos. Es posible que la vista del origen de datos esté dañada.</value>
+  </data>
+  <data name="CreateRoleRule_SourceOrTargetEntityDoesNotExist" xml:space="preserve">
+    <value>La entidad de origen o destino no existe.</value>
+  </data>
+  <data name="ModelGen_AlreadyExecuting" xml:space="preserve">
+    <value>Ya se está ejecutando la generación del modelo (cancélela primero).</value>
+  </data>
+  <data name="ModelGen_PassHeader" xml:space="preserve">
+    <value>---------------- PASAR {0} ------------------</value>
+  </data>
+  <data name="ModelGen_RelationProgressLine1" xml:space="preserve">
+    <value>Pasar {0}: reglas de procesamiento en relaciones</value>
+  </data>
+  <data name="ModelGen_TableProgressLine1" xml:space="preserve">
+    <value>Pasar {0}: reglas de procesamiento en tablas y columnas</value>
+  </data>
+  <data name="ModelGen_TableProgressLine2" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="Rules_AttributeDoesNotExist" xml:space="preserve">
+    <value>El atributo no existe.</value>
+  </data>
+  <data name="Rules_CreatedModelItem" xml:space="preserve">
+    <value>{0} creado</value>
+  </data>
+  <data name="Rules_DependentRuleOnExistingItem" xml:space="preserve">
+    <value>Elemento principal no creado por esta generación de modelo: {0}</value>
+  </data>
+  <data name="Rules_EntityDoesNotExist" xml:space="preserve">
+    <value>La entidad no existe.</value>
+  </data>
+  <data name="Rules_FoundExistingModelItem" xml:space="preserve">
+    <value>Elemento existente encontrado: {0}</value>
+  </data>
+  <data name="Rules_ModifiedModelItem" xml:space="preserve">
+    <value>Se modificó {0}</value>
+  </data>
+  <data name="Rules_ParentEntityDoesNotExist" xml:space="preserve">
+    <value>La entidad principal no existe.</value>
+  </data>
+  <data name="Rules_UnsupportedDataType" xml:space="preserve">
+    <value>No se admite el tipo de datos '{0}'.</value>
+  </data>
+  <data name="SetEntityAttributesRule_AlreadySet" xml:space="preserve">
+    <value>{0} ya se ha establecido: {0}</value>
+  </data>
+  <data name="SetEntityAttributesRule_EntityHasNoFields" xml:space="preserve">
+    <value>{0} no tiene campos.</value>
+  </data>
+  <data name="SetEntityAttributesRule_SetEntityAttributes" xml:space="preserve">
+    <value>Establecer {0}: {1}</value>
+  </data>
+  <data name="SetEntityAttributesRule_TargetCountTooLow" xml:space="preserve">
+    <value>TargetCount debe ser 1 o mayor.</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingColumnWidths" xml:space="preserve">
+    <value>Calculando ancho de columnas</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingTableRowCounts" xml:space="preserve">
+    <value>Calculando recuentos de filas de tabla</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingUniqueness" xml:space="preserve">
+    <value>Calculando unicidad de columnas</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CommandException" xml:space="preserve">
+    <value>Error al ejecutar un comando.
+Mensaje: {0}
+Comando:
+{1}</value>
+  </data>
+</root>

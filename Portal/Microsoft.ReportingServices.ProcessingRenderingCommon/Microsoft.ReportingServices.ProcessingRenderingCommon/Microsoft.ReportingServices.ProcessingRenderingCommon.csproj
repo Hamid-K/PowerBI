@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11CB1B2E-82C8-4784-914C-CBECB469DA1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.ProcessingRenderingCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Editions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Editions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ImageUtils.cs" />
+    <Compile Include="Common\ProgressiveReportCounterInfo.cs" />
+    <Compile Include="Common\RSPerfCounterInfo.cs" />
+    <Compile Include="Common\RSPerfCounterInstallUtil.cs" />
+    <Compile Include="Common\RSPerfCounterRes.cs" />
+    <Compile Include="Common\UrlUtil.cs" />
+    <Compile Include="Common\XmlConsts.cs" />
+    <Compile Include="Common\XmlConvertEx.cs" />
+    <Compile Include="Common\XmlFragmentUtil.cs" />
+    <Compile Include="Common\XmlRWFactory.cs" />
+    <Compile Include="DataExtensions\BaseDataWrapper.cs" />
+    <Compile Include="DataExtensions\CommandWrapper.cs" />
+    <Compile Include="DataExtensions\ConnectionWrapper.cs" />
+    <Compile Include="DataExtensions\DataReaderWrapper.cs" />
+    <Compile Include="DataExtensions\IDbConnectionTest.cs" />
+    <Compile Include="DataExtensions\ITokenDataExtension2.cs" />
+    <Compile Include="DataExtensions\ParameterCollectionWrapper.cs" />
+    <Compile Include="DataExtensions\ParameterMultiValueUseAllValidValuesWrapper.cs" />
+    <Compile Include="DataExtensions\ParameterMultiValueWrapper.cs" />
+    <Compile Include="DataExtensions\ParameterWrapper.cs" />
+    <Compile Include="DataExtensions\TransactionWrapper.cs" />
+    <Compile Include="DataExtensions\UseLegacyOracle.cs" />
+    <Compile Include="Diagnostics\AssemblyLocationResolver.cs" />
+    <Compile Include="Diagnostics\AuthenticationTypes.cs" />
+    <Compile Include="Diagnostics\BackgroundRequestContext.cs" />
+    <Compile Include="Diagnostics\CancelableJobEnumerator.cs" />
+    <Compile Include="Diagnostics\CancelablePhaseBase.cs" />
+    <Compile Include="Diagnostics\CancelablePhaseConstants.cs" />
+    <Compile Include="Diagnostics\CancelationTrigger.cs" />
+    <Compile Include="Diagnostics\CatalogItemContext.cs" />
+    <Compile Include="Diagnostics\CatalogItemContextBase.cs" />
+    <Compile Include="Diagnostics\CatalogItemNameUtility.cs" />
+    <Compile Include="Diagnostics\CatalogItemPath.cs" />
+    <Compile Include="Diagnostics\CatalogItemUrlBuilder.cs" />
+    <Compile Include="Diagnostics\ContextBody.cs" />
+    <Compile Include="Diagnostics\DataDrivenSubscriptionJobType.cs" />
+    <Compile Include="Diagnostics\DataProtectionLocal.cs" />
+    <Compile Include="Diagnostics\DatasourceCredentials.cs" />
+    <Compile Include="Diagnostics\DatasourceCredentialsCollection.cs" />
+    <Compile Include="Diagnostics\DeliveryExtension.cs" />
+    <Compile Include="Diagnostics\EncryptionTags.cs" />
+    <Compile Include="Diagnostics\Event.cs" />
+    <Compile Include="Diagnostics\EventExtension.cs" />
+    <Compile Include="Diagnostics\ExecutionLogExecType.cs" />
+    <Compile Include="Diagnostics\ExecutionLogLevel.cs" />
+    <Compile Include="Diagnostics\ExtendedProtectionLevel.cs" />
+    <Compile Include="Diagnostics\ExtendedProtectionScenario.cs" />
+    <Compile Include="Diagnostics\Extension.cs" />
+    <Compile Include="Diagnostics\ExtensionBoundary.cs" />
+    <Compile Include="Diagnostics\ExtensionClassFactory.cs" />
+    <Compile Include="Diagnostics\ExtensionConsts.cs" />
+    <Compile Include="Diagnostics\ExtensionLocalizedNameAttribute.cs" />
+    <Compile Include="Diagnostics\ExtensionsConfiguration.cs" />
+    <Compile Include="Diagnostics\ExtensionWrapper.cs" />
+    <Compile Include="Diagnostics\ExternalItemPath.cs" />
+    <Compile Include="Diagnostics\ExternalOriginalItemPath.cs" />
+    <Compile Include="Diagnostics\FreeMemoryRequest.cs" />
+    <Compile Include="Diagnostics\FreeMemoryRequestContext.cs" />
+    <Compile Include="Diagnostics\FreeOverhead.cs" />
+    <Compile Include="Diagnostics\IAbortHelper.cs" />
+    <Compile Include="Diagnostics\ICatalogItemContext.cs" />
+    <Compile Include="Diagnostics\IConfiguration.cs" />
+    <Compile Include="Diagnostics\ICounter.cs" />
+    <Compile Include="Diagnostics\ICounterProvider.cs" />
+    <Compile Include="Diagnostics\IDataProtection.cs" />
+    <Compile Include="Diagnostics\IDataShapeAbortHelper.cs" />
+    <Compile Include="Diagnostics\IDataShapeQueryAbortHelper.cs" />
+    <Compile Include="Diagnostics\IExtensionFactory.cs" />
+    <Compile Include="Diagnostics\IJobContext.cs" />
+    <Compile Include="Diagnostics\IMapTileServerConfiguration.cs" />
+    <Compile Include="Diagnostics\ImpersonationContext.cs" />
+    <Compile Include="Diagnostics\Internal\AdditionalInfo.cs" />
+    <Compile Include="Diagnostics\Internal\Connection.cs" />
+    <Compile Include="Diagnostics\Internal\DataSet.cs" />
+    <Compile Include="Diagnostics\Internal\DataShape.cs" />
+    <Compile Include="Diagnostics\Internal\DataSource.cs" />
+    <Compile Include="Diagnostics\Internal\EstimatedMemoryUsageKBCategory.cs" />
+    <Compile Include="Diagnostics\Internal\ExternalImageCategory.cs" />
+    <Compile Include="Diagnostics\Internal\ModelMetadata.cs" />
+    <Compile Include="Diagnostics\Internal\ModelRetrieval.cs" />
+    <Compile Include="Diagnostics\Internal\NullableBool.cs" />
+    <Compile Include="Diagnostics\Internal\QueryParameter.cs" />
+    <Compile Include="Diagnostics\Internal\ScaleTimeCategory.cs" />
+    <Compile Include="Diagnostics\Internal\SerializableDictionary.cs" />
+    <Compile Include="Diagnostics\IOAuthConfiguration.cs" />
+    <Compile Include="Diagnostics\IParameterSource.cs" />
+    <Compile Include="Diagnostics\IParametersTranslator.cs" />
+    <Compile Include="Diagnostics\IPathManager.cs" />
+    <Compile Include="Diagnostics\IPathTranslator.cs" />
+    <Compile Include="Diagnostics\IPowerBIOAuthConfiguration.cs" />
+    <Compile Include="Diagnostics\IProcessRenderingConfiguration.cs" />
+    <Compile Include="Diagnostics\IRdlSandboxConfig.cs" />
+    <Compile Include="Diagnostics\IRdlSandboxTypeInfo.cs" />
+    <Compile Include="Diagnostics\IReportParameterLookup.cs" />
+    <Compile Include="Diagnostics\IRSRequestParameters.cs" />
+    <Compile Include="Diagnostics\IServiceInstanceContext.cs" />
+    <Compile Include="Diagnostics\ItemPathBase.cs" />
+    <Compile Include="Diagnostics\ItemPathOptions.cs" />
+    <Compile Include="Diagnostics\JobActionEnum.cs" />
+    <Compile Include="Diagnostics\JobStatusEnum.cs" />
+    <Compile Include="Diagnostics\JobSubTypeEnum.cs" />
+    <Compile Include="Diagnostics\JobType.cs" />
+    <Compile Include="Diagnostics\JobTypeEnum.cs" />
+    <Compile Include="Diagnostics\KnownExtensions.cs" />
+    <Compile Include="Diagnostics\Localization.cs" />
+    <Compile Include="Diagnostics\LogonMethod.cs" />
+    <Compile Include="Diagnostics\ManagedSemaphore.cs" />
+    <Compile Include="Diagnostics\MapTileCacheLevel.cs" />
+    <Compile Include="Diagnostics\MapTileServerConsts.cs" />
+    <Compile Include="Diagnostics\MeasureSql.cs" />
+    <Compile Include="Diagnostics\MemoryAuditCollection.cs" />
+    <Compile Include="Diagnostics\MemoryAuditProxy.cs" />
+    <Compile Include="Diagnostics\MemoryGroupType.cs" />
+    <Compile Include="Diagnostics\MemoryRequest.cs" />
+    <Compile Include="Diagnostics\MemoryUsageSimulation.cs" />
+    <Compile Include="Diagnostics\MonitoredScope.cs" />
+    <Compile Include="Diagnostics\NativeDumperMethods.cs" />
+    <Compile Include="Diagnostics\NativeLoggingMethods.cs" />
+    <Compile Include="Diagnostics\NativeLogonMethods.cs" />
+    <Compile Include="Diagnostics\NativeMemoryMethods.cs" />
+    <Compile Include="Diagnostics\NativeMethods.cs" />
+    <Compile Include="Diagnostics\NativeXEMethods.cs" />
+    <Compile Include="Diagnostics\NormalRandom.cs" />
+    <Compile Include="Diagnostics\PreQueueDelegate.cs" />
+    <Compile Include="Diagnostics\PriorityQueue.cs" />
+    <Compile Include="Diagnostics\ProcessingContext.cs" />
+    <Compile Include="Diagnostics\ProcessingStatus.cs" />
+    <Compile Include="Diagnostics\ProcessingUpgradeState.cs" />
+    <Compile Include="Diagnostics\ProtectionMode.cs" />
+    <Compile Include="Diagnostics\PvDataSource.cs" />
+    <Compile Include="Diagnostics\RefCountedDisposable.cs" />
+    <Compile Include="Diagnostics\RenderingExtension.cs" />
+    <Compile Include="Diagnostics\ReportEventType.cs" />
+    <Compile Include="Diagnostics\ReportExecutionInfo.cs" />
+    <Compile Include="Diagnostics\ReportItemConverterExtension.cs" />
+    <Compile Include="Diagnostics\ReportParameterCollection.cs" />
+    <Compile Include="Diagnostics\ReportProcessingExceptionBase.cs" />
+    <Compile Include="Diagnostics\ReportServerAbortInfo.cs" />
+    <Compile Include="Diagnostics\ReportServerThreadPool.cs" />
+    <Compile Include="Diagnostics\RequestCache.cs" />
+    <Compile Include="Diagnostics\RequestCacheItem.cs" />
+    <Compile Include="Diagnostics\RequestContext.cs" />
+    <Compile Include="Diagnostics\RequestContextBase.cs" />
+    <Compile Include="Diagnostics\ReturnValue.cs" />
+    <Compile Include="Diagnostics\RevertImpersonationContext.cs" />
+    <Compile Include="Diagnostics\RSPathUtil.cs" />
+    <Compile Include="Diagnostics\RSRequestParameters.cs" />
+    <Compile Include="Diagnostics\RunningJobContext.cs" />
+    <Compile Include="Diagnostics\RunningJobList.cs" />
+    <Compile Include="Diagnostics\RunningJobsResolver.cs" />
+    <Compile Include="Diagnostics\RunningRequestsScavenger.cs" />
+    <Compile Include="Diagnostics\SafeCoTaskMem.cs" />
+    <Compile Include="Diagnostics\SafeCryptoBlobIn.cs" />
+    <Compile Include="Diagnostics\SafeCryptoBlobOut.cs" />
+    <Compile Include="Diagnostics\SafeLocalFree.cs" />
+    <Compile Include="Diagnostics\SafeNativeLoggingPointer.cs" />
+    <Compile Include="Diagnostics\SafeSidPtr.cs" />
+    <Compile Include="Diagnostics\ScheduleStrings.cs" />
+    <Compile Include="Diagnostics\SecureStringWrapper.cs" />
+    <Compile Include="Diagnostics\SnapshotTemporaryStorage.cs" />
+    <Compile Include="Diagnostics\StreamSupport.cs" />
+    <Compile Include="Diagnostics\StringSupport.cs" />
+    <Compile Include="Diagnostics\SubscriptionJobType.cs" />
+    <Compile Include="Diagnostics\TestMemoryAuditProxy.cs" />
+    <Compile Include="Diagnostics\ThreadJobContext.cs" />
+    <Compile Include="Diagnostics\ThreadWorkItem.cs" />
+    <Compile Include="Diagnostics\ThreadWorkItemCancelableStep.cs" />
+    <Compile Include="Diagnostics\Timer.cs" />
+    <Compile Include="Diagnostics\TimerActionBase.cs" />
+    <Compile Include="Diagnostics\UserContext.cs" />
+    <Compile Include="Diagnostics\UserUtil.cs" />
+    <Compile Include="Diagnostics\Utilities\AverageDurationCounterMonitor.cs" />
+    <Compile Include="Diagnostics\Utilities\AverageValueCounter.cs" />
+    <Compile Include="Diagnostics\Utilities\IRSEventLogProvider.cs" />
+    <Compile Include="Diagnostics\Utilities\IRSEventProvider.cs" />
+    <Compile Include="Diagnostics\Utilities\LoginUtil.cs" />
+    <Compile Include="Diagnostics\Utilities\NativeRSEventLogProvider.cs" />
+    <Compile Include="Diagnostics\Utilities\ProgressiveReportCounters.cs" />
+    <Compile Include="Diagnostics\Utilities\RenderingArea.cs" />
+    <Compile Include="Diagnostics\Utilities\RenderingDiagnostics.cs" />
+    <Compile Include="Diagnostics\Utilities\RenderingTraceUtil.cs" />
+    <Compile Include="Diagnostics\Utilities\RSCounter.cs" />
+    <Compile Include="Diagnostics\Utilities\RSEventLog.cs" />
+    <Compile Include="Diagnostics\Utilities\RSEventProvider.cs" />
+    <Compile Include="Diagnostics\Utilities\RSMonitor.cs" />
+    <Compile Include="Diagnostics\Utilities\RSServiceTraceInternal.cs" />
+    <Compile Include="Diagnostics\Utilities\RSTraceContractExtensions.cs" />
+    <Compile Include="Diagnostics\Utilities\RSTraceInternal.cs" />
+    <Compile Include="Diagnostics\Utilities\StackTraceUtil.cs" />
+    <Compile Include="Diagnostics\Utilities\TotalPerSecondCounter.cs" />
+    <Compile Include="Diagnostics\Utilities\TraceEventProvider.cs" />
+    <Compile Include="Diagnostics\XmlParseExceptions.cs" />
+    <Compile Include="Diagnostics\XmlUtil.cs" />
+    <Compile Include="Extensions\ICatalogQuery.cs" />
+    <Compile Include="Extensions\IEventHandler.cs" />
+    <Compile Include="Extensions\IEventResolver.cs" />
+    <Compile Include="Extensions\InternalEvents.cs" />
+    <Compile Include="Extensions\Subscription.cs" />
+    <Compile Include="LegacyOfficeRender\LittleEndian.cs" />
+    <Compile Include="LegacyOfficeRender\OfficeImageHasher.cs" />
+    <Compile Include="ProcessingRenderingCommon\CommandWrapperHelper.cs" />
+    <Compile Include="ProcessingRenderingCommon\Common\HttpApi.cs" />
+    <Compile Include="ProcessingRenderingCommon\Common\HttpWebRequestFactory.cs" />
+    <Compile Include="ProcessingRenderingCommon\Common\TlsInspector.cs" />
+    <Compile Include="ProcessingRenderingCommon\Common\TlsLoggedWebRequestUtils.cs" />
+    <Compile Include="ProcessingRenderingCommon\Common\TlsTracingHttpMessageHandler.cs" />
+    <Compile Include="ProcessingRenderingCommon\HelperExtension.cs" />
+    <Compile Include="ProcessingRenderingCommon\IResourceTicket.cs" />
+    <Compile Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.Designer.cs">
+      <DependentUpon>RSPerfCounterRes.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ProcessingRenderingCommon\NumericExtensions.cs" />
+    <Compile Include="ProcessingRenderingCommon\PotentialPiiMaskWhenLogging.cs" />
+    <Compile Include="ProcessingRenderingCommon\RSConfigConsts.cs" />
+    <Compile Include="ProcessingRenderingCommon\ServerType.cs" />
+    <Compile Include="ProcessingRenderingCommon\Tracing\EngineTracer.cs" />
+    <Compile Include="ProcessingRenderingCommon\Tracing\IEngineTracerDestination.cs" />
+    <Compile Include="ProcessingRenderingCommon\Tracing\NullTracerDestination.cs" />
+    <Compile Include="ProcessingRenderingCommon\Tracing\RSTraceDestination.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.de.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.es.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.fr.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.it.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.ja.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.ko.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RSPerfCounterRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.ru.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.zh-Hans.resx" />
+    <EmbeddedResource Include="ProcessingRenderingCommon\Monitoring\RSPerfCounterRes.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

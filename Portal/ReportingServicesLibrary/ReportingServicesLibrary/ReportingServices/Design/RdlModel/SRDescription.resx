@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccentSensitivity" xml:space="preserve">
+    <value>Indicates whether the data is accent sensitive.</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>An action, such as a hyperlink, that is associated with the report item.</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>The author of the report.</value>
+  </data>
+  <data name="AutoRefresh" xml:space="preserve">
+    <value>The rate, in seconds, at which the report page automatically refreshes when rendered in HTML.</value>
+  </data>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>The color of the background.</value>
+  </data>
+  <data name="BackgroundImage" xml:space="preserve">
+    <value>A background image for the report item. </value>
+  </data>
+  <data name="BackgroundRepeat" xml:space="preserve">
+    <value>Indicates how the background image repeats to fill the available space.</value>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>The possible target of a Bookmark action.</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>The color of the border.</value>
+  </data>
+  <data name="BorderColorBottom" xml:space="preserve">
+    <value>The color of the bottom border.</value>
+  </data>
+  <data name="BorderColorDefault" xml:space="preserve">
+    <value>The color of the border, unless this property is overridden for a specific side.</value>
+  </data>
+  <data name="BorderColorLeft" xml:space="preserve">
+    <value>The color of the left border.</value>
+  </data>
+  <data name="BorderColorRight" xml:space="preserve">
+    <value>The color of the right border.</value>
+  </data>
+  <data name="BorderColorTop" xml:space="preserve">
+    <value>The color of the top border.</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>The style of the border.</value>
+  </data>
+  <data name="BorderStyleBottom" xml:space="preserve">
+    <value>The style of the bottom border.</value>
+  </data>
+  <data name="BorderStyleDefault" xml:space="preserve">
+    <value>The style of the border, unless this property is overridden for a specific side.</value>
+  </data>
+  <data name="BorderStyleLeft" xml:space="preserve">
+    <value>The style of the left border.</value>
+  </data>
+  <data name="BorderStyleRight" xml:space="preserve">
+    <value>The style of the right border.</value>
+  </data>
+  <data name="BorderStyleTop" xml:space="preserve">
+    <value>The style of the top border.</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>The width of the border.</value>
+  </data>
+  <data name="BorderWidthBottom" xml:space="preserve">
+    <value>The width of the bottom border.</value>
+  </data>
+  <data name="BorderWidthDefault" xml:space="preserve">
+    <value>The width of the border, unless this property is overridden for a specific side.</value>
+  </data>
+  <data name="BorderWidthLeft" xml:space="preserve">
+    <value>The width of the left border.</value>
+  </data>
+  <data name="BorderWidthRight" xml:space="preserve">
+    <value>The width of the right border.</value>
+  </data>
+  <data name="BorderWidthTop" xml:space="preserve">
+    <value>The width of the top border.</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Indicates the calendar to use for formatting dates.</value>
+  </data>
+  <data name="CanGrow" xml:space="preserve">
+    <value>Determines whether a text box is automatically resized to accommodate a lengthy value.</value>
+  </data>
+  <data name="CanShrink" xml:space="preserve">
+    <value>Determines whether a text box shrinks to fit a smaller value.</value>
+  </data>
+  <data name="CaseSensitivity" xml:space="preserve">
+    <value>Indicates whether the data is case-sensitive.</value>
+  </data>
+  <data name="CellDataElementName" xml:space="preserve">
+    <value>The name of the cell element.</value>
+  </data>
+  <data name="CellDataElementOutput" xml:space="preserve">
+    <value>Indicates whether the cell contents should appear in a data rendering.</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>The data fields to display in the chart.</value>
+  </data>
+  <data name="ChartDefinition" xml:space="preserve">
+    <value>The chart definition.</value>
+  </data>
+  <data name="ChartParameters" xml:space="preserve">
+    <value>The parameters to the chart.</value>
+  </data>
+  <data name="ClassID" xml:space="preserve">
+    <value>The class identifier of the control.</value>
+  </data>
+  <data name="Classes" xml:space="preserve">
+    <value>Classes to instantiate during report initialization.</value>
+  </data>
+  <data name="CodeBase" xml:space="preserve">
+    <value>The URL of the codebase from which the control is downloaded.</value>
+  </data>
+  <data name="CodeModules" xml:space="preserve">
+    <value>Assemblies available to the report for use in expressions.</value>
+  </data>
+  <data name="Collation" xml:space="preserve">
+    <value>The locale to use for the collation sequence for sorting data.</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>The color of the text.</value>
+  </data>
+  <data name="ColumnSpacing" xml:space="preserve">
+    <value>The spacing between each column.</value>
+  </data>
+  <data name="ColumnWidth" xml:space="preserve">
+    <value>The width of each column.</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>The number of columns in the rendered report.</value>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>The connection string for the data source.</value>
+  </data>
+  <data name="DataElementName" xml:space="preserve">
+    <value>The name of the data element or attribute of this report item.</value>
+  </data>
+  <data name="DataElementOutput" xml:space="preserve">
+    <value>Indicates whether the item should appear in a data rendering.</value>
+  </data>
+  <data name="DataElementStyle" xml:space="preserve">
+    <value>Indicates whether text boxes should render as elements or attributes.</value>
+  </data>
+  <data name="DataInstanceElementOutput" xml:space="preserve">
+    <value>Indicates whether the list instances should appear in a data rendering.</value>
+  </data>
+  <data name="DataInstanceName" xml:space="preserve">
+    <value>The name to use for the data element for the each instance of this list.</value>
+  </data>
+  <data name="DataSchema" xml:space="preserve">
+    <value>The schema or namespace to use when rendering report data.</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>The dataset to use for this data region.</value>
+  </data>
+  <data name="DataSourceType" xml:space="preserve">
+    <value>The data source type.</value>
+  </data>
+  <data name="DataTransform" xml:space="preserve">
+    <value>Transformation to apply to a report data rendering.</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>The description of the report.</value>
+  </data>
+  <data name="DetailDataCollectionName" xml:space="preserve">
+    <value>Specifies for all instances of this group the data element name of the collection.</value>
+  </data>
+  <data name="DetailDataElementName" xml:space="preserve">
+    <value>The name of the data element for instances of this group.</value>
+  </data>
+  <data name="DetailDataElementOutput" xml:space="preserve">
+    <value>Indicates whether the details should appear in a data rendering.</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Indicates whether text is written left-to-right or right-to-left.</value>
+  </data>
+  <data name="DrawGrid" xml:space="preserve">
+    <value>Indicates whether the positioning grid is visible.</value>
+  </data>
+  <data name="EmbeddedImages" xml:space="preserve">
+    <value>Embedded images for the report.</value>
+  </data>
+  <data name="EndPoint" xml:space="preserve">
+    <value>The position of the end of the line.</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>A collection of filters to apply to the data region.</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>The font used to display text.</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>The name of the font family.</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>The size of the font.</value>
+  </data>
+  <data name="FontStyle" xml:space="preserve">
+    <value>The font style.</value>
+  </data>
+  <data name="FontWeight" xml:space="preserve">
+    <value>The thickness of the font.</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>The formatting string.</value>
+  </data>
+  <data name="GridSize" xml:space="preserve">
+    <value>Determines the size of the positioning grid.</value>
+  </data>
+  <data name="Grouping" xml:space="preserve">
+    <value>The expressions used to group the data.</value>
+  </data>
+  <data name="GroupsBeforeRowHeaders" xml:space="preserve">
+    <value>The number of instances of the outermost column group that can appear to the left of the row headers (or to the right of the row headers for right-to-left matrices).</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>The height of the report section.</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Indicates whether the item is initially hidden.</value>
+  </data>
+  <data name="HideDuplicates" xml:space="preserve">
+    <value>Hides an item when the value of the item equals the value of the same item in the preceding row. The value of this property is the name of the grouping or dataset that contains items to be hidden.</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>The type of the image source.</value>
+  </data>
+  <data name="ImageValue" xml:space="preserve">
+    <value>The source of the image.</value>
+  </data>
+  <data name="KanatypeSensitivity" xml:space="preserve">
+    <value>Indicates whether the data is kanatype sensitive.</value>
+  </data>
+  <data name="KeepTogether" xml:space="preserve">
+    <value>Indicates that the data region (all repeated sections) should be kept together on one page if possible.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>The label to identify an instance of a report item within the document map.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>The primary language of the text.</value>
+  </data>
+  <data name="LayoutDirection" xml:space="preserve">
+    <value>Indicates whether the matrix columns expand left-to-right or right-to-left.</value>
+  </data>
+  <data name="LineColor" xml:space="preserve">
+    <value>The color of the line.</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>The height of a line of text.</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>The style of the line.</value>
+  </data>
+  <data name="LineWidth" xml:space="preserve">
+    <value>The width of the line.</value>
+  </data>
+  <data name="LinkToChild" xml:space="preserve">
+    <value>The name of a report item that is the target of the document map label. This report item must be contained directly within the current report item .</value>
+  </data>
+  <data name="ListFillPage" xml:space="preserve">
+    <value>Indicates whether to expand the list to the bottom of the page.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>The position of the top-left corner of the report item in relation to its container.</value>
+  </data>
+  <data name="MIMEType" xml:space="preserve">
+    <value>The MIME type for the image. </value>
+  </data>
+  <data name="Margins" xml:space="preserve">
+    <value>Margins for the report.</value>
+  </data>
+  <data name="MatrixGroupings" xml:space="preserve">
+    <value>The set of row and column groupings for the matrix.</value>
+  </data>
+  <data name="MergeTransactions" xml:space="preserve">
+    <value>Indicates that transactions for the subreport are merged with transactions for the parent report if the data sources for both reports use the same connection. This combines transactions for both reports into a single transaction. </value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>The name of the report item.</value>
+  </data>
+  <data name="NoRows" xml:space="preserve">
+    <value>The message to display in the data region when no rows of data are available.</value>
+  </data>
+  <data name="NumeralLanguage" xml:space="preserve">
+    <value>The digit format to use as described by its primary language.</value>
+  </data>
+  <data name="NumeralVariant" xml:space="preserve">
+    <value>The variant of the digit format to use.</value>
+  </data>
+  <data name="OverwriteDataSources" xml:space="preserve">
+    <value>Indicates whether data source definitions on the report server can be overwritten when deploying the project.</value>
+  </data>
+  <data name="Padding" xml:space="preserve">
+    <value>The amount of padding within the object.</value>
+  </data>
+  <data name="PaddingBottom" xml:space="preserve">
+    <value>The amount of padding below the object.</value>
+  </data>
+  <data name="PaddingLeft" xml:space="preserve">
+    <value>The amount of padding to the left of the object.</value>
+  </data>
+  <data name="PaddingRight" xml:space="preserve">
+    <value>The amount of padding to the right of the object.</value>
+  </data>
+  <data name="PaddingTop" xml:space="preserve">
+    <value>The amount of padding above the object.</value>
+  </data>
+  <data name="PageBreakAtEnd" xml:space="preserve">
+    <value>Specifies that the rendering extension insert a page break at the end of the group.</value>
+  </data>
+  <data name="PageBreakAtStart" xml:space="preserve">
+    <value>Specifies that the rendering extension insert a page break at the beginning of the group.</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>The default size of pages in the report.</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>The name of the containing report item.</value>
+  </data>
+  <data name="PreviewAs" xml:space="preserve">
+    <value>PreviewAs</value>
+  </data>
+  <data name="PrintOnFirstPage" xml:space="preserve">
+    <value>Specifies that the page header or footer is included on the first page of the report.</value>
+  </data>
+  <data name="PrintOnLastPage" xml:space="preserve">
+    <value>Specifies that the page header or footer is included on the last page of the report.</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>The query to execute to get the data for the report.</value>
+  </data>
+  <data name="RepeatFooterOnNewPage" xml:space="preserve">
+    <value>Indicates whether the footer is displayed on each page that includes the table.</value>
+  </data>
+  <data name="RepeatHeaderOnNewPage" xml:space="preserve">
+    <value>Indicates whether the header is displayed on each page that includes the table.</value>
+  </data>
+  <data name="RepeatOnNewPage" xml:space="preserve">
+    <value>Indicates whether all rows of the header or footer are displayed on each page that includes the table.</value>
+  </data>
+  <data name="RepeatWith" xml:space="preserve">
+    <value>The name of the data region with which this report item should be repeated if the data region spans multiple pages.</value>
+  </data>
+  <data name="ReportDataElementName" xml:space="preserve">
+    <value>Name of a top level element that represents the report data.</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>The URL of the report to display as the subreport.</value>
+  </data>
+  <data name="ReportParameters" xml:space="preserve">
+    <value>The parameters for the report.</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>The height of the row.</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>The size of the report item.</value>
+  </data>
+  <data name="Sizing" xml:space="preserve">
+    <value>The appearance of the image if it does not conform to the specified size.</value>
+  </data>
+  <data name="SnapToGrid" xml:space="preserve">
+    <value>Determines whether controls snap to the positioning grid.</value>
+  </data>
+  <data name="StartItem" xml:space="preserve">
+    <value>The report to execute when you start the debugger.</value>
+  </data>
+  <data name="SubreportParameters" xml:space="preserve">
+    <value>The parameters to pass to the subreport.</value>
+  </data>
+  <data name="SubreportReportName" xml:space="preserve">
+    <value>The path to the subreport.</value>
+  </data>
+  <data name="SubtotalDataElementName" xml:space="preserve">
+    <value>The name to use for this subtotal.</value>
+  </data>
+  <data name="SubtotalPosition" xml:space="preserve">
+    <value>Indicates whether this subtotal column or row should appear before (above or left) or after (below or right) the detail columns and rows.</value>
+  </data>
+  <data name="TableFillPage" xml:space="preserve">
+    <value>Indicates whether to expand the table to the bottom of the page.</value>
+  </data>
+  <data name="TableGroups" xml:space="preserve">
+    <value>The groups for the table (group expressions, headers, and footers). </value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>The path of the folder that contains the deployed project.</value>
+  </data>
+  <data name="TargetServerURL" xml:space="preserve">
+    <value>The URL of the report server to which to deploy the project, for example, http://hostname/ReportServer.</value>
+  </data>
+  <data name="TextAlign" xml:space="preserve">
+    <value>The horizontal alignment of the text.</value>
+  </data>
+  <data name="TextDecoration" xml:space="preserve">
+    <value>Specifies special text formatting.</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>The expression whose value is displayed in the text box.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>The text label for the report item, which is used for purposes such as rendering TITLE and ALT attributes in HTML reports.</value>
+  </data>
+  <data name="ToggleImage" xml:space="preserve">
+    <value>Determines the initial state of the toggle image.</value>
+  </data>
+  <data name="ToggleItem" xml:space="preserve">
+    <value>The name of the text box used to hide or show this report item.</value>
+  </data>
+  <data name="UnicodeBiDi" xml:space="preserve">
+    <value>Indicates how bidirectional text is embedded within the main text of an item.</value>
+  </data>
+  <data name="VerticalAlign" xml:space="preserve">
+    <value>The vertical alignment of the text.</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Indicates whether the item should be hidden.</value>
+  </data>
+  <data name="WidthSensitivity" xml:space="preserve">
+    <value>Indicates whether the data is width-sensitive.</value>
+  </data>
+  <data name="WritingMode" xml:space="preserve">
+    <value>Indicates whether text is written horizontally or vertically.</value>
+  </data>
+  <data name="Zindex" xml:space="preserve">
+    <value>The drawing order of the report item within the containing object.</value>
+  </data>
+</root>

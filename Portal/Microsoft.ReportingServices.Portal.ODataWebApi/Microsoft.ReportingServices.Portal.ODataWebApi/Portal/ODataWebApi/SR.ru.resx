@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataSetProcessingException" xml:space="preserve">
+    <value>Не удалось обработать набор данных.</value>
+  </data>
+  <data name="DataSetProcessingSoapException" xml:space="preserve">
+    <value>Произошла ошибка при получении данных из веб-службы сервера отчетов: {0}</value>
+  </data>
+  <data name="ErrorPbixUpload" xml:space="preserve">
+    <value>Ошибка при отправке PBIX-файла. Убедитесь, что файл не поврежден и что расширение файла соответствует формату файла.</value>
+  </data>
+  <data name="Error_SearchTextNullOrEmpty" xml:space="preserve">
+    <value>Строка поиска пуста.</value>
+  </data>
+  <data name="InvalidAggregation" xml:space="preserve">
+    <value>Указано недопустимое агрегирование.</value>
+  </data>
+  <data name="InvalidDataSourceForTestConnectionPbi" xml:space="preserve">
+    <value>Источник данных отчета недопустим для проверки подключения.</value>
+  </data>
+  <data name="NotExpectedTypeException" xml:space="preserve">
+    <value>Непредвиденный тип аргумента. Ожидается "{0}".</value>
+  </data>
+  <data name="NotSupportedException" xml:space="preserve">
+    <value>Функция не поддерживается.</value>
+  </data>
+  <data name="ParameterValueNotSupplied" xml:space="preserve">
+    <value>Для параметра "{0}" нужно непустое значение.</value>
+  </data>
+  <data name="PropertyNullException" xml:space="preserve">
+    <value>Свойство не может быть равным NULL или пустым.</value>
+  </data>
+  <data name="SystemResourcePackageException" xml:space="preserve">
+    <value>Произошла ошибка в пакете системных ресурсов.</value>
+  </data>
+  <data name="SystemResourceProcessingException" xml:space="preserve">
+    <value>Не удалось обработать системный ресурс.</value>
+  </data>
+  <data name="UploadFileCanceled" xml:space="preserve">
+    <value>Отправка файла отменена.</value>
+  </data>
+</root>

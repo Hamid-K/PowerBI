@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/contentappversionoverrides" xsi:type="ContentApp">
+  <Id>b2168d0c-a1d8-4c60-bc41-b1d116be3e22</Id>
+  <Version>2.0.0.3</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Microsoft Power BI Dev"/>
+  <Description DefaultValue="Add live and interactive data visuals from Power BI to your slides."/>
+  <IconUrl DefaultValue="https://content.powerapps.com/resource/powerbiwfe/images/pbi-logo-32x32.fe246b8f62c14dbb79a6.png"/>
+  <HighResolutionIconUrl DefaultValue="https://content.powerapps.com/resource/powerbiwfe/images/pbi-logo-64x64.019f82fbc9d4cd3d1323.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?linkid=2170691"/>
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://portal.analysis.windows-int.net/storytellingaddin?debug=1"/>
+    <RequestedWidth>960</RequestedWidth>
+    <RequestedHeight>570</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/contentappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <WebApplicationInfo>
+      <Id>00000009-0000-0000-c000-000000000000</Id>
+      <Resource>api://embedded.powerbi.com/00000009-0000-0000-c000-000000000000</Resource>
+      <Scopes>
+        <Scope>user_impersonation</Scope>
+		<Scope>profile</Scope>
+		<Scope>openid</Scope>
+      </Scopes>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

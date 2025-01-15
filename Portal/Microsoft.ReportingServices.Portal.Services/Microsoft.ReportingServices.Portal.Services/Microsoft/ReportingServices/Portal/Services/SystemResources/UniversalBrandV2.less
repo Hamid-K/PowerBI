@@ -1,0 +1,1504 @@
+/* logo */
+@showLogo:false;
+
+/* undefined color fallback */
+@notset: #f0f;
+
+/* interface:colors */
+
+/* variable map */
+@primaryButtonBg: @primaryButton;
+@primaryButtonHoverBg: @primaryButtonHover;
+@primaryButtonPressedBg: @primaryButtonPressed;
+@primaryButtonColor: @primaryContrast;
+
+@defaultButtonBg: @neutralTertiary;
+@defaultButtonHoverBg: @neutralTertiaryAlt;
+@defaultButtonColor: @neutralTertiaryContrast;
+
+@textLinkColor: @link;
+@textLinkHoverColor: @linkHover;
+@textLinkVisitedColor: @linkVisited;
+
+@radioButtonCheckBoxColor: @radioButtonCheckBox;
+@radioButtonCheckBoxHoverColor: @radioButtonCheckBoxHover;
+
+@bodyBg: @neutralPrimaryAlt;
+@textColor: @neutralPrimaryContrast;
+
+@pageHeaderBg: @neutralPrimary;
+@pageHeaderColor: @neutralPrimaryContrast;
+@pageHeaderBorderColor: @neutralPrimaryAlt3;
+
+@formBg: @neutralSecondary;
+@formColor: @neutralSecondaryContrast;
+@formPlaceholderColor: @neutralSecondaryContrast;
+@formBorderColor: @neutralSecondaryAlt2;
+@formCheckboxSelectedColor: @primaryContrast;
+@formRadioColor: @secondaryAlt;
+
+@navbarBg: @secondary;
+@navbarColor: @secondaryContrast;
+@navbarItemBg: @secondary;
+@navbarItemHoverBg: @primaryAlt2;
+
+@interfaceBg: @neutralSecondary;
+@interfaceColorAlt: @neutralSecondaryAlt3;
+@interfaceColor: @neutralSecondaryContrast;
+@interfaceItemHoverBg: @neutralTertiaryAlt2;
+@interfaceBorderColor: @neutralSecondaryAlt;
+
+@toolbarBg: @secondaryAlt;
+@toolbarColor: @secondaryContrast;
+@toolbarItemBg: @secondaryAlt;
+@toolbarItemHoverBg: @secondaryAlt2;
+@toolbarItemActiveBg: @primaryAlt3;
+@toolbarBorderColor: @neutralPrimaryAlt2;
+@itemDisabledColor: @secondaryAlt2;
+
+@toolbarPageBg: @neutralPrimaryAlt;
+@toolbarPageColor: @neutralPrimaryContrast;
+@toolbarPageItemHoverBg: @neutralPrimaryAlt2;
+@toolbarPageBorderColor: @neutralSecondaryAlt2;
+
+@folderTileBg: @pageHeaderBg;
+@folderTileColor: @pageHeaderColor;
+@folderTileHoverColor: @neutralPrimaryContrast;
+@folderTileContextMenuColor: @pageHeaderColor;
+@folderTileContextMenuHoverBg: @folderTileBg;
+
+@itemHeaderBg: @neutralPrimary;
+@itemHeaderColor: @neutralPrimaryContrast;
+@itemHeaderBorderColor: @neutralPrimaryAlt2;
+
+@tileBg: @neutralPrimary;
+@tileColor: @neutralPrimaryContrast;
+@tileBorderColor: @neutralPrimaryContrast;
+@tileHoverColor: @neutralPrimaryContrast;
+@tileContextMenuColor: @tileColor;
+@tileContextMenuHoverBg: @tileHoverColor;
+
+@actionsBg: @neutralTertiaryAlt2;
+@actionsColor: @neutralTertiaryContrast;
+@actionsItemHoverBg: @neutralTertiaryAlt3;
+@actionsBorderColor: @neutralTertiaryAlt;
+
+@tableBorderColor: @neutralPrimaryAlt3;
+
+@commentsPaneBackgroundColor: @neutralPrimaryAlt;
+@commentBackgroundColor: @neutralPrimary;
+@commentsLinkColor: @secondaryAlt3;
+@commentsPaneColor: @neutralPrimaryContrast;
+@commentsTextBox: @neutralSecondaryAlt3;
+
+/* a:link styles */
+a {
+  color: @textLinkColor;
+}
+
+a:hover {
+  color: @textLinkHoverColor;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: @textLinkColor;
+  text-decoration: underline;
+}
+
+a:active,
+a:visited {
+  color: @textLinkVisitedColor;
+  text-decoration: underline;
+}
+
+/* page title */
+app-page-title {
+  &, a, a:hover, a:focus, a:active, a:visited {
+    color: @secondaryContrast;
+    text-decoration: none;
+  }
+}
+
+/* button styles */
+/* default buttons (grey in default theme) */
+.btn-default {
+  color: @defaultButtonColor;
+  background-color: @defaultButtonBg;
+}
+
+/* default hover/active/focused */
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default,
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: @defaultButtonColor;
+  background-color: @defaultButtonHoverBg;
+}
+
+/* default disabled */
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  color: @defaultButtonColor;
+  background-color: @defaultButtonHoverBg;
+  opacity: 0.5;
+}
+
+/* primary buttons (teal in default theme) */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.btn-upload input:focus ~ label {
+  color: @primaryButtonColor;
+  background-color: @primaryButtonBg;
+}
+
+/* primary hover */
+.btn-primary:not(:disabled):not(.disabled):hover,
+.open > .dropdown-toggle.btn-primary:not(:disabled):not(.disabled):hover {
+  color: @primaryButtonColor;
+  background-color: @primaryButtonHoverBg;
+}
+
+/* primary active */
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.open > .dropdown-toggle.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary.btn-upload input:not(:disabled):not(.disabled):active ~ label {
+  color: @primaryButtonColor;
+  background-color: @primaryButtonPressedBg;
+}
+
+/* primary disabled */
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  color: @defaultButtonColor;
+  background-color: @defaultButtonHoverBg;
+  opacity: 0.5;
+}
+
+/* link buttons, a simple hyperlink-styled button */
+.btn-link {
+  color: @primary;
+}
+
+/* link hover/active/focused */
+.btn-link:focus,
+.btn-link.focus,
+.btn-link:hover,
+.btn-link:active,
+.btn-link.active,
+.open > .dropdown-toggle.btn-link,
+.btn-link:active:hover,
+.btn-link.active:hover,
+.open > .dropdown-toggle.btn-link:hover,
+.btn-link:active:focus,
+.btn-link.active:focus,
+.open > .dropdown-toggle.btn-link:focus,
+.btn-link:active.focus,
+.btn-link.active.focus,
+.open > .dropdown-toggle.btn-link.focus {
+  color: @primary;
+}
+
+/* form styles */
+.form-control {
+  color: @formColor;
+  background-color: @formBg;
+  border-color: @formBorderColor;
+}
+
+.form-control:focus {
+  border-color: @formColor;
+  border-width: 2px;
+}
+
+/* label required */
+
+label.required::after {
+  content: "*";
+  color: red;
+}
+
+/* default placeholder text colors */
+.form-control::-moz-placeholder {
+  color: fade(@formPlaceholderColor, 75%);
+}
+
+.form-control:-ms-input-placeholder {
+  color: fade(@formPlaceholderColor, 75%);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: fade(@formPlaceholderColor, 75%);
+}
+
+/* generic error/invalid form colours */
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label,
+.has-error.help-block {
+  color: @danger;
+}
+
+.has-error .form-control,
+.form-control.ng-invalid,
+form .form-control.input-inline.ng-invalid {
+  border-color: @danger;
+}
+
+.has-error .form-control:focus {
+  border-color: darken(@danger, 15%);
+}
+
+/* checkbox/radio styling */
+
+// unchecked
+.checkbox input ~ span:first-of-type::before,
+.checkbox-inline input ~ span:first-of-type::before,
+.radio input ~ span:first-of-type::before,
+.radio-inline input ~ span:first-of-type::before {
+  border-color: @radioButtonCheckBox;
+}
+
+// checked checkbox
+.checkbox input:checked ~ span:first-of-type::before,
+.checkbox-inline input:checked ~ span:first-of-type::before {
+  color: @formCheckboxSelectedColor;
+  border-color: @radioButtonCheckBox;
+  background-color: @radioButtonCheckBox;
+}
+
+// checked radio
+.radio input:checked ~ span:first-of-type::before,
+.radio-inline input:checked ~ span:first-of-type::before {
+  background-color: @radioButtonCheckBoxColor;
+
+  @media screen and (forced-colors: active) {
+    // to represent the checked state in Windows High Contrast mode
+    // since it seems to turn all the background colors into the same one
+    border: 4px solid;
+  }
+}
+
+// hover unchecked
+.checkbox input:hover ~ span:first-of-type::before,
+.checkbox-inline input:hover ~ span:first-of-type::before,
+.radio input:hover ~ span:first-of-type::before,
+.radio-inline input:hover ~ span:first-of-type::before {
+  border-color: @radioButtonCheckBoxHoverColor;
+}
+
+// hover checked
+.checkbox input:checked:hover ~ span:first-of-type::before,
+.checkbox-inline input:checked:hover ~ span:first-of-type::before,
+.radio input:checked:hover ~ span:first-of-type::before,
+.radio-inline input:checked:hover ~ span:first-of-type::before {
+  border-color: @radioButtonCheckBoxHoverColor;
+  background-color: @radioButtonCheckBoxHoverColor;
+}
+
+// focus checked
+.checkbox input:checked:focus ~ span:first-of-type::before,
+.checkbox-inline input:checked:focus ~ span:first-of-type::before {
+  border-color: @formRadioColor;
+}
+
+// disabled unchecked
+.checkbox input:disabled:not(:checked) ~ span:first-of-type::before,
+.checkbox-inline input:disabled:not(:checked) ~ span:first-of-type::before {
+  background-color: transparent;
+  border-color: @formBorderColor;
+}
+
+// disabled checked
+.checkbox input:disabled ~ span:first-of-type::before,
+.checkbox-inline input:disabled ~ span:first-of-type::before {
+  color: @formRadioColor;
+  border-color: @formBorderColor;
+  background-color: @formBorderColor;
+}
+
+/* buttons attached to input boxes */
+.input-group-btn .btn {
+  border-color: @formBorderColor;
+  color: @actionsColor;
+  background-color: @actionsItemHoverBg;
+}
+
+.input-group-btn .btn:hover,
+.input-group-btn .btn:active,
+.input-group-btn .btn:focus {
+  color: @actionsColor; //#444;
+  background-color: @actionsBg; //#e0e0e0;
+}
+
+.input-group-btn .btn[disabled],
+.input-group-btn .btn[disabled]:hover,
+.input-group-btn .btn[disabled]:active,
+.input-group-btn .btn[disabled]:focus {
+  border-color: @formBorderColor;
+  background-color: @actionsBg; //#e0e0e0;
+}
+
+.has-error .input-group-btn .btn {
+  border-color: @danger;
+}
+
+/* AM/PM button from ngb-timepicker*/
+.ngb-tp-meridian>button.btn-outline-primary {
+  border-color: @formBorderColor;
+  color: @actionsColor;
+  background-color: @neutralTertiary;
+
+  &:focus,
+  &:hover{
+    outline-color: @formBorderColor;
+    background-color: @actionsBorderColor;
+  }
+
+  &:not(:disabled):active {
+    border-color: @formBorderColor;
+    color: @actionsColor;
+    background-color: @actionsBg;
+  }
+}
+
+/* generic table styles */
+.table > thead > tr > th {
+  border-bottom-color: @tableBorderColor;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top-color: @tableBorderColor;
+}
+
+/* body styles */
+body {
+  color: @textColor;
+  background-color: @bodyBg;
+}
+
+/* icon background color */
+.report-icon-bg {
+  background-color: @reportIconBackground;
+}
+
+.excel-icon-bg {
+  background-color: @excelIconBackground;
+}
+
+.folder-icon-bg {
+  background-color: @folderIconBackground;
+}
+
+.dataset-icon-bg {
+  background-color: @datasetIconBackground;
+}
+
+.other-icon-bg {
+  background-color: @otherIconBackground;
+}
+
+/* icon color */
+app-item-type-icon {
+  &, &.glyphui {
+    font-size: 16px;
+    top: 0;
+    color: @itemTypeIconColor;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* dropdown menu styles */
+.dropdown-menu {
+  background-color: @interfaceBg;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > button,
+.dropdown-menu > button.dropdown-item {
+  color: @interfaceColor;
+  background-color: @interfaceBg;
+  border-bottom-color: @interfaceBorderColor;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > button:hover,
+.dropdown-menu > li > button:focus,
+.dropdown-menu > button.dropdown-item:hover,
+.dropdown-menu > button.dropdown-item:focus {
+  color: @interfaceColor;
+  background-color: @interfaceItemHoverBg;
+}
+
+.dropdown-menu > button.dropdown-item.disabled {
+  color: @neutralPrimaryAlt3;
+  background-color: transparent;
+}
+
+.dropdown-header {
+  color: @itemDisabledColor;
+}
+
+/* unchecked checkbox style */
+.dropdown-checkboxes > .checkable > a span.unchecked {
+  background-color: @interfaceBg;
+  color: fade(@interfaceColor, 60%);
+}
+
+/* checked checkbox style */
+.dropdown-checkboxes > .checkable > a span.checked {
+  background-color: @interfaceBg;
+}
+
+/* navbar */
+.navbar-default {
+  background-color: @navbarBg;
+}
+
+.navbar-default .navbar-nav {
+  > li.app-nav-search > div.search-button > a,
+  > li > a {
+    background-color: @navbarItemBg;
+    color: @navbarColor;
+    border-left-color: fade(@navbarColor, 30%);
+
+    &:hover,
+    &:focus {
+      color: @navbarColor;
+      background-color: @navbarItemHoverBg;
+      border-left-color: fade(@navbarColor, 30%);
+    }
+  }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: @interfaceBg;
+  color: @interfaceColor;
+}
+
+/* publish bar */
+
+section div.publish-bar {
+  background-color: @toolbarBg;
+  border-top-color: @toolbarBorderColor;
+  color: @toolbarColor;
+}
+
+/* the username has no anchor; it needs to be styled independently */
+.navbar-default .navbar-nav > li.nav-user > span {
+  background-color: @navbarItemBg;
+  color: @navbarColor;
+  border-left-color: fade(@navbarColor, 30%);
+}
+
+/* colored navbar items */
+/* alerts */
+.navbar-default .navbar-nav > li.nav-alerts > a {
+  color: @warning;
+}
+
+/* brand text/image */
+.navbar-default .navbar-brand {
+  color: @navbarColor;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:focus {
+  color: @navbarColor;
+}
+
+/* to display a logo instead of text, set
+    span.text to display:none;
+        and
+    span.logo to display:block;
+*/
+.brandingText() when (@showLogo) {
+  display: none;
+}
+
+.brandingText() {
+}
+
+.navbar-default .navbar-brand h1.text {
+  .brandingText;
+}
+
+.brandingImage() when (@showLogo) {
+  display: block;
+}
+
+.brandingImage() {
+}
+
+.navbar-default .navbar-brand span.logo {
+  .brandingImage;
+}
+
+/* toolbar */
+.toolbar {
+  background-color: @toolbarBg;
+  border-bottom-color: @toolbarBorderColor;
+  color: @toolbarColor;
+}
+
+.toolbar .nav {
+  > li > a,
+  > li > button,
+  > li > .btn-upload {
+    background-color: @toolbarBg;
+    color: @toolbarColor;
+  }
+
+  > li > a:hover,
+  > li > a:focus,
+  > li > button:hover:enabled,
+  > li > button:focus:enabled,
+  > li > .btn-upload > input:hover + label,
+  > li > .btn-upload > input:focus + label,
+  > li > .btn-upload > input:active + label,
+  > li > a.comments-open {
+    background-color: @toolbarItemHoverBg;
+  }
+
+  > .open > a,
+  > .open > a:focus,
+  > .open > a:hover {
+    background-color: @toolbarItemHoverBg;
+    color: @toolbarColor;
+  }
+
+  &:not(.underlined-nav) {
+    > li > a.active,
+    > li > a.active:hover,
+    > li > a.active:focus {
+      background-color: @toolbarItemActiveBg;
+    }
+  }
+
+  &.underlined-nav {
+    > li > a {
+      &:after {
+        background-color: @primary;
+      }
+    }
+  }
+}
+
+.toolbar.page-color,
+.toolbar.page-color .nav > li > a {
+  color: @toolbarPageColor;
+  background-color: @toolbarPageBg;
+}
+
+.toolbar.page-color.top-bottom-border {
+  border-bottom: 1px solid @toolbarPageBorderColor;
+  border-top: 1px solid @toolbarPageBorderColor;
+}
+
+.toolbar.page-color .nav > li > a:hover,
+.toolbar.page-color .nav > li > a:focus {
+  background-color: @toolbarPageItemHoverBg;
+}
+
+.toolbar.page-color .nav > .open > a,
+.toolbar.page-color .nav > .open > a:focus,
+.toolbar.page-color .nav > .open > a:hover {
+  color: @toolbarPageColor;
+}
+
+.toolbar .nav li.bar-divider {
+  background-color: @toolbarPageBorderColor;
+}
+
+.navbar-default .navbar-nav {
+  > li.app-nav-search {
+    form {
+      > .search-placeholder,
+      > .icon-prefix {
+        color: @neutralSecondaryContrast;
+      }
+
+      > input {
+        background-color: mix(@secondary, white, 30%);
+
+        &, &:focus {
+          color: mix(@neutralSecondaryContrast, white, 95%);
+        }
+      }
+    }
+
+    .dropdown-menu {
+      &, .dropdown-item.active, .dropdown-item:active {
+        background-color: @toolbarBg;
+      }
+    }
+  }
+}
+
+.toolbar .nav-move button:disabled,
+.toolbar .nav-delete button:disabled {
+  color: @itemDisabledColor;
+}
+
+/* tooltips */
+.tooltip-inner {
+  background-color: @interfaceBg;
+  color: @interfaceColor;
+}
+
+/* main footer styles */
+footer.main {
+  background-color: @interfaceColor;
+  border-top-color: @pageHeaderBorderColor;
+}
+
+footer.main a {
+  color: @textLinkColor;
+}
+
+footer.main a:hover,
+footer.main a:focus {
+  color: @textLinkColor;
+}
+
+/* breadcrumbs */
+section.breadcrumbs {
+  background-color: @pageHeaderBg;
+}
+
+section.breadcrumbs .links .separator {
+  color: @neutralTertiary;
+}
+
+section.breadcrumbs .links .current {
+  color: @pageHeaderColor;
+}
+
+.breadcrumbs-list-btn,
+.breadcrumbs-list-item {
+  background-color: @navbarBg;
+  border-color: @navbarBg;
+}
+
+.breadcrumbs-list-item .breadcrumb-text {
+  color: @navbarColor;
+}
+
+.breadcrumbs-list-btn:hover,
+.breadcrumbs-list-btn:active,
+.breadcrumbs-list-btn:focus {
+  border-color: @navbarColor;
+}
+
+.breadcrumbs-list-item:hover,
+.breadcrumbs-list-item:active,
+.breadcrumbs-list-item:focus {
+  background-color: @navbarBg;
+}
+
+.breadcrumbs-list-item > .breadcrumb-text:hover,
+.breadcrumbs-list-item > .breadcrumb-text:active,
+.breadcrumbs-list-item > .breadcrumb-text:focus {
+  color: @navbarColor;
+}
+
+app-comments-pane {
+  color: @commentsPaneColor;
+  background-color: @commentsPaneBackgroundColor;
+  border-color: @commentsPaneBackgroundColor;
+}
+
+.comments-edited, .comments-editing, .comments-date {
+  color: @formPlaceholderColor;
+}
+
+app-comment, app-comments-pane > .comments-form, .last-comment, .comment-reply {
+  background-color: @commentBackgroundColor;
+  border-color: @commentsPaneBackgroundColor;
+}
+
+.comments-sort-unselected,
+.comments-sort-unselected:hover,
+.comments-sort-unselected:focus {
+  color: @primaryAlt3;
+}
+
+.comments-sort-selected,
+.comments-sort-selected:hover,
+.comments-sort-selected:focus {
+  color: @commentsPaneColor;
+  border-color: @commentsLinkColor;
+}
+
+.comment-metadata a {
+  color: @primaryAlt3;
+}
+
+.comment-metadata a:hover {
+  color: @secondaryAlt;
+}
+
+.comments-pane .ng-invalid textarea, .comments-pane textarea {
+  border-color: @commentsTextBox;
+}
+
+.comments-pane textarea:focus {
+  border-color: @commentsLinkColor;
+}
+
+.last-comment {
+  border-color: @commentsPaneBackgroundColor;
+}
+
+.comments-form > hr {
+  border-color: @commentsPaneBackgroundColor;
+}
+
+.new-comment-text > textarea:invalid {
+  outline-color: @commentsTextBox;
+}
+
+.new-comment-text > textarea:-ms-input-placeholder {
+  color: @formPlaceholderColor;
+}
+
+/* browse/favorites styles */
+/* header text (current folder; section (KPIs, Reports) titles) */
+div.browser header h2 {
+  color: @pageHeaderColor;
+}
+
+/* number of items label */
+div.browser header .count {
+  color: @textColor;
+}
+
+/* modal dialog styles */
+.modal-backdrop {
+  background-color: @interfaceBg;
+}
+
+.modal-content {
+  border-color: @interfaceBorderColor;
+  background-color: @interfaceBg;
+  color: @interfaceColor;
+}
+
+.modal-header .close {
+  color: @interfaceColor;
+}
+
+/* sometimes a dialog box is used as a folder browser */
+.modal-browse .modal-body.browse {
+  background-color: @neutralPrimaryAlt;
+}
+
+.modal-browse section.folders {
+  background-color: @interfaceBg;
+}
+
+/* folder section of browse page */
+section.header {
+  background-color: @pageHeaderBg;
+  border-bottom-color: @pageHeaderBorderColor;
+}
+
+section.header header h2 {
+  color: @pageHeaderColor;
+}
+
+/* popover */
+/* the little box that appears when a tile's context button is clicked */
+/* smaller form-factors render this box fullscreen */
+/* this is the semi-opaque background behind the popover */
+.popover-wrapper.fullscreen {
+  background-color: fade(@neutralPrimaryContrast, 68%);
+  box-shadow: 0 3.2px 7.2px fade(@secondary, 13%), 0 0.6px 1.8px fade(@secondary, 11%);
+}
+
+.popover {
+  border-color: @interfaceBorderColor;
+  background-color: @interfaceBg;
+  color: @interfaceColor;
+}
+
+.feature-popover .popover-header {
+  background-color: @interfaceBg;
+}
+
+.feature-popover .arrow::after {
+  border-left-color: @defaultButtonBg;
+}
+
+/* a popover's stem is the little arrow pointing to the context button on an item tile */
+/* .popover-wrapper.top should have color values the same as .metadata footer background-color (see below) */
+.popover-wrapper.top .popover {
+  border-bottom-color: @interfaceBorderColor;
+}
+
+.popover-wrapper.top .stem {
+  border-top-color: @interfaceBorderColor;
+}
+
+/* .popover-wrapper.bottom should have color values the same as the .popover background-color (see above) */
+.popover-wrapper.bottom .popover {
+  border-top-color: @interfaceBg;
+}
+
+.popover-wrapper.bottom .stem {
+  border-bottom-color: @interfaceBg;
+  display: none;
+}
+
+/* metadata: the content of the popover */
+section.metadata button.close {
+  color: @interfaceColor;
+}
+
+section.metadata footer {
+  background-color: @interfaceBg;
+}
+
+section.metadata footer div.actions-group {
+  border-top-color: @interfaceBorderColor;
+}
+
+section.metadata footer a {
+  color: @interfaceColor;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: @interfaceItemHoverBg;
+  }
+}
+
+/* fullscreen popovers display the footer links stacked vertically, not horizontally */
+.popover-wrapper.fullscreen .metadata footer a {
+  border-top-color: @interfaceBorderColor;
+}
+
+/* management section */
+/* when clicking on a tile's 'manage' link, the user is directed
+to the management section, itself containing several subsections */
+
+/* management subsections have a sidebar containing links to other subsections */
+.sidebar {
+  &, > * {
+    > h2, > nav > h2 {
+      color: @toolbarColor;
+    }
+  }
+}
+
+section.management .sidebar,
+section.management .sidebar-collapsed,
+section.management .sidebar nav div {
+  background-color: @toolbarBg;
+
+  &:focus-within{
+    background: @toolbarItemHoverBg;
+  }
+}
+
+section.management .sidebar-collapse-button,
+section.management .sidebar nav button {
+  color: @navbarColor;
+  // Transparent background to match sidebar background color
+  background-color: rgba(0,0,0,0);
+
+  &:focus,
+  &:hover {
+    background-color: @neutralSecondaryAlt2;
+  }
+}
+
+section.management .sidebar nav button.active {
+  background-color: @primaryAlt3;
+}
+
+section.management .sidebar nav button:disabled {
+  color: @itemDisabledColor;
+}
+
+
+/* the 'details' area of each management subsection is where the main content is rendered */
+section.management > .content .details {
+  color: @neutralTertiaryContrast;
+  background-color: @neutralTertiaryAlt2;
+}
+
+/* some subsections have an 'action' toolbar above the details area */
+section.management .actions {
+  background-color: @actionsBg;
+  border-bottom-color: @actionsBorderColor;
+}
+
+section.management .actions li {
+  border-right-color: @actionsBorderColor;
+}
+
+section.management .actions a,
+section.management .actions .btn-replace {
+  color: @actionsColor;
+  background-color: @actionsBg;
+}
+
+section.management .actions a:hover,
+section.management .actions a:active,
+section.management .actions a:focus,
+section.management .actions .btn-replace:hover,
+section.management .actions .btn-replace input:active + label,
+section.management .actions .btn-replace input:focus + label {
+  color: @actionsColor;
+  background-color: @actionsItemHoverBg;
+}
+
+/* some subsections have specific background colors */
+section.management .security,
+section.management .security-edit,
+section.management .subscriptions,
+section.management .subscriptions-edit,
+section.management .site-settings,
+section.management .site-general,
+section.management .schedules {
+  background-color: @interfaceBg;
+}
+
+/* branding styles */
+/* for aesthetic purposes, the brand package name is rendered in a disabled input field */
+/* but it shouldn't appear greyed out */
+section.management .branding .current input[disabled],
+section.management .current input[disabled] {
+  color: @formColor;
+  background-color: @interfaceBg;
+}
+
+/* KPI creation/editing subsection */
+/* override the Bootstrap default colors */
+section.management .editkpi input,
+section.management .editkpi select,
+section.management .editkpi textarea,
+section.management .editkpi option {
+  color: @formColor;
+}
+
+/* for aesthetic purposes, a 'not set' value is rendered with a semi-opaque disabled input field */
+section.management .editkpi .form-inactive .form-control[disabled] {
+  background-color: @formBg;
+  opacity: 0.25;
+}
+
+/* also for aesthetic purposes, a dataset field or trend that has yet to be set is rendered with a disable input field */
+/* this input field contains the text 'not set' and urges the user to set a value */
+section.management .editkpi .form-dataset .form-control[disabled] {
+  color: @formColor;
+  background-color: @formBg;
+}
+
+section.management .report-parameters-table div.multiselect-text {
+  background-color: @formBg;
+}
+
+section.management .report-parameters-table .param-dropdown >.multiselect-values {
+  border-top-color: @defaultButtonBg;
+}
+
+/* Visualization selector elements */
+/* the glyphs are taken from a 32-bit PNG spritesheet which cannot be customized. The foreground colour is white */
+/* therefore a dark background should be used */
+ul.visualizations li a {
+  background-color: @toolbarItemBg;
+}
+
+ul.visualizations li a.enabled:hover {
+  background-color: @toolbarItemHoverBg;
+}
+
+/* the <i> element is rendered as a colored frame around a selected glyph */
+ul.visualizations li i {
+  border-color: @primary;
+}
+
+ul.visualizations li.selected a {
+  background-color: @navbarBg;
+}
+
+/* some form elements have tooltips/hints denoted by a question mark */
+.has-tooltip span.hint {
+  color: @infoContrast;
+  background-color: @info;
+}
+
+.has-tooltip span.hint:focus {
+  outline-color: @formColor;
+}
+
+/* the browse for dataset dialog box uses many styles defined above in the dialog box section but it still requires some specific styles */
+/* once a dataset is picked, the user is presented with a table from which they can select the appriopriate column */
+.modal-browse section.select table {
+  border-top-color: @interfaceBorderColor;
+}
+
+.modal-browse section.select th.selected,
+.modal-browse section.select td.selected {
+  background-color: @neutralSecondary;
+}
+
+/* Miscellaneous styles that don't belong to any particular section */
+.success-indicator {
+  color: @success;
+}
+
+.failure-indicator {
+  color: @danger;
+}
+
+.multi-value-drop-down [readonly].form-control {
+  background-color: @formBg;
+}
+
+app-multi-value-dropdown .btn,
+app-multi-select-dropdown .btn {
+  border-color: @formBorderColor;
+}
+
+app-multi-value-dropdown .btn:focus,
+app-multi-select-dropdown .btn:focus {
+  outline-color: @formCheckboxSelectedColor;
+}
+
+.serviceError {
+  background-color: @interfaceBg;
+}
+
+/* Schedule management */
+.schedule .input-inline.ng-invalid {
+  border-color: @danger;
+}
+
+.schedule .input-inline-long.ng-invalid {
+  border-color: @danger;
+}
+
+.schedule-reference a[disabled] {
+  color: fade(@neutralTertiaryContrast, 50%);
+}
+
+.management div[disabled=disabled] label,
+.management div[disabled=true] label {
+  color: fade(@neutralTertiaryContrast, 25%);
+}
+
+.search header.message {
+  color: @neutralPrimaryContrast;
+  background-color: @neutralPrimaryAlt;
+  border-color: @secondaryAlt2;
+}
+
+.search header.message .input-search >input {
+  background-color: @neutralSecondaryAlt;
+  border-color: @neutralSecondaryAlt3;
+}
+
+.search header.message .input-search .btn-primary {
+  color: @primaryButtonColor;
+  background-color: @primaryButtonBg;
+  border-color: @primaryButtonBg;
+}
+
+.search header.message .input-search .btn-primary:hover, .search header.message .input-search .btn-primary:focus {
+  color: @primaryButtonColor;
+  background-color: @primaryButtonHoverBg;
+  border-color: @primaryButtonHoverBg;
+}
+
+.search header.message .exit {
+  color: @secondary;
+  background-color: @neutralSecondaryAlt;
+  border-color: @neutralSecondaryAlt2;
+
+  &:hover, &:focus {
+    background-color: @neutralSecondaryAlt2;
+  }
+}
+
+app-toggle-switch {
+  > label {
+    .toggle-switch-bar {
+      border-color: @neutralSecondaryContrast;
+    }
+
+    .toggle-switch-thumb-container .toggle-switch-thumb {
+      background-color: @neutralSecondaryContrast;
+    }
+  }
+
+  &.toggle-switch-checked > label .toggle-switch-thumb-container .toggle-switch-thumb {
+    background-color: @primary;
+  }
+}
+
+.table-list-view.table > tbody > tr > td a {
+  &, &:hover, &:active {
+    color: @textLinkColor;
+  }
+}
+
+.text-with-label {
+  > .label {
+    color: @neutralTertiaryContrast;
+  }
+
+  > .text {
+    color: mix(@neutralSecondaryContrast, @interfaceBg, 80%);
+  }
+}
+
+section.metadata .properties {
+  li {
+    color: mix(@neutralSecondaryContrast, white, 63%);
+  }
+}
+
+/* Hover effects for a table */
+//.table-hover > thead > tr > th:hover,
+//.table-hover > tbody > tr:hover {
+//  background-color: mix(@bodyBg, white, 90%);
+//}
+
+/* ***************************************************************** */
+/* mobile-only styles */
+@media (max-width: 575.98px) {
+  /* hamburger toggle button */
+  .ultracompact-nav-toggle,
+  .ultracompact-nav-toggle:focus {
+    color: @navbarColor;
+    background-color: @navbarBg;
+  }
+
+  .ultracompact-nav-toggle:hover {
+    color: @navbarColor;
+    background-color: @navbarItemHoverBg;
+  }
+
+  .ultracompact-nav-toggle.open,
+  .ultracompact-nav-toggle.open:focus,
+  .ultracompact-nav-toggle.open:hover {
+    background-color: @interfaceBg;
+    color: @interfaceColor;
+  }
+
+  /* alerts icon in dropdown menu */
+  .dropdown-menu > li.nav-alerts > a > .glyphui-warning {
+    color: @warning;
+  }
+
+  .dropdown-menu .glyphui-chevron-right.pull-right {
+    color: fade(@interfaceColor, 40%);
+  }
+
+  .mobilenav-main-menu .dropdown-menu li.app-nav-search {
+    border-bottom-color: @interfaceBorderColor;
+  }
+}
+
+@media (max-width: 374px) {
+  .modal-backdrop {
+    background-color: @neutralPrimaryContrast;
+  }
+}
+
+/* ***************************************************************** */
+/* TILES */
+@tileBg: @neutralPrimary;
+@tileBgDarker: mix(@neutralPrimary, black, 97%);
+@tileBgDark: mix(@neutralPrimary, black, 82%);
+@tileFg: @neutralPrimaryContrast;
+
+app-tile-wrapper,
+div.tile-wrapper {
+  background-color: @tileBg;
+  border-color: @tileBgDark;
+
+  &.focused {
+    background: @tileBgDarker;
+  }
+
+  a.tile,
+  a.context {
+    &, &:focus, &:hover, &:active {
+      color: @tileFg;
+    }
+  }
+
+  &:hover, &:focus, &.focused {
+    > app-toggle-favorite-btn,
+    > .context-wrapper,
+    > .context-wrapper > a.context {
+      color: contrast(@tileBgDarker, mix(@tileFg, black, 90%), mix(@tileFg, white, 90%));
+      background-color: @tileBgDarker;
+    }
+  }
+
+  > app-toggle-favorite-btn,
+  > app-toggle-favorite-btn > button,
+  > .context-wrapper > a.context {
+    &:hover, &:active, &:focus {
+      background-color: @tileBgDark;
+    }
+  }
+
+  > app-toggle-favorite-btn,
+  > .context-wrapper {
+      @media screen and (max-width: 575.98px) {
+          border-color: @tileBgDark;
+          background-color: @tileBgDarker;
+      }
+  }
+
+  /* kpi-good */
+
+  &.kpi.kpi-good {
+    background-color: @kpiGood;
+    color: @kpiGoodContrast;
+
+    a.tile, a.context {
+      &, &:focus, &:hover, &:active {
+        color: @kpiGoodContrast;
+      }
+    }
+
+    &.focused {
+      background-color: darken(@kpiGood, 8%);
+    }
+
+    &:hover, &:focus, &.focused {
+      > app-toggle-favorite-btn,
+      > .context-wrapper,
+      > .context-wrapper > a.context {
+        @media screen and (min-width: 577px) {
+          color: @kpiGoodContrast;
+          background-color: darken(@kpiGood, 8%);
+        }
+      }
+    }
+
+    > app-toggle-favorite-btn,
+    > app-toggle-favorite-btn > button,
+    > .context-wrapper,
+    > .context-wrapper > a.context {
+      &:hover, &:active, &:focus {
+        background-color: darken(@kpiGood, 12%);
+      }
+
+      @media screen and (max-width: 575.98px) {
+          border-color: lighten(@kpiGood, 8%);
+          color: @kpiGoodContrast;
+          background-color: darken(@kpiGood, 8%);
+      }
+    }
+  }
+
+  /* kpi-bad */
+
+  &.kpi.kpi-bad {
+    background-color: @kpiBad;
+    color: @kpiBadContrast;
+
+    a.tile, a.context {
+      &, &:focus, &:hover, &:active {
+        color: @kpiBadContrast;
+      }
+    }
+
+    &.focused {
+      background-color: darken(@kpiBad, 8%);
+    }
+
+    &:hover, &:focus, &.focused {
+      > app-toggle-favorite-btn,
+      > .context-wrapper,
+      > .context-wrapper > a.context {
+          @media screen and (min-width: 577px) {
+              color: @kpiBadContrast;
+              background-color: darken(@kpiBad, 8%);
+          }
+      }
+    }
+
+    > app-toggle-favorite-btn,
+    > app-toggle-favorite-btn > button,
+    > .context-wrapper,
+    > .context-wrapper > a.context {
+      &:hover, &:active, &:focus {
+        background-color: darken(@kpiBad, 12%);
+      }
+
+      @media screen and (max-width: 575.98px) {
+          border-color: lighten(@kpiBad, 8%);
+          color: @kpiGoodContrast;
+          background-color: darken(@kpiBad, 8%);
+      }
+    }
+  }
+
+  /* kpi-neutral */
+
+  &.kpi.kpi-neutral {
+    background-color: @kpiNeutral;
+    color: @kpiNeutralContrast;
+
+    a.tile, a.context {
+      &, &:focus, &:hover, &:active {
+        color: @kpiNeutralContrast;
+      }
+    }
+
+    &.focused {
+      background-color: darken(@kpiNeutral, 8%);
+    }
+
+    &:hover, &:focus, &.focused {
+      > app-toggle-favorite-btn,
+      > .context-wrapper,
+      > .context-wrapper > a.context {
+          @media screen and (min-width: 577px) {
+              color: @kpiNeutralContrast;
+              background-color: darken(@kpiNeutral, 8%);
+          }
+      }
+    }
+
+    > app-toggle-favorite-btn,
+    > app-toggle-favorite-btn > button,
+    > .context-wrapper,
+    > .context-wrapper > a.context {
+      &:hover, &:active, &:focus {
+        background-color: darken(@kpiNeutral, 12%);
+      }
+
+      @media screen and (max-width: 575.98px) {
+          border-color: lighten(@kpiNeutral, 8%);
+          color: @kpiGoodContrast;
+          background-color: darken(@kpiNeutral, 8%);
+      }
+    }
+  }
+
+  /* kpi-none */
+
+  &.kpi.kpi-none {
+    background-color: @kpiNone;
+    color: @kpiNoneContrast;
+
+    a.tile, a.context {
+      &, &:focus, &:hover, &:active {
+        color: @kpiNoneContrast;
+      }
+    }
+
+    &.focused {
+      background-color: darken(@kpiNone, 8%);
+    }
+
+    &:hover, &:focus, &.focused {
+      > app-toggle-favorite-btn,
+      > .context-wrapper,
+      > .context-wrapper > a.context {
+          @media screen and (min-width: 577px) {
+              color: @kpiNoneContrast;
+              background-color: darken(@kpiNone, 8%);
+          }
+      }
+    }
+
+    > app-toggle-favorite-btn,
+    > app-toggle-favorite-btn > button,
+    > .context-wrapper,
+    > .context-wrapper > a.context {
+      &:hover, &:active, &:focus {
+        background-color: darken(@kpiNone, 12%);
+      }
+
+      @media screen and (max-width: 575.98px) {
+          border-color: lighten(@kpiNone, 8%);
+          color: @kpiGoodContrast;
+          background-color: darken(@kpiNone, 8%);
+      }
+    }
+  }
+}

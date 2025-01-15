@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>活动会话的数目。</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>警报: 事件队列长度</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>应用程序域回收的总数。</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>每秒的请求数。</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>请求总数。</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>报表执行服务器缓存更新的总数。</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>每秒刷新的缓存数。</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>报表服务器缓存命中的总数。</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>每秒报表服务器缓存命中数目。</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>未命中缓存的总数。</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>每秒无法从缓存检索报表的次数。</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>传递的总数。</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>每秒传递的次数。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>每秒的数据源连接失败数。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>数据源连接失败总数。</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>事件的总数。</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>每秒的事件数。</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>现有会话中每秒处理的请求数。</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>现有会话中处理的请求总数。</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>每秒启动的新用户会话数。</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>每秒的失败数。</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>失败总数。</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>在最近一秒服务器发出的收缩通知的数量。指示服务器认为有内存压力的频率。</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>在内存缓存中命中缓存的总数。</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>每秒可从内存缓存检索报表的次数。</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>在内存缓存中未命中缓存的总数。</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>报表每秒无法从内存缓存检索的次数。</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>使用数字 1-5 来指示服务器的当前内存状态。1:无压力，2:低压力，3:中压力，4:高压力，5:超高压力。</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>服务器请求收缩的字节数。</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>在模型缓存中命中缓存的总数。</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>每秒可从缓存检索模型的次数。</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>在模型缓存中未命中缓存的总数。</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>每秒无法从缓存检索模型的次数。</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>活动模型请求数。</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>模型请求平均时长。</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>每秒的模型请求数。</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>模型请求总数。</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>在当前会话中打开的报表的每秒请求数。</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>新会话中每秒处理的请求数。</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>新会话中处理的请求总数。</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>处理失败的总数。</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>与 SQL Report Server Service Power View 报表有关的统计信息</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>活动查询请求数。</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>查询请求平均时长。</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>每秒的查询请求数。</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>查询请求总数。</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>由于线程压力而拒绝的线程的总数。</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>活动报表请求的数目。</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>已执行报表的总数。</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>每秒执行的报表数目。</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>每秒请求数目。</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>活动报表请求数。</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>报表请求平均时长。</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>每秒的报表请求数。</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>报表请求总数。</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>报表执行快照更新的总数。</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>每秒快照更新的数目。</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>活动会话数。</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>与 SQL 报表服务器服务有关的统计信息</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>正在处理的请求的总数。</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>活动线程数。</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警报: 处理的事件数 - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>MSRS 2011 Web 服务</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>MSRS 2011 Windows 服务</value>
+  </data>
+</root>

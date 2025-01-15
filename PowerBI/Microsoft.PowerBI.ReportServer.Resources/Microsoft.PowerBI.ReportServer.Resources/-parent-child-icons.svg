@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 40 46" fill="none" id="first_indicator" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 10.5L20 44.5" stroke="#616161" stroke-width="1.5" stroke-linecap="square"/>
+</symbol><symbol viewBox="0 0 40 44" fill="none" id="last_indicator" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 -6.11959e-07L20 18C20 20.2091 21.7909 22 24 22L34 22" stroke="#616161" stroke-width="1.5"/>
+</symbol><symbol viewBox="0 0 2 49" fill="none" id="middle_indicator" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="3.27835e-08" x2="0.999998" y2="49" stroke="#616161" stroke-width="1.5"/>
+</symbol></svg>

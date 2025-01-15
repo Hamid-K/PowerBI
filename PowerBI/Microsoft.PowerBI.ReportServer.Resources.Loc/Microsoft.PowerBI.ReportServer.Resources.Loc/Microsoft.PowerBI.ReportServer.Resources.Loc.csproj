@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAAB2C8C-E24B-4220-8FBE-255A94E781D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.ReportServer.Resources.Loc</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.ReportServer.Resources.Loc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources.ar.pseudo.strings.resjson" />
+    <EmbeddedResource Include="resources.ar.strings.resjson" />
+    <EmbeddedResource Include="resources.bg.strings.resjson" />
+    <EmbeddedResource Include="resources.ca.strings.resjson" />
+    <EmbeddedResource Include="resources.cs.strings.resjson" />
+    <EmbeddedResource Include="resources.da.strings.resjson" />
+    <EmbeddedResource Include="resources.de.strings.resjson" />
+    <EmbeddedResource Include="resources.el.strings.resjson" />
+    <EmbeddedResource Include="resources.en-us.strings.resjson" />
+    <EmbeddedResource Include="resources.en.pseudo.strings.resjson" />
+    <EmbeddedResource Include="resources.es.strings.resjson" />
+    <EmbeddedResource Include="resources.et.strings.resjson" />
+    <EmbeddedResource Include="resources.eu.strings.resjson" />
+    <EmbeddedResource Include="resources.fi.strings.resjson" />
+    <EmbeddedResource Include="resources.fr.strings.resjson" />
+    <EmbeddedResource Include="resources.gl.strings.resjson" />
+    <EmbeddedResource Include="resources.he.strings.resjson" />
+    <EmbeddedResource Include="resources.hi.strings.resjson" />
+    <EmbeddedResource Include="resources.hr.strings.resjson" />
+    <EmbeddedResource Include="resources.hu.strings.resjson" />
+    <EmbeddedResource Include="resources.id.strings.resjson" />
+    <EmbeddedResource Include="resources.it.strings.resjson" />
+    <EmbeddedResource Include="resources.ja.pseudo.strings.resjson" />
+    <EmbeddedResource Include="resources.ja.strings.resjson" />
+    <EmbeddedResource Include="resources.kk.strings.resjson" />
+    <EmbeddedResource Include="resources.ko.strings.resjson" />
+    <EmbeddedResource Include="resources.lt.strings.resjson" />
+    <EmbeddedResource Include="resources.lv.strings.resjson" />
+    <EmbeddedResource Include="resources.ms.strings.resjson" />
+    <EmbeddedResource Include="resources.nl.strings.resjson" />
+    <EmbeddedResource Include="resources.no.strings.resjson" />
+    <EmbeddedResource Include="resources.pl.strings.resjson" />
+    <EmbeddedResource Include="resources.pt-br.strings.resjson" />
+    <EmbeddedResource Include="resources.pt-pt.strings.resjson" />
+    <EmbeddedResource Include="resources.pt.strings.resjson" />
+    <EmbeddedResource Include="resources.ro.strings.resjson" />
+    <EmbeddedResource Include="resources.ru.strings.resjson" />
+    <EmbeddedResource Include="resources.sk.strings.resjson" />
+    <EmbeddedResource Include="resources.sl.strings.resjson" />
+    <EmbeddedResource Include="resources.sr-cyrl-cs.strings.resjson" />
+    <EmbeddedResource Include="resources.sr-cyrl.strings.resjson" />
+    <EmbeddedResource Include="resources.sr-latn-cs.strings.resjson" />
+    <EmbeddedResource Include="resources.sr-latn.strings.resjson" />
+    <EmbeddedResource Include="resources.sv.strings.resjson" />
+    <EmbeddedResource Include="resources.th.strings.resjson" />
+    <EmbeddedResource Include="resources.tr.strings.resjson" />
+    <EmbeddedResource Include="resources.uk.strings.resjson" />
+    <EmbeddedResource Include="resources.vi.strings.resjson" />
+    <EmbeddedResource Include="resources.zh-hans.strings.resjson" />
+    <EmbeddedResource Include="resources.zh-hant.strings.resjson" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C91F16D-204D-4A95-8F5E-4BE2AD7F69F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.InfoNav.Common</RootNamespace>
+    <AssemblyName>Microsoft.InfoNav.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\ActivityResult.cs" />
+    <Compile Include="Microsoft\InfoNav\ActivityResultStatus.cs" />
+    <Compile Include="Microsoft\InfoNav\ActivityUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\BitVector.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\BoundedDictionary.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\BoundedHashSet.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Com\ComLoader.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Com\ComObject.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Com\LogCallback.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DefaultDotGraph.2.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DefaultDotGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DefaultVertexStringifier.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DijkstraAlgorithm.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DirectedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\DotAttributeNames.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\EdgeDescriptor.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\EnumerableDebugView.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\GraphExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Graph\IShortestPathFinder.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Graph\ShortestPathProblem.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Graph\ShortestPathSolution.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Graph\SteinerShortestPathFinder.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Graph\VertexHeap.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ICostMutableRawWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IDirectedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IDotGraphCustomization.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IIndexedValue.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IMutableDirectedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Internal\DataContractValidationExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Internal\IDataContractValidatable.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Internal\IExtensibleXmlDataObject.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Internal\ThrowOnFailTraceListener.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IRange.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IRangeExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IRateLimitController.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IRateLimitControllerFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IRawWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IVertexStringifier.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IWiderLookupComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\IWiderLookupEquatable.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ListComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ListEqualityComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ListSegment.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\MemoryCache.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\MutableRawDirectedWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\MutableRawUndirectedWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\MutableRawWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\MutableWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Optional.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RangeComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RangeEqualityComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RateLimitController.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RateLimitControllerFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RawGraphArc.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\RawWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlyHashTable.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlyRawWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlySet.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlySetGeneric.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlySetSingleValue.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReadOnlyWeightedGraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ReferenceEqualizer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Reflection\RObject.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\SafeFile.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\SafeFileRepository.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\SetEqualityComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\StateMachine.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\StateMachineDefinition.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\StateMachineDefinitionBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\StateMachineTransition.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\ThreadSafeBoundedDictionary.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Trie.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.2.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.3.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.4.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.5.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.6.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\TupleBase.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\Version.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\VertexDescriptor.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\WindowsInterop\Constants.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\WindowsInterop\IClassFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\WindowsInterop\NativeMethods.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\XmlExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\XmlUtil.cs" />
+    <Compile Include="Microsoft\InfoNav\Common\YearRecognizer.cs" />
+    <Compile Include="Microsoft\InfoNav\Contract.cs" />
+    <Compile Include="Microsoft\InfoNav\CopyOnWriteDictionary.cs" />
+    <Compile Include="Microsoft\InfoNav\CopyOnWriteList.cs" />
+    <Compile Include="Microsoft\InfoNav\CopyOnWriteSet.cs" />
+    <Compile Include="Microsoft\InfoNav\DateTimeExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Defaults\DefaultActivityMonitor.cs" />
+    <Compile Include="Microsoft\InfoNav\Defaults\DefaultActivityType.cs" />
+    <Compile Include="Microsoft\InfoNav\Defaults\DefaultMonitoredActivityFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Defaults\DefaultTracer.cs" />
+    <Compile Include="Microsoft\InfoNav\DisposableList.cs" />
+    <Compile Include="Microsoft\InfoNav\EdmNameComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\Hashing.cs" />
+    <Compile Include="Microsoft\InfoNav\IActivityMonitor.cs" />
+    <Compile Include="Microsoft\InfoNav\IActivityType.cs" />
+    <Compile Include="Microsoft\InfoNav\IActivityTypeProvider.cs" />
+    <Compile Include="Microsoft\InfoNav\ICheckable.cs" />
+    <Compile Include="Microsoft\InfoNav\IMonitoredActivityFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\IRetriableHostException.cs" />
+    <Compile Include="Microsoft\InfoNav\ITracer.cs" />
+    <Compile Include="Microsoft\InfoNav\LanguageIdentifier.cs" />
+    <Compile Include="Microsoft\InfoNav\LanguageIdentifierUtil.cs" />
+    <Compile Include="Microsoft\InfoNav\MonitoredActivityAction.cs" />
+    <Compile Include="Microsoft\InfoNav\NonClosingStreamProxy.cs" />
+    <Compile Include="Microsoft\InfoNav\PriorityQueue.cs" />
+    <Compile Include="Microsoft\InfoNav\PublicKeyConstants.cs" />
+    <Compile Include="Microsoft\InfoNav\RandomUtil.cs" />
+    <Compile Include="Microsoft\InfoNav\Range.cs" />
+    <Compile Include="Microsoft\InfoNav\RangeExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\ReferenceEqualityComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\RetriableHostExceptionExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\ReverseComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\SerializerExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\ServiceParameters.cs" />
+    <Compile Include="Microsoft\InfoNav\StringUtil.cs" />
+    <Compile Include="Microsoft\InfoNav\TaskUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\TracerExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\TupleExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Util.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\ContainsMarkedInformationExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\IContainsMarkedInformation.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\IContainsPrivateInformation.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\IContainsTelemetryMarkup.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\PrivateInformation.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\PrivateInformationMarkupKind.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\ScrubbedEntityPropertyReference.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\ScrubbedString.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\TelemetryMarkupKind.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\TraceVerbosity.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\Tracing.cs" />
+    <Compile Include="Microsoft\InfoNav\Utils\WrapperExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\ODataErrorSources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

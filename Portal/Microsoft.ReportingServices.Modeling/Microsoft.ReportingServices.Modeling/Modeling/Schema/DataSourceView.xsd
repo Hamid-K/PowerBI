@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/analysisservices/2003/engine"
+            elementFormDefault="qualified"
+            xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="DataSourceView" type="DataSourceView" />
+    <xsd:complexType name="DataSourceView" abstract="false" mixed="true">
+        <xsd:complexContent mixed="true">
+            <xsd:extension base="xsd:anyType" />
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>

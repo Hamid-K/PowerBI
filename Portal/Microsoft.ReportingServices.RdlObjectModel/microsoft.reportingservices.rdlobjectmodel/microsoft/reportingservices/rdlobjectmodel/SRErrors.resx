@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeserializationFailed" xml:space="preserve">
+    <value>Deserialization failed: {0}</value>
+  </data>
+  <data name="DeserializationFailedMethod" xml:space="preserve">
+    <value>Deserialization failed in method {0}.</value>
+  </data>
+  <data name="InvalidColor" xml:space="preserve">
+    <value>{0} is not a valid color.</value>
+  </data>
+  <data name="InvalidIdentifier" xml:space="preserve">
+    <value>The identifier '{0}' is not valid.</value>
+  </data>
+  <data name="InvalidParam" xml:space="preserve">
+    <value>The value '{1}' is not valid for {0}.</value>
+  </data>
+  <data name="InvalidParamBetween" xml:space="preserve">
+    <value>The value for {0} must be between {1} and {2}.</value>
+  </data>
+  <data name="InvalidParamGreaterThan" xml:space="preserve">
+    <value>The value for {0} must be at least {1}.</value>
+  </data>
+  <data name="InvalidParamLessThan" xml:space="preserve">
+    <value>The value for {0} must be at most {1}.</value>
+  </data>
+  <data name="InvalidUnitType" xml:space="preserve">
+    <value>{0} is not a valid unit designator. Valid unit designators are in, mm, cm, pt, pc.</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>{0} is not a valid value.</value>
+  </data>
+  <data name="NoRootElement" xml:space="preserve">
+    <value>The Report element was not found.</value>
+  </data>
+  <data name="TextParseFailedFormat" xml:space="preserve">
+    <value>Failed to parse text {0}. Text should be in {1} format.</value>
+  </data>
+  <data name="UnitParseNoDigits" xml:space="preserve">
+    <value>{0} cannot be parsed as a unit because it does not contain numeric values. Examples of valid unit strings are "1pt" and ".5in".</value>
+  </data>
+  <data name="UnitParseNoUnit" xml:space="preserve">
+    <value>{0} does not contain a unit specification. Examples of valid unit strings are "1pt" and ".5in".</value>
+  </data>
+  <data name="UnitParseNumericPart" xml:space="preserve">
+    <value>The numeric portion of {0} cannot be parsed as a unit of type {2}.</value>
+  </data>
+</root>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rrControlInvalidTag" xml:space="preserve">
+    <value>The HTML tag of a control cannot be null or the empty string.</value>
+  </data>
+  <data name="rrExpectedEndElement" xml:space="preserve">
+    <value>The closing tag for the element '{0}' was expected. The device information is invalid.</value>
+  </data>
+  <data name="rrExpectedTopLevelElement" xml:space="preserve">
+    <value>The top level element in the device information XML structure has to be '{0}'.</value>
+  </data>
+  <data name="rrFailedToAllocateImageBitmap" xml:space="preserve">
+    <value>We were not able to create the image with the specified dimensions.</value>
+  </data>
+  <data name="rrInvalidActionLabel" xml:space="preserve">
+    <value>The action label is only optional when using a single action. Adding multiple actions requires labels for each action.</value>
+  </data>
+  <data name="rrInvalidAttribute" xml:space="preserve">
+    <value>The name of an HTML attribute cannot be null or the empty string.</value>
+  </data>
+  <data name="rrInvalidBorderStyle" xml:space="preserve">
+    <value>The border style '{0}' is not supported.</value>
+  </data>
+  <data name="rrInvalidColor" xml:space="preserve">
+    <value>The color '{0}' is not supported.</value>
+  </data>
+  <data name="rrInvalidControl" xml:space="preserve">
+    <value>A null control cannot be added to a list.</value>
+  </data>
+  <data name="rrInvalidDeviceInfo" xml:space="preserve">
+    <value>An unexpected error has occurred trying to parse the device information XML structure. Details: {0}</value>
+  </data>
+  <data name="rrInvalidMeasurementUnit" xml:space="preserve">
+    <value>The measurement unit of '{0}' is not supported.</value>
+  </data>
+  <data name="rrInvalidMimeType" xml:space="preserve">
+    <value>The image mime type '{0}' is not supported.</value>
+  </data>
+  <data name="rrInvalidOWCRequest" xml:space="preserve">
+    <value>Please turn on ActiveXControls and Script in your Internet Explorer browser.</value>
+  </data>
+  <data name="rrInvalidPageNumber" xml:space="preserve">
+    <value>The page number has to be an integer between 1 and {0}.</value>
+  </data>
+  <data name="rrInvalidParamValue" xml:space="preserve">
+    <value>The value of the parameter '{0}' is invalid.</value>
+  </data>
+  <data name="rrInvalidProperty" xml:space="preserve">
+    <value>The name of an inline CSS style property cannot be null or the empty string.</value>
+  </data>
+  <data name="rrInvalidSize" xml:space="preserve">
+    <value>The size '{0}' is not supported.</value>
+  </data>
+  <data name="rrInvalidStyleArgumentType" xml:space="preserve">
+    <value>The style argument has to be of type '{0}'.</value>
+  </data>
+  <data name="rrInvalidStyleName" xml:space="preserve">
+    <value>The name of a CSS style cannot be null or the empty string.</value>
+  </data>
+  <data name="rrInvalidUniqueName" xml:space="preserve">
+    <value>The specified unique name contains invalid characters. Only a-z, A-Z and 0-9 are allowed.</value>
+  </data>
+  <data name="rrMeasurementUnitError" xml:space="preserve">
+    <value>Measurement unit unsupported.</value>
+  </data>
+  <data name="rrNegativeSize" xml:space="preserve">
+    <value>The negative size '{0}' is not supported.</value>
+  </data>
+  <data name="rrOutOfRange" xml:space="preserve">
+    <value>The size '{0}' is out of range.</value>
+  </data>
+  <data name="rrPageNamespaceInvalid" xml:space="preserve">
+    <value>The name of a namespace cannot be null or the empty string.</value>
+  </data>
+  <data name="rrParameterExpected" xml:space="preserve">
+    <value>The opening tag for a parameter was expected. The device information is invalid.</value>
+  </data>
+  <data name="rrRenderDeviceNull" xml:space="preserve">
+    <value>HTML Rendering:  Invalid Argument:  Device Info is null.</value>
+  </data>
+  <data name="rrRenderReportNameNull" xml:space="preserve">
+    <value>HTML Rendering:  Invalid Argument:  Report Name is null or empty.</value>
+  </data>
+  <data name="rrRenderReportNull" xml:space="preserve">
+    <value>HTML Rendering:  Invalid Argument:  Report is null.</value>
+  </data>
+  <data name="rrRenderResultNull" xml:space="preserve">
+    <value>HTML Renderer: Invalid Argument: Render Result is null.</value>
+  </data>
+  <data name="rrRenderSectionInstanceError" xml:space="preserve">
+    <value>Error rendering section instance.</value>
+  </data>
+  <data name="rrRenderStreamNull" xml:space="preserve">
+    <value>HTML Rendering:  Invalid Argument:  Result Stream is null.</value>
+  </data>
+  <data name="rrRenderStyleError" xml:space="preserve">
+    <value>Error rendering the styles.</value>
+  </data>
+  <data name="rrRenderStyleName" xml:space="preserve">
+    <value>Style missing style name.</value>
+  </data>
+  <data name="rrRenderTextBox" xml:space="preserve">
+    <value>Couldn't convert TextBox value to string.</value>
+  </data>
+  <data name="rrRenderUnknownReportItem" xml:space="preserve">
+    <value>Unknown Report Item Type in Renderer.</value>
+  </data>
+  <data name="rrRendererParamsNull" xml:space="preserve">
+    <value>The report viewer cannot be displayed if the renderer parameters have not been specified.</value>
+  </data>
+  <data name="rrRenderingError" xml:space="preserve">
+    <value>An error occurred during rendering of the report.</value>
+  </data>
+  <data name="rrReportNameNull" xml:space="preserve">
+    <value>The report viewer cannot be displayed if the report name has not been specified.</value>
+  </data>
+  <data name="rrReportParamsNull" xml:space="preserve">
+    <value>The report viewer cannot be displayed if the report parameters have not been specified.</value>
+  </data>
+  <data name="rrUnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred in Report Rendering.</value>
+  </data>
+</root>

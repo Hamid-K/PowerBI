@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0412EB79-EABC-43A4-8B25-F8B64830DC21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.Analytics.Contracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.Analytics.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\Contract.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTransformExecutionContext.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTransformMessage.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTransformMessageSeverity.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTransformParameter.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTransformResult.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataType.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DataTypeExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DaxDataTransform\IDaxDataTransformMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DaxDataTransform\IDaxDataTransformMetadataFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\DaxDataTransform\IDaxDataTransformParameterMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ErrorSource.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IColumn.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IDataRow.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IDataRowFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IDataTransform.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IDataTransformPlugin.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IDataTransformPluginFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\IMetadataTransform.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ISchemaRow.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ISchemaRowFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ISortInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ITelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\ITracer.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\SchemaTransformContext.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\SchemaTransformResult.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\SortDirection.cs" />
+    <Compile Include="Microsoft\PowerBI\Analytics\Contracts\TransformException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

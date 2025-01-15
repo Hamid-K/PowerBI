@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>建立、檢視、編輯及刪除報表上的註解。</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>報表上的註解</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>檢視和修改報表、資料夾、來源和共用資料來源的安全性設定。</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>設定個別項目的安全性</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>讀取報表定義</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>取用報表</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>建立連結報表並發行到報表伺服器資料夾。</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>建立連結報表</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>從報表定義開始執行，不將它發行至報表伺服器。</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>執行報表定義</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>提供能夠在報表伺服器命名空間內產生事件的應用程式。</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>產生事件</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>檢視、修改和刪除任何訂閱，無論訂閱擁有者是誰。</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>管理所有訂閱</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>刪除報表上其他使用者的註解。</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>管理註解</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>建立和刪除共用資料來源項目; 並修改資料來源屬性。</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>管理資料來源</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>建立、檢視及刪除資料夾; 以及檢視及修改資料夾屬性。</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>管理資料夾</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>檢視和取消正在執行的作業。</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>管理作業</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>建立、檢視，與刪除模型; 以及檢視和修改模型屬性。</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>管理模型</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>建立、檢視和刪除報表記錄快照集; 並修改報表記錄屬性。</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>管理報表記錄</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>建立及刪除報表，以及修改報表的屬性。</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>管理報表</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>建立、修改和刪除資源，以及修改資源屬性。</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>管理來源</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>建立、檢視、修改和刪除角色定義。</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>管理角色</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>建立、檢視、修改和刪除用來執行報表或重新整理報表的共用排程。</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>管理共用排程</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>檢視和修改套用到報表伺服器及由其所管理的項目的屬性。</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>管理報表伺服器屬性</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>檢視和修改全系統的角色指派。</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>管理報表伺服器安全性</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>每個使用者可以建立、檢視、修改和刪除他 (她) 擁有的訂閱。</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>管理個別訂閱</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>檢視資料夾階層中的共用資料來源項目; 並檢視資料來源屬性。</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>檢視資料來源</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>檢視資料夾階層中的資料夾項目; 並檢視資料夾屬性。</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>檢視資料夾</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>在特定模型中檢視項目。</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>檢視模型項目</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>在資料夾階層中檢視模型、使用模型作為報表的資料來源，以及對模型執行查詢以擷取資料。</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>檢視模型</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>檢視資料夾階層中的報表和連結報表; 檢視報表記錄快照集和報表屬性。</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>檢視報表</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>檢視資料夾階層中的來源; 並檢視來源屬性。</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>檢視來源</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>檢視已提供一般用途的預先定義排程。</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>檢視共用排程</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>檢視套用到報表伺服器的屬性。</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>檢視報表伺服器屬性</value>
+  </data>
+</root>

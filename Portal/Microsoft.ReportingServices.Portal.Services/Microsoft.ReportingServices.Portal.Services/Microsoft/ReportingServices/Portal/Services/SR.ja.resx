@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_AccessDenied" xml:space="preserve">
+    <value>アクセスが拒否されました '{0}'。</value>
+  </data>
+  <data name="Error_CatalogItemAlreadyExists" xml:space="preserve">
+    <value>カタログ項目 '{0}' は既にフォルダー '{1}' 内に存在します。</value>
+  </data>
+  <data name="Error_CatalogItemContentInvalid" xml:space="preserve">
+    <value>カタログ項目のコンテンツが無効です。</value>
+  </data>
+  <data name="Error_CatalogItemInvalid" xml:space="preserve">
+    <value>カタログ項目が有効な状態ではありません。</value>
+  </data>
+  <data name="Error_CatalogItemNotFound" xml:space="preserve">
+    <value>カタログ項目 '{0}' が見つかりませんでした。</value>
+  </data>
+  <data name="Error_CatalogItemPropertyInvalid" xml:space="preserve">
+    <value>カタログ項目のプロパティが無効です。</value>
+  </data>
+  <data name="Error_DataSetMaxRowsLessThanOne" xml:space="preserve">
+    <value>データ セットの最大行数は 1 以上でなければなりません。</value>
+  </data>
+  <data name="Error_DataSetNotFound" xml:space="preserve">
+    <value>データセット '{0}' が見つかりませんでした。</value>
+  </data>
+  <data name="Error_DataSetSoapError" xml:space="preserve">
+    <value>レポート サーバー Web サービスからデータを取得する際に問題が発生しました: {0}</value>
+  </data>
+  <data name="Error_DatabaseDowngradeDetected" xml:space="preserve">
+    <value>データベースのダウングレードが検出されました。データベース スキーマのバージョンは、サービス スキーマのバージョンより新しいものです。</value>
+  </data>
+  <data name="Error_EncryptionFailure" xml:space="preserve">
+    <value>データベースの暗号化されたコンテンツにアクセスできません。このインストール ID の対称キーは無効であるか、見つかりません。</value>
+  </data>
+  <data name="Error_ExpectedUserToken" xml:space="preserve">
+    <value>有効なユーザー トークンが必要です。</value>
+  </data>
+  <data name="Error_IEIsNotSupported" xml:space="preserve">
+    <value>このブラウザーはサポートされていません。Microsoft Edge に更新してください。</value>
+  </data>
+  <data name="Error_InvalidDataFormat" xml:space="preserve">
+    <value>データ形式が無効であるか、サポートされていません。</value>
+  </data>
+  <data name="Error_InvalidDataSourceType" xml:space="preserve">
+    <value>データ ソースの種類が無効です。</value>
+  </data>
+  <data name="Error_InvalidExcelWopiDiscovery" xml:space="preserve">
+    <value>予期しない Office Online 探索形式です。</value>
+  </data>
+  <data name="Error_InvalidExcelWopiUrl" xml:space="preserve">
+    <value>Office Online 探索 URL が到達不可または無効です。</value>
+  </data>
+  <data name="Error_InvalidPowerBIMigrateUrl" xml:space="preserve">
+    <value>Power BI 移行 URL に到達できないか無効です。</value>
+  </data>
+  <data name="Error_InvalidScheduleRecurrenceObject" xml:space="preserve">
+    <value>定期的なアイテムに含めることができる定義された定期的なパターンは 1 つ以下だけです。</value>
+  </data>
+  <data name="Error_PbiToRsAttachDetected" xml:space="preserve">
+    <value>アタッチされたデータベースは PowerBI レポート サーバーを使って作成されます。現在のインスタンスは SQL Server Reporting Services です。この構成はサポートされていません。</value>
+  </data>
+  <data name="Error_RSConfigContainsNoReportsApplicationUrls" xml:space="preserve">
+    <value>構成内で定義されている、予期されたレポート マネージャー アプリケーションがありません。構成ツールを再実行して Reporting Services をセットアップしてください。</value>
+  </data>
+  <data name="Error_SystemResourcePackageException" xml:space="preserve">
+    <value>システム リソース パッケージが正しくありません。</value>
+  </data>
+  <data name="Error_SystemResourceProcessingException" xml:space="preserve">
+    <value>システム リソースを処理できませんでした。</value>
+  </data>
+  <data name="Error_UniversalBrandInvalidColorsFile" xml:space="preserve">
+    <value>ブランド パッケージ カラー ファイルが無効です。</value>
+  </data>
+  <data name="Error_UserPrincipalIsNotSet" xml:space="preserve">
+    <value>UserPrincipal が設定されていません。</value>
+  </data>
+  <data name="SupportedBrowsers" xml:space="preserve">
+    <value>サポートされるブラウザー</value>
+  </data>
+</root>

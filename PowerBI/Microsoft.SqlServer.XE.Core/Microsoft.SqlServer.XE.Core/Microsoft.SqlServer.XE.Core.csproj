@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{400B05C4-7072-4910-BEEF-A093C5DB816B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.SqlServer.XE.Core</RootNamespace>
+    <AssemblyName>Microsoft.SqlServer.XE.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00Q6MPEBXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AHXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AXXZ.cs" />
+    <Compile Include="-CrtImplementationDetails-\LanguageSupport.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadExceptionHandlerException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleUninitializer.cs" />
+    <Compile Include="-CrtImplementationDetails-\Progress.cs" />
+    <Compile Include="-CrtImplementationDetails-\ThisModule.cs" />
+    <Compile Include="-CrtImplementationDetails-\TriBool.cs" />
+    <Compile Include="-Module-.cs" />
+    <Compile Include="gcroot-System.cs" />
+    <Compile Include="ICLRRuntimeHost.cs" />
+    <Compile Include="ICorRuntimeHost.cs" />
+    <Compile Include="IUnknown.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\ActivityId.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\CallStack.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IActionMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\ICustomAttributeMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IEventFieldMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IEventMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IField.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IMapMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IMetadataAccess.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IMetadataGeneration.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\Internal\ResMgr.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IPackage.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\ITargetMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\IXEObjectMetadata.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\MapValue.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\TypeSystem\XETypeMappings.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\XEventEngineStartFailure.cs" />
+    <Compile Include="Microsoft\SqlServer\XEvent\XMLData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XEActionDataDescriptor.cs" />
+    <Compile Include="XECollectedActionData.cs" />
+    <Compile Include="XERelativeObjectId.cs" />
+    <Compile Include="_EXCEPTION_POINTERS.cs" />
+    <Compile Include="_GUID.cs" />
+    <Compile Include="__scrt_native_startup_state.cs" />
+    <Compile Include="__s_GUID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\SqlServer\XE\Core.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateWithNonAggregateArgument" xml:space="preserve">
+    <value>{0} содержит агрегатную функцию "Aggregate" с аргументом, не являющимся статистическим выражением. Агрегатная функция не принимает нестатистические аргументы.</value>
+  </data>
+  <data name="ArgumentCardinalityMismatch" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с недопустимым аргументом "{2}". Скалярным аргументам не могут присваиваться наборы значений.</value>
+  </data>
+  <data name="ArgumentDataTypeMismatch" xml:space="preserve">
+    <value>В {0} содержится функция "{1}" с аргументом "{2}", имеющим недопустимый тип данных "{3}".</value>
+  </data>
+  <data name="ArgumentValueOutOfRange" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с недопустимым аргументом "{2}". Значение этого аргумента находится за пределами допустимого диапазона.</value>
+  </data>
+  <data name="BaseEntityMismatch" xml:space="preserve">
+    <value>Одно из свойств {0} для {1} не совпадает со свойством иерархии BaseEntity. Если иерархия присутствует, то значение {0} должно совпадать с ее свойством BaseEntity.</value>
+  </data>
+  <data name="BinaryEntityColumn" xml:space="preserve">
+    <value>Свойство Column объекта {0} содержит ссылку на {1}, который имеет неподдерживаемый тип данных Binary. Свойство Column сущности не может указывать на столбец, имеющий двоичный тип данных.</value>
+  </data>
+  <data name="BinaryGroupingExpression" xml:space="preserve">
+    <value>Группирование {0} возвращает тип данных Binary. Выражение группирования не может возвращать двоичные данные.</value>
+  </data>
+  <data name="CalculatedAttributeNotFound" xml:space="preserve">
+    <value>Свойство {0} для объекта "{1}" ссылается на несуществующее выражение CalculatedAttribute "{2}".</value>
+  </data>
+  <data name="CalculatedAttributeNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} для объекта "{1}" ссылается на несуществующее выражение CalculatedAttribute "{2}".</value>
+  </data>
+  <data name="CircularInheritance" xml:space="preserve">
+    <value>Свойство {0} объекта {1} определяет прямое или косвенное наследование самого себя. Циклическое наследование недопустимо.</value>
+  </data>
+  <data name="ColumnDataTypeMismatch" xml:space="preserve">
+    <value>Свойство DataType объекта {0} равно {2}, однако {1} имеет тип данных {3}. Свойство DataType атрибута должно соответствовать типу данных столбца.</value>
+  </data>
+  <data name="ColumnNullableMismatch" xml:space="preserve">
+    <value>Свойство необязательной определенности (Nullable) объекта {0} равно FALSE, однако соответствующий {1} может содержать значения NULL. Свойство Nullable атрибута должно соответствовать возможности столбца содержать значения NULL.</value>
+  </data>
+  <data name="CyclicExpression" xml:space="preserve">
+    <value>{0} содержит выражение с прямой или косвенной ссылкой на самого себя. Циклические конструкции в выражениях недопустимы.</value>
+  </data>
+  <data name="CyclicExpression_ExpressionObject" xml:space="preserve">
+    <value>{0} содержит прямую или косвенную ссылку на самого себя. Циклические конструкции в выражениях недопустимы.</value>
+  </data>
+  <data name="DuplicateEntityName" xml:space="preserve">
+    <value>В {0} более чем у одной сущности имя "{1}". Имена сущностей должны быть уникальны в пределах семантической модели (SemanticModel).</value>
+  </data>
+  <data name="DuplicateExpressionName" xml:space="preserve">
+    <value>В {0} у более чем одного выражения имя "{1}". Имена выражений должны быть уникальны в пределах семантического запроса (SemanticQuery).</value>
+  </data>
+  <data name="DuplicateFieldName" xml:space="preserve">
+    <value>В {0} более чем у одного поля имя "{1}". Имена полей должны быть уникальны в пределах сущности.</value>
+  </data>
+  <data name="DuplicateGroupingName" xml:space="preserve">
+    <value>В {0} более чем у одного группирования имя "{1}". Имена группирований должны быть уникальны в пределах семантического запроса (SemanticQuery).</value>
+  </data>
+  <data name="DuplicateItemID" xml:space="preserve">
+    <value>Более одного элемента в модели имеют идентификатор "{0}". Идентификаторы элементов должны быть уникальны в пределах модели.</value>
+  </data>
+  <data name="DuplicateItemName" xml:space="preserve">
+    <value>В {0} более одного элемента имеют имя "{1}". Имена элементов должны быть уникальны среди одноуровневых элементов.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>В {0} более одного параметра имеют имя "{1}". Имена параметров должны быть уникальны в пределах семантического запроса (SemanticQuery).</value>
+  </data>
+  <data name="EmptySemanticQuery" xml:space="preserve">
+    <value>{0} не содержит ни элементов Grouping, ни элементов MeasureGroups. Элемент SemanticQuery должен содержать хотя бы один из этих элементов. Обычно такое происходит, поскольку у пользователя нет разрешения на элементы, на которые ссылаются запросы, либо такие элементы были удалены в базовой модели.</value>
+  </data>
+  <data name="EntityKeyTypeMismatch" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с недопустимым аргументом "{2}". Не удается преобразовать ключ сущности {3} в ключ сущности {4}.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на {2}. Исходя из пути, используемого для доступа к {2}, это свойство может ссылаться только на {3} или любую унаследованную от него сущность.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на {2}. Исходя из пути, используемого для доступа к {2}, это свойство может ссылаться только на {3} или любую унаследованную от него сущность.</value>
+  </data>
+  <data name="ExpressionDataTypeMismatch" xml:space="preserve">
+    <value>Свойство DataType для {0} равно {2}, однако выражение для "{1}" возвращает тип данных {3}. Свойство DataType для атрибута должно иметь тип данных, совпадающий с тем, которое возвращает выражение.</value>
+  </data>
+  <data name="ExpressionNullableMismatch" xml:space="preserve">
+    <value>Свойство необязательной определенности (Nullable) объекта {0} равно FALSE, однако выражение для "{1}" может содержать NULL. Свойство Nullable атрибута должно соответствовать возможности выражения возвращать NULL.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на {2}. Исходя из пути, используемого для доступа к {2}, это свойство может ссылаться только на поля в {3} или в любой производной от него сущности.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на {2}. Исходя из пути, используемого для доступа к {2}, это свойство может ссылаться только на поля в {3} или любой производной от него сущности.</value>
+  </data>
+  <data name="GroupingNotFound" xml:space="preserve">
+    <value>Свойство {0} объекта {1} указывает на группирование "{2}", которое не существует.</value>
+  </data>
+  <data name="GroupingNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} указывает на группирование "{2}", которое не существует.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded" xml:space="preserve">
+    <value>Свойство идентификатора объекта {0} имеет локальное имя, для которого превышена максимальная длина в {1} символов.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded_NoContext" xml:space="preserve">
+    <value>Указанный идентификатор имеет локальное имя, для которого превышена максимальная длина в {0} символов.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded" xml:space="preserve">
+    <value>Свойство идентификатора объекта {0} имеет пространство имен, для которого превышена максимальная длина в {1} символов.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded_NoContext" xml:space="preserve">
+    <value>Указанный идентификатор имеет пространство имен, для которого превышена максимальная длина в {0} символов.</value>
+  </data>
+  <data name="ImplicitDecimalCastToFloat" xml:space="preserve">
+    <value>В {0} содержится функция "{1}", которая принимает аргумент "{2}" с типом данных Float, однако переданное значение имеет тип данных Decimal. Приведение значения типа Decimal к типу Float может вызвать потерю точности.</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>В объектной модели произошла внутренняя ошибка. Дополнительные подробности см. в журнале ошибок.</value>
+  </data>
+  <data name="InvalidAggregateAttributeReference" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} содержит ссылку на {2}, который является статистическим атрибутом. Данное свойство должно содержать ссылку на нестатистический атрибут.</value>
+  </data>
+  <data name="InvalidAttributeRef" xml:space="preserve">
+    <value>{0} содержит AttributeRef, в котором оба следующих элемента или ни одного: AttributeID и AttributeName. AttributeRef должен иметь только один из этих элементов.</value>
+  </data>
+  <data name="InvalidBinding" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на несуществующий {2} в DataSourceView.</value>
+  </data>
+  <data name="InvalidColumnDataType" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на {2}, который имеет неподдерживаемый тип данных.</value>
+  </data>
+  <data name="InvalidColumnReferenceInColumnEntity" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на {2}. Данное свойство может содержать ссылку только на {3}.</value>
+  </data>
+  <data name="InvalidColumnTableName" xml:space="preserve">
+    <value>Свойство Column объекта {0} ссылается на {1}, который не соответствует {2} в объемлющей сущности.</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>Свойство {0} объекта {1} имеет значение "{2}", которое не является допустимой культурой стандарта ISO.</value>
+  </data>
+  <data name="InvalidDataSourceView" xml:space="preserve">
+    <value>Недопустимое представление источника данных. Подробности: {0}</value>
+  </data>
+  <data name="InvalidDateIntervalArgument" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с недопустимым аргументом "{2}". Требуется литерал без пути.</value>
+  </data>
+  <data name="InvalidDateIntervalValue" xml:space="preserve">
+    <value>В {0} содержится функция "{1}" с литеральным значением "{3}" в качестве аргумента "{2}". Значение интервала должно быть одним из следующих: {4}.</value>
+  </data>
+  <data name="InvalidDrillSelectedItems" xml:space="preserve">
+    <value>Свойство SelectedItems параметра DrillthroughContext ссылается на элементы в нескольких контекстах. Свойство SelectedItems должно содержать либо ссылку на одиночное выражение группирования, либо ссылки на выражения, относящиеся к одной группе мер или одной коллекции дополнительных данных.</value>
+  </data>
+  <data name="InvalidDrillSelectedPath" xml:space="preserve">
+    <value>Свойство SelectedPath параметра DrillthroughContext имеет значение "{0}", что не равно и не является подмножеством наибольшего допустимого пути "{1}".</value>
+  </data>
+  <data name="InvalidDrillTargetEntity" xml:space="preserve">
+    <value>BaseEntity для {0} является {1}. Учитывая SelectedPath, указанный параметр DrillthroughContext может использоваться, только если сущность BaseEntity является {2} или любой производной от нее сущностью.</value>
+  </data>
+  <data name="InvalidDrillthroughContext" xml:space="preserve">
+    <value>Недопустимый контекст детализации. Подробности: {0}</value>
+  </data>
+  <data name="InvalidEntityBinding" xml:space="preserve">
+    <value>{0} имеет оба элемента: Table и Column. Сущность должна содержать один и только один из них.</value>
+  </data>
+  <data name="InvalidEntityKeyPart" xml:space="preserve">
+    <value>Значение части ключа EntityKey "{0}" невозможно преобразовать в тип части ключа "{1}".</value>
+  </data>
+  <data name="InvalidEntityKeyValue" xml:space="preserve">
+    <value>Не удалось проанализировать значение EntityKey "{0}" в качестве ключа для {1}.</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>{0} содержит выражение (Expression), не имеющее ни одного или имеющее более одного из следующих элементов: Function, AttributeRef, EntityRef, ParameterRef, Literal, Null. Выражение должно иметь только один из этих элементов.</value>
+  </data>
+  <data name="InvalidExpression_TopLevel" xml:space="preserve">
+    <value>{0} не содержит ни одного или содержит более одного из следующих элементов: Function, AttributeRef, EntityRef, ParameterRef, Literal, Null. Выражение должно содержать только один из этих элементов.</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>Критерий фильтра (Filter Expression) для {0} возвращает данные типа {1}. Выражение фильтра должно возвращать данные типа Boolean.</value>
+  </data>
+  <data name="InvalidFunctionName" xml:space="preserve">
+    <value>В {0} содержится свойство FunctionName со значением "{1}", которое не является допустимым именем функции.</value>
+  </data>
+  <data name="InvalidGuid" xml:space="preserve">
+    <value>Свойство идентификатора для {0} находится в пустом пространстве имен (или пространстве имен SMDL), но не является идентификатором GUID. Идентификаторы, находящиеся в пустых пространствах имен и пространствах имен SMDL, должны иметь следующий формат: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidGuid_NoContext" xml:space="preserve">
+    <value>Указанный идентификатор находится в пустом пространстве имен (или пространстве имен SMDL), но не является идентификатором GUID. Идентификаторы, находящиеся в пустых пространствах имен и пространствах имен SMDL, должны иметь следующий формат: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidHiddenAttributeReference" xml:space="preserve">
+    <value>Одно из {0} свойств {1} ссылается на скрытый атрибут {2}. Это свойство должно ссылаться на атрибут, не являющийся скрытым.</value>
+  </data>
+  <data name="InvalidInSetArgument" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с недопустимым аргументом "{2}". Аргумент должен содержать ParameterRef, статическую функцию или литерал без пути.</value>
+  </data>
+  <data name="InvalidInheritanceRelationTable" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на {2}. Данное свойство должно ссылаться на связь, для которой источником является {3}, а назначением - {4}.</value>
+  </data>
+  <data name="InvalidLinguistics" xml:space="preserve">
+    <value>Для {0} указано свойство Linguistics, однако пропущено свойство Name. Свойство Linguistics нельзя указать для роли (Role), если пропущено свойство Name.</value>
+  </data>
+  <data name="InvalidLiteral" xml:space="preserve">
+    <value>Объект {0} содержит литерал, в котором либо указаны оба элемента Value и Values, либо не указан ни один из них. Литерал должен содержать один и только один из них.</value>
+  </data>
+  <data name="InvalidLiteralSetArgument" xml:space="preserve">
+    <value>В {0} содержится функция "{1}", имеющая набор литералов в качестве аргумента "{2}". В этом аргументе наборы литералов указывать нельзя.</value>
+  </data>
+  <data name="InvalidLiteralValue" xml:space="preserve">
+    <value>В {0} содержится литерал со значением "{1}", который не является допустимым значением {2}. {3}</value>
+  </data>
+  <data name="InvalidModelGenerationRules" xml:space="preserve">
+    <value>Недопустимые правила создания модели. Подробности: {0}</value>
+  </data>
+  <data name="InvalidModelItemInPerspective" xml:space="preserve">
+    <value>{1} не может быть включен в {0}.</value>
+  </data>
+  <data name="InvalidNonFilterAttributeReference" xml:space="preserve">
+    <value>Одно из свойств {0} для {1} ссылается на {2}, который не является атрибутом фильтра. Данное свойство должно ссылаться на атрибут фильтра.</value>
+  </data>
+  <data name="InvalidOptionalityOfRoleForColumnBoundEntity" xml:space="preserve">
+    <value>{0} от {1} до {2} является необязательным, но {3} привязан к столбцу. Все роли, в которых участвуют сущности, привязанные к столбцам, считаются обязательными.</value>
+  </data>
+  <data name="InvalidParameterExpression" xml:space="preserve">
+    <value>Параметр Expression значения по умолчанию для {0} содержит один или несколько следующих элементов: Path, Function, AttributeRef, EntityRef, ParameterRef. Параметр Expression не может содержать этих элементов.</value>
+  </data>
+  <data name="InvalidParameterName" xml:space="preserve">
+    <value>Параметр {0} имеет имя "{1}". Параметры не могут иметь зарезервированное имя "{2}".</value>
+  </data>
+  <data name="InvalidParameterValueCardinality" xml:space="preserve">
+    <value>В качестве параметра "{0}" необходимо передавать одиночное значение. Переданное значение является набором.</value>
+  </data>
+  <data name="InvalidParameterValueType" xml:space="preserve">
+    <value>Параметр "{0}" имеет тип данных {1}. Переданное значение не может быть преобразовано в этот тип.</value>
+  </data>
+  <data name="InvalidParameterValueType_MultipleValues" xml:space="preserve">
+    <value>Параметр "{0}" имеет тип данных {1}. Одно или несколько значений, переданных в этом параметре, невозможно привести к этому типу.</value>
+  </data>
+  <data name="InvalidReferencedItem" xml:space="preserve">
+    <value>Свойство {0} для {1} ссылается на {2}, которое не принадлежит ни к одному из следующих типов: {3}.</value>
+  </data>
+  <data name="InvalidReferencedItem_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} для {1} ссылается на {2}, которое не является одним из следующих типов: {3}.</value>
+  </data>
+  <data name="InvalidRoleRelationTable" xml:space="preserve">
+    <value>Свойство связи для {0} ссылается на конец {1} для {2}. Данное свойство должно ссылаться на тот конец связи, который ссылается на {3}.</value>
+  </data>
+  <data name="InvalidScalarAttributeReference" xml:space="preserve">
+    <value>Одно из свойств {0} для {1} ссылается на {2}, который не является статистическим атрибутом. Данное свойство должно ссылаться на статистический атрибут.</value>
+  </data>
+  <data name="InvalidSemanticModel" xml:space="preserve">
+    <value>Недопустимая семантическая модель. Подробности: {0}</value>
+  </data>
+  <data name="InvalidSemanticQuery" xml:space="preserve">
+    <value>Недопустимый семантический запрос. Подробности: {0}</value>
+  </data>
+  <data name="InvalidSetAttributeReference" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на {2}, который не является статистическим атрибутом. Исходя из пути, используемого для доступа к {2}, это свойство должно указывать на статистический атрибут.</value>
+  </data>
+  <data name="IsAggregateWithColumn" xml:space="preserve">
+    <value>Свойство IsAggregate объекта {0} имеет значение true, но при этом задана привязка к столбцу. В данном случае свойство IsAggregate не может быть равно true.</value>
+  </data>
+  <data name="IsAggregateWithDefaultAggregate" xml:space="preserve">
+    <value>Для {0} задано свойство DefaultAggregateAttributeID, однако свойство IsAggregate имеет значение true. Задание статистического значения по умолчанию для статистических атрибутов не допускается.</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на элемент "{2}", который не существует.</value>
+  </data>
+  <data name="ItemNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на элемент "{2}", который не существует.</value>
+  </data>
+  <data name="LoopInSecurityFilters" xml:space="preserve">
+    <value>Фильтр безопасности для {0} косвенно зависит сам от себя. Цикличность в фильтрах безопасности не допускается.</value>
+  </data>
+  <data name="MeasureNotFound" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на выражение меры "{2}", которое не существует.</value>
+  </data>
+  <data name="MeasureNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на выражение меры "{2}", которое не существует.</value>
+  </data>
+  <data name="MissingBaseEntity" xml:space="preserve">
+    <value>Отсутствует свойство {0} для {1}.</value>
+  </data>
+  <data name="MissingBaseEntity_MultipleProperties" xml:space="preserve">
+    <value>Отсутствует одно из свойств {0} для {1}.</value>
+  </data>
+  <data name="MissingBinding_Attribute" xml:space="preserve">
+    <value>Отсутствует привязка для {0}. Атрибут должен иметь в точности одну привязку к столбцу (Column), если не задан параметр Expression.</value>
+  </data>
+  <data name="MissingBinding_Entity" xml:space="preserve">
+    <value>Отсутствует привязка для {0}. Сущность должна иметь в точности один из следующих элементов: Table, Column.</value>
+  </data>
+  <data name="MissingBinding_Inheritance" xml:space="preserve">
+    <value>Отсутствует привязка для свойства Inheritance у {0}. Свойство Inheritance должно иметь ровно одну привязку Relation.</value>
+  </data>
+  <data name="MissingBinding_Role" xml:space="preserve">
+    <value>Отсутствует привязка для {0}. Роль должна иметь в точности одну привязку Relation, кроме тех случаев, когда объемлющая сущность привязана к таблице, а связанная сущность - к столбцу в данной таблице (или наоборот).</value>
+  </data>
+  <data name="MissingColumnTableName" xml:space="preserve">
+    <value>Не указано значение свойства Column.TableName для {0}. Свойство TableName должно быть определено для привязок к столбцам сущностей.</value>
+  </data>
+  <data name="MissingDataSourceView" xml:space="preserve">
+    <value>Отсутствует элемент DataSourceView для {0}. Элемент SemanticModel должен содержать в точности один элемент DataSourceView.</value>
+  </data>
+  <data name="MissingExpressionName" xml:space="preserve">
+    <value>Отсутствует имя для параметра Expression в {0}.</value>
+  </data>
+  <data name="MissingGroupingExpression" xml:space="preserve">
+    <value>Отсутствует выражение для {0}. Группирование должно содержать в точности одно выражение.</value>
+  </data>
+  <data name="MissingGroupingName" xml:space="preserve">
+    <value>Отсутствует имя группирования в {0}.</value>
+  </data>
+  <data name="MissingIdentifyingAttributes" xml:space="preserve">
+    <value>{0} не имеет элементов IdentifyingAttributes. Сущность должна иметь не менее одного элемента IdentifyingAttribute.</value>
+  </data>
+  <data name="MissingItemName" xml:space="preserve">
+    <value>Отсутствует имя (Name) для {0}.</value>
+  </data>
+  <data name="MissingMeasures" xml:space="preserve">
+    <value>Один из элементов MeasureGroups для {0} не содержит ни одного элемента Measures. Элемент MeasureGroup должен содержать не менее одного элемента Measure.</value>
+  </data>
+  <data name="MissingMimeType" xml:space="preserve">
+    <value>Отсутствует MimeType для {0}. Для атрибута с типом данных Binary должен быть указан MimeType.</value>
+  </data>
+  <data name="MissingParameterName" xml:space="preserve">
+    <value>Отсутствует имя для параметра в {0}.</value>
+  </data>
+  <data name="MissingParameterValue" xml:space="preserve">
+    <value>Для параметра "{0}" должно быть задано значение.</value>
+  </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на объект {2}, который не имеет первичного ключа.</value>
+  </data>
+  <data name="MissingRelatedRole" xml:space="preserve">
+    <value>Отсутствует свойство RelatedRoleID для {0}.</value>
+  </data>
+  <data name="MissingRelationEnd" xml:space="preserve">
+    <value>Отсутствует свойство Relation.RelationEnd для {0}.</value>
+  </data>
+  <data name="MultipleHierarchies" xml:space="preserve">
+    <value>{0} содержит несколько иерархий, такая возможность не поддерживается.</value>
+  </data>
+  <data name="MultipleMeasureGroups" xml:space="preserve">
+    <value>{0} содержит несколько элементов MeasureGroups, такая возможность не поддерживается.</value>
+  </data>
+  <data name="NestedVariations" xml:space="preserve">
+    <value>Объект {0} является вариацией и содержит вложенные вариации. Поля вариаций не могут быть вложены в другие поля вариаций.</value>
+  </data>
+  <data name="NonAggregateAsDefaultAggregate" xml:space="preserve">
+    <value>Свойство DefaultAggregateAttributeID для {0} ссылается на {1}, не являющийся статистическим атрибутом.</value>
+  </data>
+  <data name="NonAggregateExpression_Attribute" xml:space="preserve">
+    <value>Выражение (Expression) для {0} не является статистическим выражением, однако свойство IsAggregate имеет значение true. Если свойство IsAggregate имеет значение true, следует указать статистическое выражение.</value>
+  </data>
+  <data name="NonAggregateExpression_Measure" xml:space="preserve">
+    <value>{0} не является статистическим выражением. Выражения мер должны быть статистическими выражениями.</value>
+  </data>
+  <data name="NonBooleanFilterAttribute" xml:space="preserve">
+    <value>{0} является атрибутом фильтра, но возвращает данные типа {1}. Атрибуты фильтра должны возвращать логические данные.</value>
+  </data>
+  <data name="NonEntityGroupingWithDetails" xml:space="preserve">
+    <value>{0} содержит подробности (Details), но группирование {1} не является ссылкой на сущность (EntityRef). Группирование может содержать подробности только в том случае, если выражение группирования является EntityRef.</value>
+  </data>
+  <data name="NonPrimaryDataSource" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на объект {2}, который не входит в первичный источник данных.</value>
+  </data>
+  <data name="NonUniqueInheritanceRelationColumns" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на объект {2}, который не привязан к набору уникально ограниченных столбцов для {3}.</value>
+  </data>
+  <data name="NonUniqueRoleRelationColumns" xml:space="preserve">
+    <value>Свойство Relation объекта {0} ссылается на конец {1} объекта {2}, который не привязан к набору уникально ограниченных столбцов для {3}. Для ролей со свойством Cardinality, равным One или OptionalOne, необходимы связи, привязанные к уникально ограниченным столбцам таблицы.</value>
+  </data>
+  <data name="NonVariationAsDefaultAggregate" xml:space="preserve">
+    <value>Свойство DefaultAggregateAttributeID объекта {0} ссылается на {2}, который не является вариацией "{1}". Статистическое значение по умолчанию должно быть вариацией атрибута.</value>
+  </data>
+  <data name="NullParameterValue" xml:space="preserve">
+    <value>Параметр "{0}" не может принимать значение NULL.</value>
+  </data>
+  <data name="ObjectDescriptor_TypeAndName" xml:space="preserve">
+    <value>{0} "{1}"</value>
+  </data>
+  <data name="ParameterExpressionCardinalityMismatch" xml:space="preserve">
+    <value>Свойство Cardinality объекта {0} имеет значение One, однако выражение значения по умолчанию для "{1}" возвращает набор. Выражение значения по умолчанию (Expression) должно возвращать единственное значение, если свойство Cardinality параметра имеет значение One.</value>
+  </data>
+  <data name="ParameterExpressionDataTypeMismatch" xml:space="preserve">
+    <value>Свойство DataType объекта {0} имеет значение {2}, однако выражение значения по умолчанию "{1}" возвращает тип данных {3}. Тип данных, возвращаемый выражением значения по умолчанию, должен совпадать с типом данных, указанным в свойстве DataType параметра (Parameter).</value>
+  </data>
+  <data name="ParameterExpressionNullableMismatch" xml:space="preserve">
+    <value>Свойство необязательной определенности (Nullable) объекта {0} равно FALSE, однако выражение для "{1}" может содержать NULL. Свойство Nullable выражения значения по умолчанию должно соответствовать свойству Nullable параметра (Parameter).</value>
+  </data>
+  <data name="ParameterNotFound" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на параметр "{2}", который не существует.</value>
+  </data>
+  <data name="ParameterNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} ссылается на параметр "{2}", который не существует.</value>
+  </data>
+  <data name="PromoteLookupForNonLookupEntity" xml:space="preserve">
+    <value>Свойство PromoteLookup объекта {0} имеет значение true, но свойство IsLookup объекта {1} не равно true. Сущности, содержащие роль и связанную роль, должны быть поисковыми сущностями.</value>
+  </data>
+  <data name="RelatedRolesMismatch" xml:space="preserve">
+    <value>Свойство RelatedRoleID объекта {0} ссылается на {2}, однако свойство RelatedRoleID для "{3}" не ссылается на "{1}". Свойства RelatedRoleID должны ссылаться друг на друга.</value>
+  </data>
+  <data name="ResultExpressionNotFound" xml:space="preserve">
+    <value>Свойство {0} объекта {1} ссылается на выражение "{2}", которое не существует.</value>
+  </data>
+  <data name="ResultExpressionNotFound_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} указывает на выражение "{2}", которое не существует.</value>
+  </data>
+  <data name="RoleRelationEndsMismatch" xml:space="preserve">
+    <value>Свойство Relation объекта {0} содержит ссылку на конец {2} объекта {3}, но свойство Relation для RelatedRole ''{1}'' также содержит ссылку на конец {2}. Значения свойства RelationEnds для роли и связанной с ней роли (RelatedRole) не должны совпадать.</value>
+  </data>
+  <data name="RoleRelationsMismatch" xml:space="preserve">
+    <value>Свойство Relation объекта {0} содержит ссылку на {2}, но свойство Relation для RelatedRole "{1}" содержит ссылку на {3}. Значения свойства Relation для роли и связанной с ней роли (RelatedRole) должны совпадать.</value>
+  </data>
+  <data name="SelfReferentialRole" xml:space="preserve">
+    <value>Свойство RelatedRoleID объекта {0} является ссылкой на себя. Свойство RelatedRoleID роли (Role) должно ссылаться на другую роль.</value>
+  </data>
+  <data name="SemanticModel_PerspectiveNotFound" xml:space="preserve">
+    <value>Указанная перспектива "{0}" отсутствует в модели.</value>
+  </data>
+  <data name="TopLevelSetExpression" xml:space="preserve">
+    <value>Объект {0} возвращает набор значений для каждого экземпляра {1}. Это выражение должно возвращать одиночное значение для каждого экземпляра сущности.</value>
+  </data>
+  <data name="TopLevelSetExpression_Attribute" xml:space="preserve">
+    <value>Выражение (Expression) для {0} возвращает набор значений для каждого экземпляра {1}. Это выражение должно возвращать одиночное значение для каждого экземпляра сущности.</value>
+  </data>
+  <data name="TopLevelSetExpression_Filter" xml:space="preserve">
+    <value>Критерий фильтра (Filter Expression) для {0} возвращает набор значений для каждого экземпляра {1}. Это выражение должно возвращать одиночное значение для каждого экземпляра сущности.</value>
+  </data>
+  <data name="UnusedParameterValue" xml:space="preserve">
+    <value>Предоставлен параметр "{1}", однако параметр с таким именем не определен в {0}.</value>
+  </data>
+  <data name="ValidationException_MessageWithAdditionalMessages" xml:space="preserve">
+    <value>{0}
+Возникло {1} дополнительных ошибок или предупреждений.</value>
+  </data>
+  <data name="WrongNumberOfArguments" xml:space="preserve">
+    <value>{0} содержит функцию "{1}" с неправильным числом аргументов.</value>
+  </data>
+  <data name="WrongSemanticModel_ModelItem" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на объект {2}, который не содержится в той же семантической модели (SemanticModel), что и {1}.</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItem" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на элемент {2}, не принадлежащий указанной в запросе семантической модели (SemanticModel).</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItemMultipleProperties" xml:space="preserve">
+    <value>Одно из {0} свойств объекта {1} содержит ссылку на {2}, не содержащийся в семантической (SemanticModel), указанной в запросе.</value>
+  </data>
+  <data name="WrongSemanticQuery" xml:space="preserve">
+    <value>Свойство {0} объекта {1} содержит ссылку на объект {2}, который не находится в том же запросе SemanticQuery, что и {1}.</value>
+  </data>
+  <data name="WrongSemanticQuery_MultipleProperties" xml:space="preserve">
+    <value>Одно из свойств {0} объекта {1} содержит ссылку на объект {2}, который не находится в том же запросе SemanticQuery, что и {1}.</value>
+  </data>
+  <data name="XmlValidationException_MessageWithLineInfo" xml:space="preserve">
+    <value>{0} Строка {1}, позиция {2}.</value>
+  </data>
+  <data name="Xml_NodeMismatch" xml:space="preserve">
+    <value>Ожидался объект {0} "{1}" в пространстве имен {2} вместо объекта {3} "{4}" в пространстве имен {5}.</value>
+  </data>
+</root>

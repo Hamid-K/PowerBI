@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8A60D1C-61D0-4233-996D-7014D728FB9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Exceptions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AsynchronousExceptionDetection.cs" />
+    <Compile Include="Common\SoapUtil.cs" />
+    <Compile Include="Diagnostics\CatalogItemNames.cs" />
+    <Compile Include="Diagnostics\EvaluationCopyExpiredException.cs" />
+    <Compile Include="Diagnostics\RunningApplication.cs" />
+    <Compile Include="Diagnostics\StringUtils.cs" />
+    <Compile Include="Diagnostics\Utilities\AccessDeniedException.cs" />
+    <Compile Include="Diagnostics\Utilities\AccessDeniedToSecureDataException.cs" />
+    <Compile Include="Diagnostics\Utilities\AuthenticationExtensionException.cs" />
+    <Compile Include="Diagnostics\Utilities\AuthenticationExtensionUnauthorizedException.cs" />
+    <Compile Include="Diagnostics\Utilities\AuthorizationExtensionException.cs" />
+    <Compile Include="Diagnostics\Utilities\BackupKeyPasswordInvalidException.cs" />
+    <Compile Include="Diagnostics\Utilities\BatchNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\CacheRefreshPlanNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\CachingNotEnabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotActivateSubscriptionException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotBuildExternalConnectionStringException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotDeleteRootPolicyException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotPrepareQueryException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotRetrieveModelException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotSubscribeToEventException.cs" />
+    <Compile Include="Diagnostics\Utilities\CannotValidateEncryptedDataException.cs" />
+    <Compile Include="Diagnostics\Utilities\CatalogItemContentInvalidException.cs" />
+    <Compile Include="Diagnostics\Utilities\CertificateMissingOrInvalidException.cs" />
+    <Compile Include="Diagnostics\Utilities\ClaimsToWindowsTokenException.cs" />
+    <Compile Include="Diagnostics\Utilities\ClaimsToWindowsTokenLoginTypeException.cs" />
+    <Compile Include="Diagnostics\Utilities\ClosingRegisteredStreamException.cs" />
+    <Compile Include="Diagnostics\Utilities\ComponentPublishingError.cs" />
+    <Compile Include="Diagnostics\Utilities\ContainerTypeNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataCacheInvalidException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataExtensionNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSetNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSetParameterValueNotSetException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSourceDisabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSourceNoPromptException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSourceNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\DataSourceOpenException.cs" />
+    <Compile Include="Diagnostics\Utilities\DeliveryErrorException.cs" />
+    <Compile Include="Diagnostics\Utilities\DeliveryExtensionNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\ElementTypeMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\EmptyRoleException.cs" />
+    <Compile Include="Diagnostics\Utilities\ErrorStringsWrapper.cs" />
+    <Compile Include="Diagnostics\Utilities\EventLogSourceNotFound.cs" />
+    <Compile Include="Diagnostics\Utilities\ExecuteQueriesFailureException.cs" />
+    <Compile Include="Diagnostics\Utilities\ExecutionNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\FailedToExportSymmetricKeyException.cs" />
+    <Compile Include="Diagnostics\Utilities\FaultedDataSourceException.cs" />
+    <Compile Include="Diagnostics\Utilities\FileExtensionMissingException.cs" />
+    <Compile Include="Diagnostics\Utilities\FileExtensionViolationException.cs" />
+    <Compile Include="Diagnostics\Utilities\FileSizeException.cs" />
+    <Compile Include="Diagnostics\Utilities\FileSizeNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\GetExternalImagesFailureException.cs" />
+    <Compile Include="Diagnostics\Utilities\HasUserProfileDependenciesException.cs" />
+    <Compile Include="Diagnostics\Utilities\IdentityClaimsMissingOrInvalidException.cs" />
+    <Compile Include="Diagnostics\Utilities\InheritedPolicyException.cs" />
+    <Compile Include="Diagnostics\Utilities\InternalCatalogException.cs" />
+    <Compile Include="Diagnostics\Utilities\InternalDataSourceNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\InternalRepublishingException.cs" />
+    <Compile Include="Diagnostics\Utilities\InternalResourceNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSetReferenceException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceCountException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceCredentialException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceCredentialSettingException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceCredentialSettingForITokenDataExtensionExce.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceReferenceException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceSchemaException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDataSourceTypeException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidDestinationException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidElementCombinationException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidElementException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidExtensionParameter.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidItemNameException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidItemPathException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidModelDrillthroughReportException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidMoveException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidMultipleElementCombinationException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidParameterCombinationException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidPolicyDefinitionException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidReportLinkException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidReportParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidSessionCatalogItemsException.cs" />
+    <Compile Include="Diagnostics\Utilities\InvalidXmlException.cs" />
+    <Compile Include="Diagnostics\Utilities\IPrivateInformationFormatter.cs" />
+    <Compile Include="Diagnostics\Utilities\IRSTraceInternal.cs" />
+    <Compile Include="Diagnostics\Utilities\IRSTraceInternalWithDynamicLevel.cs" />
+    <Compile Include="Diagnostics\Utilities\ItemAlreadyExistsException.cs" />
+    <Compile Include="Diagnostics\Utilities\ItemNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\ItemPathLengthExceededException.cs" />
+    <Compile Include="Diagnostics\Utilities\JobCanceledException.cs" />
+    <Compile Include="Diagnostics\Utilities\LogClientTraceEventsException.cs" />
+    <Compile Include="Diagnostics\Utilities\LogonFailedException.cs" />
+    <Compile Include="Diagnostics\Utilities\MalformedXmlException.cs" />
+    <Compile Include="Diagnostics\Utilities\MaxCountCommentsException.cs" />
+    <Compile Include="Diagnostics\Utilities\MissingElementException.cs" />
+    <Compile Include="Diagnostics\Utilities\MissingParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\MissingRequiredPropertyForItemTypeException.cs" />
+    <Compile Include="Diagnostics\Utilities\MissingSessionIdException.cs" />
+    <Compile Include="Diagnostics\Utilities\MixedTasksException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelGenerationErrorException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelGenerationNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelIDMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelItemNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelNotAutoGeneratedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelRetrievalAbortedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ModelRootPolicyRequiredException.cs" />
+    <Compile Include="Diagnostics\Utilities\NativeModePropertyDisabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\NotEnabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\NotYetSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\OnPremConnectionBuilderConnectionStringMissingException.cs" />
+    <Compile Include="Diagnostics\Utilities\OnPremConnectionBuilderMissingEffectiveUsernameException.cs" />
+    <Compile Include="Diagnostics\Utilities\OnPremConnectionBuilderUnknownErrorException.cs" />
+    <Compile Include="Diagnostics\Utilities\OperatingSystem.cs" />
+    <Compile Include="Diagnostics\Utilities\OperationNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\OperationNotSupportedNativeModeException.cs" />
+    <Compile Include="Diagnostics\Utilities\OperationNotSupportedSharePointModeException.cs" />
+    <Compile Include="Diagnostics\Utilities\OperationPreventsUnattendedExecutionException.cs" />
+    <Compile Include="Diagnostics\Utilities\ParameterTypeMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\PassThroughPrivateInformationFormatter.cs" />
+    <Compile Include="Diagnostics\Utilities\PBIServiceUnavailable.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceExtraElementException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceInvalidCacheOptionException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceInvalidConfigurationException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceInvalidExecutionOptionException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceInvalidItemTypeException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceInvalidRdlException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceMismatchRdlVersion.cs" />
+    <Compile Include="Diagnostics\Utilities\RdceWrappedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReadOnlyDataSetParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReadOnlyPropertyException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReadOnlyReportParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\RemotePublicKeyUnavailableException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportBuilderFileTransmissionException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportCatalogException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportHistoryNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportNotReadyException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportParameterTypeMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportParameterValueNotSetException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportSerializationException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerAppDomainManagerException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerDatabaseLogonFailedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerHttpRuntimeClientDisconnectionException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerHttpRuntimeException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerHttpRuntimeInternalException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerServiceUnavailableException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerStorageException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerStorageRefreshConnectionNotValidatedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportServerStorageSingleRefreshConnectionExpectedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportSnapshotEnabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportSnapshotNotEnabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReportTimeoutExpiredException.cs" />
+    <Compile Include="Diagnostics\Utilities\RequestEncodingFormatException.cs" />
+    <Compile Include="Diagnostics\Utilities\RequestThroughHttpRedirectorNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReservedItemException.cs" />
+    <Compile Include="Diagnostics\Utilities\ReservedRoleException.cs" />
+    <Compile Include="Diagnostics\Utilities\RestrictedItemException.cs" />
+    <Compile Include="Diagnostics\Utilities\RoleAlreadyExistsException.cs" />
+    <Compile Include="Diagnostics\Utilities\RoleNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\RPCException.cs" />
+    <Compile Include="Diagnostics\Utilities\RSAddinVersionMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\RSException.cs" />
+    <Compile Include="Diagnostics\Utilities\RSExceptionCreatedEventArgs.cs" />
+    <Compile Include="Diagnostics\Utilities\RSResolutionFailureException.cs" />
+    <Compile Include="Diagnostics\Utilities\RSTrace.cs" />
+    <Compile Include="Diagnostics\Utilities\ScheduleAlreadyExists.cs" />
+    <Compile Include="Diagnostics\Utilities\ScheduleDateTimeRangeException.cs" />
+    <Compile Include="Diagnostics\Utilities\ScheduleNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\SchedulerNotRespondingException.cs" />
+    <Compile Include="Diagnostics\Utilities\SchedulerNotRespondingPreventsPinningException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureConnectionRequiredException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreAmbiguousCredentialFieldsException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreCannotRetrieveCredentialsException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreContextUrlNotSpecifiedException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreInvalidLookupContextException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreMissingCredentialFieldsException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreUnsupportedCredentialFieldException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecureStoreUnsupportedSharePointVersionException.cs" />
+    <Compile Include="Diagnostics\Utilities\SecurityZoneNotSupportedException.cs" />
+    <Compile Include="Diagnostics\Utilities\SemanticQueryExtensionNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\ServerBusyException.cs" />
+    <Compile Include="Diagnostics\Utilities\ServerConfigurationErrorException.cs" />
+    <Compile Include="Diagnostics\Utilities\SharePointException.cs" />
+    <Compile Include="Diagnostics\Utilities\SharePointObjectModelNotInstalled.cs" />
+    <Compile Include="Diagnostics\Utilities\SharePointPropertyDisabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\SharePointScheduleAlreadyExists.cs" />
+    <Compile Include="Diagnostics\Utilities\SoapExtensionInvalidPreambleException.cs" />
+    <Compile Include="Diagnostics\Utilities\SoapExtensionInvalidPreambleLengthException.cs" />
+    <Compile Include="Diagnostics\Utilities\SPSiteNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\StoredParameterNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\StreamNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\SubreportFromSnapshotException.cs" />
+    <Compile Include="Diagnostics\Utilities\SubscriptionNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\TaskNotFoundException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnhandledHttpApplicationException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnknownDataSetParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnknownEventTypeException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnknownReportParameterException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnknownUserNameException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnrecognizedXmlElementException.cs" />
+    <Compile Include="Diagnostics\Utilities\UnsupportedParameterForModeException.cs" />
+    <Compile Include="Diagnostics\Utilities\UrlRemapException.cs" />
+    <Compile Include="Diagnostics\Utilities\VersionMismatchException.cs" />
+    <Compile Include="Diagnostics\Utilities\WindowsAuthz1355ApiException.cs" />
+    <Compile Include="Diagnostics\Utilities\WindowsAuthz5ApiException.cs" />
+    <Compile Include="Diagnostics\Utilities\WindowsAuthzApiException.cs" />
+    <Compile Include="Diagnostics\Utilities\WindowsIntegratedSecurityDisabledException.cs" />
+    <Compile Include="Diagnostics\Utilities\WrongItemTypeException.cs" />
+    <Compile Include="Exceptions\ErrorStrings.Designer.cs">
+      <DependentUpon>ErrorStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Exceptions\ExceptionUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Exceptions\ErrorStrings.de.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.es.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.fr.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.it.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.ja.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.ko.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exceptions\ErrorStrings.ru.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.zh-Hans.resx" />
+    <EmbeddedResource Include="Exceptions\ErrorStrings.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

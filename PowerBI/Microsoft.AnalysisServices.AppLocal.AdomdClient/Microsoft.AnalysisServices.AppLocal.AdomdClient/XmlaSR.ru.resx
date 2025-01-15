@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AfterExceptionAllTagsShouldCloseUntilMessagesSection" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: непредвиденный формат ответа сервера. Все теги между элементом Exception и разделом "Сообщения" должны быть закрыты.</value>
+  </data>
+  <data name="AlreadyConnected" xml:space="preserve">
+    <value>Клиент уже подключен.</value>
+  </data>
+  <data name="Authentication_AsAzure_OnlySspiOrClaimsTokenSupported" xml:space="preserve">
+    <value>Сбой проверки подлинности: подключения Azure Analysis Services поддерживают только SSPI или встроенную систему безопасности ClaimsToken.</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AdalError" xml:space="preserve">
+    <value>Сбой проверки подлинности: сбой Microsoft.IdentityModel.Clients.ActiveDirectory с ошибкой "{0}".</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AdalLoadingError" xml:space="preserve">
+    <value>Сбой проверки подлинности: Microsoft.IdentityModel.Clients.ActiveDirectory не удалось загрузить "{0}".</value>
+  </data>
+  <data name="Authentication_ClaimsToken_AuthorityNotFound" xml:space="preserve">
+    <value>Сбой проверки подлинности: не удалось найти центр для встроенной системы безопасности ClaimsToken (требуется допустимый поставщик удостоверений или допустимый источник данных Azure Analysis Services).</value>
+  </data>
+  <data name="Authentication_ClaimsToken_IdentityProviderFormatInvalid" xml:space="preserve">
+    <value>Сбой проверки подлинности: формат поставщика удостоверений недопустим для ClaimsToken, ожидаемый формат: &lt;URL-адрес центра AAD&gt;[,&lt;идентификатор приложения AAD&gt;].</value>
+  </data>
+  <data name="Authentication_ClaimsToken_UserIdAndPasswordRequired" xml:space="preserve">
+    <value>Сбой проверки подлинности: необходимо указать идентификатор и пароль пользователя, если пользовательский интерфейс недоступен.</value>
+  </data>
+  <data name="Authentication_Failed" xml:space="preserve">
+    <value>Сбой аутентификации.</value>
+  </data>
+  <data name="Authentication_MsoID_InternalError" xml:space="preserve">
+    <value>Сбой входа в систему из-за внутренней ошибки помощника по входу в службы Microsoft Online Services.</value>
+  </data>
+  <data name="Authentication_MsoID_InvalidCredentials" xml:space="preserve">
+    <value>Сбой входа в систему из-за неверного идентификатора пользователя или пароля.</value>
+  </data>
+  <data name="Authentication_MsoID_MissingSignInAssistant" xml:space="preserve">
+    <value>Сбой входа в систему из-за того, что компонент, используемый для решения этой задачи (msoidcli.dll), не найден на компьютере. Убедитесь, что помощник по входу в службы Microsoft Online Services установлен.</value>
+  </data>
+  <data name="Authentication_MsoID_SsoFailed" xml:space="preserve">
+    <value>Помощнику по входу в службы Microsoft Online Services не удалось выполнить вход в систему от имени вашего пользователя.</value>
+  </data>
+  <data name="Authentication_MsoID_SsoFailedNonDomainUser" xml:space="preserve">
+    <value>Сбой единого входа из-за отсутствия у пользователя действительной учетной записи в домене Windows.</value>
+  </data>
+  <data name="Authentication_PbiDedicated_OnlyClaimsTokenSupported" xml:space="preserve">
+    <value>Сбой проверки подлинности: выделенные подключения PBI поддерживают только встроенную систему безопасности ClaimsToken.</value>
+  </data>
+  <data name="Authentication_Sspi_FlagNotEstablished" xml:space="preserve">
+    <value>Сбой аутентификации: невозможно установить флаг SSPI "{0}" на сервере.</value>
+  </data>
+  <data name="Authentication_Sspi_PackageDoesntSupportCapability" xml:space="preserve">
+    <value>Сбой аутентификации: пакет SSPI "{0}" не поддерживает "{1}".</value>
+  </data>
+  <data name="Authentication_Sspi_PackageNotFound" xml:space="preserve">
+    <value>Сбой аутентификации: пакет SSPI "{0}" не поддерживается.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelAnonymousAmbiguity" xml:space="preserve">
+    <value>Сбой аутентификации: уровень олицетворения "Анонимный" подразумевает, что в строке подключения сертификат предоставлен не будет.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelCantDelegate" xml:space="preserve">
+    <value>Сбой аутентификации: канал Schannel не поддерживает уровень олицетворения "Делегат".</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelSupportsOnlyPrivacyLevel" xml:space="preserve">
+    <value>Сбой аутентификации: канал Schannel поддерживает только уровень защиты "Конфиденциальность".</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelUnsupportedImpersonationLevel" xml:space="preserve">
+    <value>Сбой аутентификации: неподдерживаемый уровень олицетворения для канала Schannel.</value>
+  </data>
+  <data name="Authentication_Sspi_SchannelUnsupportedProtectionLevel" xml:space="preserve">
+    <value>Сбой аутентификации: неподдерживаемый уровень защиты для канала Schannel.</value>
+  </data>
+  <data name="Cancel_SessionIDNotSpecified" xml:space="preserve">
+    <value>Свойство SessionID не задано.</value>
+  </data>
+  <data name="CannotConnect" xml:space="preserve">
+    <value>Невозможно установить подключение. Убедитесь, что сервер работает.</value>
+  </data>
+  <data name="CannotConnectToRedirector" xml:space="preserve">
+    <value>Невозможно установить подключение к перенаправителю. Убедитесь, что служба "Обозреватель SQL" работает.</value>
+  </data>
+  <data name="Compression_InitializationFailed" xml:space="preserve">
+    <value>Сбой инициализации сжатия.</value>
+  </data>
+  <data name="Connect_RedirectorDidntReturnDatabaseInfo" xml:space="preserve">
+    <value>Невозможно открыть подключение, так как служба перенаправителя не предоставила требуемую информацию о базе данных.</value>
+  </data>
+  <data name="ConnectionBroken" xml:space="preserve">
+    <value>Истекло время ожидания подключения, либо подключение было разорвано.</value>
+  </data>
+  <data name="ConnectionCannotBeUsedWhileXmlReaderOpened" xml:space="preserve">
+    <value>Невозможно использовать подключение, пока объект XmlReader открыт.</value>
+  </data>
+  <data name="ConnectionString_ASAzure_FetchLinkReferenceFailed" xml:space="preserve">
+    <value>Не удалось извлечь связанный файл по URI "{0}".</value>
+  </data>
+  <data name="ConnectionString_ASAzure_InvalidLinkReferenceCustomPort" xml:space="preserve">
+    <value>URI связи "{0}" недопустим. В URI не следует указывать пользовательский HTTPS-порт.</value>
+  </data>
+  <data name="ConnectionString_ASAzure_InvalidLinkReferenceUri" xml:space="preserve">
+    <value>Содержимое файла связи по URL-адресу "{0}" имеет недопустимый формат. Оно должно начинаться с "asazure://".</value>
+  </data>
+  <data name="ConnectionString_AsAzure_DataSourcePathMoreThanOneSegment" xml:space="preserve">
+    <value>Недопустимый формат источника данных для подключений Azure Analysis Services. Источник данных должен иметь следующий формат: "asazure://[домен]/[имя сервера]".</value>
+  </data>
+  <data name="ConnectionString_AsAzure_SspiAndUseAdalCacheTogetherNotSupported" xml:space="preserve">
+    <value>Если свойство строки подключения "Integrated Security" для подключений Azure Analysis Services и Power BI Premium имеет значение "SSPI", то свойство строки подключения "UseADALCache" не может быть указано.</value>
+  </data>
+  <data name="ConnectionString_DataSourceNotSpecified" xml:space="preserve">
+    <value>Необходимо указать источник данных в строке подключения.</value>
+  </data>
+  <data name="ConnectionString_DataSourceTypeDoesntSupportQuery" xml:space="preserve">
+    <value>Этот тип источника данных не поддерживает параметры запроса.</value>
+  </data>
+  <data name="ConnectionString_ExpectedEqualSignNotFound" xml:space="preserve">
+    <value>После индекса {0} в строке подключения ожидался знак равенства.</value>
+  </data>
+  <data name="ConnectionString_ExpectedSemicolonNotFound" xml:space="preserve">
+    <value>В индексе {0} строки подключения ожидалась точка с запятой.</value>
+  </data>
+  <data name="ConnectionString_ExternalConnectionIsIncomplete" xml:space="preserve">
+    <value>Требуемое свойство "{0}" отсутствует в строке подключения для доступа к внешней модели.</value>
+  </data>
+  <data name="ConnectionString_Invalid" xml:space="preserve">
+    <value>Недопустимая строка подключения.</value>
+  </data>
+  <data name="ConnectionString_InvalidCharInPropertyName" xml:space="preserve">
+    <value>Символ "{0}" (в индексе {1} строки подключения) не может отображаться в имени свойства.</value>
+  </data>
+  <data name="ConnectionString_InvalidCharInUnquotedPropertyValue" xml:space="preserve">
+    <value>Значение свойства, содержащее символ "{0}" (в индексе {1} строки подключения), должно быть заключено в кавычки.</value>
+  </data>
+  <data name="ConnectionString_InvalidIdentityProviderForIntegratedSecurityFederated" xml:space="preserve">
+    <value>Невозможно использовать указанный поставщик удостоверений, если параметр интегрированной безопасности имеет значение "федеративная".</value>
+  </data>
+  <data name="ConnectionString_InvalidImpersonationLevelForHttp" xml:space="preserve">
+    <value>Уровень олицетворения "{0}" не поддерживается для подключений HTTP.</value>
+  </data>
+  <data name="ConnectionString_InvalidImpersonationLevelForHttps" xml:space="preserve">
+    <value>Уровень олицетворения "{0}" не поддерживается для подключений HTTPS.</value>
+  </data>
+  <data name="ConnectionString_InvalidIntegratedSecurityForHttpOrHttps" xml:space="preserve">
+    <value>Интегрированная безопасность "{0}" не поддерживается для подключений HTTP или HTTPS.</value>
+  </data>
+  <data name="ConnectionString_InvalidIntegratedSecurityForNative" xml:space="preserve">
+    <value>Интегрированная безопасность "{0}" не поддерживается для собственных подключений.</value>
+  </data>
+  <data name="ConnectionString_InvalidPropertyNameFormat" xml:space="preserve">
+    <value>Имя свойства "{0}" имеет неверный формат.</value>
+  </data>
+  <data name="ConnectionString_InvalidProtectionLevelForHttp" xml:space="preserve">
+    <value>Уровень защиты "{0}" не поддерживается для подключений HTTP.</value>
+  </data>
+  <data name="ConnectionString_InvalidProtectionLevelForHttps" xml:space="preserve">
+    <value>Уровень защиты "{0}" не поддерживается для подключений HTTPS.</value>
+  </data>
+  <data name="ConnectionString_LinkFileCannotDelegate" xml:space="preserve">
+    <value>Если делегирование Kerberos не настроено, необходимо установить флаг allowDelegation.</value>
+  </data>
+  <data name="ConnectionString_LinkFileCannotRevert" xml:space="preserve">
+    <value>Не удается вернуться к удостоверению процесса.</value>
+  </data>
+  <data name="ConnectionString_LinkFileDownloadError" xml:space="preserve">
+    <value>Не удалось скачать файл подключения "{0}".</value>
+  </data>
+  <data name="ConnectionString_LinkFileDupEffectiveUsername" xml:space="preserve">
+    <value>Если делегирование Kerberos не настроено, свойство EffectiveUserName в строке подключения должно совпадать с олицетворенным пользователем.</value>
+  </data>
+  <data name="ConnectionString_LinkFileInvalidServer" xml:space="preserve">
+    <value>Файлы подключения BISM не могут ссылаться на другие файлы подключения BISM. Чтобы продолжить, укажите табличную базу данных, развернутую в экземпляре служб Analysis Services, который работает в табличном режиме.</value>
+  </data>
+  <data name="ConnectionString_LinkFileMissingServer" xml:space="preserve">
+    <value>Файлы подключения BISM должны включать ссылку на целевой сервер.</value>
+  </data>
+  <data name="ConnectionString_LinkFileParseError" xml:space="preserve">
+    <value>Файл подключения неверно сформирован, либо превышено допустимое максимальное число символов ({0}).</value>
+  </data>
+  <data name="ConnectionString_MissingIdentityProviderForIntegratedSecurityFederated" xml:space="preserve">
+    <value>Сбой входа в систему из-за отсутствия свойства поставщика удостоверений. При использовании федеративной интегрированной безопасности это свойство является обязательным.</value>
+  </data>
+  <data name="ConnectionString_MissingPassword" xml:space="preserve">
+    <value>В строке подключения отсутствует свойство пароля.</value>
+  </data>
+  <data name="ConnectionString_OpenedQuoteIsNotClosed" xml:space="preserve">
+    <value>Открывающая кавычка (в индексе {1} строки подключения) требует закрывающей кавычки.</value>
+  </data>
+  <data name="ConnectionString_PbiDataset_Missing_Metadata" xml:space="preserve">
+    <value>В строке подключения для этого подключения к набору данных PBI отсутствуют параметры ({0}).</value>
+  </data>
+  <data name="ConnectionString_PbiDedicated_MissingInitialCatalog" xml:space="preserve">
+    <value>В строке подключения для выделенных подключений PBI следует указать свойство "Исходный каталог".</value>
+  </data>
+  <data name="ConnectionString_PbiDedicated_MissingRestrictCatalog" xml:space="preserve">
+    <value>В строке подключения для выделенных подключений PBI следует указать свойство "Ограничение каталога" со значением "true".</value>
+  </data>
+  <data name="ConnectionString_PropertyNameNotDefined" xml:space="preserve">
+    <value>Имя свойства не определено перед знаком равенства (в индексе {0} строки подключения).</value>
+  </data>
+  <data name="ConnectionString_PropertyNotApplicableWithTheDataSourceType" xml:space="preserve">
+    <value>Свойство строки подключения "{0}" неприменимо для заданного типа источника данных.</value>
+  </data>
+  <data name="ConnectionString_SPN_Profile_Not_Supported" xml:space="preserve">
+    <value>Свойство строки подключения "SPN Profile" поддерживается только в общедоступном подключении XMLA.</value>
+  </data>
+  <data name="ConnectionString_ShilohIsNoLongerSupported" xml:space="preserve">
+    <value>Значение "8.0" больше не поддерживается для свойства строки подключения "{0}"; этот режим подключения является нерекомендуемым.</value>
+  </data>
+  <data name="ConnectionString_UnsupportedPropertyValue" xml:space="preserve">
+    <value>Значение "{1}" не поддерживается для свойства строки подключения "{0}".</value>
+  </data>
+  <data name="ConnectionString_Untrusted_Endpoint" xml:space="preserve">
+    <value>Конечная точка для этого соединения не является доверенной.</value>
+  </data>
+  <data name="Connection_AnalysisServicesInstanceWasMoved" xml:space="preserve">
+    <value>Экземпляр служб Analysis Services, к которому вы подключаетесь, был перемещен. Повторите попытку подключения.</value>
+  </data>
+  <data name="Connection_WorkbookIsOutdated" xml:space="preserve">
+    <value>Подключение к текущей книге закрыто, так как в SharePoint существует более новая версия книги. Чтобы продолжить, получите более новую версию книги, открыв книгу повторно.</value>
+  </data>
+  <data name="DataReaderClosedError" xml:space="preserve">
+    <value>Объект модуля чтения данных закрыт.</value>
+  </data>
+  <data name="DataReaderInvalidRowError" xml:space="preserve">
+    <value>Объект модуля чтения данных находится в недопустимой строке.</value>
+  </data>
+  <data name="DataReader_IndexOutOfRange" xml:space="preserve">
+    <value>Индекс в строке, с которой нужно начать операцию чтения, находится вне диапазона.</value>
+  </data>
+  <data name="Decompression_Failed" xml:space="preserve">
+    <value>Сбой распаковки данных. Размер сжатых данных: {0}. Ожидаемый размер сжатых данных: {1}. Фактический размер сжатых данных: {2}.</value>
+  </data>
+  <data name="Decompression_InitializationFailed" xml:space="preserve">
+    <value>Сбой инициализации распаковки.</value>
+  </data>
+  <data name="DimeReader_CannotReadFromStream" xml:space="preserve">
+    <value>Ошибка протокола DIME: невозможно прочитать поток.</value>
+  </data>
+  <data name="DimeReader_IsClosed" xml:space="preserve">
+    <value>Ошибка протокола DIME: объект DimeReader закрыт.</value>
+  </data>
+  <data name="DimeReader_PreviousRecordStreamStillOpened" xml:space="preserve">
+    <value>Ошибка протокола DIME: поток предыдущей записи все еще открыт.</value>
+  </data>
+  <data name="DimeRecord_ContentLengthExceeded" xml:space="preserve">
+    <value>Ошибка протокола DIME: число записанных байтов превышает заданную длину содержимого.</value>
+  </data>
+  <data name="DimeRecord_DataTypeIsOnlyForTheFirstChunk" xml:space="preserve">
+    <value>Ошибка протокола DIME: тип данных записи можно задать только в первом блоке.</value>
+  </data>
+  <data name="DimeRecord_DataTypeNotSupported" xml:space="preserve">
+    <value>Ошибка протокола DIME: запись имеет неподдерживаемый тип данных "{0}".</value>
+  </data>
+  <data name="DimeRecord_DataTypeShouldBeSpecifiedOnTheFirstChunk" xml:space="preserve">
+    <value>Ошибка протокола DIME: тип данных записи необходимо задать в первом блоке.</value>
+  </data>
+  <data name="DimeRecord_EncodedTypeLengthExceeds8191" xml:space="preserve">
+    <value>Ошибка протокола DIME: длина закодированного типа превышает 8191 байт.</value>
+  </data>
+  <data name="DimeRecord_IDIsOnlyForFirstChunk" xml:space="preserve">
+    <value>Ошибка протокола DIME: заголовок записи может иметь идентификатор только для первого блока.</value>
+  </data>
+  <data name="DimeRecord_InvalidChunkSize" xml:space="preserve">
+    <value>Ошибка протокола DIME: размер блока должен быть больше 0.</value>
+  </data>
+  <data name="DimeRecord_InvalidContentLength" xml:space="preserve">
+    <value>Ошибка протокола DIME: свойство ContentLength должно иметь значение –1 для блочного сообщения DIME. В противном случае свойство ContentLength должно иметь положительное значение.</value>
+  </data>
+  <data name="DimeRecord_InvalidHeaderFlags" xml:space="preserve">
+    <value>Ошибка протокола DIME: недопустимая комбинация заголовков. BeginOfMessage="{0}", EndOfMessage="{1}", Chunked="{2}".</value>
+  </data>
+  <data name="DimeRecord_InvalidUriFormat" xml:space="preserve">
+    <value>Ошибка протокола DIME: недопустимый формат URI "{0}".</value>
+  </data>
+  <data name="DimeRecord_MediaTypeNotDefined" xml:space="preserve">
+    <value>Ошибка протокола DIME: свойство MediaType должно быть определено.</value>
+  </data>
+  <data name="DimeRecord_NameMustNotBeDefinedForFormatNone" xml:space="preserve">
+    <value>Ошибка протокола DIME: если формат типа имеет значение None, имя типа задавать не следует.</value>
+  </data>
+  <data name="DimeRecord_OffsetAndCountShouldBePositive" xml:space="preserve">
+    <value>Ошибка протокола DIME: смещение и количество должны быть не меньше нуля.</value>
+  </data>
+  <data name="DimeRecord_OnlySingleRecordMessagesAreSupported" xml:space="preserve">
+    <value>Ошибка протокола DIME: обнаружено сообщение с несколькими записями. Поддерживаются только сообщения с одной записью.</value>
+  </data>
+  <data name="DimeRecord_PropertyOnlyAvailableForReadRecords" xml:space="preserve">
+    <value>Ошибка протокола DIME: свойство поддерживается только во время чтения записи.</value>
+  </data>
+  <data name="DimeRecord_ReadNotAllowed" xml:space="preserve">
+    <value>Ошибка протокола DIME: операции чтения не разрешены.</value>
+  </data>
+  <data name="DimeRecord_ReservedFlagShouldBeZero" xml:space="preserve">
+    <value>Ошибка протокола DIME: обнаружена запись с зарезервированным флагом "{0}". В этой версии поддерживается только значение 0.</value>
+  </data>
+  <data name="DimeRecord_StreamIsClosed" xml:space="preserve">
+    <value>Ошибка протокола DIME: поток закрыт.</value>
+  </data>
+  <data name="DimeRecord_StreamShouldBeReadable" xml:space="preserve">
+    <value>Ошибка протокола DIME: невозможно прочитать поток.</value>
+  </data>
+  <data name="DimeRecord_StreamShouldBeWriteable" xml:space="preserve">
+    <value>Ошибка протокола DIME: невозможно выполнить запись в поток.</value>
+  </data>
+  <data name="DimeRecord_TypeFormatEnumUnchangedNotAllowed" xml:space="preserve">
+    <value>Ошибка протокола DIME: параметру typeFormat невозможно задать значение TypeFormatEnum.Unchanged.</value>
+  </data>
+  <data name="DimeRecord_TypeFormatShouldBeMedia" xml:space="preserve">
+    <value>Ошибка протокола DIME: обнаружен блок с форматом типа "{0}". Для первого блока необходимо использовать формат типа "Носитель" (значение 0x01).</value>
+  </data>
+  <data name="DimeRecord_TypeFormatShouldBeUnchanged" xml:space="preserve">
+    <value>Ошибка протокола DIME: обнаружен блок с форматом типа "{0}". Для всех блоков, кроме первого, необходимо использовать формат типа "Без изменений" (значение 0x00).</value>
+  </data>
+  <data name="DimeRecord_UnableToReadFromStream" xml:space="preserve">
+    <value>Ошибка протокола DIME: невозможно прочитать требуемые байты из потока.</value>
+  </data>
+  <data name="DimeRecord_VersionNotSupported" xml:space="preserve">
+    <value>Ошибка протокола DIME: версия DIME "{0}" не поддерживается. Поддерживается только версия 1.</value>
+  </data>
+  <data name="DimeRecord_WriteNotAllowed" xml:space="preserve">
+    <value>Ошибка протокола DIME: операции записи не разрешены.</value>
+  </data>
+  <data name="DimeWriter_CannotWriteToStream" xml:space="preserve">
+    <value>Ошибка протокола DIME: невозможно выполнить запись в поток.</value>
+  </data>
+  <data name="DimeWriter_InvalidDefaultChunkSize" xml:space="preserve">
+    <value>Ошибка протокола DIME: размер блока по умолчанию должен быть больше нуля.</value>
+  </data>
+  <data name="DimeWriter_WriterIsClosed" xml:space="preserve">
+    <value>Ошибка протокола DIME: объект DimeWriter закрыт.</value>
+  </data>
+  <data name="Dime_DataTypeNotSupported" xml:space="preserve">
+    <value>Ошибка протокола DIME: эта версия протокола DIME не поддерживает тип данных "{0}".</value>
+  </data>
+  <data name="DirectoryNotFound" xml:space="preserve">
+    <value>"Каталог "{0}" не существует".</value>
+  </data>
+  <data name="EmptyRootIsNotEmpty" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: корневой элемент должен быть пустым.</value>
+  </data>
+  <data name="ErrorCodeIsMissingFromDatasetError" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: в ошибке набора данных отсутствует код ошибки.</value>
+  </data>
+  <data name="ErrorCodeIsMissingFromRowsetError" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: в ошибке набора строк отсутствует код ошибки.</value>
+  </data>
+  <data name="ExceptionRequiresXmlaErrorsInMessagesSection" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: ядро вернуло исключение, однако ошибка не отображается в разделе "Сообщения".</value>
+  </data>
+  <data name="FailedToResolveCluster" xml:space="preserve">
+    <value>Не удалось разрешить кластер Power BI.</value>
+  </data>
+  <data name="HttpStream_InvalidReadRequest" xml:space="preserve">
+    <value>Недопустимый запрос на чтение. Поток HTTP не поддерживает операции чтения, так как текущее состояние — {0}!</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_EndReadAlreadyCalled" xml:space="preserve">
+    <value>Недопустимый асинхронный результат. EndRead уже вызван для этого асинхронного-результата!</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_ErrorInCallback" xml:space="preserve">
+    <value>При выполнении обратного вызова завершения произошла ошибка.</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_ErrorInWrite" xml:space="preserve">
+    <value>Ошибка при записи полезных данных XMLA в исходящий поток!{1}{1}Ошибка: "{0}"</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_InvalidAsyncResultType" xml:space="preserve">
+    <value>Недопустимый асинхронный результат. Вызовите EndRead только с допустимым результатом вызова BeginRead!</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_InvalidStreamOperation" xml:space="preserve">
+    <value>Такие операции, как Seek, SetLength или изменение положения, не поддерживаются для этого потока!</value>
+  </data>
+  <data name="HttpStream_RequestPayloadStream_WriteAfterComplete" xml:space="preserve">
+    <value>Запрос полезных данных помечен как выполненный. Новые дополнения полезных данных сейчас недопустимы!</value>
+  </data>
+  <data name="HttpStream_ResponseWithFailedStatus" xml:space="preserve">
+    <value>Код состояния отклика не указывает на успешное выполнение: {0} ({1}).</value>
+  </data>
+  <data name="IXMLAInterop_OnlyZeroOffsetIsSupported" xml:space="preserve">
+    <value>Поддерживается только нулевое смещение.</value>
+  </data>
+  <data name="IXMLAInterop_StreamCannotBeCloned" xml:space="preserve">
+    <value>Невозможно клонировать поток.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportLocking" xml:space="preserve">
+    <value>Поток не поддерживает метод LockRegion.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportReverting" xml:space="preserve">
+    <value>Поток не поддерживает метод Revert.</value>
+  </data>
+  <data name="IXMLAInterop_StreamDoesNotSupportUnlocking" xml:space="preserve">
+    <value>Поток не поддерживает метод UnlockRegion.</value>
+  </data>
+  <data name="Instance_NotFound" xml:space="preserve">
+    <value>Экземпляр "{0}" не найден на сервере "{1}".</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>Внутренняя ошибка.</value>
+  </data>
+  <data name="InternalErrorAndInvalidBufferType" xml:space="preserve">
+    <value>Внутренняя ошибка. Непредвиденный тип данных буфера безопасности.</value>
+  </data>
+  <data name="InvalidArgument" xml:space="preserve">
+    <value>Недопустимый аргумент.</value>
+  </data>
+  <data name="LocalCube_FileNotOpened" xml:space="preserve">
+    <value>Невозможно открыть локальный файл куба "{0}".</value>
+  </data>
+  <data name="MessagesSectionIsEmpty" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: ядро вернуло пустой раздел "Сообщения".</value>
+  </data>
+  <data name="MissingElement" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: ожидается элемент "{0}" в пространстве имен "{1}".</value>
+  </data>
+  <data name="NetCore_NotSupportedFeature" xml:space="preserve">
+    <value>Эта функция не поддерживается для клиента .NET Core.</value>
+  </data>
+  <data name="NetCore_WindowsDesktopOnlySupportedFeature" xml:space="preserve">
+    <value>Эта функция поддерживается для клиента .NET Core только в системах Windows. Для ее использования требуется установить платформу .NET Core для классических приложений.</value>
+  </data>
+  <data name="NetCore_WindowsOnlySupportedFeature" xml:space="preserve">
+    <value>Эта функция поддерживается для клиента .NET Core только в системах Windows.</value>
+  </data>
+  <data name="NonSequentialColumnAccessError" xml:space="preserve">
+    <value>Если для свойства CommandBehavior задано значение SequentialAccess, доступ к столбцам осуществляется в последовательном порядке.</value>
+  </data>
+  <data name="NotConnected" xml:space="preserve">
+    <value>Клиент не подключен.</value>
+  </data>
+  <data name="ProvidePath" xml:space="preserve">
+    <value>Необходимо предоставить путь.</value>
+  </data>
+  <data name="Reconnect_ConnectionInfoIsMissing" xml:space="preserve">
+    <value>Невозможно повторно установить подключение, так как свойства подключения не были заданы или были потеряны при разрыве подключения.</value>
+  </data>
+  <data name="Reconnect_SessionIDIsMissing" xml:space="preserve">
+    <value>Сеанс прекращен или не был установлен изначально.</value>
+  </data>
+  <data name="Resultset_IsNotRowset" xml:space="preserve">
+    <value>Набор результатов, возвращенный сервером, не является набором строк.</value>
+  </data>
+  <data name="ServerDidNotProvideErrorInfo" xml:space="preserve">
+    <value>Сервер не предоставил расширенную информацию об ошибке.</value>
+  </data>
+  <data name="SoapFormatter_ResponseIsNotDataset" xml:space="preserve">
+    <value>Ответ не предоставлен в формате набора данных.</value>
+  </data>
+  <data name="SoapFormatter_ResponseIsNotRowset" xml:space="preserve">
+    <value>Ответ не предоставлен в формате набора строк.</value>
+  </data>
+  <data name="TcpStream_MaxSignatureExceedsProtocolLimit" xml:space="preserve">
+    <value>Максимальный размер подписи превышает предел протокола.</value>
+  </data>
+  <data name="UnexpectedElement" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: элемент "{0}" является непредвиденным в пространстве имен "{1}".</value>
+  </data>
+  <data name="UnexpectedXsiType" xml:space="preserve">
+    <value>Тип xsi "{0}" является непредвиденным.</value>
+  </data>
+  <data name="UnknownServerResponseFormat" xml:space="preserve">
+    <value>Сервер отправил нераспознаваемый ответ.</value>
+  </data>
+  <data name="UnrecognizedElementInMessagesSection" xml:space="preserve">
+    <value>Ошибка протокола XML для аналитики: элемент "{0}" в разделе "Сообщения" является неопознанным.</value>
+  </data>
+  <data name="UnsupportedDataFormat" xml:space="preserve">
+    <value>Неподдерживаемый формат данных: {0}.</value>
+  </data>
+  <data name="UnsupportedMethod" xml:space="preserve">
+    <value>{0} не поддерживается.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionFailedWithError" xml:space="preserve">
+    <value>Не удалось разрешить сопоставление перенаправления для экземпляра ASAzure: {0}. Код ошибки: {1}.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionFailedWithThrottling" xml:space="preserve">
+    <value>Служба Power BI сейчас занята, и запрос был ограничен. Повторите попытку позже.</value>
+  </data>
+  <data name="XmlaClient_ASAzureRedirectionResolutionMissingTenantId" xml:space="preserve">
+    <value>Не удалось разрешить сопоставление перенаправления для экземпляра AS Azure: {0}. Отсутствует идентификатор клиента в отклике.</value>
+  </data>
+  <data name="XmlaClient_CannotConnectToLocalCubeWithRestictedClient" xml:space="preserve">
+    <value>Невозможно подключиться к локальному кубу, так как для свойства Restricted Client задано значение True.</value>
+  </data>
+  <data name="XmlaClient_ConnectTimedOut" xml:space="preserve">
+    <value>Истекло время ожидания подключения.</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNameDuplicated" xml:space="preserve">
+    <value>Имя указанной рабочей области Power BI ("{1}") конфликтует с именами других рабочих областей. Используйте имя рабочей области в виде "[имя рабочей области]-[GUID объекта]" для обращения к рабочей области.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNotFound" xml:space="preserve">
+    <value>Указанная рабочая область Power BI ("{1}") не найдена.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPremium_WorkspaceNotOnPremium" xml:space="preserve">
+    <value>Указанная рабочая область Power BI ("{1}") не является областью премиум.{0}</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_Missing_InitialCatalog" xml:space="preserve">
+    <value>Исходный каталог должен быть указан в качестве ограничения для общедоступного подключения через XMLA с помощью токена внедрения.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_ToPBIShared_NotSupported" xml:space="preserve">
+    <value>Подключение к рабочим областям Power BI Pro через общедоступную конечную точку XMLA с помощью токена внедрения не поддерживается.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmlaWithEmbedToken_UserId_Prop_NotSupported" xml:space="preserve">
+    <value>Строка подключения для общедоступной конечной точки XMLA не должна содержать свойство "ИД пользователя", если указан токен внедрения.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNameDuplicated" xml:space="preserve">
+    <value>Обнаружено несколько наборов данных Power BI с указанным понятным именем "{0}". Переименуйте наборы данных, чтобы сделать ссылку однозначной. Технические сведения: {1}.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNotFound" xml:space="preserve">
+    <value>Не удалось найти набор данных Power BI с указанным понятным именем "{0}". Технические сведения: {1}.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_DatasetNotSpecified" xml:space="preserve">
+    <value>Для подключения к рабочим областям Power BI Pro необходимо указать свойство "Исходный каталог".</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_InvalidDataSourceUriFormat" xml:space="preserve">
+    <value>Указанный URI "{0}" источника данных имеет недопустимый формат.</value>
+  </data>
+  <data name="XmlaClient_PbiPublicXmla_UnsupportedIdentityProvider" xml:space="preserve">
+    <value>Поставщик удостоверений "{0}" не поддерживается для общедоступного подключения XMLA.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_NoRequestWasCreated" xml:space="preserve">
+    <value>Запрос не создан.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_RequestStreamCannotBeRead" xml:space="preserve">
+    <value>Невозможно прочитать поток запроса.</value>
+  </data>
+  <data name="XmlaClient_SendRequest_ThereIsAnotherPendingResponse" xml:space="preserve">
+    <value>Уже существует открытый модуль чтения ответов.</value>
+  </data>
+  <data name="XmlaClient_StartRequest_ThereIsAnotherPendingRequest" xml:space="preserve">
+    <value>Уже существует открытый модуль записи запросов.</value>
+  </data>
+  <data name="XmlaClient_StartRequest_ThereIsAnotherPendingResponse" xml:space="preserve">
+    <value>Уже существует открытый модуль чтения ответов.</value>
+  </data>
+</root>

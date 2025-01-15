@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuthenticationNotSupported" xml:space="preserve">
+    <value>The authentication method used is not supported by the remote system. Contact your system administrator.</value>
+  </data>
+  <data name="ColumnInfoNoSet" xml:space="preserve">
+    <value>Column Info is not able to set: Index = {0}</value>
+  </data>
+  <data name="CopiedPackage" xml:space="preserve">
+    <value>Succesfully copied package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="CopyingPackage" xml:space="preserve">
+    <value>Copying package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="CopyingPackageFailed" xml:space="preserve">
+    <value>Failed to copy package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="CreatedPackage" xml:space="preserve">
+    <value>Succesfully created package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="CreatedSection" xml:space="preserve">
+    <value>Created section: {0}</value>
+  </data>
+  <data name="CreatingPackage" xml:space="preserve">
+    <value>Creating package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="CreatingPackageFailed" xml:space="preserve">
+    <value>Failed to create package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="CreatingSection" xml:space="preserve">
+    <value>Creating section: {0}</value>
+  </data>
+  <data name="DDM_AGNPRMRM" xml:space="preserve">
+    <value>A permanent error condition has been detected on the target system. Contact your server administrator.</value>
+  </data>
+  <data name="DDM_CMDATHRM" xml:space="preserve">
+    <value>The user is not authorized to perform the requested command on the target system.</value>
+  </data>
+  <data name="DDM_CMDCHKRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command encountered an implementation-specific error condition on the target system.</value>
+  </data>
+  <data name="DDM_CMDNSPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command is not recognized or is not supported by the target system.</value>
+  </data>
+  <data name="DDM_DSCINVRM" xml:space="preserve">
+    <value>Invalid Description</value>
+  </data>
+  <data name="DDM_DTAMCHRM" xml:space="preserve">
+    <value>Data Descriptor Mismatch</value>
+  </data>
+  <data name="DDM_MGRDEPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. A request has been made that requires an internal manager dependency that was not met.</value>
+  </data>
+  <data name="DDM_OBJNSPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command sent a data object that is not recognized or is not supported by the target system.</value>
+  </data>
+  <data name="DDM_OPNQFLRM" xml:space="preserve">
+    <value>Open query failed.</value>
+  </data>
+  <data name="DDM_PKGBPARM" xml:space="preserve">
+    <value>RDB Package Binding Process Active.</value>
+  </data>
+  <data name="DDM_PRCCNVRM" xml:space="preserve">
+    <value>An internal network library error has occurred. A network level conversational protocol error has occurred.</value>
+  </data>
+  <data name="DDM_PRMNSPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command included a parameter that is not recognized or is not supported by the target system.</value>
+  </data>
+  <data name="DDM_QRYNOPRM" xml:space="preserve">
+    <value>Query is not opened.</value>
+  </data>
+  <data name="DDM_RDBACCRM" xml:space="preserve">
+    <value>The user already has access to the host resource.</value>
+  </data>
+  <data name="DDM_RDBAFLRM" xml:space="preserve">
+    <value>The request for the host resource failed.</value>
+  </data>
+  <data name="DDM_RDBATHRM" xml:space="preserve">
+    <value>The user does not have the authority to access the host resource. Check your authentication credentials or contact your system administrator.</value>
+  </data>
+  <data name="DDM_RDBNFNRM" xml:space="preserve">
+    <value>The host resource could not be found. Check that the Initial Catalog value matches the host resource name.</value>
+  </data>
+  <data name="DDM_RSCLMTRM" xml:space="preserve">
+    <value>There are insufficient resources on the target system to complete the command. Contact your server administrator.</value>
+  </data>
+  <data name="DDM_SQLERRRM" xml:space="preserve">
+    <value>SQL error occurred.</value>
+  </data>
+  <data name="DDM_SYNTAXRM" xml:space="preserve">
+    <value>An internal network library error has occurred. A network level syntax error has occurred.</value>
+  </data>
+  <data name="DDM_TRGNSPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command sent a data object extension that is not recognized or is not supported by the target system.</value>
+  </data>
+  <data name="DDM_VALNSPRM" xml:space="preserve">
+    <value>An internal network library error has occurred. The requested command included a parameter value that is not recognized or is not supported by the target system.</value>
+  </data>
+  <data name="DeployedPackage" xml:space="preserve">
+    <value>Succesfully deployed package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="DeployingPackage" xml:space="preserve">
+    <value>Deploying package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="DeployingPackageFailed" xml:space="preserve">
+    <value>Failed to deploy package '{0}.{1}.{2}' to {3}.{4}</value>
+  </data>
+  <data name="DroppedPackage" xml:space="preserve">
+    <value>Succesfully dropped package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="DroppingPackage" xml:space="preserve">
+    <value>Dropping package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="DroppingPackageFailed" xml:space="preserve">
+    <value>Failed to drop package '{0}.{1}.{2}'</value>
+  </data>
+  <data name="DtcTimeout" xml:space="preserve">
+    <value>MSDTC has been timeout since drda connection is in distributed transaction.</value>
+  </data>
+  <data name="EmptyRows" xml:space="preserve">
+    <value>Mutiple Rows operation need non-empty rows as parameter.</value>
+  </data>
+  <data name="InvalidStaticPackageName" xml:space="preserve">
+    <value>The static sql statement is invalid: {0}</value>
+  </data>
+  <data name="KerberosInitializeError" xml:space="preserve">
+    <value>An error occured initializing Kerberos: {0}</value>
+  </data>
+  <data name="KerberosValidateError" xml:space="preserve">
+    <value>As error occured validating the server token: {0}</value>
+  </data>
+  <data name="LobNotSupported" xml:space="preserve">
+    <value>Not supported LOB data format : {0}</value>
+  </data>
+  <data name="MaxSectionsReached" xml:space="preserve">
+    <value>The maximum number of statements has been reached for the current connection.</value>
+  </data>
+  <data name="MultipleStatementsNotSupported" xml:space="preserve">
+    <value>Multiple statements are not supported for this scenario.</value>
+  </data>
+  <data name="NETWORK_CONNECT_TIMEOUT" xml:space="preserve">
+    <value>The connect timeout period expired before the DRDA server responded to the DRDA client connection request.</value>
+  </data>
+  <data name="NoCurrentResultSet" xml:space="preserve">
+    <value>Current result set not exists.</value>
+  </data>
+  <data name="NoEnlistForLocalTransaction" xml:space="preserve">
+    <value>Enlist is not supported at Local Transaction, check your connection string for DUW setting.</value>
+  </data>
+  <data name="NoExpectedCodepoint" xml:space="preserve">
+    <value>Have not received expected codepoint: {0}.</value>
+  </data>
+  <data name="PackageNotPresent" xml:space="preserve">
+    <value>The package corresponding to an SQL statement execution request was not found.</value>
+  </data>
+  <data name="RebindedPackage" xml:space="preserve">
+    <value>Succesfully rebinded package '{0}.{1}.{2}' to {3}</value>
+  </data>
+  <data name="RebindingPackage" xml:space="preserve">
+    <value>Rebinding package '{0}.{1}.{2}' to {3}</value>
+  </data>
+  <data name="RebindingPackageFailed" xml:space="preserve">
+    <value>Failed to bind package '{0}.{1}.{2}' to {3}</value>
+  </data>
+  <data name="RequesterNotConnected" xml:space="preserve">
+    <value>This connection has not connected to DRDA Server.</value>
+  </data>
+  <data name="SqlStatementInUse" xml:space="preserve">
+    <value>There is already an open DataReader associated with this Command which must be closed first.</value>
+  </data>
+  <data name="SqlStatementStateNoChange" xml:space="preserve">
+    <value>This command could not accomplish current operation.</value>
+  </data>
+  <data name="TypeNotSupported" xml:space="preserve">
+    <value>Type not supported: {0}</value>
+  </data>
+  <data name="UnauthorizedAccess" xml:space="preserve">
+    <value>The user does not have the authority to access the host resource. Check your authentication credentials or contact your system administrator.</value>
+  </data>
+  <data name="UnexpectedXaResult" xml:space="preserve">
+    <value>Received unexpected XA Result: {0}</value>
+  </data>
+  <data name="UnsupportedManagerLevel" xml:space="preserve">
+    <value>The {0} manager doesn't support this manager level: {1}.</value>
+  </data>
+  <data name="WrongDateTimeValue" xml:space="preserve">
+    <value>The syntax of the string representation of a datetime value is incorrect: {0}</value>
+  </data>
+  <data name="WrongDateValue" xml:space="preserve">
+    <value>The syntax of the string representation of a date value is incorrect: {0}</value>
+  </data>
+  <data name="WrongTimeValue" xml:space="preserve">
+    <value>The syntax of the string representation of a time value is incorrect: {0}</value>
+  </data>
+</root>

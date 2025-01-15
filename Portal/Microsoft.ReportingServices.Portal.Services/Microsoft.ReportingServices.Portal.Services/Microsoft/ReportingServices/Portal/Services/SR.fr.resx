@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_AccessDenied" xml:space="preserve">
+    <value>Accès refusé « {0} ».</value>
+  </data>
+  <data name="Error_CatalogItemAlreadyExists" xml:space="preserve">
+    <value>L'élément de catalogue « {0} » existe déjà dans le dossier « {1} ».</value>
+  </data>
+  <data name="Error_CatalogItemContentInvalid" xml:space="preserve">
+    <value>Le contenu de l'élément de catalogue est non valide.</value>
+  </data>
+  <data name="Error_CatalogItemInvalid" xml:space="preserve">
+    <value>L'élément de catalogue n'est pas dans un état valide.</value>
+  </data>
+  <data name="Error_CatalogItemNotFound" xml:space="preserve">
+    <value>L'élément de catalogue « {0} » est introuvable.</value>
+  </data>
+  <data name="Error_CatalogItemPropertyInvalid" xml:space="preserve">
+    <value>La propriété de l'élément de catalogue est non valide.</value>
+  </data>
+  <data name="Error_DataSetMaxRowsLessThanOne" xml:space="preserve">
+    <value>Le nombre maximal de lignes du jeu de données doit être supérieur ou égal à 1.</value>
+  </data>
+  <data name="Error_DataSetNotFound" xml:space="preserve">
+    <value>Le jeu de données « {0} » est introuvable.</value>
+  </data>
+  <data name="Error_DataSetSoapError" xml:space="preserve">
+    <value>Un problème s'est produit durant l'obtention des données à partir du service web Report Server : {0}</value>
+  </data>
+  <data name="Error_DatabaseDowngradeDetected" xml:space="preserve">
+    <value>Le passage de la base de données à une version antérieure a été détecté. La version du schéma de base de données est plus récente que la version du schéma du service.</value>
+  </data>
+  <data name="Error_EncryptionFailure" xml:space="preserve">
+    <value>Impossible d'accéder au contenu chiffré de la base de données. Clé symétrique non valide ou manquante pour cet ID d'installation.</value>
+  </data>
+  <data name="Error_ExpectedUserToken" xml:space="preserve">
+    <value>Jeton utilisateur valide attendu.</value>
+  </data>
+  <data name="Error_IEIsNotSupported" xml:space="preserve">
+    <value>Ce navigateur n’est pas pris en charge, mettez-le à jour vers Edge.</value>
+  </data>
+  <data name="Error_InvalidDataFormat" xml:space="preserve">
+    <value>Le format de données est non valide ou non pris en charge.</value>
+  </data>
+  <data name="Error_InvalidDataSourceType" xml:space="preserve">
+    <value>Type de source de données non valide.</value>
+  </data>
+  <data name="Error_InvalidExcelWopiDiscovery" xml:space="preserve">
+    <value>Format de découverte Office Online inattendu.</value>
+  </data>
+  <data name="Error_InvalidExcelWopiUrl" xml:space="preserve">
+    <value>URL de découverte Office Online inaccessible ou non valide.</value>
+  </data>
+  <data name="Error_InvalidPowerBIMigrateUrl" xml:space="preserve">
+    <value>URL de migration Power BI inaccessible ou non valide.</value>
+  </data>
+  <data name="Error_InvalidScheduleRecurrenceObject" xml:space="preserve">
+    <value>La récurrence peut contenir uniquement un ou zéro type de récurrence défini.</value>
+  </data>
+  <data name="Error_PbiToRsAttachDetected" xml:space="preserve">
+    <value>La base de données attachée a été créée avec Power BI Report Server et l'instance active est SQL Server Reporting Services. Cette configuration n'est pas prise en charge.</value>
+  </data>
+  <data name="Error_RSConfigContainsNoReportsApplicationUrls" xml:space="preserve">
+    <value>L'application Gestionnaire de rapports attendue, et définie dans la configuration, est manquante. Réexécutez l'outil de configuration pour configurer Reporting Services.</value>
+  </data>
+  <data name="Error_SystemResourcePackageException" xml:space="preserve">
+    <value>Le package de ressources système est non valide.</value>
+  </data>
+  <data name="Error_SystemResourceProcessingException" xml:space="preserve">
+    <value>Impossible de traiter la ressource système.</value>
+  </data>
+  <data name="Error_UniversalBrandInvalidColorsFile" xml:space="preserve">
+    <value>Le fichier de couleurs du package de personnalisation est non valide.</value>
+  </data>
+  <data name="Error_UserPrincipalIsNotSet" xml:space="preserve">
+    <value>UserPrincipal n'est pas défini.</value>
+  </data>
+  <data name="SupportedBrowsers" xml:space="preserve">
+    <value>Navigateurs pris en charge</value>
+  </data>
+</root>

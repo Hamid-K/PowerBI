@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB31D6BF-3E85-40C2-B43B-9E90C37AF2C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.PowerBI.DataMovement.ExternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.ExternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.Configuration">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\BuildConstants\Keys.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Common\Diagnostics\PipelineActivityShortNameResolver.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AADAuthenticationProviderRequiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ActivityExecutionInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ActivityInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ActivityResult.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdCancellationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdConnectException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdConnectionClosedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdDataAccessConnectionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdDataAccessErrorResponseException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdEffectiveUserNameMissingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdEvaluationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdHostNotFoundException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdInvalidEffectiveUserNameException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdInvalidPropertyValueException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdMemoryError.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdModelLoadException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdNetworkUnreachableException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdRecalculationRequiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdStructureMissingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdStructureNotProcessedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdSystemErrorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdomdTimeoutException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdoNetProviderConnectionAlreadyOpenException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AdoNetProviderConnectionClosedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ASDataSourceMissingEffectiveUserName.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationAlreadyInProgressException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationCancelledDueToGatewayUnreachableException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationCancelledException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationClosedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationExpiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationStreamingCancelledException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AsyncOperationStreamingRetriesExhaustedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\AuthenticationTypeNotSupported.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\BadRequestDueToInvalidModelStateException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\CancellationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ClientAsyncOperationCancelledException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ClientAsyncOperationExpiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ClientAsyncOperationTimeoutException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\CommandTextMissingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\CompressedDataSizeForPacketExceeded.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ConnectionNotOpenException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ConnectionStringMissingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\CouldNotUpdateGatewayConfigurationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataAccessUserErrorDueToArgumentException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataAccessUserErrorDueToNotSupportException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataflowPipelineSendOrReceiveException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataMovementExtensionNotLoadedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DataMovementExtensionVersionNotLoadedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DbConnectionProviderFactoryNotRegisteredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DiagnosticsSettings.Designer.cs">
+      <DependentUpon>DiagnosticsSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DiagnosticsStorageClientDisconnectedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DiscoverCustomConnectorsOnGatewayExeption.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DuplicateStatefulPoolObjectReturnException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ErrorCreatingOleDbRowset.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ErrorDetailExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ErrorHandlingErrorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\EvaluationTraceContext.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToExportCredentialStoreException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToImpersonateUserException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToImportCredentialStoreException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToParseUsername.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToRetrieveDbConnectionDetailsException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FailedToSpoolPacketToDiskException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\FileLoadDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayCancellationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayClientErrorResponseException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayClientLoadBalancerNoCandidateAvailableException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayClientMaxPacketLimitReachedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayClientReceivedUncompressedDataExceedingLimitException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayCommunicationAbortedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayCommunicationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayCommunicationTimeoutException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayCorruptedFileOrDirectoryException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayDiskQuotaException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayDoesNotSupportFeatureException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayIODeviceErrorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayNotEnoughStorageException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOutOfDiskSpaceException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOutOfMemoryException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOutOfSystemResourcesException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOverloadedConcurrencyException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOverloadedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOverloadedMemoryException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayOverloadedProcessorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayPipelineException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayPipelineMonitoredDbConnectionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayPipelineVNetHttpException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayPipelineVNetTransientDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayPipelineWrapperException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayServiceFailedToStartException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayServiceFailedToStopException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayTimeoutException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayUnreachableException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GatewayUpgradeRequiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\GetOAuthResourceException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\IEvaluationDiagnostics.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\DiagnosticsContext.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\DiagnosticsLifetimeManager.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\DiagnosticsTraceSource.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\GatewayExceptionUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\ITraceSource.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\NetworkCoreTraceSource.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\NetworkExceptionsList.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\RuntimeChecks.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\TraceSourceBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\TraceSourceFilter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\TraceSourceFilterLookup.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\TraceSourceIdentifier.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\TraceUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\VoidTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Internal\VoidTracingService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidAdomdLoginException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidAsyncPacketAcknowledgementException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidConnectionStateException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidCredentialDueToSignatureNotMatchException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidDataSizesInPacketHeader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidJwtSecurityTokenException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidMConnectionStringException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidMonikerSystemResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidObjectArrayArgumentException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidOleDbCreateRowsetRequestException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidOleDbProviderSetupException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidOleDbProviderStringException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidParameterCollectionItemException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidServiceBusBindingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidSqlLoginException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidStateForConnectionStringChangeException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\InvalidStateForStatefulConnectionInGatewayChangeException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ITelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ITracingService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\KeyValue.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessCredentialException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessExpressionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessHostingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessPrivacyEnforcementException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessPrivacyException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessPrivacySettingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessValueException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MashupDataAccessVersionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MismatchCompressedDataSizeInPacketHeader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MismatchedConnectionStringPropertyTypeException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MissingConfigurationPassphraseException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MissingOleDbProviderStringException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MissingRequiredConnectionStringPropertyException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\MultiResourceDatasourceNotSupportedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\NonSerializablePipelineExceptionSurrogate.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OAuthTokenLoginFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OAuthTokenLoginFailedUserErrorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OAuthTokenRefreshFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbConnectionFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbCreateRowsetFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbEffectiveUserNameMissingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbEffectiveUserNameNotExpectedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbErrorInCommandException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbGatewayResolutionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInternalErrorKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInternalWrapperException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInvalidEffectiveUserNameException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInvalidGatewayResolutionParametersException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInvalidMdDatasetException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbInvalidRestrictionsException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbMissingGatewayResolutionParametersException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbProviderInstantiationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbProviderNameNotRegisteredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OleDbUnsupportedTransferCapabilitiesException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\OperationRequiresPBIDataRefreshCertificateException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PacketsNotReadyToStreamException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineActivityType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineErrorCodes.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineErrorDetailCodes.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineJsonDeserializationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineJsonSerializationException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PipelineTraceVerbosity.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\PoolStoppingException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\ContainsMarkedInformationExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\IContainsMarkedInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\IContainsPrivateInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\Obfuscation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\PrivateInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\PrivateInformationMarkupKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\PrivateInformationPipelineExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\ScrubbedString.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\Privacy\WrapperExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ProvisionTenantException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\RequiredCredentailDetailsParameterMissing.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\RuntimeCheckFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SAMLAssertionCertificateCanNotBeFoundException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\ServiceTraceContext.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SingleSignOnInformationRequiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlDataAccessException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerConnectionBrokenException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerDatabaseOpenException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerInvalidObjectNameException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerLoginFailedException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerTimeoutException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerTransactionDeadlockException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SqlServerUnreachableException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\SSOTestConnectionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\StatefulPoolCapacityExceeded.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\StatefulPoolObjectExpiredException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnableToConvertGatewayCredentialToMashupCredentialException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnableToStartConfigurationServiceException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnableToStartTransferServiceException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnableToStopGatewayServicesException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UncompressedDataSizeForCompressedPacketExceeded.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UncompressedDataSizeForPacketExceeded.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnknownGatewayRequestException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnknownSpooledOperationIdException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnsupportedAdomdAuthenticationTypeException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnsupportedOleDbProviderException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnsupportedProviderException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\UnsupportedServerVersionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\XmlProcessorException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\XmlPropertiesParseException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\XPress9CompressionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\XPress9DecompressionException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="ThisAssembly.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft\PowerBI\DataMovement\Pipeline\Diagnostics\DiagnosticsSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DiagnosticsSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

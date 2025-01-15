@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>レポートのコメントを作成、表示、編集、削除します。</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>レポートに対するコメント</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>レポート、フォルダー、リソース、および共有データ ソースのセキュリティ設定を表示して、変更します。</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>アイテムごとにセキュリティを設定</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>レポート定義の読み込み</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>レポートの使用</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>リンク レポートを作成して、レポート サーバー フォルダーにパブリッシュします。</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>リンク レポートの作成</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>レポート定義をレポート サーバーにパブリッシュせずにレポート サーバーから実行を開始します。</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>レポート定義の実行</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>アプリケーションに、レポート サーバーの名前空間内でイベントを生成する機能を提供します。</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>イベントの生成</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>サブスクリプションを所有するユーザーにかかわらず、任意のサブスクリプションを表示、変更、および削除します。</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>すべてのサブスクリプションを管理</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>レポート上の他のユーザーのコメントを削除します。</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>コメントの管理</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>共有データ ソース アイテムを作成および削除して、データ ソースのプロパティを変更します。</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>データ ソースの管理</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>フォルダーを作成、表示、および削除して、フォルダーのプロパティを表示および編集します。</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>フォルダーの管理</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>実行中のジョブを表示して、取り消します。</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>ジョブの管理</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>モデルを作成、表示、および削除して、モデルのプロパティを表示および編集します。</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>モデルの管理</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>レポート履歴スナップショットを作成、表示、および削除して、レポート履歴のプロパティを編集します。</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>レポート履歴の管理</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>レポートを作成および削除し、レポートのプロパティを編集します。</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>レポートの管理</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>リソースを作成、変更、および削除して、リソースのプロパティを編集します。</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>リソースの管理</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>ロールの定義を作成、表示、変更、および削除します。</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>ロールの管理</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>レポートの実行または更新に使用する共有スケジュールを作成、表示、変更、および削除します。</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>共有スケジュールの管理</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>レポート サーバーおよびレポート サーバーで管理するアイテムに適用するプロパティを表示して、変更します。</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>レポート サーバーのプロパティを管理</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>システム全体のロールの割り当てを表示して、変更します。</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>レポート サーバーのセキュリティを管理</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>各ユーザーは各自が所有しているサブスクリプションを作成、表示、変更、および削除できます。</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>個別のサブスクリプションを管理</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>フォルダー階層にある共有データ ソースのアイテムを表示し、データ ソースのプロパティを表示します。</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>データ ソースの表示</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>フォルダー階層にあるアイテムを表示し、フォルダーのプロパティを表示します。</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>フォルダーの表示</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>特定のモデルのアイテムを表示します。</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>モデル アイテムの表示</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>フォルダー階層にあるモデルを表示し、レポートのデータ ソースとしてモデルを使用します。その後、モデルに対してクエリを実行してデータを取得します。</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>モデルの表示</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>フォルダー階層にあるレポートおよびリンク レポートを表示します。レポート履歴のスナップショットおよびレポート プロパティを表示します。</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>レポートの表示</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>フォルダー階層にあるリソースを表示し、リソースのプロパティを表示します。</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>リソースの表示</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>汎用目的で作成された定義済みスケジュールを表示します。</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>共有スケジュールの表示</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>レポート サーバーに適用するプロパティを表示します。</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>レポート サーバーのプロパティを表示</value>
+  </data>
+</root>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/sqlserver/reporting/webauthoring"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://schemas.microsoft.com/sqlserver/reporting/webauthoring"
+            elementFormDefault="qualified">
+    <xsd:annotation>
+        <xsd:documentation>
+
+            The following schema describes the structure of the
+            Report Definition Language (RDL) for Microsoft SQL Server 2012.
+
+            THE SCHEMA IS PROVIDED TO YOU ON AN "AS IS" BASIS, AND MICROSOFT
+            DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY,   INCLUDING,
+            WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
+            FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT, AS TO THE SCHEMA OR ANY
+            PRODUCT OR OTHER ITEM THAT MAY BE DEVELOPED USING THE SCHEMA.
+
+            Without limiting the generality of the foregoing, Microsoft makes no
+            warranty that any product or other item that may be developed using the
+            schema, or any portion of the schema, will not infringe any copyright,
+            patent, trade secret or other intellectual property right of any
+            individual or legal entity in any country. It is your responsibility to
+            obtain licenses to use any such intellectual property rights as appropriate.
+
+            MICROSOFT IS NOT LIABLE FOR ANY DAMAGES OF ANY KIND ARISING OUT OF OR IN
+            CONNECTION WITH THE USE OF THE SCHEMA, INCLUDING, WITHOUT LIMITATION, ANY
+            DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING LOST REVENUES OR LOST
+            PROFITS), PUNITIVE OR SPECIAL DAMAGES, WHETHER OR NOT MICROSOFT HAS BEEN
+            ADVISED OF SUCH DAMAGES.
+
+            (c) Microsoft Corporation.  All rights reserved.
+
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType name="FieldSelectionType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="EntityName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="PropertyName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="HierarchyName" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="Aggregate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="ParentPropertyName" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="HideTotal" type="xsd:boolean" minOccurs="0" maxOccurs="1" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+        <xsd:anyAttribute namespace="##other" processContents="lax" />
+    </xsd:complexType>
+    <xsd:complexType name="FieldSelectionsType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="FieldSelection" type="FieldSelectionType" minOccurs="1" maxOccurs="unbounded" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+        <xsd:anyAttribute namespace="##other" processContents="lax" />
+    </xsd:complexType>
+    <xsd:complexType name="FilterSelectionsType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="FilterSelection" type="FilterSelectionType" minOccurs="1" maxOccurs="unbounded" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+        <xsd:anyAttribute namespace="##other" processContents="lax" />
+    </xsd:complexType>
+    <xsd:complexType name="FilterSelectionType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="DataSourceName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="DatasetName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="EntityName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="PropertyName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="ParentPropertyName" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="FilterType" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="FilterOperator" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="FilterValues" type="FilterValuesType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="AdvancedConditionValue" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="AdvancedConditions" type="AdvancedConditionsType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="ParameterName" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+        <xsd:anyAttribute namespace="##other" processContents="lax" />
+    </xsd:complexType>
+    <xsd:complexType name="FilterValuesType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="FilterValue" type="FilterValueType" minOccurs="0" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="FilterValueType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Label" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="FilterKeys" type="FilterKeysType" minOccurs="0" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="FilterKeysType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="FilterKey" type="FilterKeyType" minOccurs="0" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="FilterKeyType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="Property" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Value" type="xsd:string" minOccurs="0" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="AdvancedConditionsType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="AdvancedCondition" type="AdvancedConditionType" minOccurs="0" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="AdvancedConditionType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="ConditionType" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="FilterOperator" type="xsd:string" minOccurs="1" maxOccurs="1" />
+            <xsd:element name="AdvancedConditionValue" type="xsd:string" minOccurs="0" maxOccurs="1" />
+            <xsd:any namespace="##other" processContents="lax" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:simpleType name="DataTypeEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Raw"/>
+            <xsd:enumeration value="Summarized"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="PreviewCommandText" type="xsd:string" />
+    <xsd:element name="ThemeName" type="xsd:string" />
+    <xsd:element name="StyleName" type="xsd:string" />
+    <xsd:element name="WebAuthoringVersion" type="xsd:string" />
+    <xsd:element name="FieldSelections" type="FieldSelectionsType" />
+    <xsd:element name="DefaultView" type="xsd:string" />
+    <xsd:element name="ShowGrandTotals" type="xsd:boolean" />
+    <xsd:element name="PreviewDataType" type="DataTypeEnum" />
+    <xsd:element name="FilterSelections" type="FilterSelectionsType" />
+</xsd:schema>

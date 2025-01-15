@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08418084-436C-422A-A1E8-0CD6F0F11B6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices.Portal.Services</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Portal.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotless.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Configuration">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.HostingEnvironment">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.HostingEnvironment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Owin.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.Owin.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportingServices.CatalogAccess">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.CatalogAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.CatalogAccessInterfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.CatalogAccessInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Editions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Editions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Hybrid">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Portal.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Portal.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingCore">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.reportingservices.rdlobjectmodel">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\microsoft.reportingservices.rdlobjectmodel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Soap">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Storage">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportingServicesLibrary">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\ReportingServicesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\FeaturesUtil.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Repositories\CatalogItemFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Repositories\CatalogItemRepository.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Repositories\SubscriptionService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Repositories\SystemService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\CatalogService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\CatalogConfiguration.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\EncryptionService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\LegacyCrypto.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\OAuthClientConfigurationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\PortalConfiguration.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\PortalConfigurationManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\RsConfigProvider.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Configuration\RsWebConfigConfigurationManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\DatabaseService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\DataService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\CatalogItemExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\CatalogItemJsonContentExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\CatalogItemTypeExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\DataSetExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\DataSourceExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\ExecutionLogInfoExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\IdentityExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\IncludedPropertiesContractResolver.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\LogonMethodExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\PolicyExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\ResolveCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\RoleExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\RsServiceExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Extensions\SubscriptionExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Interfaces\ICatalogItemFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\CatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\DataSetField.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\DataSetParameter.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\DataSetSchema.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\ExcelWorkbookCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\FolderCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\PowerBIReportCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\ResourceCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Models\UnknownCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\NotificationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\CatalogItemJsonContentExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\CatalogItemTypeExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\CommentExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\DataModelDataSourceExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\DataModelRoleExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ExtensionExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ExtensionParameterExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ExtensionSettingsExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\HistorySnapshotExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\IncludedPropertiesContractResolver.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\KpiSharedDataItemAggregationExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ParameterValueExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\PolicyExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\PropertyExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\QueryExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ReportHistorySnapshotExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ReportParameterDefinitionPatchExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ReportParameterExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ReportParameterTypeExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\RoleExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ScheduleExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ScheduleReferenceExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\SubscriptionExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ODataExtensions\ValidValueExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\PowerBIIntegrationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\RSRequestInspector.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\ServicesUtil.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Services\CatalogItemFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Services\TelemetryConfigurationFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapAuthenticationHelper.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapRS2010Proxy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapRsExecutionConnection.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapRSExecutionProxy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapRsExecutionProxyFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SoapProxy\SoapRsManagementConnection.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\BrandContentValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\EmbeddedSystemResource.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\EmbeddedSystemResourceManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\ISystemResourceProcessor.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\SystemResourceProcessingManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\SystemResourceService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\SystemResourceTypeAttribute.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\SystemResourceTypeNameComparer.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\UniversalBrandContentValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\SystemResources\UniversalBrandProcessor.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\TelemetryService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\UserInfoService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Util\CatalogItemPathUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Util\CultureUtil.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Util\DataSetTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\Util\EnumUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\WebApi\StaticAssembliesResolver.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Services\WebApi\StaticAssembliesResolverFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\ThumbnailUtil.cs" />
+    <Compile Include="Microsoft\ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\TestPublicKeyConstants.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\DataSourceCredentials.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\DataSourcePrompt.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\DeliverReportItemCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\DocumentMapNode.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\EndpointVersion.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExecutionHeader.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExecutionInfo.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExecutionInfo2.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExecutionInfo3.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Extension.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExtensionSettings.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ExtensionTypeEnum.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\FindStringCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\FindStringCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetDocumentMapCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetDocumentMapCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfo2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfo2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfo3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfo3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfoCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetExecutionInfoCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetRenderResourceCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\GetRenderResourceCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ListRenderingExtensionsCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ListRenderingExtensionsCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ListSecureMethodsCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ListSecureMethodsCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTarget2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTarget2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTarget3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTarget3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTargetCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadDrillthroughTargetCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReport2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReport2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReport3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReport3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinition2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinition2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinition3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinition3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinitionCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LoadReportDefinitionCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LogoffCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\LogonUserCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\NavigateBookmarkCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\NavigateBookmarkCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\NavigateDocumentMapCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\NavigateDocumentMapCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\PageCountMode.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\PageSettings.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParameterFieldReference.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParametersGridCellDefinition.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParametersGridLayoutDefinition.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParameterStateEnum.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParameterTypeEnum.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParameterValue.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ParameterValueOrFieldReference.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Render2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Render2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\RenderCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\RenderCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\RenderStreamCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\RenderStreamCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ReportExecutionService.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ReportMargins.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ReportPaperSize.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ReportParameter.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecution2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecution2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecution3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecution3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecutionCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ResetExecutionCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\RSExecutionConnection.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ServerInfoHeader.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentials2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentials2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentials3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentials3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentialsCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionCredentialsCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParameters2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParameters2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParameters3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParameters3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParametersCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SetExecutionParametersCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Sort2CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Sort2CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Sort3CompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Sort3CompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SortCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SortCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\SortDirectionEnum.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ToggleItemCompletedEventArgs.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ToggleItemCompletedEventHandler.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\TrustedUserHeader.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\ValidValue.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2005\Execution\Warning.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices2010\RSConnection2010.cs" />
+    <Compile Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.Designer.cs">
+      <DependentUpon>SoapExceptionStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Model\ComponentRepository.cs" />
+    <Compile Include="Model\DataSetRepository.cs" />
+    <Compile Include="Model\DataSourceRepository.cs" />
+    <Compile Include="Model\ExcelWorkbookRepository.cs" />
+    <Compile Include="Model\FolderRepository.cs" />
+    <Compile Include="Model\KpiRepository.cs" />
+    <Compile Include="Model\LinkedReportRepository.cs" />
+    <Compile Include="Model\PowerBIReportRepository.cs" />
+    <Compile Include="Model\ReportModelRepository.cs" />
+    <Compile Include="Model\ReportRepository.cs" />
+    <Compile Include="Model\ResourceRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.de.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.es.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.fr.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.it.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.ja.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.ko.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.pt.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.ru.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.zh-Hans.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SR.zh-Hant.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Services\SystemResources\UniversalBrandV2.less" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.de.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.es.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.fr.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.it.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.ja.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.ko.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.pt.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SoapExceptionStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.ru.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.zh-Hans.resx" />
+    <EmbeddedResource Include="Microsoft\SqlServer\ReportingServices\SoapExceptionStrings.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

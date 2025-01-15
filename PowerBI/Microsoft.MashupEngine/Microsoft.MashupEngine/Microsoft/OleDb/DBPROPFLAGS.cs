@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace Microsoft.OleDb
+{
+	// Token: 0x02001EBF RID: 7871
+	public enum DBPROPFLAGS : uint
+	{
+		// Token: 0x04006310 RID: 25360
+		NOTSUPPORTED,
+		// Token: 0x04006311 RID: 25361
+		COLUMN,
+		// Token: 0x04006312 RID: 25362
+		DATASOURCE,
+		// Token: 0x04006313 RID: 25363
+		DATASOURCECREATE = 4U,
+		// Token: 0x04006314 RID: 25364
+		DATASOURCEINFO = 8U,
+		// Token: 0x04006315 RID: 25365
+		DBINIT = 16U,
+		// Token: 0x04006316 RID: 25366
+		INDEX = 32U,
+		// Token: 0x04006317 RID: 25367
+		ROWSET = 64U,
+		// Token: 0x04006318 RID: 25368
+		TABLE = 128U,
+		// Token: 0x04006319 RID: 25369
+		COLUMNOK = 256U,
+		// Token: 0x0400631A RID: 25370
+		READ = 512U,
+		// Token: 0x0400631B RID: 25371
+		WRITE = 1024U,
+		// Token: 0x0400631C RID: 25372
+		REQUIRED = 2048U,
+		// Token: 0x0400631D RID: 25373
+		SESSION = 4096U
+	}
+}

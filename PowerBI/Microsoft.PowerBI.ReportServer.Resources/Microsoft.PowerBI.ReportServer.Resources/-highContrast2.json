@@ -1,0 +1,40 @@
+{
+    "name": "HighContrast2",
+    "isHighContrast": true,
+
+    "accent": "#00FF00",
+    "tableAccent": "#00FF00",
+
+    "foreground": "#00FF00",
+    "foregroundLight": "#00FF00",
+    "foregroundDark": "#00FF00",
+    "foregroundNeutralLight": "#00FF00",
+    "foregroundNeutralDark": "#00FF00",
+    "foregroundNeutralSecondary": "#00FF00",
+    "foregroundNeutralSecondaryAlt": "#00FF00",
+    "foregroundNeutralSecondaryAlt2": "#00FF00",
+    "foregroundNeutralTertiary": "#00FF00",
+    "foregroundNeutralTertiaryAlt": "#00FF00",
+    "foregroundSelected": "#1AEBFF",
+    "foregroundButton": "#FFFFFF",
+
+    "background": "#000000",
+    "backgroundLight": "#000000",
+    "backgroundNeutral": "#000000",
+    "backgroundDark": "#000000",
+
+    "hyperlink": "#8080FF",
+    "visitedHyperlink": "#8080FF",
+    "mapPushpin": "#00FF00",
+    "shapeStroke": "#00FF00",
+    "disabledText": "#C0C0C0",
+
+    "good": "#000000",
+    "neutral": "#000000",
+    "bad": "#000000",
+
+    "maximum": "#000000",
+    "center": "#000000",
+    "minimum": "#000000",
+    "null": "#000000"
+}

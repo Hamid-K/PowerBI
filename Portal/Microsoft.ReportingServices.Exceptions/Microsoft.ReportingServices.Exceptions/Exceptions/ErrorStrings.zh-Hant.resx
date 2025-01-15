@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CouldNotFindElement" xml:space="preserve">
+    <value>剖析組態檔時發生錯誤。遺漏 {0} 元素。</value>
+  </data>
+  <data name="DataSourceConnectionErrorNotVisible" xml:space="preserve">
+    <value>無法連接到資料來源，而且沒有任何詳細資訊，因為伺服器已關閉資料來源連接錯誤訊息。</value>
+  </data>
+  <data name="DuplicateConfigElement" xml:space="preserve">
+    <value>{0} 項目在組態檔中出現的次數超過一次。</value>
+  </data>
+  <data name="EmptyExtensionName" xml:space="preserve">
+    <value>找到沒有名稱的延伸模組。</value>
+  </data>
+  <data name="GetExternalImagesInvalidNamespace" xml:space="preserve">
+    <value>GetExternalImages 要求的命名空間無效。</value>
+  </data>
+  <data name="GetExternalImagesInvalidSyntax" xml:space="preserve">
+    <value>GetExternalImages 要求的語法無效，或不受此 Reporting Services 版本支援。</value>
+  </data>
+  <data name="InvalidConfigElement" xml:space="preserve">
+    <value>組態檔包含無效的元素。{0} 元素不是組態檔元素。</value>
+  </data>
+  <data name="InvalidKeyValue" xml:space="preserve">
+    <value>索引鍵與值組合無效。</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidNamespace" xml:space="preserve">
+    <value>LogClientTraceEvents 要求的命名空間無效。</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidSyntax" xml:space="preserve">
+    <value>LogClientTraceEvents 要求的語法無效，或不受此 Reporting Services 版本支援。</value>
+  </data>
+  <data name="MultipleSessionCatalogItemsNotSupported" xml:space="preserve">
+    <value>'sessionCatalogItems' 屬性最多只可包含一個項目。無法同一工作階段中發行多個項目。</value>
+  </data>
+  <data name="NoEventForEventProcessor" xml:space="preserve">
+    <value>事件處理器 {0} 沒有設定的事件。</value>
+  </data>
+  <data name="ProductNamePBIRS" xml:space="preserve">
+    <value>Microsoft Power BI 報表伺服器</value>
+  </data>
+  <data name="ProductNamePBIRSAndVersion" xml:space="preserve">
+    <value>Microsoft Power BI 報表伺服器版本 {0}</value>
+  </data>
+  <data name="ProductNameSSRS" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services</value>
+  </data>
+  <data name="ProductNameSSRSAndVersion" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services 版本 {0}</value>
+  </data>
+  <data name="SameEventType" xml:space="preserve">
+    <value>針對事件類型 "{0}" 找到一個以上的定義。</value>
+  </data>
+  <data name="SameExtensionName" xml:space="preserve">
+    <value>此類型有一個以上的延伸模組使用相同的名稱。請將其中一個延伸模組重新命名為 {0} 以外的名稱。</value>
+  </data>
+  <data name="SkuCaching" xml:space="preserve">
+    <value>報表快取</value>
+  </data>
+  <data name="SkuCommentAlerting" xml:space="preserve">
+    <value>報告註解通知</value>
+  </data>
+  <data name="SkuComponentLibrary" xml:space="preserve">
+    <value>報表組件庫</value>
+  </data>
+  <data name="SkuCrescent" xml:space="preserve">
+    <value>Power View</value>
+  </data>
+  <data name="SkuCustomAuth" xml:space="preserve">
+    <value>自訂安全性延伸模組</value>
+  </data>
+  <data name="SkuCustomRolesSecurity" xml:space="preserve">
+    <value>自訂安全性角色</value>
+  </data>
+  <data name="SkuDataAlerting" xml:space="preserve">
+    <value>資料警示</value>
+  </data>
+  <data name="SkuDataDrivenSubscriptions" xml:space="preserve">
+    <value>報表的資料驅動訂閱</value>
+  </data>
+  <data name="SkuDelivery" xml:space="preserve">
+    <value>報表傳遞</value>
+  </data>
+  <data name="SkuDynamicDrillthrough" xml:space="preserve">
+    <value>Report Builder 無限點選連結</value>
+  </data>
+  <data name="SkuEventGeneration" xml:space="preserve">
+    <value>事件產生</value>
+  </data>
+  <data name="SkuExecutionSnapshots" xml:space="preserve">
+    <value>報表執行快照集</value>
+  </data>
+  <data name="SkuExtensibility" xml:space="preserve">
+    <value>報表伺服器延伸模組</value>
+  </data>
+  <data name="SkuHistory" xml:space="preserve">
+    <value>報表記錄快照集</value>
+  </data>
+  <data name="SkuKpiItems" xml:space="preserve">
+    <value>KPI 項目</value>
+  </data>
+  <data name="SkuMobileReportItems" xml:space="preserve">
+    <value>行動報表項目</value>
+  </data>
+  <data name="SkuModelItemSecurity" xml:space="preserve">
+    <value>報表模型項目安全性</value>
+  </data>
+  <data name="SkuNoCpuThrottling" xml:space="preserve">
+    <value>不受限制的處理器數目</value>
+  </data>
+  <data name="SkuNoMemoryThrottling" xml:space="preserve">
+    <value>不受限制的記憶體數量</value>
+  </data>
+  <data name="SkuNonSqlDataSources" xml:space="preserve">
+    <value>您正在使用的 Reporting Services 版本，只支援報表資料來源的 SQL Server 關聯資料庫。</value>
+  </data>
+  <data name="SkuOtherSkuDatasources" xml:space="preserve">
+    <value>您選取的資料庫引擎執行個體對此版 Reporting Services 無效。資料庫引擎不符合報表資料來源或報表伺服器資料庫的版本需求。</value>
+  </data>
+  <data name="SkuRemoteDataSources" xml:space="preserve">
+    <value>您使用的 Reporting Services 版本要求您使用報表資料來源和報表伺服器資料庫的本機 SQL Server 關聯式資料庫。</value>
+  </data>
+  <data name="SkuReportBuilder" xml:space="preserve">
+    <value>Report Builder 與報表模型</value>
+  </data>
+  <data name="SkuScaleOut" xml:space="preserve">
+    <value>向外延展部署</value>
+  </data>
+  <data name="SkuScheduling" xml:space="preserve">
+    <value>已排程報表執行</value>
+  </data>
+  <data name="SkuSharedDataset" xml:space="preserve">
+    <value>共用資料集</value>
+  </data>
+  <data name="SkuSharepoint" xml:space="preserve">
+    <value>Windows SharePoint 服務整合</value>
+  </data>
+  <data name="SkuSubscriptions" xml:space="preserve">
+    <value>報表的訂閱</value>
+  </data>
+  <data name="UIServerLoopback" xml:space="preserve">
+    <value>報表伺服器組態檔所指定的 Web 伺服器名稱為 localhost。但報表伺服器需要指定電腦名稱。</value>
+  </data>
+  <data name="UserNameUnknown" xml:space="preserve">
+    <value>[不明]</value>
+  </data>
+  <data name="cannotBuildExternalConnectionString" xml:space="preserve">
+    <value>嘗試建立外部資料來源 '{0}' 的連接字串。</value>
+  </data>
+  <data name="internalDataSourceNotFound" xml:space="preserve">
+    <value>在 Token 資料來源清單中找不到內部資料來源。</value>
+  </data>
+  <data name="rFeedColumnTypeMismatchException" xml:space="preserve">
+    <value>資料摘要資料行 '{0}' 有未預期的資料類型。</value>
+  </data>
+  <data name="rsAccessDenied" xml:space="preserve">
+    <value>授與使用者 '{0}' 的權限不足，無法執行此作業。</value>
+  </data>
+  <data name="rsAccessDeniedToSecureData" xml:space="preserve">
+    <value>報表伺服器 Web 服務無法存取報表伺服器中的安全資訊。請確定報表伺服器組態檔中已正確指定 WebServiceAccount。</value>
+  </data>
+  <data name="rsApiVersionDiscontinued" xml:space="preserve">
+    <value>伺服器支援的最低版本為 '{0}'，但用戶端版本為 '{1}'。請升級您的用戶端。</value>
+  </data>
+  <data name="rsApiVersionNotRecognized" xml:space="preserve">
+    <value>伺服器版本為 '{0}'，因而無法辨識用戶端版本 '{1}'。</value>
+  </data>
+  <data name="rsAppDomainManagerError" xml:space="preserve">
+    <value>嘗試於報表伺服器服務中啟動應用程式定義域 {0} 時發生錯誤。</value>
+  </data>
+  <data name="rsAssemblyNotPermissioned" xml:space="preserve">
+    <value>無法載入組件 '{0}'，因為沒有為其定義程式碼權限。</value>
+  </data>
+  <data name="rsAuthenticationExtensionError" xml:space="preserve">
+    <value>驗證延伸模組發生非預期的例外狀況或傳回無效的值: {0}。</value>
+  </data>
+  <data name="rsAuthorizationExtensionError" xml:space="preserve">
+    <value>叫用授權延伸模組時發生錯誤。</value>
+  </data>
+  <data name="rsAuthorizationTokenInvalidOrExpired" xml:space="preserve">
+    <value>授權 Token 無效或已過期</value>
+  </data>
+  <data name="rsBackupKeyPasswordInvalid" xml:space="preserve">
+    <value>備份金鑰的密碼不正確。</value>
+  </data>
+  <data name="rsBatchNotFound" xml:space="preserve">
+    <value>找不到批次 '{0}'。之前未使用 CreateBatch 方法開啟批次時，就會發生此錯誤。如果批次開啟時間太長而造成逾時，也會發生此錯誤。</value>
+  </data>
+  <data name="rsCacheRefreshPlanNotFound" xml:space="preserve">
+    <value>找不到快取重新整理計劃 '{0}'。在報表伺服器資料庫中找不到為作業提供的快取重新整理計劃識別碼。</value>
+  </data>
+  <data name="rsCachingNotEnabled" xml:space="preserve">
+    <value>未啟用項目 '{0}' 的快取。必須啟用快取才能完成此動作。</value>
+  </data>
+  <data name="rsCannotActivateSubscription" xml:space="preserve">
+    <value>此時無法啟動選取的訂閱。傳遞延伸模組已不存在。</value>
+  </data>
+  <data name="rsCannotDeleteRootPolicy" xml:space="preserve">
+    <value>無法刪除根資料夾上的角色指派。針對根資料夾，在任何時候至少必須定義一個角色指派。</value>
+  </data>
+  <data name="rsCannotPrepareQuery" xml:space="preserve">
+    <value>無法產生資料集。連接到資料來源時發生錯誤，或是查詢對資料來源而言無效。</value>
+  </data>
+  <data name="rsCannotRetrieveModel" xml:space="preserve">
+    <value>載入項目或資料來源 '{0}' 的模型時發生錯誤。請確認連接資訊是否正確，以及您是否有存取此資料來源的權限。</value>
+  </data>
+  <data name="rsCannotSubscribeToEvent" xml:space="preserve">
+    <value>無法訂閱事件類型 '{0}'。</value>
+  </data>
+  <data name="rsCannotValidateEncryptedData" xml:space="preserve">
+    <value>報表伺服器無法驗證資料庫中加密資料的完整性。</value>
+  </data>
+  <data name="rsCertificateMissingOrInvalid" xml:space="preserve">
+    <value>遺漏憑證 {0} 或此憑證無效。</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenError" xml:space="preserve">
+    <value>無法將宣告身分識別轉換成 Windows Token。</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenLoginTypeError" xml:space="preserve">
+    <value>無法將宣告身分識別轉換成 Windows Token。這可能是因為使用者不是使用 Windows 認證登入。</value>
+  </data>
+  <data name="rsClosingRegisteredStreamException" xml:space="preserve">
+    <value>關閉註冊的資料流時發生錯誤。</value>
+  </data>
+  <data name="rsComponentPublishingError" xml:space="preserve">
+    <value>元件發行期間發生錯誤。</value>
+  </data>
+  <data name="rsContainerNotSupported" xml:space="preserve">
+    <value>報表伺服器不支援您指定的目標位置。報表定義檔案 (.rdl)、報表模型檔案 (.smdl)、資源檔案或共用資料來源檔案 (.rsds) 必須位於程式庫或程式庫內的資料夾中。</value>
+  </data>
+  <data name="rsDataCacheMismatch" xml:space="preserve">
+    <value>報表編輯工作階段的資料快取無效。請重新執行報表以建立新的有效資料快取。</value>
+  </data>
+  <data name="rsDataExtensionNotFound" xml:space="preserve">
+    <value>嘗試使用未對此報表伺服器註冊或此 Reporting Services 版本不支援的資料延伸模組 '{0}'。</value>
+  </data>
+  <data name="rsDataSetExecutionError" xml:space="preserve">
+    <value>共用資料集 '{0}' 的執行失敗。</value>
+  </data>
+  <data name="rsDataSetNotFound" xml:space="preserve">
+    <value>找不到資料集 '{0}'。</value>
+  </data>
+  <data name="rsDataSetParameterValueNotSet" xml:space="preserve">
+    <value>此資料集要求資料集參數 '{0}' 必須有預設或使用者定義值。若要執行此資料集，您必須提供參數值。</value>
+  </data>
+  <data name="rsDataSourceDisabled" xml:space="preserve">
+    <value>與報表相關聯的資料來源已經停用。</value>
+  </data>
+  <data name="rsDataSourceNoPromptException" xml:space="preserve">
+    <value>嘗試為與報表相關聯的資料來源 '{0}' 設定認證。報表資料來源設定已指定為不會將認證提交給報表伺服器。</value>
+  </data>
+  <data name="rsDataSourceNotFound" xml:space="preserve">
+    <value>找不到資料來源 '{0}'。</value>
+  </data>
+  <data name="rsDatasourceCredentialsNoLongerValid" xml:space="preserve">
+    <value>一或多個資料來源的認證已不再有效。</value>
+  </data>
+  <data name="rsDeliverError" xml:space="preserve">
+    <value>發生傳遞錯誤。</value>
+  </data>
+  <data name="rsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>嘗試使用未為此報表伺服器註冊的傳遞延伸模組。</value>
+  </data>
+  <data name="rsElementTypeMismatch" xml:space="preserve">
+    <value>提供給 {0} 欄位的值不是其類型的有效值，無法從字串值轉換成所需的類型。</value>
+  </data>
+  <data name="rsEmptyRole" xml:space="preserve">
+    <value>您正在建立的自訂角色沒有包含任何工作。角色定義必須至少包含一個工作。</value>
+  </data>
+  <data name="rsEncryptedDataUnavailable" xml:space="preserve">
+    <value>報表伺服器無法存取加密資料。請套用備份金鑰或刪除所有的加密內容。</value>
+  </data>
+  <data name="rsErrorNotVisibleToRemoteBrowsers" xml:space="preserve">
+    <value>如需有關此錯誤的詳細資料，請導覽至本機伺服器電腦上的報表伺服器，或啟用遠端錯誤</value>
+  </data>
+  <data name="rsErrorOpeningConnection" xml:space="preserve">
+    <value>無法與資料來源 '{0}' 建立連接。</value>
+  </data>
+  <data name="rsEvaluationCopyExpired" xml:space="preserve">
+    <value>此 Microsoft SQL Server Reporting Services 的執行個體的評估期已過。現在需要有授權。</value>
+  </data>
+  <data name="rsEventExtensionNotFoundException" xml:space="preserve">
+    <value>事件 {0} 沒有定義的延伸模組。</value>
+  </data>
+  <data name="rsEventLogSourceNotFound" xml:space="preserve">
+    <value>事件來源 "{0}" 不存在。</value>
+  </data>
+  <data name="rsEventMaxRetryExceededException" xml:space="preserve">
+    <value>事件 {0} 超出重試次數上限。已跳過事件處理。</value>
+  </data>
+  <data name="rsExecuteQueriesFailure" xml:space="preserve">
+    <value>在資料來源 '{0}' 執行查詢時發生錯誤。</value>
+  </data>
+  <data name="rsExecutionNotFound" xml:space="preserve">
+    <value>報表執行 {0} 已過期或找不到。</value>
+  </data>
+  <data name="rsFailedToDecryptConfigInformation" xml:space="preserve">
+    <value>無法解密 "{0}" 組態設定的加密值。</value>
+  </data>
+  <data name="rsFailedToExportSymmetricKey" xml:space="preserve">
+    <value>無法使用目前安裝的公開金鑰匯出對稱金鑰</value>
+  </data>
+  <data name="rsFeedValueOutOfRange" xml:space="preserve">
+    <value>資料摘要資料行 '{0}' 的值超出資料行資料類型的有效值範圍。</value>
+  </data>
+  <data name="rsFileExtensionRequired" xml:space="preserve">
+    <value>無法完成作業，因為副檔名遺失或無效。有效的副檔名包含代表報表定義的 .rdl，代表報表模型的 .smdl，代表共用資料來源的 .rsds，代表共用資料集的 .rsd，以及代表報表元件的 .rsc。請為此檔案輸入副檔名，然後重試此作業。</value>
+  </data>
+  <data name="rsFileExtensionViolation" xml:space="preserve">
+    <value>目標副檔名 '{0}' 與來源副檔名 '{1}' 不相符。副檔名 .rdl、.rsds、.odc、.rsd、.rsc 和 .smdl 對於目標檔案和來源檔案必須是相同的副檔名。請更新目標副檔名，讓它與來源副檔名相符。</value>
+  </data>
+  <data name="rsFileSize" xml:space="preserve">
+    <value>檔案大於為此報表伺服器設定的限制。</value>
+  </data>
+  <data name="rsFileSizeNotSupported" xml:space="preserve">
+    <value>此檔案大於目前支援的系統限制 2000 MB。</value>
+  </data>
+  <data name="rsHasUserProfileDependencies" xml:space="preserve">
+    <value>'{0}' 報表或共用資料集有使用者設定檔相依性，因此無法自動執行。</value>
+  </data>
+  <data name="rsHttpRuntimeClientDisconnectionError" xml:space="preserve">
+    <value>用戶端與報表伺服器 Web 服務應用程式定義域 {0} 已中斷連接。不需要進行修正的動作。已將錯誤碼提交給 ASP.NET 以解除連接。錯誤碼為 {1}。</value>
+  </data>
+  <data name="rsHttpRuntimeError" xml:space="preserve">
+    <value>應用程式定義域 {0} 的 HTTP 執行階段物件中發生錯誤。最可能的原因是 HTTP 要求中包含不支援的動作或無效的語法。</value>
+  </data>
+  <data name="rsHttpRuntimeInternalError" xml:space="preserve">
+    <value>應用程式定義域 {0} 的 HTTP 執行階段物件中發生內部或系統錯誤。</value>
+  </data>
+  <data name="rsIdentityClaimsMissingOrInvalid" xml:space="preserve">
+    <value>內部部署連接的識別宣告 '{0}' 遺漏或無效。</value>
+  </data>
+  <data name="rsInheritedPolicy" xml:space="preserve">
+    <value>項目 '{0}' 是從其父項目繼承安全性原則。無法刪除繼承的原則。</value>
+  </data>
+  <data name="rsInheritedPolicyModelItem" xml:space="preserve">
+    <value>識別碼為 '{1}' 的項目 '{0}' 從其父項目繼承安全性原則。無法刪除繼承的原則。</value>
+  </data>
+  <data name="rsInternalError" xml:space="preserve">
+    <value>報表伺服器發生內部錯誤。請參閱錯誤記錄以取得更多詳細資料。</value>
+  </data>
+  <data name="rsInternalResourceNotFoundError" xml:space="preserve">
+    <value>報表伺服器找不到內部資源 '{0}'。</value>
+  </data>
+  <data name="rsInternalResourceNotSpecifiedError" xml:space="preserve">
+    <value>使用 'Get' 報表伺服器命令時，必須指定內部資源的名稱。請確認已指定內部資源名稱，然後再試一次。</value>
+  </data>
+  <data name="rsInvalidCatalogRecord" xml:space="preserve">
+    <value>在目錄中偵測到錯誤記錄。如需詳細資料，請參閱錯誤記錄檔。</value>
+  </data>
+  <data name="rsInvalidConcurrentRenderEditSessionRequest" xml:space="preserve">
+    <value>工作階段 {0} 有無效的並行 RenderEdit 要求。</value>
+  </data>
+  <data name="rsInvalidDataSetReference" xml:space="preserve">
+    <value>報表伺服器無法處理報表。共用資料集 '{0}' 的參考無效。</value>
+  </data>
+  <data name="rsInvalidDataSourceCount" xml:space="preserve">
+    <value>報表伺服器無法載入報表 '{0}' 的模型，因為它未參考任何資料來源或參考了多個資料來源。系統只能為只參考一個資料來源的報表載入模型。</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSetting" xml:space="preserve">
+    <value>無法完成目前的動作。使用者資料來源認證不符合執行這份報表或共用資料集的需求。可能是使用者資料來源認證未儲存在報表伺服器資料庫中，或使用者資料來源設定為不需要認證卻未指定自動執行帳戶。</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSettingForITokenDataExtension" xml:space="preserve">
+    <value>無法完成目前動作。使用者資料來源認證不符合執行這份報表或共用資料集的需求。針對為 SharePoint 整合模式中設定的報表伺服器實作 ITokenDataExtension 的資料延伸模組，只有 Windows 使用者認證支援 'Stored' 或 'Prompt' 選項 。請指定 Windows 認證或將資料來源設定成使用其他選項。</value>
+  </data>
+  <data name="rsInvalidDataSourceReference" xml:space="preserve">
+    <value>報表伺服器無法處理報表或共用資料集。報表伺服器的共用資料來源 '{0}' 無效。請瀏覽至伺服器或網站，並選取共用資料來源。</value>
+  </data>
+  <data name="rsInvalidDataSourceType" xml:space="preserve">
+    <value>無法完成目前動作。資料來源 '{0}' 的資料延伸模組類型對這項作業無效。</value>
+  </data>
+  <data name="rsInvalidDestination" xml:space="preserve">
+    <value>{0} 作業和 {1} 作業的項目不能位在不同的 SharePoint 網站。如果您移動一個項目，請在相同的 SharePoint 網站選取文件庫。如果您使用特定的共用排程建立訂閱，報表和排程兩者都必須位在相同的 SharePoint 網站。</value>
+  </data>
+  <data name="rsInvalidElement" xml:space="preserve">
+    <value>{0} 欄位有無效的值。</value>
+  </data>
+  <data name="rsInvalidElementCombination" xml:space="preserve">
+    <value>欄位 {0} 和 {1} 的值組合無效。</value>
+  </data>
+  <data name="rsInvalidExtensionParameter" xml:space="preserve">
+    <value>其中一個延伸模組參數無效，原因如下: {0}</value>
+  </data>
+  <data name="rsInvalidItemName" xml:space="preserve">
+    <value>項目 '{0}' 的名稱無效。名稱長度不得超過 {1} 個字元，且開頭不得為斜線字元，亦不得包含保留字元。其他限制一體適用。如需有效項目名稱的詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=398858。</value>
+  </data>
+  <data name="rsInvalidItemPath" xml:space="preserve">
+    <value>項目 '{0}' 的路徑無效。完整路徑長度必須少於 {1} 個字元; 其他限制也適用。如果報表伺服器為原生模式，路徑必須以斜線開頭。</value>
+  </data>
+  <data name="rsInvalidModelDrillthroughReport" xml:space="preserve">
+    <value>報表 {0} 不是有效的鑽研報表。</value>
+  </data>
+  <data name="rsInvalidMove" xml:space="preserve">
+    <value>無法將資料夾 "{0}" 移動至目標位置。目的資料夾 "{1}" 是來源資料夾 "{0}" 的子資料夾。</value>
+  </data>
+  <data name="rsInvalidMultipleElementCombination" xml:space="preserve">
+    <value>欄位 {0}、{1} 和 {2} 的值組合無效。</value>
+  </data>
+  <data name="rsInvalidOperation" xml:space="preserve">
+    <value>指定的作業無效。</value>
+  </data>
+  <data name="rsInvalidParameter" xml:space="preserve">
+    <value>參數 '{0}' 的值無效。</value>
+  </data>
+  <data name="rsInvalidParameterCombination" xml:space="preserve">
+    <value>提供給函式的參數值是無效的組合。</value>
+  </data>
+  <data name="rsInvalidPolicyDefinition" xml:space="preserve">
+    <value>'{0}' 使用者或群組的原則無效。角色指派可能是空的、它指定的使用者或群組名稱已經在目前項目的現有角色指派中使用，或它為同一個使用者或群組指定重複的角色。</value>
+  </data>
+  <data name="rsInvalidProgressiveFormatError" xml:space="preserve">
+    <value>{0} 命令的格式無效。</value>
+  </data>
+  <data name="rsInvalidRSDSSchema" xml:space="preserve">
+    <value>您選取的 .rsds 檔案無效。此檔案沒有該檔案類型應有的 XML 結構。</value>
+  </data>
+  <data name="rsInvalidReportLink" xml:space="preserve">
+    <value>報表伺服器無法在報表上執行作業。報表連結不再有效。</value>
+  </data>
+  <data name="rsInvalidReportParameter" xml:space="preserve">
+    <value>為報表參數 '{0}' 提供的預設值或值，不是有效的值。</value>
+  </data>
+  <data name="rsInvalidReportServerDatabase" xml:space="preserve">
+    <value>報表伺服器資料庫的版本可能不是有效格式，或是無法讀取。找到的版本為 '{0}'，必須是版本 '{1}'。</value>
+  </data>
+  <data name="rsInvalidSearchOperator" xml:space="preserve">
+    <value>搜尋運算子 "{0}" 無效。</value>
+  </data>
+  <data name="rsInvalidSessionCatalogItems" xml:space="preserve">
+    <value>未指定 'sessionCatalogItems' 屬性，或其內容無效或此版本的 Reporting Services 不支援。詳細資料: {0}。</value>
+  </data>
+  <data name="rsInvalidSessionId" xml:space="preserve">
+    <value>工作階段 ID {0} 無效。</value>
+  </data>
+  <data name="rsInvalidSqlAgentJob" xml:space="preserve">
+    <value>找到無效的 SQL 代理程式工作 '{0}'。</value>
+  </data>
+  <data name="rsInvalidSubscription" xml:space="preserve">
+    <value>找到無效的訂閱 '{0}'。必須刪除並重新建立訂閱。</value>
+  </data>
+  <data name="rsInvalidXml" xml:space="preserve">
+    <value>輸入 XML 與結構描述不符。XML 文法描述於 API 文件集內。關於報表中的 XML，請參閱報表定義語言 (RDL) 語法。</value>
+  </data>
+  <data name="rsItemAlreadyExists" xml:space="preserve">
+    <value>項目 '{0}' 已經存在。</value>
+  </data>
+  <data name="rsItemContentInvalid" xml:space="preserve">
+    <value>項目 '{0}' 包含無效的內容。</value>
+  </data>
+  <data name="rsItemNotFound" xml:space="preserve">
+    <value>找不到項目 '{0}'。</value>
+  </data>
+  <data name="rsItemPathLengthExceeded" xml:space="preserve">
+    <value>項目 '{0}' 的路徑超過 {1} 的最大長度。路徑包含項目本身的名稱，加上包含該項目的父資料夾名稱。</value>
+  </data>
+  <data name="rsJobWasCanceled" xml:space="preserve">
+    <value>系統管理員已取消作業。</value>
+  </data>
+  <data name="rsKeyStateNotValid" xml:space="preserve">
+    <value>報表伺服器無法存取此服務帳戶的私密金鑰。此金鑰是用來解密保護報表伺服器資料庫中內容的對稱金鑰。重設報表伺服器服務帳戶的密碼後，就可能發生這種情況。您必須還原備份金鑰，或是刪除所有加密的內容。</value>
+  </data>
+  <data name="rsLogonFailed" xml:space="preserve">
+    <value>登入失敗。請確定使用者名稱和密碼是否正確。</value>
+  </data>
+  <data name="rsMalformedXml" xml:space="preserve">
+    <value>輸入 XML 的格式不正確。一個或多個元素遺漏結尾標記或具有不相符的標記: {0}。</value>
+  </data>
+  <data name="rsMaxCountComments" xml:space="preserve">
+    <value>已達到註解數目上限。</value>
+  </data>
+  <data name="rsMissingElement" xml:space="preserve">
+    <value>輸入結構中遺漏了必要欄位 {0}。</value>
+  </data>
+  <data name="rsMissingFeedColumnException" xml:space="preserve">
+    <value>找不到資料摘要資料行 '{0}'。</value>
+  </data>
+  <data name="rsMissingParameter" xml:space="preserve">
+    <value>未指定參數 '{0}' 的值。可能是函式呼叫中遺漏了，或是設定為 Null。</value>
+  </data>
+  <data name="rsMissingRequiredPropertyForItemType" xml:space="preserve">
+    <value>未指定屬性 '{0}' 的值。屬性已遺失或值是 null。</value>
+  </data>
+  <data name="rsMissingSessionId" xml:space="preserve">
+    <value>缺少工作階段識別碼。此作業需要工作階段識別碼。</value>
+  </data>
+  <data name="rsMixedTasks" xml:space="preserve">
+    <value>自訂角色不能在相同的角色定義中同時包含系統層級和非系統層級工作。您必須為每個工作類別目錄指定不同的角色。</value>
+  </data>
+  <data name="rsModelGenerationError" xml:space="preserve">
+    <value>產生模型時發生錯誤。</value>
+  </data>
+  <data name="rsModelGenerationNotSupported" xml:space="preserve">
+    <value>資料延伸模組不支援模型的產生。</value>
+  </data>
+  <data name="rsModelIDMismatch" xml:space="preserve">
+    <value>已提交模型的模型識別碼必須與目前模型的識別碼相符。</value>
+  </data>
+  <data name="rsModelItemNotFound" xml:space="preserve">
+    <value>模型 "{0}" 中找不到模型項目 "{1}"。</value>
+  </data>
+  <data name="rsModelNotGenerated" xml:space="preserve">
+    <value>指定的模型必須為產生的模型。</value>
+  </data>
+  <data name="rsModelRetrievalCanceled" xml:space="preserve">
+    <value>擷取模型已取消。</value>
+  </data>
+  <data name="rsModelRootPolicyRequired" xml:space="preserve">
+    <value>需要模型根原則</value>
+  </data>
+  <data name="rsNotEnabled" xml:space="preserve">
+    <value>要求的功能目前並未啟用。</value>
+  </data>
+  <data name="rsNotSupported" xml:space="preserve">
+    <value>目前不支援所要求的功能。</value>
+  </data>
+  <data name="rsODCVersionNotSupported" xml:space="preserve">
+    <value>報表伺服器只支援 Office 12 (含) 以上版本產生的 ODC 檔案。請確認此 ODC 檔案是由 Office 12 產生，然後再試一次。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderConnectionStringMissing" xml:space="preserve">
+    <value>內部部署連接的連接字串為 Null 或空白。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderMissingEffectiveUsername" xml:space="preserve">
+    <value>遺漏內部部署連接所需的有效使用者名稱屬性。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderUnknownError" xml:space="preserve">
+    <value>內部部署連接字串建置期間發生不明錯誤。如需詳細資料，請參閱內部例外狀況。</value>
+  </data>
+  <data name="rsOperationNotSupported" xml:space="preserve">
+    <value>此 Reporting Services 版本不支援 "{0}" 功能。</value>
+  </data>
+  <data name="rsOperationNotSupportedNativeMode" xml:space="preserve">
+    <value>以原生模式執行的報表伺服器不支援此作業。</value>
+  </data>
+  <data name="rsOperationNotSupportedSharePointMode" xml:space="preserve">
+    <value>在 SharePoint 整合模式中執行的報表伺服器不支援此作業。</value>
+  </data>
+  <data name="rsOperationPreventsUnattendedExecution" xml:space="preserve">
+    <value>不允許將報表參數或資料來源變更為您指定的值。將報表設定為自動執行。使用指定的值會防止此報表自動處理。</value>
+  </data>
+  <data name="rsPBIServiceUnavailable" xml:space="preserve">
+    <value>Power BI 目前無法處理要求。請連絡 PowerBI 支援相互關聯:{0}</value>
+  </data>
+  <data name="rsParameterTypeMismatch" xml:space="preserve">
+    <value>提供給 '{0}' 的參數值與參數類型不相符。</value>
+  </data>
+  <data name="rsProcessingError" xml:space="preserve">
+    <value>報表處理時發生錯誤。</value>
+  </data>
+  <data name="rsProgressiveFormatElementMissingError" xml:space="preserve">
+    <value>遺漏訊息元素 '{0}'。</value>
+  </data>
+  <data name="rsProgressiveMessageWriteElementError" xml:space="preserve">
+    <value>撰寫 {1} 命令的訊息元素 '{0}' 時發生錯誤。</value>
+  </data>
+  <data name="rsProgressiveMessageWriteError" xml:space="preserve">
+    <value>撰寫 {0} 命令的回應時發生錯誤。</value>
+  </data>
+  <data name="rsPropertyDisabled" xml:space="preserve">
+    <value>您不能在 SharePoint 整合模式下執行之報表伺服器上，設定或擷取 SiteName、EnableMyReports 或 MyReportsRole 的屬性值。請將這些屬性排除在要求之外，然後再試一次。</value>
+  </data>
+  <data name="rsPropertyDisabledNativeMode" xml:space="preserve">
+    <value>您無法在以原生模式執行的報表伺服器上，設定或擷取 RDLXReportTimeout 的屬性值。請從您的要求中排除這些屬性，然後再試一次。</value>
+  </data>
+  <data name="rsQueryExecutionNotAllowed" xml:space="preserve">
+    <value>不允許查詢執行時，不支援作業。</value>
+  </data>
+  <data name="rsQueryTimeout" xml:space="preserve">
+    <value>嘗試驗證此報表的參數時發生錯誤，亦即，對資料來源的查詢已逾時。</value>
+  </data>
+  <data name="rsRdceExtraElementError" xml:space="preserve">
+    <value>您無法在自訂的 RDL 中指定一個以上 '{0}' 項目。請移除重複的項目，然後再試一次。</value>
+  </data>
+  <data name="rsRdceInvalidCacheOptionError" xml:space="preserve">
+    <value>您無法在根據快取報表轉譯的報表上設定報表定義自訂延伸模組 (RDCE) 屬性。請變更報表快取選項，然後再試一次。</value>
+  </data>
+  <data name="rsRdceInvalidConfigurationError" xml:space="preserve">
+    <value>您無法設定報表定義自訂延伸模組 (RDCE) 屬性，因為報表伺服器上已停用或未設定 RDCE。請確認報表伺服器上已啟用且已設定 RDCE，並確定已為報表伺服器和 RDCE 屬性指定相同的 RDCE 延伸模組名稱。</value>
+  </data>
+  <data name="rsRdceInvalidExecutionOptionError" xml:space="preserve">
+    <value>當報表記錄已啟用，或當報表是根據快照集轉譯時，您無法在報表上設定報表定義自訂延伸模組 (RDCE) 屬性。請變更報表執行選項，然後再試一次。</value>
+  </data>
+  <data name="rsRdceInvalidItemTypeError" xml:space="preserve">
+    <value>您無法在類型 '{0}' 的項目上設定報表定義自訂延伸模組 (RDCE) 屬性。RDCE 屬性只能在報表項目類型上設定，不能在連結報表或其他項目類型上設定。</value>
+  </data>
+  <data name="rsRdceInvalidRdlError" xml:space="preserve">
+    <value>報表定義自訂延伸模組 (RDCE) 傳回 Null 或無效的 RDL。請確定 RDL 包含有效的 XML。</value>
+  </data>
+  <data name="rsRdceMismatchError" xml:space="preserve">
+    <value>報表中指定的報表定義自訂延伸模組 (RDCE) 名稱不符合為報表伺服器設定的 RDCE 名稱。報表中的延伸模組是 '{0}'，但報表伺服器的延伸模組卻是 '{1}'。請確定已為報表和報表伺服器指定相同的延伸模組名稱。</value>
+  </data>
+  <data name="rsRdceMismatchRdlVersion" xml:space="preserve">
+    <value>報表定義自訂延伸模組 (RDCE) 傳回與原先傳送時不同的 RDL 版本。傳入和傳出的 RDL 版本必須相符。</value>
+  </data>
+  <data name="rsRdceWrappedException" xml:space="preserve">
+    <value>叫用報表定義自訂延伸模組 (RDCE) 時發生錯誤。</value>
+  </data>
+  <data name="rsReadOnlyDataSetParameter" xml:space="preserve">
+    <value>資料集參數 '{0}' 是唯讀的，不得修改。</value>
+  </data>
+  <data name="rsReadOnlyProperty" xml:space="preserve">
+    <value>屬性 '{0}' 為唯讀，因此無法修改或刪除。</value>
+  </data>
+  <data name="rsReadOnlyReportParameter" xml:space="preserve">
+    <value>報表參數 '{0}' 為唯讀，因此無法修改。</value>
+  </data>
+  <data name="rsRemotePublicKeyUnavailable" xml:space="preserve">
+    <value>新的 Web 伺服陣列節點並未將其公開金鑰放在資料庫中。可能是未連接到正確的資料庫，或者其 Windows 服務可能尚未成功啟動。</value>
+  </data>
+  <data name="rsReportBuilderFileTransmissionError" xml:space="preserve">
+    <value>報表伺服器無法傳送檔案，因為檔案 {0} 尚未安裝，或您沒有正確的存取權限。</value>
+  </data>
+  <data name="rsReportHistoryNotFound" xml:space="preserve">
+    <value>找不到報表 '{0}' 的報表快照集 '{1}'。在報表伺服器資料庫中找不到快照集識別碼。</value>
+  </data>
+  <data name="rsReportNotReady" xml:space="preserve">
+    <value>選取的報表還無法檢視。報表仍在轉譯中，或報表快照集無法使用。</value>
+  </data>
+  <data name="rsReportParameterTypeMismatch" xml:space="preserve">
+    <value>提供給報表參數 '{0}' 的值不是其類型的有效值。</value>
+  </data>
+  <data name="rsReportParameterValueNotSet" xml:space="preserve">
+    <value>此報表需要報表參數 '{0}' 的預設值或使用者自訂值。若要執行或訂閱此報表，您必須提供參數值。</value>
+  </data>
+  <data name="rsReportSerializationError" xml:space="preserve">
+    <value>序列化報表時發生錯誤。</value>
+  </data>
+  <data name="rsReportServerDatabaseError" xml:space="preserve">
+    <value>報表伺服器資料庫內部發生錯誤。這可能是因為連接失敗、逾時或資料庫內磁碟空間不足所造成。</value>
+  </data>
+  <data name="rsReportServerDatabaseLogonFailed" xml:space="preserve">
+    <value>報表伺服器無法開啟到報表伺服器資料庫的連接。登入失敗。</value>
+  </data>
+  <data name="rsReportServerDatabaseUnavailable" xml:space="preserve">
+    <value>報表伺服器無法開啟到報表伺服器資料庫的連接。所有要求和處理都需要與資料庫連接。</value>
+  </data>
+  <data name="rsReportServerDisabled" xml:space="preserve">
+    <value>報表伺服器無法解密用來存取報表伺服器資料庫中機密或已加密資料的 Symmetric 金鑰。您必須還原備份金鑰或刪除所有加密內容。</value>
+  </data>
+  <data name="rsReportServerKeyContainerError" xml:space="preserve">
+    <value>無法使用帳戶 {0} 啟用 Reporting Services。</value>
+  </data>
+  <data name="rsReportServerNotActivated" xml:space="preserve">
+    <value>未初始化報表伺服器安裝。</value>
+  </data>
+  <data name="rsReportServerServiceUnavailable" xml:space="preserve">
+    <value>報表伺服器 Windows 服務 '{0}' 未執行。必須執行服務才能使用報表伺服器。</value>
+  </data>
+  <data name="rsReportServerStorageRefreshConnectionNotValidated" xml:space="preserve">
+    <value>針對 ID 為 '{0}' 的模型，其 ID 為 '{1}' 的重新整理連線未經驗證。</value>
+  </data>
+  <data name="rsReportServerStorageSingleRefreshConnectionExpected" xml:space="preserve">
+    <value>僅支援單一重新整理連線，但針對 ID 為 {0} 的模型找到 {1} 個重新整理連線。</value>
+  </data>
+  <data name="rsReportSnapshotEnabled" xml:space="preserve">
+    <value>執行方式設定為以報表執行快照集的報表，不支援此作業。</value>
+  </data>
+  <data name="rsReportSnapshotNotEnabled" xml:space="preserve">
+    <value>報表執行或記錄設定禁止建立或更新快照集。</value>
+  </data>
+  <data name="rsReportTimeoutExpired" xml:space="preserve">
+    <value>作業已逾時。報表伺服器已取消該作業。</value>
+  </data>
+  <data name="rsRequestEncodingFormatException" xml:space="preserve">
+    <value>因為要求的編碼格式與要求標頭的格式不符，所以無法完成作業。</value>
+  </data>
+  <data name="rsRequestThroughHttpRedirectorNotSupportedError" xml:space="preserve">
+    <value>無法使用 HTTP 重新導向程式處理此要求。如需詳細資訊，請檢閱報表伺服器追蹤記錄。</value>
+  </data>
+  <data name="rsReservedItem" xml:space="preserve">
+    <value>資料夾 '{0}' 已保留，因此無法建立、刪除或移動。</value>
+  </data>
+  <data name="rsReservedRole" xml:space="preserve">
+    <value>角色 {0} 已保留或在使用中，因此無法刪除。</value>
+  </data>
+  <data name="rsResolutionFailureException" xml:space="preserve">
+    <value>嘗試解析資料庫 {0} 的中繼資料時，RS 發生錯誤。</value>
+  </data>
+  <data name="rsRestrictedItem" xml:space="preserve">
+    <value>項目 '{0}' 受到 SKU 的限制。</value>
+  </data>
+  <data name="rsRoleAlreadyExists" xml:space="preserve">
+    <value>角色 '{0}' 已經存在，因此無法建立。</value>
+  </data>
+  <data name="rsRoleNotFound" xml:space="preserve">
+    <value>找不到角色 '{0}'。</value>
+  </data>
+  <data name="rsSPSiteNotFound" xml:space="preserve">
+    <value>找不到識別碼為 {0} 的 SharePoint 網站。</value>
+  </data>
+  <data name="rsScheduleAlreadyExists" xml:space="preserve">
+    <value>排程 '{0}' 已經存在，因此無法建立或重新命名。排程名稱不是唯一時會發生此錯誤。</value>
+  </data>
+  <data name="rsScheduleDateTimeRangeException" xml:space="preserve">
+    <value>排程定義包含無效的日期。有效的日期應介於 1/1/1990 到 12/31/9999 之間。</value>
+  </data>
+  <data name="rsScheduleNotFound" xml:space="preserve">
+    <value>找不到排程 '{0}'。在目錄中找不到提供給作業的排程識別碼。</value>
+  </data>
+  <data name="rsSchedulerNotResponding" xml:space="preserve">
+    <value>未執行 SQL 代理程式服務。此作業需要 SQL 代理程式服務。</value>
+  </data>
+  <data name="rsSchedulerNotRespondingPreventsPinning" xml:space="preserve">
+    <value>因為在報表伺服器上並未執行排程儀表板磚重新整理的服務 (SQL Server Agent)，所以目前無法釘選到 Power BI。</value>
+  </data>
+  <data name="rsSecureConnectionRequired" xml:space="preserve">
+    <value>您嘗試執行的作業需要安全連接 (HTTPS)。</value>
+  </data>
+  <data name="rsSecureStoreAmbiguousCredentialFields" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證。目標應用程式 '{0}' 傳回多個相同類型的欄位 - 例如，兩個 Windows 使用者名稱。它最多必須針對任何給定的類型傳回一個欄位。</value>
+  </data>
+  <data name="rsSecureStoreCannotRetrieveCredentials" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證:{0}</value>
+  </data>
+  <data name="rsSecureStoreContextUrlNotSpecified" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證。目前工作階段的 SharePoint 內容是未知的。建立工作階段的要求並未指定 X-BI-Context-URL HTTP 標頭。</value>
+  </data>
+  <data name="rsSecureStoreInvalidLookupContext" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證。LookupContext 設定為 Unattended，但是並未設定報表伺服器的自動執行帳戶。請設定自動執行帳戶以啟用該帳戶的認證擷取。</value>
+  </data>
+  <data name="rsSecureStoreMissingCredentialFields" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證。目標應用程式 '{0}' 缺少必要的欄位。它必須傳回一個 Windows 使用者名稱和一個 Windows 密碼。</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedCredentialField" xml:space="preserve">
+    <value>無法從 Secure Store Service 擷取認證。目標應用程式 '{0}' 傳回不支援類型的欄位。它只能傳回 Windows 使用者名稱和 Windows 密碼。</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedSharePointVersion" xml:space="preserve">
+    <value>無法從 SharePoint Secure Store Service 擷取認證。Reporting Services 不支援所安裝 SharePoint 版本的 Secure Store Service。</value>
+  </data>
+  <data name="rsSecurityZoneNotSupported" xml:space="preserve">
+    <value>指定的路徑參考到不受支援的 SharePoint 區域。必須使用預設的區域路徑。</value>
+  </data>
+  <data name="rsSemanticQueryExtensionNotFound" xml:space="preserve">
+    <value>嘗試使用與資料延伸模組 '{0}' 相關聯的語意查詢延伸模組，但該資料延伸模組尚未在此報表伺服器上註冊。</value>
+  </data>
+  <data name="rsServerBusy" xml:space="preserve">
+    <value>報表伺服器必須有記憶體或處理資源可使用，才能進一步處理要求。</value>
+  </data>
+  <data name="rsServerConfigurationError" xml:space="preserve">
+    <value>報表伺服器發生組態錯誤。{0}</value>
+  </data>
+  <data name="rsSessionNotFound" xml:space="preserve">
+    <value>無法為使用者找到工作階段 '{0}': '{1}'。</value>
+  </data>
+  <data name="rsSharePointContentDBAccessError" xml:space="preserve">
+    <value>報表伺服器無法存取此 Web 應用程式的內容資料庫。應用程式集區帳戶可能沒有權限。請巡覽至此 SQL Server Reporting Services 服務應用程式的屬性頁，並確認它有適當的權限。</value>
+  </data>
+  <data name="rsSharePointError" xml:space="preserve">
+    <value>報表伺服器發生 SharePoint 錯誤。</value>
+  </data>
+  <data name="rsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>組態參數 SharePointIntegrated 設定為 True，但無法載入 SharePoint 物件模型。錯誤為: {0}。</value>
+  </data>
+  <data name="rsSharePoitScheduleAlreadyExists" xml:space="preserve">
+    <value>排程 '{0}' 已經存在於 SharePoint 網站 '{1}'，因此無法建立或重新命名。排程名稱不是網站內的唯一名稱時會發生此錯誤。</value>
+  </data>
+  <data name="rsSnapshotVersionMismatch" xml:space="preserve">
+    <value>偵測到 SQL Reporting Services 2000 版本快照集。可以嘗試自動升級。</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleError" xml:space="preserve">
+    <value>前序編碼無效。</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleLengthError" xml:space="preserve">
+    <value>前序編碼的長度無效。長度是 {0} 個位元組。</value>
+  </data>
+  <data name="rsStoredCredentialsOutOfSync" xml:space="preserve">
+    <value>資料來源檔案 {0} 無效。修改時未與報表伺服器同步處理。</value>
+  </data>
+  <data name="rsStoredParameterNotFound" xml:space="preserve">
+    <value>找不到 '{0}' 所識別的參數。</value>
+  </data>
+  <data name="rsStreamNotFound" xml:space="preserve">
+    <value>找不到資料流。報表伺服器資料庫中找不到提供給作業的資料流識別碼。</value>
+  </data>
+  <data name="rsStreamOperationFailed" xml:space="preserve">
+    <value>執行資料流作業時發生內部錯誤。如需詳細資料，請參閱錯誤記錄檔。</value>
+  </data>
+  <data name="rsSubreportFromSnapshot" xml:space="preserve">
+    <value>當子報表設定為以報表快照集執行時，不支援此作業。</value>
+  </data>
+  <data name="rsSubscriptionNotFound" xml:space="preserve">
+    <value>找不到訂閱 '{0}'。報表伺服器資料庫中找不到提供給作業的訂閱識別碼。</value>
+  </data>
+  <data name="rsSystemResourcePackageItemContentTypeMismatch" xml:space="preserve">
+    <value>系統資源套件類型要求項目 '{0}' 的內容類型為 '{1}'。</value>
+  </data>
+  <data name="rsSystemResourcePackageItemExtensionMismatch" xml:space="preserve">
+    <value>系統資源套件類型要求項目 '{0}' 的副檔名為 '{1}'。</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataInvalid" xml:space="preserve">
+    <value>系統資源套件中繼資料檔無效。</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataNotFound" xml:space="preserve">
+    <value>系統資源套件不包含 metadata.xml 檔案。</value>
+  </data>
+  <data name="rsSystemResourcePackageReferencedItemMissing" xml:space="preserve">
+    <value>系統資源套件中繼資料參考項目 '{0}'，但找不到該項目。</value>
+  </data>
+  <data name="rsSystemResourcePackageRequiredItemMissing" xml:space="preserve">
+    <value>系統資源套件類型需要項目 '{0}'，但找不到該項目。</value>
+  </data>
+  <data name="rsSystemResourcePackageValidationFailed" xml:space="preserve">
+    <value>系統資源套件無效。</value>
+  </data>
+  <data name="rsSystemResourcePackageWrongType" xml:space="preserve">
+    <value>提供的系統資源封裝不是 '{0}' 類型。</value>
+  </data>
+  <data name="rsTaskNotFound" xml:space="preserve">
+    <value>工作 '{0}' 不存在。</value>
+  </data>
+  <data name="rsUnhandledHttpApplicationError" xml:space="preserve">
+    <value>報表伺服器在 HttpApplication 中發現未處理的例外狀況。</value>
+  </data>
+  <data name="rsUnknownDataSetParameter" xml:space="preserve">
+    <value>嘗試設定未在此資料集中定義的資料集參數 '{0}'。</value>
+  </data>
+  <data name="rsUnknownEventType" xml:space="preserve">
+    <value>嘗試使用未針對此報表伺服器註冊 (供外部使用) 的事件類型 '{0}'。</value>
+  </data>
+  <data name="rsUnknownFeedColumnType" xml:space="preserve">
+    <value>資料摘要資料行 '{0}' 有不支援的資料類型。</value>
+  </data>
+  <data name="rsUnknownReportParameter" xml:space="preserve">
+    <value>嘗試設定未於此報表中定義的報表參數 '{0}'。</value>
+  </data>
+  <data name="rsUnknownUserName" xml:space="preserve">
+    <value>無法辨識使用者或群組名稱 '{0}'。</value>
+  </data>
+  <data name="rsUnrecognizedXmlElement" xml:space="preserve">
+    <value>輸入 XML 不符合 API 文件集:輸入 XML 具有無法辨識的元素 '{0}'。</value>
+  </data>
+  <data name="rsUnsupportedParameterForMode" xml:space="preserve">
+    <value>以 {0} 模式執行的報表伺服器不支援參數 '{1}'。必須將它設為 null。</value>
+  </data>
+  <data name="rsUrlRemapError" xml:space="preserve">
+    <value>無法將 URL '{0}' 對應到此 SharePoint 環境中的公用 URL。</value>
+  </data>
+  <data name="rsUserCannotOwnSubscription" xml:space="preserve">
+    <value>無法將指定的使用者指派為此訂閱的擁有者。使用者沒有訂閱與此訂閱關聯之報表的必要權限。</value>
+  </data>
+  <data name="rsVersionMismatch" xml:space="preserve">
+    <value>Reporting Services SharePoint 增益集與 Reporting Services 服務應用程式的版本不相容，或者不支援這項功能。</value>
+  </data>
+  <data name="rsWinAuthz" xml:space="preserve">
+    <value>當 Reporting Services 嘗試呼叫 Windows Authz API 時，Windows 傳回 {1} 錯誤。若此問題持續發生，可能是 Windows 連線到網域時發生問題，或是 Reporting Services 帳戶可能不具權限可以執行驗證檢查。如需如何診斷問題的詳細資訊，請參閱 Windows Authz 文件。Authz 方法: {0}，錯誤碼: {1}，使用者名稱: {2}。</value>
+  </data>
+  <data name="rsWinAuthz1355" xml:space="preserve">
+    <value>當 Reporting Services 嘗試呼叫 Windows Authz API 時，Windows 傳回 ERROR_NO_SUCH_DOMAIN 錯誤。 若此問題持續發生，可能是 Windows 連線到網域時發生問題。如需如何診斷問題的詳細資訊，請參閱 Windows Authz 文件。Authz 方法: {0}，錯誤碼: 1355，使用者名稱: {1}。</value>
+  </data>
+  <data name="rsWinAuthz5" xml:space="preserve">
+    <value>當 Reporting Services 嘗試呼叫 Windows Authz API 時，Windows 傳回 ERROR_ACCESS_DENIED 錯誤。 若此問題持續發生，可能是 Reporting Services 帳戶不具權限可以執行驗證檢查。如需如何診斷問題的詳細資訊，請參閱 Windows Authz 文件。Authz 方法: {0}，錯誤碼: 5，使用者名稱: {1}。</value>
+  </data>
+  <data name="rsWindowsIntegratedSecurityDisabled" xml:space="preserve">
+    <value>此資料來源設定為使用 Windows 整合式安全性。此報表伺服器已停用 Windows 整合式安全性，或者您的報表伺服器正在使用信任帳戶模式。</value>
+  </data>
+  <data name="rsWrongItemType" xml:space="preserve">
+    <value>此項目類型不允許您嘗試對項目 '{0}' 執行的作業。</value>
+  </data>
+</root>

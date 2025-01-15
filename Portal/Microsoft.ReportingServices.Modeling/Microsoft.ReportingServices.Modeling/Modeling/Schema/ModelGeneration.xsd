@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/sqlserver/2004/10/modelgeneration"
+            elementFormDefault="qualified"
+            xmlns="http://schemas.microsoft.com/sqlserver/2004/10/modelgeneration"
+            xmlns:sm="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" schemaLocation="SemanticModeling.xsd" />
+    <xsd:element name="rules">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="rule" type="RuleType" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attribute name="name" type="xsd:string" use="optional" />
+            <xsd:attribute name="description" type="xsd:string" use="optional" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="RuleType" abstract="true">
+        <xsd:sequence>
+            <xsd:element name="filter" type="FilterType" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="optional" />
+        <xsd:attribute name="description" type="xsd:string" use="optional" />
+        <xsd:attribute name="enabled" type="xsd:boolean" use="optional" default="true" />
+    </xsd:complexType>
+    <xsd:complexType name="ProcessingRuleType" abstract="true">
+        <xsd:complexContent>
+            <xsd:extension base="RuleType">
+                <xsd:sequence>
+                    <xsd:element name="renamer" type="RenamerType" minOccurs="0" maxOccurs="unbounded" />
+                </xsd:sequence>
+                <xsd:attribute name="makeFriendlyName" type="xsd:boolean" use="optional" default="true" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="FilterType" abstract="true" />
+    <xsd:complexType name="RenamerType">
+        <xsd:attribute name="match" type="xsd:string" use="required" />
+        <xsd:attribute name="replace" type="xsd:string" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="EvaluateDsvItemRule">
+        <xsd:complexContent>
+            <xsd:extension base="RuleType">
+                <xsd:attribute name="semantics" use="required">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="Include" />
+                            <xsd:enumeration value="Exclude" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+                <xsd:attribute name="dsvItemType" use="optional">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="Table" />
+                            <xsd:enumeration value="SystemTable" />
+                            <xsd:enumeration value="View" />
+                            <xsd:enumeration value="SystemView" />
+                            <xsd:enumeration value="Column" />
+                            <xsd:enumeration value="Relation" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="EntityRuleBase" abstract="true">
+        <xsd:complexContent>
+            <xsd:extension base="ProcessingRuleType">
+                <xsd:sequence>
+                    <xsd:element ref="sm:EntityFolder" minOccurs="0" />
+                    <xsd:element ref="sm:Entity" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateEntityRule">
+        <xsd:complexContent>
+            <xsd:extension base="EntityRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateColumnEntityRule">
+        <xsd:complexContent>
+            <xsd:extension base="EntityRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="AttributeRuleBase" abstract="true">
+        <xsd:complexContent>
+            <xsd:extension base="ProcessingRuleType">
+                <xsd:sequence>
+                    <xsd:element ref="sm:FieldFolder" minOccurs="0" />
+                    <xsd:element ref="sm:Attribute" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateCountAttributeRule">
+        <xsd:complexContent>
+            <xsd:extension base="AttributeRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateAttributeRule">
+        <xsd:complexContent>
+            <xsd:extension base="AttributeRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateVariationAttributeRule">
+        <xsd:complexContent>
+            <xsd:extension base="ProcessingRuleType">
+                <xsd:sequence>
+                    <xsd:element ref="sm:Attribute" maxOccurs="unbounded" />
+                </xsd:sequence>
+                <xsd:attribute name="setFirstAsDefaultAggregate" type="xsd:boolean" use="optional" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="CreateRoleRule">
+        <xsd:complexContent>
+            <xsd:extension base="ProcessingRuleType">
+                <xsd:sequence>
+                    <xsd:element name="source" minOccurs="0">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element ref="sm:FieldFolder" minOccurs="0" />
+                                <xsd:element ref="sm:Role" />
+                            </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="target" minOccurs="0">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element ref="sm:FieldFolder" minOccurs="0" />
+                                <xsd:element ref="sm:Role" />
+                            </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:sequence>
+                <xsd:attribute name="useColumnNames" type="xsd:boolean" use="optional" default="true" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="SetEntityPropertiesRule">
+        <xsd:complexContent>
+            <xsd:extension base="EntityRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="SetEntityAttributesRule">
+        <xsd:complexContent>
+            <xsd:extension base="ProcessingRuleType">
+                <xsd:sequence>
+                    <xsd:element name="scoreModifier" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="filter" type="FilterType" maxOccurs="unbounded" />
+                            </xsd:sequence>
+                            <xsd:attribute name="offset" type="xsd:int" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:sequence>
+                <xsd:attribute name="assignTo" use="required">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="IdentifyingAttributes" />
+                            <xsd:enumeration value="DefaultDetailAttributes" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+                <xsd:attribute name="targetScore" type="xsd:int" use="optional" />
+                <xsd:attribute name="targetCount" use="optional">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+                <xsd:attribute name="enableDrillthrough" type="xsd:boolean" use="optional" />
+                <xsd:attribute name="contextualName" type="sm:AttributeContextualNameEnum" use="optional" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="SetAttributePropertiesRule">
+        <xsd:complexContent>
+            <xsd:extension base="AttributeRuleBase" />
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="FilterGroup">
+        <xsd:complexContent>
+            <xsd:extension base="FilterType">
+                <xsd:sequence>
+                    <xsd:element name="filter" type="FilterType" maxOccurs="unbounded" />
+                </xsd:sequence>
+                <xsd:attribute name="operator" use="required">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="And" />
+                            <xsd:enumeration value="Or" />
+                            <xsd:enumeration value="NotAnd" />
+                            <xsd:enumeration value="NotOr" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PropertyFilter">
+        <xsd:complexContent>
+            <xsd:extension base="FilterType">
+                <xsd:attribute name="property" type="xsd:string" use="required" />
+                <xsd:attribute name="value" type="xsd:string" use="optional" />
+                <xsd:attribute name="range" type="xsd:string" use="optional" />
+                <xsd:attribute name="pattern" type="xsd:string" use="optional" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="NameFilter">
+        <xsd:complexContent>
+            <xsd:extension base="FilterType">
+                <xsd:attribute name="value" type="xsd:string" use="optional" />
+                <xsd:attribute name="pattern" type="xsd:string" use="optional" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="RowCountFilter">
+        <xsd:complexContent>
+            <xsd:extension base="FilterType">
+                <xsd:attribute name="count" type="xsd:string" use="required" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="FieldCountFilter">
+        <xsd:complexContent>
+            <xsd:extension base="FilterType">
+                <xsd:attribute name="count" type="xsd:string" use="required" />
+                <xsd:attribute name="fieldType" use="optional">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="Attribute" />
+                            <xsd:enumeration value="Role" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+                <xsd:attribute name="hidden" type="xsd:boolean" use="optional" />
+                <xsd:attribute name="isAggregate" type="xsd:boolean" use="optional" />
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>

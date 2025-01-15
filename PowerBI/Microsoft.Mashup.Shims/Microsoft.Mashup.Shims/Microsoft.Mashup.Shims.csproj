@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{1AE54070-3803-40DE-AAFA-CB7B676509B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Mashup.Shims</RootNamespace>
+    <AssemblyName>Microsoft.Mashup.Shims</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="Microsoft\Mashup\Security\AesCryptoProvider.cs" />
+    <Compile Include="Microsoft\Mashup\Security\Impersonation.cs" />
+    <Compile Include="Microsoft\Mashup\Security\RNGCryptoProvider.cs" />
+    <Compile Include="Microsoft\Mashup\Security\SHA256CryptoProvider.cs" />
+    <Compile Include="Microsoft\Mashup\Security\UserProtectedDataServices.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Debug\DebuggingUtilities.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interop\DllImportHelper.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\ManualResetWaitableEvent.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\MutexFactory.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\NamedSemaphore.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\SandboxHelpers.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\ShellExecuteHelper.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Interprocess\Waitable.cs" />
+    <Compile Include="Microsoft\Mashup\Shims\Json\Json.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReleaseInfo.cs" />
+    <Compile Include="System\IO\PathHelpers.cs" />
+    <Compile Include="System\Reflection\AssemblyExtensions.cs" />
+    <Compile Include="System\Runtime\InteropServices\MarshalHelpers.cs" />
+    <Compile Include="System\Runtime\InteropServices\OSPlatform.cs" />
+    <Compile Include="System\Runtime\InteropServices\RuntimeInformation.cs" />
+    <Compile Include="System\Runtime\InteropServices\SafeHandleZeroIsInvalid.cs" />
+    <Compile Include="System\UriExtensions.cs" />
+    <Compile Include="System\Web\Script\Serialization\JavaScriptConverter.cs" />
+    <Compile Include="System\Web\Script\Serialization\JavaScriptSerializerExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02F3B930-F8C8-4594-BD32-8C40D6A0AA5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Owin.StaticFiles</RootNamespace>
+    <AssemblyName>Microsoft.Owin.StaticFiles</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Owin.FileSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\Owin\SendFileResponseExtensions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Constants.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\ContentTypes\FileExtensionContentTypeProvider.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\ContentTypes\IContentTypeProvider.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DefaultFilesMiddleware.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DefaultFilesOptions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DirectoryBrowserMiddleware.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DirectoryBrowserOptions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DirectoryFormatters\HtmlDirectoryFormatter.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\DirectoryFormatters\IDirectoryFormatter.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\FileServerOptions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Helpers.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Infrastructure\RangeHelpers.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Infrastructure\SharedOptions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Infrastructure\SharedOptionsBase.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Microsoft\Owin\StaticFiles\SendFileExtensions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\SendFileMiddleware.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\StaticFileContext.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\StaticFileMiddleware.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\StaticFileOptions.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\StaticFileResponseContext.cs" />
+    <Compile Include="Microsoft\Owin\StaticFiles\StreamCopyOperation.cs" />
+    <Compile Include="Owin\DefaultFilesExtensions.cs" />
+    <Compile Include="Owin\DirectoryBrowserExtensions.cs" />
+    <Compile Include="Owin\FileServerExtensions.cs" />
+    <Compile Include="Owin\StaticFileExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Owin\StaticFiles\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

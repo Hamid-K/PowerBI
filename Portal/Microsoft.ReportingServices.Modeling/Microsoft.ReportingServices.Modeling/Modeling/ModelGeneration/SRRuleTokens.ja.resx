@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CountAggregateAttributeName" xml:space="preserve">
+    <value>#$1</value>
+  </data>
+  <data name="CreateAttributesRuleDescription" xml:space="preserve">
+    <value>検出された列ごとに属性を作成します。</value>
+  </data>
+  <data name="CreateAttributesRuleName" xml:space="preserve">
+    <value>属性の作成。</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleDescription" xml:space="preserve">
+    <value>自動増加列ごとに非表示属性を作成します。</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleName" xml:space="preserve">
+    <value>自動増加列に属性を作成。</value>
+  </data>
+  <data name="CreateCountAggregatesRuleDescription" xml:space="preserve">
+    <value>新しいエンティティごとに Count 集計を作成します。</value>
+  </data>
+  <data name="CreateCountAggregatesRuleName" xml:space="preserve">
+    <value>カウント集計の作成。</value>
+  </data>
+  <data name="CreateDateAggregatesRuleDescription" xml:space="preserve">
+    <value>日付属性に対する First 集計および Last 集計を作成します。</value>
+  </data>
+  <data name="CreateDateAggregatesRuleName" xml:space="preserve">
+    <value>日付集計の作成。</value>
+  </data>
+  <data name="CreateDateVariationsRuleDescription" xml:space="preserve">
+    <value>異なる日付部分に基づいた日付属性のバリエーションを作成します。</value>
+  </data>
+  <data name="CreateDateVariationsRuleName" xml:space="preserve">
+    <value>日付バリエーションの作成。</value>
+  </data>
+  <data name="CreateEntitiesRuleDescription" xml:space="preserve">
+    <value>検出されたテーブルごとにエンティティを作成します。</value>
+  </data>
+  <data name="CreateEntitiesRuleName" xml:space="preserve">
+    <value>すべてのテーブルにエンティティを作成。</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleDescription" xml:space="preserve">
+    <value>検出された空以外の列ごとに属性を作成します。</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleName" xml:space="preserve">
+    <value>空以外の列に属性を作成。</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleDescription" xml:space="preserve">
+    <value>検出された空以外のテーブルごとにエンティティを作成します。</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleName" xml:space="preserve">
+    <value>空以外のテーブルにエンティティを作成。</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleDescription" xml:space="preserve">
+    <value>数値属性の Sum、Avg、Min、および Max 集計を作成します。</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleName" xml:space="preserve">
+    <value>数値集計の作成。</value>
+  </data>
+  <data name="CreateRolesRuleDescription" xml:space="preserve">
+    <value>検出されたリレーションシップごとにロールを作成します。</value>
+  </data>
+  <data name="CreateRolesRuleName" xml:space="preserve">
+    <value>ロールの作成。</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleDescription" xml:space="preserve">
+    <value>時刻属性に対する First 集計および Last 集計を作成します。</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleName" xml:space="preserve">
+    <value>時刻集計の作成。</value>
+  </data>
+  <data name="DateAggregateMaxName" xml:space="preserve">
+    <value>最後の {AttributeName}</value>
+  </data>
+  <data name="DateAggregateMinName" xml:space="preserve">
+    <value>最初の {AttributeName}</value>
+  </data>
+  <data name="DateFormattingRuleDescription" xml:space="preserve">
+    <value>日付属性に日付のみの書式を設定します。</value>
+  </data>
+  <data name="DateFormattingRuleName" xml:space="preserve">
+    <value>日付の書式設定。</value>
+  </data>
+  <data name="DateVariationDayName" xml:space="preserve">
+    <value>{AttributeName} 日</value>
+  </data>
+  <data name="DateVariationMonthName" xml:space="preserve">
+    <value>{AttributeName} 月</value>
+  </data>
+  <data name="DateVariationQuarterName" xml:space="preserve">
+    <value>{AttributeName} 四半期</value>
+  </data>
+  <data name="DateVariationYearName" xml:space="preserve">
+    <value>{AttributeName} 年</value>
+  </data>
+  <data name="DateVariation_DateOfX_Date" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="DateVariation_DateOfX_Of" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="DateVariation_QuarterFormat" xml:space="preserve">
+    <value>Q0</value>
+  </data>
+  <data name="DecimalFormattingRuleDescription" xml:space="preserve">
+    <value>10 進数属性の書式を設定します。</value>
+  </data>
+  <data name="DecimalFormattingRuleName" xml:space="preserve">
+    <value>10 進数の書式設定。</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="DefaultMimeTypeRuleDescription" xml:space="preserve">
+    <value>バイナリ属性に既定の MIME の種類を設定します。</value>
+  </data>
+  <data name="DefaultMimeTypeRuleName" xml:space="preserve">
+    <value>既定の MIME の種類。</value>
+  </data>
+  <data name="DiscourageGroupingRuleDescription" xml:space="preserve">
+    <value>一意性が高い属性のグループ化を防止します。</value>
+  </data>
+  <data name="DiscourageGroupingRuleName" xml:space="preserve">
+    <value>グループ化を防止。</value>
+  </data>
+  <data name="DropdownValueSelectionRuleDescription" xml:space="preserve">
+    <value>いくつか一意の値を持つ属性にドロップダウンによる値の選択を設定します。</value>
+  </data>
+  <data name="DropdownValueSelectionRuleName" xml:space="preserve">
+    <value>ドロップダウンによる値の選択。</value>
+  </data>
+  <data name="ExcludeAuditColumnsRuleName" xml:space="preserve">
+    <value>監査列の除外。</value>
+  </data>
+  <data name="ExcludeSystemTablesRuleName" xml:space="preserve">
+    <value>システム テーブルの除外。</value>
+  </data>
+  <data name="ExcludeSystemViewsRuleName" xml:space="preserve">
+    <value>システム ビューの除外。</value>
+  </data>
+  <data name="FloatFormattingRuleDescription" xml:space="preserve">
+    <value>浮動小数点数の数値属性の書式を設定します。</value>
+  </data>
+  <data name="FloatFormattingRuleName" xml:space="preserve">
+    <value>浮動小数点数の書式設定。</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_ForeignKey" xml:space="preserve">
+    <value>ID|Code|Key|Number|Num</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_NoAggregates" xml:space="preserve">
+    <value>ID|Code|Key</value>
+  </data>
+  <data name="IdentifyingAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="IdentifyingAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="IncludeColumnsRuleName" xml:space="preserve">
+    <value>すべてのユーザー列を含める。</value>
+  </data>
+  <data name="IncludeRelationsRuleName" xml:space="preserve">
+    <value>すべてのユーザー リレーションを含める。</value>
+  </data>
+  <data name="IncludeUserTablesRuleName" xml:space="preserve">
+    <value>すべてのユーザー テーブルを含める。</value>
+  </data>
+  <data name="IncludeUserViewsRuleName" xml:space="preserve">
+    <value>すべてのユーザー ビューを含める。</value>
+  </data>
+  <data name="IntegerFormattingRuleDescription" xml:space="preserve">
+    <value>整数属性の書式を設定します。</value>
+  </data>
+  <data name="IntegerFormattingRuleName" xml:space="preserve">
+    <value>整数の書式設定。</value>
+  </data>
+  <data name="ListValueSelectionRuleDescription" xml:space="preserve">
+    <value>適当な数の一意の値を持つ属性に一覧値選択を設定します。</value>
+  </data>
+  <data name="ListValueSelectionRuleName" xml:space="preserve">
+    <value>一覧値選択。</value>
+  </data>
+  <data name="LookupFolderName" xml:space="preserve">
+    <value>参照</value>
+  </data>
+  <data name="MarkLargeListsRuleDescription" xml:space="preserve">
+    <value>多数のインスタンスを持つエンティティの場合、フィルターされたリストから選択します。</value>
+  </data>
+  <data name="MarkLargeListsRuleName" xml:space="preserve">
+    <value>大きい一覧。</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleDescription" xml:space="preserve">
+    <value>1 つの属性を持つエンティティを参照エンティティと見なします。</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleName" xml:space="preserve">
+    <value>参照エンティティ。</value>
+  </data>
+  <data name="MarkMediumListsRuleDescription" xml:space="preserve">
+    <value>中程度の数のインスタンスを持つエンティティに一覧選択を使用します。</value>
+  </data>
+  <data name="MarkMediumListsRuleName" xml:space="preserve">
+    <value>中程度の一覧。</value>
+  </data>
+  <data name="MarkSmallListsRuleDescription" xml:space="preserve">
+    <value>少数のインスタンスを持つエンティティの場合、ドロップダウンから選択します。</value>
+  </data>
+  <data name="MarkSmallListsRuleName" xml:space="preserve">
+    <value>小さい一覧。</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleDescription" xml:space="preserve">
+    <value>非常に多数のインスタンスを持つエンティティの場合、フィルター選択を強制的に使用します。</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleName" xml:space="preserve">
+    <value>非常に大きい一覧。</value>
+  </data>
+  <data name="NumericAggregateAvgName" xml:space="preserve">
+    <value>平均 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMaxName" xml:space="preserve">
+    <value>最大 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMinName" xml:space="preserve">
+    <value>最小 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateSumName" xml:space="preserve">
+    <value>合計 {AttributeName}</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleDescription" xml:space="preserve">
+    <value>数値属性および日付属性の降順での並べ替えを設定します。</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleName" xml:space="preserve">
+    <value>数値/日付の書式設定。</value>
+  </data>
+  <data name="RoleNameOnlyRuleDescription" xml:space="preserve">
+    <value>汎用的な名前が付いた識別属性のみにロール名を使用します。</value>
+  </data>
+  <data name="RoleNameOnlyRuleName" xml:space="preserve">
+    <value>ロール名のみ。</value>
+  </data>
+  <data name="RoleOnlyContextualNames" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description|Type</value>
+  </data>
+  <data name="RulesDescription" xml:space="preserve">
+    <value>データ ソース ビューからセマンティック モデルの生成に使用される標準ルール。</value>
+  </data>
+  <data name="RulesName" xml:space="preserve">
+    <value>既定のモデル生成ルール</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleDescription" xml:space="preserve">
+    <value>各エンティティに既定の詳細属性を設定します。</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleName" xml:space="preserve">
+    <value>既定の詳細属性の設定。</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleDescription" xml:space="preserve">
+    <value>エンティティごとに識別属性を設定します。</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleName" xml:space="preserve">
+    <value>識別属性の設定。</value>
+  </data>
+  <data name="TimeAggregateMaxName" xml:space="preserve">
+    <value>最後の {AttributeName}</value>
+  </data>
+  <data name="TimeAggregateMinName" xml:space="preserve">
+    <value>最初の {AttributeName}</value>
+  </data>
+</root>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateOfBinaryExpression" xml:space="preserve">
+    <value>В данном запросе агрегатная функция применяется к выражению, имеющему тип больших значений. Применение статистических функций к выражениям с типом больших значений невозможно.</value>
+  </data>
+  <data name="ConnectionNotOpen" xml:space="preserve">
+    <value>Соединение не было открыто.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>Сразу несколько параметров запроса используют имя "{0}".</value>
+  </data>
+  <data name="ErrorExecutingSemanticQuery" xml:space="preserve">
+    <value>Выполнение семантического запроса завершилось с ошибкой. {0}</value>
+  </data>
+  <data name="GroupingByBlob" xml:space="preserve">
+    <value>Запрос содержит группирование, основанное на выражении "{0}", которое возвращает тип больших значений. Такие выражения не могут использоваться в группированиях.</value>
+  </data>
+  <data name="InvalidCommandType" xml:space="preserve">
+    <value>Команды семантического запроса должны использовать CommandType.Text.</value>
+  </data>
+  <data name="InvalidConfiguration" xml:space="preserve">
+    <value>Не удалось выполнить синтаксический анализ конфигурации {0}. Проверьте правильность конфигурации. Подробности: {1}.</value>
+  </data>
+  <data name="QueryNotSet" xml:space="preserve">
+    <value>Запрос не был установлен. Перед выполнением запроса необходимо вызвать метод SetQuery.</value>
+  </data>
+  <data name="SemanticQueryCompilationError" xml:space="preserve">
+    <value>Компиляция семантического запроса завершилась с ошибкой: {0}.</value>
+  </data>
+  <data name="SemanticQueryEngineLocalizedName" xml:space="preserve">
+    <value>Обработчик семантических запросов</value>
+  </data>
+  <data name="SemanticQueryEngineNotInitialized" xml:space="preserve">
+    <value>Обработчик семантических запросов не был инициализирован. Для установки имен модели и модулей обработки данных необходимо вызвать метод Initialize.</value>
+  </data>
+  <data name="SqlModelGeneratorLocalizedName" xml:space="preserve">
+    <value>Генератор семантических моделей SQL Server</value>
+  </data>
+</root>

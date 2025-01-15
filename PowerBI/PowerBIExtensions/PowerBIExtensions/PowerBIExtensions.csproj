@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{837DF076-818A-48E5-957E-F5EC6F71EA01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PowerBIExtensions</RootNamespace>
+    <AssemblyName>PowerBIExtensions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReleaseInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PowerBIExtensions.AIInsights.mez" />
+    <EmbeddedResource Include="PowerBIExtensions.appFigures.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.AzureConsumptionInsights.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.AzureDevOpsServer.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.AzureEnterprise.mez" />
+    <EmbeddedResource Include="PowerBIExtensions.BigQuery.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Cdm.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Cdsa.Dataflows.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.CDSTOData.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.DataLake.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.DataWorld.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.DocumentDB.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Dynamics365BusinessCentral.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Dynamics365BusinessCentralOnPremises.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.DynamicsNav.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.GitHub.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Hive.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Impala.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Kusto.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Linkedin.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.MailChimp.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Marketo.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Mixpanel.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Netezza.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.PlanviewEnterprise.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Projectplace.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Python.mez" />
+    <EmbeddedResource Include="PowerBIExtensions.QuickBooks.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.QuickBooksOnline.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.R.mez" />
+    <EmbeddedResource Include="PowerBIExtensions.Redshift.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Smartsheet.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Snowflake.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Spark.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.SparkPost.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Stripe.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.SweetIQ.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Troux.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.twilio.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Vertica.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.VSTS.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.Webtrends.pqx" />
+    <EmbeddedResource Include="PowerBIExtensions.zendesk.pqx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

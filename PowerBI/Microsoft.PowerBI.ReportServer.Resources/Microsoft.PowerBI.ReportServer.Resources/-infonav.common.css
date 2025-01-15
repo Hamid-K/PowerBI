@@ -1,0 +1,203 @@
+/*------------------------------------------------------------------
+  <copyright company="Microsoft">
+	   Copyright (c) Microsoft.  All rights reserved.
+  </copyright>
+------------------------------------------------------------------*/
+/**
+  * This CSS file must not contain any global element style definitions 
+  * Every element in this file must be prefixed with infonav- namespace
+  */
+::-ms-clear {
+  /* This gets rid of the IE input clear button */
+  display: none;
+}
+.ui-widget {
+  font-family: Segoe UI, Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+/* Start Common Styles*/
+.hidden {
+  display: none;
+}
+/* End Common Styles*/
+/* Error Message Styles */
+.infonav-errorInfoHeader {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.infonav-errorTitle {
+  margin-bottom: 20px;
+}
+.infonav-errorDetail {
+  color: gray;
+  margin-bottom: 20px;
+}
+/* END Error Message Styles */
+/* Modal Dialog Styles */
+.infonav-modalContainer {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  z-index: 300;
+  font-family: Segoe UI, Segoe, Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.infonav-modalContainer .infonav-linkIcon {
+  margin-left: 5px;
+  vertical-align: sub;
+}
+.infonav-modalContainer .trial-success-dialog {
+  max-width: 540px;
+  color: var(--gray-180, #252423);
+}
+.infonav-modalContainer .trial-success-dialog .infonav-dialogContent {
+  padding: 10px 0;
+}
+.infonav-modalContainer .trial-success-dialog .infonav-dialogTitle {
+  font-weight: 600;
+  font-size: 20px;
+}
+.infonav-modalContainer .infonav-modalDialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 750px;
+  background: var(--white-color, #FFF);
+  border: var(--neutral-tertiary-color, #A6A6A6) solid 1px;
+  box-shadow: 0px 0px 20px var(--neutral-tertiary-color, #A6A6A6);
+  outline: none;
+  overflow: hidden;
+}
+@media screen and (max-width: 750px) {
+  .infonav-modalContainer .infonav-modalDialog {
+    position: unset;
+    width: 100%;
+  }
+}
+.infonav-modalContainer.small .infonav-modalDialog {
+  width: 550px;
+}
+.infonav-modalContainer .infonav-dialogLayout {
+  padding: 20px;
+}
+.infonav-modalContainer .infonav-dialogContent {
+  padding: 15px 0px 5px 0px;
+  max-height: 700px;
+  overflow: auto;
+}
+.infonav-modalContainer .infonav-dialogContent .infonav-dialogContentNotification {
+  padding: 10px 8px 10px 0px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.infonav-modalContainer .infonav-dialogContent .infonav-dialogContentNotification .infonav-dialogContentNotificationText {
+  padding-right: 8px;
+}
+.infonav-modalContainer .infonav-dialogContent .typeWarning {
+  background-color: #FFF9AE;
+}
+.infonav-modalContainer .infonav-dialogContent .typeSecurityWarning {
+  background-color: #FFF9AE;
+}
+.infonav-modalContainer .infonav-dialogContent .typeInfo {
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: var(--gray-20, #F3F2F1);
+  color: var(--gray-180, #252423);
+}
+.infonav-modalContainer .infonav-dialogContent .infonav-dialogContentNotification .glyphicon {
+  padding: 0px 8px 0px 8px;
+  font-size: 16px;
+  color: var(--gray-140, #484644);
+}
+.infonav-modalContainer .infonav-dialogTitle {
+  font-size: 24px;
+  margin-top: -6px;
+}
+.infonav-modalContainer .infonav-dialogCloseIcon {
+  display: inline-flex !important;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background-image: url("InfoNav-Sprites.png");
+  background-position: -36px -24px;
+  cursor: pointer;
+  height: 14px;
+  width: 13px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+html[data-focus-source="key"] .infonav-modalContainer .infonav-dialogCloseIcon:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+[dir="rtl"] .infonav-modalContainer .infonav-dialogCloseIcon {
+  right: auto;
+  left: 20px;
+}
+.infonav-modalContainer .infonav-dialogActions {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex: 1 0 auto;
+  text-align: right;
+  min-height: 32px;
+}
+.infonav-modalContainer .infonav-dialogActions-footer {
+  justify-content: space-between;
+  align-items: end;
+}
+[dir="rtl"] .infonav-modalContainer .infonav-dialogActions {
+  text-align: left;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"] {
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 60px;
+  padding: 5px 34px;
+  font-family: "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  outline: none;
+  background-color: #8EBBDD;
+  border: 1px solid #8EBBDD;
+  color: white;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:hover {
+  color: white;
+  background-color: #0072C6;
+  border-color: #0072C6;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:focus {
+  color: white;
+  background-color: #8EBBDD;
+  border-color: #0072C6;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:focus:hover {
+  color: white;
+  background-color: #0072C6;
+  border-color: #0072C6;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:disabled {
+  color: white;
+  border-color: #C4C4C4;
+  background-color: #C4C4C4;
+  cursor: default;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:disabled:active {
+  color: white;
+  border-color: #C4C4C4;
+  background-color: #C4C4C4;
+  cursor: default;
+}
+.infonav-modalContainer .infonav-dialogActions input[type="button"]:active {
+  background-color: #8EBBDD;
+  border: 1px solid #8EBBDD;
+  color: white;
+}
+/* END Modal Dialog Styles */

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rdlValidationInvalidElement" xml:space="preserve">
+    <value>報表定義元素 '{0}' 在行 {2} 位置 {3} 上包含一個以上的類型 '{1}' 子元素。</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedAttribute" xml:space="preserve">
+    <value>元素 {1} 內的屬性 '{0}' 無效。第 {2} 行，位置 {3} 的 '{0}'。</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedElement" xml:space="preserve">
+    <value>元素 '{0}' 在父元素 {1} 中無效。於行 {2}、位置 {3} 發生 '{0}'。</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceAttribute" xml:space="preserve">
+    <value>屬性 '{0}' 不是有效的 Rdl 屬性。不允許命名空間 '{1}' 中的屬性。第 {2} 行，位置 {3} 的 '{0}'。</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceElement" xml:space="preserve">
+    <value>元素 '{0}' 不是有效的 Rdl 元素。不允許命名空間 '{1}' 中的元素。第 {2} 行，位置 {3} 的 '{0}'。</value>
+  </data>
+  <data name="rdlValidationInvalidParent" xml:space="preserve">
+    <value>命名空間 '{1}' 中的報表定義元素 '{0}' 在行 {3}、位置 {4} 處有無效的父系 '{2}'。</value>
+  </data>
+  <data name="rdlValidationMissingChildElement" xml:space="preserve">
+    <value>報表定義元素 '{0}' 在行 {2} 位置 {3} 上是空的。遺漏類型 '{1}' 的強制性子元素。</value>
+  </data>
+  <data name="rdlValidationMultipleUndefinedSchemaNamespaces" xml:space="preserve">
+    <value>屬性 '{1}' 內的前置詞 '{0}' 於第 {2} 行的位置 {3} 處沒有任何定義的結構描述。</value>
+  </data>
+  <data name="rdlValidationNoElementDecl" xml:space="preserve">
+    <value>在命名空間 {2} 中找不到位於第 {3} 行之報表定義元素 '{0}' 的宣告。請重新考慮元素 '{1}' 的正確命名空間，並用適當的前置詞修改此元素。</value>
+  </data>
+  <data name="rdlValidationUndefinedSchemaNamespace" xml:space="preserve">
+    <value>屬性 '{1}' 內的前置詞 '{0}' 於第 {2} 行的位置 {3} 處沒有任何定義的結構描述。</value>
+  </data>
+  <data name="rdlValidationUnknownRequiredNamespaces" xml:space="preserve">
+    <value>前置詞為 '{1}' 的結構描述 '{0}' 為必要項目，但第 {3} 行位置 {4} 處的 {2} 不知道該項目。</value>
+  </data>
+  <data name="rdlValidationUnsupportedSchema" xml:space="preserve">
+    <value>此 Reporting Services 版本不支援第 {2} 行的位置 {3} 處有前置詞為 '{1}' 的結構描述 {0}。</value>
+  </data>
+</root>

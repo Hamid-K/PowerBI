@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CountAggregateAttributeName" xml:space="preserve">
+    <value>#$1</value>
+  </data>
+  <data name="CreateAttributesRuleDescription" xml:space="preserve">
+    <value>Create an attribute for each discovered column.</value>
+  </data>
+  <data name="CreateAttributesRuleName" xml:space="preserve">
+    <value>Create attributes.</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleDescription" xml:space="preserve">
+    <value>Create a hidden attribute for each auto-increment column.</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleName" xml:space="preserve">
+    <value>Create attributes for auto-increment columns.</value>
+  </data>
+  <data name="CreateCountAggregatesRuleDescription" xml:space="preserve">
+    <value>Create a Count aggregate for each new entity.</value>
+  </data>
+  <data name="CreateCountAggregatesRuleName" xml:space="preserve">
+    <value>Create count aggregates.</value>
+  </data>
+  <data name="CreateDateAggregatesRuleDescription" xml:space="preserve">
+    <value>Create First, Last aggregates for date attributes.</value>
+  </data>
+  <data name="CreateDateAggregatesRuleName" xml:space="preserve">
+    <value>Create date aggregates.</value>
+  </data>
+  <data name="CreateDateVariationsRuleDescription" xml:space="preserve">
+    <value>Create variations for date attributes based on different date parts.</value>
+  </data>
+  <data name="CreateDateVariationsRuleName" xml:space="preserve">
+    <value>Create date variations.</value>
+  </data>
+  <data name="CreateEntitiesRuleDescription" xml:space="preserve">
+    <value>Create an entity for each discovered table.</value>
+  </data>
+  <data name="CreateEntitiesRuleName" xml:space="preserve">
+    <value>Create entities for all tables.</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleDescription" xml:space="preserve">
+    <value>Create an attribute for each discovered non-empty column.</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleName" xml:space="preserve">
+    <value>Create attributes for non-empty columns.</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleDescription" xml:space="preserve">
+    <value>Create an entity for each discovered non-empty table.</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleName" xml:space="preserve">
+    <value>Create entities for non-empty tables.</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleDescription" xml:space="preserve">
+    <value>Create Sum, Avg, Min, and Max aggregates for numeric attributes.</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleName" xml:space="preserve">
+    <value>Create numeric aggregates.</value>
+  </data>
+  <data name="CreateRolesRuleDescription" xml:space="preserve">
+    <value>Create roles for each discovered relationship.</value>
+  </data>
+  <data name="CreateRolesRuleName" xml:space="preserve">
+    <value>Create roles.</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleDescription" xml:space="preserve">
+    <value>Create First, Last aggregates for time attributes.</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleName" xml:space="preserve">
+    <value>Create time aggregates.</value>
+  </data>
+  <data name="DateAggregateMaxName" xml:space="preserve">
+    <value>Last {AttributeName}</value>
+  </data>
+  <data name="DateAggregateMinName" xml:space="preserve">
+    <value>First {AttributeName}</value>
+  </data>
+  <data name="DateFormattingRuleDescription" xml:space="preserve">
+    <value>Set date-only formatting on date attributes.</value>
+  </data>
+  <data name="DateFormattingRuleName" xml:space="preserve">
+    <value>Date formatting.</value>
+  </data>
+  <data name="DateVariationDayName" xml:space="preserve">
+    <value>{AttributeName} Day</value>
+  </data>
+  <data name="DateVariationMonthName" xml:space="preserve">
+    <value>{AttributeName} Month</value>
+  </data>
+  <data name="DateVariationQuarterName" xml:space="preserve">
+    <value>{AttributeName} Quarter</value>
+  </data>
+  <data name="DateVariationYearName" xml:space="preserve">
+    <value>{AttributeName} Year</value>
+  </data>
+  <data name="DateVariation_DateOfX_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateVariation_DateOfX_Of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="DateVariation_QuarterFormat" xml:space="preserve">
+    <value>Q0</value>
+  </data>
+  <data name="DecimalFormattingRuleDescription" xml:space="preserve">
+    <value>Set formatting on decimal attributes.</value>
+  </data>
+  <data name="DecimalFormattingRuleName" xml:space="preserve">
+    <value>Decimal formatting.</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="DefaultMimeTypeRuleDescription" xml:space="preserve">
+    <value>Set default mime type on binary attributes.</value>
+  </data>
+  <data name="DefaultMimeTypeRuleName" xml:space="preserve">
+    <value>Default mime type.</value>
+  </data>
+  <data name="DiscourageGroupingRuleDescription" xml:space="preserve">
+    <value>Discourage grouping for attributes with high uniqueness.</value>
+  </data>
+  <data name="DiscourageGroupingRuleName" xml:space="preserve">
+    <value>Discourage grouping.</value>
+  </data>
+  <data name="DropdownValueSelectionRuleDescription" xml:space="preserve">
+    <value>Set dropdown value selection on attributes with few unique values.</value>
+  </data>
+  <data name="DropdownValueSelectionRuleName" xml:space="preserve">
+    <value>Dropdown value selection.</value>
+  </data>
+  <data name="ExcludeAuditColumnsRuleName" xml:space="preserve">
+    <value>Exclude audit columns.</value>
+  </data>
+  <data name="ExcludeSystemTablesRuleName" xml:space="preserve">
+    <value>Exclude system tables.</value>
+  </data>
+  <data name="ExcludeSystemViewsRuleName" xml:space="preserve">
+    <value>Exclude system views.</value>
+  </data>
+  <data name="FloatFormattingRuleDescription" xml:space="preserve">
+    <value>Set formatting on floating-point numeric attributes.</value>
+  </data>
+  <data name="FloatFormattingRuleName" xml:space="preserve">
+    <value>Float formatting.</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_ForeignKey" xml:space="preserve">
+    <value>ID|Code|Key|Number|Num</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_NoAggregates" xml:space="preserve">
+    <value>ID|Code|Key</value>
+  </data>
+  <data name="IdentifyingAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="IdentifyingAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="IncludeColumnsRuleName" xml:space="preserve">
+    <value>Include all user columns.</value>
+  </data>
+  <data name="IncludeRelationsRuleName" xml:space="preserve">
+    <value>Include all user relations.</value>
+  </data>
+  <data name="IncludeUserTablesRuleName" xml:space="preserve">
+    <value>Include all user tables.</value>
+  </data>
+  <data name="IncludeUserViewsRuleName" xml:space="preserve">
+    <value>Include all user views.</value>
+  </data>
+  <data name="IntegerFormattingRuleDescription" xml:space="preserve">
+    <value>Set formatting on integer attributes.</value>
+  </data>
+  <data name="IntegerFormattingRuleName" xml:space="preserve">
+    <value>Integer formatting.</value>
+  </data>
+  <data name="ListValueSelectionRuleDescription" xml:space="preserve">
+    <value>Set list value selection on attributes with moderate number of unique values.</value>
+  </data>
+  <data name="ListValueSelectionRuleName" xml:space="preserve">
+    <value>List value selection.</value>
+  </data>
+  <data name="LookupFolderName" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="MarkLargeListsRuleDescription" xml:space="preserve">
+    <value>Use filtered list selection for entities with a large number of instances.</value>
+  </data>
+  <data name="MarkLargeListsRuleName" xml:space="preserve">
+    <value>Large lists.</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleDescription" xml:space="preserve">
+    <value>Consider entities with one attribute as lookup entities.</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleName" xml:space="preserve">
+    <value>Lookup entities.</value>
+  </data>
+  <data name="MarkMediumListsRuleDescription" xml:space="preserve">
+    <value>Use list selection for entities with a medium number of instances.</value>
+  </data>
+  <data name="MarkMediumListsRuleName" xml:space="preserve">
+    <value>Medium lists.</value>
+  </data>
+  <data name="MarkSmallListsRuleDescription" xml:space="preserve">
+    <value>Use dropdown selection for entities with a small number of instances.</value>
+  </data>
+  <data name="MarkSmallListsRuleName" xml:space="preserve">
+    <value>Small lists.</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleDescription" xml:space="preserve">
+    <value>Use mandatory filter selection for entities with a very large number of instances.</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleName" xml:space="preserve">
+    <value>Very large lists.</value>
+  </data>
+  <data name="NumericAggregateAvgName" xml:space="preserve">
+    <value>Avg {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMaxName" xml:space="preserve">
+    <value>Max {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMinName" xml:space="preserve">
+    <value>Min {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateSumName" xml:space="preserve">
+    <value>Total {AttributeName}</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleDescription" xml:space="preserve">
+    <value>Set sort descending on numeric and date attributes.</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleName" xml:space="preserve">
+    <value>Numeric/date formatting.</value>
+  </data>
+  <data name="RoleNameOnlyRuleDescription" xml:space="preserve">
+    <value>Use role name only for generically-named identifying attributes.</value>
+  </data>
+  <data name="RoleNameOnlyRuleName" xml:space="preserve">
+    <value>Role name only.</value>
+  </data>
+  <data name="RoleOnlyContextualNames" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description|Type</value>
+  </data>
+  <data name="RulesDescription" xml:space="preserve">
+    <value>Standard rules used for generation of semantic models from Data Source Views.</value>
+  </data>
+  <data name="RulesName" xml:space="preserve">
+    <value>Default model generation rules</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleDescription" xml:space="preserve">
+    <value>Set default detail attributes on each entity.</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleName" xml:space="preserve">
+    <value>Set default detail attributes.</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleDescription" xml:space="preserve">
+    <value>Set identifying attributes on each entity.</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleName" xml:space="preserve">
+    <value>Set identifying attributes.</value>
+  </data>
+  <data name="TimeAggregateMaxName" xml:space="preserve">
+    <value>Last {AttributeName}</value>
+  </data>
+  <data name="TimeAggregateMinName" xml:space="preserve">
+    <value>First {AttributeName}</value>
+  </data>
+</root>

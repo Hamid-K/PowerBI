@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0785349C-E397-4CF8-A9E1-48EB49355C30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataShaping.InternalContracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataShaping.InternalContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\BytesWrittenStreamExtractor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ConceptualTypeConverter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataExtensionEngineException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\BinnedLineSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\BottomLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Calculation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Collation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\CorrelationMode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataBinding.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataIntersection.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataLimits.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataMember.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataSet.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataShape.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataShapeDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataShapeDefinitionSerializer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataShapeDefinitionVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataSource.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransform.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransformColumn.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransformInput.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransformOutput.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransformParameter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataTransformTableSchema.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataType.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataWindow.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DataWindows.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DiscardCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\DiscardConditionComparisonOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ExceededDetectionKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\ExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\FieldValueExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\FunctionCallExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\FunctionKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\IExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Expressions\LiteralExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Field.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Group.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\GroupKey.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ItemSourceLocation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ItemSourceType.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\JoinCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\MatchCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\OverlappingPointsSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\QueryParameter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\Relationship.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\RestartKindDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ResultEncodingHints.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ResultTable.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\SampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ScopeIdDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\ScopeKey.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\SortDirection.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\SortInformation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\StartPosition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\TelemetryItem.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\TopLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeDefinition\TopNPerLevelLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeEngineCanceledException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeEngineConfig.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeEngineMessages.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\AnyValueFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ApplyFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\BinaryFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\BinaryFilterOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\BinnedLineSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\BottomLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\AnyValueFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\BuilderBase.2.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\BuilderBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\CompoundFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ContextFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataIntersectionBuilder.2.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataIntersectionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataMemberBuilder.2.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataMemberBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataRowBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataShapeBuilder.2.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataShapeBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataShapeQueryBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataTransformBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataTransformInputBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataTransformOutputBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DataTransformTableBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DefaultValueFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DynamicLimitBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DynamicLimitEvenDistributionBlockBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DynamicLimitPrimarySecondaryBlockBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DynamicLimitRecommendationBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\DynamicLimitsBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ExistsFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ExistsFilterItemBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ExtensionEntityBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ExtensionSchemaBuilder.2.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ExtensionSchemaBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\FilterBaseBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\FilterBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\FilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\GroupBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\ICalculationContainer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\IDataMemberContainer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\InFilterConditionBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\InFilterConditionValuesBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\IWithDataShape.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\LimitBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\LimitWindowExpansionInstanceBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\PrimitiveValueUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\TopNPerLevelLimitBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Builder\VisualAxisBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Calculation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Candidate.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\CompoundFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\CompoundFilterOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ContextFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataHierarchy.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataIntersection.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataMember.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataRow.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataShape.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataShapeQuery.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataShapeUsage.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataShapeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataShapeVisitorContext.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataSource.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataSourceReference.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransform.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransformInput.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransformOutput.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransformParameter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransformTable.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DataTransformTableColumn.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DefaultValueFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DetailGroupIdentity.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimit.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimitBlock.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimitEvenDistributionBlock.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimitPrimarySecondaryBlock.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimitRecommendation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\DynamicLimits.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExistsFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExistsFilterItem.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expression.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExpressionEquatableComparer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ArgumentDescriptor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\BinaryOperatorExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\BinaryOperatorKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\DataTransformTableColumnReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\DaxTextExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\DsqExpressionUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\EntitySetExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionComparerById.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionComparerByOriginalNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionId.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionNodeBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionNodeKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionStringBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\ExpressionTextUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionCallExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionCategory.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionDescriptor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionDescriptorFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionNames.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\FunctionUsageKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\IExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\IExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\IExpressionStringBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\LiteralExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\PropertyExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\QueryParameterReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\StructureReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Expressions\VisualCalculationExpressionNode.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExtensionColumn.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExtensionEntity.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExtensionMeasure.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExtensionProperty.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ExtensionSchema.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Filter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterConditionComparer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterConditionType.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterDataShapeVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterEmptyGroupsCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterUsageKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FilterVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\FirstLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Group.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\GroupKey.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\IContextItem.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\IDataBoundItem.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Identifier.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\IExpressionEquatable.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\IIdentifiable.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\INegatableCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\InFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\IScope.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LastLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Limit.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitConstants.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitOperatorType.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitPlotAxis.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitPropertyConstants.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitWindowExpansionInstance.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\LimitWindowExpansionValue.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ModelParameter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ObjectType.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\OverlappingPointsSampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\QueryParameterDeclaration.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\RestartToken.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\RestartTokenGroupingBinding.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\RestartTokenGroupingValues.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\RestartTokenUtils.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\SampleLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ScopeId.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ScopeIdDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ScopeValue.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\ScopeValueDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\SortDirection.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\SortKey.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\TopLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\TopNPerLevelLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\UnaryFilterCondition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\VisitDataShapeDelegate.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\VisualAxis.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\VisualAxisGroup.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\WindowLimitOperator.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Writer\DataShapeQueryWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Writer\IStructuredToString.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Writer\JsonDataShapeQueryWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeQuery\Writer\StructuredStringBuilder.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriterUtilities.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\CalculationAsObjectWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\CalculationAsPropertyWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\CalculationAsValueWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\CalculationMetadataWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\CollectionWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataIntersectionWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataLimitWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataMemberInstanceWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataMemberWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataShapeResultWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataShapeWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DataWindowWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DecimalEncodingAnalyzer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DictionaryValuesWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DoubleEncodingAnalyzer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DsrCalculationContainerWriterBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DsrObjectWriterBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DsrWriterOptions.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DsrWriterValueEncodingConfiguration.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\DsrWriterValueEncodingOptions.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\EncodingAnalyzerBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\ErrorWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\FlagSequenceWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\GroupWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\ICalculationContainerWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\ICalculationWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\InlinedDsrStructureWriterBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\LongEncodingAnalyzer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\MessageWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\RestartFlag.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\RestartKind.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\RestartTokenCollectionWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\ScopeIdWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\ScopeValueWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataShapeResultWriter\StreamingDsrWriterWrapperBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataSourceInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DataTransformException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryExecutionErrorCodes.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryExecutionErrors.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryExecutionException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultCollectionWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultErrorWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultObjectWriterBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultRowWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultTableWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultWriterBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultWriterNames.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DaxQueryResultWriter\DaxQueryResultWriterSettings.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DefinitionConversionExtensions.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\DiagnosticUtilities.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\EngineErrorContextBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\EngineMessageBase.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ErrorSourceCategory.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Errors\DataModelParsingException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Errors\ExceptionToODataErrorConverter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\DataExtensionExecutionMetricsVisitor.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\DataShapingExecutionMetricsService.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\ExecutionMetricsConstants.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\ExecutionMetricsServiceFactory.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\IDataShapingExecutionMetricsService.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\ExecutionMetadata\NoOpDataShapingExecutionMetricsService.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\HandledExceptionWrapper.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\IErrorContextContainer.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\IExpressionToExtensionSchemaItemQueryRewriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\IQuerySchemaExtender.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\JsonStreamingStructureWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Message.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Model\ComparerAnnotation.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Model\ComparerAnnotationProvider.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Model\ConceptualSchemaParser.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Model\ModelTelemetry.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Model\ModelUtil.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\NewtonsoftJsonStreamingStructureWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\QueryExecution\QueryCommandOptions.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\RawDataDefinition.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\RawDataException.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\SparklineDataStatistics.cs" />
+    <Compile Include="Microsoft\DataShaping\InternalContracts\Utils\InfoNavTracerAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

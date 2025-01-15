@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_AccessDenied" xml:space="preserve">
+    <value>存取遭拒 '{0}'。</value>
+  </data>
+  <data name="Error_CatalogItemAlreadyExists" xml:space="preserve">
+    <value>資料夾 '{1}' 中已存在目錄項目 '{0}'。</value>
+  </data>
+  <data name="Error_CatalogItemContentInvalid" xml:space="preserve">
+    <value>目錄項目內容無效。</value>
+  </data>
+  <data name="Error_CatalogItemInvalid" xml:space="preserve">
+    <value>目錄項目的狀態無效。</value>
+  </data>
+  <data name="Error_CatalogItemNotFound" xml:space="preserve">
+    <value>找不到目錄項目 '{0}'。</value>
+  </data>
+  <data name="Error_CatalogItemPropertyInvalid" xml:space="preserve">
+    <value>目錄項目屬性無效。</value>
+  </data>
+  <data name="Error_DataSetMaxRowsLessThanOne" xml:space="preserve">
+    <value>資料集最大資料列必須大於或等於 1。</value>
+  </data>
+  <data name="Error_DataSetNotFound" xml:space="preserve">
+    <value>找不到資料集 '{0}'。</value>
+  </data>
+  <data name="Error_DataSetSoapError" xml:space="preserve">
+    <value>從報表伺服器 Web 服務取得資料時發生問題: {0}</value>
+  </data>
+  <data name="Error_DatabaseDowngradeDetected" xml:space="preserve">
+    <value>偵測到資料庫降級。資料庫結構描述版本比服務結構描述版本來得新。</value>
+  </data>
+  <data name="Error_EncryptionFailure" xml:space="preserve">
+    <value>無法存取資料庫的加密內容。此安裝識別碼的對稱金鑰無效或遺失。</value>
+  </data>
+  <data name="Error_ExpectedUserToken" xml:space="preserve">
+    <value>需要有效使用者 Token。</value>
+  </data>
+  <data name="Error_IEIsNotSupported" xml:space="preserve">
+    <value>不支援此瀏覽器，請更新至 Edge。</value>
+  </data>
+  <data name="Error_InvalidDataFormat" xml:space="preserve">
+    <value>無效或不支援的資料格式。</value>
+  </data>
+  <data name="Error_InvalidDataSourceType" xml:space="preserve">
+    <value>無效資料來源類型。</value>
+  </data>
+  <data name="Error_InvalidExcelWopiDiscovery" xml:space="preserve">
+    <value>未預期的 Office Online 探索格式。</value>
+  </data>
+  <data name="Error_InvalidExcelWopiUrl" xml:space="preserve">
+    <value>Office Online 探索 URL 無法連線或無效。</value>
+  </data>
+  <data name="Error_InvalidPowerBIMigrateUrl" xml:space="preserve">
+    <value>Power BI 移轉 URL 無法連線或無效。</value>
+  </data>
+  <data name="Error_InvalidScheduleRecurrenceObject" xml:space="preserve">
+    <value>週期中只可包含一個或零個已經定義的週期類型。</value>
+  </data>
+  <data name="Error_PbiToRsAttachDetected" xml:space="preserve">
+    <value>附加的資料庫使用 PowerBI 報表伺服器所建立，而目前的執行個體是 SQL Server Reporting Services。不支援此設定。</value>
+  </data>
+  <data name="Error_RSConfigContainsNoReportsApplicationUrls" xml:space="preserve">
+    <value>遺漏在組態中定義的所需報表管理員應用程式。請重新執行組態工具以設定 Reporting Services。</value>
+  </data>
+  <data name="Error_SystemResourcePackageException" xml:space="preserve">
+    <value>系統資源套件無效。</value>
+  </data>
+  <data name="Error_SystemResourceProcessingException" xml:space="preserve">
+    <value>無法處理系統資源。</value>
+  </data>
+  <data name="Error_UniversalBrandInvalidColorsFile" xml:space="preserve">
+    <value>品牌封裝色彩檔案無效。</value>
+  </data>
+  <data name="Error_UserPrincipalIsNotSet" xml:space="preserve">
+    <value>未設定 UserPrincipal。</value>
+  </data>
+  <data name="SupportedBrowsers" xml:space="preserve">
+    <value>支援的瀏覽器</value>
+  </data>
+</root>

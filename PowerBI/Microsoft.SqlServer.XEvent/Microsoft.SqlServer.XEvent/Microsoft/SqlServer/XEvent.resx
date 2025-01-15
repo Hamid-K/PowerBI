@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChannelColumnDescription" xml:space="preserve">
+    <value>ETW Channel</value>
+  </data>
+  <data name="GuidColumnDescription" xml:space="preserve">
+    <value>Globally Unique ID</value>
+  </data>
+  <data name="InvalidEventTypeException" xml:space="preserve">
+    <value>Class '{0}' requires member '{1}' to be an Event class.</value>
+  </data>
+  <data name="InvalidMapException" xml:space="preserve">
+    <value>The enum '{0}' exposed as map '{1}' contains multiple members with the value '{2}'.  Enums that are used as maps must contain unique values for each member.</value>
+  </data>
+  <data name="KeywordColumnDescription" xml:space="preserve">
+    <value>Event grouping keywords</value>
+  </data>
+  <data name="NamingException" xml:space="preserve">
+    <value>The name '{0}' does not comply with XEvent naming rules. Names must be less than {1} characters and may not contain " " or ".".</value>
+  </data>
+  <data name="PackageRegistrationFailureException" xml:space="preserve">
+    <value>The package '{0}' failed to register. This can be due to duplicate names or guids in the package.</value>
+  </data>
+  <data name="PackageRegistrationFailureExceptionExtended" xml:space="preserve">
+    <value>The package '{0}' failed to register with XEvent error {1}.{2}.{3}.</value>
+  </data>
+  <data name="TooManyKeywordsException" xml:space="preserve">
+    <value>A package may only contain 32 unique keywords.  Reduce the number of keywords present in the package.</value>
+  </data>
+  <data name="TooManyObjectsException" xml:space="preserve">
+    <value>A package may only contain {0} XEvent objects of each type.  Reduce the number of objects present in the package.</value>
+  </data>
+  <data name="UnsupportedTypeException" xml:space="preserve">
+    <value>Class '{0}' field '{1}' has a type '{2}' that is not supported by XEvent.</value>
+  </data>
+  <data name="VersionColumnDescription" xml:space="preserve">
+    <value>Event schema version</value>
+  </data>
+</root>

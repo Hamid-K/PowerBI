@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BufferTooSmall" xml:space="preserve">
+    <value>Output buffer is smaller than required size {0}</value>
+  </data>
+  <data name="BufferTooSmallThanRequiredSize" xml:space="preserve">
+    <value>Output buffer size is less than a size required to hold a single multibyte character, Check output size.</value>
+  </data>
+  <data name="CodePageTableNotFound" xml:space="preserve">
+    <value>Code page table not found Table name {0}</value>
+  </data>
+  <data name="DuplicateCodePageDefination" xml:space="preserve">
+    <value>The code page {0} is defined more than once in the AppConfig/WebConfig file</value>
+  </data>
+  <data name="EBCDICToUnicodeError" xml:space="preserve">
+    <value>EBCDIC to Unicode conversion error {0}</value>
+  </data>
+  <data name="ErrorOpeningTranslationTable" xml:space="preserve">
+    <value>Translation Table Files for {0} code page not opened</value>
+  </data>
+  <data name="InvalidCodePage" xml:space="preserve">
+    <value>Invalid Code Page {0}, Valid range 0 to 65535</value>
+  </data>
+  <data name="InvalidCodePageForCustomEncoding" xml:space="preserve">
+    <value>Double byte EBCDIC code pages are not allowed for custom encoding {0}</value>
+  </data>
+  <data name="InvalidConfigurationFile" xml:space="preserve">
+    <value>Invalid AppConfig or WebConfig File</value>
+  </data>
+  <data name="InvalidEBCDICMappings" xml:space="preserve">
+    <value>Double byte EBCDIC mappings are not allowed for custom encoding Attribute:{0}, Value{1}</value>
+  </data>
+  <data name="InvalidHoldBackBuffer" xml:space="preserve">
+    <value>total chars in holdback buffer invalid, check input data stream</value>
+  </data>
+  <data name="InvalidInputBufferLength" xml:space="preserve">
+    <value>Invalid input buffer length {0}</value>
+  </data>
+  <data name="InvalidOutputBufferLength" xml:space="preserve">
+    <value>Invalid output buffer length {0}</value>
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>Invalid Parameter {0}</value>
+  </data>
+  <data name="InvalidSISOPair" xml:space="preserve">
+    <value>Invalid stream, SI/SO not matching... received ShiftIn before double byte ends</value>
+  </data>
+  <data name="InvalidSourceCount" xml:space="preserve">
+    <value>Invalid source count, count greater than actual size of the source buffer</value>
+  </data>
+  <data name="OutOfMemory" xml:space="preserve">
+    <value>Out of memory {0}</value>
+  </data>
+  <data name="OutOfMemoryAllocatingTable" xml:space="preserve">
+    <value>Out of Memory Exception allocating {0} Double byte Code page</value>
+  </data>
+  <data name="UnicodeToEBCDICError" xml:space="preserve">
+    <value>Unicode to EBCDICconversion error {0}</value>
+  </data>
+</root>

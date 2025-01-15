@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>アクティブなセッションの数。</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>警告: イベント キューの長さ</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>アプリケーション ドメインの再利用の総数。</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>1 秒あたりの要求数です。</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>要求の合計数です。</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>レポート実行サーバー キャッシュの更新回数の合計。</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>1 秒あたりのキャッシュ フラッシュ回数。</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>レポート サーバーのキャッシュ ヒット回数の合計。</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにレポート サーバーでキャッシュに成功した回数。</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>キャッシュに失敗した回数の合計。</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにキャッシュからレポートを取得できない回数。</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>配信回数の合計。</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>1 秒あたりの配信回数。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>1 秒あたりのデータ ソース接続の失敗数です。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>データ ソース接続の失敗の合計数です。</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>イベントの総数。</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりのイベント数。</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>既存のセッションで処理される 1 秒あたりの要求数です。</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>既存のセッションで処理された要求の合計数です。</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>1 秒あたりに開始された新しいユーザー セッションの数。</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>1 秒あたりの失敗数です。</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>失敗の合計数です。</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>サーバーが最後の 1 秒間に発行した圧縮通知の数。サーバーがメモリ負荷状態にあると見なす頻度を示します。</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>インメモリ キャッシュでのキャッシュ ヒット回数の合計。</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにインメモリ キャッシュからレポートを取得できる回数。</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>インメモリ キャッシュでキャッシュに失敗した回数の合計。</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにインメモリ キャッシュからレポートを取得できない回数。</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>サーバーの現在のメモリの状態を示す 1 ～ 5 の数値。1: メモリ負荷なし、2: 低度のメモリ負荷、3: 中度のメモリ負荷、4: 高度のメモリ負荷、5: 許容範囲を超えるメモリ負荷。</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>サーバーが圧縮を要求したバイト数。</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>モデル キャッシュでキャッシュに成功した回数の合計。</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにキャッシュからモデルを取得できる回数。</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>モデル キャッシュでキャッシュに失敗した回数の合計。</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりにキャッシュからモデルを取得できない回数。</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>アクティブなモデル要求数です。</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>モデル要求の平均実行時間です。</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>1 秒あたりのモデル要求数です。</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>モデル要求の合計数です。</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>1 秒あたりの、既存のセッションで開かれているレポートに対する要求の回数。</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>新しいセッションで処理される 1 秒あたりの要求数です。</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>新しいセッションで処理された要求の合計数です。</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>処理に失敗した回数の合計。</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>SQL レポート サーバー サービス Power View レポートに関する統計</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>アクティブなクエリ要求数です。</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>クエリ要求の平均実行時間です。</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>1 秒あたりのクエリ要求数です。</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>クエリ要求の合計数です。</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>待機中のスレッド数が多いことが原因で拒否されたスレッドの総数。</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>アクティブなレポート要求の数。</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>レポート実行回数の合計。</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>1 秒あたりのレポートの実行回数。</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>1 秒あたりの要求回数。</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>アクティブなレポート要求の数。</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>レポート要求の平均実行時間です。</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>1 秒あたりのレポート要求数です。</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>レポート要求の合計数です。</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>レポート実行スナップショットの更新回数の合計。</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>1 秒あたりのスナップショットの更新回数。</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>アクティブなセッションの数。</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>SQL レポート サーバー サービスに関する統計</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>処理されている要求の合計数。</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>アクティブなスレッド数です。</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>警告: イベントを処理しました - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>MSRS 2011 Web サービス</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>MSRS 2011 Windows サービス</value>
+  </data>
+</root>

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>보고서에 대한 의견을 작성하고 보고 편집하고 삭제합니다.</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>보고서에 대한 의견</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>보고서, 폴더, 리소스 및 공유 데이터 원본의 보안 설정을 확인하고 수정합니다.</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>개별 항목의 보안 설정</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>보고서 정의를 읽습니다.</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>보고서 사용</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>링크된 보고서를 만들어 보고서 서버 폴더에 게시합니다.</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>링크된 보고서 만들기</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>보고서 정의를 보고서 서버에 게시하지 않고 이 정의에서 실행을 시작합니다.</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>보고서 정의 실행</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>보고서 서버 네임스페이스 내에서 이벤트를 생성할 수 있는 기능을 애플리케이션에 제공합니다.</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>이벤트 생성</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>구독의 소유자와 관계없이 구독을 확인하고, 수정하고, 삭제합니다.</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>모든 구독 관리</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>보고서에 대한 다른 사용자의 의견을 삭제합니다.</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>의견 관리</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>공유 데이터 원본 항목을 만들고 삭제하며 데이터 원본 속성을 수정합니다.</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>데이터 원본 관리</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>폴더를 만들고, 확인하고, 삭제하며 폴더 속성을 확인하고 수정합니다.</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>폴더 관리</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>실행 중인 작업을 확인 및 취소합니다.</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>작업 관리</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>모델을 만들고, 확인하고, 삭제하며 모델 속성을 확인하고 수정합니다.</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>모델 관리</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>보고서 기록 스냅샷을 만들고, 확인하고, 삭제하며 보고서 기록 속성을 수정합니다.</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>보고서 기록 관리</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>보고서를 만들고 삭제하며 보고서 속성을 수정합니다.</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>보고서 관리</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>리소스를 만들고, 수정하고, 삭제하며 리소스 속성을 수정합니다.</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>리소스 관리</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>역할 정의를 만들고, 확인하고, 수정하고, 삭제합니다.</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>역할 관리</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>보고서를 실행하거나 새로 고치는 데 사용되는 공유 일정을 만들고, 확인하고, 수정하고, 삭제합니다.</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>공유 일정 관리</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>보고서 서버 및 보고서 서버에서 관리하는 항목에 적용되는 속성을 확인하고 수정합니다.</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>보고서 서버 속성 관리</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>시스템 차원 역할 할당을 확인하고 수정합니다.</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>보고서 서버 보안 관리</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>각 사용자가 자신이 소유하는 구독을 만들고, 확인하고, 수정하고, 삭제할 수 있습니다.</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>개별 구독 관리</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>폴더 계층 구조에 있는 공유 데이터 원본 항목을 보며 데이터 원본 속성을 봅니다.</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>데이터 원본 보기</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>폴더 계층 구조에 있는 폴더 항목을 보며 폴더 속성을 봅니다.</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>폴더 보기</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>특정 모델의 항목을 봅니다.</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>모델 항목 보기</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>폴더 계층의 모델을 보고, 이러한 모델을 보고서의 데이터 원본으로 사용하고, 모델에 대해 쿼리를 실행하여 데이터를 검색합니다.</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>모델 보기</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>폴더 계층 구조에 있는 보고서 및 링크된 보고서를 보며 보고서 기록 스냅샷과 보고서 속성을 봅니다.</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>보고서 보기</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>폴더 계층 구조에 있는 리소스를 보며 리소스 속성을 봅니다.</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>리소스 보기</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>일반적으로 사용할 수 있는 미리 정의된 일정을 봅니다.</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>공유 일정 보기</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>보고서 서버에 적용되는 속성을 봅니다.</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>보고서 서버 속성 보기</value>
+  </data>
+</root>

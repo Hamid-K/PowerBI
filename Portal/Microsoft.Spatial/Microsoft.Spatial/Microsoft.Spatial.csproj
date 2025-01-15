@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82F80DAA-1AFD-41F9-A7B1-4A027D7A576B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Spatial</RootNamespace>
+    <AssemblyName>Microsoft.Spatial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>.NETPortable</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Xml.ReaderWriter" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionOnDispose.cs" />
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="CompositeKey.cs" />
+    <Compile Include="CoordinateSystem.cs" />
+    <Compile Include="DataServicesSpatialImplementation.cs" />
+    <Compile Include="DebugUtils.cs" />
+    <Compile Include="DrawBoth.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="FormatterExtensions.cs" />
+    <Compile Include="ForwardingSegment.cs" />
+    <Compile Include="Geography.cs" />
+    <Compile Include="GeographyBuilderImplementation.cs" />
+    <Compile Include="GeographyCollection.cs" />
+    <Compile Include="GeographyCollectionImplementation.cs" />
+    <Compile Include="GeographyCurve.cs" />
+    <Compile Include="GeographyFactory.2.cs" />
+    <Compile Include="GeographyFactory.cs" />
+    <Compile Include="GeographyFullGlobe.cs" />
+    <Compile Include="GeographyFullGlobeImplementation.cs" />
+    <Compile Include="GeographyHelperMethods.cs" />
+    <Compile Include="GeographyLineString.cs" />
+    <Compile Include="GeographyLineStringImplementation.cs" />
+    <Compile Include="GeographyMultiCurve.cs" />
+    <Compile Include="GeographyMultiLineString.cs" />
+    <Compile Include="GeographyMultiLineStringImplementation.cs" />
+    <Compile Include="GeographyMultiPoint.cs" />
+    <Compile Include="GeographyMultiPointImplementation.cs" />
+    <Compile Include="GeographyMultiPolygon.cs" />
+    <Compile Include="GeographyMultiPolygonImplementation.cs" />
+    <Compile Include="GeographyMultiSurface.cs" />
+    <Compile Include="GeographyOperationsExtensions.cs" />
+    <Compile Include="GeographyPipeline.cs" />
+    <Compile Include="GeographyPoint.cs" />
+    <Compile Include="GeographyPointImplementation.cs" />
+    <Compile Include="GeographyPolygon.cs" />
+    <Compile Include="GeographyPolygonImplementation.cs" />
+    <Compile Include="GeographyPosition.cs" />
+    <Compile Include="GeographySurface.cs" />
+    <Compile Include="GeoJsonConstants.cs" />
+    <Compile Include="GeoJsonMember.cs" />
+    <Compile Include="GeoJsonObjectFormatter.cs" />
+    <Compile Include="GeoJsonObjectFormatterImplementation.cs" />
+    <Compile Include="GeoJsonObjectReader.cs" />
+    <Compile Include="GeoJsonObjectWriter.cs" />
+    <Compile Include="GeoJsonWriterBase.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="GeometryBuilderImplementation.cs" />
+    <Compile Include="GeometryCollection.cs" />
+    <Compile Include="GeometryCollectionImplementation.cs" />
+    <Compile Include="GeometryCurve.cs" />
+    <Compile Include="GeometryFactory.2.cs" />
+    <Compile Include="GeometryFactory.cs" />
+    <Compile Include="GeometryHelperMethods.cs" />
+    <Compile Include="GeometryLineString.cs" />
+    <Compile Include="GeometryLineStringImplementation.cs" />
+    <Compile Include="GeometryMultiCurve.cs" />
+    <Compile Include="GeometryMultiLineString.cs" />
+    <Compile Include="GeometryMultiLineStringImplementation.cs" />
+    <Compile Include="GeometryMultiPoint.cs" />
+    <Compile Include="GeometryMultiPointImplementation.cs" />
+    <Compile Include="GeometryMultiPolygon.cs" />
+    <Compile Include="GeometryMultiPolygonImplementation.cs" />
+    <Compile Include="GeometryMultiSurface.cs" />
+    <Compile Include="GeometryOperationsExtensions.cs" />
+    <Compile Include="GeometryPipeline.cs" />
+    <Compile Include="GeometryPoint.cs" />
+    <Compile Include="GeometryPointImplementation.cs" />
+    <Compile Include="GeometryPolygon.cs" />
+    <Compile Include="GeometryPolygonImplementation.cs" />
+    <Compile Include="GeometryPosition.cs" />
+    <Compile Include="GeometrySurface.cs" />
+    <Compile Include="GmlConstants.cs" />
+    <Compile Include="GmlFormatter.cs" />
+    <Compile Include="GmlFormatterImplementation.cs" />
+    <Compile Include="GmlReader.cs" />
+    <Compile Include="GmlWriter.cs" />
+    <Compile Include="IGeographyProvider.cs" />
+    <Compile Include="IGeoJsonWriter.cs" />
+    <Compile Include="IGeometryProvider.cs" />
+    <Compile Include="IShapeProvider.cs" />
+    <Compile Include="ISpatial.cs" />
+    <Compile Include="LexerToken.cs" />
+    <Compile Include="OrcasExtensions.cs" />
+    <Compile Include="ParseErrorException.cs" />
+    <Compile Include="PlatformHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpatialBuilder.cs" />
+    <Compile Include="SpatialFactory.cs" />
+    <Compile Include="SpatialFormatter.cs" />
+    <Compile Include="SpatialImplementation.cs" />
+    <Compile Include="SpatialOperations.cs" />
+    <Compile Include="SpatialPipeline.cs" />
+    <Compile Include="SpatialReader.cs" />
+    <Compile Include="SpatialTreeBuilder.cs" />
+    <Compile Include="SpatialType.cs" />
+    <Compile Include="SpatialTypeExtensions.cs" />
+    <Compile Include="SpatialValidator.cs" />
+    <Compile Include="SpatialValidatorImplementation.cs" />
+    <Compile Include="Strings.cs" />
+    <Compile Include="TextLexerBase.cs" />
+    <Compile Include="TextRes.cs" />
+    <Compile Include="TypeWashedPipeline.cs" />
+    <Compile Include="TypeWashedToGeographyLatLongPipeline.cs" />
+    <Compile Include="TypeWashedToGeographyLongLatPipeline.cs" />
+    <Compile Include="TypeWashedToGeometryPipeline.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="WellKnownTextConstants.cs" />
+    <Compile Include="WellKnownTextLexer.cs" />
+    <Compile Include="WellKnownTextSqlFormatter.cs" />
+    <Compile Include="WellKnownTextSqlFormatterImplementation.cs" />
+    <Compile Include="WellKnownTextSqlReader.cs" />
+    <Compile Include="WellKnownTextSqlWriter.cs" />
+    <Compile Include="WellKnownTextTokenType.cs" />
+    <Compile Include="WrappedGeoJsonWriter.cs" />
+    <Compile Include="XmlConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Spatial.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

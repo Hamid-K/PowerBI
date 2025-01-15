@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Container_Terminated" xml:space="preserve">
+    <value>Evaluation ended with a terminated container, probably because the evaluation was canceled.</value>
+  </data>
+  <data name="Duplicate_Member_Definition" xml:space="preserve">
+    <value>Symbol defined multiple times.</value>
+  </data>
+  <data name="Evaluation_Canceled" xml:space="preserve">
+    <value>Evaluation was canceled.</value>
+  </data>
+  <data name="Evaluation_ContainerExitedUnexpectedly" xml:space="preserve">
+    <value>Container exited unexpectedly with code 0x{0:X8}. PID: {1}.</value>
+  </data>
+  <data name="Evaluation_NoFeatures" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="Evaluation_OutOfMemory" xml:space="preserve">
+    <value>Evaluation ran out of memory and can't continue.</value>
+  </data>
+  <data name="Evaluation_Result_Deserialization_Error" xml:space="preserve">
+    <value>There was an error deserializing the evaluation results. The operation might succeed on a retry.</value>
+  </data>
+  <data name="Evaluation_StackOverflow" xml:space="preserve">
+    <value>Evaluation resulted in a stack overflow and cannot continue.</value>
+  </data>
+  <data name="Evaluation_TerminatedUnexpectedly" xml:space="preserve">
+    <value>Evaluation terminated unexpectedly.
+Could not retrieve container exit code. PID: {0}.
+{1}</value>
+  </data>
+  <data name="Evaluation_UsedFeatures" xml:space="preserve">
+    <value>{0}
+Used features: {1}.</value>
+  </data>
+  <data name="FirewallFlow_CantCreateGroup" xml:space="preserve">
+    <value>{0} is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.</value>
+  </data>
+  <data name="FirewallFlow_Cyclic_Reference" xml:space="preserve">
+    <value>A cyclic reference was encountered during evaluation.</value>
+  </data>
+  <data name="FirewallFlow_DeviationFromGroup" xml:space="preserve">
+    <value>{0} used '{1}' data when last evaluated, but now is attempting to use '{2}' data.</value>
+  </data>
+  <data name="FirewallFlow_IllegalReference" xml:space="preserve">
+    <value>{0} is referencing {1}, which was not part of its formula text.</value>
+  </data>
+  <data name="FirewallFlow_NoGroupsAllowed" xml:space="preserve">
+    <value>{0} references other queries or steps, so it may not directly access a data source. Please rebuild this data combination.</value>
+  </data>
+  <data name="FirewallFlow_NoMatch" xml:space="preserve">
+    <value>'{0}' is not a valid partition name.</value>
+  </data>
+  <data name="FirewallRuleRequired" xml:space="preserve">
+    <value>Information about a data source is required.</value>
+  </data>
+  <data name="Firewall_Buffering_Failed" xml:space="preserve">
+    <value>Sorry, there was an error while buffering the data for {0}: {1}</value>
+  </data>
+  <data name="Illegal_Module_Reference" xml:space="preserve">
+    <value>Module '{0}' may only be referenced from a data connector.</value>
+  </data>
+  <data name="InvalidTimeZone" xml:space="preserve">
+    <value>We didn't recognize the time zone '{0}'.</value>
+  </data>
+  <data name="Invalid_Dynamic_Generator" xml:space="preserve">
+    <value>The generator for dynamic module '{0}' did not return a valid navigation table.
+{1}</value>
+  </data>
+  <data name="Invalid_Dynamic_Module" xml:space="preserve">
+    <value>Module '{0}' has an invalid DynamicMemberGenerator.</value>
+  </data>
+  <data name="Invalid_Section_Attribute" xml:space="preserve">
+    <value>Module '{0}' contains an invalid value for attribute '{1}'.</value>
+  </data>
+  <data name="Invalid_Section_Dependency" xml:space="preserve">
+    <value>Module '{0}' contains an invalid dependency specifier '{1}'.</value>
+  </data>
+  <data name="Invalid_Section_Version" xml:space="preserve">
+    <value>Module '{0}' contains an invalid version specifier '{1}'.</value>
+  </data>
+  <data name="LineageWasLost" xml:space="preserve">
+    <value>We couldn't fetch this data because it has a conflict with other data we've previously reported.</value>
+  </data>
+  <data name="Messenger_NoHandler" xml:space="preserve">
+    <value>No handler was found for message type '{0}'.</value>
+  </data>
+  <data name="Missing_Section_Dependency" xml:space="preserve">
+    <value>Module '{0}' contains a dependency on module '{1}', which is not available.</value>
+  </data>
+  <data name="Parameter_TypeNotSupported" xml:space="preserve">
+    <value>The parameter type is not supported: {0}</value>
+  </data>
+  <data name="Recursive_Section_Dependency" xml:space="preserve">
+    <value>Module '{0}' contains a recursive dependency on module '{1}'.</value>
+  </data>
+  <data name="Section_Name_Mismatch" xml:space="preserve">
+    <value>The source for module '{0}' instead defines a module named '{1}'.</value>
+  </data>
+  <data name="Unexpected_Error" xml:space="preserve">
+    <value>Unexpected error</value>
+  </data>
+  <data name="ValueSerializer_TypeTooComplex" xml:space="preserve">
+    <value>The type of the current preview value is too complex to display.</value>
+  </data>
+  <data name="ValueSerializer_ValueTooComplex" xml:space="preserve">
+    <value>The current preview value is too complex to display.</value>
+  </data>
+</root>

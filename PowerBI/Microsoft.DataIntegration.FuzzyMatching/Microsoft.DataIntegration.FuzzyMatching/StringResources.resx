@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlreadyInLookupMode" xml:space="preserve">
+    <value>Already in Lookup mode.</value>
+  </data>
+  <data name="AlreadyInUpdateMode" xml:space="preserve">
+    <value>Already in Update mode.</value>
+  </data>
+  <data name="ColumnNotFoundInSchemaTable" xml:space="preserve">
+    <value>A column with name '{0}' was not found in the schema table.</value>
+  </data>
+  <data name="DomainAlreadyExists" xml:space="preserve">
+    <value>Domain with name '{0}' already exists.</value>
+  </data>
+  <data name="DomainCapacityExceeded" xml:space="preserve">
+    <value>Maximum number of domains reached</value>
+  </data>
+  <data name="DomainNotFound" xml:space="preserve">
+    <value>Domain with name '{0}' not found.</value>
+  </data>
+  <data name="EpsilonRulesNotAllowed" xml:space="preserve">
+    <value>Transformation rules with an empty From string are not allowed.</value>
+  </data>
+  <data name="InvalidMode" xml:space="preserve">
+    <value>Must be in mode '{0}' to call this function.</value>
+  </data>
+  <data name="MustCallEndLookup" xml:space="preserve">
+    <value>Presently in Lookup mode.  Must call EndLookup() first.</value>
+  </data>
+  <data name="MustCallEndUpdate" xml:space="preserve">
+    <value>Presently in Update mode.  Must call EndUpdate() first.</value>
+  </data>
+  <data name="OutputSchemaName" xml:space="preserve">
+    <value>OutputSchema</value>
+  </data>
+  <data name="SimilarityColumnName" xml:space="preserve">
+    <value>Similarity</value>
+  </data>
+</root>

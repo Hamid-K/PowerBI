@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{037D9BB4-DC3E-457E-89E7-91D86AA2FA73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Mashup.OAuth</RootNamespace>
+    <AssemblyName>Microsoft.Mashup.OAuth</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AadOAuthError.cs" />
+    <Compile Include="AadOAuthException.cs" />
+    <Compile Include="AadOAuthProvider.cs" />
+    <Compile Include="AadSettings.cs" />
+    <Compile Include="AdobeOAuthProvider.cs" />
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="AzureManagementOAuthProvider.cs" />
+    <Compile Include="ClientApplicationSecretType.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="DataMarketOAuthProvider.cs" />
+    <Compile Include="FacebookOAuthProvider.cs" />
+    <Compile Include="GoogleOAuthProvider.cs" />
+    <Compile Include="GoogleOAuthProviderBase.cs" />
+    <Compile Include="IOAuthConfigService.cs" />
+    <Compile Include="IOAuthHttpClient.cs" />
+    <Compile Include="IOAuthProvider.cs" />
+    <Compile Include="IOAuthTracingService.cs" />
+    <Compile Include="ISecureTokenService.cs" />
+    <Compile Include="JwtHelpers.cs" />
+    <Compile Include="OAuthBrowserNavigation.cs" />
+    <Compile Include="OAuthClientApplication.cs" />
+    <Compile Include="OAuthError.cs" />
+    <Compile Include="OAuthException.cs" />
+    <Compile Include="OAuthResource.cs" />
+    <Compile Include="OAuthServices.cs" />
+    <Compile Include="OAuthSettings.cs" />
+    <Compile Include="OAuthStrings.Designer.cs">
+      <DependentUpon>OAuthStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="OAuthToken.cs" />
+    <Compile Include="OAuthWebException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyWebRequest.cs" />
+    <Compile Include="ReleaseInfo.cs" />
+    <Compile Include="SafeExceptions.cs" />
+    <Compile Include="SalesforceOAuthProvider.cs" />
+    <Compile Include="SecureTokenService.cs" />
+    <Compile Include="SerializeableCookie.cs" />
+    <Compile Include="SerializedOAuthSettings.cs" />
+    <Compile Include="SharePointOAuthProvider.cs" />
+    <Compile Include="SubjectNameIssuer.cs" />
+    <Compile Include="TokenCredential.cs" />
+    <Compile Include="TrustedResource.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OAuthStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OAuthStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

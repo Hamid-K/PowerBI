@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{D82243BD-840C-425A-8685-1DCC17D95860}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.Mashup.EventSource</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="Diagnostics\Contracts\Internal\Contract.cs" />
+    <Compile Include="Diagnostics\Tracing\ActivityTracker.cs" />
+    <Compile Include="Diagnostics\Tracing\ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\AsyncLocal.cs" />
+    <Compile Include="Diagnostics\Tracing\AsyncLocalValueChangedArgs.cs" />
+    <Compile Include="Diagnostics\Tracing\BooleanArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\BooleanTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\ByteArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\ByteTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\CharArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\CharTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\ClassPropertyWriter.cs" />
+    <Compile Include="Diagnostics\Tracing\ConcurrentSet.cs" />
+    <Compile Include="Diagnostics\Tracing\ConcurrentSetItem.cs" />
+    <Compile Include="Diagnostics\Tracing\ControllerCommand.cs" />
+    <Compile Include="Diagnostics\Tracing\DataCollector.cs" />
+    <Compile Include="Diagnostics\Tracing\DateTimeOffsetTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\DateTimeTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\DecimalTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\DoubleArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\DoubleTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EmptyStruct.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumByteTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumerableTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumHelper.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumInt16TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumInt32TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumInt64TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumSByteTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumUInt16TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumUInt32TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EnumUInt64TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\EventActivityOptions.cs" />
+    <Compile Include="Diagnostics\Tracing\EventAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventChannel.cs" />
+    <Compile Include="Diagnostics\Tracing\EventChannelAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventChannelType.cs" />
+    <Compile Include="Diagnostics\Tracing\EventCommand.cs" />
+    <Compile Include="Diagnostics\Tracing\EventCommandEventArgs.cs" />
+    <Compile Include="Diagnostics\Tracing\EventDataAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventDescriptor.cs" />
+    <Compile Include="Diagnostics\Tracing\EventDispatcher.cs" />
+    <Compile Include="Diagnostics\Tracing\EventFieldAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventFieldFormat.cs" />
+    <Compile Include="Diagnostics\Tracing\EventFieldTags.cs" />
+    <Compile Include="Diagnostics\Tracing\EventIgnoreAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventKeywords.cs" />
+    <Compile Include="Diagnostics\Tracing\EventLevel.cs" />
+    <Compile Include="Diagnostics\Tracing\EventListener.cs" />
+    <Compile Include="Diagnostics\Tracing\EventManifestOptions.cs" />
+    <Compile Include="Diagnostics\Tracing\EventOpcode.cs" />
+    <Compile Include="Diagnostics\Tracing\EventPayload.cs" />
+    <Compile Include="Diagnostics\Tracing\EventProvider.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSource.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSourceActivity.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSourceAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSourceException.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSourceOptions.cs" />
+    <Compile Include="Diagnostics\Tracing\EventSourceSettings.cs" />
+    <Compile Include="Diagnostics\Tracing\EventTags.cs" />
+    <Compile Include="Diagnostics\Tracing\EventTask.cs" />
+    <Compile Include="Diagnostics\Tracing\EventWrittenEventArgs.cs" />
+    <Compile Include="Diagnostics\Tracing\FieldMetadata.cs" />
+    <Compile Include="Diagnostics\Tracing\GuidArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\GuidTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int16ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int16TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int32ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int32TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int64ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Int64TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Internal\Environment.cs" />
+    <Compile Include="Diagnostics\Tracing\IntPtrArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\IntPtrTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\InvokeTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\KeyValuePairTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\ManifestBuilder.cs" />
+    <Compile Include="Diagnostics\Tracing\ManifestEnvelope.cs" />
+    <Compile Include="Diagnostics\Tracing\NameInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\NonEventAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\NonGenericProperytWriter.cs" />
+    <Compile Include="Diagnostics\Tracing\NullableTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\NullTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\PropertyAccessor.cs" />
+    <Compile Include="Diagnostics\Tracing\PropertyAnalysis.cs" />
+    <Compile Include="Diagnostics\Tracing\SByteArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\SByteTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\SessionMask.cs" />
+    <Compile Include="Diagnostics\Tracing\SimpleEventTypes.cs" />
+    <Compile Include="Diagnostics\Tracing\SingleArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\SingleTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\Statics.cs" />
+    <Compile Include="Diagnostics\Tracing\StringTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\StructPropertyWriter.cs" />
+    <Compile Include="Diagnostics\Tracing\TimeSpanTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\TplEtwProvider.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingDataCollector.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingDataType.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingEventTypes.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingFieldNameAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingMetadataCollector.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingTypeInfo.2.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\TraceLoggingTypeInfoAttribute.cs" />
+    <Compile Include="Diagnostics\Tracing\TypeAnalysis.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt16ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt16TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt32ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt32TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt64ArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UInt64TypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UIntPtrArrayTypeInfo.cs" />
+    <Compile Include="Diagnostics\Tracing\UIntPtrTypeInfo.cs" />
+    <Compile Include="Internal\Tuple.2.cs" />
+    <Compile Include="Internal\Tuple.3.cs" />
+    <Compile Include="Internal\Tuple.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ReflectionExtensions.cs" />
+    <Compile Include="ReleaseInfo.cs" />
+    <Compile Include="Win32\UnsafeNativeMethods.cs" />
+    <Compile Include="Win32\Win32Native.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Diagnostics\Tracing\Messages.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

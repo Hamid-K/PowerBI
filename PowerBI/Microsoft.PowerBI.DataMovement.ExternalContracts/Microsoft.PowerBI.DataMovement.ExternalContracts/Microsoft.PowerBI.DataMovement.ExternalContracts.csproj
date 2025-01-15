@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ABB33E3-12C8-472B-A5A9-B0132542F91B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataMovement.ExternalContracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataMovement.ExternalContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\AbsoluteUrlAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\AccessRight.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\AnalysisServicesDataSourceAnnotation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\AnalysisServicesUpnMapping.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\AnalysisServicesUpnMappingRule.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\Client\GatewayAnnotation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterDatasourceStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterMemberStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterMemberSystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterStatusResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ClusterSystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ConnectionStringPropertyName.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CreateGatewayAndAddAppPrinciaplsRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CreateGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CreateGatewayResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CredentialData.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CredentialDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CredentialNameValuePair.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CredentialType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CustomConnectorMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\CustomConnectorsMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceAnnotation.2.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceAnnotation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceAuthenticationInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceAuthenticationProperty.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DatasourceDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceFunction.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceFunctionDocumentation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceFunctionDocumentationExternal.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceFunctionParameter.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceFunctionPublish.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceNoCredentials.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DataSourceSystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DatasourceType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DiscoverClusterDatasourceError.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DiscoverClusterDatasourceStatusResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DiscoverDataSourcesResultCode.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DiscoverMonikerSystemResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DiscoverUnifiedGatewayFullDetailsResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DmtsDataSourceConnectionDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\DmtsDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\EncryptedConnection.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ExceptionCulprit.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\FunctionDocumentationExample.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayAllowableOptions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayCapabilities.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayClusterDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayClusterMemberDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayReleaseLabel.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayReleaseVersion.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayServiceBusDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewaySpoolControlSetting.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayStaticCapabilities.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewaySystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewaySystemDetailsBase.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayVersionDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayVersionStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GatewayVirtualNetworkDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\GetPrincipalOptions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\KnownAppNames.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MappingAlgorithmKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MashupConnectorsLibraryIdentifiers.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MashupConnectorType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MashupDataSourceDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MonikerDataSourcesSystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\MonikerSystemDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthBrowserNavigationInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthDetailsCollection.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthLoginInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthNonce.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OAuthSettings.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OnPremAccessDiscoveryRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\OnPremAccessDiscoveryResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIApiErrorObject.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIApiErrorResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIApiErrorResponseDetail.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIApiErrorResponseInnerError.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIErrorDetail.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIErrorDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIErrorDetailValue.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PowerBIErrorResourceType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PrincipalType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\PrivacyLevel.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ReEncryptCredentialResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\RelayInstance.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ReleaseLabelRule.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ReleaseStatusRule.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\RuntimeCredentialProperties.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\ServiceBusRelaysInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\SingleSignOnType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\TransferProviderConnectionDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\TransferProviderRawConnectionDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\TridentContextDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayClusterDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayClusterMemberDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayCredentialDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayPermission.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayPrincipalEntryResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UnifiedGatewayStatusResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UpdateClusterGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UpdateGatewayRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\API\UserDatasourceLimitStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\CachePolicy.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Contracts\FeatureManagementParameters.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\DataMovementConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\DataMovementUris.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\DiagnosticsConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Diagnostics\DiagnosticsColumn.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Diagnostics\DiagnosticsDownloadRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Diagnostics\DiagnosticsQueryRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Diagnostics\DiagnosticsQueryResponse.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Diagnostics\DiagnosticsQueryType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\GatewayHttpAuthType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\AdoStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\AnalysisServicesServerAnnotation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\DataSourceGatewayDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\GatewayCredentialDetails.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\GatewayMashupCounters.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\GatewayMashupDataSource.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\GatewayMashupDataSourceProgress.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\GatewayMashupStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\ServerAnnotation.2.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\Gateway\ServerAnnotation.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\LoadBalancer\LoadBalancingClusterSettings.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\LoadBalancer\LoadBalancingSettings.2.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\LoadBalancer\LoadBalancingSettings.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\LoadBalancer\SelectorType.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\NonEmptyCollectionAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataMovement\ExternalContracts\RequiredIfNotAnonymousAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="ThisAssembly.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

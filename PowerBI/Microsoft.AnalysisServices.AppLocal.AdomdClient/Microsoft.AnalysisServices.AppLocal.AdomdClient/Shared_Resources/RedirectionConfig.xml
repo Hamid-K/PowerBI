@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<RedirectionInformations>
+  <!--
+      PBI and AzureAS regions do not map 1:1. So, we will use the below mappings,
+        PROD:
+            EUS2EUAP in PBI maps to Daily, which is equivalent to Stable Prod in AAS. So, we will have an explicit mapping for 'Stable' that will use the PBI Endpoint dailyapi.powerbi.com.
+            CUSEUAP in PBI maps to DXT, but CUSEUAP is not supported in AAS. So, there is no explicit mapping for an AAS region to DXT.
+            WCUS in PBI maps to MSIT, but it shares the same PBI Endpoint as rest of PROD. So, there is no explicit mapping for an AAS region to MSIT.
+        SOV:
+            US : AAS supports only US Gov Arizona and US Gov Texas. Both will map to PBI Endpoint api.high.powerbigov.us
+            China : AAS supports only China East2 and China North. Both will map to PBI Endpoint api.powerbi.cn
+            Germany : AAS doesn't support Germany National Cloud any longer, but for backward compatibility we'll retain the AAS config and map it to PBI Endpoint api.powerbi.de
+        Test:
+            Onebox : We only map one specific Onebox rollout used by ASWL functional tests to PBI mock endpoint in order to validate AS client library
+            Test : For all other test rollouts, we'll use the PBI Endpoint powerbiapi.analysis-df.windows.net
+  -->
+  <RedirectionInformation>
+    <DomainPostfix>aswl-onebox.asazure-int.windows.net</DomainPostfix>
+    <PbiEndpoint>aswl-onebox-pbi-mock.pbidedicated.windows-int.net:9010</PbiEndpoint>
+    <PbiResourceId>https://analysis.windows-int.net/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>asazure-int.windows.net</DomainPostfix>
+    <PbiEndpoint>powerbiapi.analysis-df.windows.net</PbiEndpoint>
+    <PbiResourceId>https://analysis.windows-int.net/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>stable.asazure.windows.net</DomainPostfix>
+    <PbiEndpoint>dailyapi.powerbi.com</PbiEndpoint>
+    <PbiResourceId>https://analysis.windows.net/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>asazure.windows.net</DomainPostfix>
+    <PbiEndpoint>api.powerbi.com</PbiEndpoint>
+    <PbiResourceId>https://analysis.windows.net/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>asazure.usgovcloudapi.net</DomainPostfix>
+    <PbiEndpoint>api.high.powerbigov.us</PbiEndpoint>
+    <PbiResourceId>https://high.analysis.usgovcloudapi.net/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>asazure.chinacloudapi.cn</DomainPostfix>
+    <PbiEndpoint>api.powerbi.cn</PbiEndpoint>
+    <PbiResourceId>https://analysis.chinacloudapi.cn/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+  <RedirectionInformation>
+    <DomainPostfix>asazure.cloudapi.de</DomainPostfix>
+    <PbiEndpoint>api.powerbi.de</PbiEndpoint>
+    <PbiResourceId>https://analysis.cloudapi.de/powerbi/api</PbiResourceId>
+  </RedirectionInformation>
+</RedirectionInformations>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessToken_Invalid" xml:space="preserve">
+    <value>Das angegebene Zugriffstoken ist ungültig.</value>
+  </data>
+  <data name="AsPaasHelper_AdditionalTechnicalDetails_WorkspaceInfo" xml:space="preserve">
+    <value>{0}{2}Arbeitsbereich: „{1}“</value>
+  </data>
+  <data name="AsPaasHelper_TechnicalDetails_AaPaasInfra" xml:space="preserve">
+    <value>{2}{2}Technische Details:{2}RootActivityId: {0}{2}Datum (UTC): {1}</value>
+  </data>
+  <data name="AsPaasHelper_TechnicalDetails_Dataverse" xml:space="preserve">
+    <value>{2}{2}Technische Details:{2}ClientRequestId: {0}{2}ServiceRequestId: {1}</value>
+  </data>
+  <data name="AsPaasHelper_TechnicalDetails_PbiShared" xml:space="preserve">
+    <value>{1}{1}Technische Details:{1}RootActivityId: {0}</value>
+  </data>
+  <data name="AsyncHelper_TimeoutElapsed" xml:space="preserve">
+    <value>Das Zeitlimit für den Abschluss der Aufgaben ist abgelaufen.</value>
+  </data>
+  <data name="Exception_DeprecatedAndNotSupportedFeature" xml:space="preserve">
+    <value>Dieses Feature ist veraltet und wird nicht mehr unterstützt.</value>
+  </data>
+  <data name="Exception_InvalidConnectionStringPropertyNameFormat" xml:space="preserve">
+    <value>Der Eigenschaftenname "{0}" weist das falsche Format auf.</value>
+  </data>
+  <data name="Exception_InvalidKeyValueSet" xml:space="preserve">
+    <value>„{0}“ ist ein ungültiges Schlüssel-Wert-Paar.</value>
+  </data>
+  <data name="Exception_InvalidRelativePath" xml:space="preserve">
+    <value>Ungültiger relativer Pfad: "{0}" ist unter "{1}" nicht vorhanden.</value>
+  </data>
+  <data name="Exception_ResourceMissingInPool" xml:space="preserve">
+    <value>Die Ressource "{0}" ist im Pool nicht vorhanden.</value>
+  </data>
+  <data name="NeedRefreshableToken" xml:space="preserve">
+    <value>Wenn die interaktive Authentifizierung nicht unterstützt wird, ist ein externes Zugriffstoken erforderlich. entweder in der Verbindungszeichenfolge oder durch Festlegen der AccessToken-Eigenschaft bereitstellen.</value>
+  </data>
+  <data name="NonRefreshableToken_AlreadyPresented" xml:space="preserve">
+    <value>Wenn ein nicht aktualisierbares Token im Kennwort in der Verbindungszeichenfolge angezeigt wird, konnte das aktualisierbare Token nicht verwendet werden.</value>
+  </data>
+  <data name="TokenRefreshFailure" xml:space="preserve">
+    <value>Fehler beim Aktualisieren des abgelaufenen Zugriffstokens.</value>
+  </data>
+  <data name="Token_Expired" xml:space="preserve">
+    <value>Das Token ist abgelaufen.</value>
+  </data>
+</root>

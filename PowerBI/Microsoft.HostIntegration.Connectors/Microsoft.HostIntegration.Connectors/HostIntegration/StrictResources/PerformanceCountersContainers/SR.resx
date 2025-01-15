@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DrdaArActiveDrdaSessions" xml:space="preserve">
+    <value>Active DRDA Sessions</value>
+  </data>
+  <data name="DrdaArActiveDrdaSessionsHelp" xml:space="preserve">
+    <value>This counter indicates the number of currently active DRDA sessions.</value>
+  </data>
+  <data name="DrdaArAverageHostProcessingTime" xml:space="preserve">
+    <value>Avg. Host Processing Time</value>
+  </data>
+  <data name="DrdaArAverageHostProcessingTimeHelp" xml:space="preserve">
+    <value>This average time counter measures the time the host takes to respond to a request sent to it. The time starts after MSDRDA sends the final data buffer and ends when the first response buffer is received by MSDRDA. This counter is represented in terms of seconds of elapsed time.</value>
+  </data>
+  <data name="DrdaArBytesReceivedPerSecond" xml:space="preserve">
+    <value>Bytes Received / Second</value>
+  </data>
+  <data name="DrdaArBytesReceivedPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of bytes received by the client. This number is represented in terms of bytes per second.</value>
+  </data>
+  <data name="DrdaArBytesSentPerSecond" xml:space="preserve">
+    <value>Bytes Sent / Second</value>
+  </data>
+  <data name="DrdaArBytesSentPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of bytes sent from the client. This number is represented in terms of bytes per second.</value>
+  </data>
+  <data name="DrdaArOpenStatements" xml:space="preserve">
+    <value>Open Statements</value>
+  </data>
+  <data name="DrdaArOpenStatementsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of currently active statements created by data providers for DRDA.</value>
+  </data>
+  <data name="DrdaArPerformanceCounterCategory" xml:space="preserve">
+    <value>MSFT DRDA Access Library</value>
+  </data>
+  <data name="DrdaArPerformanceCounterCategoryHelp" xml:space="preserve">
+    <value>Microsoft DRDA Access Library</value>
+  </data>
+  <data name="DrdaArTotalTransactions" xml:space="preserve">
+    <value>Total Transactions</value>
+  </data>
+  <data name="DrdaArTotalTransactionsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of transactions.  Transactions equals the number of commits plus the number of rollbacks.</value>
+  </data>
+  <data name="DrdaArTransactionCommitsPerSecond" xml:space="preserve">
+    <value>Commits / Second</value>
+  </data>
+  <data name="DrdaArTransactionCommitsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing which result in a commit.  This number is represented in terms of commits per second.</value>
+  </data>
+  <data name="DrdaArTransactionRollbacksPerSecond" xml:space="preserve">
+    <value>Rollbacks / Second</value>
+  </data>
+  <data name="DrdaArTransactionRollbacksPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing which result in a rollback.  This number is represented in terms of rollbacks per second.</value>
+  </data>
+  <data name="DrdaArTransactionsPerSecond" xml:space="preserve">
+    <value>Transactions / Second</value>
+  </data>
+  <data name="DrdaArTransactionsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing.  Transactions equals the number of commits plus the number of rollbacks.  This number is represented in terms of transactions per second.</value>
+  </data>
+  <data name="DrdaAsActiveDrdaSessions" xml:space="preserve">
+    <value>Active DRDA Sessions</value>
+  </data>
+  <data name="DrdaAsActiveDrdaSessionsHelp" xml:space="preserve">
+    <value>This counter indicates the number of currently active DRDA sessions.</value>
+  </data>
+  <data name="DrdaAsActiveSqlConnections" xml:space="preserve">
+    <value>Active SQL connections</value>
+  </data>
+  <data name="DrdaAsActiveSqlConnectionsHelp" xml:space="preserve">
+    <value>This counter indicates the number of currently active SQL connections.</value>
+  </data>
+  <data name="DrdaAsActiveTransactions" xml:space="preserve">
+    <value>Active Transactions</value>
+  </data>
+  <data name="DrdaAsActiveTransactionsHelp" xml:space="preserve">
+    <value>This counter indicates the number of currently active transactions.</value>
+  </data>
+  <data name="DrdaAsBytesReceivedPerSecond" xml:space="preserve">
+    <value>Bytes Received / Second</value>
+  </data>
+  <data name="DrdaAsBytesReceivedPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of bytes received from a client. This number is represented in terms of bytes per second.</value>
+  </data>
+  <data name="DrdaAsBytesSentPerSecond" xml:space="preserve">
+    <value>Bytes Sent / Second</value>
+  </data>
+  <data name="DrdaAsBytesSentPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of bytes sent to a client. This number is represented in terms of bytes per second.</value>
+  </data>
+  <data name="DrdaAsPerformanceCounterCategory" xml:space="preserve">
+    <value>Service for DRDA</value>
+  </data>
+  <data name="DrdaAsPerformanceCounterCategoryHelp" xml:space="preserve">
+    <value>Performance counters for the Microsoft Service for DRDA</value>
+  </data>
+  <data name="DrdaAsTotalTransactions" xml:space="preserve">
+    <value>Total Transactions</value>
+  </data>
+  <data name="DrdaAsTotalTransactionsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of transactions.  Transactions equals the number of commits plus the number of rollbacks.</value>
+  </data>
+  <data name="DrdaAsTransactionCommitsPerSecond" xml:space="preserve">
+    <value>Commits / Second</value>
+  </data>
+  <data name="DrdaAsTransactionCommitsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing which result in a commit.  This number is represented in terms of commits per second.</value>
+  </data>
+  <data name="DrdaAsTransactionRollbacksPerSecond" xml:space="preserve">
+    <value>Rollbacks / Second</value>
+  </data>
+  <data name="DrdaAsTransactionRollbacksPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing which result in a rollback.  This number is represented in terms of rollbacks per second.</value>
+  </data>
+  <data name="DrdaAsTransactionsPerSecond" xml:space="preserve">
+    <value>Transactions / Second</value>
+  </data>
+  <data name="DrdaAsTransactionsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the rate of transaction processing.  Transactions equals the number of commits plus the number of rollbacks.  This number is represented in terms of transactions per second.</value>
+  </data>
+  <data name="HipAverageHostResponseTime" xml:space="preserve">
+    <value>Average host response time</value>
+  </data>
+  <data name="HipAverageHostResponseTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes for a response to arrive from the host system. The time begins when TI sends the request to the host system and ends when TI receives the first packet of the host response.</value>
+  </data>
+  <data name="HipAverageMethodCallTime" xml:space="preserve">
+    <value>Average method call time</value>
+  </data>
+  <data name="HipAverageMethodCallTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes TI HIP to process method calls made by the client application. The time begins when TI receives the request from the client application and ends when TI returns control to the client application.</value>
+  </data>
+  <data name="HipCumulativeCalls" xml:space="preserve">
+    <value>Cumulative calls</value>
+  </data>
+  <data name="HipCumulativeCallsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that have occurred since the TI Application was started.</value>
+  </data>
+  <data name="HipCurrentlyExecutingCalls" xml:space="preserve">
+    <value>Calls currently executing</value>
+  </data>
+  <data name="HipCurrentlyExecutingCallsHelp" xml:space="preserve">
+    <value>This counter indicates the number of method calls that are currently in the process of being executed.</value>
+  </data>
+  <data name="HipPerformanceCounterCategory" xml:space="preserve">
+    <value>HIS Application Integration - HIP</value>
+  </data>
+  <data name="HipPerformanceCounterCategoryHelp" xml:space="preserve">
+    <value>HIS Application Integration - HIP</value>
+  </data>
+  <data name="HipTotalCallsPerSecond" xml:space="preserve">
+    <value>Total calls / sec</value>
+  </data>
+  <data name="HipTotalCallsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that TI HIP has processed. This counter is not specific to any TI HIP programming model. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="HipTotalErrorsPerSecond" xml:space="preserve">
+    <value>Total errors / sec</value>
+  </data>
+  <data name="HipTotalErrorsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that have returned a non-zero HRESULT indication to the client application. This counter is not specific to any TI HIP programming model. This number is represented in terms of errors per second.</value>
+  </data>
+  <data name="MqClientAverageGetTime" xml:space="preserve">
+    <value>Average GET time</value>
+  </data>
+  <data name="MqClientAverageGetTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes the Microsoft Client for MQ to process GET calls made by the client application. The time begins when the Microsoft Client for MQ receives the request from the client application and ends when it returns control to the client application.</value>
+  </data>
+  <data name="MqClientAveragePutTime" xml:space="preserve">
+    <value>Average PUT time</value>
+  </data>
+  <data name="MqClientAveragePutTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes the Microsoft Client for MQ to process PUT calls made by the client application. The time begins when the Microsoft Client for MQ receives the request from the client application and ends when it returns control to the client application.</value>
+  </data>
+  <data name="MqClientAverageTransactionalGetTime" xml:space="preserve">
+    <value>Average transactional GET time</value>
+  </data>
+  <data name="MqClientAverageTransactionalGetTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes the Microsoft Client for MQ to process transactional GET calls made by the client application. The time begins when the Microsoft Client for MQ receives the request from the client application and ends when it returns control to the client application.</value>
+  </data>
+  <data name="MqClientAverageTransactionalPutTime" xml:space="preserve">
+    <value>Average transactional PUT time</value>
+  </data>
+  <data name="MqClientAverageTransactionalPutTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes the Microsoft Client for MQ to process transactional PUT calls made by the client application. The time begins when the Microsoft Client for MQ receives the request from the client application and ends when it returns control to the client application.</value>
+  </data>
+  <data name="MqClientCumulativeGets" xml:space="preserve">
+    <value>Cumulative GET calls</value>
+  </data>
+  <data name="MqClientCumulativeGetsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of GET calls that have occurred since the Microsoft Client for MQ application was started.</value>
+  </data>
+  <data name="MqClientCumulativePuts" xml:space="preserve">
+    <value>Cumulative PUT calls</value>
+  </data>
+  <data name="MqClientCumulativePutsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of PUT calls that have occurred since the Microsoft Client for MQ application was started.</value>
+  </data>
+  <data name="MqClientCumulativeTransactionalGets" xml:space="preserve">
+    <value>Cumulative transactional GET calls</value>
+  </data>
+  <data name="MqClientCumulativeTransactionalGetsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of transactional GET calls that have occurred since the Microsoft Client for MQ application was started.</value>
+  </data>
+  <data name="MqClientCumulativeTransactionalPuts" xml:space="preserve">
+    <value>Cumulative transactional PUT calls</value>
+  </data>
+  <data name="MqClientCumulativeTransactionalPutsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of transactional PUT calls that have occurred since the Microsoft Client for MQ application was started.</value>
+  </data>
+  <data name="MqClientGetsPerSecond" xml:space="preserve">
+    <value>GET calls / sec</value>
+  </data>
+  <data name="MqClientGetsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of GET calls that Microsoft Client for MQ has processed. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="MqClientPerformanceCounterCategory" xml:space="preserve">
+    <value>HIS Microsoft Client for MQ</value>
+  </data>
+  <data name="MqClientPerformanceCounterCategoryHelp" xml:space="preserve">
+    <value>HIS Microsoft Client for MQ</value>
+  </data>
+  <data name="MqClientPutsPerSecond" xml:space="preserve">
+    <value>PUT calls / sec</value>
+  </data>
+  <data name="MqClientPutsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of PUT calls that Microsoft Client for MQ has processed. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="MqClientTransactionalGetsPerSecond" xml:space="preserve">
+    <value>Transactional GET calls / sec</value>
+  </data>
+  <data name="MqClientTransactionalGetsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of transactional GET calls that Microsoft Client for MQ has processed. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="MqClientTransactionalPutsPerSecond" xml:space="preserve">
+    <value>Transactional PUT calls / sec</value>
+  </data>
+  <data name="MqClientTransactionalPutsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the number of transactional PUT calls that Microsoft Client for MQ has processed. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="WipAverageHostResponseTime" xml:space="preserve">
+    <value>Average host response time</value>
+  </data>
+  <data name="WipAverageHostResponseTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes for a response to arrive from the host system. The time begins when TI sends the request to the host system and ends when TI receives the first packet of the host response.</value>
+  </data>
+  <data name="WipAverageMethodCallTime" xml:space="preserve">
+    <value>Average method call time</value>
+  </data>
+  <data name="WipAverageMethodCallTimeHelp" xml:space="preserve">
+    <value>This counter measures the average time it takes TI WIP to process method calls made by the client application. The time begins when TI receives the request from the client application and ends when TI returns control to the client application.</value>
+  </data>
+  <data name="WipCumulativeCalls" xml:space="preserve">
+    <value>Cumulative calls</value>
+  </data>
+  <data name="WipCumulativeCallsHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that have occurred since the TI Application was started.</value>
+  </data>
+  <data name="WipCurrentlyExecutingCalls" xml:space="preserve">
+    <value>Calls currently executing</value>
+  </data>
+  <data name="WipCurrentlyExecutingCallsHelp" xml:space="preserve">
+    <value>This counter indicates the number of method calls that are currently in the process of being executed.</value>
+  </data>
+  <data name="WipPerformanceCounterCategory" xml:space="preserve">
+    <value>HIS Application Integration - WIP</value>
+  </data>
+  <data name="WipPerformanceCounterCategoryHelp" xml:space="preserve">
+    <value>HIS Application Integration - WIP</value>
+  </data>
+  <data name="WipTotalCallsPerSecond" xml:space="preserve">
+    <value>Total calls / sec</value>
+  </data>
+  <data name="WipTotalCallsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that TI WIP has processed. This counter is not specific to any TI WIP programming model. This number is represented in terms of calls per second.</value>
+  </data>
+  <data name="WipTotalErrorsPerSecond" xml:space="preserve">
+    <value>Total errors / sec</value>
+  </data>
+  <data name="WipTotalErrorsPerSecondHelp" xml:space="preserve">
+    <value>This counter indicates the total number of method calls that have returned a non-zero HRESULT indication to the client application. This counter is not specific to any TI WIP programming model. This number is represented in terms of errors per second.</value>
+  </data>
+</root>

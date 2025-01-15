@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBD6A718-2619-408E-AC17-5669635F27E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.AnalysisServices.AzureClient</RootNamespace>
+    <AssemblyName>Microsoft.AnalysisServices.AzureClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Identity.Client" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AadAuthenticationOptions.cs" />
+    <Compile Include="AadAuthenticator.cs" />
+    <Compile Include="ArtifactCapacityState.cs" />
+    <Compile Include="ASAzureAdalWrapperException.cs" />
+    <Compile Include="AuthenticationSR.Designer.cs">
+      <DependentUpon>AuthenticationSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Authentication\AuthenticationEndpoint.cs" />
+    <Compile Include="Authentication\AuthenticationException.cs" />
+    <Compile Include="Authentication\AuthenticationHandle.cs" />
+    <Compile Include="Authentication\AuthenticationInformation.cs" />
+    <Compile Include="Authentication\AuthenticationManager.cs" />
+    <Compile Include="Authentication\AuthenticationOptions.cs" />
+    <Compile Include="Authentication\AuthenticationTracer.cs" />
+    <Compile Include="Authentication\DataverseAuthenticationHandle.cs" />
+    <Compile Include="Authentication\ExternalAuthenticationHandle.cs" />
+    <Compile Include="Authentication\IAuthenticationService.cs" />
+    <Compile Include="Authentication\MFARequiredException.cs" />
+    <Compile Include="Authentication\MsalAuthenticationHandle.cs" />
+    <Compile Include="Authentication\MsalAuthenticationHelper.cs" />
+    <Compile Include="Authentication\NonInteractiveLoginException.cs" />
+    <Compile Include="Authentication\PbiPremiumAuthenticationHandle.cs" />
+    <Compile Include="AuxiliaryPermissionInfo.cs" />
+    <Compile Include="CertUtils.cs" />
+    <Compile Include="Configuration\BinaryXmlSupport.cs" />
+    <Compile Include="Configuration\ClientConfigLoader.cs" />
+    <Compile Include="Configuration\ConfigEntry.cs" />
+    <Compile Include="Extensions\DirectoryInfoExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\TextReaderExtensions.cs" />
+    <Compile Include="Extensions\UriExtensions.cs" />
+    <Compile Include="Hosting\ClientFeaturesManager.cs" />
+    <Compile Include="Hosting\ClientHostingManager.cs" />
+    <Compile Include="Hosting\IConnectivityOwner.cs" />
+    <Compile Include="Hosting\InfoRestrictionType.cs" />
+    <Compile Include="IAadAuthenticator.cs" />
+    <Compile Include="IPbiPremiumTokenHolder.cs" />
+    <Compile Include="ITokenHolder.cs" />
+    <Compile Include="PbiPremiumTokenHolder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redirection\RedirectionInformation.cs" />
+    <Compile Include="ResolveDatabaseNameErrorReason.cs" />
+    <Compile Include="ResolvePbiWorkspaceErrorReason.cs" />
+    <Compile Include="RuntimeSR.Designer.cs">
+      <DependentUpon>RuntimeSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Runtime\FrameworkRuntimeHelper.cs" />
+    <Compile Include="Runtime\HostRuntimeHelper.cs" />
+    <Compile Include="SecurityProtocolTypeExtensions.cs" />
+    <Compile Include="SingleSignOnMode.cs" />
+    <Compile Include="TokenHolder.cs" />
+    <Compile Include="Utilities\AsPaasHelper.cs" />
+    <Compile Include="Utilities\AsyncHelper.cs" />
+    <Compile Include="Utilities\ConnectivityHelper.cs" />
+    <Compile Include="Utilities\ConvertCachedItem.cs" />
+    <Compile Include="Utilities\ConvertHelper.cs" />
+    <Compile Include="Utilities\Disposable.cs" />
+    <Compile Include="Utilities\FilesHelper.cs" />
+    <Compile Include="Utilities\GlobalContext.cs" />
+    <Compile Include="Utilities\HttpHelper.cs" />
+    <Compile Include="Utilities\ImmutableObjectAccessController.cs" />
+    <Compile Include="Utilities\ISharedItemConverter.cs" />
+    <Compile Include="Utilities\MemoryCache.cs" />
+    <Compile Include="Utilities\MemoryCacheBase.cs" />
+    <Compile Include="Utilities\MemoryCacheRetentionPolicy.cs" />
+    <Compile Include="Utilities\PrepareItemForCaching.cs" />
+    <Compile Include="Utilities\ResourceManager.cs" />
+    <Compile Include="Utilities\ResourceManagerBase.cs" />
+    <Compile Include="Utilities\SharedItemConverter.cs" />
+    <Compile Include="Utilities\SharedMemoryCache.cs" />
+    <Compile Include="Utilities\SharedResourceManager.cs" />
+    <Compile Include="Utilities\StreamHelper.cs" />
+    <Compile Include="WorkspaceCapacitySkuType201606.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AAD_Client_Assemblies\Microsoft\IdentityModel\Abstractions.dll" />
+    <EmbeddedResource Include="AAD_Client_Assemblies\Microsoft\Identity\Client.dll" />
+    <EmbeddedResource Include="AuthenticationSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthenticationSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuntimeSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RuntimeSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared_Resources\ASAzureSecurityConfig.xml" />
+    <EmbeddedResource Include="Shared_Resources\RedirectionConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

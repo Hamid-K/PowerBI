@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CountAggregateAttributeName" xml:space="preserve">
+    <value>#$1</value>
+  </data>
+  <data name="CreateAttributesRuleDescription" xml:space="preserve">
+    <value>為各個發現的資料行建立屬性。</value>
+  </data>
+  <data name="CreateAttributesRuleName" xml:space="preserve">
+    <value>建立屬性。</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleDescription" xml:space="preserve">
+    <value>為各個自動遞增的資料行建立隱藏的屬性。</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleName" xml:space="preserve">
+    <value>建立自動遞增資料行的屬性。</value>
+  </data>
+  <data name="CreateCountAggregatesRuleDescription" xml:space="preserve">
+    <value>為各個新實體建立 Count 彙總</value>
+  </data>
+  <data name="CreateCountAggregatesRuleName" xml:space="preserve">
+    <value>建立計數彙總。</value>
+  </data>
+  <data name="CreateDateAggregatesRuleDescription" xml:space="preserve">
+    <value>建立日期屬性的 First、Last 彙總。</value>
+  </data>
+  <data name="CreateDateAggregatesRuleName" xml:space="preserve">
+    <value>建立日期彙總。</value>
+  </data>
+  <data name="CreateDateVariationsRuleDescription" xml:space="preserve">
+    <value>根據不同的日期部分建立日期屬性的變數。</value>
+  </data>
+  <data name="CreateDateVariationsRuleName" xml:space="preserve">
+    <value>建立日期變數。</value>
+  </data>
+  <data name="CreateEntitiesRuleDescription" xml:space="preserve">
+    <value>為各個發現的資料表建立實體。</value>
+  </data>
+  <data name="CreateEntitiesRuleName" xml:space="preserve">
+    <value>為所有資料表建立實體。</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleDescription" xml:space="preserve">
+    <value>為各個發現的非空白資料行建立屬性。</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleName" xml:space="preserve">
+    <value>為非空白資料行建立屬性。</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleDescription" xml:space="preserve">
+    <value>為各個發現的非空白資料表建立實體。</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleName" xml:space="preserve">
+    <value>為非空白資料表建立實體。</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleDescription" xml:space="preserve">
+    <value>為數值屬性建立 Sum、Avg、Min 和 Max 彙總。</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleName" xml:space="preserve">
+    <value>建立數值彙總。</value>
+  </data>
+  <data name="CreateRolesRuleDescription" xml:space="preserve">
+    <value>為各個發現的關聯性建立角色。</value>
+  </data>
+  <data name="CreateRolesRuleName" xml:space="preserve">
+    <value>建立角色。</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleDescription" xml:space="preserve">
+    <value>建立時間屬性的第一個和最後一個彙總。</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleName" xml:space="preserve">
+    <value>建立時間彙總。</value>
+  </data>
+  <data name="DateAggregateMaxName" xml:space="preserve">
+    <value>最後一個 {AttributeName}</value>
+  </data>
+  <data name="DateAggregateMinName" xml:space="preserve">
+    <value>第一個 {AttributeName}</value>
+  </data>
+  <data name="DateFormattingRuleDescription" xml:space="preserve">
+    <value>設定日期屬性的僅日期格式。</value>
+  </data>
+  <data name="DateFormattingRuleName" xml:space="preserve">
+    <value>日期格式。</value>
+  </data>
+  <data name="DateVariationDayName" xml:space="preserve">
+    <value>{AttributeName} 天</value>
+  </data>
+  <data name="DateVariationMonthName" xml:space="preserve">
+    <value>{AttributeName} 月</value>
+  </data>
+  <data name="DateVariationQuarterName" xml:space="preserve">
+    <value>{AttributeName} 季</value>
+  </data>
+  <data name="DateVariationYearName" xml:space="preserve">
+    <value>{AttributeName} 年</value>
+  </data>
+  <data name="DateVariation_DateOfX_Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DateVariation_DateOfX_Of" xml:space="preserve">
+    <value>的</value>
+  </data>
+  <data name="DateVariation_QuarterFormat" xml:space="preserve">
+    <value>Q0</value>
+  </data>
+  <data name="DecimalFormattingRuleDescription" xml:space="preserve">
+    <value>設定十進位屬性的格式。</value>
+  </data>
+  <data name="DecimalFormattingRuleName" xml:space="preserve">
+    <value>十進位格式。</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="DefaultMimeTypeRuleDescription" xml:space="preserve">
+    <value>設定二進位屬性的預設 MIME 類型。</value>
+  </data>
+  <data name="DefaultMimeTypeRuleName" xml:space="preserve">
+    <value>預設 MIME 類型。</value>
+  </data>
+  <data name="DiscourageGroupingRuleDescription" xml:space="preserve">
+    <value>不鼓勵以高唯一性進行屬性群組。</value>
+  </data>
+  <data name="DiscourageGroupingRuleName" xml:space="preserve">
+    <value>不鼓勵群組。</value>
+  </data>
+  <data name="DropdownValueSelectionRuleDescription" xml:space="preserve">
+    <value>為只有少量唯一值的屬性，設定下拉式值選取項目。</value>
+  </data>
+  <data name="DropdownValueSelectionRuleName" xml:space="preserve">
+    <value>下拉式值選取項目。</value>
+  </data>
+  <data name="ExcludeAuditColumnsRuleName" xml:space="preserve">
+    <value>排除稽核資料行。</value>
+  </data>
+  <data name="ExcludeSystemTablesRuleName" xml:space="preserve">
+    <value>排除系統資料表。</value>
+  </data>
+  <data name="ExcludeSystemViewsRuleName" xml:space="preserve">
+    <value>排除系統檢視表。</value>
+  </data>
+  <data name="FloatFormattingRuleDescription" xml:space="preserve">
+    <value>設定浮點數值屬性的格式。</value>
+  </data>
+  <data name="FloatFormattingRuleName" xml:space="preserve">
+    <value>浮點格式。</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_ForeignKey" xml:space="preserve">
+    <value>ID|Code|Key|Number|Num</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_NoAggregates" xml:space="preserve">
+    <value>ID|Code|Key</value>
+  </data>
+  <data name="IdentifyingAttributeNames_NonPreferred" xml:space="preserve">
+    <value>Addr|Address|Fax|Postal|PostalCode|Zip|ZipCode</value>
+  </data>
+  <data name="IdentifyingAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="IncludeColumnsRuleName" xml:space="preserve">
+    <value>包含所有使用者資料行。</value>
+  </data>
+  <data name="IncludeRelationsRuleName" xml:space="preserve">
+    <value>包含所有使用者關聯性。</value>
+  </data>
+  <data name="IncludeUserTablesRuleName" xml:space="preserve">
+    <value>包含所有使用者資料表。</value>
+  </data>
+  <data name="IncludeUserViewsRuleName" xml:space="preserve">
+    <value>包含所有使用者檢視。</value>
+  </data>
+  <data name="IntegerFormattingRuleDescription" xml:space="preserve">
+    <value>設定整數屬性的格式。</value>
+  </data>
+  <data name="IntegerFormattingRuleName" xml:space="preserve">
+    <value>整數格式。</value>
+  </data>
+  <data name="ListValueSelectionRuleDescription" xml:space="preserve">
+    <value>為具有適量唯一值的屬性，設定清單值選取項目。</value>
+  </data>
+  <data name="ListValueSelectionRuleName" xml:space="preserve">
+    <value>清單值選取項目。</value>
+  </data>
+  <data name="LookupFolderName" xml:space="preserve">
+    <value>查閱</value>
+  </data>
+  <data name="MarkLargeListsRuleDescription" xml:space="preserve">
+    <value>在執行個體數目多的實體上使用已篩選清單選取。</value>
+  </data>
+  <data name="MarkLargeListsRuleName" xml:space="preserve">
+    <value>大型清單。</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleDescription" xml:space="preserve">
+    <value>將有一個屬性的實體視為查閱實體。</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleName" xml:space="preserve">
+    <value>查閱實體。</value>
+  </data>
+  <data name="MarkMediumListsRuleDescription" xml:space="preserve">
+    <value>針對具有中等量執行個體的實體，使用清單選取項目。</value>
+  </data>
+  <data name="MarkMediumListsRuleName" xml:space="preserve">
+    <value>中等量清單。</value>
+  </data>
+  <data name="MarkSmallListsRuleDescription" xml:space="preserve">
+    <value>針對具有少量執行個體的實體，使用下拉式選取項目。</value>
+  </data>
+  <data name="MarkSmallListsRuleName" xml:space="preserve">
+    <value>小型清單。</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleDescription" xml:space="preserve">
+    <value>在執行個體數目極多的實體上使用強制篩選選取。</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleName" xml:space="preserve">
+    <value>極大型清單。</value>
+  </data>
+  <data name="NumericAggregateAvgName" xml:space="preserve">
+    <value>平均 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMaxName" xml:space="preserve">
+    <value>最大 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMinName" xml:space="preserve">
+    <value>最小 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateSumName" xml:space="preserve">
+    <value>總計 {AttributeName}</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleDescription" xml:space="preserve">
+    <value>在數值和日期屬性上設定遞減排序。</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleName" xml:space="preserve">
+    <value>數值/日期格式。</value>
+  </data>
+  <data name="RoleNameOnlyRuleDescription" xml:space="preserve">
+    <value>角色名稱僅供用於一般名稱的識別屬性。</value>
+  </data>
+  <data name="RoleNameOnlyRuleName" xml:space="preserve">
+    <value>僅角色名稱。</value>
+  </data>
+  <data name="RoleOnlyContextualNames" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description|Type</value>
+  </data>
+  <data name="RulesDescription" xml:space="preserve">
+    <value>用來從資料來源檢視產生語意模型的標準規則。</value>
+  </data>
+  <data name="RulesName" xml:space="preserve">
+    <value>預設模型產生規則</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleDescription" xml:space="preserve">
+    <value>在各個實體上設定預設詳細資料屬性。</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleName" xml:space="preserve">
+    <value>設定預設詳細資料屬性。</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleDescription" xml:space="preserve">
+    <value>在各個實體上設定識別屬性。</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleName" xml:space="preserve">
+    <value>設定識別屬性。</value>
+  </data>
+  <data name="TimeAggregateMaxName" xml:space="preserve">
+    <value>最後一個 {AttributeName}</value>
+  </data>
+  <data name="TimeAggregateMinName" xml:space="preserve">
+    <value>第一個 {AttributeName}</value>
+  </data>
+</root>

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCodes_ASPNetNotRegistered" xml:space="preserve">
+    <value>Компонент ASP.NET не зарегистрирован на компьютере.
+
+</value>
+  </data>
+  <data name="ErrorCodes_AlreadyActivated" xml:space="preserve">
+    <value>Сервер отчетов уже инициализирован.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ApplicationPoolAlreadyExists" xml:space="preserve">
+    <value>Пул приложений уже существует. Укажите уникальное имя пула приложений.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPool" xml:space="preserve">
+    <value>Пул приложений не существует. Укажите имя существующего пула приложений.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPoolName" xml:space="preserve">
+    <value>Указан недопустимый пул приложений. Убедитесь, что имя не слишком длинное и не содержит недопустимых символов. (например, /)
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadConfigurationFile" xml:space="preserve">
+    <value>На сервере отчетов обнаружена проблема конфигурации.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadCredentialsType" xml:space="preserve">
+    <value>Недопустимый тип учетных данных.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadLcid" xml:space="preserve">
+    <value>Недопустимый код локали.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadVerson" xml:space="preserve">
+    <value>Версия не совпадает ни с одной из поддерживаемых версий.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadWebsiteConfiguration" xml:space="preserve">
+    <value>Недопустимый пул приложений. Укажите один из доступных пулов приложений и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_CantConnectCatalog" xml:space="preserve">
+    <value>Не удается установить соединение с базой данных сервера отчетов. Проверьте, доступна ли база данных SQL Server по сети.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ConfigurationFileNotFound" xml:space="preserve">
+    <value>Не найден файл конфигурации сервера отчетов.
+
+</value>
+  </data>
+  <data name="ErrorCodes_FailedToEnumerateInstances" xml:space="preserve">
+    <value>Произошла ошибка при перечислении экземпляров WMI.   </value>
+  </data>
+  <data name="ErrorCodes_FailedToLoadResources" xml:space="preserve">
+    <value>Не найдены ресурсы, необходимые для завершения данной операции.
+
+</value>
+  </data>
+  <data name="ErrorCodes_GrantLoginToPasswordRequired" xml:space="preserve">
+    <value>Для учетной записи необходимо указать пароль.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IISNotInstalled" xml:space="preserve">
+    <value>Службы IIS не установлены на этом компьютере.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IllformedAccountString" xml:space="preserve">
+    <value>Недопустимое имя учетной записи. Укажите учетную запись в формате "домен\псевдоним".
+
+</value>
+  </data>
+  <data name="ErrorCodes_InsufficientPrivilege" xml:space="preserve">
+    <value>Отсутствуют необходимые разрешения для выполнения этой задачи. Укажите учетную запись пользователя с правами администратора и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidIISPath" xml:space="preserve">
+    <value>При работе со службами IIS задан недопустимый путь ADSI.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidParameter" xml:space="preserve">
+    <value>Один или несколько недопустимых параметров. Укажите все параметры и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidPortNumber" xml:space="preserve">
+    <value>Недопустимый номер порта. Для виртуального каталога сервера отчетов должен использоваться номер порта родительского веб-сайта.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidSecureConnectionLevel" xml:space="preserve">
+    <value>Недопустимый уровень безопасного соединения. Укажите одно из следующих значений: 0, 1, 2, 3.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUrlParameterSet" xml:space="preserve">
+    <value>При вызове поставщика WMI передан недопустимый URL-адрес.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUser" xml:space="preserve">
+    <value>Недопустимая учетная запись пользователя или неправильный пароль.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidVersionString" xml:space="preserve">
+    <value>Недопустимый формат строки версии.
+
+</value>
+  </data>
+  <data name="ErrorCodes_LocalServiceIsLocalOnly" xml:space="preserve">
+    <value>При установке соединения с удаленным сервером баз данных параметр LocalSystem недопустим.
+
+</value>
+  </data>
+  <data name="ErrorCodes_MustCreateVirtualDirectory" xml:space="preserve">
+    <value>Прежде чем выполнять эту операцию, необходимо создать виртуальный каталог.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAdmin" xml:space="preserve">
+    <value>Отсутствуют необходимые разрешения для выполнения этой задачи. Указанная учетная запись пользователя не имеет прав администратора на компьютере "{0}". Укажите учетную запись пользователя с правами администратора и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAnnounced" xml:space="preserve">
+    <value>В базе данных сервера отчетов отсутствует ключ сервера отчетов. Чтобы добавить ключ, убедитесь, что служба Windows сервера отчетов работает, и подключитесь к веб-службе сервера отчетов.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInNativeMode" xml:space="preserve">
+    <value>Эта операция поддерживается только для сервера отчетов, настроенного для работы в режиме интеграции с SharePoint. На сервере отчетов, работающем в собственном режиме, она невозможна.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInSharePointMode" xml:space="preserve">
+    <value>В режиме интеграции с SharePoint эта операция не поддерживается.  Дополнительные сведения о поддерживаемых операциях см. в документации по продукту.
+
+</value>
+  </data>
+  <data name="ErrorCodes_OperatingSystemNotSupported" xml:space="preserve">
+    <value>Операционная система не поддерживается.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RPCServerNotListening" xml:space="preserve">
+    <value>Ошибка при попытке соединения с конечной точкой удаленного вызова процедур (RPC) сервера отчетов. Убедитесь, что служба Windows сервера отчетов работает, и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionLevelType" xml:space="preserve">
+    <value>Недопустимый уровень расширенной защиты.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionScenarioType" xml:space="preserve">
+    <value>Недопустимый сценарий расширенной защиты.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>Модуль доставки электронной почты не найден в файле конфигурации.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidApplication" xml:space="preserve">
+    <value>Приложение недопустимо. Допустимые приложения: ReportServerWebService, ReportManager, ReportServerWebApp и PowerBIWebApp.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidSSLCertificate" xml:space="preserve">
+    <value>Сертификат не является доверенным.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsIpAddressNotFound" xml:space="preserve">
+    <value>IP-адрес не найден на этом компьютере.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsLocalServiceNotAllowedXP" xml:space="preserve">
+    <value>Учетная запись "Локальная служба" недопустима в Windows XP.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineApplicationFirst" xml:space="preserve">
+    <value>Приложение не найдено.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineAuthenticationFirst" xml:space="preserve">
+    <value>Проверка подлинности не определена.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLBindingConflict" xml:space="preserve">
+    <value>Для заданного сочетания IP-адреса и порта уже существует HTTPS-привязка. Сертификаты в существующей привязке и текущем запросе различаются. Для каждого сочетания IP-адреса и порта можно использовать только один сертификат. Чтобы устранить эту проблему, используйте тот же сертификат, что и в существующей привязке, либо удалите существующую SSL-привязку и создайте новую — с сертификатом из текущего запроса.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLCertificateNotRegistered" xml:space="preserve">
+    <value>Сертификат не зарегистрирован.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsServerConfigurationError" xml:space="preserve">
+    <value>Сервер отчетов не запускается. Один или несколько файлов конфигурации являются недопустимыми. Дополнительные сведения см. в файлах журналов.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointError" xml:space="preserve">
+    <value>Во время выполнения операции произошла ошибка при вызове методов объектной модели служб Windows SharePoint Services.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Операция не выполнена, так как на сервере отчетов не установлена объектная модель служб Windows SharePoint Services.  Установите и настройте службы Windows SharePoint Services и повторите запрос.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLAlreadyReserved" xml:space="preserve">
+    <value>Этот URL-адрес уже зарезервирован.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLMustNotExist" xml:space="preserve">
+    <value>Поставщику WMI сервера отчетов не удается создать виртуальный каталог. Эта ошибка возникает в случае, если вызывается SetVirtualDirectory и значение UrlString уже зарезервировано. Чтобы продолжить, удалите все резервирования URL-адресов с помощью метода RemoveURL и повторите попытку.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLNotReserved" xml:space="preserve">
+    <value>Этот URL-адрес указан в файле конфигурации, но не зарезервирован для использования с httpsys.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsUrlAlreadyReservedDifferentName" xml:space="preserve">
+    <value>Этот URL-адрес уже зарезервирован с другой учетной записью пользователя.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsexecRoleDoesNotExist" xml:space="preserve">
+    <value>Роль базы данных RSExec не существует в базе данных. Убедитесь в том, что база данных является базой данных сервера отчетов.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceDisabled" xml:space="preserve">
+    <value>Служба Windows для служб Reporting Services отключена.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceNotActivated" xml:space="preserve">
+    <value>Служба Windows для служб Reporting Services не активирована.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SharePointNotInstalled" xml:space="preserve">
+    <value>Службы Windows SharePoint Services не установлены. Для текущей операции требуется экземпляр служб Windows SharePoint Services.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SqlAdminUserInsufficientPrivilege" xml:space="preserve">
+    <value>Отсутствуют необходимые разрешения для выполнения этой задачи в базе данных SQL Server. Укажите учетную запись пользователя SQL Server с правами администратора и повторите операцию.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SslCertificateNotFound" xml:space="preserve">
+    <value>На веб-сайте не настроен HTTPS-сертификат.
+
+</value>
+  </data>
+  <data name="ErrorCodes_Success" xml:space="preserve">
+    <value>Операция успешно завершена.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseError" xml:space="preserve">
+    <value>Ошибка при выполнении скрипта в ядре СУБД SQL Server.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseResult" xml:space="preserve">
+    <value>Непредвиденный результат запроса к базе данных.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnknownOrUnmappedException" xml:space="preserve">
+    <value>Неизвестная ошибка в поставщике WMI. Код ошибки {0:X}
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryAlreadyExists" xml:space="preserve">
+    <value>Указанный виртуальный каталог уже существует. Укажите другое имя.
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryInvalid" xml:space="preserve">
+    <value>Указан недопустимый виртуальный каталог. Убедитесь, что имя не слишком длинное и не содержит недопустимых символов. (например, ;)
+
+</value>
+  </data>
+  <data name="ErrorCodes_WebServiceAccountNotSet" xml:space="preserve">
+    <value>Не задана учетная запись службы для веб-службы сервера отчетов.
+
+</value>
+  </data>
+  <data name="ErrorCodes_WindowsServiceAccountNotSet" xml:space="preserve">
+    <value>Не задана учетная запись службы Windows сервера отчетов.
+
+</value>
+  </data>
+  <data name="Exception_Generic" xml:space="preserve">
+    <value>Возникла непредвиденная ошибка. Подробные сведения:
+
+{0}</value>
+  </data>
+  <data name="GenericWMIError" xml:space="preserve">
+    <value>Произошла ошибка WMI, дополнительные сведения об ошибке отсутствуют.</value>
+  </data>
+  <data name="GenericWMIErrorWithCode" xml:space="preserve">
+    <value>Произошла ошибка WMI. Возвращена следующая ошибка:
+
+{0}.</value>
+  </data>
+  <data name="ManagementException_AccessDenied" xml:space="preserve">
+    <value>Не удается установить соединение с компьютером.</value>
+  </data>
+  <data name="ManagementException_Generic" xml:space="preserve">
+    <value>Ошибка поставщика WMI сервера отчетов:
+
+{0}</value>
+  </data>
+  <data name="UnableToConnect" xml:space="preserve">
+    <value>Не удалось соединиться с сервером отчетов {0}.</value>
+  </data>
+</root>

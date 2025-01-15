@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace Microsoft.OleDb
+{
+	// Token: 0x02001EC3 RID: 7875
+	public enum DBCOLUMNFLAGS : uint
+	{
+		// Token: 0x04006339 RID: 25401
+		NONE,
+		// Token: 0x0400633A RID: 25402
+		ISBOOKMARK,
+		// Token: 0x0400633B RID: 25403
+		MAYDEFER,
+		// Token: 0x0400633C RID: 25404
+		WRITE = 4U,
+		// Token: 0x0400633D RID: 25405
+		WRITEUNKNOWN = 8U,
+		// Token: 0x0400633E RID: 25406
+		ISFIXEDLENGTH = 16U,
+		// Token: 0x0400633F RID: 25407
+		ISNULLABLE = 32U,
+		// Token: 0x04006340 RID: 25408
+		MAYBENULL = 64U,
+		// Token: 0x04006341 RID: 25409
+		ISLONG = 128U,
+		// Token: 0x04006342 RID: 25410
+		ISROWID = 256U,
+		// Token: 0x04006343 RID: 25411
+		ISROWVER = 512U,
+		// Token: 0x04006344 RID: 25412
+		CACHEDEFERRED = 4096U
+	}
+}

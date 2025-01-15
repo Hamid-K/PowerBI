@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20EB54D4-5FF4-4B71-8B3F-B9C13C427745}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.ReportServer.WebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BIServer.HostingEnvironment">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.BIServer.HostingEnvironment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.BIServer.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Amo.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Amo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.OleDbBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataMovement.Pipeline.PowerBIPipeline">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataMovement.Pipeline.PowerBIPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ExploreHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ExploreHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Packaging">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportingServicesHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportingServicesHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportServer.AsServer">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportServer.AsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ReportServer.ExploreHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ReportServer.ExploreHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportServer.PbixLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportServer.PbixLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.CatalogAccess">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.ReportingServices.CatalogAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.CatalogAccessInterfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.ReportingServices.CatalogAccessInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Portal.ODataClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.ReportingServices.Portal.ODataClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Web.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\ASConnection\ASConnectionStringBuilder.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\ASConnection\RlsNotAuthorizedForModelException.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\ASConnection\RSDataSourceProvider.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\CatalogAccessException.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\CatalogAccessExceptionErrorCode.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\CatalogService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\HttpService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\ICatalogService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Catalog\IHttpService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\CompositionRoot.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\DataModelDataSourceExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Error\ExceptionExtension.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Error\MinervaErrorBuilder.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Error\PowerBIErrorCodes.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Error\RSErrorExtractor.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Error\RSExploreHostExceptionCodes.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Excel\ExcelGenerator.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Extensions\CatalogItemPropertiesExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Extensions\MimeTypesExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\FeatureSwitches\PbiFeatureSwitches.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\IPowerBIConfiguration.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Logging\ReportServerLogger.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Logon\IUserService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Logon\UserCredentials.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Logon\UserService.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\ByteArrayResponse.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\CustomVisualsResponseFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\DisableCachingAttribute.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\ExportDataType.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\ExportToExcelRequest.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\FeatureSwitchResponseFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\FileFormatCheckResponse.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\IRSExploreHostFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\ModelAndExplorationResponseFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\PbiApiController.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\PbiExecutionLogScope.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\Permissions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\PreShreddedPbixFilesServer.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\QueryDataRequest.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\RSExploreHostFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PbiApi\StatusCode.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\ExecuteSemanticQueryDataResult.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\ExecuteSemanticQueryResponse.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\ExecuteSemanticQueryResult.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\InvalidDataSourceKindException.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\InvalidDataSourceTypeException.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\IPbixComponentsBuilder.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\IPbixTelemetryLogger.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixComponents.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixComponentsBuilder.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixDataSourceExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixModelParameterExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixModelRoleExtensions.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixPortalWireContract.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixReportComponents.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Pbix\PbixTelemetryLogger.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\PowerBIConfiguration.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PowerBI\ReportServer\WebApi\ServiceState.cs" />
+    <Compile Include="PowerBI\ReportServer\WebApi\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PowerBI\ReportServer\WebApi\StringExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="ReportingServices\TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.de.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.es.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.fr.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.it.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.ja.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.ko.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.pt.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.ru.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.zh-Hans.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\Properties\Resources.zh-Hant.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.de.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.es.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.fr.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.it.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.ja.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.ko.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.pt.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.ru.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.zh-Hans.resx" />
+    <EmbeddedResource Include="PowerBI\ReportServer\WebApi\SR.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

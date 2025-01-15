@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{957D1B6B-DFC6-4250-84A8-4CCB871B189D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Powerbi.ExploreHost</RootNamespace>
+    <AssemblyName>Microsoft.Powerbi.ExploreHost</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Analytics.AnalyticsEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Analytics.AnalyticsEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Explore.ExploreConverter">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Explore.ExploreConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Insights.ServiceContracts" />
+    <Reference Include="Microsoft.InfoNav.Insights.ServiceRuntime" />
+    <Reference Include="Microsoft.InfoNav.NaturalLanguage.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.NaturalLanguage.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Lucia.Core.Runtime" />
+    <Reference Include="Microsoft.Lucia.Hosting.Analytics" />
+    <Reference Include="Microsoft.PowerBI.Analytics.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Analytics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Data.ModelSchemaAnalysis" />
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.MsolapDataExtension">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.MsolapDataExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.QueryDesignModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.QueryDesignModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ExplorationContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ExplorationContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ExploreHost.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ExploreHost.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ExploreServiceCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ExploreServiceCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Insights.Hosting" />
+    <Reference Include="Microsoft.PowerBI.Lucia.Contracts" />
+    <Reference Include="Microsoft.PowerBI.Lucia.Hosting" />
+    <Reference Include="Microsoft.PowerBI.NaturalLanguage.NLToDax" />
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportingServicesHost">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportingServicesHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Tabular">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Tabular.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Tabular.Json" />
+    <Reference Include="Microsoft.PowerBI.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ConceptualSchemaInfo.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ConceptualSchemas.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ConceptualSchemasRequest.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\DataViewQueryDefinition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\DataViewQueryTranslationResult.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\IFeatureSwitchesProxy.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\PerspectivesInfoResponse.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\TranslatedGroupingDefinition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\TranslatedPartitionColumn.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\TranslatedPartitionTable.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\AsCommandConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ASQueryLimits.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DataExtension\ConnectionProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DataShapeEngineHost.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DAX\DaxCapabilitiesManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DAX\IDaxCapabilitiesHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DAX\IDaxCapabilitiesManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DocumentConversion\ExplorationConversionFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\DocumentConversion\IExplorationConversionHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\ConceptualSchemaCreationException.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\DefaultServiceErrorExtraction.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\ExceptionExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\ExploreHostServiceErrorExtractorFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\PowerBIDesktopErrorCodes.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\PowerBIExploreExceptionExtractor.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Errors\ScriptHandlerErrorExtraction.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ExploreClient.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ExploreClientHandlerBaseFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ExploreClientHandlerContext.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ExploreTracer.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IColumn.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IExploreClient.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IExploreClientFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IHierarchy.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IHierarchyLevel.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IMeasure.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\IModel.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\CancelAnalysisHostRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\CancellationTokenManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\DataSourceInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\DbConnectionWrapper.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\DeriveInsightsHostRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\DesktopConfigurationOverrides.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\ICancellationTokenManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\IInsightsHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\IInsightsSessionStorage.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\InsightsConnectionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\InsightsHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\InsightsSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\InsightsSessionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\InsightsSessionStorage.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Insights\TelemetryEvents.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\ITable.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ColumnStatisticsDiscovererWrapper.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ColumnStatisticsStore.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexBuilder.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexBuilderTelemetry.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexDisposer.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexException.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexOperationStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexReader.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexStore.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexStoreActionId.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexStoreTelemetry.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DataIndexTelemetry.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DbConnectionManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DomainModelManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\DomainModelManagerStatus.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IColumnStatisticsDiscovererWrapper.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDataIndexBuilder.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDataIndexContainer.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDataIndexDisposer.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDataIndexReader.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDataIndexStore.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDependentSchemasProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IDomainModelManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IInterpretHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ILuciaHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IndexLookupKey.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\InterpretHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\IStreamBasedStorage.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LinguisticSchemaServices.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LuciaSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LuciaSessionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LuciaUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\AsyncUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\DaxServices.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\DaxTemplateConverter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\NLToDaxRuntimeTimedEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\NLToDaxTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\NLToDax\SchemaDataSetProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ReportLinguisticSchema.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ReportMetadata.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\ReportMetadataComparer.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\SchemaMetadataProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\SelfDeletingDatabaseContext.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\SingleRunningTaskManager.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\StatisticsAnnotationProviderCreator.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\UtteranceFeedStore.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\UtteranceHistoryResult.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQueryDiagnosticsInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\CapturingExecuteSemanticQueryResultWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ClientConceptualSchemaExtender.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\EditScriptVisualCommandFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ExecuteExportDataQueryFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ExecuteSemanticQueryFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ExploreExecuteSemanticQueryResultWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\GetConceptualSchemaFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\GetPerspectivesFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\IConceptualSchemaRetriever.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\IExploreExecuteSemanticQueryResultWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\IQueryResultDataWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\IQueryResultsWriter.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ISemanticQueryHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\ScriptVisualCommandFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\SemanticQueryHandlerBaseFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\SemanticTranslationBaseFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\StreamFormat.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\TranslateDataViewQueryFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\TranslateGroupingDefinitionFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\SemanticQuery\TranslatePartitionColumnFlow.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Utils\ExploreHostUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Utils\ExportDataMetadataBuilder.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinActivateLuciaSessionException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinColumnStatisticsAction.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinConvertToExplorationBadDocumentError.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinConvertToExplorationUnsupportedVisual.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDataIndexBuilderStatistics.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDataIndexStoreStatistics.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDeriveInsightException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDeriveInsightsCancellationException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDeriveInsightsCompleted.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinExecuteSemanticQueryException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinExploreHostTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinFilterDataInstanceException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinGetConceptualSchemaError.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinInsightsStatistics.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinInterpretUtteranceException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinLuciaModelChangeException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinLuciaSessionDisposal.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinScriptVisualTransform.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinScriptVisualTransformFailed.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinTranslateSemanticQueryException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinVerifyLuciaRuntimeException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

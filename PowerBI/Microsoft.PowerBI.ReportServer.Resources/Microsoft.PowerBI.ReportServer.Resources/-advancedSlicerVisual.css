@@ -1,0 +1,114 @@
+.visual-advancedSlicerVisual .button-slicer-container {
+  display: block;
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader {
+  overflow: hidden;
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader.collapsed {
+  display: none;
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader.show {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--neutral-tertiary-alt-color, #C8C8C8);
+  min-height: 20px;
+  margin: 0;
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader .search {
+  cursor: pointer;
+  margin: 0 8px;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  color: var(--neutral-dark-color, #212121);
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader input {
+  color: var(--neutral-primary-color, #333333);
+  cursor: auto;
+  align-self: center;
+  flex: 1 1 0px;
+  -webkit-flex: 1 1 0px;
+  border-style: none;
+  padding: 0;
+}
+html[data-focus-source="key"] .visual-advancedSlicerVisual .button-slicer-container .searchHeader input:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.visual-advancedSlicerVisual .button-slicer-container .searchHeader input:focus {
+  outline: none;
+}
+.visual-advancedSlicerVisual .button-slicer-container .scroll-wrapper .scroll-element .scroll-bar {
+  background-color: var(--gray-80, #B3B0AD) !important;
+  opacity: 0.5;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable {
+  height: 100%;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell {
+  display: table-cell;
+  height: 100%;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer {
+  position: relative;
+  display: flex;
+  fill: none;
+  pointer-events: none;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-word;
+  position: relative;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer.hidden {
+  display: none;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer .content.text {
+  white-space: pre-line;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer .content.text.top {
+  order: 1;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer .content.text.bottom {
+  order: 2;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer .contentTextBackground {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentContainer .contentTextContainer .contentTextBackground.wrap {
+  top: -3px;
+  left: -6px;
+  width: calc(100% + 2 * 6px);
+  height: calc(100% + 2 * 3px);
+}
+.visual-advancedSlicerVisual .buttonSlicerVisual .contentOuterContainer .contentTable .contentTableCell .contentImageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

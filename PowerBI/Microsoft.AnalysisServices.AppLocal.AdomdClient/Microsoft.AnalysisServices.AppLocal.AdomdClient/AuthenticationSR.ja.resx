@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataverseRequest_GetDatasetDetails" xml:space="preserve">
+    <value>Dataverse データセットの詳細を取得しています</value>
+  </data>
+  <data name="DataverseRequest_GetEmbeddedToken" xml:space="preserve">
+    <value>Dataverse 埋め込みトークンを生成しています</value>
+  </data>
+  <data name="DataverseRequest_UnexpectedResponse" xml:space="preserve">
+    <value>予期しない応答</value>
+  </data>
+  <data name="Exception_ADTranslationNotSupportedOnNonWindows" xml:space="preserve">
+    <value>Windows 以外のプラットフォームにおける AD 移動はサポートされていません。</value>
+  </data>
+  <data name="Exception_AcquireTokenFailure" xml:space="preserve">
+    <value>指定された資格情報を使って認証トークンを取得できません。</value>
+  </data>
+  <data name="Exception_AdalIsNoLongerSupported" xml:space="preserve">
+    <value>V! 認証エンドポインに対する ADAL AAD ライブラリの使用はサポートされなくなりました。</value>
+  </data>
+  <data name="Exception_AssemblyMissingInEmbeddedResources" xml:space="preserve">
+    <value>埋め込まれたリソースに '{0}' がありません。</value>
+  </data>
+  <data name="Exception_CantObtainUserInfoOnTokenRefresh" xml:space="preserve">
+    <value>トークンの更新中に '{0}' のアカウント情報を取得できません。</value>
+  </data>
+  <data name="Exception_DataverseRequestFailed" xml:space="preserve">
+    <value>Dataverse 要求が失敗しました。{3}{3}アクション: {0}{3}{3}説明: {1}{2}</value>
+  </data>
+  <data name="Exception_EnumValueMissingInAdalAssembly" xml:space="preserve">
+    <value>埋め込み ADAL アセンブリ '{2}' に '{0}.{1}' 列挙値がありません。</value>
+  </data>
+  <data name="Exception_InteractiveLoginRequired" xml:space="preserve">
+    <value>指定された資格情報を使って認証トークンを取得できません。Active Directory テナント管理者が Multi-Factor Authentication を構成している場合またはアカウントが Microsoft アカウントの場合は、接続文字列からユーザー名とパスワードを削除してから、もう一度お試しください。その後、資格情報を入力するよう求められます。</value>
+  </data>
+  <data name="Exception_InvalidAuthorityFormat" xml:space="preserve">
+    <value>'{0}' はクレーム トークン機関にとって無効な値です。</value>
+  </data>
+  <data name="Exception_InvalidCertificateThumbprint" xml:space="preserve">
+    <value>拇印 '{0}' の証明書は見つかりませんでした。</value>
+  </data>
+  <data name="Exception_InvalidEndpointType" xml:space="preserve">
+    <value>型 {0} のエンドポイントはサポートされていません。</value>
+  </data>
+  <data name="Exception_InvalidIdentityProvider" xml:space="preserve">
+    <value>'{0}' は、ID プロバイダー インジケーターにとって無効な値です。</value>
+  </data>
+  <data name="Exception_InvalidPBIPCapacity" xml:space="preserve">
+    <value>内部エラー: Power BI Premium ワークスペースの容量 URI が null 値または空です。</value>
+  </data>
+  <data name="Exception_InvalidServiceAppId" xml:space="preserve">
+    <value>指定されたサービス アプリケーション ID '{0}' が無効です。</value>
+  </data>
+  <data name="Exception_MFARequiredAndSupported" xml:space="preserve">
+    <value>指定された資格情報を使用して認証トークンを取得することはできません。Active Directory テナント管理者は多要素認証を必要としています。</value>
+  </data>
+  <data name="Exception_MethodMissingInAdalAssembly" xml:space="preserve">
+    <value>埋め込み ADAL アセンブリ '{3}' に '{0}.{1}({2})' メソッドがありません。</value>
+  </data>
+  <data name="Exception_MissingDeviceCodeCallback" xml:space="preserve">
+    <value>デバイス コード認証フローが必要ですが、通知コールバックが指定されていませんでした。</value>
+  </data>
+  <data name="Exception_PbiRequestFailed" xml:space="preserve">
+    <value>PowerBI 要求が失敗しました。{3}{3}アクション: {0}{3}{3}説明: {1}{2}</value>
+  </data>
+  <data name="Exception_PropertyMissingInAdalAssembly" xml:space="preserve">
+    <value>埋め込み ADAL アセンブリ '{2}' に '{0}.{1}' プロパティがありません。</value>
+  </data>
+  <data name="Exception_RedirectionFailWithThrottling" xml:space="preserve">
+    <value>Power BI サービスは現在ビジー状態で、要求が制限されました。後でもう一度お試しください。</value>
+  </data>
+  <data name="Exception_RedirectionInfoNotFound" xml:space="preserve">
+    <value>この接続を実行するために必要な情報が見つかりませんでした。これは、お使いのクライアント アプリケーションに現時点で必要なコンポーネントが含まれていないことが原因です。クライアント アプリケーションの最新版をインストールするか、テクニカル サポートにお問い合わせください。</value>
+  </data>
+  <data name="Exception_RedirectionTokenAsPasswordIsNotSupported" xml:space="preserve">
+    <value>外部アクセス トークンが Power BI リソースへの有効な AAD トークンでない場合、リダイレクトされた AS Azure サーバーにアクセスできません。</value>
+  </data>
+  <data name="Exception_S2STokenMissing" xml:space="preserve">
+    <value>接続に補助アクセス許可を適用するときは、S2SToken を指定する必要があります。</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutPassword" xml:space="preserve">
+    <value>サービス プリンシパルのトークンを取得するには、パスワード\証明書の拇印が必要です。</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutTenant" xml:space="preserve">
+    <value>アカウント情報が不完全なため、データセットに接続できません。サービス プリンシパルについては、app:&lt;app-id&gt;@&lt;tenant-id&gt; の形式を使用してテナント ID とアプリ ID を必ず一緒に指定してください。その後、もう一度お試しください。</value>
+  </data>
+  <data name="Exception_TypeMissingInAdalAssembly" xml:space="preserve">
+    <value>埋め込み ADAL アセンブリ '{1}' に '{0}' 型がありません。</value>
+  </data>
+  <data name="Exception_UnknownAuthenticationInfo" xml:space="preserve">
+    <value>認証に失敗しました。環境内に Azure Active Directory が見つかりません。これは、お使いのクライアント アプリケーションに現時点で必要なコンポーネントが含まれていないことが原因かもしれません。クライアント アプリケーションの最新バージョンをインストールするか、サポート チームにお問い合わせください。</value>
+  </data>
+  <data name="Exception_UserAuthenticationWithServicePrincipalProfile" xml:space="preserve">
+    <value>サービス プリンシパル プロファイルは、サービス プリンシパル認証フローでのみサポートされています。</value>
+  </data>
+  <data name="PbiRequest_GetDatabaseName" xml:space="preserve">
+    <value>PBI 共有データベース名を取得しています</value>
+  </data>
+  <data name="PbiRequest_GetMwcToken" xml:space="preserve">
+    <value>MWC トークンを生成しています</value>
+  </data>
+  <data name="PbiRequest_GetRedirectInfo" xml:space="preserve">
+    <value>AS-Azure リダイレクト情報を取得しています</value>
+  </data>
+  <data name="PbiRequest_ResolveWorkspace" xml:space="preserve">
+    <value>PBI ワークスペースを解決しています</value>
+  </data>
+</root>

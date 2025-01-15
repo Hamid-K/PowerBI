@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3F2428A-C7FB-4220-A32A-602E16BEA4A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.InfoNav.Explore.ExploreConverter</RootNamespace>
+    <AssemblyName>Microsoft.InfoNav.Explore.ExploreConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Explore.VisualContracts" />
+    <Reference Include="Microsoft.PowerBI.ExplorationContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ExplorationContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\ExploreCompatibilityChecker.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BackgroundImage.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BackgroundImageRepeat.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BandLayoutOptions.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BaseRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BinaryFilterCondition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Bucket.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BucketDrillingBehavior.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BucketItem.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\BucketProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\CardRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\CategoryChartRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Chart.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartCategoryHierarchy.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartData.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartDataLabelPositions.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartDataPoint.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartLayoutType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartMember.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartPositions.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartSeries.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ChartSeriesHierarchy.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ColorHelper.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ColorRange.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\CompoundFilterCondition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\CompoundFilterOperator.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ContainerRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\CustomPVProperties.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DataContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DataRegion.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DataSet.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DataSetScope.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DataSource.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DecisionTreeRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DiagnosticMessage.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DiagnosticMessageSeverity.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DrillingManager.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\DrillingManagerHelper.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ExploreConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ExploreConverterContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Expression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ExpressionBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FailedReportItem.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Field.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Filter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterAreaVisibility.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterFromManager.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterMode.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterOperator.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterStateType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterValue.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FilterValueType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FontSize.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FontSizeUnit.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FormatType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Formula.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FormulaEdmReferenceKind.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FormulaFilterConditionTransform.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FormulaParserContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\FromManagerUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Function.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\GaugePanel.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Group.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\GroupExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IFilterCondition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IFilterConditionVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IFromManager.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Image.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ImageLookup.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ImageRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ImageResource.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ImageResourceMap.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ImageSource.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IRdmQueryExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\IReportDeserializationContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\JsonToPVDocumentConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\JsonUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Label.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\LabelData.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\LayoutContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\LinqToXmlExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\MapBackdropType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\MapRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\MatrixRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\MatrixRdlReportItemConverterBase.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Member.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Navigation.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\NavigationType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PlayRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVColumnInfo.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVDocument.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVDocumentContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVDocumentRoot.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVDocumentToExplorationConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVFilter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVFrame.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVParagraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVPosition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVProperty.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVPropertyValue.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVResourceEntry.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVTextRun.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVTextStyle.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\PVVisual.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QdmEntityPlaceholderExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Query.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDefinitionBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDesignGroup.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDesignMeasure.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDesignQueryDefinition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDesignState.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryDesignStateParser.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\QueryExpressionAnalyzer.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdlReportItemConverterFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdlxToDocumentConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmParagraph.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryCalculateExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryExpressionParser.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryFieldExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryFunctionExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryHierarchyLevelExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryLiteralExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryMeasureExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryNullExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryProjectExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryScanExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmQueryVariableReferenceExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmReport.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmTextRun.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\RdmToDocumentConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Rectangle.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportArchive.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportDeserializationContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportImageSizing.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportImageSource.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportingErrorCode.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportItem.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportItemProperties.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportItemRect.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportItemState.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportParser.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportParsingDiagnosticContext.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportSection.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportSectionState.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportSize.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportState.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ReportStateParser.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ScatterChartRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SelectFromManager.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Size.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SlicerRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Slider.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SlideRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SmallMultipleRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SortDirection.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SortExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\StateIndicator.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Style.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\StyleProperties.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\SubviewSlicerDockStyle.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TableRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Tablix.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixBody.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixCell.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixHeader.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixHeaderInfo.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixHierarchy.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixMember.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TablixRow.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Textbox.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TextBoxRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TextStyleInfo.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\Theme.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\ThemeManager.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\TileRdlReportItemConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\UnaryFilterCondition.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\VisualTypes.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\XmlNamespaceUris.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\Internal\XmlReaderExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\JTokenUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ExploreConverter\PVConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\InfoNav\Explore\ExploreConverter\Themes.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

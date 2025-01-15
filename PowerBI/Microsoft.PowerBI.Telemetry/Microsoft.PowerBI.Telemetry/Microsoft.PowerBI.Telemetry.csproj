@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF4A6529-64A5-47DF-AA56-C7FB4BFACFCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.Telemetry</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.Telemetry</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\AllMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\AnyMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\AppInsights.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\AppInsightsService.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\AppType.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\BaseTelemetryEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\CategoryMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\EmptyTelemetryConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\EventAcumulatedSummary.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\EventTarget.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\EventTargetNotMatchRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ExceptionExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\HostData.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\IAppInsightsWrapper.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\IEventTransmissionRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ILoggerService.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\IOExceptionExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ITelemetryConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ITelemetryEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ITelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ITelemetryTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\ITraceTransmissionRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\NameContainsRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\NameDoesNotContainRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\NameDoesntMatchRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\NameMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinRootSession.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\ContainsMarkedInformationExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\IContainsMarkedInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\IContainsPrivateInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\IContainsTelemetryMarkup.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\Obfuscation.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\PrivateInformation.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\PrivateInformationMarkupKind.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\ScrubbedString.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\TelemetryMarkupKind.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PIIUtils\WrapperExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PowerBITelemetryConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PrivacyUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PropertyHasValueRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PropertyMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PropertyOrDefaultMatchesRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TagUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TargetMatchRule.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetrySettings.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryUse.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TelemetryUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\Trace.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TraceType.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TransmissionControlledLogger.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\Utils\EventPropertyUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\Utils\FileUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\Utils\GlobalMutex.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\Utils\GlobalMutexException.cs" />
+    <Compile Include="Microsoft\ReportingServices\TestPublicKeyConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

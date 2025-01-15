@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminUIAddHighAvailabilityCache" xml:space="preserve">
+    <value>Requires all nodes in the cluster to be Enterprise or Datacenter edition. If the cluster does not support this configuration there could be a catastrophic failure. Do you want to continue?</value>
+  </data>
+  <data name="AdminUIAdvanceConfigModifyWarning" xml:space="preserve">
+    <value>The changes will take effect only when the hosts are restarted.</value>
+  </data>
+  <data name="AdminUICacheAdminOperationAborted" xml:space="preserve">
+    <value>Operation was aborted because user selected not to enable Cache with secondaries.</value>
+  </data>
+  <data name="AdminUICacheConfigModifyWarning" xml:space="preserve">
+    <value>To reflect these changes, any clients currently referring to this Cache must create a new DataCacheFactory instance and call GetCache on this Cache.</value>
+  </data>
+  <data name="AdminUICacheCreateRetry" xml:space="preserve">
+    <value>Create cache failed. The cache may be in an inconsistent state. Please retry the create operation after sometime to fix this. Inner exception [{0}]</value>
+  </data>
+  <data name="AdminUICacheStatsError" xml:space="preserve">
+    <value>Error: Could not get statistics for the specified Cache.</value>
+  </data>
+  <data name="AdminUIClusterConfig" xml:space="preserve">
+    <value>Cluster configuration.</value>
+  </data>
+  <data name="AdminUIClusterOperationStatus" xml:space="preserve">
+    <value>Cluster position: Status={0}, PercentComplete={1}, ClusterOperationComplete={2}</value>
+  </data>
+  <data name="AdminUIClusterStarted" xml:space="preserve">
+    <value>Cluster started.</value>
+  </data>
+  <data name="AdminUIClusterStopped" xml:space="preserve">
+    <value>Cluster stopped.</value>
+  </data>
+  <data name="AdminUIConfigurationNotChanged" xml:space="preserve">
+    <value>Configuration will not be updated. No new values were provided.</value>
+  </data>
+  <data name="AdminUIHostNameAndPortNumber" xml:space="preserve">
+    <value>{0}:{1}</value>
+  </data>
+  <data name="AdminUIHostStatsError" xml:space="preserve">
+    <value>Error: Could not get statistics for the specified host.</value>
+  </data>
+  <data name="AdminUIInsufficientPrivilegesWarning" xml:space="preserve">
+    <value>This session is not elevated or the current user is not an administrator. You might have permission issues when connecting to cache hosts.</value>
+  </data>
+  <data name="AdminUINoClientAccountsAllowed" xml:space="preserve">
+    <value>No client accounts have been allowed yet.</value>
+  </data>
+  <data name="AdminUIQuorumTimeoutNotUsed" xml:space="preserve">
+    <value>Lead host management is not being used. QuorumTimeout will be ignored.</value>
+  </data>
+  <data name="AdminUIRegionAndRole" xml:space="preserve">
+    <value>{0}({1})</value>
+  </data>
+  <data name="AdminUIReplaceClusterConfig" xml:space="preserve">
+    <value>Replace cluster configuration.</value>
+  </data>
+  <data name="AdminUIRestartCluster" xml:space="preserve">
+    <value>Restart cluster.</value>
+  </data>
+  <data name="AdminUIRestartingClusterHosts" xml:space="preserve">
+    <value>Restarting cluster hosts.</value>
+  </data>
+  <data name="AdminUIStartCluster" xml:space="preserve">
+    <value>Start cluster.</value>
+  </data>
+  <data name="AdminUIStartedHost" xml:space="preserve">
+    <value>Started host {0}:{1}</value>
+  </data>
+  <data name="AdminUIStartingClusterHosts" xml:space="preserve">
+    <value>Starting cluster hosts.</value>
+  </data>
+  <data name="AdminUIStartingHost" xml:space="preserve">
+    <value>Starting host {0}:{1}</value>
+  </data>
+  <data name="AdminUIStopCacheHostShutdownError" xml:space="preserve">
+    <value>Cancel shutdown error: {0}</value>
+  </data>
+  <data name="AdminUIStopCluster" xml:space="preserve">
+    <value>Stop cluster.</value>
+  </data>
+  <data name="AdminUIStopNonUpdatedHostsMsg" xml:space="preserve">
+    <value>Stop the cache service on hosts with different version than specified.</value>
+  </data>
+  <data name="AdminUIStopNonUpdatedHostsNoHosts" xml:space="preserve">
+    <value>No running cache hosts have this version</value>
+  </data>
+  <data name="AdminUIStopNonUpdatedHostsVerboseMsg" xml:space="preserve">
+    <value>Stop cache hosts whose version differs from the specified version which to able to upgrade the running cluster to the newer version.</value>
+  </data>
+  <data name="AdminUIStoppedHost" xml:space="preserve">
+    <value>Stopped host {0}:{1}</value>
+  </data>
+  <data name="AdminUIStoppingClusterHosts" xml:space="preserve">
+    <value>Stopping cluster hosts.</value>
+  </data>
+  <data name="AdminUIStoppingHost" xml:space="preserve">
+    <value>Stopping host {0}:{1}</value>
+  </data>
+  <data name="AdminUIUpdateClusterConfig" xml:space="preserve">
+    <value>Update cluster configuration.</value>
+  </data>
+  <data name="AdminUIUpdateHostVersionMsg" xml:space="preserve">
+    <value>Update version information on all servers in this cluster.</value>
+  </data>
+  <data name="AdminUIUpdateHostVersionVerboseMsg" xml:space="preserve">
+    <value>Update version ranges on all cache hosts in this cluster with the version values provided.</value>
+  </data>
+  <data name="AdminUIVersionNotChangedWarning" xml:space="preserve">
+    <value>Version will not be updated. The specified version values are already present on all cluster hosts.</value>
+  </data>
+  <data name="AnonymousIdentity" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="AuthTokenInvalid" xml:space="preserve">
+    <value>Authorization token passed by user Invalid.</value>
+  </data>
+  <data name="AvailableSystemMemoryLow" xml:space="preserve">
+    <value>Available System Memory low</value>
+  </data>
+  <data name="AzureRoleDoesNotExist" xml:space="preserve">
+    <value>The role {0} was not found in the current deployment.</value>
+  </data>
+  <data name="CacheAdminGetVersionRangeError" xml:space="preserve">
+    <value>Getting allowed Server version range failed : Host - {0} : Exception - {1}</value>
+  </data>
+  <data name="CacheItemPool" xml:space="preserve">
+    <value>CacheItem</value>
+  </data>
+  <data name="CustomSerializerNotSpecified" xml:space="preserve">
+    <value>Custom cache object serializer specified was either incorrectly specified or not specified.</value>
+  </data>
+  <data name="DataCacheItemVersionInvalid" xml:space="preserve">
+    <value>Invalid DataCacheItemVersion has been passed.</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Directory</value>
+  </data>
+  <data name="ERRCA0001" xml:space="preserve">
+    <value>Client referring to the object has an older version of the object. Latest version of the objects should be fetched for this client operation.</value>
+  </data>
+  <data name="ERRCA0002" xml:space="preserve">
+    <value>Error opening the registry key {0}.</value>
+  </data>
+  <data name="ERRCA0003" xml:space="preserve">
+    <value>At least one of the required arguments is invalid. Refer to API documentation for expected parameter definitions.</value>
+  </data>
+  <data name="ERRCA0004" xml:space="preserve">
+    <value>You have encountered an undefined error. The error occurrence may be temporary; please retry the operation. If the situation persists, contact administrator or refer to product help documentation for possible reasons.</value>
+  </data>
+  <data name="ERRCA0005" xml:space="preserve">
+    <value>Region referred to does not exist. Use CreateRegion API to fix the error.</value>
+  </data>
+  <data name="ERRCA0006" xml:space="preserve">
+    <value>Key referred to does not exist. Create objects based on a Key to fix the error.</value>
+  </data>
+  <data name="ERRCA0007" xml:space="preserve">
+    <value>An attempt is being made to create a Region that already exists.</value>
+  </data>
+  <data name="ERRCA0008" xml:space="preserve">
+    <value>An attempt is being made to create an object with a Key that already exists in the Cache. Cache will only accept unique Key values for objects.</value>
+  </data>
+  <data name="ERRCA0009" xml:space="preserve">
+    <value>Cache referred to does not exist. Contact administrator or use the Cache administration tool to create a Cache.</value>
+  </data>
+  <data name="ERRCA0010" xml:space="preserve">
+    <value>Maximum Cache count exceeded. Cannot create any more Caches. Contact administrator or use Cache administration tool to increase cluster capacity.</value>
+  </data>
+  <data name="ERRCA0011" xml:space="preserve">
+    <value>Object being referred to is currently locked, and cannot be accessed until it is unlocked by the locking client. Please retry later.</value>
+  </data>
+  <data name="ERRCA0012" xml:space="preserve">
+    <value>Object being referred to is not locked by any client.</value>
+  </data>
+  <data name="ERRCA0013" xml:space="preserve">
+    <value>The DataCacheLockHandle passed is invalid.</value>
+  </data>
+  <data name="ERRCA0014" xml:space="preserve">
+    <value>The enumerator reference is invalid. Get a fresh enumerator.</value>
+  </data>
+  <data name="ERRCA0015" xml:space="preserve">
+    <value>Notification-based invalidation is not supported because the Cache is not configured to support Notifications.</value>
+  </data>
+  <data name="ERRCA0016" xml:space="preserve">
+    <value>The connection was terminated, possibly due to server or network problems or serialized Object size is greater than MaxBufferSize on server. Result of the request is unknown.</value>
+  </data>
+  <data name="ERRCA0017" xml:space="preserve">
+    <value>There is a temporary failure. Please retry later.</value>
+  </data>
+  <data name="ERRCA0018" xml:space="preserve">
+    <value>The request timed out.</value>
+  </data>
+  <data name="ERRCA0019" xml:space="preserve">
+    <value>Check the client version. It should be within the allowed version range on the server. If necessary, upgrade the client to the allowed version.</value>
+  </data>
+  <data name="ERRCA0020" xml:space="preserve">
+    <value>Failed to deserialize object.</value>
+  </data>
+  <data name="ERRCA0021" xml:space="preserve">
+    <value>Server collection cannot be empty.</value>
+  </data>
+  <data name="ERRCA0022" xml:space="preserve">
+    <value>Cache server is out of memory. Contact administrator or refer to product help documentation for possible reasons.</value>
+  </data>
+  <data name="ERRCA0023" xml:space="preserve">
+    <value>This operation is not supported by the cache.</value>
+  </data>
+  <data name="ERRCA0025" xml:space="preserve">
+    <value>The cache provider threw an exception during read.</value>
+  </data>
+  <data name="ERRCA0026" xml:space="preserve">
+    <value>The cache provider did not return a result for the specified key.</value>
+  </data>
+  <data name="ERRCA0027" xml:space="preserve">
+    <value>Could not retrieve the cache provider for cache.</value>
+  </data>
+  <data name="ERRCA0029" xml:space="preserve">
+    <value>The authorization token or the security configuration specified is invalid for the caching endpoint you are trying to access. You can copy the authorization token from the 'Manage keys' action for this caching endpoint in the Azure Portal.</value>
+  </data>
+  <data name="ERRCA0030" xml:space="preserve">
+    <value>Unable to complete authorization request for connecting to the caching endpoint. Please try again after sometime. If the issue persists, contact Microsoft support.</value>
+  </data>
+  <data name="ERRCA0031" xml:space="preserve">
+    <value>Cache is disabled.</value>
+  </data>
+  <data name="ERRCA0032" xml:space="preserve">
+    <value>One of the required resources for usage has not been specified. Check the cluster configuration.</value>
+  </data>
+  <data name="ERRCA0033" xml:space="preserve">
+    <value>There was an unhandled exception on one of CcrGlobal Threads</value>
+  </data>
+  <data name="ERRCA0034" xml:space="preserve">
+    <value>The Read-Through provider could not return the requested object, because the specified Region does not exist. Use CreateRegion API to fix the error.</value>
+  </data>
+  <data name="ERRCA0035" xml:space="preserve">
+    <value>Failed to perform request operation as the operation resulted in overflow.</value>
+  </data>
+  <data name="ERRCA0037" xml:space="preserve">
+    <value>One or more server names occur more than once in the server collection.</value>
+  </data>
+  <data name="ERRCA0038" xml:space="preserve">
+    <value>The string length exceeds the maximum allowed value. Please refer to the documentation for details.</value>
+  </data>
+  <data name="ERRCA0040" xml:space="preserve">
+    <value>A valid but unsupported operation was attemped on the cache server port. Please verify that the port supports the operation attempted.</value>
+  </data>
+  <data name="ERRCA0041" xml:space="preserve">
+    <value>Failed to establish a secure Channel. Either the server identity is incorrect or the server certificate is invalid.</value>
+  </data>
+  <data name="ERRCA0042" xml:space="preserve">
+    <value>Invalid identifier: '{0}'. Check cache rolename/endpoint in configuration.</value>
+  </data>
+  <data name="ERRCAdmin001" xml:space="preserve">
+    <value>Hosts are already running in the cluster.</value>
+  </data>
+  <data name="ERRCAdmin002" xml:space="preserve">
+    <value>The operation has timed out and the result is unknown. Stop the cluster and run Export-CacheClusterConfig followed by Import-CacheClusterConfig to make the cluster configuration consistent.</value>
+  </data>
+  <data name="ERRCAdmin003" xml:space="preserve">
+    <value>Time-out occurred on {0}.</value>
+  </data>
+  <data name="ERRCAdmin004" xml:space="preserve">
+    <value>Null arguments provided.</value>
+  </data>
+  <data name="ERRCAdmin005" xml:space="preserve">
+    <value>Unknown error occurred.</value>
+  </data>
+  <data name="ERRCAdmin006" xml:space="preserve">
+    <value>Insufficient number of lead hosts present in cluster.</value>
+  </data>
+  <data name="ERRCAdmin007" xml:space="preserve">
+    <value>Error encountered in accessing the configuration store. Check the access permissions and existence.</value>
+  </data>
+  <data name="ERRCAdmin008" xml:space="preserve">
+    <value>No hosts running in cluster.</value>
+  </data>
+  <data name="ERRCAdmin009" xml:space="preserve">
+    <value>Specified Cache does not exist in cluster.</value>
+  </data>
+  <data name="ERRCAdmin010" xml:space="preserve">
+    <value>Specified host is not present in cluster.</value>
+  </data>
+  <data name="ERRCAdmin011" xml:space="preserve">
+    <value>Specified Cache is already present in cluster.</value>
+  </data>
+  <data name="ERRCAdmin013" xml:space="preserve">
+    <value>Sufficient lead hosts will not be running after stopping this lead host.</value>
+  </data>
+  <data name="ERRCAdmin014" xml:space="preserve">
+    <value>Error: No lead hosts present in cluster.</value>
+  </data>
+  <data name="ERRCAdmin015" xml:space="preserve">
+    <value>Host is already running in cluster.</value>
+  </data>
+  <data name="ERRCAdmin016" xml:space="preserve">
+    <value>Host is not running in cluster.</value>
+  </data>
+  <data name="ERRCAdmin017" xml:space="preserve">
+    <value>Error: Could not delete host from configuration.</value>
+  </data>
+  <data name="ERRCAdmin018" xml:space="preserve">
+    <value>Error: Could not add host to configuration.</value>
+  </data>
+  <data name="ERRCAdmin019" xml:space="preserve">
+    <value>Failure encountered while creating the default Cache.</value>
+  </data>
+  <data name="ERRCAdmin020" xml:space="preserve">
+    <value>Deletion of this Cache is in progress. Please retry later.</value>
+  </data>
+  <data name="ERRCAdmin021" xml:space="preserve">
+    <value>Configuration store was not consistent for this Cache. Removing the inconsistency. Please retry later.</value>
+  </data>
+  <data name="ERRCAdmin022" xml:space="preserve">
+    <value>Error encountered while resolving the local host name.</value>
+  </data>
+  <data name="ERRCAdmin023" xml:space="preserve">
+    <value>Error: No hosts present in the cluster.</value>
+  </data>
+  <data name="ERRCAdmin024" xml:space="preserve">
+    <value>Failed to refresh all running servers in the cluster. You may need to restart the cluster for these changes to take effect.</value>
+  </data>
+  <data name="ERRCAdmin025" xml:space="preserve">
+    <value>Time-out occurred in starting the cluster.</value>
+  </data>
+  <data name="ERRCAdmin026" xml:space="preserve">
+    <value>Remote registry access failed on host {0}. Check if the required permissions are available and the host is not down.</value>
+  </data>
+  <data name="ERRCAdmin027" xml:space="preserve">
+    <value>The Windows account {0} is not valid.</value>
+  </data>
+  <data name="ERRCAdmin028" xml:space="preserve">
+    <value>The Windows account {0} is already present as a granted account with name {1}.</value>
+  </data>
+  <data name="ERRCAdmin029" xml:space="preserve">
+    <value>The Windows account {0} is not present as a granted account.</value>
+  </data>
+  <data name="ERRCAdmin030" xml:space="preserve">
+    <value>Failed to grant permissions to the client account {0}.</value>
+  </data>
+  <data name="ERRCAdmin031" xml:space="preserve">
+    <value>Failed to revoke permissions for the client account {0}.</value>
+  </data>
+  <data name="ERRCAdmin032" xml:space="preserve">
+    <value>Invalid operation encountered on {0}:{1} : {2}</value>
+  </data>
+  <data name="ERRCAdmin033" xml:space="preserve">
+    <value>The cluster is not ready for admin operations. Please retry later.</value>
+  </data>
+  <data name="ERRCAdmin034" xml:space="preserve">
+    <value>Refreshing of Cache host {0} failed : {1}. You may need to restart this host for the changes to take effect.</value>
+  </data>
+  <data name="ERRCAdmin035" xml:space="preserve">
+    <value>Shutdown of this host is in progress.</value>
+  </data>
+  <data name="ERRCAdmin036" xml:space="preserve">
+    <value>Graceful shutdown was not started on this machine.</value>
+  </data>
+  <data name="ERRCAdmin037" xml:space="preserve">
+    <value>Shutdown cannot be cancelled for this host. Either the shutdown is complete or host could not be reached.</value>
+  </data>
+  <data name="ERRCAdmin038" xml:space="preserve">
+    <value>The operation is not supported on the server version {0}.</value>
+  </data>
+  <data name="ERRCAdmin039" xml:space="preserve">
+    <value>Cache host {0} is not reachable.</value>
+  </data>
+  <data name="ERRCAdmin040" xml:space="preserve">
+    <value>Failed to connect to hosts in the cluster</value>
+  </data>
+  <data name="ERRCAdmin041" xml:space="preserve">
+    <value>Graceful Shutdown of this cache host is not possible without losing the required quorum of servers in the cache cluster.</value>
+  </data>
+  <data name="ERRCMC0001" xml:space="preserve">
+    <value>dataCacheClient with name "{0}" is not specified in the application configuration file.</value>
+  </data>
+  <data name="ERRCMC0002" xml:space="preserve">
+    <value>Invalid value ("{1}") specified for "{0}", expected values "{2}" or "{3}" in the application configuration file. Create and configure the application configuration file for your application. Refer to product help documentation for more information.</value>
+  </data>
+  <data name="ERRCMC0003" xml:space="preserve">
+    <value>Error in client configuration file.</value>
+  </data>
+  <data name="ERRCMC0004" xml:space="preserve">
+    <value>Both "dataCacheClient" and "dataCacheClients" tag can't be present in the config file. If more than one client configurations are required, move element "dataCacheClient" inside element "dataCacheClients" and also remove element "dataCacheClient" from "configSections" element.</value>
+  </data>
+  <data name="ERRCMS0001" xml:space="preserve">
+    <value>Error while trying to load configuration: {0}</value>
+  </data>
+  <data name="ERRCMS0002" xml:space="preserve">
+    <value>Access denied while saving the changes to cluster configuration file.</value>
+  </data>
+  <data name="ERRCMS0003" xml:space="preserve">
+    <value>"{0}" tag is not specified in the configuration file. Specify a valid tag in the configuration file.</value>
+  </data>
+  <data name="ERRCMS0004" xml:space="preserve">
+    <value>Configuration file (file name:"{0}") not found. </value>
+  </data>
+  <data name="ERRCMS0005" xml:space="preserve">
+    <value>Invalid value ("{1}") specified for "{0}", expected value "{2}" in the cluster configuration. Refer to product help documentation for more information.</value>
+  </data>
+  <data name="ERRCMS0006" xml:space="preserve">
+    <value>Error while loading the provider "{0}". Check {1}.</value>
+  </data>
+  <data name="ERRCMS0007" xml:space="preserve">
+    <value>Provider "{0}" instantiation failed: {1} </value>
+  </data>
+  <data name="ERRCMS0008" xml:space="preserve">
+    <value>Provider "{0}" registration failed: {1} </value>
+  </data>
+  <data name="ERRCMS0009" xml:space="preserve">
+    <value>The High Availability feature of AppFabric Server caching features requires all nodes in the cache cluster to be running Windows Server Enterprise Edition or higher. Please confirm that all High Availability cache nodes are running on a supported operating system.</value>
+  </data>
+  <data name="ERRCMS0010" xml:space="preserve">
+    <value>Error - SSL is enabled, but 'certificateSubject' is missing in configuration</value>
+  </data>
+  <data name="ERRCMS0011" xml:space="preserve">
+    <value>The host cache data size specified must be less than total physical memory.</value>
+  </data>
+  <data name="ERRCMS0012" xml:space="preserve">
+    <value>Missing or incorrect configuration: {0}</value>
+  </data>
+  <data name="ERRCMS0013" xml:space="preserve">
+    <value>Missing or multiple SSL certificates: {0}</value>
+  </data>
+  <data name="ERRDM0001" xml:space="preserve">
+    <value>Object with the specified Key already exists. Specify a unique Key for Add operations.</value>
+  </data>
+  <data name="ERRDM0002" xml:space="preserve">
+    <value>Object with the specified Key was not found in the Cache. Specify a valid Key.</value>
+  </data>
+  <data name="ERRDM0003" xml:space="preserve">
+    <value>Object with the specified version was not found in the Cache. Specify a valid version.</value>
+  </data>
+  <data name="ERRDM0004" xml:space="preserve">
+    <value>Object with the specified Key is already locked. This is a duplicate call and will result in no action on the object.</value>
+  </data>
+  <data name="ERRDM0005" xml:space="preserve">
+    <value>Object with the specified index already exists. Specify a new index.</value>
+  </data>
+  <data name="ERRDM0008" xml:space="preserve">
+    <value>Enumerator specified is invalid. Specify a valid enumerator.</value>
+  </data>
+  <data name="ERRDM0009" xml:space="preserve">
+    <value>Key is already latched.</value>
+  </data>
+  <data name="ERRDRM0001" xml:space="preserve">
+    <value>CAS initialization failed on the client. No user action required.</value>
+  </data>
+  <data name="ERROM0001" xml:space="preserve">
+    <value>OM fatal error. No user action required.</value>
+  </data>
+  <data name="ERROM0002" xml:space="preserve">
+    <value>Region specified is invalid. Specify a valid Region.</value>
+  </data>
+  <data name="ERROM0003" xml:space="preserve">
+    <value>Region specified already exists. Specify a unique Region name.</value>
+  </data>
+  <data name="ERROM0004" xml:space="preserve">
+    <value>Number of Caches exceeds the configured maximum number.</value>
+  </data>
+  <data name="ERROM0005" xml:space="preserve">
+    <value>Cache with specified name already exists. Specify a unique Cache name.</value>
+  </data>
+  <data name="ERROM0006" xml:space="preserve">
+    <value>Cache specified was not found. Specify a valid Cache name.</value>
+  </data>
+  <data name="ERROM0007" xml:space="preserve">
+    <value>The Read-Through provider could not return the requested object, because the specified Region does not exist. Specify a valid Region.</value>
+  </data>
+  <data name="ERRPS001" xml:space="preserve">
+    <value>Error in reading provider and connection string values. Please provide the values manually.</value>
+  </data>
+  <data name="ERRPS002" xml:space="preserve">
+    <value>Invalid provider and connection string read. Please provide the values manually.</value>
+  </data>
+  <data name="ERRPS003" xml:space="preserve">
+    <value>The maximum limit of {0} for the number of Caches has already been reached.</value>
+  </data>
+  <data name="ERRPS004" xml:space="preserve">
+    <value>Duplicate port numbers provided. Verify that all port numbers are unique.</value>
+  </data>
+  <data name="ERRPS005" xml:space="preserve">
+    <value>Error: Cluster is down.</value>
+  </data>
+  <data name="ERRPS006" xml:space="preserve">
+    <value>Some hosts could not be connected to. Cache statistics may be incorrect. Examine the admin log file for any errors.</value>
+  </data>
+  <data name="ERRPS007" xml:space="preserve">
+    <value>Invalid security settings provided. With SecurityMode "None", ProtectionLevel can only be "None".</value>
+  </data>
+  <data name="ERRPS008" xml:space="preserve">
+    <value>Error: Could not read installation path from registry.</value>
+  </data>
+  <data name="ERRPS011" xml:space="preserve">
+    <value>Error occurred while performing the operation : {0}</value>
+  </data>
+  <data name="ERRPS012" xml:space="preserve">
+    <value>Error occurred while performing the operation on host {0}:{1} : {2}</value>
+  </data>
+  <data name="ERRPS013" xml:space="preserve">
+    <value>Error: No valid cluster settings were provided with Use-CacheCluster.</value>
+  </data>
+  <data name="ERRPS014" xml:space="preserve">
+    <value>MinSecondaries should be between 0 and Secondaries (both inclusive).</value>
+  </data>
+  <data name="ERRPS015" xml:space="preserve">
+    <value>No parameter values provided, value for at least one parameter must be supplied.</value>
+  </data>
+  <data name="ERRPS016" xml:space="preserve">
+    <value>Invalid parameter values provided.</value>
+  </data>
+  <data name="ERRPS017" xml:space="preserve">
+    <value>Keys for ProviderSettings should be strings.</value>
+  </data>
+  <data name="ERRPS018" xml:space="preserve">
+    <value>ProviderType must be specified when the parameters WriteBehindEnabled or ReadThroughEnabled are set to true.</value>
+  </data>
+  <data name="ERRPS019" xml:space="preserve">
+    <value>Incomplete set of parameters provided, refer to usage of this command.</value>
+  </data>
+  <data name="ERRPS020" xml:space="preserve">
+    <value>Cache name can contain only alphanumeric characters.</value>
+  </data>
+  <data name="ERRPS021" xml:space="preserve">
+    <value>Could not make the Cache configuration changes on hosts {0}</value>
+  </data>
+  <data name="ERRPS022" xml:space="preserve">
+    <value>Could not make the requested host configuration changes.</value>
+  </data>
+  <data name="ERRPS023" xml:space="preserve">
+    <value>Parameter values are invalid for host {0}</value>
+  </data>
+  <data name="ERRPS024" xml:space="preserve">
+    <value>This command is not currently allowed. Changes to the cache cluster configuration is restricted during a rolling upgrade of the caching service.</value>
+  </data>
+  <data name="ERRPS025" xml:space="preserve">
+    <value>Incompatible expiration settings provided. If IsExpirable property is true then ExpirationType has to be either Sliding or Absolute. And if IsExpirable property is false then ExpirationType has to be None. In future, the IsExpirable property will become obsolete.</value>
+  </data>
+  <data name="ERRSS0001" xml:space="preserve">
+    <value>Invalid attribute specified within SessionState provider configuration. Valid configurable attributes are "cacheName" and "regionName". Create and configure your Web configuration file by using the sample Web.config file installed with the product. Refer to product help documentation for more information.</value>
+  </data>
+  <data name="ERRSS0002" xml:space="preserve">
+    <value>Invalid session state data received from Cache.</value>
+  </data>
+  <data name="ERRSS0003" xml:space="preserve">
+    <value>Web configuration error. Check your Web.config file, or revert to the last working version.</value>
+  </data>
+  <data name="ERRSS0005" xml:space="preserve">
+    <value>Empty string configured as cacheName in session store configuration.</value>
+  </data>
+  <data name="ERRSS0006" xml:space="preserve">
+    <value>Empty string configured as applicationName in session store configuration.</value>
+  </data>
+  <data name="ERRService0001" xml:space="preserve">
+    <value>Service initialization failed. No user action required.</value>
+  </data>
+  <data name="ERRService0002" xml:space="preserve">
+    <value>The service has crashed and requires a restart. {0}</value>
+  </data>
+  <data name="ERRService0003" xml:space="preserve">
+    <value>Replication to secondary replicas failed.</value>
+  </data>
+  <data name="ES0001" xml:space="preserve">
+    <value>No specific SubStatus.</value>
+  </data>
+  <data name="ES0002" xml:space="preserve">
+    <value>The request did not find the primary.</value>
+  </data>
+  <data name="ES0003" xml:space="preserve">
+    <value>Sufficient secondaries not present or they are in throttled state.</value>
+  </data>
+  <data name="ES0004" xml:space="preserve">
+    <value>Replication queue was full. This may happen during reconfiguration of cluster hosts.</value>
+  </data>
+  <data name="ES0005" xml:space="preserve">
+    <value>There was a contention on the store.</value>
+  </data>
+  <data name="ES0006" xml:space="preserve">
+    <value>One or more specified cache servers are unavailable, which could be caused by busy network or servers. For on-premises cache clusters, also verify the following conditions. Ensure that security permission has been granted for this client account, and check that the AppFabric Caching Service is allowed through the firewall on all cache hosts. Also the MaxBufferSize on the server must be greater than or equal to the serialized object size sent from the client.</value>
+  </data>
+  <data name="ES0007" xml:space="preserve">
+    <value>The request failed because the server is in throttled state</value>
+  </data>
+  <data name="ES0009" xml:space="preserve">
+    <value>The request failed, because you exceeded quota limits for this hour. If you experience this often, upgrade your subscription to a higher one</value>
+  </data>
+  <data name="ES0010" xml:space="preserve">
+    <value>An internal error has occurred.</value>
+  </data>
+  <data name="ES0011" xml:space="preserve">
+    <value>Failure occurred during replication.</value>
+  </data>
+  <data name="ES0012" xml:space="preserve">
+    <value>The tag length exceeds 65535 bytes.</value>
+  </data>
+  <data name="ES0013" xml:space="preserve">
+    <value>The key length exceeds 65535 bytes.</value>
+  </data>
+  <data name="ES0014" xml:space="preserve">
+    <value>The region length exceeds 65535 bytes.</value>
+  </data>
+  <data name="ES0015" xml:space="preserve">
+    <value>Cache is under reconfiguration.</value>
+  </data>
+  <data name="ES0016" xml:space="preserve">
+    <value>CRL Server for SSL Certificate is offline</value>
+  </data>
+  <data name="ErrorInstallationPathNotFound" xml:space="preserve">
+    <value>Installation path of AppFabric Caching Service not found.</value>
+  </data>
+  <data name="ErrorMessageFormat" xml:space="preserve">
+    <value>ErrorCode&lt;{0}&gt;:SubStatus&lt;{1}&gt;:{2}</value>
+  </data>
+  <data name="ErrorMessageFormatExtended" xml:space="preserve">
+    <value>ErrorCode&lt;{0}&gt;:SubStatus&lt;{1}&gt;:{2}. Additional Information : {3}</value>
+  </data>
+  <data name="GetComputerDomainError" xml:space="preserve">
+    <value>Could not get the computer domain.</value>
+  </data>
+  <data name="HostForServiceURINotFound" xml:space="preserve">
+    <value>Unhandled exception occured as host for given Service URIs was not found {0}</value>
+  </data>
+  <data name="IdentifierNotSpecified" xml:space="preserve">
+    <value>Must specify Identifier to use autodiscovery with identifierType="EndPoint"</value>
+  </data>
+  <data name="InvalidAzureMemcacheServiceArgument" xml:space="preserve">
+    <value>The setting isServiceRunningForAzure in AzureMemcacheService.exe.config should either be true or false.</value>
+  </data>
+  <data name="InvalidItemLevelMask" xml:space="preserve">
+    <value>Only item-level Cache operations can be registered for notifications.</value>
+  </data>
+  <data name="InvalidNamedClientConfigProperty" xml:space="preserve">
+    <value>Trace Settings cannot exist at Named Client level. They can only exist at the dataCacheClients section for the case of named clients.</value>
+  </data>
+  <data name="InvalidOperationMask" xml:space="preserve">
+    <value>Only Cache operations can be registered for notifications.</value>
+  </data>
+  <data name="InvalidRegionName" xml:space="preserve">
+    <value>Region names should contain only alphanumeric characters.</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>Invalid or unexpected value.</value>
+  </data>
+  <data name="KeyTooLarge" xml:space="preserve">
+    <value>The given key exceeds the maximum allowed size for a Key. </value>
+  </data>
+  <data name="MaxConnectionsInvalid" xml:space="preserve">
+    <value>Max connections value should be in the range 1 to 100.</value>
+  </data>
+  <data name="MaxQueueLengthZero" xml:space="preserve">
+    <value>Queue length should be a positive value.</value>
+  </data>
+  <data name="MemoryPoolExhausted" xml:space="preserve">
+    <value>Memory exhausted : {0}.</value>
+  </data>
+  <data name="NotPermittedForDefaultRegion" xml:space="preserve">
+    <value>This operation is not permitted on a default Region.</value>
+  </data>
+  <data name="NotificationNotSupported" xml:space="preserve">
+    <value>Notifications are not supported because the Cache is not configured to support notifications.</value>
+  </data>
+  <data name="ObjectCountZero" xml:space="preserve">
+    <value>Object count in local Cache should be a positive value.</value>
+  </data>
+  <data name="OneItemNull" xml:space="preserve">
+    <value>Either the collection passed is empty or one of the items in the collection is null.</value>
+  </data>
+  <data name="OneKeyNull" xml:space="preserve">
+    <value>A Key is passed with value null.</value>
+  </data>
+  <data name="OneTagNull" xml:space="preserve">
+    <value>Either the collection passed is empty or one of the tags passed is null.</value>
+  </data>
+  <data name="PasswordNotAllowed" xml:space="preserve">
+    <value>Password is not allowed as a parameter of the configuration utility.</value>
+  </data>
+  <data name="PerfmonCacheBasePercentageMissHelp" xml:space="preserve">
+    <value>Base counter for Cache miss percentage.</value>
+  </data>
+  <data name="PerfmonCacheCategoryHelp" xml:space="preserve">
+    <value>A category for multiple-instance performance counters pertaining to all Caches in the host. </value>
+  </data>
+  <data name="PerfmonCachePercentageMissHelp" xml:space="preserve">
+    <value>The percentage of unsuccessful Cache requests to the total number of requests since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of data stored in the Cache, not including Cache overhead. Indicates the current data memory usage of the server.</value>
+  </data>
+  <data name="PerfmonCacheTotalEvictionRunsHelp" xml:space="preserve">
+    <value>The number of eviction runs since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalGetAndLockRequestHelp" xml:space="preserve">
+    <value>The total number of GetAndLock requests since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalGetAndLockRequestPerSecondHelp" xml:space="preserve">
+    <value>The total number of GetAndLock requests per second since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalMissCountHelp" xml:space="preserve">
+    <value>The total number of unsuccessful Cache requests since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalMissCountPerSecondHelp" xml:space="preserve">
+    <value>The total number of unsuccessful Cache requests per second since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalObjectCountHelp" xml:space="preserve">
+    <value>Represents the total number of objects stored in the Cache.</value>
+  </data>
+  <data name="PerfmonCacheTotalObjectReturnedHelp" xml:space="preserve">
+    <value>The number of objects returned by client read requests. This counter along with the total read requests counter indicates the success of read operations.</value>
+  </data>
+  <data name="PerfmonCacheTotalObjectReturnedPerSecondHelp" xml:space="preserve">
+    <value>The number of objects returned by client read requests per second. </value>
+  </data>
+  <data name="PerfmonCacheTotalPrimaryDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of primary data stored in the Cache, not including Cache overhead. Indicates the current primary memory data usage of the server.</value>
+  </data>
+  <data name="PerfmonCacheTotalReadRequestHelp" xml:space="preserve">
+    <value>The number of read requests (BulkGet, Get, and Enumeration) received from all clients since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalReadRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of read requests (BulkGet, Get, and Enumeration) received per second from all clients since start of service. </value>
+  </data>
+  <data name="PerfmonCacheTotalRequestHelp" xml:space="preserve">
+    <value>The total number of client requests, including all API calls.</value>
+  </data>
+  <data name="PerfmonCacheTotalRequestPerSecondHelp" xml:space="preserve">
+    <value>The total number of client requests per second, including all API calls.</value>
+  </data>
+  <data name="PerfmonCacheTotalSecondaryDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of secondary data stored in the Cache, not including Cache overhead. Indicates the current secondary memory data usage of the server.</value>
+  </data>
+  <data name="PerfmonCacheTotalSuccessfulGetAndLockRequestHelp" xml:space="preserve">
+    <value>The number of successful GetAndLock requests since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalSuccessfulGetAndLockRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of successful GetAndLock requests per second since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalWriteRequestHelp" xml:space="preserve">
+    <value>The number of write requests (Put, Add, and Lock) since start of service.</value>
+  </data>
+  <data name="PerfmonCacheTotalWriteRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of write requests (Put, Add, and Lock) per second since start of service.</value>
+  </data>
+  <data name="PerfmonHostAverageAllSecondaryResponseTimeBaseHelp" xml:space="preserve">
+    <value>Base counter for average secondary response time per operation.</value>
+  </data>
+  <data name="PerfmonHostAverageAllSecondaryResponseTimeHelp" xml:space="preserve">
+    <value>The average time spent to get responses from all the secondary servers.</value>
+  </data>
+  <data name="PerfmonHostAverageQuorumResponseTimeBaseHelp" xml:space="preserve">
+    <value>Base counter for average quorum response time per operation.</value>
+  </data>
+  <data name="PerfmonHostAverageQuorumResponseTimeHelp" xml:space="preserve">
+    <value>The average time spent in quorum response. It indicates the amount of time spent by write operations in replication.</value>
+  </data>
+  <data name="PerfmonHostBasePercentageMissHelp" xml:space="preserve">
+    <value>Base counter for Cache miss percentage.</value>
+  </data>
+  <data name="PerfmonHostCategoryHelp" xml:space="preserve">
+    <value>A category for single-instance performance counters pertaining to a single Cache host.</value>
+  </data>
+  <data name="PerfmonHostHostTotalObjectReturnedHelp" xml:space="preserve">
+    <value>The number of objects returned by client read requests. This counter along with the total read requests counter indicates the success of read operations.</value>
+  </data>
+  <data name="PerfmonHostPercentageMissHelp" xml:space="preserve">
+    <value>The percentage of unsuccessful Cache requests to the total number of requests since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of data stored in the host, not including Cache overhead. Indicates the current data memory usage of the server.</value>
+  </data>
+  <data name="PerfmonHostTotalEvictedObjectsHelp" xml:space="preserve">
+    <value>The number of evicted objects since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalEvictionRunHelp" xml:space="preserve">
+    <value>The number of eviction runs since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalExceptionHelp" xml:space="preserve">
+    <value>The number of exceptions thrown by the server since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalExceptionPerSecondHelp" xml:space="preserve">
+    <value>The number of exceptions thrown per second by the server since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalExpiredObjectsHelp" xml:space="preserve">
+    <value>The total number of expired objects since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetAndLockRequestHelp" xml:space="preserve">
+    <value>The total number of GetAndLock requests since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetAndLockRequestPerSecondHelp" xml:space="preserve">
+    <value>The total number of GetAndLock requests per second since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetRequestHelp" xml:space="preserve">
+    <value>The number of Get requests received from all clients since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetRequestMissCountHelp" xml:space="preserve">
+    <value>The number of Get misses from all clients since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetRequestMissCountPerSecondHelp" xml:space="preserve">
+    <value>The number of Get misses per second from all clients since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalGetRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of Get requests per second received from all clients since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalMemoryEvictedHelp" xml:space="preserve">
+    <value>The amount of memory freed from Cache since start of service. This counter also includes expired object memory. </value>
+  </data>
+  <data name="PerfmonHostTotalMissCountHelp" xml:space="preserve">
+    <value>The total number of unsuccessful Cache requests since start of service. </value>
+  </data>
+  <data name="PerfmonHostTotalMissCountPerSecondHelp" xml:space="preserve">
+    <value>The total number of unsuccessful Cache requests per second since start of service. </value>
+  </data>
+  <data name="PerfmonHostTotalNotificationDeliveredHelp" xml:space="preserve">
+    <value>The number of notifications delivered to clients.</value>
+  </data>
+  <data name="PerfmonHostTotalNotificationDeliveredPerSecondHelp" xml:space="preserve">
+    <value>The number of notifications per second delivered to clients.</value>
+  </data>
+  <data name="PerfmonHostTotalObjectCountHelp" xml:space="preserve">
+    <value>Represents the total number of objects stored in the host.</value>
+  </data>
+  <data name="PerfmonHostTotalObjectReturnedPerSecondHelp" xml:space="preserve">
+    <value>The number of objects returned by client read requests per second. </value>
+  </data>
+  <data name="PerfmonHostTotalPollRequestHelp" xml:space="preserve">
+    <value>The total number of poll requests from the client since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalPollRequestPerSecondHelp" xml:space="preserve">
+    <value>The total number of poll requests per second from the client since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalPrimaryDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of primary data stored in the Cache, not including Cache overhead. Indicates the current primary memory data usage of the server.</value>
+  </data>
+  <data name="PerfmonHostTotalReadRequestHelp" xml:space="preserve">
+    <value>The number of read requests (BulkGet, Get, and Enumeration) received from all clients since start of service. </value>
+  </data>
+  <data name="PerfmonHostTotalReadRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of read requests (BulkGet, Get, and Enumeration) received per second from all clients since start of service. </value>
+  </data>
+  <data name="PerfmonHostTotalRequestHelp" xml:space="preserve">
+    <value>The total number of client requests, including all API calls.</value>
+  </data>
+  <data name="PerfmonHostTotalRequestPerSecondHelp" xml:space="preserve">
+    <value>The total number of client requests per second, including all API calls.</value>
+  </data>
+  <data name="PerfmonHostTotalResponseHelp" xml:space="preserve">
+    <value>The number of requests served and responses sent by the server since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalResponsePerSecondHelp" xml:space="preserve">
+    <value>The number of requests served and responses sent by the server per second since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalRetryExceptionHelp" xml:space="preserve">
+    <value>The total number of retry operation exceptions since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalRetryExceptionPerSecondHelp" xml:space="preserve">
+    <value>The total number of retry operation exceptions per second since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalSecondaryDataSizeHelp" xml:space="preserve">
+    <value>Represents the total size of secondary data stored in the Cache, not including Cache overhead. Indicates the current secondary memory data usage of the server.</value>
+  </data>
+  <data name="PerfmonHostTotalSuccessfulGetAndLockRequestHelp" xml:space="preserve">
+    <value>The number of successful GetAndLock requests since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalSuccessfulGetAndLockRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of successful GetAndLock requests per second since start of service.</value>
+  </data>
+  <data name="PerfmonHostTotalWriteRequestHelp" xml:space="preserve">
+    <value>The number of write requests since start of service. Put, Add, and Lock methods are included with write operations.</value>
+  </data>
+  <data name="PerfmonHostTotalWriteRequestPerSecondHelp" xml:space="preserve">
+    <value>The number of write requests per second since start of service. Put, Add, and Lock methods are included with write operations.</value>
+  </data>
+  <data name="PerfmonPerSecondaryMachineCategoryHelp" xml:space="preserve">
+    <value>This counter is of multiple instance type and each instance represents a secondary server.</value>
+  </data>
+  <data name="PerfmonPerSecondaryTotalReplicationRetriesHelp" xml:space="preserve">
+    <value>The total number of retry replication operations for each secondary server.</value>
+  </data>
+  <data name="PoolExhausted" xml:space="preserve">
+    <value>Memory pool exhausted</value>
+  </data>
+  <data name="PortOutOfRange" xml:space="preserve">
+    <value>Port specified must be an integer between 1 and 65535</value>
+  </data>
+  <data name="QuotaThrottlingPrefix" xml:space="preserve">
+    <value>Throttling due to resource : {0}.</value>
+  </data>
+  <data name="ReceivedMessageTooLarge" xml:space="preserve">
+    <value>Received message size is {0} bytes which is larger than the maximum message size {1} specified in configuration. </value>
+  </data>
+  <data name="RegionTooLarge" xml:space="preserve">
+    <value>The given region name exceeds the maximum allowed size for a Region.</value>
+  </data>
+  <data name="RequestDestination" xml:space="preserve">
+    <value>The client was trying to communicate with the server: {0}.</value>
+  </data>
+  <data name="SendMessageTooLarge" xml:space="preserve">
+    <value>Size of message to be sent is {0} bytes which is larger than the maximum message size {1} specified in configuration.</value>
+  </data>
+  <data name="SerializationPropertiesAlreadyConfigured" xml:space="preserve">
+    <value>Serialization properties have already been configured for this cache.</value>
+  </data>
+  <data name="ServiceStartupFailed" xml:space="preserve">
+    <value>Startup of service '{0}' failed with exception : {1}</value>
+  </data>
+  <data name="TagTooLarge" xml:space="preserve">
+    <value>The given tag name exceeds the maximum allowed size for a Tag</value>
+  </data>
+  <data name="TimeoutZero" xml:space="preserve">
+    <value>Time-out should not be less than zero.</value>
+  </data>
+  <data name="TimeoutZeroOrLess" xml:space="preserve">
+    <value>Time-out should be a positive value.</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>CacheConfigure.exe -command &lt;command name&gt; &lt;parameters passed through to command&gt;</value>
+  </data>
+  <data name="UsageExample" xml:space="preserve">
+    <value>Example CacheConfigure.exe -command RegisterCacheHost -Provider xml -ConnectionString \\\\machine\\config</value>
+  </data>
+  <data name="VersionValueModified" xml:space="preserve">
+    <value>Code version cannot be changed at runtime. Version changed from {0} to {1}.</value>
+  </data>
+  <data name="WBItemPool" xml:space="preserve">
+    <value>WriteBehindItemPool</value>
+  </data>
+</root>

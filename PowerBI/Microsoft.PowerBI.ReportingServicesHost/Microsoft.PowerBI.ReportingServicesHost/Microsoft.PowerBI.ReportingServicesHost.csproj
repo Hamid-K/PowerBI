@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D01212E5-F310-43A8-9235-1DB125578605}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.ReportingServicesHost</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.ReportingServicesHost</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Analytics.AnalyticsEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Analytics.AnalyticsEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Analytics.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Analytics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Data.ModelSchemaAnalysis" />
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.MsolapDataExtension">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.MsolapDataExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.InternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.InternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Powerbi.ExploreHost.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Powerbi.ExploreHost.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.MgdSqlDumper" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\DefaultServiceErrorExtraction.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ErrorDetail.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ErrorDetailValue.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ErrorResourceType.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\IServiceErrorExtractor.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\IServiceErrorExtractorFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ServiceError.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ServiceErrorExtractor.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ServiceErrorJsonWriter.cs" />
+    <Compile Include="Microsoft\InfoNav\Explore\ServiceContracts\Internal\ServiceErrorStatusCode.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LuciaSessionOptions.cs" />
+    <Compile Include="Microsoft\PowerBI\ExploreHost\Lucia\LuciaSessionOptionsExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ActiveReportingSessionConnectionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ActiveReportingSessionConnectionPool.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\AnalyticsFeatureSwitchProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ASConnectionInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\CannotRetrieveModelException.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ClientConfiguration.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ConceptualSchemaAndCapabilities.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ConnectionPool.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ConnectionType.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingBaseEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingConnectionAdapter.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingConnectionPoolAdapter.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingDumper.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingHelper.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingTimedEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataShapingTracer.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformHostTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformPluginFactoryHost.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformTimedEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DataTransformTracer.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\DaxDataTransformMetadataFactoryHost.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExploreBaseEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExploreEvents.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExploreHostDataSourceInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExploreTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExploreTimedEvent.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ExportLinguisticSchemaResult.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IASConnectionInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IDataSourceStateProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IExploreTelemetryService.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IInsightsSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ILuciaSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ILuciaSessionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IModelCache.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IModelMetadataProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\InsightsSessionModelChangedArgs.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Insights\IInsightsSessionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Insights\InsightsSessionDataSourceType.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Insights\InsightsSessionParameters.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IPowerViewHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IReportingSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IReportingSessionCreator.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\IReportingSessionProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\LuciaSessionFileSavedArgs.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\LuciaSessionModelChangedArgs.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\LuciaSessionParameters.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ModelCache.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ModelCacheConfig.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ModelMetadataProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ModelMetadataRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\NameDerivationOptions.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\NoOpModelCache.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ParseConceptualSchema.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PoolableConnectionWrapper.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PowerBIExploreException.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PowerBIExploreExceptionDetailKeys.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PowerBIExploreExceptionErrorCodes.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PowerViewCommandUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\PowerViewHandler.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ReportingSession.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ReportingSessionCreator.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\SchemaCommandRequest.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\SchemaOptions.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Utils\ConceptualSchemaExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Utils\TaskExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\ValidateLinguisticSchemaResult.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinClientRequestStreamError.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDataExtensionException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDataShapingError.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDataShapingException.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinDuplicateKeyAddedToModelCache.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinLoadReport.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinLoadSession.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinModelCacheHitSummary.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinProcessingError.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinReportingServicesHostTrace.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\PBIWinRestoreSession.cs" />
+    <Compile Include="Microsoft\PowerBI\Telemetry\TopLevelCustomerActionWithErrorMessage.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\Dumper.cs" />
+    <Compile Include="Microsoft\ReportingServices\Library\ConnectionStringConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\Library\Constants.cs" />
+    <Compile Include="Microsoft\ReportingServices\Library\DataExtensionPrivateInformationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Library\DataShapingFeatureSwitchProvider.cs" />
+    <Compile Include="Microsoft\ReportingServices\ReportProcessing\ConnectionKey.cs" />
+    <Compile Include="Microsoft\ReportingServices\ReportProcessing\ConnectionSecurity.cs" />
+    <Compile Include="Microsoft\ReportingServices\ReportProcessing\IDbConnectionPool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

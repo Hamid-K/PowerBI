@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotInvokeFunction" xml:space="preserve">
+    <value>Function '{0}' in the query design state cannot be invoked with the specified arguments.</value>
+  </data>
+  <data name="CannotInvokeWithGroupOnKey" xml:space="preserve">
+    <value>Cannot invoke with Group on key field</value>
+  </data>
+  <data name="DateTimeCannotBeConvertedToDax" xml:space="preserve">
+    <value>The provided date &amp; time is not valid.  Please enter a date after March 1, 1900.</value>
+  </data>
+  <data name="DefaultImageFieldIsNotAnImage" xml:space="preserve">
+    <value>The field '{0}' is not an image.  The DefaultImage in the model must refer to an image field.</value>
+  </data>
+  <data name="DisplayFolderPath" xml:space="preserve">
+    <value>{0}\{1}</value>
+  </data>
+  <data name="EntitySetNotFound" xml:space="preserve">
+    <value>The EntitySet '{0}' was referenced but was not found in the model.</value>
+  </data>
+  <data name="FunctionAverage" xml:space="preserve">
+    <value>Average of {0}</value>
+  </data>
+  <data name="FunctionCount" xml:space="preserve">
+    <value>Count of {0}</value>
+  </data>
+  <data name="FunctionDistinctCount" xml:space="preserve">
+    <value>Count of {0}</value>
+  </data>
+  <data name="FunctionMax" xml:space="preserve">
+    <value>Max of {0}</value>
+  </data>
+  <data name="FunctionMin" xml:space="preserve">
+    <value>Min of {0}</value>
+  </data>
+  <data name="FunctionSum" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="HierarchyLevelParentCaption" xml:space="preserve">
+    <value>{0}.{1}</value>
+  </data>
+  <data name="InvalidFieldReference" xml:space="preserve">
+    <value>Field '{0}' is not a valid field in the model.</value>
+  </data>
+  <data name="InvalidFilterDefinitionState" xml:space="preserve">
+    <value>The filter design state is invalid.</value>
+  </data>
+  <data name="InvalidHierarchyLevelReference" xml:space="preserve">
+    <value>Hierarchy level '{0} {1}' is not a valid hierarchy level in the model.</value>
+  </data>
+  <data name="InvalidModelMeasure" xml:space="preserve">
+    <value>Measure '{0}' is not a valid measure in the model.</value>
+  </data>
+  <data name="InvalidPropertyReference" xml:space="preserve">
+    <value>Reference '{0}' is not a valid property reference in the model.</value>
+  </data>
+  <data name="InvalidQueryDefinitionState" xml:space="preserve">
+    <value>The query design state is invalid.</value>
+  </data>
+  <data name="InvalidQueryExpressionState" xml:space="preserve">
+    <value>The query expression state is invalid.</value>
+  </data>
+  <data name="KpiGoalCaption" xml:space="preserve">
+    <value>{0} Goal</value>
+  </data>
+  <data name="KpiStatusCaption" xml:space="preserve">
+    <value>{0} Status</value>
+  </data>
+  <data name="KpiTrendCaption" xml:space="preserve">
+    <value>{0} Trend</value>
+  </data>
+  <data name="LoadEntityDataModelFailed" xml:space="preserve">
+    <value>Unable to load the specified Entity Data Model.</value>
+  </data>
+  <data name="ProjectedExpressionWithDuplicateAlias" xml:space="preserve">
+    <value>The query definition projects one or more expressions with duplicate aliases. Ensure that all projected expressions specify unique aliases.</value>
+  </data>
+  <data name="ProjectedExpressionWithEmptyAlias" xml:space="preserve">
+    <value>The query definition projects an expression without an alias. Ensure that all projected expressions specify an alias.</value>
+  </data>
+  <data name="QueryDefinitionIsEmpty" xml:space="preserve">
+    <value>The query definition is currently empty.  Please define query groups or measures.</value>
+  </data>
+  <data name="QueryDefinitionTranslationFailed" xml:space="preserve">
+    <value>The query definition could not be translated to an expression tree.</value>
+  </data>
+  <data name="UnrelatedGroups" xml:space="preserve">
+    <value>The query specifies one or more groups which are not related.</value>
+  </data>
+  <data name="UnrelatedMeasures" xml:space="preserve">
+    <value>The query specifies one or more measures which are not related to all of the query groups.</value>
+  </data>
+  <data name="VariableNotFound" xml:space="preserve">
+    <value>The variable '{0}' was referenced but was not found in the current scope.</value>
+  </data>
+</root>

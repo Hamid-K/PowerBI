@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{590BEE73-98D8-4DBD-8906-502C9F83EB4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Editions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diagnostics\RestrictedFeatures.cs" />
+    <Compile Include="Diagnostics\SkuUtil.cs" />
+    <Compile Include="Diagnostics\SqlServerSkuType.cs" />
+    <Compile Include="Editions\ChecksumUtility.cs" />
+    <Compile Include="Editions\EnumExtensions.cs" />
+    <Compile Include="Editions\EvaluationLicenseExpiredException.cs" />
+    <Compile Include="Editions\ISkuStore.cs" />
+    <Compile Include="Editions\PidgenXInterop.cs" />
+    <Compile Include="Editions\PidInfo.cs" />
+    <Compile Include="Editions\PidInfoHelper.cs" />
+    <Compile Include="Editions\ProductDetails.cs" />
+    <Compile Include="Editions\ProductType.cs" />
+    <Compile Include="Editions\RegHive.cs" />
+    <Compile Include="Editions\RegistryWow6432.cs" />
+    <Compile Include="Editions\RegSam.cs" />
+    <Compile Include="Editions\SkuCanUpgradeTo.cs" />
+    <Compile Include="Editions\SkuCrypto.cs" />
+    <Compile Include="Editions\SkuDetails.cs" />
+    <Compile Include="Editions\SkuInfo.cs" />
+    <Compile Include="Editions\SkuNativeMethods.cs" />
+    <Compile Include="Editions\SkuStore.cs" />
+    <Compile Include="Editions\SkuStrings.cs" />
+    <Compile Include="Editions\SkuSupportsDatabasesCreatedBy.cs" />
+    <Compile Include="Editions\SkuTimebomb.cs" />
+    <Compile Include="Editions\SkuType.cs" />
+    <Compile Include="Editions\SkuUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

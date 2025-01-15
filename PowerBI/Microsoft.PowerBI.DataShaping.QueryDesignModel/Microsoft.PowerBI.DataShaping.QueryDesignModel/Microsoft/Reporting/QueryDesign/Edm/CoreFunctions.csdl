@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Schema Namespace="Core" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <!-- The EDM type system doesn't support a primitive variant type.  QDM uses the variant
+  type when the actual type may vary or it doesn't know the true type.  To model this in the
+  function declarations below, we introduce a placeholder "Variant" complex type.  The QDM
+  function parsing code will recognize this type and map it to the appropriate conceptual
+  primitive type for variant. -->
+  <ComplexType Name="Variant">
+    <Property Name="Value" Nullable="true" Type ="Edm.Decimal"/>
+  </ComplexType>
+
+  <!-- Logical operators -->
+  <Function Name="Not" ReturnType="Edm.Boolean">
+    <Parameter Name="arg" Type="Edm.Boolean" />
+  </Function>
+  <Function Name="Or" ReturnType="Edm.Boolean">
+    <Parameter Name="left" Type="Edm.Boolean" />
+    <Parameter Name="right" Type="Edm.Boolean" />
+  </Function>
+  <!-- Aggregate functions -->
+  <!-- Sum -->
+  <Function Name="Sum" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Sum" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Sum" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Sum" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Median -->
+  <Function Name="Median" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Median" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Median" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Median" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- StandardDeviation -->
+  <Function Name="StandardDeviation" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="StandardDeviation" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="StandardDeviation" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="StandardDeviation" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Variance -->
+  <Function Name="Variance" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Variance" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Variance" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Variance" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Count -->
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Binary" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Boolean" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.DateTime" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.String" />
+    </Parameter>
+  </Function>
+  <Function Name="Count" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- DistinctCount -->
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Boolean" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.DateTime" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.String" />
+    </Parameter>
+  </Function>
+  <Function Name="DistinctCount" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Average -->
+  <Function Name="Average" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Average" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Average" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Average" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Min -->
+  <Function Name="Min" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Min" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Min" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Min" ReturnType="Edm.DateTime">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.DateTime" />
+    </Parameter>
+  </Function>
+  <Function Name="Min" ReturnType="Edm.String">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.String" />
+    </Parameter>
+  </Function>
+  <Function Name="Min" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- Max -->
+  <Function Name="Max" ReturnType="Edm.Decimal">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+  </Function>
+  <Function Name="Max" ReturnType="Edm.Double">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+  </Function>
+  <Function Name="Max" ReturnType="Edm.Int64">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+  </Function>
+  <Function Name="Max" ReturnType="Edm.DateTime">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.DateTime" />
+    </Parameter>
+  </Function>
+  <Function Name="Max" ReturnType="Edm.String">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Edm.String" />
+    </Parameter>
+  </Function>
+  <Function Name="Max" ReturnType="Core.Variant">
+    <Parameter Name="arg">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+  </Function>
+  <!-- PercentileInc -->
+  <Function Name="PercentileInc" ReturnType="Edm.Decimal">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileInc" ReturnType="Edm.Double">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileInc" ReturnType="Edm.Int64">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileInc" ReturnType="Core.Variant">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <!-- PercentileExc -->
+  <Function Name="PercentileExc" ReturnType="Edm.Decimal">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Decimal" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileExc" ReturnType="Edm.Double">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Double" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileExc" ReturnType="Edm.Int64">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Edm.Int64" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <Function Name="PercentileExc" ReturnType="Core.Variant">
+    <Parameter Name="expression">
+      <CollectionType ElementType="Core.Variant" />
+    </Parameter>
+    <Parameter Name="k" Type="Edm.Double" />
+  </Function>
+  <!-- Text functions -->
+  <Function Name="Contains" ReturnType="Edm.Boolean">
+    <Parameter Name="fullString" Type="Edm.String" />
+    <Parameter Name="substring" Type="Edm.String" />
+  </Function>
+  <Function Name="EndsWith" ReturnType="Edm.Boolean">
+    <Parameter Name="fullString" Type="Edm.String" />
+    <Parameter Name="substring" Type="Edm.String" />
+  </Function>
+  <Function Name="StartsWith" ReturnType="Edm.Boolean">
+    <Parameter Name="fullString" Type="Edm.String" />
+    <Parameter Name="substring" Type="Edm.String" />
+  </Function>
+  <!-- DateTime functions -->
+  <Function Name="DateTimeEqualToSecond" ReturnType="Edm.Boolean">
+    <Parameter Name="actualDateTime" Type="Edm.DateTime" />
+    <Parameter Name="referenceDateTime" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Date" ReturnType="Edm.DateTime">
+    <Parameter Name="year" Type="Edm.Int64" />
+    <Parameter Name="month" Type="Edm.Int64" />
+    <Parameter Name="day" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Date" ReturnType="Edm.DateTime">
+    <Parameter Name="year" Type="Edm.Double" />
+    <Parameter Name="month" Type="Edm.Double" />
+    <Parameter Name="day" Type="Edm.Double" />
+  </Function>
+  <Function Name="Year" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Year" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="Month" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Month" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="Day" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Day" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="Hour" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Hour" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="Minute" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Minute" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="Second" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Second" ReturnType="Edm.Int64">
+    <Parameter Name="date" Type="Edm.String" />
+  </Function>
+  <Function Name="EDate" ReturnType="Edm.DateTime">
+    <Parameter Name="date" Type="Edm.DateTime" />
+    <Parameter Name="months" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="EDate" ReturnType="Edm.DateTime">
+    <Parameter Name="date" Type="Edm.DateTime" />
+    <Parameter Name="months" Type="Edm.Double" />
+  </Function>
+  <Function Name="EDate" ReturnType="Edm.DateTime">
+    <Parameter Name="startDate" Type="Edm.String" />
+    <Parameter Name="months" Type="Edm.Double" />
+  </Function>
+  <!-- If functions -->
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Decimal" />
+    <Parameter Name="falseValue" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Double">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Double" />
+    <Parameter Name="falseValue" Type="Edm.Double" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Int64">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Int64" />
+    <Parameter Name="falseValue" Type="Edm.Int64" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.DateTime">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.DateTime" />
+    <Parameter Name="falseValue" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Double" />
+    <Parameter Name="falseValue" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Decimal" />
+    <Parameter Name="falseValue" Type="Edm.Double" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Decimal" />
+    <Parameter Name="falseValue" Type="Edm.Boolean" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Boolean" />
+    <Parameter Name="falseValue" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Double">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Double" />
+    <Parameter Name="falseValue" Type="Edm.Boolean" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Double">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Boolean" />
+    <Parameter Name="falseValue" Type="Edm.Double" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Double">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Int64" />
+    <Parameter Name="falseValue" Type="Edm.Double" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Double">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Double" />
+    <Parameter Name="falseValue" Type="Edm.Int64" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Int64" />
+    <Parameter Name="falseValue" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.Decimal">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.Decimal" />
+    <Parameter Name="falseValue" Type="Edm.Int64" />
+  </Function>
+  <Function Name="If" ReturnType="Edm.String">
+    <Parameter Name="condition" Type="Edm.Boolean" />
+    <Parameter Name="trueValue" Type="Edm.String" />
+    <Parameter Name="falseValue" Type="Edm.String" />
+  </Function>
+  <!-- IfError functions -->
+  <Function Name="IfError" ReturnType="Edm.Boolean">
+    <Parameter Name="value" Type="Edm.Boolean" />
+    <Parameter Name="valueIfError" Type="Edm.Boolean" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Decimal">
+    <Parameter Name="value" Type="Edm.Decimal" />
+    <Parameter Name="valueIfError" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Double">
+    <Parameter Name="value" Type="Edm.Double" />
+    <Parameter Name="valueIfError" Type="Edm.Double" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Int64">
+    <Parameter Name="value" Type="Edm.Int64" />
+    <Parameter Name="valueIfError" Type="Edm.Int64" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.DateTime">
+    <Parameter Name="value" Type="Edm.DateTime" />
+    <Parameter Name="valueIfError" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.String">
+    <Parameter Name="value" Type="Edm.String" />
+    <Parameter Name="valueIfError" Type="Edm.String" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Decimal">
+    <Parameter Name="value" Type="Edm.Double" />
+    <Parameter Name="valueIfError" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Decimal">
+    <Parameter Name="value" Type="Edm.Decimal" />
+    <Parameter Name="valueIfError" Type="Edm.Double" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Decimal">
+    <Parameter Name="value" Type="Edm.Int64" />
+    <Parameter Name="valueIfError" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Decimal">
+    <Parameter Name="value" Type="Edm.Decimal" />
+    <Parameter Name="valueIfError" Type="Edm.Int64" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Double">
+    <Parameter Name="value" Type="Edm.Int64" />
+    <Parameter Name="valueIfError" Type="Edm.Double" />
+  </Function>
+  <Function Name="IfError" ReturnType="Edm.Double">
+    <Parameter Name="value" Type="Edm.Double" />
+    <Parameter Name="valueIfError" Type="Edm.Int64" />
+  </Function>
+  <!-- Arithmetic functions -->
+  <!-- Plus -->
+  <Function Name="Plus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Int64">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Plus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <!-- Minus -->
+  <Function Name="Minus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Int64">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.DateTime">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Minus" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <!-- Minus Sign -->
+  <Function Name="MinusSign" ReturnType="Edm.Int64">
+    <Parameter Name="arg" Type="Edm.Boolean" />
+  </Function>
+  <Function Name="MinusSign" ReturnType="Edm.Double">
+    <Parameter Name="arg" Type="Edm.Double" />
+  </Function>
+  <Function Name="MinusSign" ReturnType="Edm.Decimal">
+    <Parameter Name="arg" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="MinusSign" ReturnType="Edm.Int64">
+    <Parameter Name="arg" Type="Edm.Int64" />
+  </Function>
+  <Function Name="MinusSign" ReturnType="Edm.Double">
+    <Parameter Name="arg" Type="Edm.DateTime" />
+  </Function>
+  <!-- Multiply -->
+  <Function Name="Multiply" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Int64">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Multiply" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <!-- Divide -->
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+    <Parameter Name="alternateresult" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Double" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+    <Parameter Name="alternateresult" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+    <Parameter Name="alternateresult" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+    <Parameter Name="alternateresult" Type="Edm.Double" />
+  </Function>
+  <Function Name="Divide" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+    <Parameter Name="alternateresult" Type="Edm.Int64" />
+  </Function>
+  <!-- DivideRaw -->
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.DateTime" />
+    <Parameter Name="right" Type="Edm.DateTime" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Decimal" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Double" />
+    <Parameter Name="right" Type="Edm.Int64" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Decimal">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="DivideRaw" ReturnType="Edm.Double">
+    <Parameter Name="left" Type="Edm.Int64" />
+    <Parameter Name="right" Type="Edm.Double" />
+  </Function>
+  <!-- Scalar functions -->
+  <!-- Between -->
+  <Function Name="Between" ReturnType="Edm.Boolean">
+    <Parameter Name="candidate" Type="Edm.Decimal" />
+    <Parameter Name="value1" Type="Edm.Decimal" />
+    <Parameter Name="value2" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Between" ReturnType="Edm.Boolean">
+    <Parameter Name="candidate" Type="Edm.Double" />
+    <Parameter Name="value1" Type="Edm.Double" />
+    <Parameter Name="value2" Type="Edm.Double" />
+  </Function>
+  <Function Name="Between" ReturnType="Edm.Boolean">
+    <Parameter Name="candidate" Type="Edm.Int64" />
+    <Parameter Name="value1" Type="Edm.Int64" />
+    <Parameter Name="value2" Type="Edm.Int64" />
+  </Function>
+  <!-- Ceiling -->
+  <Function Name="Ceiling" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Ceiling" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Double" />
+  </Function>
+  <Function Name="Ceiling" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Ceiling" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Ceiling" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Double" />
+  </Function>
+  <Function Name="Ceiling" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Decimal" />
+  </Function>
+  <!-- Floor -->
+  <Function Name="Floor" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Floor" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Double" />
+  </Function>
+  <Function Name="Floor" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="significance" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Floor" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Int64" />
+  </Function>
+  <Function Name="Floor" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Double" />
+  </Function>
+  <Function Name="Floor" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="significance" Type="Edm.Decimal" />
+  </Function>
+  <!-- Sqrt -->
+  <Function Name="Sqrt" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Sqrt" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double" />
+  </Function>
+  <Function Name="Sqrt" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Int64"/>
+  </Function>
+  <!-- MinValue functions -->
+  <Function Name="MinValue" ReturnType="Edm.Decimal">
+    <Parameter Name="value1" Type="Edm.Decimal" />
+    <Parameter Name="value2" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="MinValue" ReturnType="Edm.Double">
+    <Parameter Name="value1" Type="Edm.Double" />
+    <Parameter Name="value2" Type="Edm.Double" />
+  </Function>
+  <Function Name="MinValue" ReturnType="Edm.Int64">
+    <Parameter Name="value1" Type="Edm.Int64" />
+    <Parameter Name="value2" Type="Edm.Int64" />
+  </Function>
+  <!-- MaxValue functions -->
+  <Function Name="MaxValue" ReturnType="Edm.Decimal">
+    <Parameter Name="value1" Type="Edm.Decimal" />
+    <Parameter Name="value2" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="MaxValue" ReturnType="Edm.Double">
+    <Parameter Name="value1" Type="Edm.Double" />
+    <Parameter Name="value2" Type="Edm.Double" />
+  </Function>
+  <Function Name="MaxValue" ReturnType="Edm.Int64">
+    <Parameter Name="value1" Type="Edm.Int64" />
+    <Parameter Name="value2" Type="Edm.Int64" />
+  </Function>
+  <!-- Int -->
+  <Function Name="Int" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Int" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.Double" />
+  </Function>
+  <Function Name="Int" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.Int64"/>
+  </Function>
+  <Function Name="Int" ReturnType="Edm.Int64">
+    <Parameter Name="number" Type="Edm.DateTime"/>
+  </Function>
+  <!-- RoundDown -->
+  <Function Name="RoundDown" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <Function Name="RoundDown" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <Function Name="RoundDown" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Int64"/>
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <!-- RoundUp -->
+  <Function Name="RoundUp" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Decimal" />
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <Function Name="RoundUp" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Double" />
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <Function Name="RoundUp" ReturnType="Edm.Decimal">
+    <Parameter Name="number" Type="Edm.Int64"/>
+    <Parameter Name="numberOfDigits" Type="Edm.Int64" />
+  </Function>
+  <!-- LOG10 -->
+  <Function Name="Log10" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Decimal" />
+  </Function>
+  <Function Name="Log10" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double" />
+  </Function>
+  <Function Name="Log10" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Int64"/>
+  </Function>
+  <!-- POWER -->
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Int64"/>
+    <Parameter Name="power" Type="Edm.Int64"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Int64"/>
+    <Parameter Name="power" Type="Edm.Double"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Int64"/>
+    <Parameter Name="power" Type="Edm.Decimal"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double"/>
+    <Parameter Name="power" Type="Edm.Int64"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double"/>
+    <Parameter Name="power" Type="Edm.Double"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Double"/>
+    <Parameter Name="power" Type="Edm.Decimal"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Decimal"/>
+    <Parameter Name="power" Type="Edm.Int64"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Decimal"/>
+    <Parameter Name="power" Type="Edm.Double"/>
+  </Function>
+  <Function Name="Power" ReturnType="Edm.Double">
+    <Parameter Name="number" Type="Edm.Decimal"/>
+    <Parameter Name="power" Type="Edm.Decimal"/>
+  </Function>
+</Schema>

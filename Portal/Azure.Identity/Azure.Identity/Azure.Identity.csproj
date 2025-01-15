@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EAA6156-40C6-48F6-824D-4D0FAF33B0CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Azure.Identity</RootNamespace>
+    <AssemblyName>Azure.Identity</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces" />
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="System.Buffers" />
+    <Reference Include="System.Diagnostics.DiagnosticSource" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Memory.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Azure\Core\AppContextSwitchHelper.cs" />
+    <Compile Include="Azure\Core\Argument.cs" />
+    <Compile Include="Azure\Core\ArrayBufferWriter.cs" />
+    <Compile Include="Azure\Core\AsyncLockWithValue.cs" />
+    <Compile Include="Azure\Core\AzureResourceProviderNamespaceAttribute.cs" />
+    <Compile Include="Azure\Core\Base64Url.cs" />
+    <Compile Include="Azure\Core\Diagnostics\AzureEventSource.cs" />
+    <Compile Include="Azure\Core\HttpMessageSanitizer.cs" />
+    <Compile Include="Azure\Core\HttpPipelineMessageHandler.cs" />
+    <Compile Include="Azure\Core\LightweightPkcs8Decoder.cs" />
+    <Compile Include="Azure\Core\PemReader.cs" />
+    <Compile Include="Azure\Core\Pipeline\ActivityExtensions.cs" />
+    <Compile Include="Azure\Core\Pipeline\ClientDiagnostics.cs" />
+    <Compile Include="Azure\Core\Pipeline\DiagnosticScope.cs" />
+    <Compile Include="Azure\Core\Pipeline\DiagnosticScopeFactory.cs" />
+    <Compile Include="Azure\Core\Pipeline\TaskExtensions.cs" />
+    <Compile Include="Azure\FriendAttribute.cs" />
+    <Compile Include="Azure\Identity\AbstractAcquireTokenParameterBuilderExtensions.cs" />
+    <Compile Include="Azure\Identity\AppServiceManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\AppServiceV2017ManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\AppServiceV2019ManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\AuthenticationAccount.cs" />
+    <Compile Include="Azure\Identity\AuthenticationFailedException.cs" />
+    <Compile Include="Azure\Identity\AuthenticationRecord.cs" />
+    <Compile Include="Azure\Identity\AuthenticationRequiredException.cs" />
+    <Compile Include="Azure\Identity\AuthorizationCodeCredential.cs" />
+    <Compile Include="Azure\Identity\AuthorizationCodeCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\AzureApplicationCredential.cs" />
+    <Compile Include="Azure\Identity\AzureApplicationCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\AzureArcManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\AzureAuthorityHosts.cs" />
+    <Compile Include="Azure\Identity\AzureCliCredential.cs" />
+    <Compile Include="Azure\Identity\AzureCliCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\AzureDeveloperCliCredential.cs" />
+    <Compile Include="Azure\Identity\AzureDeveloperCliCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\AzureIdentityEventSource.cs" />
+    <Compile Include="Azure\Identity\AzurePowerShellCredential.cs" />
+    <Compile Include="Azure\Identity\AzurePowerShellCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\BrowserCustomizationOptions.cs" />
+    <Compile Include="Azure\Identity\ChainedTokenCredential.cs" />
+    <Compile Include="Azure\Identity\ClientAssertionCredential.cs" />
+    <Compile Include="Azure\Identity\ClientAssertionCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\ClientCertificateCredential.cs" />
+    <Compile Include="Azure\Identity\ClientCertificateCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\ClientSecretCredential.cs" />
+    <Compile Include="Azure\Identity\ClientSecretCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\CloudShellManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\Constants.cs" />
+    <Compile Include="Azure\Identity\CredentialDiagnosticScope.cs" />
+    <Compile Include="Azure\Identity\CredentialPipeline.cs" />
+    <Compile Include="Azure\Identity\CredentialUnavailableException.cs" />
+    <Compile Include="Azure\Identity\DefaultAzureCredential.cs" />
+    <Compile Include="Azure\Identity\DefaultAzureCredentialFactory.cs" />
+    <Compile Include="Azure\Identity\DefaultAzureCredentialImdsRetryPolicy.cs" />
+    <Compile Include="Azure\Identity\DefaultAzureCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\DeviceCodeCredential.cs" />
+    <Compile Include="Azure\Identity\DeviceCodeCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\DeviceCodeInfo.cs" />
+    <Compile Include="Azure\Identity\EnvironmentCredential.cs" />
+    <Compile Include="Azure\Identity\EnvironmentCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\EnvironmentVariables.cs" />
+    <Compile Include="Azure\Identity\FileContentsCache.cs" />
+    <Compile Include="Azure\Identity\FileSystemService.cs" />
+    <Compile Include="Azure\Identity\HttpPipelineClientFactory.cs" />
+    <Compile Include="Azure\Identity\IdentityCompatSwitches.cs" />
+    <Compile Include="Azure\Identity\IdentityModelFactory.cs" />
+    <Compile Include="Azure\Identity\IFileSystemService.cs" />
+    <Compile Include="Azure\Identity\ImdsManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\IMsalPublicClientInitializerOptions.cs" />
+    <Compile Include="Azure\Identity\InMemoryTokenCacheOptions.cs" />
+    <Compile Include="Azure\Identity\InteractiveBrowserCredential.cs" />
+    <Compile Include="Azure\Identity\InteractiveBrowserCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\IProcess.cs" />
+    <Compile Include="Azure\Identity\IProcessService.cs" />
+    <Compile Include="Azure\Identity\IScopeHandler.cs" />
+    <Compile Include="Azure\Identity\ISupportsAdditionallyAllowedTenants.cs" />
+    <Compile Include="Azure\Identity\ISupportsDisableInstanceDiscovery.cs" />
+    <Compile Include="Azure\Identity\ISupportsTokenCachePersistenceOptions.cs" />
+    <Compile Include="Azure\Identity\IVisualStudioCodeAdapter.cs" />
+    <Compile Include="Azure\Identity\IX509Certificate2Provider.cs" />
+    <Compile Include="Azure\Identity\LinuxNativeMethods.cs" />
+    <Compile Include="Azure\Identity\LinuxVisualStudioCodeAdapter.cs" />
+    <Compile Include="Azure\Identity\MacosNativeMethods.cs" />
+    <Compile Include="Azure\Identity\MacosVisualStudioCodeAdapter.cs" />
+    <Compile Include="Azure\Identity\ManagedIdentityClient.cs" />
+    <Compile Include="Azure\Identity\ManagedIdentityClientOptions.cs" />
+    <Compile Include="Azure\Identity\ManagedIdentityCredential.cs" />
+    <Compile Include="Azure\Identity\ManagedIdentityRequestFailedDetailsParser.cs" />
+    <Compile Include="Azure\Identity\ManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\MsalCacheHelperWrapper.cs" />
+    <Compile Include="Azure\Identity\MsalCacheReader.cs" />
+    <Compile Include="Azure\Identity\MsalClientBase.cs" />
+    <Compile Include="Azure\Identity\MsalConfidentialClient.cs" />
+    <Compile Include="Azure\Identity\MsalPublicClient.cs" />
+    <Compile Include="Azure\Identity\OnBehalfOfCredential.cs" />
+    <Compile Include="Azure\Identity\OnBehalfOfCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\ProcessRunner.cs" />
+    <Compile Include="Azure\Identity\ProcessService.cs" />
+    <Compile Include="Azure\Identity\ScopeGroupHandler.cs" />
+    <Compile Include="Azure\Identity\ScopeUtilities.cs" />
+    <Compile Include="Azure\Identity\SentinelFileLock.cs" />
+    <Compile Include="Azure\Identity\ServiceFabricManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\SharedTokenCacheCredential.cs" />
+    <Compile Include="Azure\Identity\SharedTokenCacheCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\StringExtensions.cs" />
+    <Compile Include="Azure\Identity\TenantIdResolver.cs" />
+    <Compile Include="Azure\Identity\TenantIdResolverBase.cs" />
+    <Compile Include="Azure\Identity\TokenCache.cs" />
+    <Compile Include="Azure\Identity\TokenCacheData.cs" />
+    <Compile Include="Azure\Identity\TokenCachePersistenceOptions.cs" />
+    <Compile Include="Azure\Identity\TokenCacheRefreshArgs.cs" />
+    <Compile Include="Azure\Identity\TokenCacheUpdatedArgs.cs" />
+    <Compile Include="Azure\Identity\TokenCredentialDiagnosticsOptions.cs" />
+    <Compile Include="Azure\Identity\TokenCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\TokenExchangeManagedIdentitySource.cs" />
+    <Compile Include="Azure\Identity\TokenHelper.cs" />
+    <Compile Include="Azure\Identity\UnsafeTokenCacheOptions.cs" />
+    <Compile Include="Azure\Identity\UsernamePasswordCredential.cs" />
+    <Compile Include="Azure\Identity\UsernamePasswordCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\Validations.cs" />
+    <Compile Include="Azure\Identity\VisualStudioCodeCredential.cs" />
+    <Compile Include="Azure\Identity\VisualStudioCodeCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\VisualStudioCredential.cs" />
+    <Compile Include="Azure\Identity\VisualStudioCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\WindowsNativeMethods.cs" />
+    <Compile Include="Azure\Identity\WindowsVisualStudioCodeAdapter.cs" />
+    <Compile Include="Azure\Identity\WorkloadIdentityCredential.cs" />
+    <Compile Include="Azure\Identity\WorkloadIdentityCredentialOptions.cs" />
+    <Compile Include="Azure\Identity\X509Certificate2FromFileProvider.cs" />
+    <Compile Include="Azure\Identity\X509Certificate2FromObjectProvider.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicallyAccessedMembersAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicallyAccessedMemberTypes.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DynamicDependencyAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\RequiresDynamicCodeAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\RequiresUnreferencedCodeAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\UnconditionalSuppressMessageAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsByRefLikeAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

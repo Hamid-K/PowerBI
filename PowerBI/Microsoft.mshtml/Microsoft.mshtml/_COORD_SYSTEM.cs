@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace mshtml
+{
+	// Token: 0x02000C93 RID: 3219
+	public enum _COORD_SYSTEM
+	{
+		// Token: 0x0400039C RID: 924
+		COORD_SYSTEM_GLOBAL,
+		// Token: 0x0400039D RID: 925
+		COORD_SYSTEM_PARENT,
+		// Token: 0x0400039E RID: 926
+		COORD_SYSTEM_CONTAINER,
+		// Token: 0x0400039F RID: 927
+		COORD_SYSTEM_CONTENT,
+		// Token: 0x040003A0 RID: 928
+		COORD_SYSTEM_FRAME,
+		// Token: 0x040003A1 RID: 929
+		COORD_SYSTEM_Max = 2147483647
+	}
+}

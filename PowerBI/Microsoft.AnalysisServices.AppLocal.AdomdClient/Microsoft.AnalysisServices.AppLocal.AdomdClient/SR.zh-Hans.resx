@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentErrorInvalidSchemaObjectType" xml:space="preserve">
+    <value>schemaObjectType 参数应为有效的 SchemaObjectType 值。</value>
+  </data>
+  <data name="ArgumentErrorUniqueNameEmpty" xml:space="preserve">
+    <value>uniqueName 参数不能为空。</value>
+  </data>
+  <data name="ArgumentErrorUnsupportedParameterType" xml:space="preserve">
+    <value>不支持类型为“{0}”的命令参数值。</value>
+  </data>
+  <data name="CellIndexer_IndexOutOfRange" xml:space="preserve">
+    <value>轴“{0}”的索引超出范围。它必须大于或等于“0”且小于“{1}”。</value>
+  </data>
+  <data name="CellIndexer_InvalidIndexType" xml:space="preserve">
+    <value>轴“{0}”的索引类型无效。索引必须为整数。</value>
+  </data>
+  <data name="CellIndexer_InvalidNumberOfAxesIndexers" xml:space="preserve">
+    <value>轴索引器的数量无效: 存在“{0}”个轴，但尝试按“{1}”个轴编制索引。</value>
+  </data>
+  <data name="CellSet_InvalidStateOfReader" xml:space="preserve">
+    <value>输入 XMLReader 对象的 State 属性无效:“{0}”。</value>
+  </data>
+  <data name="Cellset_propertyIsUnknown" xml:space="preserve">
+    <value>提供程序未返回“{0}”属性。</value>
+  </data>
+  <data name="Collection_IsReadOnly" xml:space="preserve">
+    <value>该集合为只读。无法修改其中的属性。</value>
+  </data>
+  <data name="Command_CommandStreamDoesNotSupportReadingFrom" xml:space="preserve">
+    <value>不能对不支持读取操作的流设置 CommandStream 属性。</value>
+  </data>
+  <data name="Command_CommandTextCommandStreamBothSet" xml:space="preserve">
+    <value>同时设置了 CommandText 和 CommandStream 属性。只能设置其中一个属性。</value>
+  </data>
+  <data name="Command_CommandTextCommandStreamNotSet" xml:space="preserve">
+    <value>CommandText 和 CommandStream 属性都未设置。</value>
+  </data>
+  <data name="Command_ConnectionIsNotOpened" xml:space="preserve">
+    <value>未打开连接。</value>
+  </data>
+  <data name="Command_ConnectionIsNotSet" xml:space="preserve">
+    <value>未对 Command 对象设置 Connection 属性。</value>
+  </data>
+  <data name="Command_InvalidTimeout" xml:space="preserve">
+    <value>Command 对象的 Timeout 属性值“{0}”无效。</value>
+  </data>
+  <data name="Command_OnlyActiveTransactionCanBeAssigned" xml:space="preserve">
+    <value>无法指派该事务，因为它已完成。</value>
+  </data>
+  <data name="Command_OnlyAdomdTransactionObjectIsSupported" xml:space="preserve">
+    <value>无法指派该对象，因为它不属于 AdomdTransaction 类型。</value>
+  </data>
+  <data name="Command_OnlyTransactionAssociatedWithTheSameConnectionCanBeAssigned" xml:space="preserve">
+    <value>无法指派该事务，因为与该事务相关的连接对象不是与该命令相关的连接对象。</value>
+  </data>
+  <data name="Connection_ConnectionString_NotInitialized" xml:space="preserve">
+    <value>ConnectionString 属性尚未初始化。</value>
+  </data>
+  <data name="Connection_ConnectionToLocalServerNotSupported" xml:space="preserve">
+    <value>不支持与当前处于活动状态的服务器上下文进行连接。</value>
+  </data>
+  <data name="Connection_DatabaseNameEmpty" xml:space="preserve">
+    <value>数据库名称不能为空。</value>
+  </data>
+  <data name="Connection_EffectiveUserNameEmpty" xml:space="preserve">
+    <value>有效用户名不能为空。</value>
+  </data>
+  <data name="Connection_FailedToSetProperty" xml:space="preserve">
+    <value>“{0}”属性不能设置为“{1}”。请确保该属性为可写。</value>
+  </data>
+  <data name="Connection_InvalidProperty" xml:space="preserve">
+    <value>服务器未返回“{0}”属性。</value>
+  </data>
+  <data name="Connection_NoInformationAboutDataSourcesReturned" xml:space="preserve">
+    <value>提供程序未返回任何数据源，或者未返回 DataSourceInfo 属性的值。</value>
+  </data>
+  <data name="Connection_PropertyNameEmpty" xml:space="preserve">
+    <value>属性名称不能为空。</value>
+  </data>
+  <data name="Connection_SessionID_SessionIsAlreadyOpen" xml:space="preserve">
+    <value>打开连接后，无法设置 SessionID 属性。</value>
+  </data>
+  <data name="Connection_ShowHiddenObjects_ConnectionAlreadyOpen" xml:space="preserve">
+    <value>打开连接后，无法设置 ShowHiddenObjects 属性。</value>
+  </data>
+  <data name="DatasetResponse_HierarchyWithSameNameOnSameAxis" xml:space="preserve">
+    <value>“{0}”层次结构在“{1}”轴上出现多次。</value>
+  </data>
+  <data name="ICollection_CannotCopyToMultidimensionalArray" xml:space="preserve">
+    <value>无法将集合元素复制到多维阵列。</value>
+  </data>
+  <data name="ICollection_ItemWithThisNameDoesNotExistInTheCollection" xml:space="preserve">
+    <value>集合中不存在使用指定名称的项。</value>
+  </data>
+  <data name="ICollection_NotEnoughSpaceToCopyTo" xml:space="preserve">
+    <value>阵列中没有足够的空间用于将集合元素复制到其中。可用空间:“{0}”。所需空间:“{1}”。</value>
+  </data>
+  <data name="Indexer_ObjectNotFound" xml:space="preserve">
+    <value>找不到“{0}”对象。</value>
+  </data>
+  <data name="InvalidArgument" xml:space="preserve">
+    <value>参数无效。</value>
+  </data>
+  <data name="InvalidOperationPriorToFetchAllProperties" xml:space="preserve">
+    <value>操作因对象的当前状态而无效。可以使用 FetchAllProperties 方法从服务器中检索必要的数据以启用该操作。</value>
+  </data>
+  <data name="Member_MissingDisplayInfo" xml:space="preserve">
+    <value>提供程序返回的数据集中缺少 DisplayInfo 属性。</value>
+  </data>
+  <data name="Member_MissingLevelDepth" xml:space="preserve">
+    <value>提供程序返回的数据集中缺少 LevelDepth 属性。</value>
+  </data>
+  <data name="Member_MissingLevelName" xml:space="preserve">
+    <value>提供程序返回的数据集中缺少 LevelUniqueName 属性。</value>
+  </data>
+  <data name="MetadataCache_Abandoned" xml:space="preserve">
+    <value>该对象属于已过期的元数据缓存。不应再使用该对象。</value>
+  </data>
+  <data name="Metadata_CubeHasbeenUpdated" xml:space="preserve">
+    <value>“{0}”多维数据集已在服务器上更新。</value>
+  </data>
+  <data name="Metadata_CubesCollectionHasbeenUpdated" xml:space="preserve">
+    <value>Cubes 集合已在服务器上更新。</value>
+  </data>
+  <data name="Metadata_MiningServicesCollectionHasbeenUpdated" xml:space="preserve">
+    <value>MiningServices 集合已在服务器上更新。</value>
+  </data>
+  <data name="NotSupportedByProvider" xml:space="preserve">
+    <value>当前提供程序不支持指定的方法。</value>
+  </data>
+  <data name="NotSupportedOnNonCellsetMember" xml:space="preserve">
+    <value>不属于单元集的 Member 对象不支持指定的方法。</value>
+  </data>
+  <data name="NotSupportedWhenConnectionMissing" xml:space="preserve">
+    <value>不支持指定的方法，因为对象没有关联的连接。</value>
+  </data>
+  <data name="Parameter_Already_Exists" xml:space="preserve">
+    <value>“{0}”参数在集合中已存在。</value>
+  </data>
+  <data name="Parameter_Parent_Mismatch" xml:space="preserve">
+    <value>参数已经属于另一个集合。</value>
+  </data>
+  <data name="Parameter_Value_Wrong_Type" xml:space="preserve">
+    <value>值的类型必须为 AdomdParameter。</value>
+  </data>
+  <data name="Property_Already_Exists" xml:space="preserve">
+    <value>属性在集合中已存在。</value>
+  </data>
+  <data name="Property_DoesNotExist" xml:space="preserve">
+    <value>属性在集合中不存在。</value>
+  </data>
+  <data name="Property_Key_Wrong_Type" xml:space="preserve">
+    <value>密钥为意外类型。</value>
+  </data>
+  <data name="Property_Parent_Mismatch" xml:space="preserve">
+    <value>属性已经属于另一个集合。</value>
+  </data>
+  <data name="Property_PropertyNotFound" xml:space="preserve">
+    <value>找不到属性:“{0}”。</value>
+  </data>
+  <data name="Property_UnknownProperty" xml:space="preserve">
+    <value>“{0}”属性无法识别。</value>
+  </data>
+  <data name="Property_Value_Wrong_Type" xml:space="preserve">
+    <value>值的类型必须为 AdomdProperty。</value>
+  </data>
+  <data name="Restrictions_TypesMismatch" xml:space="preserve">
+    <value>“{0}”限制出现类型不匹配。应为“{1}”，但提供了“{2}”。</value>
+  </data>
+  <data name="Resultset_IsNotDataset" xml:space="preserve">
+    <value>服务器返回的结果集不是单元集或多维数据集。</value>
+  </data>
+  <data name="Schema_InvalidGuid" xml:space="preserve">
+    <value>提供的 GUID 不是有效的架构行集 GUID。</value>
+  </data>
+  <data name="Schema_PropertyIsMissingOrOfAnUnexpectedType" xml:space="preserve">
+    <value>“{1}”架构中“{0}”属性的值丢失或为意外类型。</value>
+  </data>
+  <data name="Schema_RestOutOfRange" xml:space="preserve">
+    <value>限制数量超出范围。</value>
+  </data>
+  <data name="Schema_UnexpectedResponseForSchema" xml:space="preserve">
+    <value>响应格式不是“{0}”架构的预期格式。</value>
+  </data>
+  <data name="Server_IsAlreadyConnected" xml:space="preserve">
+    <value>连接已打开。</value>
+  </data>
+  <data name="Server_IsNotConnected" xml:space="preserve">
+    <value>未打开连接。</value>
+  </data>
+  <data name="Server_NoServerName" xml:space="preserve">
+    <value>DataSource 字符串无效。</value>
+  </data>
+  <data name="TransactionAlreadyComplete" xml:space="preserve">
+    <value>该事务已完成。</value>
+  </data>
+</root>

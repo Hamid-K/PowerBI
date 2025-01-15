@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24B701A5-164A-4DF1-9365-D3F501AE674D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.Diagnostics</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.Diagnostics</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\BusinessIntelligence\FeatureSwitches.cs" />
+    <Compile Include="Microsoft\BusinessIntelligence\IFeatureSwitchesProxy.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\ContainsMarkedInformationExtensions.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\IContainsMarkedInformation.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\IContainsPrivateInformation.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\IContainsTelemetryMarkup.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\Obfuscation.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\PrivateInformation.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\PrivateInformationMarkupKind.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\ScrubbedEntityPropertyReference.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\ScrubbedString.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\TelemetryMarkupKind.cs" />
+    <Compile Include="Microsoft\Cloud\Platform\Utils\WrapperExtensions.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\AssemblyConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\ReportingServicesHost\Utils\Encryption.cs" />
+    <Compile Include="Microsoft\ReportingServices\Common\AsynchronousExceptionDetection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\CommandBehavior.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\CommandType.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IConnectionRevertToServiceAccount.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IConnectionUserIdentity.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataMultiValueParameter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataParameter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataParameterCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataReader.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataReaderExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDataReaderFieldProperties.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbCollationProperties.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbCommand.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbCommandAnalysis.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbCommandProperties.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbCommandRewriter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbConnection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbConnectionExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbConnectionWrapper.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbErrorInspector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbErrorInspectorFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbImpersonationNeededForCommandCancel.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbPoolableConnection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbTransaction.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IDbTransactionExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IModelDataExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\IRestartable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\ITokenDataExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\ScopeValueFieldName.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataProcessing\UserIdentity.cs" />
+    <Compile Include="Microsoft\ReportingServices\DesignerPublicKeyConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\ContextBody.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\ReturnValue.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\RevertImpersonationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\SecureStringWrapper.cs" />
+    <Compile Include="Microsoft\ReportingServices\Diagnostics\Utilities\StackTraceUtil.cs" />
+    <Compile Include="Microsoft\ReportingServices\Interfaces\IExtension.cs" />
+    <Compile Include="Microsoft\ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\TestPublicKeyConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

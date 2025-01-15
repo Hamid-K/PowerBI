@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/sqlserver/reporting/2011/01/logclienttraceevents"
+            xmlns="http://schemas.microsoft.com/sqlserver/reporting/2011/01/logclienttraceevents"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+  <xsd:annotation>
+    <xsd:documentation>
+
+      The following schema describes the structure of the
+      LogClientTraceEvents request for Microsoft SQL Server Denali.
+
+      THE SCHEMA IS PROVIDED TO YOU ON AN "AS IS" BASIS, AND MICROSOFT
+      DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY,   INCLUDING,
+      WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
+      FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT, AS TO THE SCHEMA OR ANY
+      PRODUCT OR OTHER ITEM THAT MAY BE DEVELOPED USING THE SCHEMA.
+
+      Without limiting the generality of the foregoing, Microsoft makes no
+      warranty that any product or other item that may be developed using the
+      schema, or any portion of the schema, will not infringe any copyright,
+      patent, trade secret or other intellectual property right of any
+      individual or legal entity in any country. It is your responsibility to
+      obtain licenses to use any such intellectual property rights as appropriate.
+
+      MICROSOFT IS NOT LIABLE FOR ANY DAMAGES OF ANY KIND ARISING OUT OF OR IN
+      CONNECTION WITH THE USE OF THE SCHEMA, INCLUDING, WITHOUT LIMITATION, ANY
+      DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING LOST REVENUES OR LOST
+      PROFITS), PUNITIVE OR SPECIAL DAMAGES, WHETHER OR NOT MICROSOFT HAS BEEN
+      ADVISED OF SUCH DAMAGES.
+
+      (c) Microsoft Corporation.  All rights reserved.
+
+
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="ClientRequest">
+    <xsd:complexType>
+      <xsd:choice minOccurs="1" maxOccurs="1">
+        <xsd:element name="TraceEvents" type="TraceEventsType" minOccurs="1" maxOccurs="1" />
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="TraceEventsType">
+    <xsd:sequence>
+      <xsd:element name="TraceEvent" type="TraceEventType" minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TraceEventType">
+    <xsd:sequence minOccurs="1" maxOccurs="1">
+      <xsd:element name="ClientDateTime" type="xsd:string" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="Category" type="xsd:string" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="ProgressiveSessionId" type="xsd:string" minOccurs="0" maxOccurs="1" />
+      <xsd:element name="TraceLevel" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <!-- These values correspond to the System.Diagnostics.TraceLevel enum -->
+          <xsd:restriction base="xsd:integer">
+            <xsd:enumeration value="0" />
+            <xsd:enumeration value="1" />
+            <xsd:enumeration value="2" />
+            <xsd:enumeration value="3" />
+            <xsd:enumeration value="4" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="EventType" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Error" />
+            <xsd:enumeration value="Warn" />
+            <xsd:enumeration value="Perf" />
+            <xsd:enumeration value="Info" />
+            <xsd:enumeration value="Debug" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="Message" type="xsd:string" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="HostApplication" type="xsd:string" minOccurs="0" maxOccurs="1" />
+      <xsd:element name="Details" type="xsd:string" minOccurs="0" maxOccurs="1" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

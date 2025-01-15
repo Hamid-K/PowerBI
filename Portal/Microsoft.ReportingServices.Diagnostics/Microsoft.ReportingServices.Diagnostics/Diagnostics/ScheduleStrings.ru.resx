@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="April" xml:space="preserve">
+    <value>Апр</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>Авг</value>
+  </data>
+  <data name="DailyScheduleDescription" xml:space="preserve">
+    <value>Ежедневно в {0} начиная с {1}</value>
+  </data>
+  <data name="DailyWithIntervalScheduleDescription" xml:space="preserve">
+    <value>Каждый {1} день в {0} начиная с {2}</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Дек</value>
+  </data>
+  <data name="EndScheduleDescription" xml:space="preserve">
+    <value>и заканчивая {0}</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>Фев</value>
+  </data>
+  <data name="FirstWeek" xml:space="preserve">
+    <value>первая</value>
+  </data>
+  <data name="FourthWeek" xml:space="preserve">
+    <value>четвертая</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Пт</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>Янв</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>Июл</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>Июл</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>последняя</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>Мар</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>Май</value>
+  </data>
+  <data name="MinutesScheduleDescription" xml:space="preserve">
+    <value>Каждые {0} час(ов) и {1} минут начиная с {2} после {3}</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Пн</value>
+  </data>
+  <data name="MonthlyDOWEveryMonthScheduleDescription" xml:space="preserve">
+    <value>На {0} в {1} {2} каждого месяца начиная с {3}</value>
+  </data>
+  <data name="MonthlyEveryMonthScheduleDescription" xml:space="preserve">
+    <value>На {0} в день {1} каждого месяца начиная с {2}</value>
+  </data>
+  <data name="MontlyDOWScheduleDescription" xml:space="preserve">
+    <value>На {0} в {1} {2} из {3} начиная с {4}</value>
+  </data>
+  <data name="MontlyScheduleDescription" xml:space="preserve">
+    <value>На {0} в {1} день из {2} начиная с {3}</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Ноя</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>Окт</value>
+  </data>
+  <data name="OnceScheduleDescription" xml:space="preserve">
+    <value>На {0} в {1}</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Сб</value>
+  </data>
+  <data name="SecondWeek" xml:space="preserve">
+    <value>вторая</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>Сен</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Вс</value>
+  </data>
+  <data name="ThirdWeek" xml:space="preserve">
+    <value>третья</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Чт</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Вт</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Ср</value>
+  </data>
+  <data name="WeeklyScheduleDescription" xml:space="preserve">
+    <value>На {0} каждый {1} каждой недели начиная с {2}</value>
+  </data>
+  <data name="WeeklyWithIntervalScheduleDescription" xml:space="preserve">
+    <value>На {0} каждый {1} каждые {2} недели начиная с {3}</value>
+  </data>
+</root>

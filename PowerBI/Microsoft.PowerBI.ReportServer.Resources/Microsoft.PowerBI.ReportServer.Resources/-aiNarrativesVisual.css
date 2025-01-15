@@ -1,0 +1,417 @@
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+.aiNarratives-height-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.aiNarratives-height-wrapper .aiNarratives-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  word-wrap: break-word;
+  user-select: text;
+  cursor: text;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer.editMode {
+  user-select: none;
+  cursor: default;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer ul,
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer ol,
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer li {
+  margin: 0 0.8em;
+  font-size: inherit;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer ul li {
+  list-style: disc;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer ol li {
+  list-style: decimal;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer p {
+  margin: 0.5em 0;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer p:first-child {
+  margin-top: 0;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h1 {
+  font-size: 1.4em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h2 {
+  font-size: 1.3em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h3 {
+  font-size: 1.2em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h4 {
+  font-size: 1.1em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h5 {
+  font-size: 1em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer h6 {
+  font-size: 0.9em;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer table th,
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer table td {
+  text-align: left;
+  padding: 4px 8px;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer table,
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer th,
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryContainer td {
+  border: 1px solid var(--globalColorGrey92);
+  border-collapse: collapse;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .summaryFooter {
+  padding: 2px 0 0 0;
+  font-size: 10px;
+  display: flex;
+  color: var(--globalColorGrey44);
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .referenceLink {
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0em 0.5em;
+  border: 0.1em solid var(--globalColorGrey88);
+  border-radius: 0.3em;
+  color: inherit  !important;
+  user-select: none;
+  min-width: 0.5em;
+  text-align: center;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .referenceLink:link,
+.aiNarratives-height-wrapper .aiNarrativeContainer .referenceLink:visited {
+  text-decoration: none;
+}
+.aiNarratives-height-wrapper .aiNarrativeContainer .referenceLink.not-clickable {
+  cursor: inherit;
+}
+.aiNarratives-height-wrapper .termsLink {
+  margin-inline-start: 0.3em;
+  font-size: inherit;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--sm-font-size);
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState {
+  background-color: var(--globalColorGrey92);
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState .banner {
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState .banner .glyphicon {
+  color: var(--globalColorGrey38);
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState .banner .bannerText {
+  padding: 0 8px;
+  color: var(--globalColorGrey14);
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState .copilotIcon {
+  margin: auto;
+  width: 80px;
+  height: 82px;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.emptyState .copilotIcon path {
+  fill: #CACCCD;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.initialLoad,
+.aiNarratives-height-wrapper .aiNarratives-overlay.visualSelection {
+  background-color: var(--colorNeutralBackground2);
+  color: var(--colorNeutralForeground1);
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.errorMessage {
+  background-color: var(--colorNeutralBackground6);
+  color: var(--colorNeutralForeground1);
+  font-size: var(--md-font-size);
+  text-align: center;
+  padding: 0 20px;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.errorMessage .errorDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.errorMessage button {
+  text-decoration: underline;
+  background: none;
+  width: fit-content;
+  color: var(--colorBrandForegroundLink);
+}
+.aiNarratives-height-wrapper .aiNarratives-overlay.errorMessage button:hover {
+  color: var(--colorBrandForegroundLinkHover);
+}
+.aiNarratives-height-wrapper .aiNarratives-messageBanner {
+  background-color: var(--colorNeutralBackground3);
+  color: var(--colorNeutralForeground1);
+  display: flex;
+  padding: 4px 12px 4px 12px;
+  justify-content: space-between;
+  height: 32px;
+  align-items: center;
+  position: relative;
+}
+.aiNarratives-height-wrapper .aiNarratives-messageBanner .pause-wrapper {
+  display: flex;
+  gap: 4px;
+}
+.aiNarratives-height-wrapper .aiNarratives-messageBanner .pause-wrapper .pause-info-icon {
+  cursor: pointer;
+}
+.aiNarratives-height-wrapper .aiNarratives-messageBanner .pause-wrapper .message {
+  font-size: var(--sm-font-size);
+}
+.aiNarratives-height-wrapper .aiNarratives-messageBanner .banner-refresh-button {
+  padding: 0px 8px 0px 8px;
+  height: 24px;
+}
+.aiNarratives-height-wrapper .loadingCard {
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 48px;
+  width: 164px;
+  margin: 0;
+  background: var(--colorNeutralBackground1);
+  margin-bottom: -8px;
+  box-shadow: var(--shadow4);
+}
+.aiNarratives-height-wrapper .loadingCard .loadingContent {
+  padding: 16px 0 0 0;
+  text-align: center;
+  font-size: var(--md-font-size);
+  font-weight: var(--font-weight-semi-bold);
+  font-family: var(--fluent-font-family);
+}
+.aiNarratives-height-wrapper .visualSelection {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: auto;
+  z-index: 3;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard {
+  flex: 1;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .title {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--md-font-size);
+  margin-bottom: 4px;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .content {
+  font-size: var(--sm-font-size);
+  margin-bottom: 16px;
+  display: grid;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .emptyStateTermsLink {
+  color: var(--colorBrandForegroundLink);
+  font-size: inherit;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .emptyStateTermsLink:hover {
+  color: var(--colorBrandForegroundLinkHover);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions button {
+  flex: 1 0 160px;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--colorNeutralBackground1);
+  color: var(--colorNeutralForeground1);
+  border: 1px solid var(--colorNeutralStroke1);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions button:hover {
+  background-color: var(--colorNeutralBackground1Hover);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions button.disabled {
+  background-color: var(--colorNeutralBackgroundDisabled);
+  color: var(--colorNeutralForegroundDisabled);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot:not(.disabled) {
+  background-color: var(--colorBrandBackground);
+  color: var(--colorNeutralForegroundOnBrand);
+  border-color: var(--colorBrandBackground);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot:not(.disabled):hover {
+  background-color: var(--colorBrandBackgroundHover);
+  border-color: var(--colorBrandBackgroundHover);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilotIcon {
+  width: 20px;
+  height: 20px;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner {
+  width: 20px;
+  height: 20px;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner circle {
+  r: 9px;
+  stroke-width: var(--strokeWidthThick);
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner {
+  animation-name: spin-rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: transparent;
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner circle {
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+}
+@keyframes spin-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner-track {
+  stroke: var(--colorBrandStroke2);
+}
+@media (forced-colors: active) {
+  .aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner-track {
+    stroke: none !important;
+  }
+}
+.aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner-tail {
+  animation-name: tail-rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: var(--colorBrandStroke1);
+}
+@media (forced-colors: active) {
+  .aiNarratives-height-wrapper .visualSelection .visualSelectionCard .actions .copilot .copilot-button-spinner-tail {
+    stroke: var(--globalColorhcCanvasText) !important;
+  }
+}
+@keyframes tail-rotate {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+.aiNarratives-height-wrapper .visualSelection .infoColumn {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.aiNarratives-height-wrapper .wrapper {
+  z-index: -1;
+  --width: 160px;
+  margin: 0;
+  background: linear-gradient(90deg, var(--tridentColor80) 35%, var(--tridentColor110) 92%);
+  height: 8px;
+  width: var(--width);
+  border-radius: 10px;
+  border: 0px;
+  position: relative;
+  padding: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+.aiNarratives-height-wrapper .wrapper .loadingBar {
+  background-image: linear-gradient(to right, transparent, #DCF41F, transparent);
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  animation: loading-bar-animation 2s linear infinite;
+}
+@keyframes loading-bar-animation {
+  from {
+    left: 0%;
+    right: 100%;
+    width: 0%;
+  }
+  50% {
+    left: 0%;
+    right: 0%;
+    width: 100%;
+  }
+  to {
+    left: 100%;
+    right: 0%;
+    width: 0%;
+  }
+}

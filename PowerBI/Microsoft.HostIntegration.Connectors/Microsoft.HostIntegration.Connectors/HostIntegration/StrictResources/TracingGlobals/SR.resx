@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AndOrNodesHaveChildren" xml:space="preserve">
+    <value>"and" and "or" nodes must have children.</value>
+  </data>
+  <data name="AndOrNodesNotAttribute" xml:space="preserve">
+    <value>"and" and "or" nodes may only have one attribute - "not".</value>
+  </data>
+  <data name="ContainerMaximumDataBytesAttribute" xml:space="preserve">
+    <value>"container" nodes "maximumDataBytes" attribute must be an integer.</value>
+  </data>
+  <data name="DataTraceTruncated" xml:space="preserve">
+    <value>Data Trace Truncated: first {0} bytes of {1} being traced.</value>
+  </data>
+  <data name="EnumerationValueProperty" xml:space="preserve">
+    <value>Enumeration value {0} is invalid for property {1}.</value>
+  </data>
+  <data name="EnumerationValuePropertyInteger" xml:space="preserve">
+    <value>Enumeration value {0} is invalid integer for property {1}.</value>
+  </data>
+  <data name="EqualNodeAllAttributes" xml:space="preserve">
+    <value>"equal" nodes may only have the 3 attributes - "property", "value" and "not".</value>
+  </data>
+  <data name="EqualNodeNoChildren" xml:space="preserve">
+    <value>"equal" nodes may not have child nodes.</value>
+  </data>
+  <data name="EqualNodePropertyAttribute" xml:space="preserve">
+    <value>"equal" nodes must have the "property" attribute.</value>
+  </data>
+  <data name="EqualNodeValueAttribute" xml:space="preserve">
+    <value>"equal" nodes must have the "value" attribute.</value>
+  </data>
+  <data name="LevelNodeOneChild" xml:space="preserve">
+    <value>"level" {0} may only have one child.</value>
+  </data>
+  <data name="LevelNoneEmptyDecisionTree" xml:space="preserve">
+    <value>"level" {0} already has its top level element and may not be added to.</value>
+  </data>
+  <data name="LevelNoneEmptyDecisionTreeInsertOr" xml:space="preserve">
+    <value>"level" {0} already has its top level element, please insert an "or".</value>
+  </data>
+  <data name="PropertyNonStringIncorrectlySet" xml:space="preserve">
+    <value>Integer value set for property {0}, but definitions says that this is a string.</value>
+  </data>
+  <data name="PropertyStringIncorrectlySet" xml:space="preserve">
+    <value>String value set for property {0}, but definitions says that this is a non-string.</value>
+  </data>
+  <data name="TopLevelTracepoint" xml:space="preserve">
+    <value>{0} found when expecting a "tracePoint".</value>
+  </data>
+  <data name="TraceFlagsString" xml:space="preserve">
+    <value>"{0}" is not a valid trace flag.</value>
+  </data>
+  <data name="TraceLevelAttribute" xml:space="preserve">
+    <value>"traceLevel" nodes must have a "level" attribute.</value>
+  </data>
+  <data name="TraceLevelString" xml:space="preserve">
+    <value>"{0}" is not a valid trace level.</value>
+  </data>
+  <data name="TracepointNameAttribute" xml:space="preserve">
+    <value>"tracePoint" nodes must have the "name" attribute.</value>
+  </data>
+  <data name="TracepointTraceLevelChildren" xml:space="preserve">
+    <value>"tracePoint" node {0} does not have "traceLevel" children.</value>
+  </data>
+  <data name="UnknownDecisionTreeNode" xml:space="preserve">
+    <value>Node {0} found: only "equal", "ands" and "ors" allowed at this point.</value>
+  </data>
+  <data name="UnknownTracepointInContainer" xml:space="preserve">
+    <value>Tracepoint {0} is not known in {1}.</value>
+  </data>
+</root>

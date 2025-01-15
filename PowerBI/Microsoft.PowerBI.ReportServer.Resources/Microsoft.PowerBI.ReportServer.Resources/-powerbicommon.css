@@ -1,0 +1,2449 @@
+/*
+ * Color styles MUST be set through the color palette in colors.less. This
+ * will allow us to easily change the palette and get a consistent look. DO NOT
+ * hard-code colors directly inside classes.
+ *
+ * To get integrated VS support for LESS install the Visual Studio Web Essentials.
+ */
+/****** dropdown-menu *******/
+.angular-dropdown {
+  /* Size & position */
+  position: absolute;
+  min-width: 200px;
+  margin: 0;
+  z-index: 1000;
+  /* Styles */
+  background: var(--white-color, #FFF);
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  list-style: none;
+  border: 1px solid #dedede;
+  box-shadow: 0 0 8px var(--secondary-chrome-color, rgba(102, 102, 102, 0.2));
+  /* Hiding */
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  display: none;
+}
+.angular-dropdown.override-box-shadow {
+  box-shadow: 0 0 0 var(--secondary-chrome-color, rgba(102, 102, 102, 0.2));
+}
+.angular-dropdown li.divider {
+  padding-top: 1px;
+  background: var(--neutral-light-color, #EAEAEA);
+}
+.angular-dropdown button.dropdown-item {
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 400;
+  white-space: nowrap;
+  color: var(--neutral-primary-color, #333333);
+  cursor: pointer;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  text-align: left;
+  border: var(--focus-outline-definition, 2.5px solid) transparent;
+}
+@media screen and (-ms-high-contrast: active) {
+  .angular-dropdown button.dropdown-item {
+    border: none;
+  }
+}
+.angular-dropdown button.dropdown-item:focus {
+  border-color: var(--neutral-tertiary-color, #A6A6A6);
+  border-radius: 2px;
+}
+.angular-dropdown button.dropdown-item:hover {
+  background-color: var(--neutral-light-color, #EAEAEA);
+}
+.angular-dropdown button.dropdown-item:disabled {
+  color: var(--neutral-tertiary-alt-color, #C8C8C8);
+  cursor: default;
+}
+.angular-dropdown button.dropdown-item:disabled:hover {
+  background-color: transparent;
+}
+.angular-dropdown .dropdown-separator {
+  padding: 0;
+  border-bottom: 1px solid var(--secondary-chrome-color, rgba(102, 102, 102, 0.2));
+}
+.angular-dropdown .groupContextMenuSeparator {
+  border: 1px solid var(--neutral-light-color, #EAEAEA);
+  display: block;
+  margin: 0 20px;
+}
+.angular-dropdown li.dropdown-item > a,
+.angular-dropdown div.dropdown-item > a,
+.angular-dropdown li.dropdown-item span,
+.angular-dropdown div.dropdown-item span,
+.angular-dropdown li.dropdown-item button,
+.angular-dropdown div.dropdown-item button {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 400;
+  white-space: nowrap;
+  border: var(--focus-outline-definition, 2.5px solid) transparent;
+}
+@media screen and (-ms-high-contrast: active) {
+  .angular-dropdown li.dropdown-item > a,
+  .angular-dropdown div.dropdown-item > a,
+  .angular-dropdown li.dropdown-item span,
+  .angular-dropdown div.dropdown-item span,
+  .angular-dropdown li.dropdown-item button,
+  .angular-dropdown div.dropdown-item button {
+    border: none;
+  }
+}
+html[data-focus-source="key"] .angular-dropdown li.dropdown-item > a:focus,
+html[data-focus-source="key"] .angular-dropdown div.dropdown-item > a:focus,
+html[data-focus-source="key"] .angular-dropdown li.dropdown-item span:focus,
+html[data-focus-source="key"] .angular-dropdown div.dropdown-item span:focus,
+html[data-focus-source="key"] .angular-dropdown li.dropdown-item button:focus,
+html[data-focus-source="key"] .angular-dropdown div.dropdown-item button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.angular-dropdown li.dropdown-item > a:focus,
+.angular-dropdown div.dropdown-item > a:focus,
+.angular-dropdown li.dropdown-item span:focus,
+.angular-dropdown div.dropdown-item span:focus,
+.angular-dropdown li.dropdown-item button:focus,
+.angular-dropdown div.dropdown-item button:focus {
+  outline: none;
+}
+.angular-dropdown li.dropdown-item:hover a,
+.angular-dropdown div.dropdown-item:hover a,
+.angular-dropdown li.dropdown-item:hover button,
+.angular-dropdown div.dropdown-item:hover button {
+  background-color: var(--neutral-light-color, #EAEAEA);
+}
+.angular-dropdown .dropdown-item:hover {
+  background: none;
+}
+.angular-dropdown .dropdown-item > a,
+.angular-dropdown .dropdown-item span,
+.angular-dropdown .dropdown-item button {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.angular-dropdown .dropdown-item > a,
+.angular-dropdown .dropdown-item button {
+  color: var(--neutral-primary-color, #333333);
+  cursor: pointer;
+}
+.angular-dropdown .dropdown-item > a:focus,
+.angular-dropdown .dropdown-item button:focus {
+  border-color: var(--neutral-tertiary-color, #A6A6A6);
+  border-radius: 2px;
+}
+.angular-dropdown .dropdown-item > button {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  border: 0;
+}
+.angular-dropdown .dropdown-item > span {
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  cursor: default;
+  font-size: 11px;
+}
+.angular-dropdown .dropdown-item .dropdown-icon {
+  float: left;
+  vertical-align: middle;
+}
+.angular-dropdown .dropdown-item .dropdown-icon.glyphicon {
+  margin-right: 10px;
+  line-height: 16px;
+  /* fix vertical align with text */
+}
+.angular-dropdown .dropdown-item i {
+  float: right;
+  color: inherit;
+}
+.angular-dropdown .dropdown-item .dropdown-separator {
+  padding: 0;
+  border-bottom: 1px solid var(--secondary-chrome-color, rgba(102, 102, 102, 0.2));
+}
+.angular-dropdown .dropdown-item .groupContextMenuSeparator {
+  border: 1px solid var(--neutral-light-color, #EAEAEA);
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.angular-dropdown .dropdown-item.selectedItem {
+  font-weight: bold;
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.angular-dropdown .dropdown-item.selectedItem::after {
+  font-family: 'PowrMDL2';
+  font-style: normal;
+  font-size: 32px;
+  font-size: 12px;
+  content: '\E73E';
+  /* taken from .pbi-glyph-checkmark */
+  display: inline-block;
+  position: absolute;
+  margin-top: -15px;
+  right: 20px;
+}
+.angular-dropdown .dropdown-item.selectedItem > span,
+.angular-dropdown .dropdown-item.selectedItem button {
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.angular-dropdown .dropdown-item.selectedItem .dropdown-content {
+  font-weight: bold;
+}
+.angular-dropdown.active {
+  opacity: 1;
+  pointer-events: auto;
+  display: block;
+}
+.angular-dropdown.dark {
+  background-color: var(--report-app-bar-dropdown-menu-background-color, #444444);
+  border-color: var(--neutral-dark-color, #212121);
+}
+.angular-dropdown.dark .dropdown-item:hover,
+.angular-dropdown.dark .dropdown-item:focus {
+  background: var(--neutral-secondary-alt-color, #777777);
+}
+.angular-dropdown.dark .dropdown-item .dropdown-icon,
+.angular-dropdown.dark .dropdown-item .dropdown-content > * {
+  color: var(--white-color, #FFF);
+}
+.angular-dropdown.dark .dropdown-item .group1-option2-color {
+  color: var(--white-color, #FFF);
+}
+.dropdown-block-click {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  opacity: 0.01;
+}
+ul.clickable-menu-items.active {
+  pointer-events: auto;
+}
+@media print {
+  body .angular-dropdown {
+    display: none !important;
+  }
+}
+/* Generic styling for app bars */
+.appBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  list-style-type: none;
+  z-index: 5;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-size: 12px;
+  display: flex;
+  background: var(--neutral-light-color, #EAEAEA);
+  overflow-y: hidden;
+  overflow-x: auto;
+  overflow-x: overlay;
+}
+.appBar::-webkit-scrollbar {
+  height: 5px;
+}
+.appBar::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+.appBar .appBarContent {
+  display: flex;
+  flex-grow: 1;
+}
+.appBar .appBarText {
+  align-self: center;
+  color: var(--neutral-secondary-color, #666666);
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  white-space: nowrap;
+}
+.appBar .appBarTitle {
+  align-self: center;
+  color: var(--theme-secondary-alt-color, #444444);
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.appBar .appBarSection.left {
+  display: flex;
+  overflow-x: visible;
+}
+.appBar .appBarSection.right {
+  display: flex;
+  flex-grow: 1;
+}
+.appBar .appBarSection.right > ul {
+  flex-grow: 1;
+}
+.appBar .appBarSection.right > ul > li.rightFloatedItem {
+  margin-left: auto;
+  min-width: 0px;
+}
+@media screen and (max-width: 1200px) {
+  .appBar .appBarSection.right .errorMessage,
+  .appBar .appBarSection.right span:not(.displayOnSmallScreen) {
+    display: none;
+  }
+}
+.appBar .appBarSection .badge {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 50%;
+  background-color: var(--theme-primary-color, #F2C811);
+  color: var(--text-primary-content-color);
+  top: 7px;
+  left: 30px;
+  text-align: center;
+}
+.appBar .appBarSection ul {
+  display: flex;
+  overflow: hidden;
+}
+.appBar .appBarSection ul > li {
+  display: flex;
+  max-width: 250px;
+  min-width: 36px;
+  overflow: hidden;
+}
+.appBar .appBarSection ul > li.appBarDivider {
+  min-width: 1px;
+  width: 1px;
+  height: 30px;
+  background-color: var(--neutral-secondary-alt-color3, #999999);
+  margin-top: 5px;
+}
+.appBar .appBarSection ul > li.noMinWidth {
+  min-width: 0px;
+}
+.appBar .appBarSection ul > li section,
+.appBar .appBarSection ul > li button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.appBar .appBarSection ul > li button:focus {
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.appBar .appBarSection ul > li button[disabled] span,
+.appBar .appBarSection ul > li button[disabled] .glyphicon {
+  color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.appBar .appBarSection ul > li button[disabled] {
+  color: var(--neutral-secondary-alt-color, #777777);
+}
+.appBar .appBarSection ul > li button[disabled]:hover,
+.appBar .appBarSection ul > li button[disabled]:active {
+  background: none;
+}
+.appBar .appBarSection ul > li button[disabled] span,
+.appBar .appBarSection ul > li button[disabled] .glyphicon {
+  color: inherit;
+}
+.appBar .appBarSection ul > li div {
+  display: flex;
+  overflow: hidden;
+}
+.appBar .appBarSection ul > li i.glyphicon {
+  margin: 0;
+  align-self: center;
+}
+.appBar .appBarSection ul > li i.glyphicon:not(.pbi-glyph-chevrondownmedium):not(.pbi-glyph-more) {
+  margin-right: 7px;
+}
+.appBar .appBarSection ul > li i.glyphicon.pbi-glyph-chevrondownmedium.glyph-mini {
+  font-size: 10px;
+  margin-left: 4px;
+}
+.appBar .appBarSection ul > li i.glyphicon.pbi-glyph-warning {
+  color: var(--theme-primary-color, #F2C811);
+  cursor: pointer;
+}
+.appBar .appBarSection ul > li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 1px;
+}
+.appBar .appBarSection ul > li .noFlex {
+  flex: none;
+}
+.emptyStateLabel {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: var(--neutral-secondary-color, #666666);
+}
+.emptyStateLabel .glyphicon {
+  width: 32px;
+  height: 32px;
+}
+.emptyStateLabel .circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  border: 2px solid;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.emptyStateLabel .emptyStateTitle {
+  padding-top: 10px;
+}
+/* 
+ * Color styles MUST be set through the color palette in colors.less. This
+ * will allow us to easily change the palette and get a consistent look. DO NOT
+ * hard-code colors directly inside classes.
+ *
+ * To get integrated VS support for LESS install the Visual Studio Web Essentials.
+ */
+/****** dropdown-list *******/
+dropdown-list {
+  /* Size & position */
+  display: block;
+  min-width: 200px;
+  margin: 0;
+  z-index: 1000;
+  /* Styles */
+  background: var(--white-color, #FFF);
+  color: var(--neutral-primary-color-alt, #444444);
+  font-weight: normal;
+  font-size: 14px;
+  list-style: none;
+  /*
+    * TODO: After design finalizes dropdown redlines and approves 
+    * change to all dropdowns merge these with above styles.
+    * NOTE: dropdown-list.topBar.dark is not supported / tested
+    */
+}
+dropdown-list dropdown-list-item {
+  padding: 0 !important;
+  display: list-item;
+  overflow: auto;
+}
+dropdown-list dropdown-list-item a,
+dropdown-list dropdown-list-item button {
+  padding: 8px 20px;
+  overflow: auto;
+  background: transparent;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+dropdown-list dropdown-list-item a:hover,
+dropdown-list dropdown-list-item button:hover,
+dropdown-list dropdown-list-item a.selected,
+dropdown-list dropdown-list-item button.selected,
+dropdown-list dropdown-list-item a:focus,
+dropdown-list dropdown-list-item button:focus {
+  background-color: var(--neutral-light-color, #EAEAEA);
+}
+html[data-focus-source="key"] dropdown-list dropdown-list-item a:focus,
+html[data-focus-source="key"] dropdown-list dropdown-list-item button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+dropdown-list.dark {
+  background-color: var(--theme-secondary-alt-color, #444444);
+  border-color: var(--neutral-dark-color, #212121);
+}
+dropdown-list.dark .dropdown-list-item {
+  color: var(--white-color, #FFF);
+}
+dropdown-list.dark .dropdown-list-item:hover {
+  background: var(--neutral-secondary-alt-color, #777777);
+}
+dropdown-list.topBar {
+  margin-bottom: 10px;
+  /*
+        * TODO: add @neutralHighlightColor on hover and check with design
+        * if the value should be #EDEDED or the same as neutralLightColor
+        */
+}
+dropdown-list.topBar .dropdownListHeader,
+dropdown-list.topBar dropdown-list-item {
+  padding: 10px 20px;
+  line-height: 15px;
+}
+dropdown-list.topBar .dropdownListHeader {
+  color: var(--neutral-primary-color-alt2, #4a4a4a);
+  cursor: default;
+  display: list-item;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+}
+dropdown-list.topBar dropdown-list-item {
+  color: var(--neutral-secondary-color, #666666);
+}
+dropdown-list.topBar hr {
+  margin: 10px 20px;
+}
+.overlay {
+  padding: 0;
+  display: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+.overlay.overlayActive {
+  display: block;
+  opacity: 1;
+}
+.dropdownOverlay {
+  min-width: 150px;
+  max-width: 300px;
+  background-color: var(--white-color, #FFF);
+}
+.dropdownOverlay.overlayActive {
+  z-index: 100000;
+}
+.dropdownOverlay.overlayTopBar {
+  min-width: 130px;
+}
+.dropdownOverlay.fluentTheme.default-contextmenu {
+  min-width: 120px;
+}
+.dropdownOverlay.verticalScrollbar {
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+@media print {
+  body .dropdownOverlay {
+    display: none !important;
+  }
+}
+editable-list {
+  display: block;
+  list-style: none;
+}
+editable-list editable-list-item {
+  display: list-item;
+  padding: 3px 0;
+}
+editable-list editable-list-item .editableListItemContent {
+  display: inline-block;
+  max-width: calc(100% - 44px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+editable-list editable-list-item .removeButton {
+  background: 0 0;
+  border: 0;
+  float: right;
+  padding: 3px 16px;
+}
+editable-list editable-list-item:hover {
+  background-color: var(--neutral-light-color, #EAEAEA);
+}
+/* Styling for progress bar */
+.contentWaitProgressBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentWaitProgressBarContainer .contentWaitProgressBar {
+  margin-top: 60px;
+  color: var(--theme-primary-color, #F2C811);
+  background-color: var(--neutral-tertiary-color, #A6A6A6);
+  width: 200px;
+  height: 5px;
+  border: none;
+}
+/* Chrome */
+.contentWaitProgressBar::-webkit-progress-bar {
+  background-color: var(--neutral-tertiary-color, #A6A6A6);
+}
+/* Chrome */
+.contentWaitProgressBar::-webkit-progress-value {
+  background-color: var(--theme-primary-color, #F2C811);
+}
+/* FireFox */
+.contentWaitProgressBar::-moz-progress-bar {
+  background-color: var(--theme-primary-color, #F2C811);
+}
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.trimmedTextWithEllipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.trimmedTextWithEllipsisFullWidth {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.preTextWithEllipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.visibleNoTransition {
+  visibility: visible;
+  opacity: 1;
+}
+.hidden {
+  visibility: hidden;
+  /* Fully hide the element*/
+  opacity: 0;
+  transition: visibility 0s 0.5s, width 0s 0.5s, height 0s 0.5s, opacity 0.5s linear, left 0.5s linear, transform 0.5s;
+}
+.hiddenNoTransition {
+  visibility: hidden;
+  opacity: 0;
+}
+.no-border-radius {
+  border-radius: 0;
+}
+.fontWeightBold {
+  font-weight: bold;
+}
+.noBackground {
+  background: transparent !important;
+  /* to take priority over style library button backgrounds tyle */
+  border: none;
+}
+.overlay {
+  z-index: 99999;
+}
+div.cdk-overlay-container {
+  z-index: 99999;
+}
+.tutorial-popup-container .tutorial-popup-overlay {
+  background-color: var(--black-color, #000);
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 48px);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+}
+.tutorial-popup-container .tutorial-popup-overlay.modal {
+  opacity: 0.7;
+  pointer-events: all;
+}
+.tutorial-popup-container .tutorial-popup-overlay.non-modal-list-view {
+  opacity: 0.7;
+  margin-left: 220px;
+  pointer-events: all;
+}
+.tutorial-popup-container .tutorial-popup-overlay.non-modal-list-view-visible {
+  opacity: 0;
+  width: 220px;
+  pointer-events: all;
+}
+.tutorial-popup-container .tutorial-popup {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  width: 340px;
+  z-index: 101;
+  /* This will get replaced by the new get data v2 experience when it is ready*/
+}
+.tutorial-popup-container .tutorial-popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+.tutorial-popup-container .tutorial-popup.archived-content-container {
+  width: 900px;
+  height: 620px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal {
+  width: 540px;
+  height: 640px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box {
+  background-color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .title {
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .title .list-view-navigation-header {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  letter-spacing: 2px;
+  color: var(--neutral-secondary-alt-color3, #999999);
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .title .list-view-navigation-title {
+  font-size: 32px;
+  font-family: 'Segoe UI Semibold', 'wf_segoe-ui_semibold', helvetica, arial, sans-serif;
+  color: var(--neutral-primary-color-alt3, #515151);
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .tutorial-nav-model-picture {
+  background-image: url("../images/powerBICommon.sprites.png");
+  background-position: 0px 0px;
+  width: 540px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 130px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .text {
+  margin-left: 54px;
+  margin-right: 54px;
+  padding-top: 335px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .text .list-view-navigation-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--neutral-primary-color-alt3, #515151);
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .ok-btn {
+  padding: 9px 25px;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .ok-btn.list-view-navigation-button-override {
+  top: 81%;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .cancel {
+  color: var(--info-dark-color, #33669A);
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: 92%;
+  text-align: center;
+}
+.tutorial-popup-container .tutorial-popup.list-view-navigation-container.modal .box .cancel:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal {
+  width: 500px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box {
+  background-color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .title {
+  padding-top: 5px;
+  margin: 0 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .title .tutorial-embedded-header {
+  font-size: 14px;
+  margin: 10px 0;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  color: var(--neutral-secondary-alt-color3, #999999);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .title .tutorial-embedded-title {
+  font-size: 24px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  color: var(--neutral-primary-color-alt3, #515151);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .tutorial-embedded-picture {
+  background-image: url("../images/powerBICommon.sprites.png");
+  background-position: -500px -300px;
+  width: 500px;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .text {
+  margin: 0 20px;
+  padding-top: 230px;
+  padding-bottom: 40px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .text .tutorial-embedded-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--neutral-primary-color-alt3, #515151);
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .ok-btn {
+  padding: 9px 25px;
+  position: static;
+  float: none;
+  transform: none;
+  display: inline-block;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .ok-btn.tutorial-embedded-button-override {
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .cancel {
+  color: var(--info-dark-color, #33669A);
+  padding: 9px 25px;
+  font-size: 12px;
+  position: static;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-start.modal .box .cancel:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal {
+  width: 500px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box {
+  background-color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .title {
+  padding: 0;
+  margin: 0 20px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .title .tutorial-embedded-title {
+  font-size: 24px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  color: var(--neutral-primary-color-alt3, #515151);
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text {
+  margin: 0 20px;
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text .tutorial-embedded-alert {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  height: auto;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text .tutorial-embedded-alert i {
+  margin-right: 0px !important;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text .tutorial-embedded-alert .glyphicon {
+  display: inline-block;
+  padding-left: 16px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text .tutorial-embedded-alert .alerttext {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .text .tutorial-embedded-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--neutral-primary-color-alt3, #515151);
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .ok-btn {
+  padding: 9px 25px;
+  position: static;
+  display: inline-block;
+  float: none;
+  transform: none;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .ok-btn.tutorial-embedded-button-override {
+  margin-left: 236px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .cancel {
+  padding: 9px 25px;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-embedded-container-next.modal .box .cancel:hover {
+  cursor: pointer;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal {
+  width: 500px;
+  height: 560px;
+  /* Btn is absolute positioned by default */
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box {
+  background-color: var(--white-color, #FFF);
+  margin: 0;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box .title {
+  padding: 5px 0 0 0;
+  margin: 0 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box .title h1 {
+  font-size: 24px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box .text {
+  margin: 0 30px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box .text p {
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .box .welcomeImage {
+  background-image: url("../images/powerBICommon.sprites.png");
+  background-position: -540px 0px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .ok-btn.tutorial-consumption-ui-button-override {
+  padding: 9px 25px;
+  top: 475px;
+  border: none;
+  min-width: 70px;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-consumption-ui-container.modal .ok-btn.tutorial-consumption-ui-button-override:hover {
+  background-color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.tutorial-popup-container .tutorial-popup.personal-bookmark-tutorial {
+  width: 375px;
+}
+.tutorial-popup-container .tutorial-popup.user-state-tutorial.tutorial-popup .box .icon {
+  padding-top: 2px;
+}
+.tutorial-popup-container .tutorial-popup.user-state-tutorial.tutorial-popup .ok-btn {
+  margin-top: 0;
+}
+.tutorial-popup-container .tutorial-popup.app-nav-tutorial-popup .box {
+  background-color: var(--fluent-theme-neutral-secondary-color, #605E5C);
+}
+.tutorial-popup-container .tutorial-popup.app-nav-tutorial-popup .box .arrow {
+  background-color: var(--fluent-theme-neutral-secondary-color, #605E5C);
+}
+.tutorial-popup-container .tutorial-popup.app-nav-tutorial-popup .box .title {
+  margin: 0;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.tutorial-popup-container .tutorial-popup.app-nav-tutorial-popup .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  margin: 5px 28px 5px 5px;
+}
+.tutorial-popup-container .tutorial-popup.app-authoring-audience-tutorial .box {
+  background-color: var(--fluent-theme-neutral-secondary-color, #605E5C);
+}
+.tutorial-popup-container .tutorial-popup.app-authoring-audience-tutorial .box .arrow {
+  background-color: var(--fluent-theme-neutral-secondary-color, #605E5C);
+}
+.tutorial-popup-container .tutorial-popup.app-authoring-audience-tutorial .box .title {
+  margin: 0;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.tutorial-popup-container .tutorial-popup.app-authoring-audience-tutorial .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  margin: 5px 10px 5px 5px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box {
+  background-color: var(--fluent-theme-neutral-primary-alt-color, #3B3A39);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .arrow {
+  background-color: var(--fluent-theme-neutral-primary-alt-color, #3B3A39);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .text {
+  margin: 8px 14px;
+  line-height: 16px;
+  font-size: 12px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .text i {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .text ul li {
+  list-style-type: disc;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .progress-count {
+  margin-top: 18px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-fluent-design-container .box .ok-btn {
+  margin-top: 12px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal {
+  width: 500px;
+  height: 600px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box {
+  background-color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .title {
+  padding-top: 5px;
+  margin: 0 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .title .tutorial-protrial-header {
+  font-size: 14px;
+  margin: 10px 0;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  color: var(--neutral-secondary-alt-color3, #999999);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .title .tutorial-protrial-title {
+  font-size: 24px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  color: var(--neutral-primary-color-alt3, #515151);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .title .tutorial-protrial-title i {
+  margin-right: 8px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .tutorial-protrial-picture {
+  background-image: url("../images/powerBICommon.sprites.png");
+  background-position: 0px -300px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  top: 110px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .text {
+  margin: 0 30px;
+  padding-top: 310px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .text .tutorial-protrial-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--neutral-primary-color-alt3, #515151);
+  text-align: left;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .text .tutorial-protrial-text ul {
+  margin-bottom: 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .text .tutorial-protrial-text ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .ok-btn {
+  padding: 9px 25px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-protrial-container.modal .box .ok-btn.tutorial-protrial-button-override {
+  top: 86%;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tutorial-popup-container .tutorial-popup.modal .box {
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  margin-top: 24px;
+  background-color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup.modal .box .title {
+  font-size: 64px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  font-family: var(--bold-secondary-font-family, 'wf_standard-font_bold', helvetica, arial, sans-serif);
+  color: var(--black-color, #000);
+  display: block;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .title .archived-content {
+  font-size: 28px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Segoe UI Semibold', 'wf_segoe-ui_semibold', helvetica, arial, sans-serif;
+  position: absolute;
+  top: 20px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .tenant-merge-picture {
+  background-image: url("../images/powerBICommon.sprites.png");
+  background-position: 0px -600px;
+  width: 453px;
+  height: 207px;
+  position: absolute;
+  bottom: 72px;
+  left: 25%;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .archived-content-caption {
+  font-size: 15px;
+  color: var(--neutral-primary-color, #333333);
+  width: 150px;
+  position: absolute;
+  bottom: 112px;
+  line-height: 15px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .archived-content-caption.archived-content-caption-title {
+  font-size: 15px;
+  color: var(--black-color, #000);
+  font-family: 'Segoe UI Bold', 'wf_segoe-ui_bold', helvetica, arial, sans-serif;
+  bottom: 172px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .archived-content-caption.archived-content-caption-left {
+  left: 30px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .archived-content-caption.archived-content-caption-right {
+  right: 30px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text {
+  font-size: 20px;
+  line-height: 35px;
+  white-space: normal;
+  color: var(--black-color, #000);
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .archived-content {
+  font-size: 17px;
+  text-align: left;
+  padding: 0 30px;
+  position: absolute;
+  top: 70px;
+  line-height: 24px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .archived-content-learn-more {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 30px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .learn-more {
+  margin-top: 185px;
+  font-size: 25px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .watch-tutorial {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .watch-tutorial .play-icon {
+  width: 15px;
+  height: 15px;
+  color: var(--black-color, #000);
+  position: absolute;
+  top: 11px;
+  left: -25px;
+  border: 1px solid var(--black-color, #000);
+  display: block;
+  line-height: 15px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .watch-tutorial a {
+  color: var(--black-color, #000);
+  border-bottom: 1px solid var(--black-color, #000);
+  text-decoration: none;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .text .watch-tutorial a:hover {
+  text-decoration: none;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .ok-btn {
+  /* @noflip */
+  left: 50%;
+  top: 330px;
+  position: absolute;
+  transform: translateX(-50%);
+  padding: 10px 50px 10px 20px;
+  font-size: 20px;
+  font-family: var(--bold-secondary-font-family, 'wf_standard-font_bold', helvetica, arial, sans-serif);
+}
+.tutorial-popup-container .tutorial-popup.modal .box .ok-btn .get-data-icon {
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  color: inherit;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .ok-btn.archived-content-override {
+  left: 85%;
+  top: 88%;
+}
+.tutorial-popup-container .tutorial-popup.modal .box .ok-btn.archived-content-override .get-data-icon.archived-content {
+  transform: none;
+}
+.tutorial-popup-container .tutorial-popup.left > .box {
+  transform-origin: left;
+}
+.tutorial-popup-container .tutorial-popup.left > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: -15px;
+  box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.right > .box {
+  transform-origin: right;
+}
+.tutorial-popup-container .tutorial-popup.right > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  right: -15px;
+  box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.top > .box {
+  transform-origin: top;
+}
+.tutorial-popup-container .tutorial-popup.top > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: -15px;
+  box-shadow: -3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.bottom > .box {
+  transform-origin: bottom;
+}
+.tutorial-popup-container .tutorial-popup.bottom > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  bottom: -15px;
+  box-shadow: 3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.leftTop > .box {
+  transform-origin: left;
+}
+.tutorial-popup-container .tutorial-popup.leftTop > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: -15px;
+  box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.rightTop > .box {
+  transform-origin: right;
+}
+.tutorial-popup-container .tutorial-popup.rightTop > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  right: -15px;
+  box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.rightTopForRtl > .box {
+  transform-origin: left;
+}
+.tutorial-popup-container .tutorial-popup.rightTopForRtl > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: -15px;
+  box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.leftBottom > .box {
+  transform-origin: left;
+}
+.tutorial-popup-container .tutorial-popup.leftBottom > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: -15px;
+  box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup.rightBottomForRtl > .box {
+  transform-origin: left;
+}
+.tutorial-popup-container .tutorial-popup.rightBottomForRtl > .box .arrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: -15px;
+  box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.tutorial-popup-container .tutorial-popup .box {
+  padding: 14px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  background: var(--neutral-dark-color, #212121);
+  position: relative;
+}
+.tutorial-popup-container .tutorial-popup .box:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.tutorial-popup-container .tutorial-popup .box .arrow {
+  display: none;
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background: var(--neutral-dark-color, #212121);
+  transform: rotate(45deg);
+  margin: 10px;
+  box-sizing: border-box;
+}
+.tutorial-popup-container .tutorial-popup .box .arrow.arrowLeft {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.tutorial-popup-container .tutorial-popup .box .arrow.arrowTop {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.tutorial-popup-container .tutorial-popup .box .arrow.arrowRight {
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.tutorial-popup-container .tutorial-popup .box .arrow.arrowBottom {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.tutorial-popup-container .tutorial-popup .box .dismiss-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup .box .icon {
+  display: inline-block;
+  line-height: 22px;
+  vertical-align: top;
+  color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup .box .title {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 4px;
+  max-width: calc(100% - 20px);
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  display: inline-block;
+  color: var(--white-color, #FFF);
+}
+.tutorial-popup-container .tutorial-popup .box .image {
+  display: none;
+  border: 1px solid var(--neutral-light-color, #EAEAEA);
+  margin-bottom: 10px;
+}
+.tutorial-popup-container .tutorial-popup .box .text {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  white-space: pre-wrap;
+  color: var(--white-color, #FFF);
+  margin-left: 25px;
+}
+.tutorial-popup-container .tutorial-popup .box .text a {
+  color: var(--link-color, var(--theme-secondary-color, #000000));
+}
+.tutorial-popup-container .tutorial-popup .box .text a:hover {
+  text-decoration: underline;
+}
+.tutorial-popup-container .tutorial-popup .box .progress-count {
+  display: inline-block;
+  margin-left: 185px;
+  margin-top: 21px;
+  color: var(--white-color, #FFF);
+  font-size: 14px;
+}
+.tutorial-popup-container .tutorial-popup .box .progress-count.with-learn-more {
+  margin-left: 85px;
+}
+.tutorial-popup-container .tutorial-popup .box .learn-more {
+  display: inline;
+  font-size: 14px;
+  color: var(--info-color, #DEEBF6);
+  margin-left: 25px;
+}
+.tutorial-popup-container .tutorial-popup .box .ok-btn {
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+  text-align: center;
+}
+.tutorial-popup-container .tutorial-popup .box .show {
+  display: block;
+}
+.tutorial-popup-container .tutorial-popup .box .close-btn {
+  position: absolute;
+  right: 24px;
+  top: 16px;
+}
+.tutorial-popup-container .tutorial-popup .box .close-btn:hover {
+  cursor: pointer;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-workspace-fluent-list .title {
+  margin: 0;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-workspace-fluent-list .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-regular, 400);
+  margin: 18px 0 17px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-deployment-pipelines .box {
+  background-color: var(--fluent-theme-neutral-primary-alt-color, #3B3A39);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-deployment-pipelines .box .arrow {
+  background-color: var(--fluent-theme-neutral-primary-alt-color, #3B3A39);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-deployment-pipelines .box .title {
+  margin: 0;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-deployment-pipelines .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  margin: 22px 28px 17px 5px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-show-pages-pane .dismiss-icon i.glyphicon {
+  font-size: var(--lg-font-size, 16px);
+}
+.tutorial-popup-container .tutorial-popup.tutorial-show-pages-pane .icon {
+  display: none;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-show-pages-pane .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  line-height: 28px;
+  margin: 0;
+  padding: 2px 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-show-pages-pane .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  line-height: 20px;
+  margin: 0;
+  padding: 14px 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-show-pages-pane .ok-btn {
+  margin-top: 20px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-lineage-link .box .title {
+  font-size: 24px;
+  margin-left: 5px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-lineage-link .box .text {
+  margin: 16px 10px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-lineage-link .box .ok-btn {
+  margin: 0 10px 10px 0;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-storytelling .box .title {
+  font-size: 20px;
+  margin-left: 5px;
+  line-height: 28px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-storytelling .box .text {
+  margin: 0px 38px 10px 10px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.tutorial-popup-container .tutorial-popup.tutorial-storytelling .box .ok-btn {
+  padding: 6px 16px;
+}
+.tutorial-popup-container .tutorial-popup.no-icon .icon {
+  display: none;
+}
+.trident.tutorial-popup.big-popup {
+  width: 364px;
+}
+.trident.tutorial-popup.big-popup .box {
+  padding: 20px;
+  padding-left: 24px;
+}
+.trident.tutorial-popup.big-popup .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  margin-top: 12px;
+}
+.trident.tutorial-popup .box {
+  font-size: 0;
+  background-color: var(--colorBrandBackground);
+  border-radius: var(--card-border-radius);
+  padding: 20px 24px;
+}
+.trident.tutorial-popup .box .arrow {
+  background-color: var(--colorBrandBackground);
+}
+.trident.tutorial-popup .box .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  margin: 0;
+  margin-bottom: 12px;
+}
+.trident.tutorial-popup .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.trident.tutorial-popup .box .learn-more {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  color: var(--colorNeutralForegroundOnBrand);
+  margin-left: 0;
+}
+.trident.tutorial-popup .box .learn-more {
+  margin: 0;
+}
+.trident.tutorial-popup .box .progress-count {
+  margin-top: 6px;
+}
+.trident.tutorial-popup .box .title,
+.trident.tutorial-popup .box .text,
+.trident.tutorial-popup .box .learn-more,
+.trident.tutorial-popup .box .progress-count {
+  font-family: var(--fontFamilyBase);
+  color: var(--colorNeutralForegroundOnBrand);
+}
+.trident.tutorial-popup .box .fluent-tutorial-button {
+  border-radius: var(--button-border-radius);
+}
+.trident.tutorial-popup .box .ok-btn.white-btn {
+  background-color: var(--colorBrandBackgroundInverted);
+  border-color: var(--colorBrandBackgroundInverted);
+  color: var(--colorBrandForegroundOnLight);
+}
+.trident.tutorial-popup .box .ok-btn.primary {
+  background-color: var(--colorBrandBackgroundInverted);
+  border-color: var(--colorBrandBackgroundInverted);
+  color: var(--colorBrandForegroundOnLight);
+  margin-top: 0;
+}
+.trident.tutorial-popup .box .ok-btn.hidden {
+  display: none;
+}
+.trident.tutorial-popup .box .close-btn {
+  top: 20px;
+  color: var(--colorNeutralForegroundOnBrand);
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box {
+  background: var(--colorBrandBackground);
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  padding: 20px 24px;
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box > .title {
+  margin-top: unset;
+  margin-left: unset;
+  font-size: 20px;
+  font-family: 'Segoe UI Semibold';
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box > .ok-btn,
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box > .text {
+  font-size: 14px;
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box > .text {
+  margin-left: unset;
+  margin-top: 12px;
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .box > .arrow {
+  background: var(--colorBrandBackground) !important;
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .close-btn {
+  color: var(--colorNeutralStrokeOnBrand);
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .ok-btn {
+  align-self: end;
+  background-color: var(--colorNeutralBackground1);
+  color: var(--colorBrandStroke1);
+}
+.tutorial-popup-container .rac-tutorial-popup.tutorial-popup .ok-btn:hover {
+  background-color: var(--colorNeutralBackground1Hover);
+}
+.fluent-tutorial.tutorial-popup .box {
+  background: var(--gray-130);
+  border-radius: var(--button-border-radius);
+  padding: 17px 28px;
+}
+.fluent-tutorial.tutorial-popup .box .arrow {
+  background: var(--gray-130);
+}
+.fluent-tutorial.tutorial-popup .box .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--xlg-font-size, 20px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  margin-left: 0;
+}
+.fluent-tutorial.tutorial-popup .box .text {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-regular, 400);
+  margin-left: 0;
+}
+.fluent-tutorial.tutorial-popup .box .learn-more {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-regular, 400);
+  margin-left: 0;
+}
+.fluent-tutorial.tutorial-popup .box .fluent-tutorial-button {
+  border-radius: var(--button-border-radius);
+}
+html[dir="rtl"] .tutorial-popup-container .tutorial-popup .box .dismiss-icon {
+  left: 24px;
+}
+@keyframes callout-slide-from-left {
+  from {
+    opacity: 0.1;
+    transform: translateX(50px) translateY(0px) rotateX(0deg) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@-webkit-keyframes callout-slide-from-left {
+  from {
+    opacity: 0.1;
+    transform: translateX(50px) translateY(0px) rotateX(0deg) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@keyframes callout-slide-from-right {
+  from {
+    opacity: 0.1;
+    transform: translateX(-50px) translateY(0px) rotateX(0deg) rotateY(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@-webkit-keyframes callout-slide-from-right {
+  from {
+    opacity: 0.1;
+    transform: translateX(-50px) translateY(0px) rotateX(0deg) rotateY(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@keyframes callout-slide-from-top {
+  from {
+    opacity: 0.1;
+    transform: translateX(0px) translateY(50px) rotateX(-90deg) rotateY(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@-webkit-keyframes callout-slide-from-top {
+  from {
+    opacity: 0.1;
+    transform: translateX(0px) translateY(50px) rotateX(-90deg) rotateY(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@keyframes callout-slide-from-bottom {
+  from {
+    opacity: 0.1;
+    transform: translateX(0px) translateY(-50px) rotateX(90deg) rotateY(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+@-webkit-keyframes callout-slide-from-bottom {
+  from {
+    opacity: 0.1;
+    transform: translateX(0px) translateY(-50px) rotateX(90deg) rotateY(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateX(0) rotateY(0);
+  }
+}
+.modal {
+  opacity: 1;
+}
+.modal .dialog {
+  width: 75%;
+  height: 40%;
+  position: absolute;
+  top: 25%;
+  z-index: 200;
+  background: #FFF;
+  border: 1px solid #DBDBDB;
+  padding: 2.5%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.modal .dialog-content {
+  height: 100%;
+}
+.modal .dialog-content-filled {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.modal .overlay {
+  position: absolute;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--neutral-secondary-alt-color, #777777);
+  opacity: 0.5;
+}
+.modal .closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 12px;
+  height: 12px;
+  background-position: -37px -26px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal .closeBtn:active,
+.modal .closeBtn:focus,
+.modal .closeBtn:hover {
+  background-color: transparent !important;
+}
+.modal .closeBtn::before {
+  border: var(--focus-outline-definition, 2.5px solid) transparent;
+}
+html[data-focus-source="key"] .modal .closeBtn:focus::before {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.modal .actions {
+  position: absolute;
+  right: 47px;
+  bottom: 30px;
+}
+.modal.ng-hide-add.ng-hide-add-active,
+.modal.ng-hide-remove.ng-hide-remove-active {
+  transition: all linear 0.5s;
+}
+.modal.ng-hide {
+  opacity: 0;
+}
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-scrollbar-track-color: #d8d8ea;
+  -ms-scrollbar-arrow-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+  -ms-scrollbar-face-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+* ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+* ::-webkit-scrollbar-thumb {
+  background: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+* ::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+.pane-splitter {
+  width: 4px;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  cursor: ew-resize;
+}
+.on-resize {
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.on-resize > iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.localFileBrowser {
+  display: none;
+}
+@media print {
+  body iframe#refreshTokenFrameId {
+    display: none;
+  }
+}
+.pbi-progressBar::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+  animation: pbi-infinite-progress-bar 5s ease infinite;
+  animation-delay: 1s;
+}
+@keyframes pbi-infinite-progress-bar {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    width: 100%;
+  }
+  90%,
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+.scroll-wrapper.scrollbar-inner {
+  --scrollColor: var(--neutral-tertiary-alt-color, #C8C8C8);
+  --scrollExplorationColor: var(--gray-80, #B3B0AD);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+[data-legacy-theming="false"] .scroll-wrapper.scrollbar-inner {
+  --scrollColor: var(--colorNeutralForeground3);
+  --scrollExplorationColor: var(--colorNeutralForeground3);
+}
+.scroll-wrapper.scrollbar-inner .scroll-content {
+  -ms-overflow-style: none !important;
+}
+.scroll-wrapper.scrollbar-inner .scroll-element.scroll-y {
+  width: 6px !important;
+  right: 0;
+}
+.scroll-wrapper.scrollbar-inner .scroll-element.scroll-y .scroll-element_track {
+  background-color: transparent !important;
+}
+.scroll-wrapper.scrollbar-inner .scroll-element.scroll-y .scroll-bar {
+  background-color: var(--scrollColor) !important;
+  min-height: 20px;
+  max-height: calc(100% - 12px);
+}
+.newPaneColors.explorationContainer .scroll-wrapper .scroll-y .scroll-bar {
+  background-color: var(--scrollExplorationColor) !important;
+  opacity: 0.5;
+}
+.searchBox {
+  position: relative;
+  height: 28px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.searchBox i {
+  position: absolute;
+  top: 7px;
+  margin: 0 !important;
+  color: var(--neutral-tertiary-color, #A6A6A6) !important;
+  cursor: pointer;
+  z-index: 2;
+}
+.searchBox .pbi-glyph-search {
+  left: 12px;
+  font-size: 15px;
+}
+.searchBox .pbi-glyph-close {
+  right: 8px;
+  font-size: 14px;
+}
+.searchBox input[type=text] {
+  height: 30px;
+  left: 0;
+  position: absolute;
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  box-sizing: border-box;
+  border: 1px solid var(--black-color, #000);
+  padding: 6px 10px 7px 35px;
+  background-color: var(--neutral-dark-color, #212121);
+  width: 100%;
+  outline: none;
+}
+.searchBox input[type=text]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.searchBox input[type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  opacity: 1;
+}
+.searchBox input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.searchBox input[type=text]:focus {
+  border-color: var(--theme-primary-color, #F2C811);
+}
+.searchBox .inputWithClearButton.addPadding {
+  padding-right: 24px;
+}
+.newPaneColors.explorationContainer .searchBox input[type=text] {
+  color: var(--gray-180, #252423);
+  background-color: var(--white-color, #FFF);
+  border-color: var(--gray-60, #C8C6C4);
+  border-radius: 2px;
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: inherit;
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: inherit;
+  opacity: 1;
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: inherit;
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]:not(:focus):hover {
+  border-color: var(--gray-80, #B3B0AD);
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]:focus {
+  border-color: var(--gray-130, #605E5C);
+}
+.newPaneColors.explorationContainer .searchBox input[type=text]::selection {
+  background: var(--theme-primary-color, #F2C811);
+}
+.newPaneColors.explorationContainer .searchBox i {
+  color: inherit !important;
+}
+.explorationContainer .outspacePane .searchBox input[type=text] {
+  color: inherit !important;
+  background-color: transparent;
+  border-color: var(--gray-60, #C8C6C4);
+}
+.explorationContainer .outspacePane .searchBox input[type=text]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: inherit;
+}
+.explorationContainer .outspacePane .searchBox input[type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: inherit;
+  opacity: 1;
+}
+.explorationContainer .outspacePane .searchBox input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: inherit;
+}
+.explorationContainer .outspacePane .searchBox input[type=text]:not(:focus):hover {
+  border-color: var(--gray-80, #B3B0AD);
+}
+.explorationContainer .outspacePane .searchBox input[type=text]:focus {
+  border-color: var(--gray-60, #C8C6C4);
+}
+.explorationContainer .outspacePane .searchBox i {
+  color: inherit !important;
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.toolbarOverlay {
+  padding: 0;
+  display: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+.toolbarOverlay.overlayActive {
+  display: block;
+  opacity: 1;
+}
+html[data-focus-source='key'] .toolbarOverlay button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+html[data-focus-source='program'] .toolbarOverlay button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+html[data-focus-source='key'] .themeableElement.toolbarOverlay .themeableElementCustom:focus,
+.themeableElement.toolbarOverlay .themeableElementCustom:focus-within {
+  color: unset !important;
+  outline-color: unset !important;
+}
+.tooltip {
+  max-width: 380px;
+  padding: 12px;
+  vertical-align: baseline;
+  line-height: 21px;
+  background-color: var(--white-color, #FFF);
+  position: fixed;
+  opacity: 0;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.1s ease-in-out;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  z-index: 9999999;
+}
+.tooltip.modal-tooltip {
+  z-index: 1000000;
+}
+.tooltip.active {
+  opacity: 1;
+}
+.tooltip .title {
+  font: 12px 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-weight: 700;
+  color: var(--neutral-primary-color-alt, #444444);
+  display: block;
+  position: relative;
+}
+.tooltip .description {
+  max-width: 240px;
+  font: 12px 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  color: var(--neutral-primary-color-alt, #444444);
+  display: block;
+  position: relative;
+  word-break: normal;
+  white-space: pre-wrap;
+}
+.tooltip .description a {
+  color: var(--fluent-theme-link-color);
+}
+.tooltip:after {
+  content: "";
+  border-style: solid;
+  border-width: 8px;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.tooltip.arrowTopLeft:after {
+  border-color: transparent transparent var(--white-color, #FFF) transparent;
+  top: -15px;
+  left: 13px;
+}
+.tooltip.arrowTopMiddle:after {
+  border-color: transparent transparent var(--white-color, #FFF) transparent;
+  top: -15px;
+  left: 50%;
+  margin-left: -4px;
+}
+.tooltip.arrowTopRight:after {
+  border-color: transparent transparent var(--white-color, #FFF) transparent;
+  top: -15px;
+  right: 13px;
+}
+.tooltip.arrowBottomLeft:after {
+  border-color: var(--white-color, #FFF) transparent transparent transparent;
+  bottom: -14px;
+  left: 13px;
+}
+.tooltip.arrowBottomRight:after {
+  border-color: var(--white-color, #FFF) transparent transparent transparent;
+  bottom: -14px;
+  right: 13px;
+}
+.tooltip.arrowBottomMiddle:after {
+  border-color: var(--white-color, #FFF) transparent transparent transparent;
+  bottom: -14px;
+  left: 50%;
+  margin-left: -8px;
+}
+.tooltip.arrowSideMiddle:after {
+  border-color: transparent var(--white-color, #FFF) transparent transparent;
+  top: 10px;
+  left: -16px;
+}
+.tooltip.dark {
+  background-color: var(--neutral-secondary-color, #666666);
+}
+.tooltip.dark .title,
+.tooltip.dark .description {
+  color: var(--neutral-light-color, #EAEAEA);
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.tooltip.dark.arrowTopLeft:after,
+.tooltip.dark.arrowTopMiddle:after,
+.tooltip.dark.arrowTopRight:after,
+.tooltip.dark.arrowBottomLeft:after,
+.tooltip.dark.arrowBottomRight:after,
+.tooltip.dark.arrowBottomMiddle:after {
+  border-color: transparent transparent var(--neutral-secondary-color, #666666) transparent;
+}
+transform:not(.on-object) {
+  touch-action: manipulation;
+}
+transform:not(.on-object).dragging,
+transform:not(.on-object).resizing {
+  transition: none;
+}
+transform:not(.on-object).dragging > :not(.resizeHandle),
+transform:not(.on-object).resizing > :not(.resizeHandle) {
+  pointer-events: none;
+}
+transform:not(.on-object).dragging .resizeHandle,
+transform:not(.on-object).resizing .resizeHandle {
+  display: none !important;
+}
+transform:not(.on-object)[drag-resize-disabled=true] > .resizeHandle,
+transform:not(.on-object).selected[drag-resize-disabled=true] > .resizeHandle,
+transform:not(.on-object)[drag-resize-disabled=true] > .resizeHandle:not(.customHandle),
+transform:not(.on-object).selected[drag-resize-disabled=true] > .resizeHandle:not(.customHandle) {
+  display: none;
+}
+transform:not(.on-object).selected > .resizeHandle,
+transform:not(.on-object).selected > .resizeHandle:not(.customHandle) {
+  display: block;
+}
+transform:not(.on-object) .resizeHandle:not(.customHandle) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  display: none;
+  touch-action: none;
+  pointer-events: auto;
+}
+transform:not(.on-object) .resizeHandle[data-direction=up]:not(.customHandle) {
+  left: 50%;
+  top: -1px;
+  margin-left: -6px;
+  width: 12px;
+  border-top: 4px solid #999;
+  cursor: n-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=left]:not(.customHandle) {
+  /* @noflip */
+  left: -1px;
+  top: 50%;
+  margin-top: -6px;
+  height: 12px;
+  /* @noflip */
+  border-left: 4px solid #999;
+  /* @noflip */
+  cursor: w-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=down]:not(.customHandle) {
+  left: 50%;
+  bottom: -1px;
+  margin-left: -6px;
+  width: 12px;
+  border-bottom: 4px solid #999;
+  cursor: s-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=right]:not(.customHandle) {
+  /* @noflip */
+  right: -1px;
+  top: 50%;
+  margin-top: -6px;
+  height: 12px;
+  /* @noflip */
+  border-right: 4px solid #999;
+  /* @noflip */
+  cursor: e-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=up-right]:not(.customHandle) {
+  /* @noflip */
+  right: -1px;
+  top: -1px;
+  /* @noflip */
+  border-right: 4px solid #999;
+  border-top: 4px solid #999;
+  /* @noflip */
+  cursor: ne-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=up-left]:not(.customHandle) {
+  /* @noflip */
+  left: -1px;
+  top: -1px;
+  /* @noflip */
+  border-left: 4px solid #999;
+  border-top: 4px solid #999;
+  /* @noflip */
+  cursor: nw-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=down-left]:not(.customHandle) {
+  /* @noflip */
+  left: -1px;
+  bottom: -1px;
+  /* @noflip */
+  border-left: 4px solid #999;
+  border-bottom: 4px solid #999;
+  /* @noflip */
+  cursor: sw-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=down-right]:not(.customHandle) {
+  /* @noflip */
+  right: -1px;
+  bottom: -1px;
+  /* @noflip */
+  border-right: 4px solid #999;
+  border-bottom: 4px solid #999;
+  /* @noflip */
+  cursor: se-resize !important;
+}
+transform:not(.on-object) .resizeHandle[data-direction=left]:before,
+transform:not(.on-object) .resizeHandle[data-direction=right]:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  cursor: default;
+}
+transform:not(.on-object) .resizeHandle[data-direction=left]:before {
+  /* @noflip */
+  left: 0;
+}
+transform:not(.on-object) .resizeHandle[data-direction=right]:before {
+  /* @noflip */
+  right: 0;
+}
+.multiSelection transform:not(.on-object).selected > .resizeHandle,
+.multiSelection transform:not(.on-object).selected > .resizeHandle:not(.customHandle) {
+  display: none;
+}
+.multiSelection transform:not(.on-object).selecting > .resizeHandle,
+.multiSelection transform:not(.on-object).selecting > .resizeHandle:not(.customHandle) {
+  display: block;
+}
+@media print {
+  body .customHandle {
+    display: none !important;
+  }
+}
+/*highest z-index since nothing should be accessible behind the modal dialog*/
+/*Slightly higer than modal dialog so it gets hover and clicks*/
+/*second highest z-index after the modalDialog*/
+/* z-index for collapsible panes like share, subscribe etc */
+/*Should be just below Toast and colapsible pane */
+/*z-index needs to be higher than the tooltips, panes & appBar z-index*/
+/*z-index for "End format mode" button in pop-out mode*/
+/*z-index for the overlay created via overlay service. This needs to be higher than explorationMask*/
+/*z-index for the dropdown created for slicer visuals. This needs to be visible in the overlays created by overlay service, so matching it's z-index value*/
+/*z-index for context menu should be higher than dropdown overlay */
+/*z-index needs to be higher than the InFocus slider*/
+/*Execption: This iframe should be accessible anywhere*/
+/*
+z-index for ExploreUI dialogs
+This is the highest z-index currently among overlays/dialogs
+*/
+/* z-index for side pane */
+/* z-index for artifact info popper */
+/* z-index for intelligence hub - headers lists */
+/* z-index for the main loader (root component - .spinner-container), each change of the route  */
+/* z-index for the spinner injected into page from WFE - must be less than @root-spinner-container-z-index */
+/* z-index for the main appBar - must be greater than @root-spinner-container-z-index */
+/* z-index for app nav editor insertion indicator */
+/* z-index for tiles within a dashboard.
+ * This serves as the baseline for pbi-grid child components. */
+/* z-index for dragged tiles within a dashboard.
+  * This is to prevent overlapping of unselected tiles when dragging a tile.
+  * Should be one greater than @dashboardTile-z-index and lesser than the side panes and nav bar. */
+icon-picker,
+icon-set-picker,
+downgraded-theme-color-input {
+  text-align: left;
+}
+icon-picker .colorpicker,
+icon-set-picker .colorpicker,
+downgraded-theme-color-input .colorpicker {
+  display: inline-block;
+  padding: 4px;
+  width: 44px;
+  height: 24px;
+  border: 1px solid var(--neutral-dark-color, #212121);
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+icon-picker .colorpicker .colorpicker-icon,
+icon-set-picker .colorpicker .colorpicker-icon,
+downgraded-theme-color-input .colorpicker .colorpicker-icon {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 4px;
+  margin-left: 8px;
+}
+icon-picker.colorpicker-left .flyout,
+icon-set-picker.colorpicker-left .flyout,
+downgraded-theme-color-input.colorpicker-left .flyout {
+  margin-left: 0;
+}
+icon-picker.colorpicker-center .flyout,
+icon-set-picker.colorpicker-center .flyout,
+downgraded-theme-color-input.colorpicker-center .flyout {
+  margin-left: -13px;
+}
+icon-picker .flyout,
+icon-set-picker .flyout,
+downgraded-theme-color-input .flyout {
+  position: relative;
+  width: auto;
+  border: 1px solid var(--neutral-dark-color, #212121);
+  background-color: var(--neutral-primary-color, #333333);
+  z-index: 2;
+  margin-left: -128px;
+  box-sizing: border-box;
+  top: -2px;
+}
+icon-picker .icon-container,
+icon-set-picker .icon-container,
+downgraded-theme-color-input .icon-container {
+  overflow-y: auto;
+  max-height: 200px;
+}
+icon-picker .icon-container .icon,
+icon-set-picker .icon-container .icon,
+downgraded-theme-color-input .icon-container .icon {
+  display: inline-block;
+  margin: 3px 2px 3px 2px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+icon-picker .icon-container-scroll,
+icon-set-picker .icon-container-scroll,
+downgraded-theme-color-input .icon-container-scroll {
+  width: 170px;
+}
+icon-picker .icon,
+icon-set-picker .icon,
+downgraded-theme-color-input .icon {
+  display: inline-block;
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+icon-picker .icon img,
+icon-set-picker .icon img,
+downgraded-theme-color-input .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+icon-picker .no-icon,
+icon-set-picker .no-icon,
+downgraded-theme-color-input .no-icon {
+  text-align: center;
+}
+.lightTheme icon-picker .flyout,
+.lightTheme icon-set-picker .flyout,
+.lightTheme downgraded-theme-color-input .flyout,
+icon-picker.lightTheme .flyout,
+icon-set-picker.lightTheme .flyout,
+downgraded-theme-color-input.lightTheme .flyout {
+  background-color: var(--neutral-light-color, #EAEAEA);
+  border-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.whiteTheme icon-picker .flyout,
+.whiteTheme icon-set-picker .flyout,
+.whiteTheme downgraded-theme-color-input .flyout,
+icon-picker.whiteTheme .flyout,
+icon-set-picker.whiteTheme .flyout,
+downgraded-theme-color-input.whiteTheme .flyout {
+  background-color: var(--white-color, #FFF);
+  border-color: var(--neutral-secondary-alt-color, #777777);
+}

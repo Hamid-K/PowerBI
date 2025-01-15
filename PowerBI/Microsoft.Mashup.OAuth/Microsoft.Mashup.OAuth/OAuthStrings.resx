@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CertificateVerificationFailed" xml:space="preserve">
+    <value>Verification failed for certificate with thumbprint '{0}'. Please check the certificate properties to see if it is expired or untrusted.</value>
+  </data>
+  <data name="CouldNotLoadCertificate" xml:space="preserve">
+    <value>We were unable to load the certificate with thumbprint {0}.</value>
+  </data>
+  <data name="Error_AccessDenied" xml:space="preserve">
+    <value>Access denied.</value>
+  </data>
+  <data name="FinishLoginMissingFormBasedCookies" xml:space="preserve">
+    <value>The form based cookies necessary to complete the authentication were not found.</value>
+  </data>
+  <data name="HttpsRequired" xml:space="preserve">
+    <value>Uri '{0}' should use https scheme.</value>
+  </data>
+  <data name="InvalidOAuthResponse" xml:space="preserve">
+    <value>The authentication didn't complete. The response had one or more unexpected values but didn't return an error.</value>
+  </data>
+  <data name="InvalidOAuthState" xml:space="preserve">
+    <value>The service returned a state value that doesn't match the value that was sent. This might indicate cross-site request forgery.</value>
+  </data>
+  <data name="InvalidSalesforceUri" xml:space="preserve">
+    <value>Uri '{0}' isn't a supported Salesforce.com login URI.</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>The service returned an invalid token. Please contact your IT administrator if this issue persists.</value>
+  </data>
+  <data name="MS_Online_ID_Not_Supported" xml:space="preserve">
+    <value>We were unable to connect because this credential type isn't supported for this resource. Please choose another credential type.</value>
+  </data>
+  <data name="NoPrivateKey" xml:space="preserve">
+    <value>The certificate with thumbprint {0} does not have a public key.</value>
+  </data>
+  <data name="NotTrustedSts" xml:space="preserve">
+    <value>The token service reported by the resource is not trusted.</value>
+  </data>
+  <data name="OAuthHeader_NoAuthorizationUri" xml:space="preserve">
+    <value>The WWW-Authenticate header doesn't contain a valid authorization URI. Header value: '{0}'.</value>
+  </data>
+  <data name="RedirectError" xml:space="preserve">
+    <value>{0}: {1}.</value>
+  </data>
+  <data name="RefreshFailed" xml:space="preserve">
+    <value>The given credential couldn't be refreshed.</value>
+  </data>
+  <data name="TlsAlreadyInitialized" xml:space="preserve">
+    <value>We've already initialized TLS 1.2 state and can't change it now.</value>
+  </data>
+  <data name="UnsupportedSecretType" xml:space="preserve">
+    <value>The secret type '{0}' isn't supported for this provider.</value>
+  </data>
+</root>

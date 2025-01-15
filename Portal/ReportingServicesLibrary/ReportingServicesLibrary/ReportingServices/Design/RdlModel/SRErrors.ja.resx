@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeserializationFailed" xml:space="preserve">
+    <value>シリアル化を解除できませんでした: {0}</value>
+  </data>
+  <data name="DeserializationFailedMethod" xml:space="preserve">
+    <value>メソッド {0} でシリアル化を解除できませんでした。</value>
+  </data>
+  <data name="InvalidColor" xml:space="preserve">
+    <value>{0} は有効な色ではありません。</value>
+  </data>
+  <data name="InvalidIdentifier" xml:space="preserve">
+    <value>識別子 '{0}' は無効です。</value>
+  </data>
+  <data name="InvalidParamBetween" xml:space="preserve">
+    <value>{0} から {1} までの値を指定してください。</value>
+  </data>
+  <data name="InvalidParamGreaterThan" xml:space="preserve">
+    <value>{0} 以上の値を指定してください。</value>
+  </data>
+  <data name="InvalidParamLessThan" xml:space="preserve">
+    <value>{0} 以下の値を指定してください。</value>
+  </data>
+  <data name="InvalidUnitType" xml:space="preserve">
+    <value>{0} は有効な単位指定子ではありません。有効な単位指定子は、in、mm、cm、pt、および pc です。</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>{0} は無効な値です。</value>
+  </data>
+  <data name="NoRootElement" xml:space="preserve">
+    <value>レポート要素が見つかりませんでした。</value>
+  </data>
+  <data name="TextParseFailedFormat" xml:space="preserve">
+    <value>文字列 {0} を解析できませんでした。文字列は {1} 形式で入力してください。</value>
+  </data>
+  <data name="UnitParseNoDigits" xml:space="preserve">
+    <value>{0} には数値が含まれていないため、単位として解析できません。有効な単位の文字列は、"1pt" や "0.5in" などです。</value>
+  </data>
+  <data name="UnitParseNoUnit" xml:space="preserve">
+    <value>{0} では、単位が指定されていません。有効な単位の文字列は、"1pt" や "0.5in" などです。</value>
+  </data>
+  <data name="UnitParseNumericPart" xml:space="preserve">
+    <value>{0} の数値部分を単位の種類 {2} として解析できません。</value>
+  </data>
+</root>

@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE979DED-9724-45E3-98A7-99CCA1004C24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.AnalysisServices</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.Amo.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Identity.Client" />
+    <Reference Include="Microsoft.Identity.Client.Broker" />
+    <Reference Include="Microsoft.PowerBI.SPClient.Interfaces" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessToken.cs" />
+    <Compile Include="AddEventArgs.cs" />
+    <Compile Include="AmoDataAdapter.cs" />
+    <Compile Include="AmoDataReader.cs" />
+    <Compile Include="AmoException.cs" />
+    <Compile Include="AnalysisState.cs" />
+    <Compile Include="Annotation.cs" />
+    <Compile Include="AnnotationCollection.cs" />
+    <Compile Include="AnnotationVisibility.cs" />
+    <Compile Include="ArrayMapping.cs" />
+    <Compile Include="AsAzureRedirection.cs" />
+    <Compile Include="ASAzureUtility.cs" />
+    <Compile Include="AsInstanceType.cs" />
+    <Compile Include="ASLinkFile.cs" />
+    <Compile Include="AsPaasEndpointInfo.cs" />
+    <Compile Include="AssemblyReferencesHelper.cs" />
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="AuthenticationSR.Designer.cs">
+      <DependentUpon>AuthenticationSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Authentication\ArtifactCapacityState.cs" />
+    <Compile Include="Authentication\AuthenticatedUserContext.cs" />
+    <Compile Include="Authentication\AuthenticationEndpoint.cs" />
+    <Compile Include="Authentication\AuthenticationException.cs" />
+    <Compile Include="Authentication\AuthenticationHandle.cs" />
+    <Compile Include="Authentication\AuthenticationInformation.cs" />
+    <Compile Include="Authentication\AuthenticationManager.cs" />
+    <Compile Include="Authentication\AuthenticationOptions.cs" />
+    <Compile Include="Authentication\AuthenticationTracer.cs" />
+    <Compile Include="Authentication\AuxiliaryPermissionInfo.cs" />
+    <Compile Include="Authentication\DataverseAuthenticationHandle.cs" />
+    <Compile Include="Authentication\ExternalAuthenticationHandle.cs" />
+    <Compile Include="Authentication\IAuthenticationService.cs" />
+    <Compile Include="Authentication\MFARequiredException.cs" />
+    <Compile Include="Authentication\MsalAuthenticationHandle.cs" />
+    <Compile Include="Authentication\MsalAuthenticationHelper.cs" />
+    <Compile Include="Authentication\NonInteractiveLoginException.cs" />
+    <Compile Include="Authentication\PbiPremiumAuthenticationHandle.cs" />
+    <Compile Include="Authentication\ResolveDatabaseNameErrorReason.cs" />
+    <Compile Include="Authentication\ResolvePbiWorkspaceErrorReason.cs" />
+    <Compile Include="Authentication\SecurityProtocolTypeExtensions.cs" />
+    <Compile Include="Authentication\SingleSignOnMode.cs" />
+    <Compile Include="Authentication\WorkspaceCapacitySkuType201606.cs" />
+    <Compile Include="BackupInfo.cs" />
+    <Compile Include="BackupLocation.cs" />
+    <Compile Include="BackupLocationCollection.cs" />
+    <Compile Include="BinaryXmlReader.cs" />
+    <Compile Include="CertUtils.cs" />
+    <Compile Include="ClearTextXmlaStream.cs" />
+    <Compile Include="CloudConnectionAuthenticationProperties.cs" />
+    <Compile Include="ClrAssemblyFile.cs" />
+    <Compile Include="ClrAssemblyFileCollection.cs" />
+    <Compile Include="ClrAssemblyFileType.cs" />
+    <Compile Include="CollectionChangeEventArgs.cs" />
+    <Compile Include="CollectionChangeEventHandler.cs" />
+    <Compile Include="ColumnDefinitionDelegate.cs" />
+    <Compile Include="ColumnXmlReader.cs" />
+    <Compile Include="CompatibilityMode.cs" />
+    <Compile Include="CompressedStream.cs" />
+    <Compile Include="Configuration\BinaryXmlSupport.cs" />
+    <Compile Include="Configuration\ClientConfigLoader.cs" />
+    <Compile Include="Configuration\ConfigEntry.cs" />
+    <Compile Include="ConnectionAccessMode.cs" />
+    <Compile Include="ConnectionException.cs" />
+    <Compile Include="ConnectionExceptionCause.cs" />
+    <Compile Include="ConnectionInfo.cs" />
+    <Compile Include="ConnectionType.cs" />
+    <Compile Include="ConnectTo.cs" />
+    <Compile Include="Core\AnalysisServicesClient.cs" />
+    <Compile Include="Core\Assembly.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Database.cs" />
+    <Compile Include="Core\Defaults.cs" />
+    <Compile Include="Core\IBinding.cs" />
+    <Compile Include="Core\IDataItem.cs" />
+    <Compile Include="Core\IMajorObject.cs" />
+    <Compile Include="Core\IModelOperationResult.cs" />
+    <Compile Include="Core\IObjectReference.cs" />
+    <Compile Include="Core\IQueryBinding.cs" />
+    <Compile Include="Core\ITransaction.cs" />
+    <Compile Include="Core\ITxService.cs" />
+    <Compile Include="Core\Role.cs" />
+    <Compile Include="Core\Server.cs" />
+    <Compile Include="Core\Trace.cs" />
+    <Compile Include="Core\Utils.cs" />
+    <Compile Include="DataTypes.cs" />
+    <Compile Include="DesignXmlReader.cs" />
+    <Compile Include="DesignXmlSerializerConstants.cs" />
+    <Compile Include="DesignXmlSerializerOptions.cs" />
+    <Compile Include="DesignXmlWriter.cs" />
+    <Compile Include="DimeReader.cs" />
+    <Compile Include="DimeRecord.cs" />
+    <Compile Include="DimeWriter.cs" />
+    <Compile Include="DirectQueryMode.cs" />
+    <Compile Include="DismissedValidationResult.cs" />
+    <Compile Include="DismissedValidationResultCollection.cs" />
+    <Compile Include="DismissedValidationRule.cs" />
+    <Compile Include="DismissedValidationRuleCollection.cs" />
+    <Compile Include="DropOptions.cs" />
+    <Compile Include="ErrorConfiguration.cs" />
+    <Compile Include="ErrorOption.cs" />
+    <Compile Include="ErrorPriority.cs" />
+    <Compile Include="ExportLayout.cs" />
+    <Compile Include="ExportType.cs" />
+    <Compile Include="Extensions\DirectoryInfoExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\TextReaderExtensions.cs" />
+    <Compile Include="Extensions\UriExtensions.cs" />
+    <Compile Include="Extensions\XmlaResultCollectionExtensions.cs" />
+    <Compile Include="ExternalRoleMember.cs" />
+    <Compile Include="ExternalRoleMemberCollection.cs" />
+    <Compile Include="FixUpExpressions.cs" />
+    <Compile Include="FormattersHelpers.cs" />
+    <Compile Include="Hosting\ClientFeaturesManager.cs" />
+    <Compile Include="Hosting\ClientHostingManager.cs" />
+    <Compile Include="Hosting\IConnectivityOwner.cs" />
+    <Compile Include="Hosting\IHostableComponent.cs" />
+    <Compile Include="Hosting\IHostConfigurationSettings.cs" />
+    <Compile Include="Hosting\IHostMaterializationService.cs" />
+    <Compile Include="Hosting\IHostOnDemandLoader.cs" />
+    <Compile Include="Hosting\InfoRestrictionType.cs" />
+    <Compile Include="Hosting\IOnDemandLoadableCollection.cs" />
+    <Compile Include="HttpChannelHandling.cs" />
+    <Compile Include="HttpStream.cs" />
+    <Compile Include="IdentityResolver.cs" />
+    <Compile Include="IdentityTransferToken.cs" />
+    <Compile Include="IDeserializationStartCallback.cs" />
+    <Compile Include="ImageLoadInfo.cs" />
+    <Compile Include="ImageSaveInfo.cs" />
+    <Compile Include="IModelComponent.cs" />
+    <Compile Include="IModelComponentCollection.cs" />
+    <Compile Include="ImpactAnalysisType.cs" />
+    <Compile Include="ImpactDetail.cs" />
+    <Compile Include="ImpactDetailCollection.cs" />
+    <Compile Include="ImpersonationInfo.cs" />
+    <Compile Include="ImpersonationInfoSecurity.cs" />
+    <Compile Include="ImpersonationLevel.cs" />
+    <Compile Include="ImpersonationMode.cs" />
+    <Compile Include="INamedComponent.cs" />
+    <Compile Include="INamedComponentCollection.cs" />
+    <Compile Include="InlineErrorHandlingType.cs" />
+    <Compile Include="IntegratedSecurity.cs" />
+    <Compile Include="IntendedUsage.cs" />
+    <Compile Include="Interop\ACTCTX.cs" />
+    <Compile Include="Interop\ComputerNameFormat.cs" />
+    <Compile Include="Interop\ErrorCodes.cs" />
+    <Compile Include="Interop\ExtendedNameFormat.cs" />
+    <Compile Include="Interop\INTERNET_PROXY_INFO.cs" />
+    <Compile Include="Interop\InteropHelper.cs" />
+    <Compile Include="Interop\NativeMethods.cs" />
+    <Compile Include="Interop\OSVERSIONINFOEX.cs" />
+    <Compile Include="Interop\SChannelCred.cs" />
+    <Compile Include="Interop\SecBuffer.cs" />
+    <Compile Include="Interop\SecBufferDesc.cs" />
+    <Compile Include="Interop\SecHandle.cs" />
+    <Compile Include="Interop\SecPkgContext_Sizes.cs" />
+    <Compile Include="Interop\SecPkgContext_StreamSizes.cs" />
+    <Compile Include="Interop\SecPkgInfo.cs" />
+    <Compile Include="IProcessable.cs" />
+    <Compile Include="IXmlaDataReaderOwner.cs" />
+    <Compile Include="JaXmlSerializer.cs" />
+    <Compile Include="JsonSerializationException.cs" />
+    <Compile Include="KeyErrorAction.cs" />
+    <Compile Include="KeyErrorLimitAction.cs" />
+    <Compile Include="LibraryHandle.cs" />
+    <Compile Include="LocalCubeStream.cs" />
+    <Compile Include="LocalExcelVar.cs" />
+    <Compile Include="LocalizedCategoryAttribute.cs" />
+    <Compile Include="LocalizedDescriptionAttribute.cs" />
+    <Compile Include="LocalServerStream.cs" />
+    <Compile Include="MajorObject.cs" />
+    <Compile Include="MajorObjectCollection.cs" />
+    <Compile Include="MajorObjectState.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="MDXMLAProp.cs" />
+    <Compile Include="MDXMLAPropInfo.cs" />
+    <Compile Include="MemberMapping.cs" />
+    <Compile Include="MemoryXmlaStream.cs" />
+    <Compile Include="ModelComponent.cs" />
+    <Compile Include="ModelComponentCollection.cs" />
+    <Compile Include="ModelType.cs" />
+    <Compile Include="MoveEventArgs.cs" />
+    <Compile Include="MsoId\IDCRL_OPTION.cs" />
+    <Compile Include="MsoId\IDCRL_OPTION_ID.cs" />
+    <Compile Include="MsoId\IDENTITY_FLAG.cs" />
+    <Compile Include="MsoId\LOGON_FLAG.cs" />
+    <Compile Include="MsoId\MsoIdAuthenticationError.cs" />
+    <Compile Include="MsoId\MsoIdAuthenticationException.cs" />
+    <Compile Include="MsoId\MsoIdAuthenticationExceptionHandler.cs" />
+    <Compile Include="MsoId\MsoIdAuthenticationProvider.cs" />
+    <Compile Include="MsoId\MsoIdClient.cs" />
+    <Compile Include="MsoId\MsoIdCrlConsts.cs" />
+    <Compile Include="MsoId\MsoIdUserContext.cs" />
+    <Compile Include="MsoId\RSTParams.cs" />
+    <Compile Include="MsoId\SERVICETOKENFLAGS.cs" />
+    <Compile Include="MsoId\UPDATE_FLAG.cs" />
+    <Compile Include="NamedComponent.cs" />
+    <Compile Include="NamedComponentCollection.cs" />
+    <Compile Include="NameKey.cs" />
+    <Compile Include="NamespacesMgr.cs" />
+    <Compile Include="NameTable.cs" />
+    <Compile Include="Network\NetworkHelper.cs" />
+    <Compile Include="ObjectExpansion.cs" />
+    <Compile Include="OperationException.cs" />
+    <Compile Include="PermissionSet.cs" />
+    <Compile Include="PrimitiveMapping.cs" />
+    <Compile Include="ProcessableMajorObject.cs" />
+    <Compile Include="ProcessType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyMapping.cs" />
+    <Compile Include="PropertyOrderAttribute.cs" />
+    <Compile Include="ProtectionLevel.cs" />
+    <Compile Include="ProtocolFormat.cs" />
+    <Compile Include="ReadWriteMode.cs" />
+    <Compile Include="RedirectionWorkspaceInfo.cs" />
+    <Compile Include="Redirection\RedirectionInformation.cs" />
+    <Compile Include="ReflectionFieldMapping.cs" />
+    <Compile Include="RefreshType.cs" />
+    <Compile Include="RemoveEventArgs.cs" />
+    <Compile Include="ResponseFormatException.cs" />
+    <Compile Include="RestoreDataSourceType.cs" />
+    <Compile Include="RestoreFolder.cs" />
+    <Compile Include="RestoreFolderCollection.cs" />
+    <Compile Include="RestoreInfo.cs" />
+    <Compile Include="RestoreLocation.cs" />
+    <Compile Include="RestoreLocationCollection.cs" />
+    <Compile Include="RestoreSecurity.cs" />
+    <Compile Include="ResultsetFormatter.cs" />
+    <Compile Include="RoleMember.cs" />
+    <Compile Include="RoleMemberCollection.cs" />
+    <Compile Include="RowsetFormatter.cs" />
+    <Compile Include="RuntimeSR.Designer.cs">
+      <DependentUpon>RuntimeSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Runtime\FrameworkRuntimeHelper.cs" />
+    <Compile Include="Runtime\HostRuntimeHelper.cs" />
+    <Compile Include="SafetyOptions.cs" />
+    <Compile Include="Security\ProcessAccountUserContext.cs" />
+    <Compile Include="Security\TransparentUserContext.cs" />
+    <Compile Include="Security\UserContext.cs" />
+    <Compile Include="Security\WindowsIdentityUserContext.cs" />
+    <Compile Include="ServerEdition.cs" />
+    <Compile Include="ServerLocation.cs" />
+    <Compile Include="ServerMode.cs" />
+    <Compile Include="ServerProperty.cs" />
+    <Compile Include="ServerPropertyCategory.cs" />
+    <Compile Include="ServerPropertyCollection.cs" />
+    <Compile Include="SignatureHashAlgorithm.cs" />
+    <Compile Include="SigningKey.cs" />
+    <Compile Include="SPConnectivityManager.cs" />
+    <Compile Include="SpecialMapping.cs" />
+    <Compile Include="SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Sspi\NTAuthenticationConfiguration.cs" />
+    <Compile Include="Sspi\NTAuthenticationSession.cs" />
+    <Compile Include="Sspi\SChannelCredFlags.cs" />
+    <Compile Include="Sspi\SChannelProtocols.cs" />
+    <Compile Include="Sspi\SecurityBuffer.cs" />
+    <Compile Include="Sspi\SecurityBufferType.cs" />
+    <Compile Include="Sspi\SecurityContext.cs" />
+    <Compile Include="Sspi\SecurityContextAttributes.cs" />
+    <Compile Include="Sspi\SecurityContextRequirements.cs" />
+    <Compile Include="Sspi\SecurityCredentialUsage.cs" />
+    <Compile Include="Sspi\SecurityDataRepresentation.cs" />
+    <Compile Include="Sspi\SecurityMode.cs" />
+    <Compile Include="Sspi\SecurityPackageCapabilities.cs" />
+    <Compile Include="Sspi\SecurityPackageInfo.cs" />
+    <Compile Include="Sspi\SspiAuthenticationError.cs" />
+    <Compile Include="Sspi\SspiAuthenticationException.cs" />
+    <Compile Include="Sspi\SspiHelper.cs" />
+    <Compile Include="StorageEngineUsed.cs" />
+    <Compile Include="StringGenerator.cs" />
+    <Compile Include="StructMapping.cs" />
+    <Compile Include="SynchronizeInfo.cs" />
+    <Compile Include="SynchronizeSecurity.cs" />
+    <Compile Include="TcpEncryptedStream.cs" />
+    <Compile Include="TcpSecureStream.cs" />
+    <Compile Include="TcpSignedStream.cs" />
+    <Compile Include="TcpStream.cs" />
+    <Compile Include="TimeoutUtils.cs" />
+    <Compile Include="TokenCacheMode.cs" />
+    <Compile Include="TokenSigner.cs" />
+    <Compile Include="TraceColumn.cs" />
+    <Compile Include="TraceEventClass.cs" />
+    <Compile Include="TraceEventSubclass.cs" />
+    <Compile Include="TraceEventSuccess.cs" />
+    <Compile Include="TraceStopCause.cs" />
+    <Compile Include="Translation.cs" />
+    <Compile Include="TranslationCollection.cs" />
+    <Compile Include="TransportCapabilities.cs" />
+    <Compile Include="TransportCapabilitiesAwareXmlaStream.cs" />
+    <Compile Include="TransportCompression.cs" />
+    <Compile Include="TypeFormatEnum.cs" />
+    <Compile Include="TypeMapper.cs" />
+    <Compile Include="TypeMapping.cs" />
+    <Compile Include="UpdateMode.cs" />
+    <Compile Include="UpdateOptions.cs" />
+    <Compile Include="UseAdalCacheType.cs" />
+    <Compile Include="UserIdentityType.cs" />
+    <Compile Include="Utilities\AsPaasHelper.cs" />
+    <Compile Include="Utilities\AsyncHelper.cs" />
+    <Compile Include="Utilities\ConnectivityHelper.cs" />
+    <Compile Include="Utilities\ConvertCachedItem.cs" />
+    <Compile Include="Utilities\ConvertHelper.cs" />
+    <Compile Include="Utilities\Disposable.cs" />
+    <Compile Include="Utilities\FilesHelper.cs" />
+    <Compile Include="Utilities\GlobalContext.cs" />
+    <Compile Include="Utilities\HttpHelper.cs" />
+    <Compile Include="Utilities\ImmutableObjectAccessController.cs" />
+    <Compile Include="Utilities\ISharedItemConverter.cs" />
+    <Compile Include="Utilities\MemoryCache.cs" />
+    <Compile Include="Utilities\MemoryCacheBase.cs" />
+    <Compile Include="Utilities\MemoryCacheRetentionPolicy.cs" />
+    <Compile Include="Utilities\PrepareItemForCaching.cs" />
+    <Compile Include="Utilities\ResourceManager.cs" />
+    <Compile Include="Utilities\ResourceManagerBase.cs" />
+    <Compile Include="Utilities\SharedItemConverter.cs" />
+    <Compile Include="Utilities\SharedMemoryCache.cs" />
+    <Compile Include="Utilities\SharedResourceManager.cs" />
+    <Compile Include="Utilities\StreamHelper.cs" />
+    <Compile Include="Utilities\WindowsRuntimeHelper.cs" />
+    <Compile Include="ValidationError.cs" />
+    <Compile Include="ValidationErrorCodes.cs" />
+    <Compile Include="ValidationErrorCollection.cs" />
+    <Compile Include="ValidationOptions.cs" />
+    <Compile Include="ValidationResult.cs" />
+    <Compile Include="ValidationResultCollection.cs" />
+    <Compile Include="ValidationRule.cs" />
+    <Compile Include="ValidationRuleID.cs" />
+    <Compile Include="ValidationRulePriority.cs" />
+    <Compile Include="ValidationRuleType.cs" />
+    <Compile Include="ValidationSR.Designer.cs">
+      <DependentUpon>ValidationSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WcfStream.cs" />
+    <Compile Include="WriteBackTableCreation.cs" />
+    <Compile Include="XmlaClient.cs" />
+    <Compile Include="XmlaCommandFormat.cs" />
+    <Compile Include="XmlaConstants.cs" />
+    <Compile Include="XmlaDataReader.cs" />
+    <Compile Include="XmlaDataType.cs" />
+    <Compile Include="XmlaDefaults.cs" />
+    <Compile Include="XmlaError.cs" />
+    <Compile Include="XmlaHttpUtility.cs" />
+    <Compile Include="XmlaLocationReference.cs" />
+    <Compile Include="XmlaMessage.cs" />
+    <Compile Include="XmlaMessageCollection.cs" />
+    <Compile Include="XmlaMessageLocation.cs" />
+    <Compile Include="XmlaReader.cs" />
+    <Compile Include="XmlaRequestType.cs" />
+    <Compile Include="XmlaResult.cs" />
+    <Compile Include="XmlaResultCollection.cs" />
+    <Compile Include="XmlaSR.Designer.cs">
+      <DependentUpon>XmlaSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="XmlaStream.cs" />
+    <Compile Include="XmlaStreamException.cs" />
+    <Compile Include="XmlaTypeHelper.cs" />
+    <Compile Include="XmlaWarning.cs" />
+    <Compile Include="XmlaWarningCollection.cs" />
+    <Compile Include="XmlIgnoreOnReadAttribute.cs" />
+    <Compile Include="XmlSerializationException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuthenticationSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthenticationSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuntimeSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RuntimeSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared_Resources\ASAzureSecurityConfig.xml" />
+    <EmbeddedResource Include="Shared_Resources\RedirectionConfig.xml" />
+    <EmbeddedResource Include="SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidationSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlaSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XmlaSR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

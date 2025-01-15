@@ -1,0 +1,233 @@
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+.sample-visual-background-image {
+  background: url("../images/sampleVisualBackground.svg");
+  background-size: cover;
+}
+.thumbnail-metric-image {
+  background: url("../images/thumbnailMetric.svg") center center no-repeat;
+  background-size: contain;
+}
+.single-goal-sample-image {
+  background: url("../images/singleGoalVisualPicker.svg") center center no-repeat;
+  background-size: contain;
+}
+.multiple-goals-sample-image {
+  background: url("../images/scorecardVisualPicker.svg") center center no-repeat;
+  background-size: contain;
+}
+:root {
+  --metric-image-min-height: 200px;
+}
+.scorecardContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorNeutralBackground1);
+}
+.scorecardContainer .signInOverlay,
+.scorecardContainer .addScorecardOverlay {
+  width: 80%;
+  color: var(--fluent-theme-neutral-dark-color, #201F1E);
+}
+.scorecardContainer .signInOverlay .title,
+.scorecardContainer .addScorecardOverlay .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--lg-font-size, 16px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  text-align: center;
+}
+.scorecardContainer .signInOverlay .description,
+.scorecardContainer .addScorecardOverlay .description {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+  text-align: center;
+}
+.scorecardContainer .signInOverlay .description a,
+.scorecardContainer .addScorecardOverlay .description a {
+  color: var(--colorBrandForegroundLink);
+}
+.scorecardContainer .signInOverlay .overlayButtons,
+.scorecardContainer .addScorecardOverlay .overlayButtons {
+  padding-top: 10px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scorecardContainer .signInOverlay .overlayButtons .overlayButton,
+.scorecardContainer .addScorecardOverlay .overlayButtons .overlayButton {
+  margin-top: 12px;
+}
+.scorecardContainer .signInOverlay .overlayButtons .nonPrimary,
+.scorecardContainer .addScorecardOverlay .overlayButtons .nonPrimary {
+  padding: 6px 16px 6px 16px;
+  border: 1px solid var(--gray-110, #8A8886);
+}
+.scorecardContainer .emptyStateOverlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.scorecardContainer .emptyStateOverlay .sample-visual-background-image {
+  background-color: var(--fluent-theme-secondary-color, #F7DE6D);
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scorecardContainer .emptyStateOverlay .sample-visual-background-image .thumbnail-metric-image {
+  width: 70%;
+  height: 70%;
+}
+.scorecardContainer .emptyStateOverlay .content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: var(--colorNeutralBackground2);
+  color: var(--colorNeutralForeground1);
+}
+.scorecardContainer .emptyStateOverlay .content .title {
+  margin-top: 8px;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--lg-font-size, 16px);
+  font-weight: var(--font-weight-semi-bold, 600);
+}
+.scorecardContainer .emptyStateOverlay .content .description {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.scorecardContainer .emptyStateOverlay .content .overlayButton {
+  margin: 8px 0 16px 0;
+  white-space: nowrap;
+}
+.scorecardContainer .scorecardFrame {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.scorecardContainer .displayModePickerOverlay {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: var(--colorNeutralForeground1);
+  display: flex;
+  flex-direction: column;
+}
+.scorecardContainer .displayModePickerOverlay .title {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--lg-font-size, 16px);
+  font-weight: var(--font-weight-semi-bold, 600);
+}
+.scorecardContainer .displayModePickerOverlay .description {
+  margin-top: 0;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-regular, 400);
+}
+.scorecardContainer .displayModePickerOverlay .description a {
+  color: var(--colorBrandForegroundLink);
+}
+.scorecardContainer .displayModePickerOverlay .content {
+  min-height: calc(var(--metric-image-min-height) + 120px);
+  display: flex;
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin: 32px 64px 0 0;
+  color: var(--colorNeutralForeground1);
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option input {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 4px -24px;
+  z-index: 1;
+  accent-color: var(--fluent-theme-neutral-secondary-color, #605E5C);
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option input:checked + .display-mode-option-label {
+  border: 1px solid var(--fluent-theme-neutral-dark-color, #201F1E);
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label {
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13), 0px 0.3px 0.9px rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: var(--colorNeutralBackground3);
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label .sample-visual-background-image {
+  display: flex;
+  justify-content: center;
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label .sample-visual-background-image.sample-single-goal-background {
+  background-color: #D1ABE6;
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label .sample-visual-background-image.sample-multiple-goals-background {
+  background-color: #5BD667;
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label .sample-visual-background-image .sample-image {
+  min-width: 300px;
+  min-height: var(--metric-image-min-height);
+  margin: 20px 44px;
+  background-color: var(--colorNeutralBackground1);
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13), 0px 0.3px 0.9px rgba(0, 0, 0, 0.11);
+  border-radius: 2px;
+}
+.scorecardContainer .displayModePickerOverlay .content .display-mode-option .display-mode-option-label .display-mode-option-label-text {
+  text-align: center;
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--md-font-size, 14px);
+  font-weight: var(--font-weight-semi-bold, 600);
+}
+.scorecardContainer .displayModePickerOverlay .overlayButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 1px solid var(--gray-40, #E1DFDD);
+  margin-top: auto;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+.scorecardContainer .displayModePickerOverlay .overlayButtons .overlayButton {
+  margin: 16px 4px;
+}
+.scorecardContainer .displayModePickerOverlay .overlayButtons .nonPrimary {
+  padding: 6px 16px 6px 16px;
+  outline: 1px solid var(--gray-110, #8A8886);
+  outline-offset: -1px;
+}

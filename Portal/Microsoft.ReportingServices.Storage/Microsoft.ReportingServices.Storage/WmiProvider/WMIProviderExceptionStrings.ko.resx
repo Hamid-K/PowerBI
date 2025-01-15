@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCodes_ASPNetNotRegistered" xml:space="preserve">
+    <value>ASP.Net이 컴퓨터에 등록되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_AlreadyActivated" xml:space="preserve">
+    <value>보고서 서버가 이미 초기화되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ApplicationPoolAlreadyExists" xml:space="preserve">
+    <value>해당 애플리케이션 풀이 이미 있습니다. 고유한 애플리케이션 풀 이름을 지정하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPool" xml:space="preserve">
+    <value>애플리케이션 풀이 없습니다. 기존 애플리케이션 풀 이름을 지정하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPoolName" xml:space="preserve">
+    <value>지정한 애플리케이션 풀이 잘못되었습니다. 지정한 이름이 너무 긴지, 잘못된 문자(예: /)가 포함되어 있는지 확인하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadConfigurationFile" xml:space="preserve">
+    <value>보고서 서버에 구성 문제가 발생했습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadCredentialsType" xml:space="preserve">
+    <value>자격 증명 유형이 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadLcid" xml:space="preserve">
+    <value>LCID(로캘 ID)가 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadVerson" xml:space="preserve">
+    <value>지원되는 버전이 아닙니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadWebsiteConfiguration" xml:space="preserve">
+    <value>애플리케이션 풀이 잘못되었습니다. 사용 가능한 애플리케이션 풀을 지정한 다음 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_CantConnectCatalog" xml:space="preserve">
+    <value>보고서 서버 데이터베이스에 대한 연결을 설정할 수 없습니다. 네트워크에서 SQL Server 데이터베이스에 액세스할 수 있는지 확인하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ConfigurationFileNotFound" xml:space="preserve">
+    <value>보고서 서버 구성 파일을 찾을 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_FailedToEnumerateInstances" xml:space="preserve">
+    <value>WMI 인스턴스를 열거하는 동안 오류가 발생했습니다.   </value>
+  </data>
+  <data name="ErrorCodes_FailedToLoadResources" xml:space="preserve">
+    <value>이 작업을 완료하는 데 필요한 리소스를 찾을 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_GrantLoginToPasswordRequired" xml:space="preserve">
+    <value>사용자 계정에 대한 암호가 필요합니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IISNotInstalled" xml:space="preserve">
+    <value>인터넷 정보 서비스(IIS)가 컴퓨터에 설치되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_IllformedAccountString" xml:space="preserve">
+    <value>계정 이름이 잘못되었습니다. domain\alias 형식으로 계정을 지정하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InsufficientPrivilege" xml:space="preserve">
+    <value>이 태스크를 수행할 수 있는 권한이 없습니다. 관리자 권한이 있는 사용자 계정을 지정한 다음 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidIISPath" xml:space="preserve">
+    <value>IIS 작업에서 지정한 ADSI 경로가 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidParameter" xml:space="preserve">
+    <value>매개 변수가 하나 이상 잘못되었습니다. 모든 매개 변수를 지정하고 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidPortNumber" xml:space="preserve">
+    <value>포트 번호가 잘못되었습니다. 보고서 서버 가상 디렉터리는 상위 웹 사이트의 포트 번호를 사용해야 합니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidSecureConnectionLevel" xml:space="preserve">
+    <value>보안 연결 수준이 잘못되었습니다. 0, 1, 2, 3 값 중 하나를 지정하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUrlParameterSet" xml:space="preserve">
+    <value>WMI 공급자 호출 시 전달된 URL이 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUser" xml:space="preserve">
+    <value>지정한 사용자 계정 또는 암호가 올바르지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidVersionString" xml:space="preserve">
+    <value>버전 문자열의 형식이 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_LocalServiceIsLocalOnly" xml:space="preserve">
+    <value>원격 데이터베이스 서버에 연결 중인 경우 LocalSystem을 지정할 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_MustCreateVirtualDirectory" xml:space="preserve">
+    <value>이 작업을 수행하려면 먼저 가상 디렉터리를 만들어야 합니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAdmin" xml:space="preserve">
+    <value>이 태스크를 수행할 수 있는 권한이 없습니다. 지정한 사용자 계정에는 컴퓨터 "{0}"에 대한 관리자 권한이 없습니다. 관리자 권한이 있는 사용자 계정을 지정한 다음 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAnnounced" xml:space="preserve">
+    <value>보고서 서버 데이터베이스에 보고서 서버에 대한 키 정보가 없습니다. 키를 추가하려면 보고서 서버 Windows 서비스가 실행 중인지 확인한 다음 보고서 서버 웹 서비스에 연결하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInNativeMode" xml:space="preserve">
+    <value>이 작업은 SharePoint 통합 모드로 구성된 보고서 서버에서만 지원됩니다. 기본 모드 보고서 서버에서는 이 작업을 수행할 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInSharePointMode" xml:space="preserve">
+    <value>이 작업은 SharePoint 통합 모드에서 지원되지 않습니다.  지원되는 작업에 대한 자세한 내용은 제품 설명서를 참조하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_OperatingSystemNotSupported" xml:space="preserve">
+    <value>해당 운영 체제는 지원되지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RPCServerNotListening" xml:space="preserve">
+    <value>보고서 서버 RPC(원격 프로시저 호출) 끝점에 연결하는 동안 오류가 발생했습니다. 보고서 서버 Windows 서비스가 실행 중인지 확인한 다음 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionLevelType" xml:space="preserve">
+    <value>확장된 보호 수준이 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionScenarioType" xml:space="preserve">
+    <value>확장된 보호 시나리오가 잘못되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>구성 파일에서 전자 메일 배달 확장 프로그램을 찾을 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidApplication" xml:space="preserve">
+    <value>애플리케이션이 올바르지 않습니다. 올바른 애플리케이션은 ReportServerWebService, ReportManager, ReportServerWebApp 및 PowerBIWebApp뿐입니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidSSLCertificate" xml:space="preserve">
+    <value>인증서를 신뢰할 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsIpAddressNotFound" xml:space="preserve">
+    <value>컴퓨터에서 IP 주소를 찾을 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsLocalServiceNotAllowedXP" xml:space="preserve">
+    <value>로컬 서비스 계정이 Windows XP에서 유효하지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineApplicationFirst" xml:space="preserve">
+    <value>애플리케이션을 찾을 수 없습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineAuthenticationFirst" xml:space="preserve">
+    <value>인증이 정의되지 않았습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLBindingConflict" xml:space="preserve">
+    <value>지정한 IP 주소 및 포트 조합에 대한 HTTPS 바인딩이 이미 있습니다. 기존 바인딩에서 현재 요청과 다른 인증서를 사용합니다. 각 IP 주소 및 포트 조합에 대해 인증서를 하나만 사용할 수 있습니다. 문제를 해결하려면 기존 바인딩과 동일한 인증서를 사용하거나 기존 SSL 바인딩을 제거하고 현재 요청의 인증서를 사용하여 새 바인딩을 만드십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLCertificateNotRegistered" xml:space="preserve">
+    <value>인증서가 등록되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsServerConfigurationError" xml:space="preserve">
+    <value>보고서 서버를 시작할 수 없습니다. 구성 파일이 하나 이상 잘못되었습니다. 자세한 내용은 로그 파일을 확인하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointError" xml:space="preserve">
+    <value>Windows SharePoint Services 개체 모델 메서드를 호출하는 동안 오류가 발생하여 작업이 실패했습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Windows SharePoint Services 개체 모델이 보고서 서버에 설치되어 있지 않아 작업이 실패했습니다.  Windows SharePoint Services를 설치하고 구성한 후 다시 요청하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLAlreadyReserved" xml:space="preserve">
+    <value>URL이 이미 예약되어 있습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLMustNotExist" xml:space="preserve">
+    <value>보고서 서버 WMI 공급자가 가상 디렉터리를 만들 수 없습니다. 이 오류는 SetVirtualDirectory를 호출했지만 UrlString이 이미 예약되어 있는 경우 발생합니다. 계속하려면 RemoveURL을 호출하여 모든 URL 예약을 지운 다음 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLNotReserved" xml:space="preserve">
+    <value>URL이 구성 파일에 나열되어 있지만 httpsys에 예약되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsUrlAlreadyReservedDifferentName" xml:space="preserve">
+    <value>URL이 다른 사용자 계정에 이미 예약되어 있습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsexecRoleDoesNotExist" xml:space="preserve">
+    <value>데이터베이스에 데이터베이스 역할 RSExec가 없습니다. 데이터베이스가 보고서 서버 데이터베이스인지 확인하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceDisabled" xml:space="preserve">
+    <value>Reporting Services Windows 서비스가 비활성화되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceNotActivated" xml:space="preserve">
+    <value>Reporting Services Windows 서비스가 활성화되지 않았습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SharePointNotInstalled" xml:space="preserve">
+    <value>Windows SharePoint Services가 설치되어 있지 않습니다. 현재 작업을 수행하려면 Windows SharePoint Services 인스턴스가 있어야 합니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SqlAdminUserInsufficientPrivilege" xml:space="preserve">
+    <value>이 태스크를 SQL Server 데이터베이스에서 수행할 수 있는 권한이 없습니다. 관리자 권한이 있는 SQL Server 사용자 계정을 지정한 다음 작업을 다시 시도하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_SslCertificateNotFound" xml:space="preserve">
+    <value>웹 사이트에 HTTPS 인증서가 구성되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_Success" xml:space="preserve">
+    <value>작업이 완료되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseError" xml:space="preserve">
+    <value>SQL Server 데이터베이스 엔진에 스크립트를 실행하는 동안 오류가 발생했습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseResult" xml:space="preserve">
+    <value>데이터베이스 쿼리에서 예기치 않은 결과가 생성되었습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnknownOrUnmappedException" xml:space="preserve">
+    <value>WMI 공급자에 알 수 없는 오류가 발생했습니다. 오류 코드 {0:X}
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryAlreadyExists" xml:space="preserve">
+    <value>지정한 가상 디렉터리가 이미 있습니다. 다른 이름을 지정하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryInvalid" xml:space="preserve">
+    <value>지정한 가상 디렉터리가 잘못되었습니다. 지정한 이름이 너무 긴지, 잘못된 문자(예: ;)가 포함되어 있는지 확인하십시오.
+
+</value>
+  </data>
+  <data name="ErrorCodes_WebServiceAccountNotSet" xml:space="preserve">
+    <value>보고서 서버 웹 서비스에 대한 서비스 계정이 설정되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="ErrorCodes_WindowsServiceAccountNotSet" xml:space="preserve">
+    <value>보고서 서버 Windows 서비스에 대한 서비스 계정이 설정되어 있지 않습니다.
+
+</value>
+  </data>
+  <data name="Exception_Generic" xml:space="preserve">
+    <value>오류가 발생했습니다. 세부 정보:
+
+{0}</value>
+  </data>
+  <data name="GenericWMIError" xml:space="preserve">
+    <value>WMI 오류가 발생했습니다. 추가 오류 정보가 없습니다.</value>
+  </data>
+  <data name="GenericWMIErrorWithCode" xml:space="preserve">
+    <value>WMI 오류가 발생했습니다. 반환된 오류는 다음과 같습니다.
+
+{0}.</value>
+  </data>
+  <data name="ManagementException_AccessDenied" xml:space="preserve">
+    <value>컴퓨터에 대한 연결을 설정할 수 없습니다.</value>
+  </data>
+  <data name="ManagementException_Generic" xml:space="preserve">
+    <value>보고서 서버 WMI 공급자 오류:
+
+{0}</value>
+  </data>
+  <data name="UnableToConnect" xml:space="preserve">
+    <value>보고서 서버 {0}에 연결할 수 없습니다.</value>
+  </data>
+</root>

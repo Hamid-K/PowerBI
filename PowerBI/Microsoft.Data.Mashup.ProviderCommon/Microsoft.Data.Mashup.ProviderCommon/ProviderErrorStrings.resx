@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutToExpire" xml:space="preserve">
+    <value>A credential must be refreshed before it can be used.</value>
+  </data>
+  <data name="BufferOffsetNegative" xml:space="preserve">
+    <value>Buffer offset must be greater than or equal to 0.</value>
+  </data>
+  <data name="BufferTooSmall" xml:space="preserve">
+    <value>The buffer offset plus the number of bytes to be copied is greater than the length of the buffer. Buffer offset: {0}. Number of bytes to be copied: {1}.</value>
+  </data>
+  <data name="CachePathNotValid" xml:space="preserve">
+    <value>The CachePath isn't valid.  See the inner exception for details.</value>
+  </data>
+  <data name="CancelledCommand" xml:space="preserve">
+    <value>The command has been canceled.</value>
+  </data>
+  <data name="CannotCreateBookmark" xml:space="preserve">
+    <value>Cannot create a Bookmark for the given path.</value>
+  </data>
+  <data name="CannotReadWhenNoData" xml:space="preserve">
+    <value>Attempt to read when no data is present.</value>
+  </data>
+  <data name="CannotReopenConnection" xml:space="preserve">
+    <value>The connection is already open.</value>
+  </data>
+  <data name="ChangeDatabaseNotSupported" xml:space="preserve">
+    <value>Changing a database is not supported.</value>
+  </data>
+  <data name="ColumnNameCannotBeEmptyString" xml:space="preserve">
+    <value>Column name cannot be an empty string.</value>
+  </data>
+  <data name="ColumnNameNotValid" xml:space="preserve">
+    <value>The column name isn't valid.</value>
+  </data>
+  <data name="CommandBehaviorNotSupported" xml:space="preserve">
+    <value>The specified command behavior isn't supported: {0}.</value>
+  </data>
+  <data name="CommandBuilderNotSupported" xml:space="preserve">
+    <value>Command builder isn't supported.</value>
+  </data>
+  <data name="CommandTextNotSet" xml:space="preserve">
+    <value>The command text isn't initialized.</value>
+  </data>
+  <data name="CommandTimeoutExpired" xml:space="preserve">
+    <value>Timeout expired. The timeout period elapsed prior to completion of the operation.</value>
+  </data>
+  <data name="CommandTimeoutNegative" xml:space="preserve">
+    <value>The Command timeout must be equal to or greater than  0.</value>
+  </data>
+  <data name="ConnectionCleanOpen" xml:space="preserve">
+    <value>Resources cannot be cleaned up because connections are open.</value>
+  </data>
+  <data name="ConnectionNotCleaned" xml:space="preserve">
+    <value>Evaluation configuration cannot be set while resources are in use. Try releasing resources with MashupConnection.TryCleanup.</value>
+  </data>
+  <data name="ConnectionNotOpen" xml:space="preserve">
+    <value>The connection isn't open. Connection status: {0}</value>
+  </data>
+  <data name="ConnectionNotSet" xml:space="preserve">
+    <value>The connection hasn't been initialized.</value>
+  </data>
+  <data name="ConnectionStringNotSet" xml:space="preserve">
+    <value>A connection string must be set in order to perform this operation.</value>
+  </data>
+  <data name="ConnectionStringPropertyNotSupported" xml:space="preserve">
+    <value>{0} isn't supported for Data source kind: {1}.</value>
+  </data>
+  <data name="ConnectionTimeoutNegative" xml:space="preserve">
+    <value>The connection timeout must be equal to or greater than 0.</value>
+  </data>
+  <data name="ContainerMaxCountOutOfRange" xml:space="preserve">
+    <value>ContainerMaxCount must be greater than or equal to whichever is larger, 1 or the value of ContainerMinCount.</value>
+  </data>
+  <data name="ContainerMinCountOutOfRange" xml:space="preserve">
+    <value>ContainerMinCount must be greater than or equal to 0 and less than or equal to the value of ContainerMaxCount.</value>
+  </data>
+  <data name="CreateDataSourceEnumeratorNotSupported" xml:space="preserve">
+    <value>Creating a data source enumerator isn't supported.</value>
+  </data>
+  <data name="CredentialInvalidString" xml:space="preserve">
+    <value>The given credential data contains an invalid string.</value>
+  </data>
+  <data name="CredentialMissingProperty" xml:space="preserve">
+    <value>The given credential is missing a required property. Data source kind: {0}. Authentication kind: {1}. Property name: {2}</value>
+  </data>
+  <data name="CredentialNotValid" xml:space="preserve">
+    <value>The credential isn't valid. Resource: {0}.</value>
+  </data>
+  <data name="CredentialPropertyNullValue" xml:space="preserve">
+    <value>The given credential contains a property with a null value. Data source kind: {0}.  Property name: {1}. </value>
+  </data>
+  <data name="CredentialPropertyType" xml:space="preserve">
+    <value>The given credential contains a property that is not of the expected type. Data source kind: {0}. Authentication kind: {1}. Property name: {2}. Property type: {3}. Expected property type: {4}</value>
+  </data>
+  <data name="DataAdapterNotSupported" xml:space="preserve">
+    <value>Data adapter isn't supported.</value>
+  </data>
+  <data name="DataOffsetNegative" xml:space="preserve">
+    <value>Data offset must be greater than or equal to 0.</value>
+  </data>
+  <data name="DataReaderClosed" xml:space="preserve">
+    <value>The data reader has been closed.</value>
+  </data>
+  <data name="DataReaderIsOpen" xml:space="preserve">
+    <value>There is an active data reader associated with this command.</value>
+  </data>
+  <data name="DataSourceLocation_Address_Missing_Kind" xml:space="preserve">
+    <value>The given data source location address must have a kind.</value>
+  </data>
+  <data name="DataSourceLocation_Address_Missing_Path" xml:space="preserve">
+    <value>The given data source location address must have a path.</value>
+  </data>
+  <data name="DataSourceLocation_JsonFormat" xml:space="preserve">
+    <value>The given data source location is not in the expected JSON format.</value>
+  </data>
+  <data name="DataSourceLocation_JsonFormatInner" xml:space="preserve">
+    <value>The given data source location is not in the expected JSON format. See the inner exception for details.</value>
+  </data>
+  <data name="DataSourceLocation_Missing_Address" xml:space="preserve">
+    <value>The given data source location must have an address.</value>
+  </data>
+  <data name="DataSourceLocation_Missing_Protocol" xml:space="preserve">
+    <value>The given data source location must have a protocol.</value>
+  </data>
+  <data name="DataSourceReferenceNoDataSource" xml:space="preserve">
+    <value>The given data source reference is not a valid data source.</value>
+  </data>
+  <data name="DataSourceReferenceNoGeneratedCode" xml:space="preserve">
+    <value>We cannot generate a query for the given data source reference. Failure reason: {0}.</value>
+  </data>
+  <data name="DesignTimeVisibleNotSupported" xml:space="preserve">
+    <value>The DesignTimeVisible property isn't supported.</value>
+  </data>
+  <data name="DirectoryMustBeEmpty" xml:space="preserve">
+    <value>Directory '{0}' must be empty.</value>
+  </data>
+  <data name="DuplicateConnectionProperty" xml:space="preserve">
+    <value>Connection string property {0} has already been set.</value>
+  </data>
+  <data name="DuplicateNameFound" xml:space="preserve">
+    <value>This document contains a duplicate member '{0}'.</value>
+  </data>
+  <data name="EffectiveUsernameNotSupported" xml:space="preserve">
+    <value>EffectiveUserName isn't supported for Data source kind: {0}.</value>
+  </data>
+  <data name="EncryptConnectionNotSupported" xml:space="preserve">
+    <value>Encrypting the connection isn't supported for Data source kind: {0}.</value>
+  </data>
+  <data name="ErrorDuringEvaluation" xml:space="preserve">
+    <value>We're sorry, an error occurred during evaluation.</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_Actions" xml:space="preserve">
+    <value>We haven't been given permission to perform actions against this {0} source.</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_CredentialAccessDenied" xml:space="preserve">
+    <value>The credentials provided for the {0} source are invalid. (Source at {1}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_CredentialAccessForbidden" xml:space="preserve">
+    <value>The credentials provided for the {0} source are invalid. (Source at {1}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_CredentialsInvalid" xml:space="preserve">
+    <value>The credentials provided cannot be used for the {0} source. (Source at {1}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_EncryptedConnectionFailure" xml:space="preserve">
+    <value>The {0} source doesn't support encrypted connections. (Source at {1}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_PermissionRequired" xml:space="preserve">
+    <value>Credentials are required to connect to the {0} source. (Source at {1}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_PermissionRequired_Redirect" xml:space="preserve">
+    <value>Credentials are required to connect to the {0} source. (Source: from {1} to {2}.)</value>
+  </data>
+  <data name="Evaluation_Challenge_Result_PrincipalNameMismatch" xml:space="preserve">
+    <value>The server name provided doesn't match the server name on the SQL Server SSL certificate. Please see https://go.microsoft.com/fwlink/?LinkId=394782. (Source at {0}.)</value>
+  </data>
+  <data name="ExpectedFileNotFound" xml:space="preserve">
+    <value>We expected to find the file '{0}'.</value>
+  </data>
+  <data name="ExpressionOnlySupported" xml:space="preserve">
+    <value>The query must be a single expression.</value>
+  </data>
+  <data name="Expression_TooDeep" xml:space="preserve">
+    <value>This query is too complicated to understand.</value>
+  </data>
+  <data name="ExtensionFileNotFound" xml:space="preserve">
+    <value>Extension {0} couldn't be found.</value>
+  </data>
+  <data name="GetSchemaCollectionNotSupported" xml:space="preserve">
+    <value>The schema collection '{0}' is not supported.</value>
+  </data>
+  <data name="GetSchemaTooManyRestrictions" xml:space="preserve">
+    <value>Too many restrictions were specified for schema '{0}'.</value>
+  </data>
+  <data name="InvalidOption" xml:space="preserve">
+    <value>An invalid option was specified.</value>
+  </data>
+  <data name="InvalidPrivacyWithGroupName" xml:space="preserve">
+    <value>The property PrivacyGroupName can only be non-null if the property PrivacySetting is set to '{0}'.</value>
+  </data>
+  <data name="InvalidPrivacyWithIsTrusted" xml:space="preserve">
+    <value>The property IsTrusted can only be non-null if the property PrivacySetting is non-null.</value>
+  </data>
+  <data name="InvalidSyntax" xml:space="preserve">
+    <value>{0} Start position: {1}. End position {2}.</value>
+  </data>
+  <data name="JobOptionsForbidden" xml:space="preserve">
+    <value>The following options cannot be used while ContainerInheritsHostJob is enabled: SharedMaxCommitInMB, ContainerMaxCommitInMB, ContainerProcessorAffinity</value>
+  </data>
+  <data name="KeywordNotSupported" xml:space="preserve">
+    <value>The keyword isn't supported: {0}.</value>
+  </data>
+  <data name="LengthNegative" xml:space="preserve">
+    <value>Length must be greater than or equal to 0.</value>
+  </data>
+  <data name="MachineProcessorCountExceeded" xml:space="preserve">
+    <value>The number of items in the array may not exceed the number of processors on the machine.</value>
+  </data>
+  <data name="MashupAndPackageCannotBeBothNullOrEmpty" xml:space="preserve">
+    <value>Either mashup or package need to be specified.</value>
+  </data>
+  <data name="MashupAndPackageCannotBeBothSpecified" xml:space="preserve">
+    <value>Either mashup or package needs to be specified, but not both.</value>
+  </data>
+  <data name="MashupIncompatibleVersion" xml:space="preserve">
+    <value>The mashup is incompatible with your current version of MashupClient. </value>
+  </data>
+  <data name="MashupUnrecognizedFormat" xml:space="preserve">
+    <value>The format of the mashup cannot be recognized.</value>
+  </data>
+  <data name="MinCacheSizeLimit" xml:space="preserve">
+    <value>The MaxCacheSize must be at least {0} megabytes ({1} bytes).</value>
+  </data>
+  <data name="MinTempSizeLimit" xml:space="preserve">
+    <value>The MaxTempSize must be at least {0} megabytes ({1} bytes).</value>
+  </data>
+  <data name="MissingPermission" xml:space="preserve">
+    <value>The evaluation requires a permission that has not been provided. Data source kind: '{0}'. Data source path: '{1}'. Permission kind: '{2}'.</value>
+  </data>
+  <data name="MissingPrivacySetting" xml:space="preserve">
+    <value>Information is needed in order to combine data. Please specify a privacy level for each data source.</value>
+  </data>
+  <data name="ModuleNameChanged" xml:space="preserve">
+    <value>We cannot replace module '{0}' with a module named '{1}'.</value>
+  </data>
+  <data name="ModuleNameDuplicate" xml:space="preserve">
+    <value>A module named '{0}' has already been loaded.</value>
+  </data>
+  <data name="ModuleNameNotFound" xml:space="preserve">
+    <value>A module named '{0}' hasn't been loaded.</value>
+  </data>
+  <data name="NativeQuery_Challenge_Error" xml:space="preserve">
+    <value>{0} failure: the query '{1}' isn't approved for execution.</value>
+  </data>
+  <data name="NoProcessorAffinity" xml:space="preserve">
+    <value>At least one item in the array must be true.</value>
+  </data>
+  <data name="NotExpectedConfigurationFormat" xml:space="preserve">
+    <value>The given configuration properties are not in the expected JSON format.</value>
+  </data>
+  <data name="NotExpectedJsonFormat" xml:space="preserve">
+    <value>The given data source settings are not in the expected JSON format.</value>
+  </data>
+  <data name="NotExpectedJsonFormatInner" xml:space="preserve">
+    <value>The given data source settings are not in the expected JSON format. See the inner exception for details.</value>
+  </data>
+  <data name="NotExpectedSwitchFormat" xml:space="preserve">
+    <value>The given feature switches are not in the expected JSON format.</value>
+  </data>
+  <data name="NotSupportedConfigurationValue" xml:space="preserve">
+    <value>The configuration property '{0}' has an unsupported value.</value>
+  </data>
+  <data name="OAuthRefreshFailed" xml:space="preserve">
+    <value>An error occurred while trying to refresh an OAuth token.</value>
+  </data>
+  <data name="ObjectNotDate" xml:space="preserve">
+    <value>Object must be of Date type.</value>
+  </data>
+  <data name="ObjectNotTime" xml:space="preserve">
+    <value>Object must be of Time type.</value>
+  </data>
+  <data name="OperationRequiresClosedConnection" xml:space="preserve">
+    <value>The requested operation can only be performed when the connection is closed.</value>
+  </data>
+  <data name="OrdinalOutOfRange" xml:space="preserve">
+    <value>The ordinal is out of range for the reader.</value>
+  </data>
+  <data name="ParameterEnumeratedMultipleTimes" xml:space="preserve">
+    <value>The {0} was read multiple times. Provide a Func&lt;{0}&gt; that creates a new {0} on each invocation to support multiple reads.</value>
+  </data>
+  <data name="ParameterError" xml:space="preserve">
+    <value>An error occurred while reading from parameter {0}.</value>
+  </data>
+  <data name="ParameterSignatureCountOrNames" xml:space="preserve">
+    <value>The parameter signature in a permission must be an integer or a list of strings.</value>
+  </data>
+  <data name="ParametersNotSupported" xml:space="preserve">
+    <value>Parameters aren't supported for the command type: {0}.</value>
+  </data>
+  <data name="PathNotValid" xml:space="preserve">
+    <value>The path '{0}' isn't valid for this operation.</value>
+  </data>
+  <data name="ProcessorAffinityWindowsVersionNotSupported" xml:space="preserve">
+    <value>This feature requires Windows 8 or Windows Server 2012 R2 or greater.</value>
+  </data>
+  <data name="PropertiesAndSwitchesCannotBothBeNonEmpty" xml:space="preserve">
+    <value>You may only specify either ConfigurationProperties or FeatureSwitches but not both.</value>
+  </data>
+  <data name="ReasonMessageFormat" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="ResourceNameAndLocationNeedToMatch" xml:space="preserve">
+    <value>Resource name and Location need to match. Resource name: {0}. Location: {1}.</value>
+  </data>
+  <data name="Resource_Firewall_Flow_Error" xml:space="preserve">
+    <value>Unable to combine data</value>
+  </data>
+  <data name="Resource_Firewall_Rule_Error" xml:space="preserve">
+    <value>Information is needed in order to combine data. Please specify a privacy level for each data source.</value>
+  </data>
+  <data name="Resource_UnsupportedCommand" xml:space="preserve">
+    <value>The command '{0}' isn't supported.</value>
+  </data>
+  <data name="RestartEvaluation" xml:space="preserve">
+    <value>The data source settings have been updated. Please execute the command again.</value>
+  </data>
+  <data name="SectionOnlySupported" xml:space="preserve">
+    <value>Only documents consisting of exactly one section are supported.</value>
+  </data>
+  <data name="TempPathNotValid" xml:space="preserve">
+    <value>The TempPath is not valid. See the inner exception for details.</value>
+  </data>
+  <data name="TransactionsNotSupported" xml:space="preserve">
+    <value>Transactions are not supported.</value>
+  </data>
+  <data name="TypeNotSupported" xml:space="preserve">
+    <value>The type '{0}' is not supported.</value>
+  </data>
+  <data name="UnexpectedValueType" xml:space="preserve">
+    <value>The value is not of the expected type. Expected type: {0}.</value>
+  </data>
+  <data name="UnknownPermissionProperty" xml:space="preserve">
+    <value>The property '{0}' is not a known property for {1} permissions. </value>
+  </data>
+  <data name="UnknownPool" xml:space="preserve">
+    <value>A connection pool named '{0}' has not been registered.</value>
+  </data>
+  <data name="UnknownResourceName" xml:space="preserve">
+    <value>The resource name isn't valid : {0}.</value>
+  </data>
+  <data name="UnrecognizedPrivacy" xml:space="preserve">
+    <value>The given privacy setting is not recognized.</value>
+  </data>
+  <data name="UnsupportedCommandType" xml:space="preserve">
+    <value>The given command type is not supported: {0}.</value>
+  </data>
+  <data name="UnsupportedCredentialPropertiesCombination" xml:space="preserve">
+    <value>The given credential is not supported. Either both properties {0} and {1} need to be provided or neither.</value>
+  </data>
+  <data name="UnsupportedCredentialType" xml:space="preserve">
+    <value>The given credential type is not supported: {0}.</value>
+  </data>
+  <data name="UnsupportedDataSourceKind" xml:space="preserve">
+    <value>The given data source kind is not supported. Data source kind: {0}.</value>
+  </data>
+  <data name="UnsupportedDataSourceKindCredential" xml:space="preserve">
+    <value>The given credential is not supported by the given data source kind. Data source kind: {0}. Authentication kind: {1}.</value>
+  </data>
+  <data name="UnsupportedDataSourceKindCredentialType" xml:space="preserve">
+    <value>The data source kind doesn't support the credential type. Data source kind: {0}. Credential type: {1}.</value>
+  </data>
+  <data name="UnsupportedDataSourceKindPermissionKind" xml:space="preserve">
+    <value>The given permission is not supported by the given data source kind. Data source kind: {0}. Permission kind: {1}.</value>
+  </data>
+  <data name="UriCannotContainPath" xml:space="preserve">
+    <value>The Uri argument may not contain a path, query or fragment.</value>
+  </data>
+  <data name="ValuePropertyCannotBeNull" xml:space="preserve">
+    <value>The property Value of the given item cannot be null.</value>
+  </data>
+  <data name="WildcardPathsWithPermissionsNotSupported" xml:space="preserve">
+    <value>Permissions are not supported in default Data Source settings.</value>
+  </data>
+</root>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>使用中工作階段數目。</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>提醒: 事件佇列長度</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>應用程式定義域回收總數。</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>每秒要求。</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>要求的總數。</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>報表執行伺服器快取的更新總數。</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>每秒快取排清的數目。</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>報表伺服器快取點擊總數。</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>報表伺服器每秒快取點擊數。</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>快取遺漏總數。</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>每秒無法從快取擷取報告的次數。</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>傳遞總數。</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>每秒傳遞數目。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>每秒的資料來源連接失敗。</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>資料來源連接失敗的總數。</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>事件總數。</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>每秒事件數目。</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>在現有工作階段中已處理的每秒要求數目。</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>在現有工作階段中已處理的要求總數。</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>每秒啟動的新使用者工作階段數目。</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>每秒的失敗數目。</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>失敗總數。</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>伺服器前一秒發出的壓縮通知數目。表示伺服器處於記憶體不足壓力下的頻率。</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>記憶體內快取中的快取命中數總計。</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>每秒可以從記憶體內快取擷取報表的次數。</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>記憶體內快取中快取未命中數總計。</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>每秒不得從記憶體內快取中取報表的次數。</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>1-5 的數字，表示伺服器目前的記憶體狀態。1: 無壓力、2: 低度壓力、3: 中等壓力、4: 高度壓力、5: 極度壓力。</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>伺服器要求壓縮的位元組數目。</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>模型快取中的快取點擊總數。</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>每秒可以從快取中擷取模型的次數。</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>在模型快取中的快取遺漏總數。</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>每秒無法從快取中擷取模型的次數。</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>使用中模型要求的數目。</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>模型要求平均持續時間。</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>每秒模型要求。</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>模型要求的總數。</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>在現有工作階段中，已開啟報表的每秒要求數目。</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>在新工作階段中已處理的每秒要求數目。</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>在新工作階段中已處理的要求總數。</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>處理失敗總數。</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>與 SQL Report Server Service Power View 報表相關的統計資料</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>使用中查詢要求的數目。</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>查詢要求平均持續時間。</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>每秒查詢要求。</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>查詢要求的總數。</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>因執行緒壓力而被拒絕的執行緒總數。</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>使用中報告要求的數目。</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>已執行的報表總數。</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>每秒已執行的報表數目。</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>每秒要求數目。</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>使用中報告要求的數目。</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>報表要求平均持續時間。</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>每秒報表要求。</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>報表要求的總數。</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>報表執行快照集更新總數。</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>每秒快照集更新數目。</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>使用中工作階段數目。</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>與 SQL Report Server Service 服務相關的統計資料</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>正在處理的要求總數。</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>使用中執行緒的數目。</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>提醒: 處理的事件 - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>MSRS 2011 Web 服務</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>MSRS 2011 Windows 服務</value>
+  </data>
+</root>

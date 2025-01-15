@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D8C0212-3459-48F1-B210-126186264C83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataExtension.Contracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataExtension.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\AnalysisServicesConstants.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\BatchXmlaCommandBuilder.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\DataExtensionErrorCodes.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\DataExtensionException.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Hosting\IPrivateInformationService.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Hosting\ITracer.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\ImageSaveXmlaBuilder.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\DbCommandExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionEventData.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsCache.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsCachedResultSet.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsColumnNames.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsDataReader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsSlot.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ExecutionMetricsUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IAsyncConnectionPool.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IConnectionFactory.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IConnectionPool.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IConnectionStringResolver.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IDataReader.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IDataSourceInfo.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IDbCommand.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IDbConnection.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IDbSchemaCommand.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IExecutionMetricsVisitor.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\ITelemetryIdsProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\IUnderlyingConnectionProvider.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\RequestExecutionMetricsKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\RequestPriorityKind.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\RequestPriorityKindUtils.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\TelemetryIdsExtensions.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Internal\TranslationsBehavior.cs" />
+    <Compile Include="Microsoft\PowerBI\DataExtension\Contracts\Utilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

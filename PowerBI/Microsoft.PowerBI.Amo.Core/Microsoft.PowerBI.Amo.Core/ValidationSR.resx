@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action_ExpressionNotDefined" xml:space="preserve">
+    <value>The expression is not defined.</value>
+  </data>
+  <data name="Action_TargetNotDefined" xml:space="preserve">
+    <value>The target is not defined.</value>
+  </data>
+  <data name="AggregationBelowGranularity1" xml:space="preserve">
+    <value>Aggregations should not be created below the measure group's granularity attribute.</value>
+  </data>
+  <data name="AggregationBelowGranularity2" xml:space="preserve">
+    <value>Aggregations should not be created below the granularity attribute. This aggregation includes the '{0}' attribute which is below the measure group’s '{1}' granularity attribute.</value>
+  </data>
+  <data name="AggregationDesignWithNoEstimatedRows1" xml:space="preserve">
+    <value>Specify the EstimatedRows property for aggregation designs.</value>
+  </data>
+  <data name="AggregationDesignWithNoEstimatedRows2" xml:space="preserve">
+    <value>Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.</value>
+  </data>
+  <data name="AggregationDesign_NotUsedByAnyPartition1" xml:space="preserve">
+    <value>Remove aggregation designs that are not used by any partitions.</value>
+  </data>
+  <data name="AggregationDesign_NotUsedByAnyPartition2" xml:space="preserve">
+    <value>Remove this aggregation design because it is not used by any partitions.</value>
+  </data>
+  <data name="AggregationHasRelatedAttributes1" xml:space="preserve">
+    <value>Do not include related attributes in the same aggregation.</value>
+  </data>
+  <data name="AggregationHasRelatedAttributes2" xml:space="preserve">
+    <value>The aggregation should not include both the '{0}' and '{1}' attributes, because there is a relationship from '{0}' to '{1}'.</value>
+  </data>
+  <data name="AggregationsForTimeGranularityWithOnlySemiAdditiveMeasures" xml:space="preserve">
+    <value>Include the granularity attribute of the time dimension in all the aggregations of measure groups with only semi-additive measures.</value>
+  </data>
+  <data name="AggregationsForTimeGranularityWithSemiAdditiveMeasures" xml:space="preserve">
+    <value>Include the granularity attribute of the time dimension in aggregation designs of measure groups with semi-additive measures, according to query patterns.</value>
+  </data>
+  <data name="AttributeRelationshipName1" xml:space="preserve">
+    <value>The names of attribute relationships should match the names of the related attributes.</value>
+  </data>
+  <data name="AttributeRelationshipName2" xml:space="preserve">
+    <value>The name specified for the attribute relationship differs from the name of the related attribute.</value>
+  </data>
+  <data name="AttributeRelationshipNamedDescription" xml:space="preserve">
+    <value>Avoid naming an attribute relationship "Description", this causes confusion when browsing the attribute properties.</value>
+  </data>
+  <data name="AttributeRelationship_CreatesLoops" xml:space="preserve">
+    <value>The relationship creates loop(s).</value>
+  </data>
+  <data name="AttributeRelationship_RelationshipTypeCannotBeNoneForTheKey" xml:space="preserve">
+    <value>The 'RelationshipType' property cannot be 'None' if the AttributeRelationship is on the key attribute.</value>
+  </data>
+  <data name="AttributeTypeAccountOrTimeNeedsMatchingDimension1" xml:space="preserve">
+    <value>Set 'Account' and 'Time' attribute types so that they are compatible with the dimension type.</value>
+  </data>
+  <data name="AttributeTypeAccountOrTimeNeedsMatchingDimension2" xml:space="preserve">
+    <value>The attribute type is set to '{0}', which is not compatible with the '{1}' dimension type.</value>
+  </data>
+  <data name="AttributeTypeNeedsMatchingDimension1" xml:space="preserve">
+    <value>Set attribute types so that they are compatible with the dimension type.</value>
+  </data>
+  <data name="AttributeTypeNeedsMatchingDimension2" xml:space="preserve">
+    <value>The attribute type is set to '{0}', which is not compatible with the '{1}' dimension type.</value>
+  </data>
+  <data name="Attribute_AttributeRelationshipIsUnknown" xml:space="preserve">
+    <value>Unknown attribute relationship with AttributeID = '{0}'.</value>
+  </data>
+  <data name="Attribute_AttributeRelationshipsRequireAttributeHierarchyEnabled" xml:space="preserve">
+    <value>Attribute hierarchy must be enabled if attribute relationships are used.</value>
+  </data>
+  <data name="Attribute_BrowsableRelatedAttributesRequireIsAggregatable" xml:space="preserve">
+    <value>An attribute relationship is not valid between an attribute whose IsAggregatable property is set to false and an attribute whose AttributeHierarchyEnabled property is set to true.</value>
+  </data>
+  <data name="Attribute_DiscretizationMethod_ShouldBeNoneForWriteEnabledDimensions" xml:space="preserve">
+    <value>The 'DiscretizationMethod' property should be 'None' for attributes in a write-enabled dimension.</value>
+  </data>
+  <data name="Attribute_KeyColumn_InvalidColumn" xml:space="preserve">
+    <value>The KeyColumn #{0} refers to '{2}', an unknown column,  in the '{1}' table from the '{3}' DataSourceView.</value>
+  </data>
+  <data name="Attribute_KeyColumn_InvalidSourceType" xml:space="preserve">
+    <value>The KeyColumn #{0} has a Source of unaccepted type {1}.</value>
+  </data>
+  <data name="Attribute_KeyColumn_InvalidTable" xml:space="preserve">
+    <value>The KeyColumn #{0} refers to '{1}', an unknown table, in the '{2}' DataSourceView.</value>
+  </data>
+  <data name="Attribute_KeyColumnsOfParentAttributeDoNotCorrespondToOnesOfKeyAttribute" xml:space="preserve">
+    <value>Key columns of the '{0}' parent attribute do not correspond to key columns of the '{1}' dimension key attribute. These must be of the same quantity and type.</value>
+  </data>
+  <data name="Attribute_KeyColumns_Empty" xml:space="preserve">
+    <value>KeyColumns are not defined.</value>
+  </data>
+  <data name="Attribute_KeyRequiresAttributeHierarchyEnabled" xml:space="preserve">
+    <value>The key attribute requires attribute hierarchy enabled.</value>
+  </data>
+  <data name="Attribute_LargeAttributeWithNonNumericKey" xml:space="preserve">
+    <value>Use numeric key columns for attributes with {0} or more members.</value>
+  </data>
+  <data name="Attribute_NameColumn_InvalidColumn" xml:space="preserve">
+    <value>The NameColumn refers to an unknown column '{1}' in the '{0}' table in DataSourceView '{2}'.</value>
+  </data>
+  <data name="Attribute_NameColumn_InvalidSourceType" xml:space="preserve">
+    <value>The NameColumn has a Source of unaccepted type {0}.</value>
+  </data>
+  <data name="Attribute_NameColumn_InvalidTable" xml:space="preserve">
+    <value>The NameColumn refers to '{0}', an unknown table in the '{1}' DataSourceView.</value>
+  </data>
+  <data name="Attribute_NotRelatedToTheKeyAttribute" xml:space="preserve">
+    <value>The attribute is not related (directly or indirectly) to the '{0}' key attribute.</value>
+  </data>
+  <data name="Attribute_OrderByAttribute_IsNotRelated" xml:space="preserve">
+    <value>The attribute '{0}' used for ordering is not related to this attribute.</value>
+  </data>
+  <data name="Attribute_OrderByAttribute_IsSelf" xml:space="preserve">
+    <value>The attribute used for ordering cannot be self.</value>
+  </data>
+  <data name="Attribute_OrderByAttribute_IsUnknown" xml:space="preserve">
+    <value>The attribute used for ordering is unknown (OrderByAttributeID = '{0}').</value>
+  </data>
+  <data name="Attribute_OrderBy_IsSetWithoutOrderByAttributeID" xml:space="preserve">
+    <value>The ordering criteria is set to '{0}', but the ordering attribute is not set.</value>
+  </data>
+  <data name="Attribute_ParentAttributeCannotHaveAttributeRelationships" xml:space="preserve">
+    <value>A parent attribute can't have attribute relationships.</value>
+  </data>
+  <data name="Attribute_ParentAttributeMustBeRelatedToTheKeyAttribute" xml:space="preserve">
+    <value>A parent attribute must be related to the key attribute of the dimension.</value>
+  </data>
+  <data name="Attribute_Type_ShouldBeDaysForTheKeyOfATimeDimension" xml:space="preserve">
+    <value>The 'Type' property should be 'Days' for the key attribute of a time dimension.</value>
+  </data>
+  <data name="AttributesTypesDontMatch1" xml:space="preserve">
+    <value>Set attribute types so that they are compatible.</value>
+  </data>
+  <data name="AttributesTypesDontMatch2" xml:space="preserve">
+    <value>Two or more attributes in the dimension have incompatible attribute types.</value>
+  </data>
+  <data name="BindingProperty_CannotCheckReference" xml:space="preserve">
+    <value>Cannot check the existence of referenced '{1}' (specified by the property '{0}') because the parent '{2}' is null.</value>
+  </data>
+  <data name="BindingProperty_InvalidType" xml:space="preserve">
+    <value>The '{1}' type is not valid for the '{0}' property. Allowed types are: {2}.</value>
+  </data>
+  <data name="BindingProperty_UnknownReference" xml:space="preserve">
+    <value>The '{0}' property references unknown '{1}' with ID='{2}'.</value>
+  </data>
+  <data name="BindingProperty_UnspecifiedReference" xml:space="preserve">
+    <value>The '{0}' property doesn't specify the '{1}'.</value>
+  </data>
+  <data name="CubeAttributeAggregationUsageWithUnaryOperatorOrCustomRollup1" xml:space="preserve">
+    <value>Attributes with unary operators or custom rollups should have full aggregation usage.</value>
+  </data>
+  <data name="CubeAttributeAggregationUsageWithUnaryOperatorOrCustomRollup2" xml:space="preserve">
+    <value>The AggregationUsage property should be set to 'Full' because either the attribute or the parent attribute (if the dimension is parent-child) has unary operator or custom rollup defined.</value>
+  </data>
+  <data name="CubeHasTooManyMeasureGroups1" xml:space="preserve">
+    <value>Avoid having a large number of measure groups in a cube.</value>
+  </data>
+  <data name="CubeHasTooManyMeasureGroups2" xml:space="preserve">
+    <value>The cube contains a large number of measure groups. To improve performance, consider consolidating them into fewer measure groups or separating them into different cubes.</value>
+  </data>
+  <data name="CubeWithSingleDimension" xml:space="preserve">
+    <value>Avoid cubes with a single dimension.</value>
+  </data>
+  <data name="Cube_CubeDimensionsWithExcludeDimensionNameAndDuplicateHierarchies" xml:space="preserve">
+    <value>The cube dimensions, '{0}' and '{1}', do not have distinct hierarchy and attribute hierarchy names. The HierarchyUniqueNameStyle property for each of these cube dimensions is set to ExcludeDimensionName, but their hierarchy and attribute hierarchy names are not unique when the dimension names are excluded.</value>
+  </data>
+  <data name="Cube_MultipleDefaultMdxScriptsDefined" xml:space="preserve">
+    <value>There are multiple MdxScripts marked as default: {0}.</value>
+  </data>
+  <data name="Cube_NoDefaultMdxScriptDefined" xml:space="preserve">
+    <value>One MdxScript needs to be marked as default.</value>
+  </data>
+  <data name="Cube_NoDimensionsDefined" xml:space="preserve">
+    <value>No dimensions defined.</value>
+  </data>
+  <data name="Cube_PerspectiveNotAllow" xml:space="preserve">
+    <value>Perspectives are not allowed in this edition of Analysis Services.</value>
+  </data>
+  <data name="DataItem_DataType_IsInvalid" xml:space="preserve">
+    <value>The '{1}' data type is not allowed for the '{0}' property.</value>
+  </data>
+  <data name="DataItem_DataType_IsUnexpected" xml:space="preserve">
+    <value>The '{1}' data type is not allowed for the '{0}' property; '{2}' should be used.</value>
+  </data>
+  <data name="DataItem_NullProcessing_UnknownMember" xml:space="preserve">
+    <value>The '{0}' property has NullProcessing set to 'UnknownMember', but this is only allowed on KeyColumns of dimension attributes and measure group attributes and only if UnknownMember is Visible/Hidden.</value>
+  </data>
+  <data name="DataItem_NullProcessing_UnknownMemberForKey" xml:space="preserve">
+    <value>The '{0}' #{1} has NullProcessing set to 'UnknownMember', but the dimension doesn't have UnknownMember set to 'Visible' or 'Hidden'.</value>
+  </data>
+  <data name="DataItem_Source_InvalidColumn" xml:space="preserve">
+    <value>The '{0}' property points to the '{2}' column in the '{1}' table. This column is not valid.</value>
+  </data>
+  <data name="DataItem_Source_InvalidTable" xml:space="preserve">
+    <value>The '{0}' property points to the an unknown table '{1}'.</value>
+  </data>
+  <data name="DataItem_Source_InvalidType" xml:space="preserve">
+    <value>A binding of '{1}' type cannot be used for the '{0}' property. The binding types allowed are: {2}.</value>
+  </data>
+  <data name="DataItem_Source_NotSpecified" xml:space="preserve">
+    <value>The actual binding is not specified for the '{0}' property.</value>
+  </data>
+  <data name="DataItem_Source_UndefinedColumn" xml:space="preserve">
+    <value>The property '{0}' doesn't define the column name.</value>
+  </data>
+  <data name="DataItem_Source_UndefinedTable" xml:space="preserve">
+    <value>The property '{0}' doesn't define the table name.</value>
+  </data>
+  <data name="DataItems_AllNeedToBeInTheSameTable" xml:space="preserve">
+    <value>All '{0}' must be in the same table.</value>
+  </data>
+  <data name="DataItems_DataType_IsInvalid" xml:space="preserve">
+    <value>The '{2}' data type is not allowed for the '{0}' property #{1}.</value>
+  </data>
+  <data name="DataItems_Source_InvalidColumn" xml:space="preserve">
+    <value>The '{0}' #{1} points to the '{3}' column in the '{2}' table. This column is not valid.</value>
+  </data>
+  <data name="DataItems_Source_InvalidTable" xml:space="preserve">
+    <value>The '{0}' #{1} points to '{2}', a nonexistent table.</value>
+  </data>
+  <data name="DataItems_Source_InvalidType" xml:space="preserve">
+    <value>A binding of type '{2}' cannot be used for the '{0}' property #{1}. The binding types allowed are: {3}.</value>
+  </data>
+  <data name="DataItems_Source_NotSpecified" xml:space="preserve">
+    <value>The actual binding is not specified for the '{0}' property #{1}.</value>
+  </data>
+  <data name="DataItems_Source_UndefinedColumn" xml:space="preserve">
+    <value>The '{0}' #{1} doesn't define the column name.</value>
+  </data>
+  <data name="DataItems_Source_UndefinedTable" xml:space="preserve">
+    <value>The '{0}' #{1} doesn't define the table name.</value>
+  </data>
+  <data name="DataMiningMeasureGroupDimension_CaseCubeDimensionIsInvalid" xml:space="preserve">
+    <value>The case cube dimension is not valid or not specified.</value>
+  </data>
+  <data name="DataMiningMeasureGroupDimension_CaseDimensionsShouldMatch" xml:space="preserve">
+    <value>The case dimension should be the same dimension referenced by the key column of the mining model on which the source dimension is based.</value>
+  </data>
+  <data name="DataMiningMeasureGroupDimension_CubeDimensionShouldBeDataMiningDimension" xml:space="preserve">
+    <value>The referenced cube dimension '{0}' should be a data mining dimension.</value>
+  </data>
+  <data name="DataSourceIsUnknown" xml:space="preserve">
+    <value>The data source is unknown.</value>
+  </data>
+  <data name="DataSourceView_DataSourceNotSpecified" xml:space="preserve">
+    <value>The data source is not specified.</value>
+  </data>
+  <data name="DatabasePermission_WriteCannotBeAllowed" xml:space="preserve">
+    <value>A DatabasePermission cannot have Write=Allowed.</value>
+  </data>
+  <data name="Database_AssemblyNotAllowed" xml:space="preserve">
+    <value>CLR assemblies are not allowed in local cubes or mining models.</value>
+  </data>
+  <data name="Database_TooManyDimensionsWithSingleAttribute" xml:space="preserve">
+    <value>Avoid having multiple dimensions containing a single attribute. Consider unifying them if possible.</value>
+  </data>
+  <data name="DiamondShapeRelationships1" xml:space="preserve">
+    <value>Avoid diamond-shape relationships not covered by hierarchies.</value>
+  </data>
+  <data name="DiamondShapeRelationships2" xml:space="preserve">
+    <value>Design hierarchies for each incoming relationship path when attributes have multiple incoming relationships or, if any of the incoming relationships are unnecessary, you should delete them. </value>
+  </data>
+  <data name="DimensionAndRelationshipTypes" xml:space="preserve">
+    <value>Define attribute relationships as 'Rigid' where appropriate.</value>
+  </data>
+  <data name="DimensionAttribute_IsNonAggregatableInParentChild" xml:space="preserve">
+    <value>Avoid defining non-aggregatable attributes in a parent-child dimension with the exception of the parent attribute.</value>
+  </data>
+  <data name="DimensionHasAttributeUsedByLevelsAndWithVisibleHierarchy" xml:space="preserve">
+    <value>Avoid visible attribute hierarchies for attributes used as levels in user-defined hierarchies.</value>
+  </data>
+  <data name="DimensionIgnoresDuplicateKeys" xml:space="preserve">
+    <value>Do not ignore duplicate key errors. Change the KeyDuplicate property of the error configuration so that it is not set to IgnoreError.</value>
+  </data>
+  <data name="DimensionPermission_AccessNoneRequiresAllAttributesAggregatable" xml:space="preserve">
+    <value>All attributes should be aggregatable if Read and Write are 'None'.</value>
+  </data>
+  <data name="DimensionPermission_WriteAccessRequiresNoAllowedOrDeniedSets" xml:space="preserve">
+    <value>Write access requires no AllowedSet or DeniedSet to be specified for attribute permissions.</value>
+  </data>
+  <data name="DimensionPermission_WriteAccessRequiresRead" xml:space="preserve">
+    <value>Write access requires read; the 'Read' property should be set to 'Allowed'.</value>
+  </data>
+  <data name="DimensionProcessByTable1" xml:space="preserve">
+    <value>Avoid setting the 'ProcessingGroup' dimension property to 'ByTable'.</value>
+  </data>
+  <data name="DimensionProcessByTable2" xml:space="preserve">
+    <value>The 'ProcessingGroup' property of this dimension is set to 'ByTable'. In most cases, the default setting of 'ByAttribute' will achieve faster processing performance and better memory utilization.</value>
+  </data>
+  <data name="DimensionTypeAccountOrTimeNeedsMatchingAttribute1" xml:space="preserve">
+    <value>Set at least one of the attribute types to match the 'Account' or 'Time' dimension type.</value>
+  </data>
+  <data name="DimensionTypeAccountOrTimeNeedsMatchingAttribute2" xml:space="preserve">
+    <value>Set at least one of the attribute types to match the '{0}' dimension type.</value>
+  </data>
+  <data name="DimensionTypeNeedsMatchingAttribute1" xml:space="preserve">
+    <value>Set at least one of the attribute types to match the dimension type.</value>
+  </data>
+  <data name="DimensionTypeNeedsMatchingAttribute2" xml:space="preserve">
+    <value>Set at least one of the attribute types to match the '{0}' dimension type.</value>
+  </data>
+  <data name="DimensionWithPollingQuery" xml:space="preserve">
+    <value>For dimensions, do not use proactive caching with a polling query but no processing query.</value>
+  </data>
+  <data name="Dimension_AttributesFormLoops" xml:space="preserve">
+    <value>The dimension has attribute loop(s).</value>
+  </data>
+  <data name="Dimension_DM_AttributeIsNotRelatedWithTheKey" xml:space="preserve">
+    <value>The attribute is not related with the key attribute.</value>
+  </data>
+  <data name="Dimension_DM_DataMiningDimensionRequiresAnAttributeWithID" xml:space="preserve">
+    <value>An attribute with ID = '{0}' should be defined in a data mining dimension.</value>
+  </data>
+  <data name="Dimension_DM_NodeUniqueNameAttributeIsNotKey" xml:space="preserve">
+    <value>The attribute should be defined as key.</value>
+  </data>
+  <data name="Dimension_DM_ParentUniqueNameAttributeIsNotParent" xml:space="preserve">
+    <value>The attribute should be defined as parent.</value>
+  </data>
+  <data name="Dimension_DependsOnDimensionIsUnknown" xml:space="preserve">
+    <value>The DependsOnDimensionID property points to an unknown Dimension with the ID of '{0}'.</value>
+  </data>
+  <data name="Dimension_HasMultipleNonAggregatableAttributes1" xml:space="preserve">
+    <value>Avoid specifying more than one non-aggregatable attribute per dimension.</value>
+  </data>
+  <data name="Dimension_HasMultipleNonAggregatableAttributes2" xml:space="preserve">
+    <value>The dimension contains multiple non-aggregatable attributes: {0}. Consider having just one to avoid non-intuitive query results.</value>
+  </data>
+  <data name="Dimension_HasUnknownMemberSetToHidden" xml:space="preserve">
+    <value>Change the UnknownMember property of dimensions from Hidden to None.</value>
+  </data>
+  <data name="Dimension_IsNotParentChildAndHasNoHierarchy" xml:space="preserve">
+    <value>Create hierarchies in non-parent child dimensions.</value>
+  </data>
+  <data name="Dimension_KeyAttributeOfParentChildShouldHaveHierarchyNotVisible" xml:space="preserve">
+    <value>Set the AttributeHierarchyVisible property of the key attribute in a parent-child dimension to False.</value>
+  </data>
+  <data name="Dimension_LinkedMeasureNotAllow" xml:space="preserve">
+    <value>Linked dimensions are not allowed in this edition of Analysis Services.</value>
+  </data>
+  <data name="Dimension_MultipleKeysDefined" xml:space="preserve">
+    <value>There are multiple key attributes defined: {0}.</value>
+  </data>
+  <data name="Dimension_MultipleParentsDefined" xml:space="preserve">
+    <value>There are multiple parent attributes defined: {0}.</value>
+  </data>
+  <data name="Dimension_NoAttributesDefined" xml:space="preserve">
+    <value>No attributes are defined.</value>
+  </data>
+  <data name="Dimension_NoHierarchiesDefined" xml:space="preserve">
+    <value>No hierarchies are defined.</value>
+  </data>
+  <data name="Dimension_NoKeyAttributeDefined" xml:space="preserve">
+    <value>No key attribute is defined.</value>
+  </data>
+  <data name="Dimension_RolapWithUnaryOperatorsOrCustomRollups" xml:space="preserve">
+    <value>Avoid specifying ROLAP storage mode or enabling proactive caching with the OnlineMode property set to Immediate for dimensions containing either unary operators or custom rollups. </value>
+  </data>
+  <data name="Dimension_WritebackNotAllow" xml:space="preserve">
+    <value>Write-back is not allowed in this edition of Analysis Services.</value>
+  </data>
+  <data name="Dimension_WritebackOnlyPossibleForStarSchemas" xml:space="preserve">
+    <value>The dimension is write-enabled, but not all attribute bindings are in a single table (dimension writeback is only possible for star schemas).</value>
+  </data>
+  <data name="Dimension_WritebackRequiresDataSourceViewBinding" xml:space="preserve">
+    <value>The dimension source should be a DataSourceView, otherwise it cannot be write-enabled.</value>
+  </data>
+  <data name="DistinctCountMeasure" xml:space="preserve">
+    <value>Break distinct count measures into separate measure groups.</value>
+  </data>
+  <data name="DotNetSqlClientProvider" xml:space="preserve">
+    <value>For faster performance, use the Microsoft OLE DB Provider for SQL Server or the SQL Server Native Client provider to connect to a SQL Server data source instead of the .NET Data Provider for SQL Server (SqlClient).</value>
+  </data>
+  <data name="FullErrorText" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="Hierarchy_IsUnNatural1" xml:space="preserve">
+    <value>Avoid creating hierarchies where attribute relationships do not exist between one or more levels.</value>
+  </data>
+  <data name="Hierarchy_IsUnNatural2" xml:space="preserve">
+    <value>Attribute relationships do not exist between one or more levels of this hierarchy.  This may result in decreased query performance.</value>
+  </data>
+  <data name="Hierarchy_LevelBasedOnAttributeMarkedAsParentMustNotBeInHierarchy" xml:space="preserve">
+    <value>The source attribute of the level is marked as 'Parent'.</value>
+  </data>
+  <data name="Hierarchy_ManyLevelsReuseTheSameAttribute" xml:space="preserve">
+    <value>The following levels {0} re-use the same attribute '{1}'.</value>
+  </data>
+  <data name="Hierarchy_NoLevelsDefined" xml:space="preserve">
+    <value>No levels defined.</value>
+  </data>
+  <data name="Hierarchy_NoneAggregatableLevelCantHaveLevelsAboveIt" xml:space="preserve">
+    <value>The source attribute is marked as 'Not Aggregatable'. No levels based on 'Aggregatable' attributes should be above it.</value>
+  </data>
+  <data name="IDIsMissing" xml:space="preserve">
+    <value>The ID of the object is missing.</value>
+  </data>
+  <data name="IndependentMeasureGroup1" xml:space="preserve">
+    <value>Avoid defining measure groups with zero dimensional overlap.</value>
+  </data>
+  <data name="IndependentMeasureGroup2" xml:space="preserve">
+    <value>The measure group has zero dimensional overlap with all of the other measure groups in the cube. Consider moving it to a separate cube.</value>
+  </data>
+  <data name="IntermediateGranularityNotAggregated1" xml:space="preserve">
+    <value>The granularity attribute of the intermediate dimensions that are used to resolve many-to-many relationships should generally be included in several aggregations, according to query patterns.</value>
+  </data>
+  <data name="IntermediateGranularityNotAggregated2" xml:space="preserve">
+    <value>The '{1}' granularity attribute of the intermediate dimension '{0}' that is used to resolve many-to-many relationships should generally be included in several aggregations, according to query patterns.</value>
+  </data>
+  <data name="Kpi_AssociatedMeasureGroupIsUnknown" xml:space="preserve">
+    <value>Unknown associated measure group {0}.</value>
+  </data>
+  <data name="Kpi_Value_Missing" xml:space="preserve">
+    <value>The Value property is not specified.</value>
+  </data>
+  <data name="LevelHasFewerMembersThanUpperLevel" xml:space="preserve">
+    <value>Design hierarchies such that lower levels have more members than higher levels.</value>
+  </data>
+  <data name="Level_ParentAttributeDoesntHaveAttributeHierarchyEnabled" xml:space="preserve">
+    <value>The parent attribute doesn't have the attribute hierarchy enabled.</value>
+  </data>
+  <data name="Level_SourceAttributeDoesntHaveAttributeHierarchyEnabled" xml:space="preserve">
+    <value>The source attribute doesn't have the attribute hierarchy enabled.</value>
+  </data>
+  <data name="Level_SourceAttributeIsUnknown" xml:space="preserve">
+    <value>The source attribute is unknown or not specified.</value>
+  </data>
+  <data name="Level_SourceAttributeOfParentChildLevelIsNotTheKeyAttribute" xml:space="preserve">
+    <value>The source attribute for a parent-child level must be the key attribute of the dimension.</value>
+  </data>
+  <data name="LinkedDimensionWithOutlineCalculations" xml:space="preserve">
+    <value>Avoid creating linked dimensions to a source that contains UnaryOperatorColumns, CustomRollupColumns, or CustomRollupPropertiesColumns calculations.</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>{0}, [{1}]</value>
+  </data>
+  <data name="ListStart" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="ManyToManyHasLargeIntermediate" xml:space="preserve">
+    <value>Avoid defining many-to-many relationships when either the intermediate measure group or any of the intermediate dimensions have 1 million or more rows.</value>
+  </data>
+  <data name="ManyToManyMeasureGroupDimension_MeasureGroupIsSameAsParent" xml:space="preserve">
+    <value>The intermediate measure group '{0}' is the same as the parent measure group.</value>
+  </data>
+  <data name="ManyToManyMeasureGroupDimension_MeasureGroupShouldContainTheCubeDimension" xml:space="preserve">
+    <value>The intermediate measure group '{1}' should contain the cube dimension '{0}'.</value>
+  </data>
+  <data name="MdxScript_AnnotationsNotallowedOnCommand" xml:space="preserve">
+    <value>Annotations are allowed on Script Command objects only for Tabular databases with CompatibilityLevel equal to 1103 or higher.</value>
+  </data>
+  <data name="MdxScript_CommandHasNoText" xml:space="preserve">
+    <value>Command #{0} has no text defined.</value>
+  </data>
+  <data name="MdxScript_ThereAreOtherDefaultMdxScriptsInTheCube" xml:space="preserve">
+    <value>There are other MdxScripts marked as default.</value>
+  </data>
+  <data name="MeasureExpressionSKUError" xml:space="preserve">
+    <value>The destination server is running a SQL Server edition that does not support measure expressions.</value>
+  </data>
+  <data name="MeasureGroupAttribute_AParentAttributeCannotBeGranularity" xml:space="preserve">
+    <value>An attribute with Usage = Parent cannot be a granularity attribute.</value>
+  </data>
+  <data name="MeasureGroupAttribute_GranularityRequiresAttributeHierarchyEnabled" xml:space="preserve">
+    <value>Granularity requires AttributeHierarchyEnabled to be true for CubeAttribute (if the CubeAttribute is explicitly included/defined in the cube, if not, on DimensionAttribute).</value>
+  </data>
+  <data name="MeasureGroupAttribute_KeyColumnDataTypeDoesnMatch" xml:space="preserve">
+    <value>The key column #{0} has data type '{1}' different than the attribute's key column data type '{2}'.</value>
+  </data>
+  <data name="MeasureGroupAttribute_KeyColumnsCountDontMatch" xml:space="preserve">
+    <value>Same count of key columns as in dimension attribute is required. This measure group attribute has {0} key columns, the dimension attribute has {1}.</value>
+  </data>
+  <data name="MeasureGroupWithNoPartitions" xml:space="preserve">
+    <value>Define partitions for measure groups.</value>
+  </data>
+  <data name="MeasureGroupWithSemiAdditiveMeasuresAndRolapDimensions1" xml:space="preserve">
+    <value>Dimensions that are related to measure groups that contain semi-additive measures should use MOLAP storage mode.</value>
+  </data>
+  <data name="MeasureGroupWithSemiAdditiveMeasuresAndRolapDimensions2" xml:space="preserve">
+    <value>The '{0}' dimension should use MOLAP storage mode because the measure group contains semi-additive measures. Also, if proactive caching is enabled you should verify that the OnlineMode property is set to OnCacheComplete.</value>
+  </data>
+  <data name="MeasureGroup_AtMostTwoNonWritebackPartition" xml:space="preserve">
+    <value>There can be at most two non-writeback partitions per measure group if you are using local cubes or the standard edition of Analysis Services.</value>
+  </data>
+  <data name="MeasureGroup_ContainsRelationshipsParticipatingInLoops" xml:space="preserve">
+    <value>The measure group '{0}' contains reference relationships forming loops.</value>
+  </data>
+  <data name="MeasureGroup_CubeDimensionIsNotIncludedAsDegenerate" xml:space="preserve">
+    <value>The cube dimension '{0}' is not included as a fact dimension in the measure group '{1}'. All fact dimensions in a measure group must be roles of the same database dimension and all roles of that database dimension in the cube must be included in the measure group as fact dimensions.</value>
+  </data>
+  <data name="MeasureGroup_DegenerateDimensionsAreBasedOnDifferentDimensions" xml:space="preserve">
+    <value>All fact dimensions in a measure group must be roles of the same database dimension.</value>
+  </data>
+  <data name="MeasureGroup_HasLargePartitions" xml:space="preserve">
+    <value>Split large partitions, with more than {0} million rows or that are over {1} MB in size, into smaller partitions to improve performance.</value>
+  </data>
+  <data name="MeasureGroup_HasPartitionsToConsolidate" xml:space="preserve">
+    <value>Consolidate partitions for measure groups with {0} or more partitions that have less than {1} million rows or are smaller than {2} MB in size.</value>
+  </data>
+  <data name="MeasureGroup_HasTooManyAggregationDesigns" xml:space="preserve">
+    <value>Limit the number of aggregation designs in a measure group to three.</value>
+  </data>
+  <data name="MeasureGroup_LinkingToAnotherDatabaseNotAllowed" xml:space="preserve">
+    <value>Linked measure groups outside the current database are not allowed in this edition of Analysis Services.</value>
+  </data>
+  <data name="MeasureGroup_NoDimensionsDefined" xml:space="preserve">
+    <value>No dimension relationships exist. The measure group '{0}' is not related to any dimensions.</value>
+  </data>
+  <data name="MeasureGroup_NoMeasuresDefined" xml:space="preserve">
+    <value>No measures are defined.</value>
+  </data>
+  <data name="MeasureGroup_PartitionsWithSameSourceTableAndFilter" xml:space="preserve">
+    <value>The following partitions have the same source table and filter: {0}.</value>
+  </data>
+  <data name="MeasureGroup_SemiadditiveMeasureRequiresTimeDimension" xml:space="preserve">
+    <value>Semi-additive measure requires a time dimension.</value>
+  </data>
+  <data name="MeasureGroup_SourceIsSelf" xml:space="preserve">
+    <value>The Source of a linked MeasureGroup cannot be self.</value>
+  </data>
+  <data name="MeasureGroup_SourceMeasureGroupIsInTheSameCube" xml:space="preserve">
+    <value>The Source is a MeasureGroup in the same cube, this scenario is not supported.</value>
+  </data>
+  <data name="MeasureGroup_WriteEnabledWithNonSumOrUnsignedMeasures" xml:space="preserve">
+    <value>A measure group with writeback partitions cannot have measures bound to unsigned columns or measures whose AggregateFunction property is set to other than Sum. Check the following partitions: {0}. Check the following measures: {1}.</value>
+  </data>
+  <data name="MeasureGroupsWithTheSameDimensionalityAndGranularity1" xml:space="preserve">
+    <value>Avoid creating measure groups that have the same dimensionality and granularity.</value>
+  </data>
+  <data name="MeasureGroupsWithTheSameDimensionalityAndGranularity2" xml:space="preserve">
+    <value>The '{0}' and '{1}' measure groups have the same dimensionality and granularity. Consider unifying them to improve performance.</value>
+  </data>
+  <data name="Measure_AggregateFunctionNotAllow" xml:space="preserve">
+    <value>The aggregate function '{0}' is not allowed in this edition of Analysis Services.</value>
+  </data>
+  <data name="Measure_ByAccountRequiresAccountDimensionAndAttribute" xml:space="preserve">
+    <value>A measure with 'ByAccount' aggregation function requires exactly one dimension with Type = 'Accounts' with exactly one attribute with Type = 'Account'. In addition, that attribute needs to be marked as parent if the dimension is parent-child.</value>
+  </data>
+  <data name="Measure_DistinctCountRequiresNumericDataType" xml:space="preserve">
+    <value>Distinct count measures require numeric data type (for the 'DataType' property).</value>
+  </data>
+  <data name="Measure_Source_ValueNotSupportedForNullProcessing" xml:space="preserve">
+    <value>'{0}' is not a supported value for the {1} property of a measure source.</value>
+  </data>
+  <data name="MiningModelColumn_Columns_KeyNotDefined" xml:space="preserve">
+    <value>A key column is not defined.</value>
+  </data>
+  <data name="MiningModelColumn_NoFilterShouldBeDefinedBecauseSourceIsScalar" xml:space="preserve">
+    <value>No row filter should be defined because the source column is ScalarMiningStructureColumn.</value>
+  </data>
+  <data name="MiningModelColumn_NoNestedColumnShouldBeDefinedBecauseSourceIsScalar" xml:space="preserve">
+    <value>No nested columns should be defined because the source column is ScalarMiningStructureColumn.</value>
+  </data>
+  <data name="MiningModelColumn_UnexpectedType" xml:space="preserve">
+    <value>An unexpected column of type '{0}' was supplied; the expected type is '{1}'.</value>
+  </data>
+  <data name="MiningModel_ForeignKeyPresentMessage" xml:space="preserve">
+    <value>The foreign key column {0} is used as an input or predictable column in the nested table {1}. This is highly discouraged.</value>
+  </data>
+  <data name="MiningModel_KeyColumnNotDefined" xml:space="preserve">
+    <value>A key column is not defined.</value>
+  </data>
+  <data name="MiningModel_PluginAlgorithmNotAllowed" xml:space="preserve">
+    <value>You attempted to use the third party algorithm '{0}'. Third party algorithms are not supported in this edition of Analysis Services. </value>
+  </data>
+  <data name="MiningModel_PredictColumnNotDefined" xml:space="preserve">
+    <value>A predictable column is not defined.</value>
+  </data>
+  <data name="MiningStructureColumn_AttributeHierarchyNotEnabled" xml:space="preserve">
+    <value>The '{0}' source cube attribute does not have its attribute hierarchy enabled.</value>
+  </data>
+  <data name="MiningStructureColumn_Columns_KeyNotTextType" xml:space="preserve">
+    <value>A key column containing a name column binding must be of type 'TEXT'.</value>
+  </data>
+  <data name="MiningStructureColumn_ForeignKeyColumns_Count" xml:space="preserve">
+    <value>The 'ForeignKeyColumns' should match the 'KeyColumns' of the key structure column '{0}'. Counts are different: there are {1} 'ForeignKeyColumns' defined and {2} 'KeyColumns'.</value>
+  </data>
+  <data name="MiningStructureColumn_ForeignKeyColumns_DataType" xml:space="preserve">
+    <value>The 'ForeignKeyColumns' should match the 'KeyColumns' of the key structure column '{0}'. The ForeignKeyColumn #{1} has DataType '{2}', different than the DataType '{3}' of the associated KeyColumn.</value>
+  </data>
+  <data name="MiningStructureColumn_IncompatibleContentType" xml:space="preserve">
+    <value>The content type '{0}' is not compatible with the discretized source dimension attribute.</value>
+  </data>
+  <data name="MiningStructureColumn_KeyColumnIsBasedOnGuidDataColumn" xml:space="preserve">
+    <value>A key column is based on the DataColumn [{0}].[{1}] of type GUID. This is not supported, create a named column where you cast the GUID to a string.</value>
+  </data>
+  <data name="MiningStructureColumn_MultiPathsFromKeyColumnsTableToNameColumnTable" xml:space="preserve">
+    <value>There are multiple paths (in the data source view) from the KeyColumns table '{0}' to the NameColumn table '{1}'. This ambiguity can generate wrong data when processing.</value>
+  </data>
+  <data name="MiningStructureColumn_NoPathFromKeyColumnsTableToNameColumnTable" xml:space="preserve">
+    <value>There is no path (in the data source view) from the KeyColumns table '{0}' to the NameColumn table '{1}'.</value>
+  </data>
+  <data name="MiningStructureColumn_PropertyShouldNotBeDefinedInOlapMiningStructure" xml:space="preserve">
+    <value>The '{0}' property should not be defined because the parent mining structure is not relational.</value>
+  </data>
+  <data name="MiningStructureColumn_PropertyShouldNotBeDefinedInRelationalMiningStructure" xml:space="preserve">
+    <value>The '{0}' property should not be defined because the parent mining structure is relational.</value>
+  </data>
+  <data name="MiningStructureColumn_SourceCubeNeedsToBeTheSameAsForTheMiningStructure" xml:space="preserve">
+    <value>The source cube needs to be the same as for the parent mining structure.</value>
+  </data>
+  <data name="MiningStructureColumn_UnexpectedType" xml:space="preserve">
+    <value>An unexpected column of type '{0}' was supplied; the expected type is '{1}'.</value>
+  </data>
+  <data name="MiningStructureColumns_KeyColumnNotDefined" xml:space="preserve">
+    <value>A key column is not defined.</value>
+  </data>
+  <data name="MiningStructureColumns_MultiPathsFromKeyToColumn" xml:space="preserve">
+    <value>There are multiple paths (in the data source view) from the case table '{0}' to the lookup table '{1}'. This ambiguity can generate wrong data when processing. Check the bindings for the MiningStructureColumn '{2}'.</value>
+  </data>
+  <data name="MiningStructureColumns_MultipleKeyColumnsDefined" xml:space="preserve">
+    <value>There are multiple key columns defined: {0}.</value>
+  </data>
+  <data name="MiningStructureColumns_NoPathFromKeyToColumn" xml:space="preserve">
+    <value>There is no path (in the data source view) from the case table '{0}' to the lookup table '{1}'. Check the bindings for the MiningStructureColumn '{2}'.</value>
+  </data>
+  <data name="MiningStructure_ContentTypeNotSupportedMessage" xml:space="preserve">
+    <value>Mining structure column {0} has content type of {1} that is not supported by Microsoft Association or Microsoft Naïve Bayes algorithms.</value>
+  </data>
+  <data name="MiningStructure_KeyTimeInNestedTableNotDefined" xml:space="preserve">
+    <value>You must mark one key column as Key Time for nested table column {0}. </value>
+  </data>
+  <data name="MiningStructure_KeyTimeNotAllowed" xml:space="preserve">
+    <value>Key Time key columns are not allowed because the mining structure contains one or more nested tables.</value>
+  </data>
+  <data name="MiningStructure_KeyTimeNotDefined" xml:space="preserve">
+    <value>A key column must be marked as Key Time.</value>
+  </data>
+  <data name="MiningStructure_MultipleKeyNotAllowedInNestedTable" xml:space="preserve">
+    <value>Only one key column is allowed for nested table column {0}.</value>
+  </data>
+  <data name="MiningStructure_MultipleKeyTimeNotAllowed" xml:space="preserve">
+    <value>Only one Key Time key column is allowed.</value>
+  </data>
+  <data name="MiningStructure_NestedTableForeignKeyNotCaseKey" xml:space="preserve">
+    <value>The foreign key column {1} for the nested table {0} is not specified as a key mining structure column at the case level.</value>
+  </data>
+  <data name="NameColumnShouldBeDefinedIfMoreThanOneKeyColumnIsDefined" xml:space="preserve">
+    <value>The NameColumn should be defined because there are multiple KeyColumns.</value>
+  </data>
+  <data name="NameIsMissing" xml:space="preserve">
+    <value>The Name of the object is missing.</value>
+  </data>
+  <data name="NoTimeDimension1" xml:space="preserve">
+    <value>Define a time dimension.</value>
+  </data>
+  <data name="NoTimeDimension2" xml:space="preserve">
+    <value>The database has no Time dimension. Consider creating one.</value>
+  </data>
+  <data name="NonAggregatableAttributeNeedsDefaultMember" xml:space="preserve">
+    <value>Define the default member for non-aggregatable attributes in either the DefaultMember property or the cubes' MDX script.</value>
+  </data>
+  <data name="NonKeyLargeAttributeWithVisibleHierarchy" xml:space="preserve">
+    <value>Either disable the attribute hierarchy or set the AttributeHierarchyOptimizedState property to NotOptimized for non-key attributes that have {0} or more members and a cardinality within {1}% of the key attribute.</value>
+  </data>
+  <data name="ParentChildDimensionWithLargeKey" xml:space="preserve">
+    <value>Avoid large parent-child dimensions that have {0} or members for the key attribute.</value>
+  </data>
+  <data name="ParentIsMissing" xml:space="preserve">
+    <value>Parent is missing. No other validations can be done.</value>
+  </data>
+  <data name="ParentOfParticularTypeIsMissing" xml:space="preserve">
+    <value>Parent {0} is missing. No other validations can be done.</value>
+  </data>
+  <data name="ParentServerIsMissing" xml:space="preserve">
+    <value>Parent server is missing. No validations can be done.</value>
+  </data>
+  <data name="PartitionIsRemoteRolap" xml:space="preserve">
+    <value>Avoid specifying ROLAP storage mode or enabling proactive caching with the OnlineMode property set to Immediate on remote partitions.</value>
+  </data>
+  <data name="PartitionWithPollingQuery" xml:space="preserve">
+    <value>For partitions, do not use proactive caching with a polling query but no processing query.</value>
+  </data>
+  <data name="PartitionWithTooManyAggregations" xml:space="preserve">
+    <value>Do not build more than {0} aggregations for a partition.</value>
+  </data>
+  <data name="Partition_IsLargeWithNoAggs1" xml:space="preserve">
+    <value>Design aggregations for partitions with {0} or more rows.</value>
+  </data>
+  <data name="Partition_IsLargeWithNoAggs2" xml:space="preserve">
+    <value>The partition has {0} or more estimated rows, but does not have any aggregations defined.</value>
+  </data>
+  <data name="Partition_RemotePartitionNotAllowed" xml:space="preserve">
+    <value>Remote partitions are not supported in this edition of Analysis Services.</value>
+  </data>
+  <data name="Partition_RolapWithNoSlice" xml:space="preserve">
+    <value>Set the Slice property on partitions with ROLAP storage mode or with proactive caching settings that allow entering ROLAP mode.</value>
+  </data>
+  <data name="PerspectiveDefaultMeasureNotIncluded1" xml:space="preserve">
+    <value>Include the default measure of a perspective in the perspective.</value>
+  </data>
+  <data name="PerspectiveDefaultMeasureNotIncluded2" xml:space="preserve">
+    <value>The '{0}' default measure, that was defined on the perspective or inherited from the cube, is not included in the perspective.</value>
+  </data>
+  <data name="Perspective_NoDimensionsDefined" xml:space="preserve">
+    <value>No dimensions defined.</value>
+  </data>
+  <data name="ProactiveCaching_CanNotEnable" xml:space="preserve">
+    <value>Proactive caching cannot be enabled in this edition of Analysis Services.</value>
+  </data>
+  <data name="PropertiesCannotBeSpecifiedInTheSameTime" xml:space="preserve">
+    <value>The properties '{0}' and '{1}' cannot be specified in the same time.</value>
+  </data>
+  <data name="RedundantRelationship1" xml:space="preserve">
+    <value>Avoid redundant attribute relationships because these relationships may prevent data from being aggregated when the granularity attribute of a cube is a non-key attribute.</value>
+  </data>
+  <data name="RedundantRelationship2" xml:space="preserve">
+    <value>This is a redundant attribute relationship and it should be deleted. A redundant attribute relationship may prevent data from being aggregated when a non-key attribute is used as a granularity attribute in a cube. </value>
+  </data>
+  <data name="ReferenceIsInvalid" xml:space="preserve">
+    <value>The reference to {0} is not valid: '{2}' = '{1}'.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_ChainingRequiresMaterialization" xml:space="preserve">
+    <value>The dimension should be materialized (set the 'Materialize' property to 'Regular') because the intermediate dimension '{0}' is also reference.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_GranularityAttributeIsUnknown" xml:space="preserve">
+    <value>The granularity attribute reference is unknown (GranularityAttributeID = '{0}').</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_GranularityAttribute_AttributeHierarchyShouldBeEnabled" xml:space="preserve">
+    <value>The granularity attribute '{0}' should have 'AttributeHierarchyEnabled' set to 'true'.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateCubeDimensionIsUnknown" xml:space="preserve">
+    <value>The intermediate cube dimension reference is unknown (IntermediateCubeDimensionID = '{0}').</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateCubeDimensionShouldBeIncludedInMeasureGroup" xml:space="preserve">
+    <value>The intermediate cube dimension '{0}' should be included in the measure group '{1}'.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateDimensionIsReferenced" xml:space="preserve">
+    <value>The intermediate cube dimension '{0}' is a reference dimension in measure group '{1}', which is not supported.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateGranularityAttributeIsUnknown" xml:space="preserve">
+    <value>The intermediate granularity attribute reference is unknown (IntermediateGranularityAttributeID = '{0}').</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateGranularityAttribute_AttributeHierarchyShouldBeEnabled" xml:space="preserve">
+    <value>The intermediate granularity attribute '{0}' should have 'AttributeHierarchyEnabled' set to 'true'.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_IntermediateReferenceDimensionIsNotMaterialized" xml:space="preserve">
+    <value>The intermediate dimension '{0}' is also included as reference in measure group '{1}' and should be materialized (set its 'Materialize' property to 'Regular').</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_KeyColumnsCountDontMatch" xml:space="preserve">
+    <value>The granularity attribute and intermediate granularity attribute should have same number of key columns (the granularity has {0}, the intermediate granularity has {1}).</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_KeyColumnsDataTypesDontMatch" xml:space="preserve">
+    <value>The granularity attribute has key column #{0} with data type '{1}' different than '{2}' from intermediate granularity attribute.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_LoopDetected" xml:space="preserve">
+    <value>The following cube dimensions form a loop through reference relationships for measure group '{1}': {0}.</value>
+  </data>
+  <data name="ReferenceMeasureGroupDimension_MaterializedCannotHaveIntermediateTimeDimension" xml:space="preserve">
+    <value>A reference dimension with Materialization = 'Regular' cannot have a server time dimension as its intermediate dimension.</value>
+  </data>
+  <data name="ReferencedMeasureGroupDimensionNotMaterialized" xml:space="preserve">
+    <value>Avoid non-materialized reference dimensions.</value>
+  </data>
+  <data name="RegularMeasureGroupDimension_GranularityNotDefined" xml:space="preserve">
+    <value>Granularity is not defined.</value>
+  </data>
+  <data name="RegularMeasureGroupDimension_MultipleGranularitiesDefined" xml:space="preserve">
+    <value>Multiple granularities defined. Only one is accepted and required.</value>
+  </data>
+  <data name="RuleCategory_Cube" xml:space="preserve">
+    <value>Cube Design</value>
+  </data>
+  <data name="RuleCategory_DataSource" xml:space="preserve">
+    <value>Data Source Design</value>
+  </data>
+  <data name="RuleCategory_Database" xml:space="preserve">
+    <value>Database Design</value>
+  </data>
+  <data name="RuleCategory_Dimension" xml:space="preserve">
+    <value>Dimension Design</value>
+  </data>
+  <data name="RuleCategory_PartitionAndAggregation" xml:space="preserve">
+    <value>Partition and Aggregation Design</value>
+  </data>
+  <data name="Server_AssemblyNotAllowed" xml:space="preserve">
+    <value>CLR assemblies are not allowed in local cubes or mining models.</value>
+  </data>
+  <data name="Server_BackupNotAllowed" xml:space="preserve">
+    <value>Backup is not allowed for local cubes or mining models.</value>
+  </data>
+  <data name="Server_RestoreNotAllowed" xml:space="preserve">
+    <value>Restore is not allowed for local cubes or mining models.</value>
+  </data>
+  <data name="SourceColumnIsUnknown" xml:space="preserve">
+    <value>The source points to an unknown column '{0}' in the '{1}' table from the '{2}' data source view.</value>
+  </data>
+  <data name="SourceIsMissing" xml:space="preserve">
+    <value>The source is not specified.</value>
+  </data>
+  <data name="SourceTableIsUnknown" xml:space="preserve">
+    <value>The source points to an unknown table '{0}' in the '{1}' data source view.</value>
+  </data>
+  <data name="TableMiningStructureColumn_ForeignKeyColumns_MultiPathsFromTheNestedKey" xml:space="preserve">
+    <value>There are multiple paths (in the data source view) from '{1}' (the source table of the nested key column) to the ForeignKeyColumns table '{0}'. This ambiguity can generate wrong data when processing.</value>
+  </data>
+  <data name="TableMiningStructureColumn_ForeignKeyColumns_MultiPathsToCaseTable" xml:space="preserve">
+    <value>There are multiple paths (in the data source view) from the ForeignKeyColumns table '{0}' to the case table '{1}'. This ambiguity can generate wrong data when processing.</value>
+  </data>
+  <data name="TableMiningStructureColumn_ForeignKeyColumns_NoPathFromTheNestedKey" xml:space="preserve">
+    <value>There is no path (in the data source view) from '{1}' (the source table of the nested key column) to the ForeignKeyColumns table '{0}'.</value>
+  </data>
+  <data name="TableMiningStructureColumn_ForeignKeyColumns_NoPathToCaseTable" xml:space="preserve">
+    <value>There is no path (in the data source view) from the ForeignKeyColumns table '{0}' to the case table '{1}'.</value>
+  </data>
+  <data name="TooManyParentChildDimsWithOutlineCalcs" xml:space="preserve">
+    <value>A database should have no more than {0} parent-child dimensions that have the UnaryOperatorColumns, CustomRollupColumns, or CustomRollupPropertiesColumns calculations defined on the attributes.</value>
+  </data>
+  <data name="Translation_NotAllow" xml:space="preserve">
+    <value>Only dimension attributes and attribute relationships can have translations in this edition of Analysis Services.</value>
+  </data>
+  <data name="UnsupportedOledbProvider" xml:space="preserve">
+    <value>Do not use unsupported OLE DB providers in a DataSource.</value>
+  </data>
+</root>

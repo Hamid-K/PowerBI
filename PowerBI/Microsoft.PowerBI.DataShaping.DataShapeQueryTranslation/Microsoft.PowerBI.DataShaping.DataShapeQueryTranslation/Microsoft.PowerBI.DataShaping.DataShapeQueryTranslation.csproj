@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{861F530B-2074-4E99-8398-15359D87CBC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataShaping.DataShapeQueryTranslation</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataShaping.DataShapeQueryTranslation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Analytics.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Analytics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.InternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.InternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.QueryDesignModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.QueryDesignModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\BatchSortByMeasureSourceAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\BatchSubtotalSortAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\BatchSubtotalSortAnnotations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\CalculationAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataIntersectionAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataMemberAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataMemberAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataMemberAnnotations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataShapeAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataShapeAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataShapeAnnotations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\DataShapeSharedAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\FilterAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\FilterAnnotationAnalyzerResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\LimitsWithAppliedToDataShape.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\LimitWithAppliedToDataShape.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\SortByMeasureInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\SortByMeasureInfoCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\SubtotalSortDirectionAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\WriteableDataShapeAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Annotations\WriteableDataShapeSharedAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchColumnReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataBinding.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataBindingMapping.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlanner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlannerContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlannerExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlannerExpressionTreeTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlannerFilterExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlannerFilterExpressionTreeTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlanningFilterUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlanningResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlanningSegmentationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDataSetPlanningUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDiscardCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchDiscardConditionOperator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchMatchCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchMemberDiscardConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchMemberMatchConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchPlanningStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchPlanningStrategyUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchRestartIndicator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\BatchSortByMeasureExpressionMappings.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\CalculationExpressionAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\CalculationExpressionMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\CalculationsWithSharedValues.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ContextTableCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\DataSetPlanningException.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\EmptyFilterDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\FilterDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\FilterUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\GroupDetailAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\GroupDetailMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\HighlightDeclarationCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ICommonPlanningContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IFilterDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\InstanceFilterCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\InstanceFiltersContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateColumnReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateCorrelations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateDiscardCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateMatchCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateMemberDiscardConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateMemberMatchConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntermediateTelemetryItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IntersectionCorrelations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IPlanNamedItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\IPlanOperationTreeGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ISubqueryPlanOperationGeneratorContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\BatchDataSetPlannerBinnedLineSampleLimitTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\BatchDataSetPlannerOverlappingPointsSampleLimitTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\BatchDataSetPlannerSimpleLimitTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\BatchDataSetPlannerTopNPerLevelSampleLimitTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\GroupSynchronizationApplier.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\IntermediateScopedLimitState.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\LimitApplier.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\PlanLimitInfoBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\LimitPlanning\WindowTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\MemberMatchConditionCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\OutputTableMapping.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanExpressionBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanLimitInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNamedEntity.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNamedItemKind.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNamedScalar.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNamedTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNamedTableContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanNames.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\ColumnReuseKind.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\ColumnWithExplicitName.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanAggregateItemVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanBinnedLineSampleItemVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanGroupByItemVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanOperationVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanProjectItemVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\IPlanSortItemVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanAggregateCalculationItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanAggregateExpressionItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanAggregateItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanAllColumnsSortItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanBinnedLineSampleCalculation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanBinnedLineSampleItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanBinnedLineSampleMember.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanCalculationProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanColumnSortItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanDataMemberProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanDataTransformColumnMeasure.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanExpression.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupAndJoinAdditionalColumn.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupAndJoinPredicateBehavior.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByCalculation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByColumn.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByDataTransformColumn.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByGroupKey.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanGroupByMember.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanMapColumnIdentityProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanMemberSortItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanNamedColumnProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanNewColumnProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationAddJoinIndex.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationAddMissingItems.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationAddMissingItemsCompatPattern.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationApplyStartPosition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationBinnedLineSample.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationCalculateTableInFilterContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationClearDefaultContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationCreateFilterContextTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationCrossJoin.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationDataTransform.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationDeclarationEqualityComparer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationDeclarationReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationDistinctRows.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationEnsureUniqueUnqualifiedNames.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationFilterBy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationFilteringMetadata.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationFullOuterCrossJoin.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationGroupAndJoin.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationGroupBy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationInnerJoin.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationLeftOuterJoin.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationLimitByCount.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationOverlappingPointsSample.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationProject.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationSample.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationSingleRow.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationSortBy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationSubstituteWithIndex.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationTableScan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationTopN.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationTopNPerLevelSample.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationTopNSkip.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationUnion.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanOperationVisualCalculationReferenceableTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanPreserveAllColumnsExceptProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanPreserveAllColumnsProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanPreserveCalculationProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanPreserveColumnsProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanSortItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanTransformExistingColumnProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\PlanTransformExistingColumnWithSameNameProjectItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\SingleRowAdditionalColumn.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperations\SubtotalColumnFilteringMetadata.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperationTreeGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanOperationTreeGeneratorResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\PlanVisualShape.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\QueryStageForInstanceFilters.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ReadOnlyCalculationExpressionMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ReadOnlyGroupDetailMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\RowScopesMetadata.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ScopedAggregatesInputTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ScopedAggregateTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\ScopedMeasureShowAllRestorationMode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\SortByMeasureTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\SubqueryDataShapeTableCache.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\SubqueryPlanOperationGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\SubqueryReferenceFilterAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregateInputStack.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregateRewriteMode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesInputTableCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableGroupByStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableJoiner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableModelExpressionRewriter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableSingleRowOnlyStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\AggregatesTableStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\BatchDataSetPlannerJoinPredicates.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\BatchGroupAndJoinBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ComplexSlicerTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableArtifacts.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableBuilderStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableComplexSlicerStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableSimpleSlicerStrategy.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\CoreTableTotalsTransforms.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DataTransformApplier.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DetailTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DetailTableExpressionRewriter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DynamicLimitCounts.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DynamicLimitsTablesBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DynamicLimits\DynamicLimitsExprNodeBuilderExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\DynamicScopedLimitsBalancer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\EnhancedSamplingKeyPointsTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ExistsFilterTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\GroupByAggregateExpressionRewriter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\GroupByRegroupedAggregateExpressionRewriter.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\GroupByRegroupingItems.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\HierarchyPlanOperationApplier.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\IAggregatesPlanningContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\IDetailTableBuilderContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ILimitPlanningContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\InstanceFiltersBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\IShowAllTableBuilderContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\IValueFilterPlanningContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\KeyPointsTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\LimitMetadataTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\RegroupingItemsCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\RowResultSetType.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ScopedTablesBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ScopedTablesCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ShowAllTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\SimpleSlicerTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\SingleRowPlaceholderTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\SubqueryFilterTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\SubqueryIntermediatePlan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\SynchronizationInputTablesCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableBuilders\ValueFilterTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\AggregateGroupByTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\AggregateGroupByTableManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\AggregateReferenceTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\AggregateSubqueryTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\ContextTableManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\IAggregateInputTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\SubqueryTableManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableManagers\WritableContextTableManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\TableReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\WritableCalculationExpressionMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDataSetPlanning\WritableGroupDetailMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchDefinitionGeneration\BatchDsdGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchAddMissingItemsCompatPatternTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchAddMissingItemsTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchGroupAndJoinQueryTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryAggregateItemGenerationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryAggregateItemGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryBinnedLineSampleItemGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryDataTransformTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryEntityDeclarationGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExpressionReferenceContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExtensionSchemaExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExtensionSchemaExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryExtensionSchemaTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerationNamingContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerationNamingContextManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryGroupItemGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryMemberDiscardCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryMemberDiscardConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryMemberMatchCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryMemberMatchConditions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryProjectItemGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryRestartIndicator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQuerySortItemGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchQueryTableGeneratorImpl.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\BatchTopNPerLevelQueryTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\DataTransformConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\DataTransformFunctionArgumentsBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\DataTransformQueryUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\DataTransformRoleMappingTableBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\EnsureUniqueUnqualifiedNamesGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedColumnMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedEntityDeclaration.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedScalarDeclaration.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\GeneratedTableDeclaration.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\IBatchQueryExtensionSchemaExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\IndexInjectionTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\QueryItemCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\ReadOnlyGeneratedDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\RenameColumnsWithExplictNameGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\VisualCalculationReferenceableTableGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\WritableGeneratedColumnMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchQueryGeneration\WritableGeneratedDeclarationCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchSubtotalAnnotation.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\BatchSubtotalAnnotations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CalculationFilterTransform.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\CommonDataSetPlanningUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataSetPlannerExpressionTreeTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataSetPlannerFilterExpressionTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataSetPlannerFilterExpressionTreeTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataTransformColumnReferrers.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataTransformReferenceAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDataSetPlanning\DataTransformReferenceMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\BuildRestartDefinition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DefinitionGenerationException.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DefinitionGenerationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdExpressionNodeTypes.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdGeneratorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdGeneratorIdContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdLimitGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\DsdLimitMetadata.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonDefinitionGeneration\TransformInputTableMapping.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\GeneratedQueryParameterMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\QueryBuilderExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\QueryExtensionSchemaTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\QueryGenerationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\QueryParameterGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\CommonQueryGeneration\WritableGeneratedQueryParameterMap.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Common\IncludeInStageExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Common\LimitOverride.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Common\LimitTelemetryItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Common\LimitTelemetryItemNames.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Common\SubtotalUsage.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Constants.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\AggregateExpressionFlattener.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\BindingGenerationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\BindingInformationCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\CalculationPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ConceptualEntityExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextFilterExpressionTreeTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextFilterTranslationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextFilterTranslatorUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextGraph.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextGraphBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextMerger.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextOnlyElementMarking.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextState.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextStateExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ContextWeights.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataBinding.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataBindingMapping.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataIntersectionPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataMemberPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanElementVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanGeneratorResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerContextFilterTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerExpressionTranslationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerExpressionTreeTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerFilterExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerFilterExpressionTreeTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerFilterTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerFilterTranslatorResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlannerLimitTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanningResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataSetPlanTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DataShapePlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DsdDataBindingGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DsdDataBindingMetadata.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\DsdDataBindingMetadataCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\EvaluationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\EvaluationContextBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\EvaluationContextBuilderOptions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ExpressionPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\FilterMergeInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\IDataSetPlan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\JoinCondition.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\JoinPredicateSubQueryDataSetPlanner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\NestedPlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\OutputPlanMapping.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\Relationship.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\RollupRequirement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\RollupTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\RollupTranslatorResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\RollupTranslatorScopeSort.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ScopeElementWithDistances.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ScopeFilterExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\ScopePlanElement.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\SubQueryDataSetPlan.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSetPlanning\SubQueryDataSetPlanner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryParser.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationException.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationOptions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationTelemetry.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQueryTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeQuery\Expressions\ExpressionNodeExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\DataShapeValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\DataSourceValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\ExpressionValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\FilterValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\IdentifierValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\LimitValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\VisualAxisReconciler.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataShapeValidation\VisualAxisValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataSourceContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\BatchExpressionTableLookup.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformColumnInliningInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformInliner.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformInlinerExpressionTransform.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformInliningResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformRestorationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformRestorer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\DataTransformRestorerRemapper.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\ExpressionReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\ExpressionRestorationInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\IExpressionTableLookup.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\RegularExpressionTableLookup.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DataTransformBypass\ResultSetReference.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DefinitionGeneration\DsdDataSetGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DefinitionGeneration\DsdGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DsqtStrings.Designer.cs">
+      <DependentUpon>DsqtStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\EntityDataModelParser.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\EntitySetReferenceAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\EvaluateScopeAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\ExpressionAnalysisUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\FilterAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\FilterComplexityAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\FilterReconstructor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\MeasureAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\ModelReferenceAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\ModelReferenceAnalyzerBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\QueryInclusionAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\ScopeReferenceExpressionAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\StructureAggregateAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\SubqueryCalculationReferenceAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionAnalysis\SubtotalAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionStringBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExpressionStringBuilderFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\ExtensionEdmItemCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\ExtensionEntityDataModel.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\ExtensionEntityDataModelFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\FederatedEntityDataModel.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\FederatedEntityDataModelExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\FederatedEntityDataModelFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ExtensionEdm\IReadOnlyExtensionEdmItemCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\FeatureAnalysis\DsqFeature.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\FeatureAnalysis\ExpressionFeature.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\FilteredColumnsCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\FilterExpressionCollector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\FilterExpressionInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\IDataShapeQueryTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\IModelParser.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\InstanceFilterTelemetry.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\LimitUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\BatchSubtotalAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\ExpressionNodeTreeReconciler.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\ExpressionReconciler.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\FilterReconciler.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\LimitExpressionValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\ModelReconciler.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ModelReconciliation\ModelReconciliationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Normalization\DataShapeNormalizationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Normalization\DataShapeNormalizer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Normalization\FilterNormalizer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Normalization\NormalizationUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\Normalization\RestartTokenToStartPositionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\BasicQueryExpressionTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\ExpressionTranslationException.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\GroupAndSortingContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\GroupCluster.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\GroupClusterBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\IQueryConstraint.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\IQueryExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\ISubQueryGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryConstraintStatus.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryDataWindowGenerationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryDataWindowGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionFeatures.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionGeneratorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionGeneratorCache.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExpressionTranslatorBase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryExtensionSchemaTranslator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryFilterGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerationContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerationDevErrors.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerationException.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerationResultExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryGeneratorExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryLimitConstraintContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryLimitGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QuerySubtotalGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryTrimmer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\QueryWindowContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\SortKeyContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\SubQuery.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\SubQueryGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryGeneration\UnconstrainedQueryReasons.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\BatchQueryModelChecker.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternReason.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternReasonCollection.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelectionContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelectionResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelector.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelectorDataShapeAnalyzer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelectorExpressionVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\QueryPatternSelection\QueryPatternSelectorFilterVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ReadOnlyDictionary.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\ReadOnlyDictionaryExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\DataShapeSemanticValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\ExpressionFeatureFlags.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\ExpressionFeatures.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\ExpressionNodeSemanticValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\ExpressionSemanticValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\ExpressionValidationResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\FilterSemanticValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\SemanticValidation\LimitSemanticValidator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationErrorCode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationErrorContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationMessage.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationMessagePhrase.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationMessagePhrases.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationMessages.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\TranslationMessageUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQueryTranslation\WritableBatchSubtotalAnnotations.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Builder\DsqExpressionBuilderExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\ContextFilterDataShapeVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\DataShapeDefaultValueContextManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\DataShapeQueryUtils.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\AggregatableCurrentGroupExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\AggregatableSubQueryExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ApplyContextFilterExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\BatchColumnReferenceByExpressionIdExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\BatchColumnReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\BatchFilterInlinedDeclarationCalculationExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\BatchScalarDeclarationReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\BatchSubQueryExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\DataSetFieldReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionComparerByNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionContext.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionIdGenerator.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionLexer.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionNodeTreeTransform.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionParser.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionToken.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExpressionTokenKind.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ExprNodes.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\FilterInlinedCalculationExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\IExpressionNodeVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\LexerConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\PlaceholderExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ReadOnlyExpressionTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\RelatedResolvedPropertyExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\RemoveGroupingsExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedCalculationReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedDataTransformTableColumnReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedEntitySetExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedGroupElementReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedGroupKeyReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedLimitReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedPropertyExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedRollupExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedScopeReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedScopeValueDefinitionReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedSortKeyReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\ResolvedStructureReferenceExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\RollupExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\SingleValueExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\SubExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\TableSubQueryExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\UnaryOperatorExpressionNode.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\UnaryOperatorKind.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\Expressions\WritableExpressionTable.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\FilterExpressionVisitor.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\IDataShapeDefaultValueContextManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\NoOpDataShapeDefaultValueContextManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\ScopeTree.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\ScopeTreeBuilder.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataShapeQuery\TraversalExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\ReportingServices\DataShapeQueryTranslation\DsqtStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DsqtStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

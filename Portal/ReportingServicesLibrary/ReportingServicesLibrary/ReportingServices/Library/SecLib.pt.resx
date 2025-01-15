@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>Crie, exiba, edite e exclua comentários em relatórios.</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>Comentar em relatórios</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>Exiba e modifique configurações de segurança para relatórios, pastas, recursos e fontes de dados compartilhados.</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>Definir segurança para itens individuais</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>Lê definições de relatórios</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>Relatórios de consumo</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>Crie relatórios vinculados e publique-os em uma pasta do servidor de relatório.</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>Criar relatórios vinculados</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>Inicie a execução na definição do relatório sem publicá-la no Servidor de Relatório.</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>Executar Definições de Relatórios</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>Fornece a um aplicativo a possibilidade de gerar eventos no namespace do servidor de relatório.</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>Gerar eventos</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>Exiba, modifique e exclua qualquer assinatura, independentemente de a quem ela pertença.</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>Gerenciar todas as assinaturas</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>Exclua os comentários de outros usuários em relatórios.</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>Gerenciar comentários</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>Crie e exclua itens de fonte de dados compartilhados e modifique as propriedades das fontes de dados.</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>Gerenciar fontes de dados</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>Crie, exiba e exclua pastas. Exiba e modifique suas propriedades.</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>Gerenciar pastas</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>Exiba e cancele trabalhos que estão em execução.</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>Gerenciar trabalhos</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>Crie, exiba e exclua modelos e exiba e modifique suas propriedades.</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>Gerenciar modelos</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>Crie, exiba e exclua instantâneos de histórico de relatório e modifique as propriedades do histórico de relatório.</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>Gerenciar histórico de relatórios</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>Crie e exclua relatórios e modifique suas propriedades.</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>Gerenciar relatórios</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>Crie, modifique e exclua recursos, e modifique suas propriedades.</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>Gerenciar recursos</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>Crie, exiba, modifique e exclua definições de funções.</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>Gerenciar funções</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>Crie, exiba, modifique e exclua agendas compartilhadas usadas para executar ou atualizar relatórios.</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>Gerenciar agendas compartilhadas</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>Exiba e modifique as propriedades que se aplicam ao servidor de relatório e a itens gerenciados pelo servidor de relatório.</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>Gerenciar propriedades do servidor de relatório</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>Exiba e modifique atribuições de funções do sistema.</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>Gerenciar segurança do servidor de relatório</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>Cada usuário pode criar, exibir, modificar e excluir assinaturas pertencentes a ele.</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>Gerenciar assinaturas individuais</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>Exiba itens de fontes de dados compartilhados na hierarquia de pastas e exiba propriedades de fontes de dados.</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>Exibir fontes de dados</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>Exiba itens de pastas na hierarquia de pastas e exiba propriedades de pastas.</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>Exibir pastas</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>Exiba os itens em um modelo específico.</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>Exibir Itens de Modelos</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>Exiba modelos na hierarquia de pastas, use modelos como fontes de dados de um relatório e execute consultas contra o modelo para recuperar dados.</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>Exibir modelos</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>Exiba relatórios e relatórios vinculados na hierarquia de pastas e exiba instantâneos de histórico de relatório e propriedades de relatórios.</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>Exibir relatórios</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>Exiba recursos na hierarquia de pastas e exiba propriedades de recursos.</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>Exibir recursos</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>Exibir um agendamento predefinido que tenha sido disponibilizado para uso geral.</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>Exibir agendas compartilhadas</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>Exiba propriedades que se aplicam ao servidor de relatório.</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>Exibir propriedades do servidor de relatório</value>
+  </data>
+</root>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7DA4EC1-1EDE-4ACD-A59E-43E0B9F6954F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Extensions.DependencyInjection</RootNamespace>
+    <AssemblyName>Microsoft.Extensions.DependencyInjection</AssemblyName>
+    <TargetFrameworkVersion>v1.1</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultServiceProviderFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ServiceCollection.cs" />
+    <Compile Include="ServiceCollectionContainerBuilderExtensions.cs" />
+    <Compile Include="ServiceLookup\CallSiteExpressionBuilder.cs" />
+    <Compile Include="ServiceLookup\CallSiteRuntimeResolver.cs" />
+    <Compile Include="ServiceLookup\CallSiteValidator.cs" />
+    <Compile Include="ServiceLookup\CallSiteVisitor.cs" />
+    <Compile Include="ServiceLookup\ClosedIEnumerableCallSite.cs" />
+    <Compile Include="ServiceLookup\ClosedIEnumerableService.cs" />
+    <Compile Include="ServiceLookup\ConstantCallSite.cs" />
+    <Compile Include="ServiceLookup\ConstructorCallSite.cs" />
+    <Compile Include="ServiceLookup\CreateInstanceCallSite.cs" />
+    <Compile Include="ServiceLookup\EmptyIEnumerableCallSite.cs" />
+    <Compile Include="ServiceLookup\FactoryService.cs" />
+    <Compile Include="ServiceLookup\GenericService.cs" />
+    <Compile Include="ServiceLookup\IGenericService.cs" />
+    <Compile Include="ServiceLookup\InstanceService.cs" />
+    <Compile Include="ServiceLookup\IService.cs" />
+    <Compile Include="ServiceLookup\IServiceCallSite.cs" />
+    <Compile Include="ServiceLookup\OpenIEnumerableService.cs" />
+    <Compile Include="ServiceLookup\ScopedCallSite.cs" />
+    <Compile Include="ServiceLookup\Service.cs" />
+    <Compile Include="ServiceLookup\ServiceEntry.cs" />
+    <Compile Include="ServiceLookup\ServiceProviderService.cs" />
+    <Compile Include="ServiceLookup\ServiceScope.cs" />
+    <Compile Include="ServiceLookup\ServiceScopeFactory.cs" />
+    <Compile Include="ServiceLookup\ServiceScopeService.cs" />
+    <Compile Include="ServiceLookup\ServiceTable.cs" />
+    <Compile Include="ServiceLookup\SingletonCallSite.cs" />
+    <Compile Include="ServiceLookup\TransientCallSite.cs" />
+    <Compile Include="ServiceProvider.cs" />
+    <Compile Include="System\Collections\Concurrent\ConcurrentDictionaryExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

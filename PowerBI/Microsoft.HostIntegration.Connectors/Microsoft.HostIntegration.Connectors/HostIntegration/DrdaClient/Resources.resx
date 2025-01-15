@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Drda_AlreadyEndTransaction" xml:space="preserve">
+    <value>The transaction has already been committed or rolled back.</value>
+  </data>
+  <data name="Drda_BadData" xml:space="preserve">
+    <value>The data in column {0} could not be converted: {1}</value>
+  </data>
+  <data name="Drda_BadDataGeneralError" xml:space="preserve">
+    <value>The data conversion engine encountered an unexpected error.</value>
+  </data>
+  <data name="Drda_BadDataInvalidCast" xml:space="preserve">
+    <value>Invalid data-type cast.</value>
+  </data>
+  <data name="Drda_BadDataInvalidDateTime" xml:space="preserve">
+    <value>The DateTime is invalid.</value>
+  </data>
+  <data name="Drda_BadDataNoConversion" xml:space="preserve">
+    <value>No data conversion exists.</value>
+  </data>
+  <data name="Drda_BadDataOutOfRange" xml:space="preserve">
+    <value>The data is out of range.</value>
+  </data>
+  <data name="Drda_BatchFailed" xml:space="preserve">
+    <value>Batch Failed</value>
+  </data>
+  <data name="Drda_BulkCopyDestinationFieldsNotMatch" xml:space="preserve">
+    <value>BulkCopy Destination table should have the same columns as source if column mappings is not defined.</value>
+  </data>
+  <data name="Drda_ClosedConnectionError" xml:space="preserve">
+    <value>Invalid operation. The connection is closed.</value>
+  </data>
+  <data name="Drda_CollectionIndexInt32" xml:space="preserve">
+    <value>Invalid index {0} for this {1} with Count={2}.</value>
+  </data>
+  <data name="Drda_CollectionIndexString" xml:space="preserve">
+    <value>An {0} with {1} '{2}' is not contained by this {3}.</value>
+  </data>
+  <data name="Drda_CollectionInvalidType" xml:space="preserve">
+    <value>The {0} only accepts non-null {1} type objects, not {2} objects.</value>
+  </data>
+  <data name="Drda_CollectionIsNotParent" xml:space="preserve">
+    <value>The {0} with {1} '{2}' is already contained by another {3}.</value>
+  </data>
+  <data name="Drda_CollectionIsParent" xml:space="preserve">
+    <value>The {0} with {1} '{2}' is already contained by this {3}.</value>
+  </data>
+  <data name="Drda_CollectionNullValue" xml:space="preserve">
+    <value>The {0} only accepts non-null {1} type objects.</value>
+  </data>
+  <data name="Drda_CollectionRemoveInvalidObject" xml:space="preserve">
+    <value>Attempted to remove an {0} that is not contained by this {1}.</value>
+  </data>
+  <data name="Drda_CollectionUniqueValue" xml:space="preserve">
+    <value>The {0}.{1} is required to be unique, '{2}' already exists in the collection.</value>
+  </data>
+  <data name="Drda_CommandTextNull" xml:space="preserve">
+    <value>Command text was not set for the command object.</value>
+  </data>
+  <data name="Drda_CommandTimeoutInvalid" xml:space="preserve">
+    <value>CommandTimeout value of {0} is not valid.</value>
+  </data>
+  <data name="Drda_ConnectionAlreadyOpen" xml:space="preserve">
+    <value>The connection is already Open (state={0}).</value>
+  </data>
+  <data name="Drda_ConnectionStringSyntax" xml:space="preserve">
+    <value>Format of the initialization string does not conform to specification starting at index {0}.</value>
+  </data>
+  <data name="Drda_ConnectionTimedOut" xml:space="preserve">
+    <value>Connection request timed out. There are no more connections available in the pool.</value>
+  </data>
+  <data name="Drda_ConvertFailed" xml:space="preserve">
+    <value>Cannot convert object of type '{0}' to object of type '{1}'.</value>
+  </data>
+  <data name="Drda_DataReaderClosed" xml:space="preserve">
+    <value>Invalid attempt to {0} when reader is closed.</value>
+  </data>
+  <data name="Drda_DataReaderNoData" xml:space="preserve">
+    <value>No data exists for the row/column.</value>
+  </data>
+  <data name="Drda_EmptyDatabaseName" xml:space="preserve">
+    <value>Database cannot be null, the empty string, or string of only whitespace.</value>
+  </data>
+  <data name="Drda_InvalidBatchNoParameters" xml:space="preserve">
+    <value>DrdaCommand object has no parameters. please define them first. &gt;= 0.</value>
+  </data>
+  <data name="Drda_InvalidBatchValuesToParameters" xml:space="preserve">
+    <value>Number of parameters in DrdaCommand {0} doesn't correspond to number of elements in array {1}.&gt;= 0.</value>
+  </data>
+  <data name="Drda_InvalidBulkCopyDestinationColumn" xml:space="preserve">
+    <value>BulkCopy Destination Column doesn't exist in the columns of destination table : {0} .</value>
+  </data>
+  <data name="Drda_InvalidBulkCopyDestinationOrdinal" xml:space="preserve">
+    <value>BulkCopy Destination Ordinal is out of range: {0}.</value>
+  </data>
+  <data name="Drda_InvalidBulkCopyMappingCollectionTypes" xml:space="preserve">
+    <value>Column Mappings must be either all name or all ordinal based.</value>
+  </data>
+  <data name="Drda_InvalidBulkCopySourceColumn" xml:space="preserve">
+    <value>BulkCopy Source Column doesn't exist in the columns of source : {0} .</value>
+  </data>
+  <data name="Drda_InvalidBulkCopySourceOrdinal" xml:space="preserve">
+    <value>BulkCopy Source Ordinal is out of range: {0}.</value>
+  </data>
+  <data name="Drda_InvalidBulkCopyTimeoutValue" xml:space="preserve">
+    <value>Invalid 'BulkCopyTimeout' value ({0}) which must be an integer &gt;= 0.</value>
+  </data>
+  <data name="Drda_InvalidCommandType" xml:space="preserve">
+    <value>The CommandType enumeration value, {0}, is invalid.</value>
+  </data>
+  <data name="Drda_InvalidConnectTimeoutValue" xml:space="preserve">
+    <value>Invalid 'Connect Timeout' value which must be an integer &gt;= 0.</value>
+  </data>
+  <data name="Drda_InvalidConnectionOptionLength" xml:space="preserve">
+    <value>Invalid length for connection option '{0}', maximum length is {1}.</value>
+  </data>
+  <data name="Drda_InvalidConnectionOptionValue" xml:space="preserve">
+    <value>Invalid value for key '{0}'.</value>
+  </data>
+  <data name="Drda_InvalidDataRowVersion" xml:space="preserve">
+    <value>{0}: Invalid DataRow Version enumeration value: {1}.</value>
+  </data>
+  <data name="Drda_InvalidDataType" xml:space="preserve">
+    <value>The parameter data type of {0} is invalid.</value>
+  </data>
+  <data name="Drda_InvalidDrdaType" xml:space="preserve">
+    <value>Value is not valid for DrdaType: {0}.</value>
+  </data>
+  <data name="Drda_InvalidIsolationLevel" xml:space="preserve">
+    <value>The IsolationLevel value {0} is invalid.</value>
+  </data>
+  <data name="Drda_InvalidParameterDirection" xml:space="preserve">
+    <value>Invalid direction '{0}' for '{1}' parameter.</value>
+  </data>
+  <data name="Drda_InvalidSizeValue" xml:space="preserve">
+    <value>Invalid parameter Size value '{0}'. The value must be greater than or equal to 0.</value>
+  </data>
+  <data name="Drda_InvalidUDL" xml:space="preserve">
+    <value>Invalid UDL file.</value>
+  </data>
+  <data name="Drda_InvalidUpdateRowSource" xml:space="preserve">
+    <value>The UpdateRowSource enumeration value, {0}, is invalid.</value>
+  </data>
+  <data name="Drda_KeywordNotSupported" xml:space="preserve">
+    <value>Keyword not supported: '{0}'.</value>
+  </data>
+  <data name="Drda_NoActiveTransaction" xml:space="preserve">
+    <value>The command specified a transaction, but there is no active transaction running on the connection.</value>
+  </data>
+  <data name="Drda_NoConnectionString" xml:space="preserve">
+    <value>The ConnectionString property has not been initialized.</value>
+  </data>
+  <data name="Drda_NoConnectionsInPool" xml:space="preserve">
+    <value>Failed to get connection from pool.</value>
+  </data>
+  <data name="Drda_NoDistributedTransactions" xml:space="preserve">
+    <value>Distributed transactions are not supported when using a connection configured for local transactions.</value>
+  </data>
+  <data name="Drda_NoLocalTransactionInDistributedContext" xml:space="preserve">
+    <value>You may not begin a local transaction while in a distributed transaction.</value>
+  </data>
+  <data name="Drda_NoLocalTransactions" xml:space="preserve">
+    <value>Local transactions are not supported when using a connection configured for distributed transactions.</value>
+  </data>
+  <data name="Drda_NoMixedParameters" xml:space="preserve">
+    <value>Named parameters are not supported when also using unamed parameters. The command must use all named parameters, or all unnamed parameters.</value>
+  </data>
+  <data name="Drda_NotPartOfTransaction" xml:space="preserve">
+    <value>The command is not part of the current transaction.</value>
+  </data>
+  <data name="Drda_NotSupported" xml:space="preserve">
+    <value>{0} is not supported by DrdaClient.</value>
+  </data>
+  <data name="Drda_OpenConnectionPropertySet" xml:space="preserve">
+    <value>Not allowed to change the '{0}' property while the connection (state={1}).</value>
+  </data>
+  <data name="Drda_OpenReaderExists" xml:space="preserve">
+    <value>There is already an open DataReader associated with this Command which must be closed first.</value>
+  </data>
+  <data name="Drda_ParallelTransactionsNotSupported" xml:space="preserve">
+    <value>{0} does not support parallel transactions.</value>
+  </data>
+  <data name="Drda_ParameterValueNotSupported" xml:space="preserve">
+    <value>Parameter value with type {0} is not supported.</value>
+  </data>
+  <data name="Drda_SchemaBadRestrictionCount" xml:space="preserve">
+    <value>More restrictions were provided than the requested schema ('{0}') supports. The maximum number of restrictions for this schema is {1}.</value>
+  </data>
+  <data name="Drda_SchemaBadRestrictionLength" xml:space="preserve">
+    <value>The restriction {0} has a length longer than the requested schema ('{1}') supports. The maximum length for this restriction is {2}.</value>
+  </data>
+  <data name="Drda_SchemaBadRestrictionType" xml:space="preserve">
+    <value>The restriction {0} has a type that the requested schema ('{1}') does not support. The correct type for this restriction is a string that can convert to a {2}.</value>
+  </data>
+  <data name="Drda_SchemaNoCollection" xml:space="preserve">
+    <value>The requested collection ('{0}') is not defined.</value>
+  </data>
+  <data name="Drda_SchemaNotSupported" xml:space="preserve">
+    <value>Schema information is not supported from that host type.</value>
+  </data>
+  <data name="Drda_TableListNotSupported" xml:space="preserve">
+    <value>Table lists are not supported on ExecuteReader().</value>
+  </data>
+  <data name="Drda_UdlFileError" xml:space="preserve">
+    <value>Unable to load the UDL file.</value>
+  </data>
+  <data name="Drda_UnknownDataType" xml:space="preserve">
+    <value>No mapping exists from DbType {0} to a known {1}.</value>
+  </data>
+  <data name="Drda_UnknownDataTypeCode" xml:space="preserve">
+    <value>Unable to handle an unknown TypeCode of {0} with DataType of {0}.</value>
+  </data>
+  <data name="InternalNetworkError" xml:space="preserve">
+    <value>Internal network library error.</value>
+  </data>
+  <data name="InvalidQualifiedProcName" xml:space="preserve">
+    <value>Invalid qualified stored procedure name {0}.</value>
+  </data>
+  <data name="InvalidQualifiedProcNameTooManyParts" xml:space="preserve">
+    <value>Invalid qualified stored procedure name {0}. The name contains too many parts.</value>
+  </data>
+  <data name="InvalidQualifiedTableName" xml:space="preserve">
+    <value>Invalid qualified table name {0}.</value>
+  </data>
+  <data name="InvalidQualifiedTableNameTooManyParts" xml:space="preserve">
+    <value>Invalid qualified table name {0}. The name contains too many parts.</value>
+  </data>
+</root>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreateColumnEntityRule_ColumnEntityName" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="CreateEntityRule_NoPrimaryKey" xml:space="preserve">
+    <value>테이블에 기본 키가 없습니다.</value>
+  </data>
+  <data name="CreateEntityRule_NonPrimaryDataSource" xml:space="preserve">
+    <value>테이블의 데이터 원본이 주 데이터 원본이 아닙니다.</value>
+  </data>
+  <data name="CreateRoleRule_RoleNameWithEntity" xml:space="preserve">
+    <value>{0}({1})</value>
+  </data>
+  <data name="CreateRoleRule_SelfRelationWithMatchingColumns" xml:space="preserve">
+    <value>자체 관계에 일치하는 부모 및 자식 열 이름이 있습니다. 데이터 원본 뷰가 손상된 것 같습니다.</value>
+  </data>
+  <data name="CreateRoleRule_SourceOrTargetEntityDoesNotExist" xml:space="preserve">
+    <value>원본 또는 대상 엔터티가 없습니다.</value>
+  </data>
+  <data name="ModelGen_AlreadyExecuting" xml:space="preserve">
+    <value>모델 생성이 이미 실행되고 있습니다. 먼저 취소하십시오.</value>
+  </data>
+  <data name="ModelGen_PassHeader" xml:space="preserve">
+    <value>---------------- 패스 {0} ------------------</value>
+  </data>
+  <data name="ModelGen_RelationProgressLine1" xml:space="preserve">
+    <value>패스 {0}: 관계에 대한 규칙을 처리하고 있습니다.</value>
+  </data>
+  <data name="ModelGen_TableProgressLine1" xml:space="preserve">
+    <value>패스 {0}: 테이블과 열에 대한 규칙을 처리하고 있습니다.</value>
+  </data>
+  <data name="ModelGen_TableProgressLine2" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="Rules_AttributeDoesNotExist" xml:space="preserve">
+    <value>특성이 없습니다.</value>
+  </data>
+  <data name="Rules_CreatedModelItem" xml:space="preserve">
+    <value>{0} 만듦</value>
+  </data>
+  <data name="Rules_DependentRuleOnExistingItem" xml:space="preserve">
+    <value>이 모델 생성 {0}에서 부모 항목을 만들지 못했습니다.</value>
+  </data>
+  <data name="Rules_EntityDoesNotExist" xml:space="preserve">
+    <value>엔터티가 없습니다.</value>
+  </data>
+  <data name="Rules_FoundExistingModelItem" xml:space="preserve">
+    <value>기존 항목을 찾았습니다: {0}</value>
+  </data>
+  <data name="Rules_ModifiedModelItem" xml:space="preserve">
+    <value>{0}을(를) 수정했습니다.</value>
+  </data>
+  <data name="Rules_ParentEntityDoesNotExist" xml:space="preserve">
+    <value>부모 엔터티가 없습니다.</value>
+  </data>
+  <data name="Rules_UnsupportedDataType" xml:space="preserve">
+    <value>데이터 형식 '{0}'이(가) 지원되지 않습니다.</value>
+  </data>
+  <data name="SetEntityAttributesRule_AlreadySet" xml:space="preserve">
+    <value>{0}이(가) 이미 설정되었습니다: {0}</value>
+  </data>
+  <data name="SetEntityAttributesRule_EntityHasNoFields" xml:space="preserve">
+    <value>{0}에 필드가 없습니다.</value>
+  </data>
+  <data name="SetEntityAttributesRule_SetEntityAttributes" xml:space="preserve">
+    <value>{0} 설정: {1}</value>
+  </data>
+  <data name="SetEntityAttributesRule_TargetCountTooLow" xml:space="preserve">
+    <value>TargetCount는 1 이상이어야 합니다.</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingColumnWidths" xml:space="preserve">
+    <value>열 너비를 계산하고 있습니다.</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingTableRowCounts" xml:space="preserve">
+    <value>테이블 행 개수를 계산하고 있습니다.</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CalculatingUniqueness" xml:space="preserve">
+    <value>열 고유성을 계산하고 있습니다.</value>
+  </data>
+  <data name="SqlDsvStatisticsProvider_CommandException" xml:space="preserve">
+    <value>명령을 실행하는 동안 오류가 발생했습니다.
+메시지: {0}
+명령:
+{1}</value>
+  </data>
+</root>

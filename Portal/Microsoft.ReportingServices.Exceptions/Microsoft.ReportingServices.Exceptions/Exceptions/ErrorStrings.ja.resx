@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CouldNotFindElement" xml:space="preserve">
+    <value>構成ファイルの解析中にエラーが発生しました。{0} 要素が見つかりません。</value>
+  </data>
+  <data name="DataSourceConnectionErrorNotVisible" xml:space="preserve">
+    <value>データ ソースに接続できません。データ ソース接続エラー メッセージがサーバーで無効になっているため、詳細な情報が取得できません。</value>
+  </data>
+  <data name="DuplicateConfigElement" xml:space="preserve">
+    <value>{0} 要素が構成ファイル内で複数回出現します。</value>
+  </data>
+  <data name="EmptyExtensionName" xml:space="preserve">
+    <value>名前のない拡張機能が見つかりました。</value>
+  </data>
+  <data name="GetExternalImagesInvalidNamespace" xml:space="preserve">
+    <value>GetExternalImages 要求の名前空間が無効です。</value>
+  </data>
+  <data name="GetExternalImagesInvalidSyntax" xml:space="preserve">
+    <value>GetExternalImages 要求の構文が無効であるか、このバージョンの Reporting Services によってサポートされていません。</value>
+  </data>
+  <data name="InvalidConfigElement" xml:space="preserve">
+    <value>構成ファイルには、無効な要素が含まれています。{0} 要素は構成ファイルの要素ではありません。</value>
+  </data>
+  <data name="InvalidKeyValue" xml:space="preserve">
+    <value>キーと値の組み合わせが無効です。</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidNamespace" xml:space="preserve">
+    <value>LogClientTraceEvents 要求の名前空間が無効です。</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidSyntax" xml:space="preserve">
+    <value>LogClientTraceEvents 要求の構文が無効であるか、このバージョンの Reporting Services によってサポートされていません。</value>
+  </data>
+  <data name="MultipleSessionCatalogItemsNotSupported" xml:space="preserve">
+    <value>'sessionCatalogItems' プロパティには最大 1 つのアイテムが必要です。1 つのセッションでの複数のアイテムの発行はサポートされていません。</value>
+  </data>
+  <data name="NoEventForEventProcessor" xml:space="preserve">
+    <value>イベント プロセッサ {0} には構成されたイベントがありません。</value>
+  </data>
+  <data name="ProductNamePBIRS" xml:space="preserve">
+    <value>Microsoft Power BI Report Server</value>
+  </data>
+  <data name="ProductNamePBIRSAndVersion" xml:space="preserve">
+    <value>Microsoft Power BI Report Server バージョン {0}</value>
+  </data>
+  <data name="ProductNameSSRS" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services</value>
+  </data>
+  <data name="ProductNameSSRSAndVersion" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services バージョン {0}</value>
+  </data>
+  <data name="SameEventType" xml:space="preserve">
+    <value>イベントの種類 "{0}" に対して複数の定義が見つかりました。</value>
+  </data>
+  <data name="SameExtensionName" xml:space="preserve">
+    <value>この種類の複数の拡張機能に同じ名前が指定されています。いずれかの拡張機能を {0} 以外の名前に変更してください。</value>
+  </data>
+  <data name="SkuCaching" xml:space="preserve">
+    <value>レポート キャッシュ</value>
+  </data>
+  <data name="SkuCommentAlerting" xml:space="preserve">
+    <value>レポート コメント通知</value>
+  </data>
+  <data name="SkuComponentLibrary" xml:space="preserve">
+    <value>レポート パーツ ギャラリー</value>
+  </data>
+  <data name="SkuCrescent" xml:space="preserve">
+    <value>Power View</value>
+  </data>
+  <data name="SkuCustomAuth" xml:space="preserve">
+    <value>カスタム セキュリティ拡張機能</value>
+  </data>
+  <data name="SkuCustomRolesSecurity" xml:space="preserve">
+    <value>セキュリティ ロールをカスタマイズしています</value>
+  </data>
+  <data name="SkuDataAlerting" xml:space="preserve">
+    <value>警告データ</value>
+  </data>
+  <data name="SkuDataDrivenSubscriptions" xml:space="preserve">
+    <value>レポートへのデータ ドリブン サブスクリプション</value>
+  </data>
+  <data name="SkuDelivery" xml:space="preserve">
+    <value>レポート配信</value>
+  </data>
+  <data name="SkuDynamicDrillthrough" xml:space="preserve">
+    <value>Report Builder 無限クリックスルー</value>
+  </data>
+  <data name="SkuEventGeneration" xml:space="preserve">
+    <value>イベントの生成</value>
+  </data>
+  <data name="SkuExecutionSnapshots" xml:space="preserve">
+    <value>レポート実行スナップショット</value>
+  </data>
+  <data name="SkuExtensibility" xml:space="preserve">
+    <value>レポート サーバー拡張機能</value>
+  </data>
+  <data name="SkuHistory" xml:space="preserve">
+    <value>レポート履歴スナップショット</value>
+  </data>
+  <data name="SkuKpiItems" xml:space="preserve">
+    <value>Kpi 項目</value>
+  </data>
+  <data name="SkuMobileReportItems" xml:space="preserve">
+    <value>モバイル レポート項目</value>
+  </data>
+  <data name="SkuModelItemSecurity" xml:space="preserve">
+    <value>レポート モデル アイテムのセキュリティ</value>
+  </data>
+  <data name="SkuNoCpuThrottling" xml:space="preserve">
+    <value>プロセッサ数無制限</value>
+  </data>
+  <data name="SkuNoMemoryThrottling" xml:space="preserve">
+    <value>メモリ容量無制限</value>
+  </data>
+  <data name="SkuNonSqlDataSources" xml:space="preserve">
+    <value>使用している Reporting Services のエディションでは、レポート データ ソースの SQL Server リレーショナル データベースのみサポートされます。</value>
+  </data>
+  <data name="SkuOtherSkuDatasources" xml:space="preserve">
+    <value>選択したデータベース エンジン インスタンスは、Reporting Services のこのエディションに対して無効です。このデータベース エンジンは、レポート データ ソースまたはレポート サーバー データベースのエディション要件を満たしていません。</value>
+  </data>
+  <data name="SkuRemoteDataSources" xml:space="preserve">
+    <value>使用している Reporting Services のエディションでは、レポート データ ソースおよびレポート サーバー データベースに対してローカルの SQL Server リレーショナル データベースを使用する必要があります。</value>
+  </data>
+  <data name="SkuReportBuilder" xml:space="preserve">
+    <value>Report Builder とレポート モデル</value>
+  </data>
+  <data name="SkuScaleOut" xml:space="preserve">
+    <value>スケールアウト配置</value>
+  </data>
+  <data name="SkuScheduling" xml:space="preserve">
+    <value>レポートの定期実行</value>
+  </data>
+  <data name="SkuSharedDataset" xml:space="preserve">
+    <value>共有データセット</value>
+  </data>
+  <data name="SkuSharepoint" xml:space="preserve">
+    <value>Windows SharePoint Services の統合</value>
+  </data>
+  <data name="SkuSubscriptions" xml:space="preserve">
+    <value>レポートへのサブスクリプション</value>
+  </data>
+  <data name="UIServerLoopback" xml:space="preserve">
+    <value>レポート サーバーの構成ファイルでは、Web サーバー名の localhost を指定します。レポート サーバーでは、代わりにコンピューター名を指定する必要があります。</value>
+  </data>
+  <data name="UserNameUnknown" xml:space="preserve">
+    <value>[不明]</value>
+  </data>
+  <data name="cannotBuildExternalConnectionString" xml:space="preserve">
+    <value>外部データ ソース '{0}' に対して接続文字列を作成しようとしました。</value>
+  </data>
+  <data name="internalDataSourceNotFound" xml:space="preserve">
+    <value>内部データ ソースがトークン データ ソース リストにありませんでした。</value>
+  </data>
+  <data name="rFeedColumnTypeMismatchException" xml:space="preserve">
+    <value>データ フィード列 '{0}' のデータ型が予期しないデータ型です。</value>
+  </data>
+  <data name="rsAccessDenied" xml:space="preserve">
+    <value>ユーザー '{0}' には、この操作を行うのに必要な権限が与えられていません。</value>
+  </data>
+  <data name="rsAccessDeniedToSecureData" xml:space="preserve">
+    <value>レポート サーバー Web サービスは、レポート サーバーのセキュリティで保護された情報にアクセスできません。レポート サーバー構成ファイルで WebServiceAccount が正しく指定されていることを確認してください。</value>
+  </data>
+  <data name="rsApiVersionDiscontinued" xml:space="preserve">
+    <value>サーバーでサポートされている最小バージョンは '{0}' で、クライアント バージョンは '{1}' です。クライアントをアップグレードしてください。</value>
+  </data>
+  <data name="rsApiVersionNotRecognized" xml:space="preserve">
+    <value>サーバーはバージョン '{0}' にあり、クライアント バージョン '{1}' を認識しません。</value>
+  </data>
+  <data name="rsAppDomainManagerError" xml:space="preserve">
+    <value>レポート サーバー サービス内でアプリケーション ドメイン {0} を起動する際にエラーが発生しました。</value>
+  </data>
+  <data name="rsAssemblyNotPermissioned" xml:space="preserve">
+    <value>アセンブリ '{0}' のコード権限が定義されていないので、このアセンブリを読み込めません。</value>
+  </data>
+  <data name="rsAuthenticationExtensionError" xml:space="preserve">
+    <value>認証拡張機能から、予期しない例外がスローされたか、無効な値が返されました: {0}。</value>
+  </data>
+  <data name="rsAuthorizationExtensionError" xml:space="preserve">
+    <value>承認拡張機能の呼び出し中にエラーが発生しました。</value>
+  </data>
+  <data name="rsAuthorizationTokenInvalidOrExpired" xml:space="preserve">
+    <value>承認トークンが無効または期限切れです</value>
+  </data>
+  <data name="rsBackupKeyPasswordInvalid" xml:space="preserve">
+    <value>バックアップ キーのパスワードが正しくありません。</value>
+  </data>
+  <data name="rsBatchNotFound" xml:space="preserve">
+    <value>バッチ '{0}' が見つかりません。このエラーは、以前にバッチが CreateBatch メソッドで開かれてない場合に発生します。また、バッチが長時間開かれていることが原因で、タイムアウトになった場合にも、このエラーが発生します。</value>
+  </data>
+  <data name="rsCacheRefreshPlanNotFound" xml:space="preserve">
+    <value>キャッシュ更新計画 '{0}' が見つかりません。操作に指定されたキャッシュ更新計画識別子がレポート サーバー データベースにありません。</value>
+  </data>
+  <data name="rsCachingNotEnabled" xml:space="preserve">
+    <value>アイテム '{0}' のキャッシュが有効になっていません。この操作を完了するにはキャッシュを有効にする必要があります。</value>
+  </data>
+  <data name="rsCannotActivateSubscription" xml:space="preserve">
+    <value>選択したサブスクリプションは、この時点ではアクティブ化できません。配信拡張機能は存在しなくなっています。</value>
+  </data>
+  <data name="rsCannotDeleteRootPolicy" xml:space="preserve">
+    <value>ルート フォルダーのロールの割り当てを削除できません。ルート フォルダーには、少なくとも 1 つのロールの割り当てを常に定義しておく必要があります。</value>
+  </data>
+  <data name="rsCannotPrepareQuery" xml:space="preserve">
+    <value>データセットを生成できません。データ ソースへの接続中にエラーが発生したか、またはクエリがデータ ソースに対して無効です。</value>
+  </data>
+  <data name="rsCannotRetrieveModel" xml:space="preserve">
+    <value>アイテムまたはデータ ソース '{0}' のモデルの読み込み中にエラーが発生しました。接続情報が正しいこと、およびデータ ソースにアクセスするための権限があることを確認してください。</value>
+  </data>
+  <data name="rsCannotSubscribeToEvent" xml:space="preserve">
+    <value>イベントの種類 '{0}' はサブスクライブの対象ではありません。</value>
+  </data>
+  <data name="rsCannotValidateEncryptedData" xml:space="preserve">
+    <value>レポート サーバーで、データベース内の暗号化されたデータの整合性を検証できませんでした。</value>
+  </data>
+  <data name="rsCertificateMissingOrInvalid" xml:space="preserve">
+    <value>証明書 {0} がないか無効です。</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenError" xml:space="preserve">
+    <value>要求 ID を Windows トークンに変換できません。</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenLoginTypeError" xml:space="preserve">
+    <value>要求 ID を Windows トークンに変換できません。原因としては、ユーザーが Windows 資格情報を使用してログインしていないことが考えられます。</value>
+  </data>
+  <data name="rsClosingRegisteredStreamException" xml:space="preserve">
+    <value>登録済みのストリームを閉じるときにエラーが発生しました。</value>
+  </data>
+  <data name="rsComponentPublishingError" xml:space="preserve">
+    <value>コンポーネントのパブリッシュ中にエラーが発生しました。</value>
+  </data>
+  <data name="rsContainerNotSupported" xml:space="preserve">
+    <value>指定された場所は、レポート サーバーではサポートされていません。レポート定義 (.rdl) ファイル、レポート モデル (.smdl) ファイル、リソース ファイル、または共有データ ソース (.rsds) ファイルは、ライブラリ内、またはライブラリ内のフォルダーに置く必要があります。</value>
+  </data>
+  <data name="rsDataCacheMismatch" xml:space="preserve">
+    <value>レポート編集セッションのデータ キャッシュが無効です。レポートを再実行して、有効なデータ キャッシュを新規作成してください。</value>
+  </data>
+  <data name="rsDataExtensionNotFound" xml:space="preserve">
+    <value>このレポート サーバーに登録されていない、またはこのエディションの Reporting Services でサポートされていないデータ拡張機能 '{0}' を使用しようとしました。</value>
+  </data>
+  <data name="rsDataSetExecutionError" xml:space="preserve">
+    <value>共有データセット '{0}' の実行が失敗しました。</value>
+  </data>
+  <data name="rsDataSetNotFound" xml:space="preserve">
+    <value>データセット '{0}' が見つかりません。</value>
+  </data>
+  <data name="rsDataSetParameterValueNotSet" xml:space="preserve">
+    <value>このデータセットでは、データセット パラメーター '{0}' に既定値またはユーザー定義の値を指定する必要があります。このデータセットを実行するには、パラメーター値を指定する必要があります。</value>
+  </data>
+  <data name="rsDataSourceDisabled" xml:space="preserve">
+    <value>レポートに関連付けられているデータ ソースが無効になっています。</value>
+  </data>
+  <data name="rsDataSourceNoPromptException" xml:space="preserve">
+    <value>レポートに関連付けられたデータ ソース '{0}' に資格情報を設定しようとしました。レポートのデータ ソース設定では、レポート サーバーに資格情報を送信できないように指定されています。</value>
+  </data>
+  <data name="rsDataSourceNotFound" xml:space="preserve">
+    <value>データ ソース '{0}' が見つかりません。</value>
+  </data>
+  <data name="rsDatasourceCredentialsNoLongerValid" xml:space="preserve">
+    <value>1 つ以上のデータ ソースの資格情報が有効ではなくなりました。</value>
+  </data>
+  <data name="rsDeliverError" xml:space="preserve">
+    <value>配信エラーが発生しました。</value>
+  </data>
+  <data name="rsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>このレポート サーバーに登録されていない配信拡張機能を使用しようとしました。</value>
+  </data>
+  <data name="rsElementTypeMismatch" xml:space="preserve">
+    <value>{0} フィールドに指定された値は、フィールドの型に対して無効です。この値は、文字列値から必要な型に変換できません。</value>
+  </data>
+  <data name="rsEmptyRole" xml:space="preserve">
+    <value>作成中のカスタム ロールにはタスクが含まれていません。ロールの定義には、少なくとも 1 つのタスクが含まれている必要があります。</value>
+  </data>
+  <data name="rsEncryptedDataUnavailable" xml:space="preserve">
+    <value>レポート サーバーでは暗号化されたデータにアクセスできません。バックアップ キーを適用するか、すべての暗号化されたコンテンツを削除してください。</value>
+  </data>
+  <data name="rsErrorNotVisibleToRemoteBrowsers" xml:space="preserve">
+    <value>このエラーの詳細を表示するには、ローカルのサーバー コンピューターでレポート サーバーを開くか、リモート エラーを有効にしてください。</value>
+  </data>
+  <data name="rsErrorOpeningConnection" xml:space="preserve">
+    <value>データ ソース '{0}' への接続を作成できません。</value>
+  </data>
+  <data name="rsEvaluationCopyExpired" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services のこのインスタンスの評価期間が終了しています。ライセンスが必要です。</value>
+  </data>
+  <data name="rsEventExtensionNotFoundException" xml:space="preserve">
+    <value>イベント {0} に対して拡張機能が定義されていません。</value>
+  </data>
+  <data name="rsEventLogSourceNotFound" xml:space="preserve">
+    <value>イベント ソース "{0}" が存在しません。</value>
+  </data>
+  <data name="rsEventMaxRetryExceededException" xml:space="preserve">
+    <value>イベント {0} の最大再試行回数を超えました。イベント処理はスキップされます。</value>
+  </data>
+  <data name="rsExecuteQueriesFailure" xml:space="preserve">
+    <value>データ ソース '{0}' に対してクエリ実行エラーが発生しました。</value>
+  </data>
+  <data name="rsExecutionNotFound" xml:space="preserve">
+    <value>レポートの実行 {0} が期限切れであるか、見つかりません。</value>
+  </data>
+  <data name="rsFailedToDecryptConfigInformation" xml:space="preserve">
+    <value>"{0}" 構成設定の暗号化された値の暗号化を解除できません。</value>
+  </data>
+  <data name="rsFailedToExportSymmetricKey" xml:space="preserve">
+    <value>現在のインストールの公開キーを使用して対称キーをエクスポートできませんでした。</value>
+  </data>
+  <data name="rsFeedValueOutOfRange" xml:space="preserve">
+    <value>データ フィード列の値 '{0}' が、列のデータ型に対して有効な値の範囲外です。</value>
+  </data>
+  <data name="rsFileExtensionRequired" xml:space="preserve">
+    <value>ファイル拡張子が見つからないか無効のため、操作を完了できません。有効なファイル拡張子には、レポート定義の .rdl、レポート モデルの .smdl、共有データ ソースの .rsds、共有データセットの .rsd、レポート コンポーネントの .rsc などがあります。このファイルの拡張子を入力して操作を再試行してください。</value>
+  </data>
+  <data name="rsFileExtensionViolation" xml:space="preserve">
+    <value>ターゲット ファイルの拡張子 '{0}' がソース ファイルの拡張子 '{1}' と一致しません。.rdl、.rsds、.odc、.rsd、.rsc、および .smdl のファイル拡張子は、ターゲット ファイルとソース ファイルの両方で同じ拡張子を使用する必要があります。ターゲット ファイルの拡張子を更新して、ソース ファイルの拡張子と一致させてください。</value>
+  </data>
+  <data name="rsFileSize" xml:space="preserve">
+    <value>ファイルの大きさが、このレポート サーバーに対して設定された制限を超えています。</value>
+  </data>
+  <data name="rsFileSizeNotSupported" xml:space="preserve">
+    <value>ファイルのサイズが、現在のシステムの制限である 2000 MB を超えています。</value>
+  </data>
+  <data name="rsHasUserProfileDependencies" xml:space="preserve">
+    <value>レポートまたは共有データセット '{0}' には、ユーザー プロファイルの依存関係があります。自動的に実行することはできません。</value>
+  </data>
+  <data name="rsHttpRuntimeClientDisconnectionError" xml:space="preserve">
+    <value>クライアントがレポート サーバー Web サービスのアプリケーション ドメイン {0} への接続を切断しました。対処は必要ありません。接続を解放するために、エラー コードが ASP.NET に送信されました。エラー コードは {1} です。</value>
+  </data>
+  <data name="rsHttpRuntimeError" xml:space="preserve">
+    <value>アプリケーション ドメイン {0} の HTTP ランタイム オブジェクトでエラーが発生しました。ほとんどの場合、HTTP 要求にサポートされない動詞が含まれているか、構文が無効であることが原因です。</value>
+  </data>
+  <data name="rsHttpRuntimeInternalError" xml:space="preserve">
+    <value>アプリケーション ドメイン {0} の HTTP ランタイム オブジェクトで内部エラーまたはシステム エラーが発生しました。</value>
+  </data>
+  <data name="rsIdentityClaimsMissingOrInvalid" xml:space="preserve">
+    <value>オンプレミス接続の ID 要求 '{0}' がないか、無効です。</value>
+  </data>
+  <data name="rsInheritedPolicy" xml:space="preserve">
+    <value>アイテム '{0}' では、親アイテムからセキュリティ ポリシーが継承されています。継承されたポリシーは削除できません。</value>
+  </data>
+  <data name="rsInheritedPolicyModelItem" xml:space="preserve">
+    <value>ID '{1}' のアイテム '{0}' は、親アイテムからセキュリティ ポリシーを継承しています。継承されたポリシーは削除できません。</value>
+  </data>
+  <data name="rsInternalError" xml:space="preserve">
+    <value>レポート サーバーで内部エラーが発生しました。詳細については、エラー ログを参照してください。</value>
+  </data>
+  <data name="rsInternalResourceNotFoundError" xml:space="preserve">
+    <value>レポート サーバーで内部リソース '{0}' が見つかりませんでした。</value>
+  </data>
+  <data name="rsInternalResourceNotSpecifiedError" xml:space="preserve">
+    <value>'Get' レポート サーバー コマンドを使用する場合は、内部リソース名を指定する必要があります。内部リソース名が指定されていることを確認してから再試行してください。</value>
+  </data>
+  <data name="rsInvalidCatalogRecord" xml:space="preserve">
+    <value>正しくないレコードがカタログで検出されました。詳細については、エラー ログを参照してください。</value>
+  </data>
+  <data name="rsInvalidConcurrentRenderEditSessionRequest" xml:space="preserve">
+    <value>セッション {0} に対する RenderEdit 同時要求が無効です。</value>
+  </data>
+  <data name="rsInvalidDataSetReference" xml:space="preserve">
+    <value>レポート サーバーでレポートを処理できません。共有データセット '{0}' の参照が無効です。</value>
+  </data>
+  <data name="rsInvalidDataSourceCount" xml:space="preserve">
+    <value>レポート サーバーはレポート '{0}' のモデルを読み込めません。このレポートは、データ ソースを参照していないか、複数のデータ ソースを参照しています。1 つのデータ ソースを参照しているレポートのモデルのみ読み込むことができます。</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSetting" xml:space="preserve">
+    <value>現在のアクションを完了できません。ユーザー データ ソースの資格情報が、このレポートまたは共有データセットを実行するための要件を満たしていません。ユーザー データ ソースの資格情報がレポート サーバー データベースに格納されていないか、ユーザー データ ソースが、資格情報を要求しないように構成されているにもかかわらず、自動実行アカウントが指定されていません。</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSettingForITokenDataExtension" xml:space="preserve">
+    <value>現在のアクションを完了できません。ユーザー データ ソースの資格情報が、このレポートまたは共有データセットを実行するための要件を満たしていません。SharePoint 統合モードで構成されたレポート サーバーで ITokenDataExtension を実装するデータ拡張機能に対する '保存された資格情報' オプションまたは '資格情報を要求する' オプションは、Windows ユーザー資格情報でのみサポートされます。Windows 資格情報を指定するか、別のオプションを使用するようにデータ ソースを構成してください。</value>
+  </data>
+  <data name="rsInvalidDataSourceReference" xml:space="preserve">
+    <value>レポート サーバーでレポートまたは共有データセットを処理できません。レポート サーバーの共有データ ソース '{0}' は無効です。サーバーまたはサイトを参照し、共有データ ソースを選択してください。</value>
+  </data>
+  <data name="rsInvalidDataSourceType" xml:space="preserve">
+    <value>現在のアクションを完了できません。データ ソース '{0}' のデータ拡張型は、この操作に対して無効です。</value>
+  </data>
+  <data name="rsInvalidDestination" xml:space="preserve">
+    <value>この操作のアイテム {0} と {1} を異なる SharePoint サイトに配置することはできません。アイテムを移動する場合は、同じ SharePoint サイト上のライブラリを選択してください。特定の共有スケジュールでレポートのサブスクリプションを作成する場合、レポートとスケジュールの両方を同じ SharePoint サイトに配置する必要があります。</value>
+  </data>
+  <data name="rsInvalidElement" xml:space="preserve">
+    <value>{0} フィールドに無効な値が含まれています。</value>
+  </data>
+  <data name="rsInvalidElementCombination" xml:space="preserve">
+    <value>フィールド {0} および {1} の値の組み合わせが無効です。</value>
+  </data>
+  <data name="rsInvalidExtensionParameter" xml:space="preserve">
+    <value>次の理由で、拡張機能のいずれかのパラメーターが無効です: {0}</value>
+  </data>
+  <data name="rsInvalidItemName" xml:space="preserve">
+    <value>アイテム '{0}' の名前が無効です。アイテム名は {1} 文字未満で指定してください。先頭をスラッシュにしたり、予約された文字を含めたりすることはできません。その他にも適用される制限があります。有効なアイテム名の詳細については、https://go.microsoft.com/fwlink/?LinkId=398858 を参照してください。</value>
+  </data>
+  <data name="rsInvalidItemPath" xml:space="preserve">
+    <value>アイテム '{0}' のパスが無効です。アイテムの完全なパスは {1} 文字未満で指定する必要があります。その他にも適用される制限があります。レポート サーバーがネイティブ モードの場合は、パスをスラッシュで始める必要があります。</value>
+  </data>
+  <data name="rsInvalidModelDrillthroughReport" xml:space="preserve">
+    <value>レポート {0} は、有効な詳細レポートではありません。</value>
+  </data>
+  <data name="rsInvalidMove" xml:space="preserve">
+    <value>フォルダー "{0}" を移動先に移動できません。移動先フォルダー "{1}" はソース フォルダー "{0}" のサブフォルダーです。</value>
+  </data>
+  <data name="rsInvalidMultipleElementCombination" xml:space="preserve">
+    <value>フィールド {0}、{1}、および {2} の値の組み合わせが無効です。</value>
+  </data>
+  <data name="rsInvalidOperation" xml:space="preserve">
+    <value>指定された操作は無効です。</value>
+  </data>
+  <data name="rsInvalidParameter" xml:space="preserve">
+    <value>パラメーター '{0}' の値が無効です。</value>
+  </data>
+  <data name="rsInvalidParameterCombination" xml:space="preserve">
+    <value>関数に対して指定したパラメーター値の組み合わせが無効です。</value>
+  </data>
+  <data name="rsInvalidPolicyDefinition" xml:space="preserve">
+    <value>'{0}' ユーザーまたはグループのポリシーが無効です。ロールの割り当てが空であるか、現在のアイテムに対する既存のロールの割り当てで既に使用されているユーザー名またはグループ名が指定されているか、同じユーザーまたはグループに重複したロールが指定されています。</value>
+  </data>
+  <data name="rsInvalidProgressiveFormatError" xml:space="preserve">
+    <value>{0} コマンドの形式が無効です。</value>
+  </data>
+  <data name="rsInvalidRSDSSchema" xml:space="preserve">
+    <value>選択した .rsds ファイルは無効です。このファイルの種類に必要な XML 構造がありません。</value>
+  </data>
+  <data name="rsInvalidReportLink" xml:space="preserve">
+    <value>レポート サーバーでレポートの操作を実行できません。レポート リンクが無効になっています。</value>
+  </data>
+  <data name="rsInvalidReportParameter" xml:space="preserve">
+    <value>既定値またはレポート パラメーター '{0}' に指定された値は、有効な値ではありません。</value>
+  </data>
+  <data name="rsInvalidReportServerDatabase" xml:space="preserve">
+    <value>レポート サーバー データベースのバージョンが無効な形式であるか、または読み取りが許可されていません。見つかったバージョンは '{0}' です。必要なバージョンは '{1}' です。</value>
+  </data>
+  <data name="rsInvalidSearchOperator" xml:space="preserve">
+    <value>検索演算子 "{0}" が無効です。</value>
+  </data>
+  <data name="rsInvalidSessionCatalogItems" xml:space="preserve">
+    <value>'sessionCatalogItems' プロパティが指定されていないか、内容が無効か、またはこのバージョンの Reporting Services でサポートされていません。詳細: {0}。</value>
+  </data>
+  <data name="rsInvalidSessionId" xml:space="preserve">
+    <value>セッション ID {0} が無効です。</value>
+  </data>
+  <data name="rsInvalidSqlAgentJob" xml:space="preserve">
+    <value>無効な SQL エージェント ジョブ '{0}' が見つかりました。</value>
+  </data>
+  <data name="rsInvalidSubscription" xml:space="preserve">
+    <value>無効なサブスクリプション '{0}' が見つかりました。サブスクリプションを削除して再作成する必要があります。</value>
+  </data>
+  <data name="rsInvalidXml" xml:space="preserve">
+    <value>入力 XML はスキーマに準拠していません。XML の文法については、API ドキュメントで説明しています。レポート内の XML については、レポート定義言語の構文を参照してください。</value>
+  </data>
+  <data name="rsItemAlreadyExists" xml:space="preserve">
+    <value>アイテム '{0}' は既に存在します。</value>
+  </data>
+  <data name="rsItemContentInvalid" xml:space="preserve">
+    <value>項目 '{0}' に無効なコンテンツが含まれています。</value>
+  </data>
+  <data name="rsItemNotFound" xml:space="preserve">
+    <value>アイテム '{0}' が見つかりません。</value>
+  </data>
+  <data name="rsItemPathLengthExceeded" xml:space="preserve">
+    <value>アイテム '{0}' のパスが最大長の {1} 文字を超えています。パスにはアイテム自身の名前、およびそのアイテムが含まれている親フォルダーの名前が含まれます。</value>
+  </data>
+  <data name="rsJobWasCanceled" xml:space="preserve">
+    <value>管理者によりジョブが取り消されました。</value>
+  </data>
+  <data name="rsKeyStateNotValid" xml:space="preserve">
+    <value>レポート サーバーは、サービス アカウントの秘密キーにアクセスできません。このキーを使用して、レポート サーバー データベース内のコンテンツを保護する対称キーの暗号化を解除します。この状況は、レポート サーバーのサービス アカウントのパスワードがリセットされた後に発生することがあります。バックアップ キーを復元するか、または暗号化されたすべてのコンテンツを削除する必要があります。</value>
+  </data>
+  <data name="rsLogonFailed" xml:space="preserve">
+    <value>ログオンに失敗しました。ユーザー名とパスワードが正しいことを確認してください。</value>
+  </data>
+  <data name="rsMalformedXml" xml:space="preserve">
+    <value>入力 XML は、適切な形式ではありません。1 つ以上の要素で終了タグがないか、または一致しないタグが使用されています: {0}。</value>
+  </data>
+  <data name="rsMaxCountComments" xml:space="preserve">
+    <value>コメントの最大数に達しました。</value>
+  </data>
+  <data name="rsMissingElement" xml:space="preserve">
+    <value>必要なフィールド {0} が入力構造で見つかりません。</value>
+  </data>
+  <data name="rsMissingFeedColumnException" xml:space="preserve">
+    <value>データ フィード列 '{0}' が見つかりませんでした。</value>
+  </data>
+  <data name="rsMissingParameter" xml:space="preserve">
+    <value>パラメーター '{0}' の値が指定されていません。関数呼び出しで見つからないか、NULL に設定されています。</value>
+  </data>
+  <data name="rsMissingRequiredPropertyForItemType" xml:space="preserve">
+    <value>プロパティ '{0}' の値が指定されていません。プロパティが見つからないか、値が null です。</value>
+  </data>
+  <data name="rsMissingSessionId" xml:space="preserve">
+    <value>セッション識別子が見つかりません。この操作では、セッション識別子が必要です。</value>
+  </data>
+  <data name="rsMixedTasks" xml:space="preserve">
+    <value>カスタム ロールでは、同じロールの定義内でシステムレベルとシステムレベル以外の両方のタスクを指定することはできません。タスクのカテゴリごとに別のロールを指定する必要があります。</value>
+  </data>
+  <data name="rsModelGenerationError" xml:space="preserve">
+    <value>モデルの生成中にエラーが発生しました。</value>
+  </data>
+  <data name="rsModelGenerationNotSupported" xml:space="preserve">
+    <value>データ拡張機能ではモデルの生成はサポートされません。</value>
+  </data>
+  <data name="rsModelIDMismatch" xml:space="preserve">
+    <value>送信済みモデルのモデル ID は、現在のモデルのモデル ID と一致する必要があります。</value>
+  </data>
+  <data name="rsModelItemNotFound" xml:space="preserve">
+    <value>モデル アイテム "{1}" がモデル "{0}" に見つかりませんでした。</value>
+  </data>
+  <data name="rsModelNotGenerated" xml:space="preserve">
+    <value>指定するモデルは生成済みのモデルである必要があります。</value>
+  </data>
+  <data name="rsModelRetrievalCanceled" xml:space="preserve">
+    <value>モデルの取得がキャンセルされました。</value>
+  </data>
+  <data name="rsModelRootPolicyRequired" xml:space="preserve">
+    <value>モデル ルート ポリシーが必要です</value>
+  </data>
+  <data name="rsNotEnabled" xml:space="preserve">
+    <value>要求された機能は、現在使用可能になっていません。</value>
+  </data>
+  <data name="rsNotSupported" xml:space="preserve">
+    <value>要求された機能は、現在サポートされていません。</value>
+  </data>
+  <data name="rsODCVersionNotSupported" xml:space="preserve">
+    <value>レポート サーバーは Office 2007 以上で生成された ODC ファイルのみをサポートします。ODC ファイルが Office 2007 以上で生成されていることを確認し、再試行してください。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderConnectionStringMissing" xml:space="preserve">
+    <value>オンプレミス接続の接続文字列が Null または空です。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderMissingEffectiveUsername" xml:space="preserve">
+    <value>オンプレミス接続に必須の有効なユーザー名プロパティがありません。</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderUnknownError" xml:space="preserve">
+    <value>オンプレミス接続文字列の作成中に不明なエラーが発生しました。詳細については、内部例外をご参照ください。</value>
+  </data>
+  <data name="rsOperationNotSupported" xml:space="preserve">
+    <value>Reporting Services では、機能 "{0}" はサポートされていません。</value>
+  </data>
+  <data name="rsOperationNotSupportedNativeMode" xml:space="preserve">
+    <value>この操作は、ネイティブ モードで実行中のレポート サーバーではサポートされません。</value>
+  </data>
+  <data name="rsOperationNotSupportedSharePointMode" xml:space="preserve">
+    <value>この操作は、SharePoint 統合モードで実行するように構成されているレポート サーバーではサポートされません。</value>
+  </data>
+  <data name="rsOperationPreventsUnattendedExecution" xml:space="preserve">
+    <value>レポート パラメーターまたはデータ ソースを指定した値に変更することは許可されていません。レポートは自動的に実行するように構成されています。指定した値を使用すると、このレポートは自動的に処理されなくなります。</value>
+  </data>
+  <data name="rsPBIServiceUnavailable" xml:space="preserve">
+    <value>Power BI は現在要求を処理できません。PowerBI サポートにお問い合わせください。関連付け:{0}</value>
+  </data>
+  <data name="rsParameterTypeMismatch" xml:space="preserve">
+    <value>'{0}' に指定されたパラメーター値がパラメーターの型と一致しません。</value>
+  </data>
+  <data name="rsProcessingError" xml:space="preserve">
+    <value>レポートの処理中にエラーが発生しました。</value>
+  </data>
+  <data name="rsProgressiveFormatElementMissingError" xml:space="preserve">
+    <value>メッセージ要素 '{0}' がありません。</value>
+  </data>
+  <data name="rsProgressiveMessageWriteElementError" xml:space="preserve">
+    <value>{1} コマンドのメッセージ要素 '{0}' を書き込むときにエラーが発生しました。</value>
+  </data>
+  <data name="rsProgressiveMessageWriteError" xml:space="preserve">
+    <value>{0} コマンドの応答を書き込むときにエラーが発生しました。</value>
+  </data>
+  <data name="rsPropertyDisabled" xml:space="preserve">
+    <value>SharePoint 統合モードで実行中のレポート サーバーでは、SiteName、EnableMyReports、および MyReportsRole のプロパティ値を設定または取得できません。これらのプロパティを要求から除外して、やり直してください。</value>
+  </data>
+  <data name="rsPropertyDisabledNativeMode" xml:space="preserve">
+    <value>ネイティブ モードで実行中のレポート サーバーでは RDLXReportTimeout のプロパティ値を設定または取得できません。要求からこれらのプロパティを除外して、再試行してください。</value>
+  </data>
+  <data name="rsQueryExecutionNotAllowed" xml:space="preserve">
+    <value>クエリの実行が許可されていないときの操作はサポートされていません。</value>
+  </data>
+  <data name="rsQueryTimeout" xml:space="preserve">
+    <value>このレポートのパラメーターを検証中にエラーが発生しました。具体的には、データ ソースに対するクエリがタイムアウトしました。</value>
+  </data>
+  <data name="rsRdceExtraElementError" xml:space="preserve">
+    <value>カスタマイズされた RDL で、複数の '{0}' 要素を指定することはできません。重複する要素を削除してから再試行してください。</value>
+  </data>
+  <data name="rsRdceInvalidCacheOptionError" xml:space="preserve">
+    <value>キャッシュされたレポートから表示されるレポートの RDCE (Report Definition Customization Extension) プロパティを構成することはできません。レポートのキャッシュ オプションを変更してから再試行してください。</value>
+  </data>
+  <data name="rsRdceInvalidConfigurationError" xml:space="preserve">
+    <value>RDCE (Report Definition Customization Extension) プロパティを構成することはできません。RDCE がレポート サーバーで構成されていないか、無効化されています。RDCE がレポート サーバーで構成され、有効化されていることを確認し、さらに、レポート サーバーと RDCE プロパティの両方で同じ RDCE 拡張機能名が指定されていることを確認してください。</value>
+  </data>
+  <data name="rsRdceInvalidExecutionOptionError" xml:space="preserve">
+    <value>レポート履歴が有効になっている場合、または、レポートがスナップショットから表示される場合、レポートの RDCE (Report Definition Customization Extension) プロパティを構成することはできません。レポートの実行オプションを変更してから再試行してください。</value>
+  </data>
+  <data name="rsRdceInvalidItemTypeError" xml:space="preserve">
+    <value>種類が '{0}' であるアイテムの RDCE (Report Definition Customization Extension) プロパティを構成することはできません。RDCE プロパティは、レポート アイテムの種類でのみ設定できます。リンク レポートやその他の種類のアイテムに対して RDCE プロパティを設定することはできません。</value>
+  </data>
+  <data name="rsRdceInvalidRdlError" xml:space="preserve">
+    <value>RDCE (Report Definition Customization Extension) から null または無効な RDL が返されました。RDL に有効な XML が含まれていることを確認してください。</value>
+  </data>
+  <data name="rsRdceMismatchError" xml:space="preserve">
+    <value>レポートに指定された RDCE (Report Definition Customization Extension) 名が、レポート サーバーで構成された RDCE 名と一致しません。レポート内の拡張機能は '{0}' ですが、レポート サーバーの拡張機能は '{1}' です。レポートとレポート サーバーの両方で同じ拡張機能名が指定されていることを確認してください。</value>
+  </data>
+  <data name="rsRdceMismatchRdlVersion" xml:space="preserve">
+    <value>RDCE (Report Definition Customization Extension) が最初に渡されたものと異なる RDL バージョンを返しました。着信と発信の RDL バージョンは一致する必要があります。</value>
+  </data>
+  <data name="rsRdceWrappedException" xml:space="preserve">
+    <value>RDCE (Report Definition Customization Extension) を呼び出し中にエラーが発生しました。</value>
+  </data>
+  <data name="rsReadOnlyDataSetParameter" xml:space="preserve">
+    <value>データセット パラメーター '{0}' は読み取り専用です。変更できません。</value>
+  </data>
+  <data name="rsReadOnlyProperty" xml:space="preserve">
+    <value>プロパティ '{0}' は読み取り専用です。変更または削除できません。</value>
+  </data>
+  <data name="rsReadOnlyReportParameter" xml:space="preserve">
+    <value>レポート パラメーター '{0}' は読み取り専用です。変更できません。</value>
+  </data>
+  <data name="rsRemotePublicKeyUnavailable" xml:space="preserve">
+    <value>新しい Web ファーム ノードの公開キーが、データベースに配置されていません。正しいデータベースに接続されていないか、Windows サービスが正しく開始されていない可能性があります。</value>
+  </data>
+  <data name="rsReportBuilderFileTransmissionError" xml:space="preserve">
+    <value>レポート サーバーでファイルを転送できませんでした。ファイル {0} がインストールされていないか、そのファイルに対する適切な権限がありません。</value>
+  </data>
+  <data name="rsReportHistoryNotFound" xml:space="preserve">
+    <value>レポート '{1}' のレポート スナップショット '{0}' が見つかりません。スナップショットの識別子がレポート サーバー データベースに見つかりません。</value>
+  </data>
+  <data name="rsReportNotReady" xml:space="preserve">
+    <value>選択したレポートは、表示できる状態ではありません。レポートが表示の準備中か、またはレポート スナップショットが利用できません。</value>
+  </data>
+  <data name="rsReportParameterTypeMismatch" xml:space="preserve">
+    <value>レポート パラメーター '{0}' に指定された値は、パラメーターの型に対して無効です。</value>
+  </data>
+  <data name="rsReportParameterValueNotSet" xml:space="preserve">
+    <value>このレポートでは、レポート パラメーター '{0}' に既定値またはユーザー定義の値を指定する必要があります。このレポートを実行またはサブスクライブするには、パラメーター値を指定する必要があります。</value>
+  </data>
+  <data name="rsReportSerializationError" xml:space="preserve">
+    <value>レポートのシリアル化中にエラーが発生しました。</value>
+  </data>
+  <data name="rsReportServerDatabaseError" xml:space="preserve">
+    <value>レポート サーバー データベース内でエラーが発生しました。データベース内で、接続エラー、タイムアウト、またはディスク領域不足が発生した可能性があります。</value>
+  </data>
+  <data name="rsReportServerDatabaseLogonFailed" xml:space="preserve">
+    <value>レポート サーバーでレポート サーバー データベースへの接続を開始できません。ログオンに失敗しました。</value>
+  </data>
+  <data name="rsReportServerDatabaseUnavailable" xml:space="preserve">
+    <value>レポート サーバーでレポート サーバー データベースへの接続を開始できません。すべての要求および処理でデータベースに接続する必要があります。</value>
+  </data>
+  <data name="rsReportServerDisabled" xml:space="preserve">
+    <value>レポート サーバーは、レポート サーバー データベース内の機微なデータまたは暗号化されたデータへのアクセスに使用する対称キーの暗号化を解除できません。バックアップ キーを復元するか、または暗号化されたすべてのコンテンツを削除する必要があります。</value>
+  </data>
+  <data name="rsReportServerKeyContainerError" xml:space="preserve">
+    <value>アカウント {0} を使用して Reporting Services を有効にすることはできません。</value>
+  </data>
+  <data name="rsReportServerNotActivated" xml:space="preserve">
+    <value>レポート サーバーのインストールが初期化されていません。</value>
+  </data>
+  <data name="rsReportServerServiceUnavailable" xml:space="preserve">
+    <value>レポート サーバー Windows サービス '{0}' が実行されていません。レポート サーバーを使用するには、サービスを実行する必要があります。</value>
+  </data>
+  <data name="rsReportServerStorageRefreshConnectionNotValidated" xml:space="preserve">
+    <value>ID '{0}' を持つモデルに対する ID '{1}' の更新接続が検証されていません。</value>
+  </data>
+  <data name="rsReportServerStorageSingleRefreshConnectionExpected" xml:space="preserve">
+    <value>サポートされる更新接続は 1 つのみですが、ID {0} を持つモデルに対する更新接続が {1} 個見つかりました。</value>
+  </data>
+  <data name="rsReportSnapshotEnabled" xml:space="preserve">
+    <value>レポート実行スナップショットとして実行するように構成されているレポートでは、この操作がサポートされていません。</value>
+  </data>
+  <data name="rsReportSnapshotNotEnabled" xml:space="preserve">
+    <value>レポート実行またはヒストリの設定により、スナップショットを作成または更新できません。</value>
+  </data>
+  <data name="rsReportTimeoutExpired" xml:space="preserve">
+    <value>操作がタイムアウトしました。レポート サーバーで操作が取り消されました。</value>
+  </data>
+  <data name="rsRequestEncodingFormatException" xml:space="preserve">
+    <value>要求エンコードのフォーマットが要求ヘッダーで指定されているフォーマットと一致しないため、操作を完了できません。</value>
+  </data>
+  <data name="rsRequestThroughHttpRedirectorNotSupportedError" xml:space="preserve">
+    <value>この要求は、HTTP リダイレクターを使用して処理できません。詳細については、レポート サーバーのトレース ログを確認してください。</value>
+  </data>
+  <data name="rsReservedItem" xml:space="preserve">
+    <value>フォルダー '{0}' は予約されているので、作成、削除、または移動できません。</value>
+  </data>
+  <data name="rsReservedRole" xml:space="preserve">
+    <value>ロール {0} は予約されているか、または使用中です。このロールは、削除できません。</value>
+  </data>
+  <data name="rsResolutionFailureException" xml:space="preserve">
+    <value>データベース {0} のメタデータの解決中に RS でエラーが発生しました。</value>
+  </data>
+  <data name="rsRestrictedItem" xml:space="preserve">
+    <value>項目 '{0}' はSKU によって制限されます。</value>
+  </data>
+  <data name="rsRoleAlreadyExists" xml:space="preserve">
+    <value>ロール '{0}' は既に存在するので、作成できません。</value>
+  </data>
+  <data name="rsRoleNotFound" xml:space="preserve">
+    <value>ロール '{0}' が見つかりません。</value>
+  </data>
+  <data name="rsSPSiteNotFound" xml:space="preserve">
+    <value>ID {0} の SharePoint サイトが見つかりませんでした。</value>
+  </data>
+  <data name="rsScheduleAlreadyExists" xml:space="preserve">
+    <value>スケジュール '{0}' は既に存在するので、作成および名前の変更はできません。このエラーは、スケジュール名が一意でない場合に発生します。</value>
+  </data>
+  <data name="rsScheduleDateTimeRangeException" xml:space="preserve">
+    <value>スケジュール定義に無効な日付が含まれています。有効な日付範囲は、1990/1/1 ～ 9999/12/31 です。</value>
+  </data>
+  <data name="rsScheduleNotFound" xml:space="preserve">
+    <value>スケジュール '{0}' が見つかりません。カタログには、操作に指定されたスケジュール識別子がありません。</value>
+  </data>
+  <data name="rsSchedulerNotResponding" xml:space="preserve">
+    <value>SQL エージェント サービスが実行されていません。この操作には、SQL エージェント サービスが必要です。</value>
+  </data>
+  <data name="rsSchedulerNotRespondingPreventsPinning" xml:space="preserve">
+    <value>ダッシュボード タイルの更新をスケジュールするサービス (SQL Server エージェント) がレポート サーバーで実行されていないため、現在、Power BI にピン留めできません。</value>
+  </data>
+  <data name="rsSecureConnectionRequired" xml:space="preserve">
+    <value>実行しようとしている操作では、安全な接続 (HTTPS) が必要です。</value>
+  </data>
+  <data name="rsSecureStoreAmbiguousCredentialFields" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません。対象アプリケーション '{0}' が同じ種類のフィールド (Windows ユーザー名を 2 つなど) を複数返しました。返されるフィールドは最大 1 つである必要があります。</value>
+  </data>
+  <data name="rsSecureStoreCannotRetrieveCredentials" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません: {0}</value>
+  </data>
+  <data name="rsSecureStoreContextUrlNotSpecified" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません。現在のセッションの SharePoint コンテキストが不明です。セッションの確立要求で、X-BI-Context-URL HTTP ヘッダーが指定されていませんでした。</value>
+  </data>
+  <data name="rsSecureStoreInvalidLookupContext" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません。LookupContext が自動更新に設定されていますが、レポート サーバーの自動実行アカウントが構成されていません。自動実行アカウントを構成して、そのアカウントの資格情報の取得を有効にします。</value>
+  </data>
+  <data name="rsSecureStoreMissingCredentialFields" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません。対象アプリケーション '{0}' で、必要なフィールドが見つかりません。アプリケーションは、1 つの Windows ユーザー名と 1 つの Windows パスワードを返す必要があります。</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedCredentialField" xml:space="preserve">
+    <value>Secure Store Service から資格情報を取得できません。対象アプリケーション '{0}' がサポートされていない型のフィールドを返しました。アプリケーションは、Windows ユーザー名と Windows パスワードのみを返す必要があります。</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedSharePointVersion" xml:space="preserve">
+    <value>SharePoint Secure Store Service から資格情報を取得できません。Reporting Services では、インストールされている SharePoint のバージョンの Secure Store Service はサポートされていません。</value>
+  </data>
+  <data name="rsSecurityZoneNotSupported" xml:space="preserve">
+    <value>指定されたパスは、サポートされていない SharePoint ゾーンを指しています。既定のゾーン パスを使用する必要があります。</value>
+  </data>
+  <data name="rsSemanticQueryExtensionNotFound" xml:space="preserve">
+    <value>このレポート サーバーに登録されていないデータ拡張機能 '{0}' に関連付けられたセマンティック クエリ拡張機能を使用しようとしました。</value>
+  </data>
+  <data name="rsServerBusy" xml:space="preserve">
+    <value>メモリまたは処理のリソースが使用できるようになるまで、レポート サーバーでは、これ以上の要求を処理できません。</value>
+  </data>
+  <data name="rsServerConfigurationError" xml:space="preserve">
+    <value>レポート サーバーで構成エラーが発生しました。{0}</value>
+  </data>
+  <data name="rsSessionNotFound" xml:space="preserve">
+    <value>ユーザー '{1}' のセッション '{0}' が見つかりません。</value>
+  </data>
+  <data name="rsSharePointContentDBAccessError" xml:space="preserve">
+    <value>レポート サーバーは、この Web アプリケーションのコンテンツ データベースにアクセスできませんでした。アプリケーション プール アカウントに、権限がない可能性があります。この SQL Server Reporting Services サービス アプリケーションのプロパティ ページに移動し、アカウントに適切な権限があることを確認してください。</value>
+  </data>
+  <data name="rsSharePointError" xml:space="preserve">
+    <value>レポート サーバーで SharePoint エラーが発生しました。</value>
+  </data>
+  <data name="rsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>構成パラメーター SharePointIntegrated は True に設定されていますが、Share Point オブジェクト モデルを読み込むことができません。エラーは {0} でした。</value>
+  </data>
+  <data name="rsSharePoitScheduleAlreadyExists" xml:space="preserve">
+    <value>Share Point サイト '{1}' にはスケジュール '{0}' が既に存在するため、作成したり名前を変更することはできません。このエラーは、スケジュールの名前がサイト内で一意でない場合に発生します。</value>
+  </data>
+  <data name="rsSnapshotVersionMismatch" xml:space="preserve">
+    <value>SQL Reporting Services 2000 バージョンのスナップショットが検出されました。自動アップグレードが行われる可能性があります。</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleError" xml:space="preserve">
+    <value>preamble が無効です。</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleLengthError" xml:space="preserve">
+    <value>preamble の長さが無効です。長さは {0} バイトです。</value>
+  </data>
+  <data name="rsStoredCredentialsOutOfSync" xml:space="preserve">
+    <value>データ ソース ファイル {0} は無効です。このファイルは変更されていますが、レポート サーバーと同期されていません。</value>
+  </data>
+  <data name="rsStoredParameterNotFound" xml:space="preserve">
+    <value>ID '{0}' のパラメーターが見つかりませんでした。</value>
+  </data>
+  <data name="rsStreamNotFound" xml:space="preserve">
+    <value>ストリームが見つかりません。操作で指定されたストリーム識別子は、レポート サーバー データベースで見つかりません。</value>
+  </data>
+  <data name="rsStreamOperationFailed" xml:space="preserve">
+    <value>ストリーム操作の実行中に内部エラーが発生しました。詳細については、エラー ログを参照してください。</value>
+  </data>
+  <data name="rsSubreportFromSnapshot" xml:space="preserve">
+    <value>レポート スナップショットとして実行するように構成されているサブレポートでは、この操作がサポートされていません。</value>
+  </data>
+  <data name="rsSubscriptionNotFound" xml:space="preserve">
+    <value>サブスクリプション '{0}' が見つかりません。操作で指定されたサブスクリプション識別子がレポート サーバー データベースにありません。</value>
+  </data>
+  <data name="rsSystemResourcePackageItemContentTypeMismatch" xml:space="preserve">
+    <value>システム リソース パッケージの種類では、アイテム '{0}' のコンテンツの種類が '{1}' である必要があります。</value>
+  </data>
+  <data name="rsSystemResourcePackageItemExtensionMismatch" xml:space="preserve">
+    <value>システム リソース パッケージの種類では、アイテム '{0}' のファイル拡張子が '{1}' である必要があります。</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataInvalid" xml:space="preserve">
+    <value>システム リソース パッケージのメタデータ ファイルが正しくありません。</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataNotFound" xml:space="preserve">
+    <value>システム リソース パッケージに metadata.xml ファイルが含まれていません。</value>
+  </data>
+  <data name="rsSystemResourcePackageReferencedItemMissing" xml:space="preserve">
+    <value>システム リソース パッケージのメタデータでアイテム '{0}' が参照されていますが、そのアイテムが見つかりませんでした。</value>
+  </data>
+  <data name="rsSystemResourcePackageRequiredItemMissing" xml:space="preserve">
+    <value>システム リソース パッケージの種類にはアイテム '{0}' が必要ですが、そのアイテムが見つかりませんでした。</value>
+  </data>
+  <data name="rsSystemResourcePackageValidationFailed" xml:space="preserve">
+    <value>システム リソース パッケージが正しくありません。</value>
+  </data>
+  <data name="rsSystemResourcePackageWrongType" xml:space="preserve">
+    <value>提供されているシステム リソースのパッケージはタイプ '{0}' ではありません。</value>
+  </data>
+  <data name="rsTaskNotFound" xml:space="preserve">
+    <value>タスク '{0}' が存在しません。</value>
+  </data>
+  <data name="rsUnhandledHttpApplicationError" xml:space="preserve">
+    <value>レポート サーバーで、HttpApplication にハンドルされていない例外が発生しました。</value>
+  </data>
+  <data name="rsUnknownDataSetParameter" xml:space="preserve">
+    <value>このデータセットで定義されていないデータセット パラメーター '{0}' を設定しようとしました。</value>
+  </data>
+  <data name="rsUnknownEventType" xml:space="preserve">
+    <value>外部での使用を目的として、このレポート サーバーに登録されていないイベントの種類 '{0}' を使用しようとしました。</value>
+  </data>
+  <data name="rsUnknownFeedColumnType" xml:space="preserve">
+    <value>データ フィード列 '{0}' のデータ型がサポートされていないデータ型です。</value>
+  </data>
+  <data name="rsUnknownReportParameter" xml:space="preserve">
+    <value>このレポートで定義されていないレポート パラメーター '{0}' を設定しようとしました。</value>
+  </data>
+  <data name="rsUnknownUserName" xml:space="preserve">
+    <value>ユーザーまたはグループ名 '{0}' を認識できません。</value>
+  </data>
+  <data name="rsUnrecognizedXmlElement" xml:space="preserve">
+    <value>入力 XML が API のドキュメントに準拠していません。入力 XML に認識できない要素 '{0}' があります。</value>
+  </data>
+  <data name="rsUnsupportedParameterForMode" xml:space="preserve">
+    <value>パラメーター '{1}' は、{0} モードで実行されているレポート サーバーではサポートされません。null に設定する必要があります。</value>
+  </data>
+  <data name="rsUrlRemapError" xml:space="preserve">
+    <value>この SharePoint 環境では URL '{0}' をパブリック URL にマップできません。</value>
+  </data>
+  <data name="rsUserCannotOwnSubscription" xml:space="preserve">
+    <value>指定されたユーザーをこのサブスクリプションの所有者として割り当てることはできません。このユーザーには、このサブスクリプションに関連付けられているレポートをサブスクライブするのに必要な権限がありません。</value>
+  </data>
+  <data name="rsVersionMismatch" xml:space="preserve">
+    <value>Reporting Services SharePoint アドインのバージョンと Reporting Services サービス アプリケーションのバージョンが対応していないか、このバージョンでこの機能がサポートされていません。</value>
+  </data>
+  <data name="rsWinAuthz" xml:space="preserve">
+    <value>Reporting Services が Windows Authz API を呼び出そうとして、Windows が {1} エラーを返しました。この問題が引き続き発生する場合は、Windows でドメインへの接続に問題が発生しているか、Reporting Services アカウントに認証チェックを実行するアクセス許可がない可能性があります。問題の診断に関する詳細情報については、Windows Authz のドキュメントをご確認ください。Authz メソッド: {0}、エラー コード: {1}、ユーザー名: {2}。</value>
+  </data>
+  <data name="rsWinAuthz1355" xml:space="preserve">
+    <value>Reporting Services が Windows Authz API を呼び出そうとして、Windows が ERROR_NO_SUCH_DOMAIN エラーを返しました。この問題が引き続き発生する場合は、Windows でドメインへの接続に問題が発生している可能性があります。問題の診断に関する詳細情報については、Windows Authz のドキュメントをご確認ください。Authz メソッド: {0}、エラー コード: 1355、ユーザー名: {1}。</value>
+  </data>
+  <data name="rsWinAuthz5" xml:space="preserve">
+    <value>Reporting Services が Windows Authz API を呼び出そうとして、Windows が ERROR_ACCESS_DENIED エラーを返しました。この問題が引き続き発生する場合は、Reporting Services アカウントに認証チェックを実行するアクセス許可がない可能性があります。問題の診断に関する詳細情報については、Windows Authz のドキュメントをご確認ください。Authz メソッド: {0}、エラー コード: 5、ユーザー名: {1}。</value>
+  </data>
+  <data name="rsWindowsIntegratedSecurityDisabled" xml:space="preserve">
+    <value>このデータ ソースは Windows 統合セキュリティを使用するように構成されています。このレポート サーバーで Windows 統合セキュリティが無効になっているか、お使いのレポート サーバーで信頼済みアカウント モードが使用されています。</value>
+  </data>
+  <data name="rsWrongItemType" xml:space="preserve">
+    <value>アイテム '{0}' で試行している操作は、この種類のアイテムでは許可されていません。</value>
+  </data>
+</root>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_AccessDenied" xml:space="preserve">
+    <value>Доступ запрещен "{0}".</value>
+  </data>
+  <data name="Error_CatalogItemAlreadyExists" xml:space="preserve">
+    <value>Элемент каталога "{0}" уже существует в папке "{1}".</value>
+  </data>
+  <data name="Error_CatalogItemContentInvalid" xml:space="preserve">
+    <value>Содержимое элемента каталога недопустимо.</value>
+  </data>
+  <data name="Error_CatalogItemInvalid" xml:space="preserve">
+    <value>Элемент каталога находится в недопустимом состоянии.</value>
+  </data>
+  <data name="Error_CatalogItemNotFound" xml:space="preserve">
+    <value>Не удалось найти элемент каталога "{0}".</value>
+  </data>
+  <data name="Error_CatalogItemPropertyInvalid" xml:space="preserve">
+    <value>Недопустимое свойство элемента каталога.</value>
+  </data>
+  <data name="Error_DataSetMaxRowsLessThanOne" xml:space="preserve">
+    <value>Максимальное число строк в наборе данных должно быть не меньше 1.</value>
+  </data>
+  <data name="Error_DataSetNotFound" xml:space="preserve">
+    <value>Не удалось найти набор данных "{0}".</value>
+  </data>
+  <data name="Error_DataSetSoapError" xml:space="preserve">
+    <value>Произошла ошибка при получении данных из веб-службы сервера отчетов: {0}</value>
+  </data>
+  <data name="Error_DatabaseDowngradeDetected" xml:space="preserve">
+    <value>Обнаружено понижение уровня базы данных. Версия схемы базы данных новее версии схемы службы.</value>
+  </data>
+  <data name="Error_EncryptionFailure" xml:space="preserve">
+    <value>Не удается получить доступ к зашифрованному содержимому базы данных. Симметричный ключ для идентификатора установки недопустим или отсутствует.</value>
+  </data>
+  <data name="Error_ExpectedUserToken" xml:space="preserve">
+    <value>Требуется допустимый токен пользователя.</value>
+  </data>
+  <data name="Error_IEIsNotSupported" xml:space="preserve">
+    <value>Этот браузер не поддерживается, обновите его до Edge.</value>
+  </data>
+  <data name="Error_InvalidDataFormat" xml:space="preserve">
+    <value>Недопустимый или неподдерживаемый формат данных.</value>
+  </data>
+  <data name="Error_InvalidDataSourceType" xml:space="preserve">
+    <value>Недопустимый тип источника данных.</value>
+  </data>
+  <data name="Error_InvalidExcelWopiDiscovery" xml:space="preserve">
+    <value>Непредвиденный формат обнаружения Office Online.</value>
+  </data>
+  <data name="Error_InvalidExcelWopiUrl" xml:space="preserve">
+    <value>Недоступный или недопустимый URL-адрес обнаружения Office Online.</value>
+  </data>
+  <data name="Error_InvalidPowerBIMigrateUrl" xml:space="preserve">
+    <value>URL-адрес миграции Power BI недоступен или недопустим</value>
+  </data>
+  <data name="Error_InvalidScheduleRecurrenceObject" xml:space="preserve">
+    <value>У повторения может быть определено не больше одного типа повторения.</value>
+  </data>
+  <data name="Error_PbiToRsAttachDetected" xml:space="preserve">
+    <value>Подключенная база данных создана с помощью сервера отчетов PowerBI, а текущий экземпляр — это SQL Server Reporting Services. Такая конфигурация не поддерживается.</value>
+  </data>
+  <data name="Error_RSConfigContainsNoReportsApplicationUrls" xml:space="preserve">
+    <value>Отсутствует требуемое приложение диспетчера отчетов, определенное в конфигурации. Перезапустите средство настройки служб Reporting Services.</value>
+  </data>
+  <data name="Error_SystemResourcePackageException" xml:space="preserve">
+    <value>Пакет системных ресурсов недопустим.</value>
+  </data>
+  <data name="Error_SystemResourceProcessingException" xml:space="preserve">
+    <value>Не удалось обработать системный ресурс.</value>
+  </data>
+  <data name="Error_UniversalBrandInvalidColorsFile" xml:space="preserve">
+    <value>Файл пакета фирменных цветов недопустим.</value>
+  </data>
+  <data name="Error_UserPrincipalIsNotSet" xml:space="preserve">
+    <value>Значение UserPrincipal не задано.</value>
+  </data>
+  <data name="SupportedBrowsers" xml:space="preserve">
+    <value>Поддерживаемые браузеры</value>
+  </data>
+</root>

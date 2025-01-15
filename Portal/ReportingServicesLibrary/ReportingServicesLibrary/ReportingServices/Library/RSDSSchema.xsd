@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/sqlserver/reporting/2006/03/reportdatasource"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://schemas.microsoft.com/sqlserver/reporting/2006/03/reportdatasource"
+	elementFormDefault="qualified">
+
+	
+	<xsd:element name="DataSourceDefinition" type="CT_DataSourceDefinition"/>
+
+	<xsd:complexType name="CT_DataSourceDefinition">
+		<xsd:sequence>
+			<xsd:element name="Extension" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ConnectString" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CredentialRetrieval" type="CT_CredentialRetrieval" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="WindowsCredentials" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ImpersonateUser" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Prompt" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Enabled" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="CT_CredentialRetrieval">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="None" />
+			<xsd:enumeration value="Store" />
+			<xsd:enumeration value="Prompt" />
+			<xsd:enumeration value="Integrated" />
+		</xsd:restriction>
+	</xsd:simpleType>	
+</xsd:schema>
+

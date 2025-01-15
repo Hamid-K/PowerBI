@@ -1,0 +1,2872 @@
+/**
+ * Styles
+ */
+body.fullScreen .explorationContainer .explorationHost {
+  top: 0;
+}
+.explorationHost {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.explorationHost.notificationVisible {
+  top: 72px;
+}
+.explorationHost.welcomeBarVisible {
+  top: 100px;
+}
+.explorationHost.notificationVisible.welcomeBarVisible {
+  top: 132px;
+}
+.explorationHost .verticalItemsContainer {
+  height: 100%;
+}
+.explorationHost .horizontalItemsContainer {
+  float: none;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.explorationHostNoAppBar {
+  top: 0;
+}
+.explorationContainer button:where(:not(.pbi-fluent-button)) {
+  padding: 0;
+  border: none;
+}
+.explorationContainer ul,
+.explorationContainer ol,
+.explorationContainer li {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  list-style: none;
+  box-sizing: border-box;
+}
+.explorationContainer h1,
+.explorationContainer h2,
+.explorationContainer h3,
+.explorationContainer h4,
+.explorationContainer h5,
+.explorationContainer h6 {
+  margin: 0;
+}
+.explorationContainer input {
+  box-sizing: border-box;
+  outline: 0;
+}
+.explorationContainer .description {
+  font-size: 12px;
+}
+.explorationContainer.infoNavContainer .explorationHost {
+  top: 0;
+}
+.explorationContainer.infoNavContainer .paneHeader {
+  padding-bottom: 0;
+}
+.explorationContainer.infoNavContainer .importButton {
+  display: none;
+}
+.explorationContainer.explorationHosted .paneHeader {
+  padding-bottom: 0;
+}
+.explorationContainer.explorationHosted .explorationNavigationContent .pane {
+  padding-right: 0;
+  height: 35px;
+}
+.explorationContainer.explorationHosted .explorationNavigationContent .pane .create.static.section {
+  right: 0;
+}
+.explorationContainer .rightSidePane {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.explorationContainer .editing {
+  background: var(--report-background-color_editing, #fafafa);
+}
+.explorationContainer .reading {
+  background: var(--neutral-primary-color, #333333);
+}
+.explorationContainer .reading .explorationHost {
+  bottom: 10px;
+}
+.explorationContainer .reading .exploration {
+  float: none;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 10px 10px 10px;
+  background-color: var(--neutral-light-color, #EAEAEA);
+}
+.explorationContainer .ui-draggable-dragging {
+  z-index: 10;
+  opacity: 0.7;
+}
+.explorationHosted .rightSidePane {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.explorationHosted .exploration {
+  float: none;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.explorationHosted .visualizationPane {
+  width: 260px;
+}
+.explorationHosted .taskPane {
+  width: 180px;
+}
+.explorationHosted .explorationHost {
+  top: 0;
+}
+.explorationWithChrome .rightSidePane {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.explorationWithChrome .exploration {
+  float: none;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.explorationWithChrome .visualizationPane {
+  width: 260px;
+}
+.explorationWithChrome .taskPane {
+  width: 180px;
+}
+.explorationWithChrome .explorationMask,
+.explorationHosted .explorationMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+  background: var(--neutral-secondary-color, #666666);
+  z-index: 9999;
+}
+.explorationContainer {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.explorationContainer h1,
+.explorationContainer h2,
+.explorationContainer h3,
+.explorationContainer h4,
+.explorationContainer h5,
+.explorationContainer h6 {
+  font-weight: normal;
+}
+.explorationContainer .collapsed {
+  display: none;
+}
+.explorationContainer .appBar exploration-app-bar {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.explorationContainer .exploration {
+  float: none;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  background: var(--white-color, #FFF);
+}
+.explorationContainer .exploration.phone-form-factor-background {
+  background: var(--neutral-light-color, #EAEAEA);
+}
+.explorationContainer .exploreCanvas {
+  bottom: 36px;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: auto;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.explorationContainer .exploreCanvasToBottom .exploreCanvas {
+  bottom: 0;
+}
+.explorationContainer .exploreCanvasWithFullScreenComponent .exploreCanvas {
+  bottom: 48px;
+}
+.canvasSpinnerBackground {
+  background-color: var(--white-color, #FFF);
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.centeredSpinner {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -20px;
+  margin-top: -20px;
+  pointer-events: none;
+}
+.explorationSaveAsName {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.statusBarRightPane {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infonav-dialogContent .explorationSaveDialog {
+  color: var(--neutral-primary-color, #333333);
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.infonav-dialogContent .explorationSaveDialog .title {
+  font-family: 'Segoe UI Semilight', 'wf_segoe-ui_semilight', helvetica, arial, sans-serif;
+  font-size: 24px;
+}
+.infonav-dialogContent .explorationSaveDialog .message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.virtual-list-container {
+  max-height: 300px;
+}
+@media print {
+  body .resizeHandle {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost {
+    top: 0;
+    /* Desktop */
+  }
+  body .explorationContainer .explorationHost .visualizationPane,
+  body .explorationContainer .explorationHost .taskPane,
+  body .explorationContainer .explorationHost .explorationNavigationContent,
+  body .explorationContainer .explorationHost .toolbar,
+  body .explorationContainer .explorationHost .buildPane,
+  body .explorationContainer .explorationHost .customizePane,
+  body .explorationContainer .explorationHost .paneSwitcher {
+    display: none;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas {
+    overflow: hidden !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .outspaceContainer {
+    opacity: 0 !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea {
+    box-shadow: none !important;
+    transition-duration: 0s !important;
+    outline: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea blank-canvas-watermark {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup {
+    border: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer .visualContainerBorder,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup .visualContainerBorder {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer .vcHeader,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup .vcHeader {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer .visualTitle,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup .visualTitle {
+    width: auto !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer .resizeHandle,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup .resizeHandle {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainer .vcFooter,
+  body .explorationContainer .explorationHost .exploreCanvas .displayArea .visualContainerGroup .vcFooter {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploreCanvas .outspacePane {
+    display: none !important;
+  }
+  body .explorationContainer .explorationHost .exploration {
+    outline: none;
+  }
+  body .explorationMask {
+    display: none;
+  }
+  body #exploration-container-app-bars {
+    display: none;
+  }
+}
+.explorationContainer .exploreCanvas .visualContainerHost {
+  padding-top: 20px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainerHost {
+  padding-top: 0;
+}
+.explorationContainer .exploreCanvas {
+  --phoneInnerBorderColor: var(--fluent-theme-neutral-quarter-color, #D2D0CE);
+  overflow: visible;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  -ms-overflow-style: scrollbar;
+}
+[data-legacy-theming="false"] .explorationContainer .exploreCanvas {
+  --phoneInnerBorderColor: var(--colorNeutralStrokeDisabled);
+}
+html[dir="rtl"] .explorationContainer .exploreCanvas .displayAreaContainer {
+  direction: ltr;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring.disableScroll .canvasFlexBox .displayAreaContainer .displayArea {
+  overflow: hidden;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring.disableScroll .canvasFlexBox .displayAreaContainer .displayArea .canvasWatermark {
+  transform: scale(1) !important;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .outspaceContainer {
+  background-color: var(--fluent-theme-neutral-quarter-alt-color, #E1DFDD);
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .displayArea {
+  box-sizing: content-box;
+  padding-left: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--globalColorWhite, #FFF);
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .displayArea .visualBackgroundContainer,
+.explorationContainer .exploreCanvas.phoneAuthoring .displayArea .visualContainerHost {
+  height: 3600px;
+  width: 324px;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .backdropVisible .displayArea {
+  padding: 0 10px 0 18px;
+  margin-top: 44px;
+  box-shadow: none !important;
+  border: 1px solid var(--phoneInnerBorderColor);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: none;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .backdropVisible .displayArea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--fluent-theme-neutral-quarter-alt-color, #E1DFDD);
+  border: 1.5px solid transparent;
+  background-clip: content-box;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .backdropVisible .displayArea.actualSizeAlignTop {
+  top: 0;
+  margin-top: 114px;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .backdropVisible .displayArea.actualSizeOrigin {
+  margin-right: 4px;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .backdropVisible .displayArea .visualBackgroundContainer {
+  width: 344px;
+  height: 3604px;
+}
+.explorationContainer .exploreCanvas.disableAnimations .visualContainer {
+  transition: none;
+}
+.explorationContainer .exploreCanvas.responsive {
+  overflow: auto;
+}
+.explorationContainer .exploreCanvas.popOut .visualBackgroundContainer {
+  z-index: 10000002 !important;
+}
+.explorationContainer .exploreCanvas.hasSpotlight .visualContainer:not(.spotlight) {
+  opacity: 0.15;
+  transition: opacity 0.2s;
+}
+.explorationContainer .exploreCanvas .visualContainer.spotlight,
+.explorationContainer .exploreCanvas .visualContainer.elevation {
+  box-shadow: 0px 0px 2px var(--colorNeutralShadowAmbient), 0px 4px 8px var(--colorNeutralShadowKey);
+  transition: box-shadow 0.2s;
+  border-radius: 2px;
+}
+.explorationContainer .exploreCanvas.disableTouchZoom {
+  touch-action: none;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox {
+  display: flex;
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer {
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: var(--fluent-theme-white-color, #FFF);
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar-thumb:horizontal {
+  border-top: 2px solid var(--fluent-theme-white-color, #FFF);
+  border-bottom: 2px solid var(--fluent-theme-white-color, #FFF);
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar-thumb:vertical {
+  border-right: 2px solid var(--fluent-theme-white-color, #FFF);
+  border-left: 2px solid var(--fluent-theme-white-color, #FFF);
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar-track-piece:horizontal {
+  border-top: 2px solid var(--fluent-theme-white-color, #FFF);
+  border-bottom: 2px solid var(--fluent-theme-white-color, #FFF);
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer.newCanvasScrollbar::-webkit-scrollbar-track-piece:vertical {
+  border-right: 2px solid var(--fluent-theme-white-color, #FFF);
+  border-left: 2px solid var(--fluent-theme-white-color, #FFF);
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer .displayArea {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer .displayArea.fitToWidthOrigin {
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  top: 0;
+  /* @noflip */
+  left: 0;
+  /* @noflip */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer .displayArea.fitToScreen {
+  /* @noflip */
+  left: 0;
+  top: 0;
+  transform: none;
+  transform-origin: 0;
+  position: absolute;
+  -webkit-transform: none;
+  -webkit-transform-origin: 0;
+}
+.explorationContainer .exploreCanvas .canvasFlexBox .displayAreaContainer .displayAreaViewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.explorationContainer .exploreCanvas.phone-form-factor .canvasFlexBox .displayAreaContainer .displayArea {
+  overflow-y: auto;
+  box-sizing: content-box;
+}
+.explorationContainer .exploreCanvas .visualContainerHost {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+}
+.explorationContainer .exploreCanvas.phone-form-factor .canvasFlexBox .displayAreaContainer .displayArea {
+  overflow-y: auto;
+  box-sizing: content-box;
+}
+.explorationContainer .exploreCanvas.phone-form-factor .visualContainerHost {
+  padding-top: 0;
+}
+.explorationContainer .exploreCanvas .backgroundContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.explorationContainer .exploreCanvas .backgroundContainer.visualBackgroundContainer {
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.explorationContainer .exploreCanvas .backgroundContainer.outspaceContainer {
+  height: 100%;
+  width: 100%;
+}
+.explorationContainer .exploreCanvas .backgroundContainer .backgroundImageContainer {
+  position: absolute;
+}
+.explorationContainer .exploreCanvas .backgroundContainer.Normal .backgroundImageContainer {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+}
+.explorationContainer .exploreCanvas .backgroundContainer.Fit .backgroundImageContainer {
+  width: 100%;
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .backgroundContainer.Fit .backgroundImageContainer .backgroundImage {
+  width: 100%;
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .backgroundContainer.Fill .backgroundImageContainer {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.explorationContainer .exploreCanvas .backgroundContainer.Fill .backgroundImageContainer .backgroundImage {
+  width: 100%;
+}
+.explorationContainer .exploreCanvas.phone-form-factor .displayArea.actualSizeAlignTop {
+  top: 0;
+  margin-top: 80px;
+}
+.explorationContainer .exploreCanvas.phone-form-factor .displayArea.actualSizeAlignLeft {
+  right: 0;
+  margin-right: 26px;
+}
+.explorationContainer .exploreCanvas .actualSizeAlignTop {
+  top: 0;
+  margin-top: 10px;
+}
+.explorationContainer .exploreCanvas .actualSizeAlignCenter {
+  /* @noflip */
+  left: 50%;
+}
+.explorationContainer .exploreCanvas .actualSizeAlignLeft {
+  /* @noflip */
+  left: 0;
+  /* @noflip */
+  margin-left: 10px;
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer.selected > .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup.selected > .visualContainerBorder {
+  border-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer.selected:hover > .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer.showHover > .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup.selected.showHover > .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup.isChildSelected > .visualContainerBorder {
+  border-color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainer.selected > .visualContainerBorder,
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainerGroup.selected > .visualContainerBorder {
+  border-color: none;
+}
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainer.selecting > .visualContainerBorder,
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainerGroup.selecting > .visualContainerBorder {
+  border-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainer.selected:hover > .visualContainerBorder,
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainer.showHover > .visualContainerBorder,
+.explorationContainer .exploreCanvas .multiSelection transform:not(.on-object) .visualContainerGroup.selected.showHover > .visualContainerBorder {
+  border-color: none;
+}
+.explorationContainer .exploreCanvas .multiSelection .visualContainer:hover .vcHeader {
+  display: none;
+}
+.explorationContainer .exploreCanvas.brush-cursor * {
+  cursor: url("../images/cursors/brush-cursor.png"), auto;
+}
+.vcOptionsMenu {
+  border-radius: 3px;
+  font-size: 12px;
+}
+.vcOptionsMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.vcOptionsMenu ul li {
+  line-height: 16px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: var(--neutral-primary-color, #333333);
+}
+.vcOptionsMenu ul li:hover {
+  background: var(--neutral-light-color, #EAEAEA);
+}
+.vcOptionsMenu ul li .itemIcon,
+.vcOptionsMenu ul li .glyphicon {
+  float: right;
+  width: 20px;
+  margin-left: 4px;
+}
+.vcOptionsMenu ul li .itemLabel {
+  display: inline-block;
+  max-width: 240px;
+  text-align: right;
+}
+.vcOptionsMenu ul hr {
+  cursor: default;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--neutral-light-color, #EAEAEA);
+}
+.vcOptionsMenu ul .separator {
+  cursor: default;
+}
+.vcOptionsMenu button {
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: transparent !important;
+  font-size: inherit;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  color: inherit;
+}
+.vcOptionsMenu .toggle.selected {
+  color: var(--neutral-primary-color, #333333);
+  font-family: 'Segoe UI Semibold', 'wf_segoe-ui_semibold', helvetica, arial, sans-serif;
+}
+.vcOptionsMenu .toggle.selected::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  background-color: var(--theme-primary-color, #F2C811);
+  right: 0;
+}
+.vcOptionsMenu .sort .caption {
+  display: inline-block;
+}
+.vcOptionsMenu .sort .toggleSortBtn[disabled] {
+  opacity: 0.4;
+}
+@media print {
+  body .vcOptionsMenu {
+    display: none !important;
+  }
+}
+.canvasBackdrop {
+  --canvasBackgroundColor: var(--white-color, #FFF);
+  width: 382px;
+  height: 698px;
+  border-radius: 35px;
+  background-color: var(--canvasBackgroundColor);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 30%;
+  top: 20%;
+}
+[data-legacy-theming="false"] .canvasBackdrop {
+  --canvasBackgroundColor: var(--colorNeutralBackground1);
+}
+.canvasBackdrop.actualSizeAlignCenter {
+  right: 50%;
+  margin-right: -176px;
+}
+.canvasBackdrop.actualSizeAlignMiddle {
+  top: 50%;
+  margin-top: -339px;
+}
+.canvasBackdrop.actualSizeAlignTop {
+  top: 0;
+  margin-top: 10px;
+}
+.canvasBackdrop.actualSizeAlignLeft {
+  right: 0;
+  margin-right: 10px;
+}
+.canvasBackdrop .mobileLayoutNotch {
+  border: 1px solid var(--fluent-theme-neutral-quarter-color, #D2D0CE);
+  display: inline-flex;
+  position: absolute;
+  width: 46px;
+  height: 5px;
+  border-radius: 10px;
+  right: 50%;
+  margin-right: -23px;
+  top: 5%;
+}
+.canvasBackdrop .mobileLayoutHeaderMockup {
+  width: calc(324px + 2 * 10px + 8px);
+  background-color: var(--fluent-theme-neutral-lighter-alt-color, #FAF9F8);
+  border: 1px solid var(--fluent-theme-neutral-quarter-color, #D2D0CE);
+  border-bottom-color: rgba(33, 33, 33, 0.15);
+  height: 44px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  top: 50%;
+  margin-top: -291px;
+}
+.canvasBackdrop .mobileLayoutHeaderMockup .backButtonMockup {
+  color: var(--fluent-theme-neutral-quarter-alt-color, #E1DFDD);
+  padding: 15px;
+}
+.canvasBackdrop .mobileLayoutHeaderMockup .titleMockupWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.canvasBackdrop .mobileLayoutHeaderMockup .titleMockupWrapper .titleMockup {
+  width: 215px;
+  height: 11px;
+  background-color: var(--fluent-theme-neutral-quarter-alt-color, #E1DFDD);
+  margin-bottom: 5px;
+}
+.canvasBackdrop .mobileLayoutHeaderMockup .titleMockupWrapper .subtitleMockup {
+  width: 122px;
+  height: 7px;
+  background-color: var(--fluent-theme-neutral-quarter-alt-color, #E1DFDD);
+}
+.explorationContainer .entityList {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2px 4px 2px 6px;
+  margin: 1px 0;
+}
+.explorationContainer .fieldList {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  -ms-overflow-style: none;
+}
+.explorationContainer .fieldList mark {
+  background-color: var(--theme-primary-color, #F2C811);
+}
+.explorationContainer .fieldList hr {
+  border: solid var(--neutral-primary-color, #333333);
+  border-width: 1px 0 0 0;
+  margin-bottom: 8px;
+}
+.explorationContainer .fieldList .searchBox input:not(:focus):hover {
+  border-color: var(--alert-color, #FFF9AE);
+}
+.explorationContainer .fieldList .getDataHint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+.explorationContainer .fieldList .getDataHint i.pbi-glyph-table-group {
+  color: var(--gray-180, #252423);
+  margin-top: 16px;
+}
+.explorationContainer .fieldList .getDataHint .getDataText {
+  text-align: center;
+  margin-top: 8px;
+}
+.explorationContainer .fieldList .getDataHint .getDataText span {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-regular, 400);
+  color: var(--gray-140, #484644);
+}
+.explorationContainer .fieldList .getDataHint .getDataText button {
+  font-family: var(--fluent-font-family, "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif);
+  font-size: var(--sm-font-size, 12px);
+  font-weight: var(--font-weight-semi-bold, 600);
+  background: transparent;
+  color: var(--fluent-theme-link-darker-color, #005A9E);
+}
+.explorationContainer .fieldList .getDataHint .getDataText button label {
+  cursor: pointer;
+}
+.explorationContainer .fieldList .scroll-wrapper {
+  position: absolute !important;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 48px;
+  height: auto;
+}
+.explorationContainer .entityContainer .caret {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 0px 0 4px;
+  color: var(--gray-140, #484644);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s;
+}
+.explorationContainer .entityContainer .caret.expanded {
+  transform: rotate(0deg);
+}
+html[dir="rtl"] .explorationContainer .entityContainer .caret.expanded {
+  transform: rotate(90deg);
+}
+.explorationContainer .entityContainer pbi-icon i {
+  transition: transform 0.25s;
+}
+.explorationContainer .entityContainer pbi-icon i.glyphicon {
+  margin: 0;
+}
+.explorationContainer .fieldListEntity {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  cursor: pointer;
+  /* Applies to the EditableLabel inside the text element */
+  /* Applies to the EditableLabel inside the text element */
+}
+.explorationContainer .fieldListEntity.selected {
+  background-color: var(--neutral-primary-color, #333333);
+}
+.explorationContainer .fieldListEntity:hover {
+  background: var(--neutral-primary-color-alt3, #515151);
+}
+.explorationContainer .fieldListEntity:hover .menuContainer .optionsMenu .glyphicon {
+  opacity: 1;
+}
+.explorationContainer .fieldListEntity .fieldListTooltip {
+  overflow: hidden;
+  margin: 2px 8px 2px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.explorationContainer .fieldListEntity .fieldListTooltip .title {
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.explorationContainer .fieldListEntity .fieldListTooltip .title.hasCheckedProperties {
+  color: var(--theme-primary-color, #F2C811);
+}
+.explorationContainer .fieldListEntity.inactive {
+  color: var(--neutral-secondary-alt-color2, #888888);
+}
+.explorationContainer .fieldListEntity .textLabel {
+  line-height: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.explorationContainer .fieldListEntity .textInput {
+  height: 16px;
+  line-height: 14px;
+}
+.explorationContainer .fieldListEntity:focus {
+  outline: none;
+}
+html[data-focus-source="key"] .explorationContainer .fieldListEntity:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px) !important;
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color) !important;
+}
+.explorationContainer editable-label {
+  display: flex;
+  flex-direction: column;
+}
+.explorationContainer editable-label,
+.explorationContainer editable-label .editableLabel {
+  min-width: 0;
+}
+.explorationContainer editable-label .textInput {
+  color: var(--neutral-dark-color, #212121);
+  /* Text input is default inline */
+  display: block;
+  background: var(--neutral-tertiary-alt-color, #C8C8C8);
+  color: var(--black-color, #000);
+  padding: 0 4px;
+  margin: 0 4px;
+}
+.explorationContainer editable-label .textInput::selection {
+  background: var(--theme-primary-color, #F2C811);
+  color: var(--text-primary-content-color-hc);
+}
+.explorationContainer .menuContainer {
+  vertical-align: top;
+}
+.explorationContainer .menuContainer.propertyMenu {
+  margin-left: 8px;
+}
+.explorationContainer .menuContainer .optionsMenu {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.explorationContainer .menuContainer .optionsMenu .glyphicon {
+  opacity: 0;
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  font-size: 13px;
+  padding-right: 12px;
+}
+.explorationContainer .menuContainer .optionsMenu:focus .glyphicon {
+  opacity: 1 !important;
+}
+html[data-focus-source="key"] .explorationContainer .menuContainer .optionsMenu:focus .glyphicon {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .menuContainer .dropdown {
+  margin-top: 5px;
+}
+.explorationContainer .lastLineBorder {
+  border-top: 1px solid transparent;
+  margin: 0 1px;
+}
+.explorationContainer .lastLineBorder.prepend {
+  border-top-color: var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer field-list-property.append li {
+  border-bottom-color: var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer field-list-property.prepend li {
+  border-top-color: var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer field-list-property.dropover li {
+  border: 1px dashed var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer .fieldListProperty[drag],
+.explorationContainer .fieldListProperty {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--white-color, #FFF);
+  background: var(--neutral-secondary-color, #666666);
+  border: 1px solid var(--neutral-primary-color, #333333);
+  border-radius: 3px;
+  height: 22px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.explorationContainer .fieldListProperty[drag].isLeaf,
+.explorationContainer .fieldListProperty.isLeaf {
+  border-radius: 0;
+  border-top-style: none;
+}
+.explorationContainer .fieldListProperty[drag].lastLeaf,
+.explorationContainer .fieldListProperty.lastLeaf {
+  border-radius: 0 0 3px 3px;
+}
+.explorationContainer .fieldListProperty[drag].displayFolder,
+.explorationContainer .fieldListProperty.displayFolder {
+  border: none;
+  background: none;
+}
+.explorationContainer .fieldListProperty[drag].kpi.expanded,
+.explorationContainer .fieldListProperty.kpi.expanded,
+.explorationContainer .fieldListProperty[drag].hierarchy.expanded,
+.explorationContainer .fieldListProperty.hierarchy.expanded {
+  border-radius: 3px 3px 0 0;
+}
+.explorationContainer .fieldListProperty[drag]:focus,
+.explorationContainer .fieldListProperty:focus {
+  outline: none;
+}
+html[data-focus-source="key"] .explorationContainer .fieldListProperty[drag]:focus,
+html[data-focus-source="key"] .explorationContainer .fieldListProperty:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px) !important;
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color) !important;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListIcon,
+.explorationContainer .fieldListProperty .fieldListIcon {
+  margin: 0 2px;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListIcon.kpi,
+.explorationContainer .fieldListProperty .fieldListIcon.kpi {
+  margin: 0 9px 0 8px;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListIcon.folder,
+.explorationContainer .fieldListProperty .fieldListIcon.folder {
+  margin: 0 4px 0 10px;
+}
+.explorationContainer .fieldListProperty[drag].selected,
+.explorationContainer .fieldListProperty.selected {
+  border: 1px solid var(--theme-primary-color, #F2C811);
+}
+.explorationContainer .fieldListProperty[drag] .propertyContent,
+.explorationContainer .fieldListProperty .propertyContent {
+  padding: 0;
+}
+.explorationContainer .fieldListProperty[drag] .propertyContent,
+.explorationContainer .fieldListProperty .propertyContent,
+.explorationContainer .fieldListProperty[drag] .propertyContent i,
+.explorationContainer .fieldListProperty .propertyContent i {
+  vertical-align: middle;
+}
+.explorationContainer .fieldListProperty[drag] .property-checkbox,
+.explorationContainer .fieldListProperty .property-checkbox {
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+.explorationContainer .fieldListProperty[drag] .property-checkbox input,
+.explorationContainer .fieldListProperty .property-checkbox input {
+  cursor: pointer;
+}
+.explorationContainer .fieldListProperty[drag] .property-checkbox.hasIcon,
+.explorationContainer .fieldListProperty .property-checkbox.hasIcon {
+  margin-right: 4px;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListTooltip,
+.explorationContainer .fieldListProperty .fieldListTooltip {
+  overflow: hidden;
+  vertical-align: middle;
+  width: 100%;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListTooltip .propertyText,
+.explorationContainer .fieldListProperty .fieldListTooltip .propertyText {
+  display: inline-block;
+  cursor: pointer;
+  text-indent: 1px;
+  width: 100%;
+  /* Applies to the EditableLabel inside the text element */
+}
+.explorationContainer .fieldListProperty[drag] .fieldListTooltip .propertyText .textLabel,
+.explorationContainer .fieldListProperty .fieldListTooltip .propertyText .textLabel {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.explorationContainer .fieldListProperty[drag] .fieldListTooltip .propertyText.hasCheckedChildren,
+.explorationContainer .fieldListProperty .fieldListTooltip .propertyText.hasCheckedChildren {
+  color: var(--theme-primary-color, #F2C811);
+}
+.explorationContainer .fieldListProperty[drag] .dragHandle,
+.explorationContainer .fieldListProperty .dragHandle {
+  margin: 0 4px 2px;
+  display: inline-block;
+}
+.explorationContainer .fieldListProperty[drag].inactive,
+.explorationContainer .fieldListProperty.inactive {
+  color: var(--neutral-secondary-alt-color2, #888888);
+}
+.explorationContainer .fieldListProperty[drag]:hover,
+.explorationContainer .fieldListProperty:hover {
+  background: var(--neutral-primary-color-alt3, #515151);
+}
+.explorationContainer .fieldListProperty[drag]:hover .menuContainer .optionsMenu .glyphicon,
+.explorationContainer .fieldListProperty:hover .menuContainer .optionsMenu .glyphicon {
+  opacity: 1;
+}
+.explorationContainer field-list-property {
+  display: block;
+}
+.explorationContainer field-list-property.append {
+  border-bottom-color: var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer field-list-property.prepend {
+  border-top-color: var(--theme-primary-color, #F2C811) !important;
+}
+.explorationContainer .fieldListIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.newPaneColors.explorationContainer .fieldList hr {
+  border-color: var(--gray-40, #E1DFDD);
+}
+.newPaneColors.explorationContainer .entityContainer .caret {
+  color: var(--gray-180, #252423);
+  transform: none;
+  transition: none;
+}
+.newPaneColors.explorationContainer .fieldListIcon .fieldIcon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+.newPaneColors.explorationContainer .fieldListIcon .checkmarkIcon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 8px 8px 0px 0px;
+}
+.newPaneColors.explorationContainer .fieldListEntity {
+  border-radius: 2px;
+}
+.newPaneColors.explorationContainer .fieldListEntity.selected {
+  background-color: var(--gray-50, #D2D0CE);
+}
+.newPaneColors.explorationContainer .fieldListEntity:hover {
+  background-color: var(--gray-30, #EDEBE9);
+}
+.newPaneColors.explorationContainer .fieldListEntity.inactive {
+  color: var(--gray-80, #B3B0AD);
+}
+.newPaneColors.explorationContainer .fieldListEntity .fieldListTooltip .title.hasCheckedProperties {
+  color: var(--gray-180, #252423);
+  font-weight: 600;
+}
+html[data-focus-source="key"] .newPaneColors.explorationContainer .fieldListEntity:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px) !important;
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color) !important;
+}
+.newPaneColors.explorationContainer editable-label .textInput {
+  background: var(--white-color, #FFF);
+  color: var(--gray-180, #252423);
+  padding: 0 4px;
+  margin: 0 4px;
+}
+.newPaneColors.explorationContainer .menuContainer .optionsMenu .glyphicon {
+  color: var(--gray-180, #252423);
+  padding-right: 12px;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag],
+.newPaneColors.explorationContainer .fieldListProperty {
+  color: var(--gray-180, #252423);
+  background: var(--gray-20, #F3F2F1);
+  border: none;
+  border-radius: 2px;
+  height: 24px;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .property-checkbox .checkboxBox,
+.newPaneColors.explorationContainer .fieldListProperty .property-checkbox .checkboxBox {
+  border-color: var(--fluent-theme-neutral-secondary-alt-color, #767676);
+  border-radius: 2px;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .property-checkbox .checkboxBox.checked,
+.newPaneColors.explorationContainer .fieldListProperty .property-checkbox .checkboxBox.checked {
+  border-color: var(--theme-primary-color, #F2C811);
+  background-color: var(--theme-primary-color, #F2C811);
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .property-checkbox .checkboxBox.disabled,
+.newPaneColors.explorationContainer .fieldListProperty .property-checkbox .checkboxBox.disabled {
+  border-color: var(--gray-80, #B3B0AD);
+  background-color: var(--gray-80, #B3B0AD);
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .property-checkbox .checkboxCheck,
+.newPaneColors.explorationContainer .fieldListProperty .property-checkbox .checkboxCheck {
+  color: var(--gray-180, #252423);
+}
+html[data-focus-source="key"] .newPaneColors.explorationContainer .fieldListProperty[drag]:focus,
+html[data-focus-source="key"] .newPaneColors.explorationContainer .fieldListProperty:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px) !important;
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color) !important;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .fieldListTooltip,
+.newPaneColors.explorationContainer .fieldListProperty .fieldListTooltip {
+  margin-right: 4px;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag] .fieldListTooltip .propertyText.hasCheckedChildren,
+.newPaneColors.explorationContainer .fieldListProperty .fieldListTooltip .propertyText.hasCheckedChildren {
+  color: var(--gray-180, #252423);
+  font-weight: 600;
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag].inactive,
+.newPaneColors.explorationContainer .fieldListProperty.inactive {
+  color: var(--gray-80, #B3B0AD);
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag]:hover,
+.newPaneColors.explorationContainer .fieldListProperty:hover {
+  background: var(--gray-30, #EDEBE9);
+}
+.newPaneColors.explorationContainer .fieldListProperty[drag].selected,
+.newPaneColors.explorationContainer .fieldListProperty.selected {
+  background: var(--gray-50, #D2D0CE);
+}
+.visual-icon.powerApps.isOldIcon {
+  background-image: url("../images/ExploreUI.sprites.png");
+  background-position: 0px -248px;
+  width: 20px;
+  height: 20px;
+}
+.visual-icon.powerApps.isOldIcon.disabled {
+  background-image: url("../images/ExploreUI.sprites.png");
+  background-position: -20px -248px;
+  width: 20px;
+  height: 20px;
+}
+.filterPane .filterPaneIcon {
+  width: 16px;
+  height: 16px;
+}
+.visualizationPane .sectionIcon {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding-right: 0;
+}
+.explorationContainer .fieldListIcon {
+  width: 16px;
+  height: 16px;
+}
+.explorationContainer .fieldListIcon.entity {
+  margin: 2px;
+  padding: 0;
+}
+.explorationContainer .fieldListIcon use[href="#none"] {
+  display: none;
+}
+.explorationContainer .fieldWellIcon {
+  width: 16px;
+  height: 16px;
+}
+.explorationContainer .fieldWellIcon.dropDown {
+  margin-bottom: 2px;
+}
+.newPaneColors.explorationContainer .fieldWellIcon.dropDown {
+  margin: unset;
+}
+.fillAvailableSpace {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.expAppBarMenu {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  content: '';
+}
+.expAppBar {
+  position: absolute;
+  right: 10px;
+  content: '';
+}
+html[data-focus-source='key'] .supportsFocus:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+html[data-focus-source='key'] .supportsFocusInset:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+  outline-offset: -1px;
+}
+html[data-focus-source='key'] .supportsFocusBorder:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.visualContextMenu {
+  min-width: 150px;
+}
+.visualContextMenu .dropdown-item > a {
+  padding: 4px 8px !important;
+}
+.visualContextMenu .dropdown-item > a:not(.disabled):hover {
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8) !important;
+}
+.visualContextMenu .dropdown-item .dropdown-separator {
+  margin: 0 20px;
+  border-bottom: 2px solid var(--neutral-light-color, #EAEAEA);
+}
+.visualContextMenu .itemLabel {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  display: inline;
+  padding: 2px 12px;
+}
+.infonav-modalContainer.embedContainer .infonav-dialogCloseIcon {
+  top: 12px;
+  left: 12px;
+}
+.infonav-modalContainer.componentDialog .closeIcon {
+  display: none;
+}
+.infonav-modalContainer.componentDialog .infonav-modalDialog {
+  position: fixed !important;
+  width: auto;
+}
+.infonav-modalContainer.componentDialog .infonav-modalDialog .infonav-dialogLayout {
+  padding: 0;
+}
+.infonav-modalContainer.componentDialog .infonav-modalDialog .infonav-dialogLayout .infonav-dialogTitle {
+  display: none;
+}
+.infonav-modalContainer.componentDialog .infonav-modalDialog .infonav-dialogLayout .infonav-dialogContent {
+  padding-top: 0;
+}
+.infonav-modalDialog {
+  display: flex;
+  flex-direction: column;
+}
+.infonav-modalDialog .infonav-dialogCloseIcon {
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.infonav-modalDialog.embedDialog {
+  height: 390px;
+}
+.infonav-modalDialog.embedDialog .infonav-dialogLayout {
+  padding: 0;
+}
+.infonav-modalDialog.embedDialog .infonav-dialogContent {
+  padding: 30px;
+}
+.infonav-modalDialog.spEmbedDialog {
+  height: 195px;
+}
+.infonav-modalDialog.spEmbedDialog .infonav-dialogLayout {
+  padding: 0;
+}
+.infonav-modalDialog.spEmbedDialog .infonav-dialogContent {
+  padding: 30px;
+}
+.infonav-modalDialog .infonav-dialogLayout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.infonav-modalDialog .infonav-dialogLayout .infonav-dialogContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button]:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button]:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button:focus:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button]:focus:hover {
+  border-color: var(--gray-110, #8A8886);
+  background-color: var(--gray-20, #F3F2F1);
+  color: var(--theme-secondary-color, #000000);
+  outline: none;
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button]:active {
+  background-color: var(--gray-30, #EDEBE9);
+  border-color: var(--gray-110, #8A8886);
+  color: var(--theme-secondary-color, #000000);
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.primary,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].primary {
+  background-color: var(--button-primary-base-fill-color, #F2C811);
+  border-color: var(--button-primary-base-fill-color, #F2C811);
+  color: var(--button-primary-content-color);
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.primary:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].primary:hover {
+  background-color: var(--button-primary-hover-fill-color, #DAB50F);
+  border-color: var(--button-primary-hover-fill-color, #DAB50F);
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.primary:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].primary:focus {
+  background-color: var(--button-primary-hover-fill-color, #DAB50F);
+  border-color: var(--button-primary-content-color);
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.primary:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].primary:active {
+  background-color: var(--colorBrandBackgroundPressed, #A98C0C);
+  border-color: var(--colorBrandBackgroundPressed, #A98C0C);
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled],
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled],
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled.primary,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled.primary,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled].primary,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled].primary {
+  background-color: var(--neutral-lighter-color, #F4F4F4);
+  border-color: var(--neutral-lighter-color, #F4F4F4);
+  color: var(--gray-90, #A19F9D);
+  cursor: default;
+}
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled]:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled]:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled.primary:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled.primary:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled].primary:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled].primary:hover,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled]:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled]:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled.primary:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled.primary:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled].primary:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled].primary:focus,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled]:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled]:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button.disabled.primary:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button].disabled.primary:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer button[disabled].primary:active,
+.infonav-modalDialog .infonav-dialogLayout dialog-footer input[type=button][disabled].primary:active {
+  background-color: var(--neutral-lighter-color, #F4F4F4);
+  border-color: var(--neutral-lighter-color, #F4F4F4);
+  color: var(--gray-90, #A19F9D);
+}
+.explorationContainer {
+  --exploreUIPane-colorBackground: var(--gray-20);
+  --exploreUIPane-colorBackgroundHover: var(--gray-30);
+  --exploreUIPane-colorLegacyBackground: var(--neutral-primary-color);
+  --exploreUIPane-colorForeground: var(--gray-140);
+  --exploreUIPane-colorLegacyForeground: var(--gray-180);
+  --exploreUIPane-colorLegacyForeground2: var(--white-color);
+  --exploreUIPane-colorLegacyForegroundButtonIcon: var(--neutral-tertiary-alt-color);
+  --exploreUIPane-colorBorder: var(--gray-40);
+  --exploreUIPane-colorLegacyBorder: var(--theme-secondary-color);
+  --exploreUIPane-colorInputSelectionBackground: var(--theme-primary-color);
+  --exploreUIPane-colorInputSelectionForeground: var(--black-color);
+}
+[data-legacy-theming="false"] .explorationContainer {
+  --exploreUIPane-colorBackground: var(--colorNeutralBackground3);
+  --exploreUIPane-colorBackgroundHover: var(--colorNeutralBackground3Hover);
+  --exploreUIPane-colorLegacyBackground: var(--exploreUIPane-colorBackground);
+  --exploreUIPane-colorForeground: var(--colorNeutralForeground1);
+  --exploreUIPane-colorLegacyForeground: var(--exploreUIPane-colorForeground);
+  --exploreUIPane-colorLegacyForegroundButtonIcon: var(--exploreUIPane-colorForeground);
+  --exploreUIPane-colorBorder: var(--colorNeutralStroke1);
+  --exploreUIPane-colorLegacyBorder: var(--colorNeutralStroke1);
+  --exploreUIPane-colorInputSelectionBackground: var(--colorBrandBackground);
+  --exploreUIPane-colorInputSelectionForeground: var(--colorNeutralBackground4Selected);
+}
+.reading .taskPane {
+  margin: 0 0 10px 0;
+}
+.explorationContainer .visualizationPane .bookmarksPane,
+.explorationContainer .visualizationPane .canvasItemsPane,
+.explorationContainer .visualizationPane .syncGroupPane,
+.explorationContainer .visualizationPane.performancePane {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.explorationContainer .visualizationPane .bookmarksPane .verticalTitle,
+.explorationContainer .visualizationPane .canvasItemsPane .verticalTitle,
+.explorationContainer .visualizationPane .syncGroupPane .verticalTitle,
+.explorationContainer .visualizationPane.performancePane .verticalTitle {
+  display: none;
+}
+.explorationContainer .visualizationPane .bookmarksPane .paneContents,
+.explorationContainer .visualizationPane .canvasItemsPane .paneContents,
+.explorationContainer .visualizationPane .syncGroupPane .paneContents,
+.explorationContainer .visualizationPane.performancePane .paneContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.explorationContainer .visualizationPane .bookmarksPane.isCollapsed,
+.explorationContainer .visualizationPane .canvasItemsPane.isCollapsed,
+.explorationContainer .visualizationPane .syncGroupPane.isCollapsed,
+.explorationContainer .visualizationPane.performancePane.isCollapsed {
+  width: 32px;
+  background-color: var(--exploreUIPane-colorBackground);
+}
+.explorationContainer .visualizationPane .bookmarksPane.isCollapsed .paneContents,
+.explorationContainer .visualizationPane .canvasItemsPane.isCollapsed .paneContents,
+.explorationContainer .visualizationPane .syncGroupPane.isCollapsed .paneContents,
+.explorationContainer .visualizationPane.performancePane.isCollapsed .paneContents {
+  display: none;
+}
+.explorationContainer .visualizationPane .bookmarksPane.isCollapsed .verticalTitle,
+.explorationContainer .visualizationPane .canvasItemsPane.isCollapsed .verticalTitle,
+.explorationContainer .visualizationPane .syncGroupPane.isCollapsed .verticalTitle,
+.explorationContainer .visualizationPane.performancePane.isCollapsed .verticalTitle {
+  display: block;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  position: relative;
+  top: 24px;
+  color: var(--exploreUIPane-colorForeground);
+  font-size: 28px;
+}
+html[dir="rtl"] .explorationContainer .visualizationPane .bookmarksPane.isCollapsed .verticalTitle,
+html[dir="rtl"] .explorationContainer .visualizationPane .canvasItemsPane.isCollapsed .verticalTitle,
+html[dir="rtl"] .explorationContainer .visualizationPane .syncGroupPane.isCollapsed .verticalTitle,
+html[dir="rtl"] .explorationContainer .visualizationPane.performancePane.isCollapsed .verticalTitle {
+  transform: rotate(-90deg);
+}
+.explorationContainer .visualizationPane .bookmarksPane.isCollapsed .verticalTitle > h2,
+.explorationContainer .visualizationPane .canvasItemsPane.isCollapsed .verticalTitle > h2,
+.explorationContainer .visualizationPane .syncGroupPane.isCollapsed .verticalTitle > h2,
+.explorationContainer .visualizationPane.performancePane.isCollapsed .verticalTitle > h2 {
+  white-space: nowrap;
+  display: inline-block;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-weight: 600;
+  padding: 14px 0 14px 20px;
+}
+.explorationContainer {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.explorationContainer .paneHeader .btnIcon {
+  margin-left: 16px;
+  width: 16px;
+  background-color: var(--exploreUIPane-colorBackground);
+  color: var(--exploreUIPane-colorForeground);
+  cursor: pointer;
+}
+.explorationContainer .paneHeader .toggleBtn {
+  height: 48px;
+  width: 100%;
+  border: none;
+  float: left;
+  padding-bottom: 20px;
+  background-color: var(--exploreUIPane-colorBackground);
+  color: var(--exploreUIPane-colorForeground);
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+}
+html[data-focus-source="key"] .explorationContainer .paneHeader .toggleBtn:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .paneHeader .toggleBtn .btnIcon {
+  float: left;
+  margin: 16px 0 0 8px;
+}
+.explorationContainer .paneHeader .toggleBtn.isCollapsed .btnIcon {
+  transform: rotate(90deg);
+  float: none;
+  padding: 8px 16px 8px 0;
+  margin: 0;
+}
+html[dir="rtl"] .explorationContainer .paneHeader .toggleBtn.isCollapsed .btnIcon {
+  transform: rotate(-90deg);
+}
+.explorationContainer .sidePaneTitle {
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  color: var(--exploreUIPane-colorForeground);
+}
+.explorationContainer .sidePaneHorizontalTitle {
+  margin: 16px 12px 0 0;
+  /* allow enough space for character descenders to not get cut off by "overflow: hidden";
+         * assumes 20px padding-bottom provided by containing .paneHeader .toggleBtn style
+         */
+  padding-bottom: 0.33em;
+  line-height: 16px;
+  float: none;
+  cursor: pointer;
+  width: auto;
+  text-align: right;
+}
+.explorationContainer .sidePane {
+  background: var(--exploreUIPane-colorBackground);
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: var(--exploreUIPane-colorBorder);
+  z-index: 4;
+  height: 100%;
+  color: var(--exploreUIPane-colorLegacyForeground);
+  float: left;
+  overflow: hidden;
+}
+.explorationContainer .sidePane .multiline-flex {
+  flex-direction: column;
+}
+.explorationContainer .sidePane .numeric-unit-selector {
+  align-self: flex-start;
+}
+.explorationContainer .sidePane .unit-selection-box {
+  float: right;
+  margin-right: 4px;
+  position: static;
+}
+.explorationContainer .sidePane .paneHeader {
+  background-color: var(--exploreUIPane-colorBackground);
+}
+.explorationContainer .sidePane .searchBox {
+  margin: 4px;
+}
+html[data-focus-source="key"] .explorationContainer .sidePane .searchBox input:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+  outline-offset: -1px;
+}
+.explorationContainer .sidePane .searchBox input::selection {
+  background: var(--exploreUIPane-colorInputSelectionBackground);
+  color: var(--exploreUIPane-colorInputSelectionForeground);
+}
+.explorationContainer .pane-splitter {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}
+.explorationContainer .paneContents {
+  display: inline-block;
+}
+.explorationContainer .paneContents .lazy-load-wrapper {
+  width: 100%;
+}
+.explorationContainer .paneContents .lazy-load-wrapper.stretch {
+  display: flex;
+}
+.explorationContainer .paneContents .sectionHeader {
+  background-color: var(--exploreUIPane-colorBackground);
+}
+.explorationContainer .sectionTitle {
+  display: inline-block;
+  line-height: 36px;
+  margin-right: 2px;
+  text-transform: none;
+  color: var(--exploreUIPane-colorForeground);
+}
+.explorationContainer .visualizationPane {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  box-sizing: content-box;
+}
+.explorationContainer .visualizationPane .pivotNav.visualizationPane {
+  border-top: 1px solid var(--exploreUIPane-colorBorder);
+}
+.explorationContainer .visualizationPane .pivotNav.visualizationPane li:hover,
+.explorationContainer .visualizationPane .pivotNav.visualizationPane li:focus {
+  background: var(--exploreUIPane-colorBackgroundHover);
+}
+.explorationContainer .visualizationPane .pivotNav.visualizationPane .navMarker {
+  height: 4px;
+  margin-top: -4px;
+  border-radius: 2px;
+}
+.explorationContainer .visualizationPane .pivotNav.canvasItemsPane .navMarker {
+  width: 50%;
+  right: 0%;
+  left: 0%;
+}
+.explorationContainer .visualizationPane .pivotNav li:focus {
+  outline: none;
+}
+.explorationContainer .visualizationPane .pivotNav .navMarker {
+  position: absolute;
+  height: 2px;
+  margin-top: -2px;
+  background: var(--colorBrandStroke1);
+}
+.explorationContainer .visualizationPane .collapsedFiltersTitle,
+.explorationContainer .visualizationPane .collapsedVisualsTitle {
+  display: inline-block;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  padding: 14px 0 14px 20px;
+}
+.explorationContainer .visualizationPane .paneHeader {
+  box-sizing: border-box;
+  height: 48px;
+  background-color: var(--exploreUIPane-legacyBackground);
+}
+.explorationContainer .visualizationPane .paneContents {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 48px;
+  flex-direction: column;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHost {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHost > .scroll-wrapper {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.explorationContainer .visualizationPane .paneContents .sectionContent {
+  height: 100%;
+  overflow: auto;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHeader {
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 12px;
+  width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: none;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHeader.visualizationPane .sectionTab {
+  width: 40px;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHeader.canvasItemsPane {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHeader.canvasItemsPane .sectionTab {
+  width: 50%;
+  text-align: center;
+  cursor: default;
+}
+.explorationContainer .visualizationPane .paneContents .sectionHeader .enableFilterPane {
+  float: left;
+  height: 100%;
+  background-color: transparent;
+  color: var(--exploreUIPane-colorLegacyForeground2);
+}
+.explorationContainer .visualizationPane .paneContents .sectionTab {
+  padding: 8px 10px 4px;
+  display: inline-block;
+  height: 36px;
+}
+.explorationContainer .visualizationPane .paneContents .sectionTab:focus {
+  outline: none;
+}
+html[data-focus-source="key"] .explorationContainer .visualizationPane .paneContents .sectionTab:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+  outline-offset: -1px;
+}
+.explorationContainer .visualizationPane .paneContents .nonPersonalVisualizationPane {
+  margin-top: 7px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  border-top: 1px dashed var(--exploreUIPane-colorBorder);
+}
+.explorationContainer .visualizationPane .verticalTitle {
+  display: none;
+}
+.explorationContainer .visualizationPane.isCollapsed {
+  width: 32px;
+  background-color: var(--exploreUIPane-colorBackground);
+}
+.explorationContainer .visualizationPane.isCollapsed .paneContents {
+  display: none;
+}
+.explorationContainer .visualizationPane.isCollapsed .verticalTitle {
+  display: block;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  position: relative;
+  top: 24px;
+  color: var(--exploreUIPane-colorForeground);
+  font-size: 28px;
+}
+html[dir="rtl"] .explorationContainer .visualizationPane.isCollapsed .verticalTitle {
+  transform: rotate(-90deg);
+}
+.explorationContainer .taskPane {
+  width: 180px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+}
+.explorationContainer .taskPane .paneHeader {
+  box-sizing: border-box;
+  height: 48px;
+  padding-bottom: 20px;
+  background-color: var(--exploreUIPane-legacyBackground);
+}
+.explorationContainer .taskPane .paneContents {
+  height: 100%;
+  width: 100%;
+}
+.explorationContainer .taskPane .paneSection {
+  flex-grow: 1;
+  padding-top: 8px;
+  height: 100%;
+}
+.explorationContainer .taskPane hr {
+  display: none;
+}
+.explorationContainer .taskPane pbi-tree {
+  padding-top: 8px;
+}
+.explorationContainer .taskPane .verticalTitle {
+  display: none;
+}
+.explorationContainer .taskPane.isCollapsed {
+  width: 32px;
+  background-color: var(--exploreUIPane-colorBackground);
+}
+.explorationContainer .taskPane.isCollapsed .paneContents {
+  display: none;
+}
+.explorationContainer .taskPane.isCollapsed .verticalTitle {
+  display: block;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  position: relative;
+  top: 24px;
+  color: var(--exploreUIPane-colorForeground);
+  font-size: 28px;
+}
+html[dir="rtl"] .explorationContainer .taskPane.isCollapsed .verticalTitle {
+  transform: rotate(-90deg);
+}
+.explorationContainer .taskPane.isCollapsed .verticalTitle > h2 {
+  white-space: nowrap;
+  display: inline-block;
+  font-family: 'wf_standard-font', helvetica, arial, sans-serif;
+  padding: 14px 0 14px 20px;
+}
+.explorationContainer .taskPane .paneStopBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.newPaneColors.explorationContainer .sidePaneTitle,
+.newPaneColors.explorationContainer .collapsedFiltersTitle,
+.newPaneColors.explorationContainer .collapsedVisualsTitle {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-weight: 600;
+}
+.newPaneColors.explorationContainer .visualizationPane.isCollapsed .verticalTitle > h2,
+.newPaneColors.explorationContainer .taskPane.isCollapsed .verticalTitle > h2 {
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  font-weight: 600;
+}
+.explorationContainer .flex {
+  font-weight: inherit;
+  list-style: none;
+  width: 100%;
+  -ms-box-orient: horizontal;
+  display: flex !important;
+  overflow: hidden;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -ms-flex-wrap: nowrap;
+}
+.explorationContainer .flex .item-auto {
+  align-self: center;
+  flex: 0 0 auto;
+  display: inline-block;
+}
+.explorationContainer .flex .item-fill {
+  align-self: center;
+  flex: 1 1 0px;
+  display: inline-block;
+}
+/****** contextmenu *******/
+.default-contextmenu {
+  margin: 0;
+  z-index: 1000;
+  background: var(--white-color, #FFF);
+  padding: 0;
+  font-weight: normal;
+  font-size: 12px;
+  list-style: none;
+  border: 1px solid var(--context-menu-border-color, #dedede);
+  box-shadow: 0 0 8px var(--secondary-chrome-color, rgba(102, 102, 102, 0.2));
+  opacity: 1;
+  pointer-events: auto;
+}
+.default-contextmenu drop-down-list-item {
+  display: block;
+}
+.default-contextmenu drop-down-list-item .label,
+.default-contextmenu drop-down-list-item hr {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.default-contextmenu drop-down-list-item .label {
+  color: var(--neutral-primary-color, #333333);
+  cursor: pointer;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  padding: 4px 32px;
+}
+.default-contextmenu drop-down-list-item .label:not([disabled]):focus {
+  outline: none;
+}
+html[data-focus-source="key"] .default-contextmenu drop-down-list-item .label:not([disabled]):focus {
+  outline-color: var(--fluent-theme-black-color, #000);
+  outline-width: 1px;
+  outline-style: solid;
+}
+.default-contextmenu drop-down-list-item .label:not([disabled]):hover {
+  background-color: var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.default-contextmenu drop-down-list-item .label[disabled]:focus {
+  outline: var(--focus-outline-definition, 2.5px solid) var(--neutral-tertiary-alt-color, #C8C8C8);
+}
+.default-contextmenu drop-down-list-item .label.checked,
+.default-contextmenu drop-down-list-item .label.hasIcon {
+  padding-right: 8px !important;
+}
+.default-contextmenu drop-down-list-item .label.hasIcon i {
+  margin-left: 8px;
+}
+.default-contextmenu drop-down-list-item .label.checked svg {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 8px;
+}
+.default-contextmenu drop-down-list-item .label.selected {
+  color: var(--neutral-primary-color, #333333);
+  font-family: 'Segoe UI Semibold', 'wf_segoe-ui_semibold', helvetica, arial, sans-serif;
+}
+.default-contextmenu drop-down-list-item .label.selected::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  background-color: var(--theme-primary-color, #F2C811);
+  right: 0;
+}
+.default-contextmenu drop-down-list-item .label[disabled] {
+  color: var(--neutral-secondary-alt-color2, #888888);
+  cursor: default;
+}
+.default-contextmenu drop-down-list-item .label[disabled]:hover {
+  background-color: var(--white-color, #FFF);
+}
+.default-contextmenu drop-down-list-item .label h6 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 12px;
+  max-width: 240px;
+  margin: 0;
+}
+.default-contextmenu drop-down-list-item .label i.itemIcon,
+.default-contextmenu drop-down-list-item .label span.itemIcon,
+.default-contextmenu drop-down-list-item .label i .itemIcon,
+.default-contextmenu drop-down-list-item .label span .itemIcon {
+  float: right;
+  width: 20px;
+  margin-left: 4px;
+}
+.default-contextmenu drop-down-list-item .label.hasChildren::after {
+  content: '\e818';
+  font-family: PowrMDL2;
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  margin: 2px 0;
+}
+.default-contextmenu drop-down-list-item hr {
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  cursor: default;
+  padding: 0;
+  margin: 0 32px;
+  border: 1px solid var(--neutral-light-color, #EAEAEA);
+}
+.default-contextmenu.dark {
+  background-color: var(--report-app-bar-dropdown-menu-background-color, #444444);
+  border-color: var(--neutral-dark-color, #212121);
+}
+.default-contextmenu.dark drop-down-list-item .label:hover {
+  background: var(--neutral-secondary-alt-color, #777777);
+}
+.default-contextmenu.dark drop-down-list-item .label,
+.default-contextmenu.dark drop-down-list-item hr {
+  color: var(--white-color, #FFF);
+}
+.default-contextmenu.fluentTheme {
+  background-color: var(--fluent-theme-white-color, #FFF);
+  border: none;
+  width: 123px;
+}
+.default-contextmenu.fluentTheme drop-down-list-item .label {
+  color: var(--fluent-theme-neutral-primary-color, #323130);
+  font-size: 14px;
+  font-family: 'Segoe UI', 'wf_segoe-ui_normal', helvetica, arial, sans-serif;
+  padding: 8px 8px 8px 0;
+  height: 20px;
+}
+.default-contextmenu.fluentTheme drop-down-list-item .label:hover {
+  background-color: var(--fluent-theme-neutral-lighter-color, #F3F2F1);
+}
+.default-contextmenu.fluentTheme drop-down-list-item .label:focus {
+  background-color: var(--fluent-theme-neutral-light-color, #EDEBE9);
+}
+.default-contextmenu.fluentTheme drop-down-list-item .label h6.itemLabel {
+  font-size: 14px;
+}
+.visualContainerScreen {
+  display: none;
+}
+.disable-visual-interactivity .visualContainerScreen {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.disable-visual-interactivity .resizeHandle {
+  z-index: 2;
+}
+.disable-visual-interactivity .removeFromLayout {
+  z-index: 2;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .dragging .visualContainer .vcHeader,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .resizing .visualContainer .vcHeader {
+  display: none;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) .iconContainer,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) visual-container-drill,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) visual-container-pin-button,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) visual-container-filter-restatement-button,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) .vcPopOutBtn,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.selected):not(:hover) visual-container-options-menu {
+  display: none;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:hover .vcHeader button[disabled],
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer.selected .vcHeader button[disabled],
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer.showHover .vcHeader button[disabled] {
+  opacity: 0.3;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer.visualHeaderAbove .vcHeader {
+  top: -24px;
+  height: 24px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer.visualHeaderBelow .vcHeader {
+  bottom: -24px;
+  height: 23px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer.visualHeaderBelowBanner .vcHeader {
+  top: 32px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer:not(.visualHeaderAbove):not(.visualHeaderBelow):not(.visualHeaderBelowBanner) .vcHeader {
+  top: 1px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader {
+  background-color: transparent;
+  position: absolute;
+  left: 1px;
+  white-space: nowrap;
+  text-align: left;
+  overflow: visible;
+  z-index: 1;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader span {
+  background-color: transparent;
+  padding-left: 5px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader select {
+  background-color: transparent;
+  margin-left: 2px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader button {
+  margin-top: 2px;
+  background-color: transparent;
+  width: 22px;
+  transition: color 0s;
+  height: 18px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader .iconContainer {
+  display: inline-block;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader .dragGrip {
+  display: none;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader .optionSection {
+  display: inline;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader .optionsMenu {
+  display: inline;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader .iconContainer,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader visual-container-drill,
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcHeader visual-container-relationship-filters {
+  margin-left: 8px;
+}
+.explorationContainer .exploreCanvas.stylableVisualContainerHeader .visualContainer .vcBody {
+  top: 0;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer:hover .vcHeader,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.selected .vcHeader,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.showHover .vcHeader {
+  background-color: #FAFAFA;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer:hover .vcHeader .dragGrip,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.selected .vcHeader .dragGrip,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.showHover .vcHeader .dragGrip {
+  opacity: 1;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer:hover .vcHeader button[disabled],
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.selected .vcHeader button[disabled],
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.showHover .vcHeader button[disabled] {
+  opacity: 0.3;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.readMode .vcHeader {
+  background-color: transparent;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.readMode .vcHeader .dragGrip {
+  display: none;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer.readMode.selected .vcHeader {
+  background-color: #FAFAFA;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader {
+  transition: background-color 0.25s ease-in;
+  height: 20px;
+  max-height: 20px;
+  padding-right: 5px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader span {
+  padding-left: 5px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader select {
+  height: 18px;
+  margin-top: 2px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader button {
+  height: 20px;
+  padding-top: 2px;
+  background-color: transparent;
+  width: 20px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .iconContainer {
+  float: right;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .drillUp {
+  margin-top: 2px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .drillDownLevel {
+  margin-top: 2px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .drillDownLevelGrouped {
+  margin-top: 1px;
+  height: 17px;
+  width: 17px;
+  margin-right: 4px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .dragGrip {
+  position: absolute;
+  right: 50%;
+  margin-right: -8px;
+  margin-top: 2px;
+  pointer-events: none;
+  color: var(--neutral-secondary-alt-color2, #888888);
+  opacity: 0;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .vcPopOutBtn {
+  padding-top: 0;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu {
+  float: left;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu > .optionSection {
+  display: inline-block;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu button {
+  margin-right: 4px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu .vsFilterRestatement,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu .vcPinBtn,
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader .optionsMenu .vcExportBtn {
+  padding-top: 0;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader visual-container-pin-button {
+  margin-right: 1px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcHeader visual-container-options-menu {
+  margin-left: 5px;
+}
+.explorationContainer .exploreCanvas:not(.stylableVisualContainerHeader) .visualContainer .vcBody {
+  top: 20px;
+}
+.explorationContainer .exploreCanvas transform.popOut {
+  z-index: 10000003 !important;
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup .visualContainerBorder {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1;
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer.showHover > .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup.showHover > .visualContainerBorder {
+  border-color: var(--neutral-light-color, #EAEAEA);
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer.hideBorder .visualContainerBorder,
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainerGroup.hideBorder .visualContainerBorder {
+  border: none;
+}
+.explorationContainer .exploreCanvas transform:not(.on-object) .visualContainer:hover > .visualContainerBorder {
+  border-color: var(--neutral-light-color, #EAEAEA);
+}
+.explorationContainer .exploreCanvas .visualContainer,
+.explorationContainer .exploreCanvas .visualContainerGroup {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.25s, outline-color 0.25s, transform 0.25s, width 0.15s, height 0.15s;
+  box-sizing: content-box;
+  overflow: visible;
+  outline: 0;
+  z-index: 0;
+  -ms-high-contrast-adjust: none;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcFooter,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcFooter {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform-origin: bottom right;
+  font-size: 12px;
+  font-family: 'Segoe UI Semibold', 'wf_segoe-ui_semibold', helvetica, arial, sans-serif;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcFooter button,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcFooter button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 6px 6px;
+  padding: 6px 15px 7px 15px;
+  color: var(--button-primary-content-color, #000);
+  background-color: var(--theme-primary-color, #F2C811);
+  transition: color 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcFooter button[aria-disabled="true"],
+.explorationContainer .exploreCanvas .visualContainerGroup .vcFooter button[aria-disabled="true"] {
+  color: var(--fluent-theme-black-color, #000);
+  background-color: var(--neutral-tertiary-color, #A6A6A6);
+}
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainer .vcFooter button:focus:focus,
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainerGroup .vcFooter button:focus:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .exploreCanvas .visualContainer .resizeHandle,
+.explorationContainer .exploreCanvas .visualContainerGroup .resizeHandle {
+  z-index: 2;
+}
+.explorationContainer .exploreCanvas .visualContainer.keyFocus .visualContainerBorder,
+.explorationContainer .exploreCanvas .visualContainerGroup.keyFocus .visualContainerBorder {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+  outline-offset: 2px;
+}
+.explorationContainer .exploreCanvas .visualContainer.hideBorder .visualContainerBorder,
+.explorationContainer .exploreCanvas .visualContainerGroup.hideBorder .visualContainerBorder {
+  border: none;
+}
+.explorationContainer .exploreCanvas .visualContainer .visual.allow-deferred-rendering,
+.explorationContainer .exploreCanvas .visualContainerGroup .visual.allow-deferred-rendering {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.explorationContainer .exploreCanvas .visualContainer .visual.allow-deferred-rendering[initialized],
+.explorationContainer .exploreCanvas .visualContainerGroup .visual.allow-deferred-rendering[initialized] {
+  opacity: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.loading:not(.selected),
+.explorationContainer .exploreCanvas .visualContainerGroup.loading:not(.selected) {
+  border: 1px solid var(--neutral-lighter-color, #F4F4F4);
+}
+.explorationContainer .exploreCanvas .visualContainer:hover .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainerGroup:hover .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainer.selected .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainerGroup.selected .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainer.showHover .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainerGroup.showHover .vcHeader button {
+  opacity: 0.7;
+}
+.explorationContainer .exploreCanvas .visualContainer:hover .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainerGroup:hover .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainer.selected .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainerGroup.selected .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainer.showHover .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainerGroup.showHover .vcHeader span {
+  opacity: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer:hover .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainerGroup:hover .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainer.selected .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainerGroup.selected .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainer.showHover .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainerGroup.showHover .vcHeader select {
+  opacity: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut {
+  z-index: 10000003 !important;
+  border: none;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut .toggleSeeData > i,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut .toggleSeeData > i {
+  opacity: 0.3;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut .toggleSeeData > i:hover,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut .toggleSeeData > i:hover {
+  opacity: 0.4;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut.seeData .toggleSeeData > i,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut.seeData .toggleSeeData > i {
+  opacity: 0.8;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut.seeData .toggleSeeData > i:hover,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut.seeData .toggleSeeData > i:hover {
+  opacity: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut .vcBody,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut .vcBody {
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.explorationContainer .exploreCanvas .visualContainer.popOut.seeData.seeDataVerticalLayout .vcBody,
+.explorationContainer .exploreCanvas .visualContainerGroup.popOut.seeData.seeDataVerticalLayout .vcBody {
+  display: flex;
+  flex-direction: row;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .toggleSeeDataLayout,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .toggleSeeDataLayout {
+  padding-top: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .toggleSeeDataLayout .pbi-glyph-rotatevertical,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .toggleSeeDataLayout .pbi-glyph-rotatevertical {
+  display: block !important;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .toggleSeeDataLayout .pbi-glyph-rotatehorizontal,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .toggleSeeDataLayout .pbi-glyph-rotatehorizontal {
+  display: block !important;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody .visual,
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody .detailVisual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody .detailVisual {
+  display: block;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody > visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody > visual {
+  flex-grow: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody visual {
+  height: auto;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody .detailVisual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody .detailVisual {
+  box-sizing: border-box;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: var(--neutral-tertiary-color, #A6A6A6);
+  z-index: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody .detailVisual > .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody .detailVisual > .visual {
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData .vcBody .detailVisual.noBorder,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData .vcBody .detailVisual.noBorder {
+  border: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData.seeDataVerticalLayout .vcBody .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData.seeDataVerticalLayout .vcBody .visual,
+.explorationContainer .exploreCanvas .visualContainer.seeData.seeDataVerticalLayout .vcBody .detailVisual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData.seeDataVerticalLayout .vcBody .detailVisual {
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData.seeDataVerticalLayout .vcBody .detailVisual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData.seeDataVerticalLayout .vcBody .detailVisual {
+  border-width: 10px 10px 10px 0;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData.seeDataVerticalLayout .vcBody .detailVisual > .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData.seeDataVerticalLayout .vcBody .detailVisual > .visual {
+  width: 100%;
+}
+.explorationContainer .exploreCanvas .visualContainer.seeData.seeDataVerticalLayout .vcBody .detailVisual.noBorder,
+.explorationContainer .exploreCanvas .visualContainerGroup.seeData.seeDataVerticalLayout .vcBody .detailVisual.noBorder {
+  border: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer.dragging,
+.explorationContainer .exploreCanvas .visualContainerGroup.dragging,
+.explorationContainer .exploreCanvas .visualContainer.resizing,
+.explorationContainer .exploreCanvas .visualContainerGroup.resizing {
+  background-color: rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+}
+.explorationContainer .exploreCanvas .visualContainer .powerbi-spinner,
+.explorationContainer .exploreCanvas .visualContainerGroup .powerbi-spinner {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  z-index: 2;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader {
+  line-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  --vc-header-icons-color: var(--neutral-primary-color, #333333);
+}
+[data-legacy-theming="false"] .explorationContainer .exploreCanvas .visualContainer .vcHeader,
+[data-legacy-theming="false"] .explorationContainer .exploreCanvas .visualContainerGroup .vcHeader {
+  --vc-header-icons-color: #333;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader span,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader span {
+  opacity: 0;
+  font-size: 8pt;
+  color: var(--gray-180, #252423);
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader select,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader select {
+  opacity: 0;
+  border: 1px solid var(--neutral-primary-color, #333333);
+  font-size: 8pt;
+  color: var(--neutral-primary-color, #333333);
+}
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainer .vcHeader select:focus,
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainerGroup .vcHeader select:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader select:hover:enabled,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader select:hover:enabled,
+.explorationContainer .exploreCanvas .visualContainer .vcHeader select:focus,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader select:focus {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button {
+  opacity: 0;
+  color: var(--vc-header-icons-color);
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button.alwaysVisible,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button.alwaysVisible {
+  opacity: 0.65;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button:hover:enabled,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button:hover:enabled {
+  opacity: 1;
+  transition: opacity 0s;
+}
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainer .vcHeader button:focus,
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button:focus,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button:focus {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader button i,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader button i {
+  padding: 0;
+  margin: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .iconContainer button:hover:enabled,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .iconContainer button:hover:enabled {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .drillUp,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .drillUp {
+  background-image: url("../images/ExploreUI.sprites.png");
+  background-position: -69px -268px;
+  width: 17px;
+  height: 17px;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .drillDownLevel,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .drillDownLevel {
+  background-image: url("../images/ExploreUI.sprites.png");
+  background-position: -18px -268px;
+  width: 17px;
+  height: 17px;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .vcPopOutBtn,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .vcPopOutBtn {
+  font-size: 15px;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .vcPopOutBtn .pbi-glyph-miniexpand,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .vcPopOutBtn .pbi-glyph-miniexpand {
+  display: block;
+}
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu button:focus,
+html[data-focus-source="key"] .explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu button:focus {
+  outline: var(--focus-two-tone-outline-definition, auto 1px);
+  outline-color: var(--focus-two-tone-outline-color, -webkit-focus-ring-color);
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu button:hover,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu button:hover,
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu button:focus,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu button:focus {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu button.alwaysVisible,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu button.alwaysVisible {
+  opacity: 0.65;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu button.alwaysVisible:hover,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu button.alwaysVisible:hover {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu .vcMenuBtn,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu .vcMenuBtn {
+  font-size: 14px;
+  font-weight: bold;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu .vsFilterRestatement,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu .vsFilterRestatement,
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu .vcPinBtn,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu .vcPinBtn,
+.explorationContainer .exploreCanvas .visualContainer .vcHeader .optionsMenu .vcExportBtn,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcHeader .optionsMenu .vcExportBtn {
+  font-size: 15px;
+}
+.explorationContainer .exploreCanvas .visualContainer .removeFromLayout,
+.explorationContainer .exploreCanvas .visualContainerGroup .removeFromLayout {
+  position: absolute;
+  cursor: pointer;
+  left: 4px;
+  top: 4px;
+  background-color: transparent;
+  display: none;
+}
+.explorationContainer .exploreCanvas .visualContainer:hover .removeFromLayout,
+.explorationContainer .exploreCanvas .visualContainerGroup:hover .removeFromLayout,
+.explorationContainer .exploreCanvas .visualContainer.selected .removeFromLayout,
+.explorationContainer .exploreCanvas .visualContainerGroup.selected .removeFromLayout {
+  display: block;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visualTitle,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visualTitle,
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visualSubTitle,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visualSubTitle {
+  font-size: 12px;
+  color: var(--neutral-tertiary-color, #A6A6A6);
+  padding: 0 5px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visualTitle.customPadding,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visualTitle.customPadding,
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visualSubTitle.customPadding,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visualSubTitle.customPadding {
+  padding: unset;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visualDivider,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visualDivider {
+  border-bottom-width: 0px;
+  margin: 0px;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody visual,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody visual,
+.explorationContainer .exploreCanvas .visualContainer .vcBody visual-modern,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody visual-modern {
+  height: 100%;
+  flex-basis: 0;
+  display: flex;
+  flex-grow: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 5px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody .visual.customPadding,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody .visual.customPadding {
+  padding: unset;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody analysis-visual-host-lazy,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody analysis-visual-host-lazy,
+.explorationContainer .exploreCanvas .visualContainer .vcBody qna-visual-host-lazy,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody qna-visual-host-lazy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody.vcInitialization,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody.vcInitialization {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody.vcInitialization span,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody.vcInitialization span {
+  text-align: center;
+}
+.explorationContainer .exploreCanvas .visualContainer .vcBody.vcInitialization spinner,
+.explorationContainer .exploreCanvas .visualContainerGroup .vcBody.vcInitialization spinner {
+  height: 36px;
+  position: relative;
+}
+.explorationContainer .exploreCanvas .visualContainer.noVisualTitle .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.noVisualTitle .visual {
+  padding: 5px;
+}
+.explorationContainer .exploreCanvas .visualContainer.paddingDisabled .visualTitle,
+.explorationContainer .exploreCanvas .visualContainerGroup.paddingDisabled .visualTitle,
+.explorationContainer .exploreCanvas .visualContainer.paddingDisabled .visual,
+.explorationContainer .exploreCanvas .visualContainerGroup.paddingDisabled .visual {
+  padding: 0;
+}
+.explorationContainer .exploreCanvas .visualContainer.invalid .vcBody,
+.explorationContainer .exploreCanvas .visualContainerGroup.invalid .vcBody {
+  border: 1px solid var(--neutral-lighter-color, #F4F4F4);
+}
+.explorationContainer .exploreCanvas .visualContainer canvas-visual-error-overlay,
+.explorationContainer .exploreCanvas .visualContainerGroup canvas-visual-error-overlay {
+  position: absolute;
+  top: 0;
+  /* @noflip */
+  left: 0;
+  z-index: 2;
+}
+.explorationContainer .exploreCanvas .visualContainer button.primary,
+.explorationContainer .exploreCanvas .visualContainerGroup button.primary {
+  padding: 6px 18px;
+}
+.explorationContainer .exploreCanvas.phoneAuthoring .visualContainer .removeFromLayout {
+  color: var(--globalColorGrey46);
+}
+.datetimePicker {
+  display: block;
+  width: 100%;
+}
+.datetimePicker input[type="text"]:disabled {
+  background: var(--neutral-light-color, #EAEAEA);
+  cursor: default;
+}
+.datetimePicker .datePicker {
+  display: block;
+}
+.datetimePicker .datePicker .calendarInput {
+  height: 22px;
+  padding: 2px 2px;
+  background-image: none;
+  border: 2px solid var(--neutral-primary-color, #333333);
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.datetimePicker .datePicker .filterPaneIcon {
+  margin: 4px;
+}
+.datetimePicker .timePicker a {
+  display: table-cell;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.datetimePicker .timePicker .glyphicon {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.datetimePicker .timePicker .glyphicon.glyphicon-chevron-up {
+  font-size: 8px;
+}
+.datetimePicker .timePicker .glyphicon.glyphicon-chevron-up::before {
+  content: "\E971";
+}
+.datetimePicker .timePicker .glyphicon.glyphicon-chevron-down {
+  font-size: 8px;
+}
+.datetimePicker .timePicker .glyphicon.glyphicon-chevron-down::before {
+  content: "\E972";
+}
+.datetimePicker .timePicker td.form-group input {
+  width: 50px;
+  text-align: center;
+}
+.datetimePicker .form-control {
+  background-image: none;
+  border: 2px solid var(--neutral-primary-color, #333333);
+}
+.datetimePicker .btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.datetimePicker .btn:active,
+.datetimePicker .btn:active:hover,
+.datetimePicker .btn:hover,
+.datetimePicker .btn:focus,
+.datetimePicker .btn:focus:hover {
+  border: 1px solid transparent;
+}
+.datetimePicker .btn-default {
+  font-size: 12px;
+}
+.calendarDropDown .calendar {
+  border: 1px solid var(--black-color, #000);
+}
+.calendarDropDown .calendar .btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 8px;
+}
+.calendarDropDown .calendar .btn:active,
+.calendarDropDown .calendar .btn:active:hover,
+.calendarDropDown .calendar .btn:hover,
+.calendarDropDown .calendar .btn:focus,
+.calendarDropDown .calendar .btn:focus:hover {
+  border: 1px solid transparent;
+}
+.calendarDropDown .calendar .glyphicon.glyphicon-chevron-right {
+  font-size: 8px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+.calendarDropDown .calendar .glyphicon.glyphicon-chevron-right::before {
+  content: "\E972";
+}
+.calendarDropDown .calendar .glyphicon.glyphicon-chevron-left {
+  font-size: 8px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.calendarDropDown .calendar .glyphicon.glyphicon-chevron-left::before {
+  content: "\E972";
+}
+.datetimePickerClassic input[type="text"]:disabled {
+  color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.datetimePickerClassic .datePicker .calendarInput {
+  background-color: var(--neutral-primary-color-alt, #444444);
+}
+.datetimePickerClassic .form-control {
+  background-color: var(--neutral-primary-color-alt, #444444);
+}
+.datetimePickerClassic .btn {
+  background-color: transparent;
+  color: var(--neutral-tertiary-color, #A6A6A6);
+}
+.datetimePickerClassic .btn:active,
+.datetimePickerClassic .btn:active:hover,
+.datetimePickerClassic .btn:hover,
+.datetimePickerClassic .btn:focus,
+.datetimePickerClassic .btn:focus:hover {
+  background-color: transparent;
+  color: var(--theme-dark-color, #CDA521);
+}
+.datetimePickerClassic .btn-default {
+  color: var(--theme-primary-color, #F2C811);
+}
+.calendarDropDown .calendar table {
+  background-color: var(--white-color, #FFF);
+}
+.calendarDropDown .calendar .btn {
+  background-color: transparent;
+}
+.calendarDropDown .calendar .btn:active,
+.calendarDropDown .calendar .btn:active:hover,
+.calendarDropDown .calendar .btn:hover,
+.calendarDropDown .calendar .btn:focus,
+.calendarDropDown .calendar .btn:focus:hover {
+  background-color: transparent;
+  color: var(--theme-dark-color, #CDA521);
+}
+.calendarDropDown .calendar .btn-default.active,
+.calendarDropDown .calendar .btn-default:active,
+.calendarDropDown .calendar .open > .dropdown-toggle.btn-default {
+  background-color: var(--theme-primary-color, #F2C811);
+  border-color: black;
+}
+.newPaneColors.explorationContainer .datetimePickerClassic input[type="text"]:disabled {
+  color: var(--gray-80, #B3B0AD);
+}
+.newPaneColors.explorationContainer .datetimePickerClassic .datePicker .calendarInput {
+  background-color: var(--white-color, #FFF);
+}
+.newPaneColors.explorationContainer .datetimePickerClassic .form-control {
+  background-color: var(--white-color, #FFF);
+}
+.newPaneColors.explorationContainer .datetimePickerClassic .btn {
+  color: var(--gray-180, #252423);
+}
+.newPaneColors.explorationContainer .datetimePickerClassic .btn-default {
+  color: var(--dark-blue, #2B579A);
+}
+.newPaneColors.explorationContainer .calendarDropDown .calendar {
+  color: var(--gray-180, #252423);
+}
+.outspacePane .datetimePickerOutspace input[type="text"] {
+  background-color: var(--white-color, #FFF);
+  color: var(--black-color, #000);
+}
+.outspacePane .datetimePickerOutspace ::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+.outspacePane .datetimePickerOutspace input[type="text"]:disabled {
+  color: inherit;
+}
+.outspacePane .datetimePickerOutspace .datePicker .calendarInput {
+  height: initial;
+  background-color: var(--white-color, #FFF);
+}
+.outspacePane .datetimePickerOutspace .form-control {
+  background-color: var(--white-color, #FFF);
+}
+.outspacePane .datetimePickerOutspace .btn {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+.outspacePane .datetimePickerOutspace .btn:active,
+.outspacePane .datetimePickerOutspace .btn:active:hover,
+.outspacePane .datetimePickerOutspace .btn:hover,
+.outspacePane .datetimePickerOutspace .btn:focus,
+.outspacePane .datetimePickerOutspace .btn:focus:hover {
+  background-color: transparent;
+  color: inherit;
+}
+.outspacePane .calendarDropDown .calendar table {
+  background-color: var(--white-color, #FFF);
+}
+.outspacePane .calendarDropDown .calendar .btn {
+  background-color: transparent;
+}
+.outspacePane .calendarDropDown .calendar .btn:active,
+.outspacePane .calendarDropDown .calendar .btn:active:hover,
+.outspacePane .calendarDropDown .calendar .btn:hover,
+.outspacePane .calendarDropDown .calendar .btn:focus,
+.outspacePane .calendarDropDown .calendar .btn:focus:hover {
+  background-color: transparent;
+  color: var(--theme-dark-color, #CDA521);
+}

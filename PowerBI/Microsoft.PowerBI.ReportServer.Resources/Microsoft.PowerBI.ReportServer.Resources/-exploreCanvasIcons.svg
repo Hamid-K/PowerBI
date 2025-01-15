@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol height="16" id="contextMenuCheckArrow" viewBox="0 0 16 16" width="16">
+        <defs>
+            <style>#contextMenuCheckArrow .cls-1{opacity:1 !important;fill:#68a490;}#contextMenuCheckArrow .cls-2{fill:none;}</style>
+        </defs>
+        <polygon class="cls-1 fwns" points="6.02 14.67 0.67 8.71 2.41 7.14 5.9 11.02 12.73 2.28 14.58 3.72 6.02 14.67"/>
+        <rect class="cls-2 nfwns" height="16" width="16"/>
+    </symbol>
+    <symbol height="17" id="drill-down-level" viewBox="0 0 17 17" width="17">
+        <defs>
+            <style>#drill-down-level .cls-1{opacity:1 !important;fill:#666;}#drill-down-level .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M8.5,1.38A7.13,7.13,0,1,1,1.38,8.5,7.13,7.13,0,0,1,8.5,1.38m0-1A8.13,8.13,0,1,0,16.63,8.5,8.13,8.13,0,0,0,8.5.38Z"/>
+        <polygon class="cls-1 fwns" points="7.76 8.6 6 10.57 6 5 5 5 5 10.57 3.23 8.6 2.56 9.2 5.5 12.47 8.44 9.2 7.76 8.6"/>
+        <polygon class="cls-1 fwns" points="13.77 8.6 12 10.57 12 5 11 5 11 10.57 9.23 8.6 8.56 9.2 11.5 12.47 14.44 9.2 13.77 8.6"/>
+        <rect class="cls-2 nfwns" height="17" width="17"/>
+    </symbol>
+    <symbol height="17" id="drill-down-toggled" viewBox="0 0 17 17" width="17">
+        <defs>
+            <style>#drill-down-toggled .cls-1{opacity:1 !important;fill:#fff;}#drill-down-toggled .cls-2{fill:none;}</style>
+        </defs>
+        <circle class="fwns" cx="8.5" cy="8.5" r="8.13"/>
+        <polygon class="cls-1 fwns" points="12.13 8.16 9 11.53 9 3 8 3 8 11.53 4.87 8.16 4.13 8.84 8.5 13.53 12.87 8.84 12.13 8.16"/>
+        <rect class="cls-2 nfwns" height="17" width="17"/>
+    </symbol>
+    <symbol height="17" id="drill-down" viewBox="0 0 17 17" width="17">
+        <defs>
+            <style>#drill-down .cls-1{opacity:1 !important;fill:#666;}#drill-down .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M8.5,1.38A7.13,7.13,0,1,1,1.38,8.5,7.13,7.13,0,0,1,8.5,1.38m0-1A8.13,8.13,0,1,0,16.63,8.5,8.13,8.13,0,0,0,8.5.38Z"/>
+        <polygon class="cls-1 fwns" points="12.87 8.84 12.13 8.16 9 11.53 9 3 8 3 8 11.53 4.87 8.16 4.13 8.84 8.5 13.53 12.87 8.84"/>
+        <rect class="cls-2 nfwns" height="17" width="17"/>
+    </symbol>
+    <symbol height="17" id="drill-up" viewBox="0 0 17 17" width="17">
+        <defs>
+            <style>#drill-up .cls-1{opacity:1 !important;fill:#666;}#drill-up .cls-2{fill:none;}</style>
+        </defs>
+        <path class="cls-1 fwns" d="M8.5,1.38A7.13,7.13,0,1,1,1.38,8.5,7.13,7.13,0,0,1,8.5,1.38m0-1A8.13,8.13,0,1,0,16.63,8.5,8.13,8.13,0,0,0,8.5.38Z"/>
+        <polygon class="cls-1 fwns" points="12.87 8.16 8.5 3.47 4.13 8.16 4.87 8.84 8 5.47 8 14 9 14 9 5.47 12.13 8.84 12.87 8.16"/>
+        <rect class="cls-2 nfwns" height="17" width="17"/>
+    </symbol>
+    <symbol height="24" id="slidethumb_addnew" viewBox="0 0 39 24" width="39">
+        <defs>
+            <style>
+                #slidethumb_addnew .cls-1 {
+                    opacity:1 !important;
+                    fill:var(--add-new-page-icon-color);
+                    &:hover { fill:var(--add-new-page-icon-color-hover, --add-new-page-icon-color); }
+                    &:active { fill:var(--add-new-page-icon-color-pressed, --add-new-page-icon-color); }
+                }
+                #slidethumb_addnew .cls-2{fill:none;}
+            </style>
+        </defs>
+        <polygon class="cls-1 fwns" points="25 10 21 10 21 6 18 6 18 10 14 10 14 13 18 13 18 17 21 17 21 13 25 13 25 10"/>
+        <rect class="cls-2 nfwns" height="24" width="39"/>
+    </symbol>
+</svg>

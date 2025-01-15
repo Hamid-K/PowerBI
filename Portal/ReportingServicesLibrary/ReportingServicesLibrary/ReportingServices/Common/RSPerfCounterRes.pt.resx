@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>Número de sessões ativas.</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>Alerta: comprimento da fila de eventos</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>Número total de reciclagens do domínio do aplicativo.</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>Solicitações por segundo.</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>Número total de solicitações.</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>Número total de atualizações do cache do servidor de execução de relatórios.</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>Número de liberações de cache por segundo.</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>Número total de acertos do cache do servidor de relatório.</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>Número de acertos do cache do servidor de relatório por segundo.</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>Número total de erros do cache.</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>Número de vezes por segundo que não é possível recuperar relatórios do cache.</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>Número total de entregas.</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>Número de entregas por segundo.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>Falhas de conexão à fonte de dados por segundo.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>Número total de falhas de conexão à fonte de dados.</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>Número total de eventos.</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>Número de eventos por segundo.</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>Número de solicitações por segundo que são processadas em uma sessão existente.</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>Número total de solicitações que foram processadas em uma sessão existente.</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>Número de sessões de novo usuário iniciadas por segundo.</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>Número de falhas por segundo.</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>Número total de falhas.</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>Número de notificações de redução emitidas pelo servidor no último segundo. Indica a frequência com que o servidor acredita estar sob pressão de memória.</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>Número total de acertos no cache de memória.</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>Número de vezes por segundo que os relatórios podem ser recuperados do cache de memória.</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>Número total de erros no cache de memória.</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>Número de vezes por segundo que não é possível recuperar relatórios do cache de memória.</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>Um número de 1 a 5 que indica o estado da memória atual do servidor. 1:Sem pressão, 2:Pressão Baixa,3:Pressão Média,4:Pressão Alta,5:Pressão Excedida.</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>Número de bytes cuja redução foi solicitada pelo servidor.</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>Número total de acertos no cache de modelo.</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>Número de vezes por segundo que os modelos podem ser recuperados do cache.</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>Número total de erros no cache de modelo.</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>Número de vezes por segundo que não é possível recuperar modelos do cache.</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>Número de solicitações de modelo ativas.</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>Duração média de solicitações de modelo.</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>Solicitações de modelo por segundo.</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>Número total de solicitações de modelo.</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>Número de solicitações por segundo de relatórios abertos em uma sessão existente.</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>Número de solicitações por segundo que são processadas em uma nova sessão.</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>Número de solicitações que foram processadas em uma nova sessão.</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>Número total de falhas de processamento.</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>Estatísticas relacionadas a Relatórios do Power View do Serviço do Servidor de Relatório do SQL</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>Número de solicitações de consulta ativas.</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>Duração média de solicitações de consulta.</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>Solicitações de consulta por segundo.</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>Número total de solicitações de consulta.</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>Número total de threads rejeitados como resultado de pressão de thread.</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>Número de solicitações de relatório ativas.</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>Número total de relatórios executados.</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>Número de relatórios executados por segundo.</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>Número de solicitações por segundo.</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>Número de solicitações de relatório ativas.</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>Duração média de solicitações de relatório.</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>Solicitações de relatório por segundo.</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>Número total de solicitações de relatório.</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>Número total de atualizações do instantâneo de execução do relatório.</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>Número de atualizações de instantâneo por segundo.</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>Número de sessões ativas.</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>Estatísticas Relacionadas ao Serviço do Servidor de Relatório do SQL</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>Número total de solicitações em processamento.</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>Número de theads ativos.</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Alerta: eventos processados - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>Serviço Web MSRS 2011</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>Serviço do Windows MSRS 2011</value>
+  </data>
+</root>

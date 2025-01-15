@@ -1,0 +1,31 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 180 161;" xml:space="preserve">
+	<symbol id="bookmarks_empty" viewBox="0 0 180 161">
+        <defs>
+            <style type="text/css">
+                #bookmarks_empty .st0{fill:#444444;}
+                #bookmarks_empty .st1{fill:#AAAAAA;}
+                #bookmarks_empty .st2{fill:#F1C731;}
+                #bookmarks_empty .st3{fill:#FFFFFF;}
+            </style>
+        </defs>
+        <rect class="st0 nfwns" width="180" height="161"/>
+        <path class="st1 fwns" d="M62,35l-11,3v70l58,17v-2.9l3,0.9v-2.9l3,0.9v-2.7l2.5,0.7v-2.7l2.5,0.7V47L62,35z M118.5,115l-1-0.3V49l-54-12
+            v-0.1l55,11.4V115z M116,117l-1-0.3V51L62.7,38.3l0,0L116,50.2V117z M113.5,119l-1.5-0.4V53L59.5,39.2v-0.1l54,13.1L113.5,119
+            L113.5,119z M107.5,123l-55-16.1V40l55,16.1V123z M110.5,121l-1.5-0.4V55L67.6,42.9l42.9,11.3V121z"/>
+        <circle class="st2 fwns" cx="52" cy="109" r="12"/>
+        <path class="st2 fwns" d="M89.5,51l10,2.9V71l-3.8-4.5L95,65.7l-1,0.5l-4.5,2L89.5,51 M88,49v21.5l6.6-3l6.4,7.6V52.8L88,49L88,49z"/>
+        <path class="st1 fwns" d="M64.2,79.7l4.5,1.3v17.4l-4.5-1.2V79.7 M63,78.1v20l7,1.9V80L63,78.1z"/>
+        <path class="st1 fwns" d="M73.2,70.7l4.5,1.3v29.4l-4.5-1.2V70.7 M72,69.1v32l7,1.9V71L72,69.1z"/>
+        <path class="st1 fwns" d="M82.2,85.7l4.5,1.3v17.4l-4.5-1.2V85.7 M81,84.1v20l7,1.9V86L81,84.1z"/>
+        <path class="st1 fwns" d="M91.2,94.7l4.5,1.3v11.4l-4.5-1.2V94.7 M90,93.1v14l7,1.9V95L90,93.1z"/>
+        <path id="funnel" class="st3 fwns1" d="M57.1,104l-3.9,5.4l-0.2,0.3v5l-2-0.5v-4.5l-0.2-0.3l-3.9-5.4H57.1 M59,103H45l5,7v5l4,1v-6L59,103
+            z"/>
+        <polygon class="st1 fwns" points="41.5,77 40.7,78.7 39,79.5 40.7,80.3 41.5,82 42.3,80.3 44,79.5 42.3,78.7 "/>
+        <polygon class="st1 fwns" points="129.5,109.5 128.7,111.2 127,112 128.7,112.8 129.5,114.5 130.3,112.8 132,112 130.3,111.2 "/>
+        <polygon class="st2 fwns" points="139.5,92.5 138.7,94.2 137,95 138.7,95.8 139.5,97.5 140.3,95.8 142,95 140.3,94.2 "/>
+        <polygon class="st1 fwns" points="92.5,30 91.7,31.7 90,32.5 91.7,33.3 92.5,35 93.3,33.3 95,32.5 93.3,31.7 "/>
+        <rect x="94.9" y="34.4" transform="matrix(0.514 -0.8578 0.8578 0.514 17.2005 100.3852)" class="st2 fwns" width="4.6" height="1.2"/>
+        <rect x="37.8" y="72.4" transform="matrix(0.4037 -0.9149 0.9149 0.4037 -45.485 79.7966)" class="st2 fwns" width="1.2" height="4.7"/>
+        <rect x="132.3" y="87.6" transform="matrix(0.8361 -0.5486 0.5486 0.8361 -26.3165 88.3359)" class="st1 fwns" width="4.7" height="1.2"/>
+    </symbol>
+</svg>

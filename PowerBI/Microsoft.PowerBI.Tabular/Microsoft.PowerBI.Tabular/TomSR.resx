@@ -1,0 +1,1540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DefaultNameForObject_AnalyticsAIMetadata" xml:space="preserve">
+    <value>AnalyticsAIMetadata</value>
+  </data>
+  <data name="DefaultNameForObject_Annotation" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="DefaultNameForObject_AttributeHierarchy" xml:space="preserve">
+    <value>Attribute Hierarchy</value>
+  </data>
+  <data name="DefaultNameForObject_BindingInfo" xml:space="preserve">
+    <value>BindingInfo</value>
+  </data>
+  <data name="DefaultNameForObject_CalculationGroup" xml:space="preserve">
+    <value>CalculationGroup</value>
+  </data>
+  <data name="DefaultNameForObject_CalculationGroupExpression" xml:space="preserve">
+    <value>CalculationExpression</value>
+  </data>
+  <data name="DefaultNameForObject_CalculationItem" xml:space="preserve">
+    <value>CalculationItem</value>
+  </data>
+  <data name="DefaultNameForObject_Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="DefaultNameForObject_CalendarColumnReference" xml:space="preserve">
+    <value>CalendarColumnReference</value>
+  </data>
+  <data name="DefaultNameForObject_ChangedProperty" xml:space="preserve">
+    <value>ChangedProperty</value>
+  </data>
+  <data name="DefaultNameForObject_Column" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="DefaultNameForObject_ColumnPermission" xml:space="preserve">
+    <value>Column Permission</value>
+  </data>
+  <data name="DefaultNameForObject_Culture" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="DefaultNameForObject_DataCoverageDefinition" xml:space="preserve">
+    <value>DataCoverageDefinition</value>
+  </data>
+  <data name="DefaultNameForObject_DataSource" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="DefaultNameForObject_DetailRowsDefinition" xml:space="preserve">
+    <value>DetailRowsDefinition</value>
+  </data>
+  <data name="DefaultNameForObject_ExcludedArtifact" xml:space="preserve">
+    <value>ExcludedArtifact</value>
+  </data>
+  <data name="DefaultNameForObject_ExtendedProperty" xml:space="preserve">
+    <value>ExtendedProperty</value>
+  </data>
+  <data name="DefaultNameForObject_Function" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="DefaultNameForObject_GroupByColumn" xml:space="preserve">
+    <value>GroupByColumn</value>
+  </data>
+  <data name="DefaultNameForObject_Hierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="DefaultNameForObject_KPI" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="DefaultNameForObject_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="DefaultNameForObject_LinguisticMetadata" xml:space="preserve">
+    <value>Linguistic Metadata</value>
+  </data>
+  <data name="DefaultNameForObject_Measure" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="DefaultNameForObject_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="DefaultNameForObject_ModelRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="DefaultNameForObject_ModelRoleMember" xml:space="preserve">
+    <value>Role Member</value>
+  </data>
+  <data name="DefaultNameForObject_NamedExpression" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="DefaultNameForObject_Partition" xml:space="preserve">
+    <value>Partition</value>
+  </data>
+  <data name="DefaultNameForObject_Perspective" xml:space="preserve">
+    <value>Perspective</value>
+  </data>
+  <data name="DefaultNameForObject_PerspectiveColumn" xml:space="preserve">
+    <value>Perspective Column</value>
+  </data>
+  <data name="DefaultNameForObject_PerspectiveHierarchy" xml:space="preserve">
+    <value>Perspective Hierarchy</value>
+  </data>
+  <data name="DefaultNameForObject_PerspectiveMeasure" xml:space="preserve">
+    <value>Perspective Measure</value>
+  </data>
+  <data name="DefaultNameForObject_PerspectiveSet" xml:space="preserve">
+    <value>Perspective Set</value>
+  </data>
+  <data name="DefaultNameForObject_PerspectiveTable" xml:space="preserve">
+    <value>Perspective Table</value>
+  </data>
+  <data name="DefaultNameForObject_QueryGroup" xml:space="preserve">
+    <value>Query Group</value>
+  </data>
+  <data name="DefaultNameForObject_RelatedColumnDetails" xml:space="preserve">
+    <value>RelatedColumnDetails</value>
+  </data>
+  <data name="DefaultNameForObject_Relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="DefaultNameForObject_Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="DefaultNameForObject_Table" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="DefaultNameForObject_TablePermission" xml:space="preserve">
+    <value>Table Permission</value>
+  </data>
+  <data name="DefaultNameForObject_TimeUnitColumnAssociation" xml:space="preserve">
+    <value>TimeUnitColumnAssociation</value>
+  </data>
+  <data name="DefaultNameForObject_Variation" xml:space="preserve">
+    <value>Variation</value>
+  </data>
+  <data name="Error_NameCannotBeReservedString" xml:space="preserve">
+    <value>The name of the object '{0}' cannot be the reserved string '{1}'.</value>
+  </data>
+  <data name="Error_NameHasInvalidXmlCharacters" xml:space="preserve">
+    <value>The name of the object '{0}' contains invalid XML characters.</value>
+  </data>
+  <data name="Error_NameIsRequired" xml:space="preserve">
+    <value>Objects cannot have empty names.</value>
+  </data>
+  <data name="Error_NameIsTooLong" xml:space="preserve">
+    <value>The '{0}' name of the object '{1}' is too long ({2} characters). The maximum number of characters is {3}.</value>
+  </data>
+  <data name="Error_ValueHasInvalidCharacters" xml:space="preserve">
+    <value>The name of the object contains a character which is not allowed. The characters that may not be used for the name of this type of object are '{0}'.</value>
+  </data>
+  <data name="Exception_ApplyAutomaticAggregationsInOfflineMode" xml:space="preserve">
+    <value>Applying automatic aggregations is not valid in disconnected state or scripting mode.</value>
+  </data>
+  <data name="Exception_ApplyAutomaticAggregationsInvalidCompatLevel" xml:space="preserve">
+    <value>Applying automatic aggregations is not valid in the current compatibility level of the database; the current level is {0} and the minimum required level is {1}.</value>
+  </data>
+  <data name="Exception_ApplyRefreshPoliciesIncompatibleWithRefreshType" xml:space="preserve">
+    <value>Refresh of tabular objects while applying refresh policies can only be used with the following types of refresh: DataOnly, Full, Automatic.</value>
+  </data>
+  <data name="Exception_ApplyRefreshPoliciesSaveInOfflineMode" xml:space="preserve">
+    <value>Saving changes to a model with request(s) to apply refresh policy(ies) is not valid in disconnected state or scripting mode.</value>
+  </data>
+  <data name="Exception_CanNotReadFindTypePropObject" xml:space="preserve">
+    <value>Cannot read or find the Type property of '{0}' object.</value>
+  </data>
+  <data name="Exception_CannotApplyRefreshPolicyDisconnectedModel" xml:space="preserve">
+    <value>Cannot apply refresh policy when the model is in disconnected state.</value>
+  </data>
+  <data name="Exception_CannotApplyRefreshPolicyDisconnectedTable" xml:space="preserve">
+    <value>Cannot apply refresh policy for a standalone table that is not connected to a Model.</value>
+  </data>
+  <data name="Exception_CannotApplyRefreshPolicyModifiedModel" xml:space="preserve">
+    <value>Cannot apply refresh policy when the model has unsaved local changes.</value>
+  </data>
+  <data name="Exception_CannotConvert" xml:space="preserve">
+    <value>Can't convert value '{0}' of type '{1}' to required type '{2}'.</value>
+  </data>
+  <data name="Exception_CannotConvertToType" xml:space="preserve">
+    <value>Cannot convert value '{0}' to required type '{1}'.</value>
+  </data>
+  <data name="Exception_CannotCopyCollectionCultureConflict" xml:space="preserve">
+    <value>The Culture of the collection conflicts with the the set of names in the other collection.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObject" xml:space="preserve">
+    <value>Cannot de-serialize {0}.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectMalformedInput" xml:space="preserve">
+    <value>Cannot de-serialize {0}. The JSON input is not properly formed.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectPath" xml:space="preserve">
+    <value>Cannot de-serialize object path.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectPathMalformedInput" xml:space="preserve">
+    <value>Cannot de-serialize the object path. The JSON input is not properly formed.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectResolvePathsFailed" xml:space="preserve">
+    <value>Cannot resolve all the paths while de-serializing {0}.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectResolvePathsFailedWithList" xml:space="preserve">
+    <value>Cannot resolve all the paths while de-serializing {0}. Failed links: {1}.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectUnknownType" xml:space="preserve">
+    <value>Cannot de-serialize an object from JSON to unknown type '{0}'.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectWithDetails" xml:space="preserve">
+    <value>Cannot de-serialize {0}. Error: {1}.</value>
+  </data>
+  <data name="Exception_CannotDeserializeObjectWrongType" xml:space="preserve">
+    <value>Object de-serialized from JSON has type '{0}' and cannot be converted to required type '{1}'.</value>
+  </data>
+  <data name="Exception_CannotExceuteJsonWithLocalchanges" xml:space="preserve">
+    <value>Cannot execute a JSON command when the model has pending changes. Save or discard the changes before initiating the JSON command.</value>
+  </data>
+  <data name="Exception_CannotExecuteXmlaAnotherModelInTransaction" xml:space="preserve">
+    <value>Cannot execute the XMLA command on the server because another database has a pending transaction.</value>
+  </data>
+  <data name="Exception_CannotExecuteXmlaDisconnectedModel" xml:space="preserve">
+    <value>Cannot execute the XMLA command when the model is in disconnected state.</value>
+  </data>
+  <data name="Exception_CannotFindItemWithId" xml:space="preserve">
+    <value>Cannot find an item with ID '{0}' in the collection.</value>
+  </data>
+  <data name="Exception_CannotGenerateSchemaForUnknownType" xml:space="preserve">
+    <value>Cannot generate JSON schema for unknown type '{0}'</value>
+  </data>
+  <data name="Exception_CannotModifyReadOnlyFormatOptions" xml:space="preserve">
+    <value>The format options are in use by the serializaton system and cannot be modified!</value>
+  </data>
+  <data name="Exception_CannotProbeMetadataObjectCollectionFromJson" xml:space="preserve">
+    <value>Cannot probe into object collection from a JSON object which is not an array of objects.</value>
+  </data>
+  <data name="Exception_CannotReadMetadataObjectCollectionWithTypeFromJson" xml:space="preserve">
+    <value>Cannot read object collection with item type '{0}' from json object which is not an array of objects.</value>
+  </data>
+  <data name="Exception_CannotReadPropertyObjectExpected" xml:space="preserve">
+    <value>Cannot de-serialize {0} from property '{1}' which is not an object.</value>
+  </data>
+  <data name="Exception_CannotRemoveItemByNameDuringCopy" xml:space="preserve">
+    <value>Cannot remove the '{0}' object while the collection is being copied from another collection.</value>
+  </data>
+  <data name="Exception_CannotRetrieveAdaptiveCachingRecommendations" xml:space="preserve">
+    <value>Failed to retrieve PowerBI Performance Accelerator recommendations.</value>
+  </data>
+  <data name="Exception_CannotSaveChangeAnotherModelInTransaction" xml:space="preserve">
+    <value>Cannot submit changes to the server because another database has a pending transaction.</value>
+  </data>
+  <data name="Exception_CannotSaveChangesDisconnectedModel" xml:space="preserve">
+    <value>Cannot save changes when the model is in disconnected state.</value>
+  </data>
+  <data name="Exception_CannotSerializeObject" xml:space="preserve">
+    <value>Cannot serialize {0}.</value>
+  </data>
+  <data name="Exception_CannotStartTransactionLocalchanges" xml:space="preserve">
+    <value>Cannot start a transaction when the model has pending changes. Save or discard the changes before starting a transaction.</value>
+  </data>
+  <data name="Exception_CannotSyncModelDisconnected" xml:space="preserve">
+    <value>A model in disconnected state cannot be synced with the server.</value>
+  </data>
+  <data name="Exception_CannotSyncModelModified" xml:space="preserve">
+    <value>A model with pending changes cannot be synced with the server. Save or discard the changes and retry the operation.</value>
+  </data>
+  <data name="Exception_CannotSyncModelOfDirtyDatabase" xml:space="preserve">
+    <value>Cannot sync the model because the '{0}' database was modified during a trasaction that was rolled back, was not refrehed fully yet. Please do a full refresh at the database level.</value>
+  </data>
+  <data name="Exception_CannotSyncNewModel" xml:space="preserve">
+    <value>A model that was just created cannot be synced with the server.</value>
+  </data>
+  <data name="Exception_CannotUndoChangesDisconnectedModel" xml:space="preserve">
+    <value>Cannot undo changes when the model is in disconnected state.</value>
+  </data>
+  <data name="Exception_CannotUpdateCultureCollation" xml:space="preserve">
+    <value>Update failed on the Culture/Collation specified in the model.</value>
+  </data>
+  <data name="Exception_CannotUpdateCultureInfoOfChildCollection" xml:space="preserve">
+    <value>The Culture of the child collection could not be updated.</value>
+  </data>
+  <data name="Exception_CantChangeImmutableProperty" xml:space="preserve">
+    <value>Property '{0}' of object '{1}' is immutable and can't be changed once set.</value>
+  </data>
+  <data name="Exception_CollectionAlreadyContainsObjectWithName" xml:space="preserve">
+    <value>An object with name '{0}' already exists in the collection.</value>
+  </data>
+  <data name="Exception_CollectionAlreadyContainsObjectWithTag" xml:space="preserve">
+    <value>An object with lineage-tag '{0}' already exists in the collection.</value>
+  </data>
+  <data name="Exception_CommitTransactionFailed" xml:space="preserve">
+    <value>The commit failed for this transaction. Error returned: '{0}'.</value>
+  </data>
+  <data name="Exception_CompatLevelOutOfRange" xml:space="preserve">
+    <value>The compatibility level of {0} is below the minimal supported level of {1}.</value>
+  </data>
+  <data name="Exception_CompatRestriction_InvalidForAllModes" xml:space="preserve">
+    <value>The usage of {0} will create an invalid configuration in all potential modes.</value>
+  </data>
+  <data name="Exception_CompatRestriction_UnsupportedForMode" xml:space="preserve">
+    <value>The usage of {1} is not supported at {0} mode.</value>
+  </data>
+  <data name="Exception_CompatRestriction_ViolationForMode" xml:space="preserve">
+    <value>The database compatibility level of {1} is below the minimal compatability level of {2} needed for {3} at {0} mode.</value>
+  </data>
+  <data name="Exception_ComverterMismatchChildTypeParent" xml:space="preserve">
+    <value>The type of the provided TMDL object is not a child of the type of the specified parent object - parent type={0}, TMDL object type={1}!</value>
+  </data>
+  <data name="Exception_ComverterMismatchInstanceType" xml:space="preserve">
+    <value>There is a mismatch between the converter type and the type of the metadata object - type={0}, object type={1}.</value>
+  </data>
+  <data name="Exception_ComverterMismatchPropertyName" xml:space="preserve">
+    <value>"There is a mismatch between the name of the specified property and the one of the converter - converter property name={0}, TMDL property name={0}!</value>
+  </data>
+  <data name="Exception_ComverterMismatchType" xml:space="preserve">
+    <value>There is a mismatch between the converter type and the type of the TMDL object - type={0}, TMDL object type={1}.</value>
+  </data>
+  <data name="Exception_ComverterMismatchTypeInstance" xml:space="preserve">
+    <value>There is a mismatch between the type of the existing instance and the type of the TMDL object - existing instance type={0}, TMDL object type={1}!</value>
+  </data>
+  <data name="Exception_CustomPropertyAssignedToMultipleObjects" xml:space="preserve">
+    <value>The same object instance may not be set as the '{0}' property value in two objects at the same time.</value>
+  </data>
+  <data name="Exception_CustomPropertyValueHasInvalidType" xml:space="preserve">
+    <value>The type of property '{0}' must be {1} and not {2}.</value>
+  </data>
+  <data name="Exception_DatabaseDoesNotExist" xml:space="preserve">
+    <value>A database with name '{0}' doesn't exist.</value>
+  </data>
+  <data name="Exception_DatabaseModelHasLocalChanges" xml:space="preserve">
+    <value>A database with name '{0}' has local unsaved model changes. Submit or discard the changes and retry the operation.</value>
+  </data>
+  <data name="Exception_DisconnectedObjectCannotBeAnalyzeRefreshPolicyImpact" xml:space="preserve">
+    <value>A disconnected object is read only and cannot be analyzed for refresh policy impact.</value>
+  </data>
+  <data name="Exception_DisconnectedObjectCannotBeRefreshed" xml:space="preserve">
+    <value>A disconnected object is read only and cannot be refreshed.</value>
+  </data>
+  <data name="Exception_DisconnectedPartitionCannotBeMerged" xml:space="preserve">
+    <value>Disconnected partition cannot be merged with other partitions.</value>
+  </data>
+  <data name="Exception_DiscoverModelFailed" xml:space="preserve">
+    <value>Failed to discover the state of the model from the server. Error returned: '{0}'.</value>
+  </data>
+  <data name="Exception_DiscoverModelFailedBadDb" xml:space="preserve">
+    <value>Failed to discover the state of the model from the server. Check that tabular database with name '{0}' and compatibility level 1200 or higher exists on the server.</value>
+  </data>
+  <data name="Exception_DuplicateDocInContext" xml:space="preserve">
+    <value>The specified document '{0}' already exists in the context!</value>
+  </data>
+  <data name="Exception_ErrorWithPathAndLineInfo" xml:space="preserve">
+    <value>{0} Check path '{1}', line {2}, position {3}.</value>
+  </data>
+  <data name="Exception_ExecuteXmlaFailed" xml:space="preserve">
+    <value>Failed to execute XMLA. Error returned: '{0}'.</value>
+  </data>
+  <data name="Exception_ExternalRoleMemberEmptyIdentityProvider" xml:space="preserve">
+    <value>Cannot set the property 'IdentityProvider' to an empty or null string.</value>
+  </data>
+  <data name="Exception_FailedAddDeserializedNamedObject" xml:space="preserve">
+    <value>Failed to add a deserialized {0} object into the model - name: '{1}', detailed error: {2}</value>
+  </data>
+  <data name="Exception_FailedAddDeserializedObject" xml:space="preserve">
+    <value>Failed to add a deserialized {0} object into the model - detailed error: {1}</value>
+  </data>
+  <data name="Exception_FailedToGenerateXmlaRequest" xml:space="preserve">
+    <value>Failed to generate XMLA request. The changes cannot be submitted to the server. Error returned : '{0}'.</value>
+  </data>
+  <data name="Exception_FailureInModelUpdateFromContext" xml:space="preserve">
+    <value>Updating the model with the '{1}' object of type {0} failed!</value>
+  </data>
+  <data name="Exception_FailureInModelUpdateFromContext2" xml:space="preserve">
+    <value>Adding to the model the '{3}' object of type {2} failed - the parent '{1}' of type {0} cannot be located!</value>
+  </data>
+  <data name="Exception_FailureInModelUpdateFromContext3" xml:space="preserve">
+    <value>Adding to the model the '{3}' object of type {2} failed - failed to add it to the parent '{1}' of type {0}!</value>
+  </data>
+  <data name="Exception_InternalErrorOccured" xml:space="preserve">
+    <value>An internal error has occured.</value>
+  </data>
+  <data name="Exception_InternalErrorOccured_Detailed" xml:space="preserve">
+    <value>An internal error has occured. Details: {0}.</value>
+  </data>
+  <data name="Exception_InvalidArrayIndex" xml:space="preserve">
+    <value>The specified index in the array is invalid!</value>
+  </data>
+  <data name="Exception_InvalidBaseIndentationLevel" xml:space="preserve">
+    <value>The level of the base indentation must be 0 or a positive integer; {0} is not a valid value!</value>
+  </data>
+  <data name="Exception_InvalidChildCollection" xml:space="preserve">
+    <value>A metadata object of type {0} does not have a collection of children of type {1}!</value>
+  </data>
+  <data name="Exception_InvalidCompatModeOnTmdlSerialization" xml:space="preserve">
+    <value>Cannot serialize the metadata object because it is not supported in the active compatibility modes!</value>
+  </data>
+  <data name="Exception_InvalidCompatRequestForTmdlSerialization" xml:space="preserve">
+    <value>Cannot serialize the metadata object or database because they are not supported in the requested compatibility requirements of {0} mode and {1} level!</value>
+  </data>
+  <data name="Exception_InvalidCompatRequestForTmdlSerialization2" xml:space="preserve">
+    <value>Cannot serialize the metadata object or database because they are not supported in the requested compatibility level of {0} in any compatibility mode.</value>
+  </data>
+  <data name="Exception_InvalidContentStyle" xml:space="preserve">
+    <value>'{0}' is not a valid metadata serialization style!</value>
+  </data>
+  <data name="Exception_InvalidEscapedString" xml:space="preserve">
+    <value>'{0}' is expected to be an escaped string quoted with '{1}', but in position {2} it has an un-escaped quote marker!</value>
+  </data>
+  <data name="Exception_InvalidFormatBuilderContentStyleForSetOption" xml:space="preserve">
+    <value>The formatting-options builder was not intialized with the '{0}' style, that is the required metadata serialization style for setting this option!</value>
+  </data>
+  <data name="Exception_InvalidIndentationLength" xml:space="preserve">
+    <value>The length of an indentation level must be a positive integer; {0} is not a valid value!</value>
+  </data>
+  <data name="Exception_InvalidJsonScript" xml:space="preserve">
+    <value>Invalid JSON script.</value>
+  </data>
+  <data name="Exception_InvalidLogicalPath" xml:space="preserve">
+    <value>Invalid logical path - '{0}' is not a valid path!</value>
+  </data>
+  <data name="Exception_InvalidOpContextOnZipController" xml:space="preserve">
+    <value>Invalid operation context!</value>
+  </data>
+  <data name="Exception_InvalidSerializationBuilderContentStyleForSetOption" xml:space="preserve">
+    <value>The serialization-options builder was not intialized with the '{0}' style, that is the required metadata serialization style for setting this option!</value>
+  </data>
+  <data name="Exception_InvalidStreamNoRead" xml:space="preserve">
+    <value>The provided stream does not support reading from!</value>
+  </data>
+  <data name="Exception_InvalidStreamNoWrite" xml:space="preserve">
+    <value>The provided stream does not support writing into!</value>
+  </data>
+  <data name="Exception_ItemAlreadyPresentInCollection" xml:space="preserve">
+    <value>Item '{0}' already exists in the collection.</value>
+  </data>
+  <data name="Exception_JsonCommandAlterNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be altered using a JSON command - this operation is not supported for this type of objects.</value>
+  </data>
+  <data name="Exception_JsonCommandCannotFindObject" xml:space="preserve">
+    <value>Cannot execute the {0} command: object '{1}' with path {2} cannot be located.</value>
+  </data>
+  <data name="Exception_JsonCommandCannotFindParentObject" xml:space="preserve">
+    <value>Cannot execute the {0} command: cannot find the parent object of the new object.</value>
+  </data>
+  <data name="Exception_JsonCommandChildCollectionNotFound" xml:space="preserve">
+    <value>Cannot execute the {0} command: the specified parent object cannot have a child object of type {1}.</value>
+  </data>
+  <data name="Exception_JsonCommandCreateNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be created using a JSON command - this operation is not supported for this type of objects.</value>
+  </data>
+  <data name="Exception_JsonCommandCreateOrReplaceNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be created or replaced using a JSON command - this operation is not supported for this type of objects.</value>
+  </data>
+  <data name="Exception_JsonCommandDatabaseNotFound" xml:space="preserve">
+    <value>Cannot execute the {0} command: database '{1}' cannot be found.</value>
+  </data>
+  <data name="Exception_JsonCommandDatabaseNotSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: database is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandDeleteNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be deleted using a JSON command - this operation is not supported for this type of objects.</value>
+  </data>
+  <data name="Exception_JsonCommandExportNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be exported using a JSON command - this operation is not supported for this type of object.</value>
+  </data>
+  <data name="Exception_JsonCommandInvalidDatabaseName" xml:space="preserve">
+    <value>Cannot execute the {0} command: the database name is either not specified or is invalid.</value>
+  </data>
+  <data name="Exception_JsonCommandInvalidObjectSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: an invalid object was specified.</value>
+  </data>
+  <data name="Exception_JsonCommandMergePartitionsCantFindSourcePartition" xml:space="preserve">
+    <value>Cannot execute the {0} command: the source partition '{1}' cannot be located.</value>
+  </data>
+  <data name="Exception_JsonCommandMergePartitionsCantFindTargetPartition" xml:space="preserve">
+    <value>Cannot execute the {0} command: the target partition cannot be located.</value>
+  </data>
+  <data name="Exception_JsonCommandMergePartitionsNoSourcePartitions" xml:space="preserve">
+    <value>Cannot execute the {0} command: the source partitions are not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandMergePartitionsNoTargetPartition" xml:space="preserve">
+    <value>Cannot execute the {0} command: the target partition is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandMergePartitionsSourceNameIsEmpty" xml:space="preserve">
+    <value>Cannot execute the {0} command: the name of the source partition is missing.</value>
+  </data>
+  <data name="Exception_JsonCommandMustContainExactlyOneObjectDefinition" xml:space="preserve">
+    <value>{0} command must contain definition of exactly one object.</value>
+  </data>
+  <data name="Exception_JsonCommandNonTabularDatabase" xml:space="preserve">
+    <value>Cannot execute the {0} command: database '{1}' does not contain a tabular model. Verify that the database is in Tabular mode of 1200 compatibility level or higher.</value>
+  </data>
+  <data name="Exception_JsonCommandObjectDefinitionNotSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: object definition is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandObjectNotSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: object is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandObjectReferenceAndDefinitionMismatch" xml:space="preserve">
+    <value>Cannot execute the {0} command: the object definition provided does not match the object being modified.</value>
+  </data>
+  <data name="Exception_JsonCommandParameterIsMissing" xml:space="preserve">
+    <value>Cannot execute the {0} command: Parameter '{1}' is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandParentObjectNotNeededForDatabase" xml:space="preserve">
+    <value>Cannot execute the {0} command: the database cannot have a parent object specified.</value>
+  </data>
+  <data name="Exception_JsonCommandParentObjectNotSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: the parent object is not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshMultipleDbsNotSupported" xml:space="preserve">
+    <value>Cannot execute the Refresh command: refreshing objects from multiple databases is not supported.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be refreshed using a JSON command - this operation is not supported for this type of object.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshPolicyNotSupportForRefreshType" xml:space="preserve">
+    <value>Can only apply refresh policy for refresh-type like Full, DataOnly, or Automatic using the '{0}' command; refresh-type {1} is not supported.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshPolicyNotSupportMoreThanOneObjects" xml:space="preserve">
+    <value>Cannot apply refresh policy for multiple objects using the '{0}' command. Please specify a table or a model.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshPolicyNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}'. Cannot apply refresh policy for this type of object.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshPolicyParameterMissing" xml:space="preserve">
+    <value>Cannot execute the {0} command: effectiveDate parameter is present, but applyRefreshPolicy parameter is missing.</value>
+  </data>
+  <data name="Exception_JsonCommandRefreshScriptOutObjectsNotSpecified" xml:space="preserve">
+    <value>Cannot script out the Refresh command: objects are not specified.</value>
+  </data>
+  <data name="Exception_JsonCommandScriptOutMultipleDbsNotSupported" xml:space="preserve">
+    <value>Scripting out objects belonging to different databases is not supported.</value>
+  </data>
+  <data name="Exception_JsonCommandSequenceFinishedExecuting" xml:space="preserve">
+    <value>The Sequence command has finished executing.</value>
+  </data>
+  <data name="Exception_JsonCommandSequenceMultipleDatabasesNotSupported" xml:space="preserve">
+    <value>The Sequence command cannot modify multiple databases.</value>
+  </data>
+  <data name="Exception_JsonCommandSequenceMultipleDbsNotSupported" xml:space="preserve">
+    <value>Cannot execute the Sequence command: commiting changes to multiple databases is not supported.</value>
+  </data>
+  <data name="Exception_JsonCommandSequenceNestedNotSupported" xml:space="preserve">
+    <value>Sequence command which is a child of another Sequence command is not supported.</value>
+  </data>
+  <data name="Exception_JsonCommandTypeNotSpecified" xml:space="preserve">
+    <value>Cannot execute the {0} command: the type is not specified.</value>
+  </data>
+  <data name="Exception_JsonDeserializeObjectInvalidType" xml:space="preserve">
+    <value>Cannot deserialize an object from JSON to type '{0}'.</value>
+  </data>
+  <data name="Exception_JsonScriptCannotExecuteWhenPendingChanges" xml:space="preserve">
+    <value>Cannot execute a JSON script when any database has pending changes.</value>
+  </data>
+  <data name="Exception_JsonScriptCannotScriptOutMergePartitionsNotSameTable" xml:space="preserve">
+    <value>Cannot script out the MergePartitions command: the target partition and source partition '{0}' don't belong to same table.</value>
+  </data>
+  <data name="Exception_JsonScriptCannotScriptOutNonTMDatabase" xml:space="preserve">
+    <value>Cannot script out non-tabular database. Only tabular databases at compatibility level 1200 or higher can be scripted out into JSON.</value>
+  </data>
+  <data name="Exception_JsonScriptCannotScriptOutObjectWithoutDatabase" xml:space="preserve">
+    <value>Cannot script out an object that does not belong to a database.</value>
+  </data>
+  <data name="Exception_JsonScriptFailedToExecute" xml:space="preserve">
+    <value>Failed to execute a JSON script. Error returned: {0}</value>
+  </data>
+  <data name="Exception_JsonSerializationNotSupportedForObjectType" xml:space="preserve">
+    <value>Object '{0}' cannot be serialized to a JSON string.</value>
+  </data>
+  <data name="Exception_JsonSerializationSupport" xml:space="preserve">
+    <value>A JSON style serialization in the new serialization model is still under development!</value>
+  </data>
+  <data name="Exception_Json_GenerateSchemaWithTranslatablePropertiesNotSupported" xml:space="preserve">
+    <value>Generating a JSON schema with the flag IncludeTranslatablePropertiesOnly is not supported.</value>
+  </data>
+  <data name="Exception_Json_MissingRequiredProperty" xml:space="preserve">
+    <value>Required property '{0}' is missing from the JSON object.</value>
+  </data>
+  <data name="Exception_Json_PartitionMustHaveEmptyDescriptionForMergedMode" xml:space="preserve">
+    <value>Partition of table '{0}' must have empty Description in order to be serialized with the PartitionsMergedWithTable flag.</value>
+  </data>
+  <data name="Exception_Json_PartitionMustHaveNoAnnotationsForMergedMode" xml:space="preserve">
+    <value>Partition of table '{0}' must have no Annotations in order to be serialized with the PartitionsMergedWithTable flag.</value>
+  </data>
+  <data name="Exception_Json_PartitionMustHaveSameNameAsParentTableForMergedMode" xml:space="preserve">
+    <value>Partition of table '{0}' must have name '{0}' in order to be serialized with the PartitionsMergedWithTable flag.</value>
+  </data>
+  <data name="Exception_Json_TableMustHaveSinglePartitionForMergedMode" xml:space="preserve">
+    <value>Table '{0}' must have exactly one partition in order to be serialized with the PartitionsMergedWithTable flag.</value>
+  </data>
+  <data name="Exception_MergePartitionsForTableAlreadyRequested" xml:space="preserve">
+    <value>Pending merge partition operation has been requested for this partition's table.</value>
+  </data>
+  <data name="Exception_MetadataConfigUnsupportedType" xml:space="preserve">
+    <value>The metadata objects' configuration does not support the specified object - type {0} is not supported!</value>
+  </data>
+  <data name="Exception_MismatchTypeOnTmdlSerialization" xml:space="preserve">
+    <value>The type of serialized object does not match the expected type - expected type = {0}, actual type = {1}.</value>
+  </data>
+  <data name="Exception_MissingDocInContext" xml:space="preserve">
+    <value>The document '{0}' does not exists in the context!</value>
+  </data>
+  <data name="Exception_MissingJsonProperty" xml:space="preserve">
+    <value>A required JSON property {0} is missing!.</value>
+  </data>
+  <data name="Exception_ModelAlreadyBelongsToAnotherDatabase" xml:space="preserve">
+    <value>This Model already belongs to another database.</value>
+  </data>
+  <data name="Exception_ModelCannotBeModifiedAnotherModelInActiveTransaction" xml:space="preserve">
+    <value>Only one model can be modified per transaction.</value>
+  </data>
+  <data name="Exception_ModelCannotBeMotified_MergePartitionsRequested" xml:space="preserve">
+    <value>A model cannot be modified when a merge partitions request is pending. Save the model before making any more changes.</value>
+  </data>
+  <data name="Exception_ModelCannotBeMotified_RenameRequested" xml:space="preserve">
+    <value>A model cannot be modified while a rename request is pending. Save the model before making any more changes.</value>
+  </data>
+  <data name="Exception_ModelObjectInModelUpdateFromContext" xml:space="preserve">
+    <value>A Model object cannot be used as a standalone object in updating an existing model based on the documents in the serialization context!</value>
+  </data>
+  <data name="Exception_ModifyDirtyDatabase" xml:space="preserve">
+    <value>The '{0}' Database was modified during a trasaction that was rolled back and still has obsolete changed. It must be fully sync'ed prior to any modification.</value>
+  </data>
+  <data name="Exception_NameCannotBeSetForReadOnlyNamedObjects" xml:space="preserve">
+    <value>Cannot set the name of this object because its name is derived from other properties on the object.</value>
+  </data>
+  <data name="Exception_NameCannotBeSetForReferencedObjects" xml:space="preserve">
+    <value>Cannot set the name of this object because its name is derived from a referenced object.</value>
+  </data>
+  <data name="Exception_NoActiveTransactionInSession" xml:space="preserve">
+    <value>There is no transaction in this session.</value>
+  </data>
+  <data name="Exception_NoDocsInContext" xml:space="preserve">
+    <value>The context does not contain any metadata document!</value>
+  </data>
+  <data name="Exception_NoVersionColumnInRowset" xml:space="preserve">
+    <value>The rowset is missing a Version column.</value>
+  </data>
+  <data name="Exception_NonEmptyModelCannotBeReplaced" xml:space="preserve">
+    <value>A Model which is not empty cannot be replaced.</value>
+  </data>
+  <data name="Exception_ObjectDoesNotHaveName" xml:space="preserve">
+    <value>Object of type '{0}' does not have a name.</value>
+  </data>
+  <data name="Exception_ObjectIsAlreadyMarkedAsReadOnly" xml:space="preserve">
+    <value>The object of type '{0}' is already marked as read-only.</value>
+  </data>
+  <data name="Exception_ObjectMarkedAsReadOnly" xml:space="preserve">
+    <value>The object of type '{0}' is marked as read-only and cannot be modified.</value>
+  </data>
+  <data name="Exception_ObjectRemovedCannotBeModifiedAttachedToModel" xml:space="preserve">
+    <value>An object that has been removed from the Model tree cannot be modified or reattached to the Model tree.</value>
+  </data>
+  <data name="Exception_ObjectTranslationAlreadyContainsTranslation" xml:space="preserve">
+    <value>ObjectTranslation collection already contains a translation for property '{0}' of object '{1}'</value>
+  </data>
+  <data name="Exception_ObjectWithNameNotExistInCollection" xml:space="preserve">
+    <value>An object with name '{0}' does not exist in the collection.</value>
+  </data>
+  <data name="Exception_ObjetNameParsingError" xml:space="preserve">
+    <value>There was an error parsing the object name - name = '{0}', error={1}!</value>
+  </data>
+  <data name="Exception_OverridesDatasourceCannotBeFound" xml:space="preserve">
+    <value>The override of the partition is using a QueryPartitionSource without a valid DataSource.</value>
+  </data>
+  <data name="Exception_OverridesIncompatibleWithRefreshType" xml:space="preserve">
+    <value>Tabular objects with overrides can only be used with the following types of refresh: DataOnly, Full, Add, Automatic.</value>
+  </data>
+  <data name="Exception_OverridesOriginalObjectCannotBeFound" xml:space="preserve">
+    <value>The original object of the override of '{0}' cannot be located.</value>
+  </data>
+  <data name="Exception_OverridesOriginalObjectPathIsNull" xml:space="preserve">
+    <value>The path for the original object of the override of '{0}' is required.</value>
+  </data>
+  <data name="Exception_OverridesScopeObjectCannotBeFound" xml:space="preserve">
+    <value>Scope object '{0}' for override cannot be located.</value>
+  </data>
+  <data name="Exception_OverridesScopeObjectDoesntSupportRefresh" xml:space="preserve">
+    <value>Object '{0}' cannot be the scope for overrides. The scope for overrides can be any refreshable object - Model, Table or Partition.</value>
+  </data>
+  <data name="Exception_OverridesScopeObjectIsEmpty" xml:space="preserve">
+    <value>Scope object for override is incorrectly specified.</value>
+  </data>
+  <data name="Exception_PartialRefreshDirtyDatabase" xml:space="preserve">
+    <value>The '{0}' Database was modified during a trasaction that was rolled back and still has obsolete changed. It must be sync'ed In full to be functional again.</value>
+  </data>
+  <data name="Exception_PartitionDoesNotHavePolicyRangePartitionSource" xml:space="preserve">
+    <value>Partition '{0}' in table '{1}' does not have a PolicyRangePartitionSource.</value>
+  </data>
+  <data name="Exception_PartitionSourceAlreadyAttached" xml:space="preserve">
+    <value>A PartitionSource object cannot be attached to multiple Partitions.</value>
+  </data>
+  <data name="Exception_PartitionSourceAlreadyRemoved" xml:space="preserve">
+    <value>A PartitionSource object was removed from the object tree and cannot be attached to the object tree again.</value>
+  </data>
+  <data name="Exception_PartitionsFromDifferentTablesCannotBeMerged" xml:space="preserve">
+    <value>The partition cannot be merged with partitions from different tables.</value>
+  </data>
+  <data name="Exception_PropertyHasInvalidJsonContent" xml:space="preserve">
+    <value>Property '{0}' contains invalid JSON. Error: {1}.</value>
+  </data>
+  <data name="Exception_RefreshPolicyInvalidSourceExpression" xml:space="preserve">
+    <value>RefreshPolicy in table '{0}' does not have a valid source expression. The source expression must contain both 'RangeStart' and 'RangeEnd'.</value>
+  </data>
+  <data name="Exception_RemovedDatabaseCannotBeAttached" xml:space="preserve">
+    <value>A Database removed from the Server cannot be added again to same or different Server.</value>
+  </data>
+  <data name="Exception_RemovedModelCannotBeAttached" xml:space="preserve">
+    <value>A Model removed from the Server cannot be added again to same or different Server.</value>
+  </data>
+  <data name="Exception_RenameAlreadyRequested" xml:space="preserve">
+    <value>A rename request is already pending for this object.</value>
+  </data>
+  <data name="Exception_SaveModelChangesFailed" xml:space="preserve">
+    <value>Failed to save modifications to the server. Error returned: '{0}'.</value>
+  </data>
+  <data name="Exception_TableRefreshPolicyIsMissing" xml:space="preserve">
+    <value>Table '{0}' does not have a refresh policy. Please specify a refresh policy.</value>
+  </data>
+  <data name="Exception_TmdlAmbiguousSource" xml:space="preserve">
+    <value>{0}{1}AdditionalInformation:{1}  1st object: type={2}, name='{3}', path='{4}'{1}  2nd object: type={5}, name='{6}', path='{7}'</value>
+  </data>
+  <data name="Exception_TmdlAmbiguousSource2" xml:space="preserve">
+    <value>{0}{1}AdditionalInformation:{1}  1st element: type={2}, name='{3}', path='{4}'{1}  2nd element: type={5}, name='{6}', path='{7}'</value>
+  </data>
+  <data name="Exception_TmdlAmbiguousSource3" xml:space="preserve">
+    <value>{0}{1}AdditionalInformation:{1}  object: type={2}, name='{3}', path='{4}'{1}  property: name={5}, path='{6}'</value>
+  </data>
+  <data name="Exception_TmdlFormatChildUnsupported" xml:space="preserve">
+    <value>Unsupported child - {0} is not a supported child object in the current context!</value>
+  </data>
+  <data name="Exception_TmdlFormatDefaultPropertyNotInline" xml:space="preserve">
+    <value>Default property value must be specified inline for non-string properties!</value>
+  </data>
+  <data name="Exception_TmdlFormatException_DetailedError" xml:space="preserve">
+    <value>{1}	Detailed error - {0}</value>
+  </data>
+  <data name="Exception_TmdlFormatException_Line" xml:space="preserve">
+    <value>{1}	Line - '{0}'</value>
+  </data>
+  <data name="Exception_TmdlFormatException_SourceInfo" xml:space="preserve">
+    <value>{2}	Document - '{0}'{2}	Line Number - {1}</value>
+  </data>
+  <data name="Exception_TmdlFormatException_Title" xml:space="preserve">
+    <value>TMDL Format Error:{1}	Parsing error type - {0}</value>
+  </data>
+  <data name="Exception_TmdlFormatIndentation" xml:space="preserve">
+    <value>Invalid indentation was detected!</value>
+  </data>
+  <data name="Exception_TmdlFormatMissingExpressionValue" xml:space="preserve">
+    <value>The property is missing the expected expression value!</value>
+  </data>
+  <data name="Exception_TmdlFormatNoCollectionExpression" xml:space="preserve">
+    <value>Expression-valued properties are not supported in collection items!</value>
+  </data>
+  <data name="Exception_TmdlFormatNoCollectionItem" xml:space="preserve">
+    <value>Expected a Collection item!</value>
+  </data>
+  <data name="Exception_TmdlFormatNoTranslationExpression" xml:space="preserve">
+    <value>Expression-valued properties are not supported in the translation tree!</value>
+  </data>
+  <data name="Exception_TmdlFormatObjectDefaultProperty" xml:space="preserve">
+    <value>Object of type {0} does not support a default property!</value>
+  </data>
+  <data name="Exception_TmdlFormatObjectMismatch" xml:space="preserve">
+    <value>A mismatch in the object type - expected {0} but the actual value was {1}!</value>
+  </data>
+  <data name="Exception_TmdlFormatObjectNameParseError" xml:space="preserve">
+    <value>Failed to parse the object name from '{0}' - error={1}!</value>
+  </data>
+  <data name="Exception_TmdlFormatObjectUnsupported" xml:space="preserve">
+    <value>Unsupported object type - {0} is not a supported property in the current context!</value>
+  </data>
+  <data name="Exception_TmdlFormatPropertyMismatch" xml:space="preserve">
+    <value>A mismatch in the property name - expected {0} but the actual value was {1}!</value>
+  </data>
+  <data name="Exception_TmdlFormatPropertyUnsupported" xml:space="preserve">
+    <value>Unsupported property - {0} is not a supported property in the current context!</value>
+  </data>
+  <data name="Exception_TmdlFormatUnexpectedLineType" xml:space="preserve">
+    <value>Unexpected line type: {0}!</value>
+  </data>
+  <data name="Exception_TmdlFormatUnexpectedLineType2" xml:space="preserve">
+    <value>Unexpected line type: type = {0}, detalied error = {1}!</value>
+  </data>
+  <data name="Exception_TmdlFormatUnknownKeyword" xml:space="preserve">
+    <value>The keyword '{0}' is neither a property nor an object in the current context!</value>
+  </data>
+  <data name="Exception_TmdlInvalidValueCast" xml:space="preserve">
+    <value>Value of type {0} cannot be cast to type {1}!</value>
+  </data>
+  <data name="Exception_TmdlObjectInvalidChild" xml:space="preserve">
+    <value>Invalid child object - {0} is not a valid child for {1}!</value>
+  </data>
+  <data name="Exception_TmdlObjectInvalidCustomJsonProperty" xml:space="preserve">
+    <value>Invalid custom JSON property - the expected structureof {0}.{1} does not match the actual content.</value>
+  </data>
+  <data name="Exception_TmdlObjectInvalidDefaultProperty" xml:space="preserve">
+    <value>Invalid default property - objects of type {0} does not suppoert a default property.</value>
+  </data>
+  <data name="Exception_TmdlObjectInvalidNameForChild" xml:space="preserve">
+    <value>Invalid child object - {0} is a valid child for {1}, but must have a valid name and not '{2}'!</value>
+  </data>
+  <data name="Exception_TmdlObjectNoNameForChild" xml:space="preserve">
+    <value>Invalid child object - {0} is a valid child for {1}, but must have a valid name!</value>
+  </data>
+  <data name="Exception_TmdlParserConvertValue" xml:space="preserve">
+    <value>Failed to convert the value '{0}' to the expected type {1}!</value>
+  </data>
+  <data name="Exception_TmdlParserInlineValueForStruct" xml:space="preserve">
+    <value>A Struct property without a default-property cannot have an inline value: '{0}'!</value>
+  </data>
+  <data name="Exception_TmdlParserInvalidScalarType" xml:space="preserve">
+    <value>{0} is not supported as a type of a scalar property!</value>
+  </data>
+  <data name="Exception_TmdlParserInvalidStructPropertyDefaultPropertyValueType" xml:space="preserve">
+    <value>Invalid value for a Scalar default-property of a Struct property - must be a string or a scalar!</value>
+  </data>
+  <data name="Exception_TmdlParserMultiStringLine" xml:space="preserve">
+    <value>A simple string value cannot contain any line breaks!</value>
+  </data>
+  <data name="Exception_TmdlParserPropertyWithUnsupportedType" xml:space="preserve">
+    <value>Type {1} is not supported for the property {0}!</value>
+  </data>
+  <data name="Exception_TmdlParserSingleCharQuoteString" xml:space="preserve">
+    <value>A string value cannot be just a double-quote character!</value>
+  </data>
+  <data name="Exception_TmdlParserStringPropertyWithNoValue" xml:space="preserve">
+    <value>Property {0} has no value specified!</value>
+  </data>
+  <data name="Exception_TmdlPropertyIncompatible" xml:space="preserve">
+    <value>Property '{0}' is not compatible in the situation it appears with the compatibility-level of {2} in compatibility-mode {1}.</value>
+  </data>
+  <data name="Exception_TmdlPropertyIncompatibleValue" xml:space="preserve">
+    <value>The enumeration value '{3}' for property '{0}' is not compatible in the situation it appears with the compatibility-level of {2} in compatibility-mode {1}.</value>
+  </data>
+  <data name="Exception_TmdlPropertyInvalidEnumValue" xml:space="preserve">
+    <value>Property '{0}' does have enumeration value of the expected type: {1}, but the value {2} is not supported.</value>
+  </data>
+  <data name="Exception_TmdlPropertyInvalidObjectKeyValue" xml:space="preserve">
+    <value>The name '{1}' is not a valid key of an object of type {0}.</value>
+  </data>
+  <data name="Exception_TmdlPropertyInvalidTarget" xml:space="preserve">
+    <value>The target-type {0} of property '{1}' is unsupported!</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchCollectionElements" xml:space="preserve">
+    <value>The combinations of elements in the collection property '{0}' does not match the supported set of elements!</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchEnumType" xml:space="preserve">
+    <value>Property '{0}' does not have enumeration value of expected type: {1}. Actual type: {2}.</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchNature" xml:space="preserve">
+    <value>The nature of property '{0}' does not match the expected one!</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchScalarType" xml:space="preserve">
+    <value>Property '{0}' does not have scalar value of expected type: {1}. Actual type: {2} ({3}).</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchTarget" xml:space="preserve">
+    <value>The expected target-type {0} of property '{1}' does not match the actual path '{2}'!</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchType" xml:space="preserve">
+    <value>The type of property '{0}' does not match the expected type: {1}!</value>
+  </data>
+  <data name="Exception_TmdlPropertyMismatchValueType" xml:space="preserve">
+    <value>The value-type of property '{0}' does not match the expected one!</value>
+  </data>
+  <data name="Exception_TmdlPropertyNoComplexProperty" xml:space="preserve">
+    <value>The property '{0}' is not supported as a complex-property!</value>
+  </data>
+  <data name="Exception_TmdlPropertyNotExist" xml:space="preserve">
+    <value>Property '{0}' does not exist.</value>
+  </data>
+  <data name="Exception_TmdlPropertyRequiresTableOnRead" xml:space="preserve">
+    <value>For deserialization of property '{0}' we must know the owning table!</value>
+  </data>
+  <data name="Exception_TmdlPropertyUnexpected" xml:space="preserve">
+    <value>Property '{0}' is unexpected in the situation it appears.</value>
+  </data>
+  <data name="Exception_TmdlPropertyUnknown" xml:space="preserve">
+    <value>Property '{0}' is unknown and is not expected in the situation it appears.</value>
+  </data>
+  <data name="Exception_TmdlPropertyUnknownNature" xml:space="preserve">
+    <value>The nature of property '{0}' cannot be identified!</value>
+  </data>
+  <data name="Exception_TmdlPropertyUnknownTarget" xml:space="preserve">
+    <value>The target-type of property '{0}' is unknonw!</value>
+  </data>
+  <data name="Exception_TmdlReaderEOF" xml:space="preserve">
+    <value>Invalid read request - the reader is already at the end of the metadata!</value>
+  </data>
+  <data name="Exception_TmdlRefObjectCopy" xml:space="preserve">
+    <value>Reference objects should not be coppied!</value>
+  </data>
+  <data name="Exception_TmdlSerializationSupport" xml:space="preserve">
+    <value>A TMDL style serialization is not supported by this variation of the assembly!</value>
+  </data>
+  <data name="Exception_TmdlSerializerInvalidPath" xml:space="preserve">
+    <value>Invalid path - '{0}' does not exists!</value>
+  </data>
+  <data name="Exception_TmdlSerializerInvalidSingleObjectTmdl_DB" xml:space="preserve">
+    <value>The specified content must not include any database object!</value>
+  </data>
+  <data name="Exception_TmdlSerializerInvalidSingleObjectTmdl_Multi" xml:space="preserve">
+    <value>The specified TMDL content must include only one root-object!</value>
+  </data>
+  <data name="Exception_TranslatedObjectNull" xml:space="preserve">
+    <value>Property 'Object' of ObjectTranslation cannot be null.</value>
+  </data>
+  <data name="Exception_UboNotAvailable" xml:space="preserve">
+    <value>The Adaptive-Caching functionality is not available!</value>
+  </data>
+  <data name="Exception_UnexpectedJsonProperty" xml:space="preserve">
+    <value>Unrecognized JSON property: {0}.</value>
+  </data>
+  <data name="Exception_UnexpectedJsonTag" xml:space="preserve">
+    <value>Found unexpected tag '{0}'.</value>
+  </data>
+  <data name="Exception_UnexpectedJsonToken" xml:space="preserve">
+    <value>Found unexpected token '{1}' instead of expected token '{0}'.</value>
+  </data>
+  <data name="Exception_UnexpectedTokensAfterJsonCommand" xml:space="preserve">
+    <value>Additional text encountered after finished reading JSON command.</value>
+  </data>
+  <data name="Exception_UnknownLinkType" xml:space="preserve">
+    <value>Unknown link type: '{0}'.</value>
+  </data>
+  <data name="Exception_UnnamedObjectInTmdlObjectSerialization" xml:space="preserve">
+    <value>A NamedMetadataObject without a name cannot be serialized into TMFDL!</value>
+  </data>
+  <data name="Exception_UnrecognizedJsonCommand" xml:space="preserve">
+    <value>Unrecognized command: {0}.</value>
+  </data>
+  <data name="Exception_UnrecognizedValueOfType" xml:space="preserve">
+    <value>The value '{1}' is unexpected for type '{0}'.</value>
+  </data>
+  <data name="Exception_UnsupportedJsonPrimitiveType" xml:space="preserve">
+    <value>Property '{0}' is of unsupported type.</value>
+  </data>
+  <data name="Exception_ValidationFlagsOutsideTransaction" xml:space="preserve">
+    <value>DelayValidation and ForceValidation flags cannot be used outside a transaction.</value>
+  </data>
+  <data name="Exception_ValidationFlagsSimultaneousUse" xml:space="preserve">
+    <value>DelayValidation and ForceValidation flags cannot be used simultaneously.</value>
+  </data>
+  <data name="ObjectPath_AlternateOf_0Args" xml:space="preserve">
+    <value>AlternateOf</value>
+  </data>
+  <data name="ObjectPath_AlternateOf_1Arg_Table" xml:space="preserve">
+    <value>AlternateOf for table '{0}'</value>
+  </data>
+  <data name="ObjectPath_AlternateOf_2Args_Column" xml:space="preserve">
+    <value>AlternateOf for column '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_AnalyticsAIMetadata_0Args" xml:space="preserve">
+    <value>AnalyticsAIMetadata</value>
+  </data>
+  <data name="ObjectPath_AnalyticsAIMetadata_1Args" xml:space="preserve">
+    <value>AnalyticsAIMetadata '{0}'</value>
+  </data>
+  <data name="ObjectPath_Annotation_1Arg" xml:space="preserve">
+    <value>annotation '{0}'</value>
+  </data>
+  <data name="ObjectPath_AttributeHierarchy_0Args" xml:space="preserve">
+    <value>attribute hierarchy</value>
+  </data>
+  <data name="ObjectPath_AttributeHierarchy_1Arg" xml:space="preserve">
+    <value>attribute hierarchy in column '{0}'</value>
+  </data>
+  <data name="ObjectPath_AttributeHierarchy_2Args" xml:space="preserve">
+    <value>attribute hierarchy in column '{0} in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_BindingInfo_1Arg" xml:space="preserve">
+    <value>BindingInfo '{0}'</value>
+  </data>
+  <data name="ObjectPath_CalculationGroupExpression_0Args" xml:space="preserve">
+    <value>CalculationExpression</value>
+  </data>
+  <data name="ObjectPath_CalculationGroupExpression_1Args_CalculationGroup" xml:space="preserve">
+    <value>CalculationExpression in calculation group '{0}'</value>
+  </data>
+  <data name="ObjectPath_CalculationGroup_0Args" xml:space="preserve">
+    <value>CalculationGroup</value>
+  </data>
+  <data name="ObjectPath_CalculationGroup_1Args" xml:space="preserve">
+    <value>CalculationGroup in table '{0}'</value>
+  </data>
+  <data name="ObjectPath_CalculationItem_0Args" xml:space="preserve">
+    <value>CalculationItem</value>
+  </data>
+  <data name="ObjectPath_CalculationItem_1Args" xml:space="preserve">
+    <value>CalculationItem in table '{0}'</value>
+  </data>
+  <data name="ObjectPath_CalendarColumnReference_1Arg" xml:space="preserve">
+    <value>column-reference '{0}'</value>
+  </data>
+  <data name="ObjectPath_CalendarColumnReference_2Args" xml:space="preserve">
+    <value>column-reference '{0}' of time-unit association '{1}'</value>
+  </data>
+  <data name="ObjectPath_CalendarColumnReference_3Args" xml:space="preserve">
+    <value>column-reference '{0}' of time-unit association '{1}' of calendar '{2}'</value>
+  </data>
+  <data name="ObjectPath_CalendarColumnReference_4Args" xml:space="preserve">
+    <value>column-reference '{0}' of time-unit association '{1}' of calendar '{2}' in table '{3}'</value>
+  </data>
+  <data name="ObjectPath_Calendar_1Arg" xml:space="preserve">
+    <value>calendar '{0}'</value>
+  </data>
+  <data name="ObjectPath_Calendar_2Args" xml:space="preserve">
+    <value>calendar '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_ChangedProperty_0Args" xml:space="preserve">
+    <value>ChangedProperty</value>
+  </data>
+  <data name="ObjectPath_ChangedProperty_1Args" xml:space="preserve">
+    <value>ChangedProperty '{0}'</value>
+  </data>
+  <data name="ObjectPath_ColumnPermission_1Arg" xml:space="preserve">
+    <value>column permission for column '{0}'</value>
+  </data>
+  <data name="ObjectPath_ColumnPermission_2Args" xml:space="preserve">
+    <value>column permission for column '{0}' in table {1}</value>
+  </data>
+  <data name="ObjectPath_Column_1Arg" xml:space="preserve">
+    <value>column '{0}'</value>
+  </data>
+  <data name="ObjectPath_Column_2Args" xml:space="preserve">
+    <value>column '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_Culture_1Arg" xml:space="preserve">
+    <value>culture '{0}'</value>
+  </data>
+  <data name="ObjectPath_DataCoverageDefinition_0Args" xml:space="preserve">
+    <value>DataCoverageDefinition</value>
+  </data>
+  <data name="ObjectPath_DataCoverageDefinition_1Args" xml:space="preserve">
+    <value>DataCoverageDefinition in partition '{0}'</value>
+  </data>
+  <data name="ObjectPath_DataSource_1Arg" xml:space="preserve">
+    <value>data source '{0}'</value>
+  </data>
+  <data name="ObjectPath_DetailRowsDefinition_0Args" xml:space="preserve">
+    <value>DetailRowsDefinition</value>
+  </data>
+  <data name="ObjectPath_DetailRowsDefinition_1Arg_Measure" xml:space="preserve">
+    <value>DetailRowsDefinition for measure '{0}'</value>
+  </data>
+  <data name="ObjectPath_DetailRowsDefinition_1Arg_Table" xml:space="preserve">
+    <value>DetailRowsDefinition for table '{0}'</value>
+  </data>
+  <data name="ObjectPath_DetailRowsDefinition_2Args" xml:space="preserve">
+    <value>DetailRowsDefinition for measure '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_ExcludedArtifact_0Args" xml:space="preserve">
+    <value>ExcludedArtifact</value>
+  </data>
+  <data name="ObjectPath_ExcludedArtifact_1Args" xml:space="preserve">
+    <value>ExcludedArtifact '{0}'</value>
+  </data>
+  <data name="ObjectPath_Expression_1Arg" xml:space="preserve">
+    <value>expression '{0}'</value>
+  </data>
+  <data name="ObjectPath_ExtendedProperty_1Arg" xml:space="preserve">
+    <value>extended property '{0}'</value>
+  </data>
+  <data name="ObjectPath_FormatStringDefinition_0Args" xml:space="preserve">
+    <value>FormatStringDefinition</value>
+  </data>
+  <data name="ObjectPath_FormatStringDefinition_1Args_CalculationGroupExpression" xml:space="preserve">
+    <value>FormatStringDefinition for CalculationExpression in calculation group '{0}'</value>
+  </data>
+  <data name="ObjectPath_FormatStringDefinition_1Args_CalculationItem" xml:space="preserve">
+    <value>FormatStringDefinition for CalculationItem '{0}'</value>
+  </data>
+  <data name="ObjectPath_FormatStringDefinition_1Args_Measure" xml:space="preserve">
+    <value>FormatStringDefinition for measure '{0}'</value>
+  </data>
+  <data name="ObjectPath_Function_1Arg" xml:space="preserve">
+    <value>function '{0}'</value>
+  </data>
+  <data name="ObjectPath_GroupByColumn_0Args" xml:space="preserve">
+    <value>groupby column</value>
+  </data>
+  <data name="ObjectPath_GroupByColumn_1Args" xml:space="preserve">
+    <value>groupby column '{0}'</value>
+  </data>
+  <data name="ObjectPath_GroupByColumn_2Args" xml:space="preserve">
+    <value>groupby column '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_Hierarchy_1Arg" xml:space="preserve">
+    <value>hierarchy '{0}'</value>
+  </data>
+  <data name="ObjectPath_Hierarchy_2Args" xml:space="preserve">
+    <value>hierarchy '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_KPI_0Args" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="ObjectPath_KPI_1Arg" xml:space="preserve">
+    <value>KPI in measure '{0}'</value>
+  </data>
+  <data name="ObjectPath_KPI_2Args" xml:space="preserve">
+    <value>KPI in measure '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_Level_1Arg" xml:space="preserve">
+    <value>level '{0}'</value>
+  </data>
+  <data name="ObjectPath_Level_2Args" xml:space="preserve">
+    <value>level '{0}' in hierarchy '{1}'</value>
+  </data>
+  <data name="ObjectPath_Level_3Args" xml:space="preserve">
+    <value>level '{0}' in hierarchy '{1}' in table '{2}'</value>
+  </data>
+  <data name="ObjectPath_LinguisticMetadata_0Args" xml:space="preserve">
+    <value>linguistic metadata</value>
+  </data>
+  <data name="ObjectPath_LinguisticMetadata_1Arg" xml:space="preserve">
+    <value>linguistic metadata in culture '{0}'</value>
+  </data>
+  <data name="ObjectPath_Measure_1Arg" xml:space="preserve">
+    <value>measure '{0}'</value>
+  </data>
+  <data name="ObjectPath_Measure_2Args" xml:space="preserve">
+    <value>measure '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_Model_1Arg" xml:space="preserve">
+    <value>model '{0}'</value>
+  </data>
+  <data name="ObjectPath_ObjectTranslation_0Args" xml:space="preserve">
+    <value>object translation</value>
+  </data>
+  <data name="ObjectPath_ObjectTranslation_1Arg" xml:space="preserve">
+    <value>object translation in culture '{0}'</value>
+  </data>
+  <data name="ObjectPath_Partition_1Arg" xml:space="preserve">
+    <value>partition '{0}'</value>
+  </data>
+  <data name="ObjectPath_Partition_2Args" xml:space="preserve">
+    <value>partition '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveColumn_0Args" xml:space="preserve">
+    <value>perspective column</value>
+  </data>
+  <data name="ObjectPath_PerspectiveColumn_1Args" xml:space="preserve">
+    <value>perspective column '{0}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveColumn_2Args" xml:space="preserve">
+    <value>perspective column '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveColumn_3Args" xml:space="preserve">
+    <value>perspective column '{0}' in table '{1}' in perspective '{2}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveHierarchy_0Args" xml:space="preserve">
+    <value>perspective hierarchy</value>
+  </data>
+  <data name="ObjectPath_PerspectiveHierarchy_1Args" xml:space="preserve">
+    <value>perspective hierarchy '{0}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveHierarchy_2Args" xml:space="preserve">
+    <value>perspective hierarchy '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveHierarchy_3Args" xml:space="preserve">
+    <value>perspective hierarchy '{0}' in table '{1}' in perspective '{2}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveMeasure_0Args" xml:space="preserve">
+    <value>perspective measure</value>
+  </data>
+  <data name="ObjectPath_PerspectiveMeasure_1Args" xml:space="preserve">
+    <value>perspective measure '{0}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveMeasure_2Args" xml:space="preserve">
+    <value>perspective measure '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveMeasure_3Args" xml:space="preserve">
+    <value>perspective measure '{0}' in table '{1}' in perspective '{2}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveSet_0Args" xml:space="preserve">
+    <value>perspective set</value>
+  </data>
+  <data name="ObjectPath_PerspectiveSet_1Args" xml:space="preserve">
+    <value>perspective set '{0}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveSet_2Args" xml:space="preserve">
+    <value>perspective set '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveSet_3Args" xml:space="preserve">
+    <value>perspective set '{0}' in table '{1}' in perspective '{2}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveTable_0Args" xml:space="preserve">
+    <value>perspective table</value>
+  </data>
+  <data name="ObjectPath_PerspectiveTable_1Args" xml:space="preserve">
+    <value>perspective table '{0}'</value>
+  </data>
+  <data name="ObjectPath_PerspectiveTable_2Args" xml:space="preserve">
+    <value>perspective table '{0}' in perspective '{1}'</value>
+  </data>
+  <data name="ObjectPath_Perspective_1Arg" xml:space="preserve">
+    <value>perspective '{0}'</value>
+  </data>
+  <data name="ObjectPath_QueryGroup_0Args" xml:space="preserve">
+    <value>QueryGroup</value>
+  </data>
+  <data name="ObjectPath_QueryGroup_1Args_Folder" xml:space="preserve">
+    <value>QueryGroup '{0}'</value>
+  </data>
+  <data name="ObjectPath_RefreshPolicy_0Args" xml:space="preserve">
+    <value>RefreshPolicy</value>
+  </data>
+  <data name="ObjectPath_RefreshPolicy_1Args_Table" xml:space="preserve">
+    <value>RefreshPolicy for table '{0}'</value>
+  </data>
+  <data name="ObjectPath_RelatedColumnDetails_0Args" xml:space="preserve">
+    <value>related column details</value>
+  </data>
+  <data name="ObjectPath_RelatedColumnDetails_1Args" xml:space="preserve">
+    <value>related column details '{0}'</value>
+  </data>
+  <data name="ObjectPath_RelatedColumnDetails_2Args" xml:space="preserve">
+    <value>related column details '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_Relationship_1Arg" xml:space="preserve">
+    <value>relationship '{0}'</value>
+  </data>
+  <data name="ObjectPath_RoleMembership_1Arg" xml:space="preserve">
+    <value>role membership '{0}'</value>
+  </data>
+  <data name="ObjectPath_RoleMembership_2Args" xml:space="preserve">
+    <value>role membership '{0}' in role {1}</value>
+  </data>
+  <data name="ObjectPath_Role_1Arg" xml:space="preserve">
+    <value>role '{0}'</value>
+  </data>
+  <data name="ObjectPath_Set_1Arg" xml:space="preserve">
+    <value>set '{0}'</value>
+  </data>
+  <data name="ObjectPath_Set_2Args" xml:space="preserve">
+    <value>set '{0}' in table '{1}'</value>
+  </data>
+  <data name="ObjectPath_TablePermission_1Arg" xml:space="preserve">
+    <value>table permission for table '{0}'</value>
+  </data>
+  <data name="ObjectPath_TablePermission_2Args" xml:space="preserve">
+    <value>table permission for table '{0}' in role {1}</value>
+  </data>
+  <data name="ObjectPath_Table_1Arg" xml:space="preserve">
+    <value>table '{0}'</value>
+  </data>
+  <data name="ObjectPath_TimeUnitColumnAssociation_1Arg" xml:space="preserve">
+    <value>time-unit association '{0}'</value>
+  </data>
+  <data name="ObjectPath_TimeUnitColumnAssociation_2Args" xml:space="preserve">
+    <value>time-unit association '{0}' of calendar '{1}'</value>
+  </data>
+  <data name="ObjectPath_TimeUnitColumnAssociation_3Args" xml:space="preserve">
+    <value>time-unit association '{0}' of calendar '{1}' in table '{2}'</value>
+  </data>
+  <data name="ObjectPath_Variation_1Arg" xml:space="preserve">
+    <value>variation '{0}'</value>
+  </data>
+  <data name="ObjectPath_Variation_2Args" xml:space="preserve">
+    <value>variation '{0}' in column '{1}'</value>
+  </data>
+  <data name="ObjectPath_Variation_3Args" xml:space="preserve">
+    <value>variation '{0}' in column '{1}' in table '{2}'</value>
+  </data>
+  <data name="ObjectType_AlternateOf" xml:space="preserve">
+    <value>AlternateOf</value>
+  </data>
+  <data name="ObjectType_AnalyticsAIMetadata" xml:space="preserve">
+    <value>AnalyticsAIMetadata</value>
+  </data>
+  <data name="ObjectType_Annotation" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="ObjectType_AttributeHierarchy" xml:space="preserve">
+    <value>Attribute Hierarchy</value>
+  </data>
+  <data name="ObjectType_BindingInfo" xml:space="preserve">
+    <value>BindingInfo</value>
+  </data>
+  <data name="ObjectType_CalculationGroup" xml:space="preserve">
+    <value>CalculationGroup</value>
+  </data>
+  <data name="ObjectType_CalculationGroupExpression" xml:space="preserve">
+    <value>CalculationExpression</value>
+  </data>
+  <data name="ObjectType_CalculationItem" xml:space="preserve">
+    <value>CalculationItem</value>
+  </data>
+  <data name="ObjectType_Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="ObjectType_CalendarColumnReference" xml:space="preserve">
+    <value>CalendarColumnReference</value>
+  </data>
+  <data name="ObjectType_ChangedProperty" xml:space="preserve">
+    <value>ChangedProperty</value>
+  </data>
+  <data name="ObjectType_Column" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="ObjectType_ColumnPermission" xml:space="preserve">
+    <value>Column Permission</value>
+  </data>
+  <data name="ObjectType_Culture" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="ObjectType_DataCoverageDefinition" xml:space="preserve">
+    <value>DataCoverageDefinition</value>
+  </data>
+  <data name="ObjectType_DataSource" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="ObjectType_Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ObjectType_DetailRowsDefinition" xml:space="preserve">
+    <value>DetailRows Definition</value>
+  </data>
+  <data name="ObjectType_ExcludedArtifact" xml:space="preserve">
+    <value>ExcludedArtifact</value>
+  </data>
+  <data name="ObjectType_ExtendedProperty" xml:space="preserve">
+    <value>ExtendedProperty</value>
+  </data>
+  <data name="ObjectType_FormatStringDefinition" xml:space="preserve">
+    <value>FormatString Definition</value>
+  </data>
+  <data name="ObjectType_Function" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="ObjectType_GroupByColumn" xml:space="preserve">
+    <value>GroupByColumn</value>
+  </data>
+  <data name="ObjectType_Hierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="ObjectType_KPI" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="ObjectType_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="ObjectType_LinguisticMetadata" xml:space="preserve">
+    <value>Linguistic Metadata</value>
+  </data>
+  <data name="ObjectType_Measure" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="ObjectType_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ObjectType_ModelRole" xml:space="preserve">
+    <value>Model Role</value>
+  </data>
+  <data name="ObjectType_ModelRoleMember" xml:space="preserve">
+    <value>Model Role Member</value>
+  </data>
+  <data name="ObjectType_NamedExpression" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="ObjectType_ObjectTranslation" xml:space="preserve">
+    <value>Object Translation</value>
+  </data>
+  <data name="ObjectType_Partition" xml:space="preserve">
+    <value>Partition</value>
+  </data>
+  <data name="ObjectType_Perspective" xml:space="preserve">
+    <value>Perspective</value>
+  </data>
+  <data name="ObjectType_PerspectiveColumn" xml:space="preserve">
+    <value>Perspective Column</value>
+  </data>
+  <data name="ObjectType_PerspectiveHierarchy" xml:space="preserve">
+    <value>Perspective Hierarchy</value>
+  </data>
+  <data name="ObjectType_PerspectiveMeasure" xml:space="preserve">
+    <value>Perspective Measure</value>
+  </data>
+  <data name="ObjectType_PerspectiveSet" xml:space="preserve">
+    <value>Perspective Set</value>
+  </data>
+  <data name="ObjectType_PerspectiveTable" xml:space="preserve">
+    <value>Perspective Table</value>
+  </data>
+  <data name="ObjectType_QueryGroup" xml:space="preserve">
+    <value>Query Group</value>
+  </data>
+  <data name="ObjectType_RefreshPolicy" xml:space="preserve">
+    <value>RefreshPolicy</value>
+  </data>
+  <data name="ObjectType_RelatedColumnDetails" xml:space="preserve">
+    <value>RelatedColumnDetails</value>
+  </data>
+  <data name="ObjectType_Relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="ObjectType_Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="ObjectType_Table" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="ObjectType_TablePermission" xml:space="preserve">
+    <value>Table Permission</value>
+  </data>
+  <data name="ObjectType_TimeUnitColumnAssociation" xml:space="preserve">
+    <value>TimeUnitColumnAssociation</value>
+  </data>
+  <data name="ObjectType_Variation" xml:space="preserve">
+    <value>Variation</value>
+  </data>
+  <data name="ObjetNameParseError_ControlChar" xml:space="preserve">
+    <value>control characters are not allowed in names</value>
+  </data>
+  <data name="ObjetNameParseError_Empty" xml:space="preserve">
+    <value>name cannot be empty string</value>
+  </data>
+  <data name="ObjetNameParseError_EmptyPart" xml:space="preserve">
+    <value>name cannot have empty parts that are not quoted</value>
+  </data>
+  <data name="ObjetNameParseError_EndWithDot" xml:space="preserve">
+    <value>name cannot end with '.', and cannot have ".." that implies as empty part</value>
+  </data>
+  <data name="ObjetNameParseError_NameIsFollowedByInvalidToken" xml:space="preserve">
+    <value>the object name is followed by an invalid token</value>
+  </data>
+  <data name="ObjetNameParseError_NeedQuote" xml:space="preserve">
+    <value>the character '{0}' requires quotes [index: {1}]</value>
+  </data>
+  <data name="ObjetNameParseError_NotFullyConsumed" xml:space="preserve">
+    <value>input could not be fully consumed</value>
+  </data>
+  <data name="ObjetNameParseError_OpenPart" xml:space="preserve">
+    <value>name-part '{0}' is not terminated</value>
+  </data>
+  <data name="ObjetNameParseError_SingleQuoteNeedEscape" xml:space="preserve">
+    <value>single-quote character in name must be escaped</value>
+  </data>
+  <data name="TmdlAmbiguousSourceError_DuplicateDescription" xml:space="preserve">
+    <value>The TMDL objects cannot be merged because both declare a description for the object</value>
+  </data>
+  <data name="TmdlAmbiguousSourceError_DuplicateOrdinal" xml:space="preserve">
+    <value>The TMDL objects cannot be merged because they declare a different ordinal for the object</value>
+  </data>
+  <data name="TmdlAmbiguousSourceError_DuplicateProperty" xml:space="preserve">
+    <value>TMDL objects cannot be merged because both declare the same property: {0}</value>
+  </data>
+  <data name="TmdlAmbiguousSourceError_RoleMembers" xml:space="preserve">
+    <value>A Role cannot have members defined both as a property and as a collection of children</value>
+  </data>
+  <data name="TmdlFormatError_DescriptionWithoutObject" xml:space="preserve">
+    <value>an object-description must be followed by the actual object</value>
+  </data>
+  <data name="TmdlFormatError_NotPropertyLine" xml:space="preserve">
+    <value>the line type is not a valid property line</value>
+  </data>
+  <data name="TmdlFormatError_NotStringPropertyLine" xml:space="preserve">
+    <value>the line type is only a valid for a string property line</value>
+  </data>
+  <data name="TmdlFormatError_RefAfterDescription" xml:space="preserve">
+    <value>a reference-object header cannot follow an object-description</value>
+  </data>
+  <data name="TmdlFormatError_RefWithDefaultProperty" xml:space="preserve">
+    <value>a reference object does not support default property</value>
+  </data>
+  <data name="TmdlFormatError_RefWithProperty" xml:space="preserve">
+    <value>a reference object cannot has any properties</value>
+  </data>
+  <data name="TmdlFormatError_TypeIndicateName" xml:space="preserve">
+    <value>the line type indicates a name, but {0} is not a named object</value>
+  </data>
+  <data name="TmdlFormatError_TypeNotIndicateName" xml:space="preserve">
+    <value>the line type do not indicates a name, but {0} is a named object</value>
+  </data>
+  <data name="ValidNameForReservedStringPattern" xml:space="preserve">
+    <value>{0} 1</value>
+  </data>
+  <data name="Validation_LinkToAnotherModel" xml:space="preserve">
+    <value>Property '{0}' of object '{1}' refers to an object which belongs to a different Model.</value>
+  </data>
+  <data name="Validation_LinkToRemovedObject" xml:space="preserve">
+    <value>Property '{0}' of object '{1}' refers to an object which was removed.</value>
+  </data>
+  <data name="Validation_UnresolvedLink" xml:space="preserve">
+    <value>Property '{0}' of object '{1}' refers to an object which cannot be found.</value>
+  </data>
+</root>

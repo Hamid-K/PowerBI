@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<smgl:rules 
+  name="($RulesName)" description="($RulesDescription)" 
+  xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" 
+  xmlns:smgl="http://schemas.microsoft.com/sqlserver/2004/10/modelgeneration"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Schema evaluation rules -->
+
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($ExcludeSystemTablesRuleName)" semantics="Exclude">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="Or">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="Type" value="SystemTable" />
+            <smgl:filter xsi:type="smgl:NameFilter" value="dbo.dtproperties" />
+        </smgl:filter>
+    </smgl:rule>
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($ExcludeSystemViewsRuleName)" dsvItemType="SystemView" semantics="Exclude" />
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($ExcludeAuditColumnsRuleName)" enabled="false" dsvItemType="Column" semantics="Exclude">
+        <smgl:filter xsi:type="smgl:NameFilter" pattern=".*ModifiedDate" />
+        <smgl:filter xsi:type="smgl:NameFilter" pattern=".*ModifiedBy" />
+        <smgl:filter xsi:type="smgl:NameFilter" pattern="Create(d)?Date" />
+        <smgl:filter xsi:type="smgl:NameFilter" pattern="CreatedBy" />
+        <smgl:filter xsi:type="smgl:NameFilter" value="rowguid" />
+    </smgl:rule>
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($IncludeUserTablesRuleName)" dsvItemType="Table" semantics="Include" />
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($IncludeUserViewsRuleName)" dsvItemType="View" semantics="Include" />
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($IncludeColumnsRuleName)" dsvItemType="Column" semantics="Include" />
+    <smgl:rule xsi:type="smgl:EvaluateDsvItemRule" name="($IncludeRelationsRuleName)" dsvItemType="Relation" semantics="Include" />
+
+
+    <!-- Pass 1 rules -->
+
+    <smgl:rule xsi:type="smgl:CreateEntityRule" name="($CreateEntitiesRuleName)" description="($CreateEntitiesRuleDescription)">
+        <Entity>
+            <InstanceSelection>FilteredList</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateEntityRule" name="($CreateNonEmptyEntitiesRuleName)" description="($CreateNonEmptyEntitiesRuleDescription)" enabled="false">
+        <smgl:filter xsi:type="smgl:RowCountFilter" count="&gt;0" />
+        <Entity>
+            <InstanceSelection>FilteredList</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateCountAttributeRule" name="($CreateCountAggregatesRuleName)" description="($CreateCountAggregatesRuleDescription)">
+        <smgl:renamer match="(.+)" replace="{$CountAggregateAttributeName}" />
+        <Attribute>
+            <SortDirection>Descending</SortDirection>
+            <EnableDrillthrough>true</EnableDrillthrough>
+            <Format>n0</Format>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateAttributeRule" name="($CreateAttributesRuleName)" description="($CreateAttributesRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="AutoIncrement" value="false" />
+        <Attribute>
+            <SortDirection>Ascending</SortDirection>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateAttributeRule" name="($CreateNonEmptyAttributesRuleName)" description="($CreateNonEmptyAttributesRuleDescription)" enabled="false">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValueCount" range="&gt;0" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="AutoIncrement" value="false" />
+        <Attribute>
+            <SortDirection>Ascending</SortDirection>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateAttributeRule" name="($CreateAutoIncrementAttributesRuleName)" description="($CreateAutoIncrementAttributesRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="AutoIncrement" value="true" />
+        <Attribute>
+            <SortDirection>Ascending</SortDirection>
+            <Hidden>true</Hidden>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateVariationAttributeRule" name="($CreateDateVariationsRuleName)" description="($CreateDateVariationsRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="DateTime" />
+        <smgl:renamer match="{$DateVariation_DateOfX_Date}\s*({$DateVariation_DateOfX_Of})?\s*(.*)" replace="$2" />
+        <smgl:renamer match="(.*\S)\s*({$DateVariation_DateOfX_Of})?\s*{$DateVariation_DateOfX_Date}" replace="$1" />
+        <Attribute>
+            <Name>{$DateVariationDayName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Day</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <SortDirection>Ascending</SortDirection>
+        </Attribute>
+        <Attribute>
+            <Name>{$DateVariationMonthName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Month</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <SortDirection>Ascending</SortDirection>
+        </Attribute>
+        <Attribute>
+            <Name>{$DateVariationYearName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Year</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <SortDirection>Ascending</SortDirection>
+            <Format>0000</Format>
+        </Attribute>
+        <Attribute>
+            <Name>{$DateVariationQuarterName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Quarter</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <SortDirection>Ascending</SortDirection>
+            <Format>{$DateVariation_QuarterFormat}</Format>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateVariationAttributeRule" name="($CreateNumericAggregatesRuleName)" description="($CreateNumericAggregatesRuleDescription)" setFirstAsDefaultAggregate="true">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Integer" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Decimal" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Float" />
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="NotOr">
+            <smgl:filter xsi:type="smgl:NameFilter" pattern=".*({$IdentifierColumnSuffixes_NoAggregates}|Type|Flag|Flags|State)" />
+        </smgl:filter>
+        <Attribute>
+            <Name>{$NumericAggregateSumName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Sum</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute>
+            <Name>{$NumericAggregateAvgName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Avg</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute>
+            <Name>{$NumericAggregateMinName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Min</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute>
+            <Name>{$NumericAggregateMaxName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Max</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateVariationAttributeRule" name="($CreateDateAggregatesRuleName)" description="($CreateDateAggregatesRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="DateTime" />
+        <Attribute>
+            <Name>{$DateAggregateMinName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Min</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <Format>d</Format>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute>
+            <Name>{$DateAggregateMaxName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Max</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <Format>d</Format>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateVariationAttributeRule" name="($CreateTimeAggregatesRuleName)" description="($CreateTimeAggregatesRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Time" />
+        <Attribute>
+            <Name>{$TimeAggregateMinName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Min</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <Format>d</Format>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute>
+            <Name>{$TimeAggregateMaxName}</Name>
+            <Expression>
+                <Function>
+                    <FunctionName>Max</FunctionName>
+                    <Arguments>
+                        <Expression>
+                            <AttributeRef>
+                                <AttributeID>{AttributeID}</AttributeID>
+                            </AttributeRef>
+                        </Expression>
+                    </Arguments>
+                </Function>
+            </Expression>
+            <IsAggregate>true</IsAggregate>
+            <SortDirection>Descending</SortDirection>
+            <Format>d</Format>
+            <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:CreateRoleRule" name="($CreateRolesRuleName)" description="($CreateRolesRuleDescription)" useColumnNames="true">
+        <smgl:renamer match="(.+)_FID" replace="$1" />
+        <smgl:renamer match="(.+)({$IdentifierColumnSuffixes_ForeignKey}|FK)" replace="$1" />
+        <smgl:source>
+            <Role/>
+        </smgl:source>
+        <smgl:target>
+            <Role/>
+        </smgl:target>
+    </smgl:rule>
+
+    <!-- Pass 2 rules -->
+
+    <smgl:rule xsi:type="smgl:SetEntityPropertiesRule" name="($MarkLookupEntitiesRuleName)" description="($MarkLookupEntitiesRuleDescription)">
+        <smgl:filter xsi:type="smgl:FieldCountFilter" count="1" fieldType="Attribute" hidden="false" isAggregate="false" />
+        <!-- Uncomment this to put lookup entities into the lookup folder.
+        <EntityFolder>
+            <Name>{$LookupFolderName}</Name>
+        </EntityFolder>
+        -->
+        <Entity>
+            <IsLookup>true</IsLookup>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityPropertiesRule" name="($MarkSmallListsRuleName)" description="($MarkSmallListsRuleDescription)">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="And">
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&gt;0" />
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&lt;200" />
+        </smgl:filter>
+        <Entity>
+            <InstanceSelection>Dropdown</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityPropertiesRule" name="($MarkMediumListsRuleName)" description="($MarkMediumListsRuleDescription)">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="And">
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&gt;199" />
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&lt;500" />
+        </smgl:filter>
+        <Entity>
+            <InstanceSelection>List</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityPropertiesRule" name="($MarkLargeListsRuleName)" description="($MarkLargeListsRuleDescription)">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="And">
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&gt;499" />
+            <smgl:filter xsi:type="smgl:RowCountFilter" count="&lt;5000" />
+        </smgl:filter>
+        <Entity>
+            <InstanceSelection>FilteredList</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityPropertiesRule" name="($MarkVeryLargeListsRuleName)" description="($MarkVeryLargeListsRuleDescription)">
+        <smgl:filter xsi:type="smgl:RowCountFilter" count="&gt;4999" />
+        <Entity>
+            <InstanceSelection>MandatoryFilter</InstanceSelection>
+        </Entity>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityAttributesRule" name="($SetIdentifyingAttributesRuleName)" description="($SetIdentifyingAttributesRuleDescription)" 
+        assignTo="IdentifyingAttributes" targetScore="110" targetCount="1" enableDrillthrough="true" contextualName="Merge">
+        <smgl:scoreModifier offset="-5">
+            <!-- Slight drop only for Nullable because many databases have most or all nullable columns, even when values should not be null -->
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="Nullable" value="true" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="+10">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="String" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-10">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Integer" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-70">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Decimal" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Float" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="+10">
+            <smgl:filter xsi:type="smgl:NameFilter" pattern=".*({$IdentifyingAttributeNames_Preferred}).*" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-50">
+            <smgl:filter xsi:type="smgl:NameFilter" pattern=".*({$IdentifyingAttributeNames_NonPreferred}).*" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-100">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DsvDataType" value="System.Guid" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-1000">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsBlob" value="true" />
+        </smgl:scoreModifier>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetEntityAttributesRule" name="($SetDefaultDetailAttributesRuleName)" description="($SetDefaultDetailAttributesRuleDescription)" 
+        assignTo="DefaultDetailAttributes" targetScore="110" targetCount="3">
+        <smgl:scoreModifier offset="-5">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="Nullable" value="true" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="+10">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="String" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-10">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Integer" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsForeignKey" value="false" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-15">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Decimal" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Float" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-1000">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="DsvDataType" value="System.Guid" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-1000">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="IsBlob" value="true" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="+10">
+            <smgl:filter xsi:type="smgl:NameFilter" pattern=".*({$DefaultDetailAttributeNames_Preferred}).*" />
+        </smgl:scoreModifier>
+        <smgl:scoreModifier offset="-50">
+            <smgl:filter xsi:type="smgl:NameFilter" pattern=".*({$DefaultDetailAttributeNames_NonPreferred}).*" />
+        </smgl:scoreModifier>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($RoleNameOnlyRuleName)" description="($RoleNameOnlyRuleDescription)">
+        <smgl:filter xsi:type="smgl:NameFilter" pattern="({$RoleOnlyContextualNames})" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValuePercent" range="&gt;80" />
+        <Attribute>
+            <ContextualName>Role</ContextualName>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($NumericAndDateFormattingRuleName)" description="($NumericAndDateFormattingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Integer" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Decimal" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Float" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="DateTime" />
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Time" />
+        <Attribute>
+            <SortDirection>Descending</SortDirection>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($IntegerFormattingRuleName)" description="($IntegerFormattingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Integer" />
+        <Attribute>
+            <Format>g</Format>
+        </Attribute>
+    </smgl:rule> 
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($DecimalFormattingRuleName)" description="($DecimalFormattingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Decimal" />
+        <Attribute>
+            <Format>f{MaxScale}</Format>
+        </Attribute>
+    </smgl:rule> 
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($FloatFormattingRuleName)" description="($FloatFormattingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Float" />
+        <Attribute>
+            <Format>f{AvgScale}</Format>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($DateFormattingRuleName)" description="($DateFormattingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="DateTime" />
+        <Attribute>
+            <Format>d</Format>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($DefaultMimeTypeRuleName)" description="($DefaultMimeTypeRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="DataType" value="Binary" />
+        <Attribute>
+            <MimeType>image/jpeg</MimeType>
+        </Attribute>
+    </smgl:rule> 
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($DiscourageGroupingRuleName)" description="($DiscourageGroupingRuleDescription)">
+        <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValuePercent" range="&gt;80" />
+        <Attribute>
+            <DiscourageGrouping>true</DiscourageGrouping>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($DropdownValueSelectionRuleName)" description="($DropdownValueSelectionRuleDescription)">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="And">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValueCount" range="&gt;0" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValueCount" range="&lt;200" />
+            <smgl:filter xsi:type="smgl:FilterGroup" operator="NotAnd">
+                <smgl:filter xsi:type="smgl:PropertyFilter" property="IsBlob" value="true" />
+            </smgl:filter>
+        </smgl:filter>
+        <Attribute>
+            <ValueSelection>Dropdown</ValueSelection>
+        </Attribute>
+    </smgl:rule>
+
+    <smgl:rule xsi:type="smgl:SetAttributePropertiesRule" name="($ListValueSelectionRuleName)" description="($ListValueSelectionRuleDescription)">
+        <smgl:filter xsi:type="smgl:FilterGroup" operator="And">
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValueCount" range="&gt;199" />
+            <smgl:filter xsi:type="smgl:PropertyFilter" property="UniqueValueCount" range="&lt;1000" />
+            <smgl:filter xsi:type="smgl:FilterGroup" operator="NotAnd">
+                <smgl:filter xsi:type="smgl:PropertyFilter" property="IsBlob" value="true" />
+            </smgl:filter>
+        </smgl:filter>
+        <Attribute>
+            <ValueSelection>List</ValueSelection>
+        </Attribute>
+    </smgl:rule>
+
+</smgl:rules>

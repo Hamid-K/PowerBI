@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AM" xml:space="preserve">
+    <value>上午</value>
+  </data>
+  <data name="CacheInvalidateScheduleHanlder" xml:space="preserve">
+    <value>快取報表所排程的到期日。</value>
+  </data>
+  <data name="CacheRefreshPlans" xml:space="preserve">
+    <value>根據排程。</value>
+  </data>
+  <data name="CanNotSubscribe" xml:space="preserve">
+    <value>無法訂閱此事件。</value>
+  </data>
+  <data name="DataDrivenSubscriptionError" xml:space="preserve">
+    <value>錯誤: {0}</value>
+  </data>
+  <data name="DeliveryExtensionFailedToLoad" xml:space="preserve">
+    <value>無法載入此訂閱的傳遞延伸模組。</value>
+  </data>
+  <data name="DeliveryExtensionRemoved" xml:space="preserve">
+    <value>與此訂閱關聯的傳遞延伸模組在此報表伺服器上無法使用。請確認已安裝該傳遞延伸模組。</value>
+  </data>
+  <data name="DisallowedExcelFileExtensionChange" xml:space="preserve">
+    <value>不允許變更 Excel 副檔名。</value>
+  </data>
+  <data name="DisallowedResourceExtensionError" xml:space="preserve">
+    <value>不允許上傳或儲存副檔名為 {0} 的檔案。如有任何問題，請連絡您的系統管理員。</value>
+  </data>
+  <data name="DisallowedResourceMimeType" xml:space="preserve">
+    <value>不允許上傳或儲存 MIME 類型為 {0} 的檔案。如有任何問題，請連絡您的系統管理員。</value>
+  </data>
+  <data name="ExecutionAccountLogonError" xml:space="preserve">
+    <value>自動執行帳戶的登入失敗。</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>無法開啟 {0} : {1}</value>
+  </data>
+  <data name="MyReportsFolderDescription" xml:space="preserve">
+    <value>使用此資料夾來儲存個人化的報表。</value>
+  </data>
+  <data name="MyReportsFolderName" xml:space="preserve">
+    <value>我的報表</value>
+  </data>
+  <data name="NewCacheRefreshPlan" xml:space="preserve">
+    <value>新增快取重新整理計劃</value>
+  </data>
+  <data name="NewScheduledRefreshPlan" xml:space="preserve">
+    <value>新增排程的重新整理計劃</value>
+  </data>
+  <data name="NewSubscription" xml:space="preserve">
+    <value>新增訂閱</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>下午</value>
+  </data>
+  <data name="ParentDirectoryLink" xml:space="preserve">
+    <value>移至上層目錄</value>
+  </data>
+  <data name="PreviewImageDataInvalid" xml:space="preserve">
+    <value>預覽圖像參數值包含無效的資料。</value>
+  </data>
+  <data name="ProgressMessage" xml:space="preserve">
+    <value>已完成 {0} 次反覆運算。</value>
+  </data>
+  <data name="RPCErrorStringFormat" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="RefreshCachePlanCachingIsNotEnabled" xml:space="preserve">
+    <value>未啟用項目的快取。</value>
+  </data>
+  <data name="RefreshCachePlanError" xml:space="preserve">
+    <value>錯誤: {0}。</value>
+  </data>
+  <data name="RefreshCachePlanParametersInvalid" xml:space="preserve">
+    <value>快取重新整理計劃包含無效的參數值。</value>
+  </data>
+  <data name="RefreshCachePlanRefreshed" xml:space="preserve">
+    <value>正在重新整理</value>
+  </data>
+  <data name="RefreshCachePlanSharedDataSourceRemoved" xml:space="preserve">
+    <value>還原共用資料來源。</value>
+  </data>
+  <data name="RefreshCachePlanSuccess" xml:space="preserve">
+    <value>快取重新整理成功。</value>
+  </data>
+  <data name="ReportExecutionSnapshotUpdateHandler" xml:space="preserve">
+    <value> 報表的快取副本由排程報表執行更新時。</value>
+  </data>
+  <data name="ReportHistorySnapShotCreatedHandler" xml:space="preserve">
+    <value>建立報表的報表歷程記錄快照集時。</value>
+  </data>
+  <data name="ReportServiceCategoryName" xml:space="preserve">
+    <value>Report Server</value>
+  </data>
+  <data name="ScheduleFiredEventHandlerName" xml:space="preserve">
+    <value>排程觸發處理常式</value>
+  </data>
+  <data name="ServerProductName" xml:space="preserve">
+    <value>SQL Server 2019 CTP2.1 Reporting Services</value>
+  </data>
+  <data name="SharePointModeCatalogNotSupported" xml:space="preserve">
+    <value>目錄資料庫處於 SharePoint 整合模式。此 Reporting Services 執行個體已不再支援該模式。</value>
+  </data>
+  <data name="SharedDatasetCacheUpdatePlans" xml:space="preserve">
+    <value>共用的資料集快取更新。</value>
+  </data>
+  <data name="SimpleMessage" xml:space="preserve">
+    <value>這是簡單的測試訊息。</value>
+  </data>
+  <data name="SubscriptionDisabled" xml:space="preserve">
+    <value>已停用</value>
+  </data>
+  <data name="SubscriptionDone" xml:space="preserve">
+    <value>完成: 總計 {1} 已處理 {0}; {2} 個錯誤。</value>
+  </data>
+  <data name="SubscriptionError" xml:space="preserve">
+    <value>錯誤: {0}</value>
+  </data>
+  <data name="SubscriptionExecuted" xml:space="preserve">
+    <value>執行中</value>
+  </data>
+  <data name="SubscriptionMissingEncryptedContent" xml:space="preserve">
+    <value>訂閱的加密內容已移除。</value>
+  </data>
+  <data name="SubscriptionParametersInvalid" xml:space="preserve">
+    <value>訂閱包含無效的參數值。</value>
+  </data>
+  <data name="SubscriptionPending" xml:space="preserve">
+    <value>暫止</value>
+  </data>
+  <data name="SubscriptionProcessing" xml:space="preserve">
+    <value>正在處理: 總計 {1} 已處理 {0}; {2} 個錯誤。</value>
+  </data>
+  <data name="SubscriptionReady" xml:space="preserve">
+    <value>就緒</value>
+  </data>
+  <data name="TaskComment" xml:space="preserve">
+    <value>此為報表伺服器作業。修改此作業會造成資料庫不相容。請使用報表管理員或 Management Studio 更新此作業。</value>
+  </data>
+  <data name="TimedSubscriptions" xml:space="preserve">
+    <value>根據排程。</value>
+  </data>
+  <data name="UnableToAllocateILockBytes" xml:space="preserve">
+    <value>無法配置 ILockBytes。</value>
+  </data>
+  <data name="UnableToCreateStorage" xml:space="preserve">
+    <value>無法建立結構化儲存體檔案。</value>
+  </data>
+  <data name="UnableToReadData" xml:space="preserve">
+    <value>無法從結構化儲存體檔案讀取資料。</value>
+  </data>
+  <data name="UsersFolderName" xml:space="preserve">
+    <value>使用者資料夾</value>
+  </data>
+</root>

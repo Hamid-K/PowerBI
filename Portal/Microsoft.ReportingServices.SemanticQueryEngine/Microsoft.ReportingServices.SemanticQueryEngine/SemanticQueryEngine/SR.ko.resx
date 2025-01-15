@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateOfBinaryExpression" xml:space="preserve">
+    <value>쿼리에서 큰 값 유형 식에 집계 함수를 사용했습니다. 큰 값 유형 식은 집계할 수 없습니다.</value>
+  </data>
+  <data name="ConnectionNotOpen" xml:space="preserve">
+    <value>연결이 열리지 않았습니다.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>둘 이상의 쿼리 매개 변수의 이름이 "{0}"입니다.</value>
+  </data>
+  <data name="ErrorExecutingSemanticQuery" xml:space="preserve">
+    <value>의미 체계 쿼리 실행이 실패했습니다. {0}</value>
+  </data>
+  <data name="GroupingByBlob" xml:space="preserve">
+    <value>큰 값 유형을 반환하는 "{0}" 식을 기반으로 하는 그룹화가 쿼리에 있습니다. 그룹화에는 큰 값 유형을 반환하는 식을 사용할 수 없습니다.</value>
+  </data>
+  <data name="InvalidCommandType" xml:space="preserve">
+    <value>의미 체계 쿼리 명령은 CommandType.Text를 사용해야 합니다.</value>
+  </data>
+  <data name="InvalidConfiguration" xml:space="preserve">
+    <value>{0}의 구성을 구문 분석할 수 없습니다. 구성 설정이 올바른지 확인하십시오. 세부 정보: {1}.</value>
+  </data>
+  <data name="QueryNotSet" xml:space="preserve">
+    <value>쿼리가 설정되지 않았습니다. 쿼리를 실행하기 전에 SetQuery 메서드를 호출해야 합니다.</value>
+  </data>
+  <data name="SemanticQueryCompilationError" xml:space="preserve">
+    <value>의미 체계 쿼리를 컴파일하지 못했습니다: {0}.</value>
+  </data>
+  <data name="SemanticQueryEngineLocalizedName" xml:space="preserve">
+    <value>의미 체계 쿼리 엔진</value>
+  </data>
+  <data name="SemanticQueryEngineNotInitialized" xml:space="preserve">
+    <value>의미 체계 쿼리 엔진이 초기화되지 않았습니다. 모델 및 데이터 확장 이름을 설정하려면 Initialize 메서드를 호출해야 합니다.</value>
+  </data>
+  <data name="SqlModelGeneratorLocalizedName" xml:space="preserve">
+    <value>SQL Server 의미 체계 모델 생성기</value>
+  </data>
+</root>

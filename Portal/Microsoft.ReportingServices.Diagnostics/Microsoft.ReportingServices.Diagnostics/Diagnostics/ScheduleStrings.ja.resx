@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="April" xml:space="preserve">
+    <value>4 月</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>8 月</value>
+  </data>
+  <data name="DailyScheduleDescription" xml:space="preserve">
+    <value>毎日 {0}、{1} 開始</value>
+  </data>
+  <data name="DailyWithIntervalScheduleDescription" xml:space="preserve">
+    <value>{1} 日ごとの {0}、{2} 開始</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>12 月</value>
+  </data>
+  <data name="EndScheduleDescription" xml:space="preserve">
+    <value>- {0} 終了</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>2 月</value>
+  </data>
+  <data name="FirstWeek" xml:space="preserve">
+    <value>第 1</value>
+  </data>
+  <data name="FourthWeek" xml:space="preserve">
+    <value>第 4</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>1 月</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>7 月</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>6 月</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>最終</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>3 月</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>5 月</value>
+  </data>
+  <data name="MinutesScheduleDescription" xml:space="preserve">
+    <value>{0} 時間 {1} 分ごと、{2} の {3} 開始</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="MonthlyDOWEveryMonthScheduleDescription" xml:space="preserve">
+    <value>毎月 {1} {2} の {0}、{3} 開始</value>
+  </data>
+  <data name="MonthlyEveryMonthScheduleDescription" xml:space="preserve">
+    <value>毎月 {1} 日の {0}、{2} 開始</value>
+  </data>
+  <data name="MontlyDOWScheduleDescription" xml:space="preserve">
+    <value>{3} の {1} {2} の {0}、{4} 開始</value>
+  </data>
+  <data name="MontlyScheduleDescription" xml:space="preserve">
+    <value>{2} の {1} 日の {0}、{3} 開始</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>11 月</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>10 月</value>
+  </data>
+  <data name="OnceScheduleDescription" xml:space="preserve">
+    <value>{1} の {0}</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="SecondWeek" xml:space="preserve">
+    <value>第 2</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>9 月</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="ThirdWeek" xml:space="preserve">
+    <value>第 3</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="WeeklyScheduleDescription" xml:space="preserve">
+    <value>毎週 {1} の {0}、{2} 開始</value>
+  </data>
+  <data name="WeeklyWithIntervalScheduleDescription" xml:space="preserve">
+    <value>{2} 週間ごとの {1} の {0}、{3} 開始</value>
+  </data>
+</root>

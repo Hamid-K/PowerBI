@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.ReportingServices.SafeReportExpressions.Interfaces", "Microsoft.ReportingServices.SafeReportExpressions.Interfaces\Microsoft.ReportingServices.SafeReportExpressions.Interfaces.csproj", "{C7A698AE-8490-4483-B1C8-957F0857507D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A698AE-8490-4483-B1C8-957F0857507D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A698AE-8490-4483-B1C8-957F0857507D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A698AE-8490-4483-B1C8-957F0857507D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A698AE-8490-4483-B1C8-957F0857507D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

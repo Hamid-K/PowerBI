@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateWithNonAggregateArgument" xml:space="preserve">
+    <value>{0}에 비집계 인수를 사용하는 "집계" 함수가 있습니다. 집계 함수에는 비집계 인수를 사용할 수 없습니다.</value>
+  </data>
+  <data name="ArgumentCardinalityMismatch" xml:space="preserve">
+    <value>잘못된 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다. 스칼라 인수에는 값 집합을 사용할 수 없습니다.</value>
+  </data>
+  <data name="ArgumentDataTypeMismatch" xml:space="preserve">
+    <value>잘못된 데이터 형식 "{3}"의 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다.</value>
+  </data>
+  <data name="ArgumentValueOutOfRange" xml:space="preserve">
+    <value>잘못된 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다. 인수 값이 허용되는 값 범위를 벗어났습니다.</value>
+  </data>
+  <data name="BaseEntityMismatch" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 Hierarchy BaseEntity 속성과 일치하지 않습니다. 계층이 있을 경우 {0}은(는) Hierarchy BaseEntity와 일치해야 합니다.</value>
+  </data>
+  <data name="BinaryEntityColumn" xml:space="preserve">
+    <value>{0}의 Column 속성이 Binary 데이터 형식의 {1}을(를) 참조합니다. 엔터티의 Column 속성은 Binary 데이터 형식의 열을 참조할 수 없습니다.</value>
+  </data>
+  <data name="BinaryGroupingExpression" xml:space="preserve">
+    <value>{0} 그룹화가 Binary 데이터 형식을 반환합니다. 그룹화 식은 이진 데이터를 반환할 수 없습니다.</value>
+  </data>
+  <data name="CalculatedAttributeNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 CalculatedAttribute 식 "{2}"을(를) 참조합니다.</value>
+  </data>
+  <data name="CalculatedAttributeNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 CalculatedAttribute 식 "{2}"을(를) 참조합니다.</value>
+  </data>
+  <data name="CircularInheritance" xml:space="preserve">
+    <value>{1}의 {0} 속성은 자체 직접 상속인지 자체 간접 상속인지 지정합니다. 상속에서는 루프를 사용할 수 없습니다.</value>
+  </data>
+  <data name="ColumnDataTypeMismatch" xml:space="preserve">
+    <value>{0}의 DataType 속성이 {2}인데 {1}의 데이터 형식이 {3}입니다. 이 특성의 DataType 속성은 열의 데이터 형식과 일치해야 합니다.</value>
+  </data>
+  <data name="ColumnNullableMismatch" xml:space="preserve">
+    <value>{0}의 Nullable 속성이 false인데 참조된 {1}이(가) Null을 허용합니다. 이 특성의 Nullable 속성은 열의 Null 허용 여부와 일치해야 합니다.</value>
+  </data>
+  <data name="CyclicExpression" xml:space="preserve">
+    <value>{0}에 직접 또는 간접적인 자체 참조가 있는 식이 있습니다. 식에서는 루프를 사용할 수 없습니다.</value>
+  </data>
+  <data name="CyclicExpression_ExpressionObject" xml:space="preserve">
+    <value>{0}에 직접 또는 간접적인 자체 참조가 있습니다. 식에서는 루프를 사용할 수 없습니다.</value>
+  </data>
+  <data name="DuplicateEntityName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 엔터티가 두 개 이상 있습니다. SemanticModel 내에서 엔터티 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateExpressionName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 식이 두 개 이상 있습니다. SemanticQuery 내에서 식 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateFieldName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 필드가 두 개 이상 있습니다. 엔터티 내에서 필드 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateGroupingName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 그룹화가 두 개 이상 있습니다. SemanticQuery 내에서 그룹화 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateItemID" xml:space="preserve">
+    <value>모델에 ID가 "{0}"인 항목이 두 개 이상 있습니다. 모델 내에서 항목 ID는 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateItemName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 항목이 두 개 이상 있습니다. 인접한 형제 항목 사이에서 항목 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>{0}에 이름이 "{1}"인 매개 변수가 두 개 이상 있습니다. SemanticQuery 내에서 매개 변수 이름은 고유해야 합니다.</value>
+  </data>
+  <data name="EmptySemanticQuery" xml:space="preserve">
+    <value>{0}에 Groupings 또는 MeasureGroups가 없습니다. SemanticQuery에는 이러한 요소 중 하나 이상이 있어야 합니다. 이 문제는 일반적으로 사용자에게 쿼리가 참조하는 항목에 대한 권한이 없거나 쿼리가 참조하는 항목이 기본 모델에서 삭제되었기 때문에 발생합니다.</value>
+  </data>
+  <data name="EntityKeyTypeMismatch" xml:space="preserve">
+    <value>잘못된 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다. {3} 엔터티 키에서 {4} 엔터티 키로 변환할 수 없습니다.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {2}을(를) 참조합니다. {2}에 도달하는 데 사용된 경로에 따라 이 속성은 {3} 또는 이 항목에서 파생된 엔터티만 참조할 수 있습니다.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 {2}을(를) 참조합니다. {2}에 도달하는 데 사용된 경로에 따라 이 속성은 {3} 또는 이 항목에서 파생된 엔터티만 참조할 수 있습니다.</value>
+  </data>
+  <data name="ExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0}의 DataType 속성이 {2}인데 "{1}"에 대한 식이 데이터 형식 {3}을(를) 반환합니다. 이 특성의 DataType 속성은 식에서 반환한 데이터 형식과 일치해야 합니다.</value>
+  </data>
+  <data name="ExpressionNullableMismatch" xml:space="preserve">
+    <value>{0}의 Nullable 속성이 false인데 "{1}"에 대한 식이 Null을 허용합니다. 이 특성의 Nullable 속성은 식의 Null 허용 여부와 일치해야 합니다.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {2}을(를) 참조합니다. {2}에 도달하는 데 사용된 경로에 따라 이 속성은 {3}의 필드 또는 이 항목에서 파생된 엔터티만 참조할 수 있습니다.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 {2}을(를) 참조합니다. {2}에 도달하는 데 사용된 경로에 따라 이 속성은 {3}의 필드 또는 이 항목에서 파생된 엔터티만 참조할 수 있습니다.</value>
+  </data>
+  <data name="GroupingNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 "{2}" 그룹화를 참조합니다.</value>
+  </data>
+  <data name="GroupingNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 "{2}" 그룹화를 참조합니다.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded" xml:space="preserve">
+    <value>{0}에 대한 ID 속성의 로컬 이름이 최대 길이 {1}자를 초과합니다.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded_NoContext" xml:space="preserve">
+    <value>지정한 ID의 로컬 이름이 최대 길이 {0}자를 초과합니다.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded" xml:space="preserve">
+    <value>{0}에 대한 ID 속성의 네임스페이스가 최대 길이 {1}자를 초과합니다.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded_NoContext" xml:space="preserve">
+    <value>지정한 ID의 네임스페이스가 최대 길이 {0}자를 초과합니다.</value>
+  </data>
+  <data name="ImplicitDecimalCastToFloat" xml:space="preserve">
+    <value>{0}에 Float 데이터 형식의 "{2}" 인수에 Decimal 데이터 형식의 값이 제공된 "{1}" 함수가 있습니다. Decimal 값을 Float로 캐스팅하면 전체 자릿수가 손실될 수 있습니다.</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>모델링 개체 모델에 내부 오류가 발생했습니다. 자세한 내용은 오류 로그를 참조하십시오.</value>
+  </data>
+  <data name="InvalidAggregateAttributeReference" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 집계 특성인 {2}을(를) 참조합니다. 이 속성은 집계가 아닌 특성을 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidAttributeRef" xml:space="preserve">
+    <value>{0}에 AttributeID와 AttributeName이 둘 다 있거나 둘 다 없는 AttributeRef가 있습니다. AttributeRef에는 이러한 두 요소 중 하나만 있어야 합니다.</value>
+  </data>
+  <data name="InvalidBinding" xml:space="preserve">
+    <value>{1}의 {0} 속성이 DataSourceView에서 존재하지 않는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="InvalidColumnDataType" xml:space="preserve">
+    <value>{1}의 {0} 속성이 지원되지 않는 데이터 형식을 가진 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="InvalidColumnReferenceInColumnEntity" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {2}을(를) 참조합니다. 이 속성은 {3}만 참조할 수 있습니다.</value>
+  </data>
+  <data name="InvalidColumnTableName" xml:space="preserve">
+    <value>{0}의 Column 속성이 포함하는 엔터티의 {2}과(와) 일치하지 않는 {1}을(를) 참조합니다.</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>{1}에 대한 {0} 속성에 올바른 ISO culture가 아닌 값 "{2}"이(가) 있습니다.</value>
+  </data>
+  <data name="InvalidDataSourceView" xml:space="preserve">
+    <value>데이터 원본 뷰가 잘못되었습니다. 세부 정보: {0}</value>
+  </data>
+  <data name="InvalidDateIntervalArgument" xml:space="preserve">
+    <value>잘못된 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다. 경로가 없는 리터럴이 필요합니다.</value>
+  </data>
+  <data name="InvalidDateIntervalValue" xml:space="preserve">
+    <value>"{2}" 인수에 리터럴 값 "{3}"이(가) 지정된 "{1}" 함수가 {0}에 있습니다. 간격 값은 다음 중 하나여야 합니다: {4}.</value>
+  </data>
+  <data name="InvalidDrillSelectedItems" xml:space="preserve">
+    <value>DrillthroughContext 매개 변수의 SelectedItems 속성이 두 개 이상의 컨텍스트에서 항목을 참조합니다. SelectedItems에는 단일 그룹화 식에 대한 참조나 모두 같은 측정값 그룹이나 같은 정보 컬렉션에 있는 식에 대한 참조를 포함해야 합니다.</value>
+  </data>
+  <data name="InvalidDrillSelectedPath" xml:space="preserve">
+    <value>DrillthroughContext 매개 변수의 SelectedPath 속성 "{0}"이(가) 허용된 최대 경로 "{1}"과(와) 다르거나 이 경로의 하위 집합이 아닙니다.</value>
+  </data>
+  <data name="InvalidDrillTargetEntity" xml:space="preserve">
+    <value>{0}의 BaseEntity가 {1}입니다. BaseEntity가 {2} 또는 이 항목에서 파생된 엔터티일 경우에만 SelectedPath를 기준으로 지정한 DrillthroughContext를 사용할 수 있습니다.</value>
+  </data>
+  <data name="InvalidDrillthroughContext" xml:space="preserve">
+    <value>드릴스루 컨텍스트가 잘못되었습니다. 세부 정보: {0}</value>
+  </data>
+  <data name="InvalidEntityBinding" xml:space="preserve">
+    <value>{0}에 Table 요소와 Column 요소가 둘 다 있습니다. 엔터티에는 이러한 두 요소 중 하나만 있어야 합니다.</value>
+  </data>
+  <data name="InvalidEntityKeyPart" xml:space="preserve">
+    <value>EntityKey 부분 값 "{0}"을(를) 키 부분 유형 "{1}"(으)로 변환할 수 없습니다.</value>
+  </data>
+  <data name="InvalidEntityKeyValue" xml:space="preserve">
+    <value>EntityKey 값 "{0}"을(를) {1}에 대한 키로 구문 분석할 수 없습니다.</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>{0}에 Function, AttributeRef, EntityRef, ParameterRef, Literal, Null 요소가 없거나 이러한 요소 중 둘 이상이 있는 식이 있습니다. 식에는 이러한 요소 중 하나만 있어야 합니다.</value>
+  </data>
+  <data name="InvalidExpression_TopLevel" xml:space="preserve">
+    <value>{0}에 Function, AttributeRef, EntityRef, ParameterRef, Literal, Null 요소가 없거나 이러한 요소 중 둘 이상이 있습니다. 식에는 이러한 요소 중 하나만 있어야 합니다.</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>{0}에 대한 필터 식이 데이터 형식 {1}을(를) 반환합니다. 필터 식은 Boolean 데이터 형식을 반환해야 합니다.</value>
+  </data>
+  <data name="InvalidFunctionName" xml:space="preserve">
+    <value>{0}에 값이 "{1}"인 FunctionName이 있습니다. 이 값은 올바른 함수 이름이 아닙니다.</value>
+  </data>
+  <data name="InvalidGuid" xml:space="preserve">
+    <value>{0}에 대한 ID 속성이 빈 네임스페이스 또는 SMDL 네임스페이스에 포함되지만 GUID가 아닙니다. 이러한 네임스페이스의 ID는 GUID 형식 Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx를 따라야 합니다.</value>
+  </data>
+  <data name="InvalidGuid_NoContext" xml:space="preserve">
+    <value>지정한 ID가 빈 네임스페이스 또는 SMDL 네임스페이스에 포함되지만 GUID가 아닙니다. 이러한 네임스페이스의 ID는 GUID 형식 Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx를 따라야 합니다.</value>
+  </data>
+  <data name="InvalidHiddenAttributeReference" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 숨겨진 특성인 {2}을(를) 참조합니다. 이 속성은 숨겨지지 않은 특성을 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidInSetArgument" xml:space="preserve">
+    <value>잘못된 "{2}" 인수가 지정된 "{1}" 함수가 {0}에 있습니다. 인수는 ParameterRef, 정적 함수 또는 경로가 없는 리터럴을 포함해야 합니다.</value>
+  </data>
+  <data name="InvalidInheritanceRelationTable" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {2}을(를) 참조합니다. 이 속성은 원본이 {3}이고 대상이 {4}인 관계를 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidLinguistics" xml:space="preserve">
+    <value>{0}에 대해 Linguistics 속성은 지정되었지만 Name 속성은 생략되었습니다. Name이 생략된 경우에는 역할에 대해 Linguistics를 지정할 수 없습니다.</value>
+  </data>
+  <data name="InvalidLiteral" xml:space="preserve">
+    <value>Value 요소와 Values 요소가 둘 다 있거나 둘 다 없는 리터럴이 {0}에 있습니다. 리터럴에는 이러한 두 요소 중 하나만 있어야 합니다.</value>
+  </data>
+  <data name="InvalidLiteralSetArgument" xml:space="preserve">
+    <value>"{2}" 인수에 리터럴 집합이 지정된 "{1}" 함수가 {0}에 있습니다. 이 인수는 리터럴 집합을 값으로 사용할 수 없습니다.</value>
+  </data>
+  <data name="InvalidLiteralValue" xml:space="preserve">
+    <value>{0}에 값이 "{1}"인 리터럴이 있습니다. 이 값은 올바른 {2} 값이 아닙니다. {3}</value>
+  </data>
+  <data name="InvalidModelGenerationRules" xml:space="preserve">
+    <value>모델 생성 규칙이 잘못되었습니다. 세부 정보: {0}</value>
+  </data>
+  <data name="InvalidModelItemInPerspective" xml:space="preserve">
+    <value>{1}을(를) {0}에 포함할 수 없습니다.</value>
+  </data>
+  <data name="InvalidNonFilterAttributeReference" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 필터 특성이 아닌 {2}을(를) 참조합니다. 이 속성은 필터 특성을 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidOptionalityOfRoleForColumnBoundEntity" xml:space="preserve">
+    <value>{1}에서 {2}(으)로의 {0}은(는) 선택 사항이지만 {3}이(가) 열에 바인딩되어 있습니다. 열에 바인딩되어 있는 엔터티를 포함하는 모든 역할은 필수 사항으로 처리됩니다.</value>
+  </data>
+  <data name="InvalidParameterExpression" xml:space="preserve">
+    <value>{0}에 대한 기본값 식에 Path, Function, AttributeRef, EntityRef, ParameterRef 요소 중 하나 이상이 있습니다. 매개 변수 식은 이러한 요소를 포함할 수 없습니다.</value>
+  </data>
+  <data name="InvalidParameterName" xml:space="preserve">
+    <value>{0}의 매개 변수 이름이 "{1}"입니다. 매개 변수 이름은 예약된 이름 "{2}"이(가) 될 수 없습니다.</value>
+  </data>
+  <data name="InvalidParameterValueCardinality" xml:space="preserve">
+    <value>"{0}" 매개 변수에는 단일 값이 필요한데 매개 변수에 제공된 값은 집합입니다.</value>
+  </data>
+  <data name="InvalidParameterValueType" xml:space="preserve">
+    <value>"{0}" 매개 변수의 데이터 형식은 {1}인데 매개 변수에 제공된 값을 이 형식으로 변환할 수 없습니다.</value>
+  </data>
+  <data name="InvalidParameterValueType_MultipleValues" xml:space="preserve">
+    <value>"{0}" 매개 변수의 데이터 형식은 {1}인데 매개 변수에 제공된 값 중 하나 이상을 이 형식으로 변환할 수 없습니다.</value>
+  </data>
+  <data name="InvalidReferencedItem" xml:space="preserve">
+    <value>{1}의 {0} 속성이 다음 유형 중 하나에 해당하지 않는 {2}을(를) 참조합니다: {3}.</value>
+  </data>
+  <data name="InvalidReferencedItem_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 다음 유형 중 하나에 해당하지 않는 {2}을(를) 참조합니다: {3}.</value>
+  </data>
+  <data name="InvalidRoleRelationTable" xml:space="preserve">
+    <value>{0}의 Relation 속성이 {2}의 {1} 끝을 참조합니다. 이 속성은 {3}을(를) 참조하는 Relation 끝을 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidScalarAttributeReference" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 집계 특성이 아닌 {2}을(를) 참조합니다. 이 속성은 집계 특성을 참조해야 합니다.</value>
+  </data>
+  <data name="InvalidSemanticModel" xml:space="preserve">
+    <value>의미 체계 모델이 잘못되었습니다. 세부 정보: {0}</value>
+  </data>
+  <data name="InvalidSemanticQuery" xml:space="preserve">
+    <value>의미 체계 쿼리가 잘못되었습니다. 세부 정보: {0}</value>
+  </data>
+  <data name="InvalidSetAttributeReference" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 집계 특성이 아닌 {2}을(를) 참조합니다. {2}에 도달하는 데 사용된 경로에 따라 이 속성은 집계 특성을 참조해야 합니다.</value>
+  </data>
+  <data name="IsAggregateWithColumn" xml:space="preserve">
+    <value>{0}에 대한 IsAggregate 속성이 true인데 열 바인딩이 지정되었습니다. 열 바인딩이 지정된 경우에는 IsAggregate가 true일 수 없습니다.</value>
+  </data>
+  <data name="IsAggregateWithDefaultAggregate" xml:space="preserve">
+    <value>{0}에 대한 DefaultAggregateAttributeID 속성이 지정되었는데 IsAggregate 속성이 true입니다. 집계 특성에 대해 기본 집계를 지정할 수 없습니다.</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 "{2}" 항목을 참조합니다.</value>
+  </data>
+  <data name="ItemNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 "{2}" 항목을 참조합니다.</value>
+  </data>
+  <data name="LoopInSecurityFilters" xml:space="preserve">
+    <value>{0}의 보안 필터가 간접적으로 자기 자신에 종속됩니다. 보안 필터의 루프는 허용되지 않습니다.</value>
+  </data>
+  <data name="MeasureNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 측정값 식 "{2}"을(를) 참조합니다.</value>
+  </data>
+  <data name="MeasureNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 측정값 식 "{2}"을(를) 참조합니다.</value>
+  </data>
+  <data name="MissingBaseEntity" xml:space="preserve">
+    <value>{1}에 대한 {0} 속성이 없습니다.</value>
+  </data>
+  <data name="MissingBaseEntity_MultipleProperties" xml:space="preserve">
+    <value>{1}에 대한 {0} 속성 중 하나가 없습니다.</value>
+  </data>
+  <data name="MissingBinding_Attribute" xml:space="preserve">
+    <value>{0}에 대한 바인딩이 없습니다. 식이 지정되지 않은 경우에는 특성에 반드시 하나의 열 바인딩이 있어야 합니다.</value>
+  </data>
+  <data name="MissingBinding_Entity" xml:space="preserve">
+    <value>{0}에 대한 바인딩이 없습니다. 엔터티에는 Table이나 Column 중 반드시 하나가 있어야 합니다.</value>
+  </data>
+  <data name="MissingBinding_Inheritance" xml:space="preserve">
+    <value>{0}의 상속에 대한 바인딩이 없습니다. 상속에는 반드시 하나의 관계 바인딩이 있어야 합니다.</value>
+  </data>
+  <data name="MissingBinding_Role" xml:space="preserve">
+    <value>{0}에 대한 바인딩이 없습니다. 포함하는 엔터티가 테이블에 바인딩되어 있고 관련 엔터티가 이 테이블의 열에 바인딩되어 있는 경우나 그 반대의 경우가 아니라면 역할에는 반드시 하나의 관계 바인딩이 있어야 합니다.</value>
+  </data>
+  <data name="MissingColumnTableName" xml:space="preserve">
+    <value>{0}에 대한 Column.TableName이 없습니다. 엔터티의 열 바인딩에 대해 TableName을 지정해야 합니다.</value>
+  </data>
+  <data name="MissingDataSourceView" xml:space="preserve">
+    <value>{0}에 대한 DataSourceView가 없습니다. SemanticModel에는 반드시 하나의 DataSourceView 요소가 있어야 합니다.</value>
+  </data>
+  <data name="MissingExpressionName" xml:space="preserve">
+    <value>{0}의 식에 대한 이름이 없습니다.</value>
+  </data>
+  <data name="MissingGroupingExpression" xml:space="preserve">
+    <value>{0}에 대한 식이 없습니다. 그룹화에는 반드시 하나의 식이 있어야 합니다.</value>
+  </data>
+  <data name="MissingGroupingName" xml:space="preserve">
+    <value>{0}의 그룹화에 대한 이름이 없습니다.</value>
+  </data>
+  <data name="MissingIdentifyingAttributes" xml:space="preserve">
+    <value>{0}에 IdentifyingAttributes가 없습니다. 엔터티에는 적어도 하나 이상의 IdentifyingAttribute가 있어야 합니다.</value>
+  </data>
+  <data name="MissingItemName" xml:space="preserve">
+    <value>{0}에 대한 이름이 없습니다.</value>
+  </data>
+  <data name="MissingMeasures" xml:space="preserve">
+    <value>{0}에 대한 MeasureGroups 중 하나에 측정값이 없습니다. MeasureGroup에는 적어도 하나 이상의 측정값이 있어야 합니다.</value>
+  </data>
+  <data name="MissingMimeType" xml:space="preserve">
+    <value>{0}에 대한 MimeType이 없습니다. 데이터 형식이 Binary인 특성에 대해서는 MimeType을 지정해야 합니다.</value>
+  </data>
+  <data name="MissingParameterName" xml:space="preserve">
+    <value>{0}의 매개 변수에 대한 이름이 없습니다.</value>
+  </data>
+  <data name="MissingParameterValue" xml:space="preserve">
+    <value>"{0}" 매개 변수에 대해 값을 지정해야 합니다.</value>
+  </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>{1}의 {0} 속성이 기본 키가 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="MissingRelatedRole" xml:space="preserve">
+    <value>{0}에 대한 RelatedRoleID가 없습니다.</value>
+  </data>
+  <data name="MissingRelationEnd" xml:space="preserve">
+    <value>{0}에 대한 Relation.RelationEnd가 없습니다.</value>
+  </data>
+  <data name="MultipleHierarchies" xml:space="preserve">
+    <value>{0}에 지원되지 않는 계층이 여러 개 있습니다.</value>
+  </data>
+  <data name="MultipleMeasureGroups" xml:space="preserve">
+    <value>{0}에 지원되지 않는 MeasureGroups가 여러 개 있습니다.</value>
+  </data>
+  <data name="NestedVariations" xml:space="preserve">
+    <value>{0}은(는) 변형이며 중첩된 변형을 포함합니다. 변형 필드는 다른 변형 필드 내에 중첩될 수 없습니다.</value>
+  </data>
+  <data name="NonAggregateAsDefaultAggregate" xml:space="preserve">
+    <value>{0}에 대한 DefaultAggregateAttributeID 속성이 집계 특성이 아닌 {1}을(를) 참조합니다.</value>
+  </data>
+  <data name="NonAggregateExpression_Attribute" xml:space="preserve">
+    <value>{0}에 대한 식이 집계 식이 아닌데 IsAggregate 속성이 true입니다. IsAggregate이 true인 경우에는 집계 식을 지정해야 합니다.</value>
+  </data>
+  <data name="NonAggregateExpression_Measure" xml:space="preserve">
+    <value>{0}은(는) 집계 식이 아닙니다. 측정값 식은 집계 식이어야 합니다.</value>
+  </data>
+  <data name="NonBooleanFilterAttribute" xml:space="preserve">
+    <value>{0}은(는) 필터 특성이지만 데이터 형식 {1}을(를) 반환합니다. 필터 특성은 Boolean 데이터 형식을 반환해야 합니다.</value>
+  </data>
+  <data name="NonEntityGroupingWithDetails" xml:space="preserve">
+    <value>{0}에 Details가 있는데 {1} 그룹화가 EntityRef가 아닙니다. 그룹화 식이 EntityRef일 경우에만 그룹화에 Details를 포함할 수 있습니다.</value>
+  </data>
+  <data name="NonPrimaryDataSource" xml:space="preserve">
+    <value>{1}의 {0} 속성이 주 데이터 원본에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="NonUniqueInheritanceRelationColumns" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {3}에 대해 고유하게 제약된 열 집합에 바인딩되지 않은 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="NonUniqueRoleRelationColumns" xml:space="preserve">
+    <value>{0}의 Relation 속성이 {3}에 대해 고유하게 제약된 열 집합에 바인딩되지 않은 {2}의 {1} 끝을 참조합니다. 카디널리티가 One 또는 OptionalOne인 역할을 사용하려면 고유하게 제약된 테이블 열에 바인딩된 관계가 필요합니다.</value>
+  </data>
+  <data name="NonVariationAsDefaultAggregate" xml:space="preserve">
+    <value>{0}에 대한 DefaultAggregateAttributeID 속성이 "{1}"의 변형이 아닌 {2}을(를) 참조합니다. 기본 집계는 특성의 변형이어야 합니다.</value>
+  </data>
+  <data name="NullParameterValue" xml:space="preserve">
+    <value>"{0}" 매개 변수는 Null 값을 허용하지 않습니다.</value>
+  </data>
+  <data name="ObjectDescriptor_TypeAndName" xml:space="preserve">
+    <value>{0} "{1}"</value>
+  </data>
+  <data name="ParameterExpressionCardinalityMismatch" xml:space="preserve">
+    <value>{0}에 대한 Cardinality 속성이 One인데 "{1}"에 대한 기본값 식이 집합을 반환합니다. 매개 변수의 카디널리티가 One일 경우에는 기본값 식이 단일 값을 반환해야 합니다.</value>
+  </data>
+  <data name="ParameterExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0}에 대한 DataType 속성이 {2}인데 "{1}"에 대한 기본값 식이 데이터 형식 {3}을(를) 반환합니다. 기본값 식에서 반환한 데이터 형식은 매개 변수의 DataType 속성과 일치해야 합니다.</value>
+  </data>
+  <data name="ParameterExpressionNullableMismatch" xml:space="preserve">
+    <value>{0}에 대한 Nullable 속성이 false인데 "{1}"에 대한 기본값 식이 Null을 허용합니다. 기본값 식의 Null 허용 여부는 매개 변수의 Nullable 속성과 일치해야 합니다.</value>
+  </data>
+  <data name="ParameterNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 "{2}" 매개 변수를 참조합니다.</value>
+  </data>
+  <data name="ParameterNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 "{2}" 매개 변수를 참조합니다.</value>
+  </data>
+  <data name="PromoteLookupForNonLookupEntity" xml:space="preserve">
+    <value>{0}의 PromoteLookup 속성은 true인데 {1}의 IsLookup 속성은 true가 아닙니다. 역할을 포함하는 엔터티와 관련 역할을 포함하는 엔터티는 둘 다 조회 엔터티여야 합니다.</value>
+  </data>
+  <data name="RelatedRolesMismatch" xml:space="preserve">
+    <value>{0}에 대한 RelatedRoleID 속성은 {2}을(를) 참조하는데 "{3}"에 대한 RelatedRoleID 속성은 "{1}"을(를) 참조하지 않습니다. RelatedRoleID 속성은 상호 참조해야 합니다.</value>
+  </data>
+  <data name="ResultExpressionNotFound" xml:space="preserve">
+    <value>{1}의 {0} 속성이 존재하지 않는 "{2}" 식을 참조합니다.</value>
+  </data>
+  <data name="ResultExpressionNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 존재하지 않는 "{2}" 식을 참조합니다.</value>
+  </data>
+  <data name="RoleRelationEndsMismatch" xml:space="preserve">
+    <value>{0}의 Relation 속성이 {3}의 {2} 끝을 참조하는데 RelatedRole "{1}"의 Relation 속성도 {2} 끝을 참조합니다. Role과 RelatedRole의 RelationEnds는 같으면 안 됩니다.</value>
+  </data>
+  <data name="RoleRelationsMismatch" xml:space="preserve">
+    <value>{0}의 Relation 속성은 {2}을(를) 참조하는데 RelatedRole "{1}"의 Relation 속성은 {3}을(를) 참조합니다. Role과 RelatedRole의 Relation은 같아야 합니다.</value>
+  </data>
+  <data name="SelfReferentialRole" xml:space="preserve">
+    <value>{0}에 대한 RelatedRoleID 속성은 자신을 참조합니다. Role의 RelatedRoleID 속성은 다른 Role을 참조해야 합니다.</value>
+  </data>
+  <data name="SemanticModel_PerspectiveNotFound" xml:space="preserve">
+    <value>지정한 큐브 뷰 "{0}"이(가) 모델에 없습니다.</value>
+  </data>
+  <data name="TopLevelSetExpression" xml:space="preserve">
+    <value>{0}이(가) {1}의 각 인스턴스에 대해 값 집합을 반환합니다. 이 식은 엔터티의 각 인스턴스에 대해 단일 값을 반환해야 합니다.</value>
+  </data>
+  <data name="TopLevelSetExpression_Attribute" xml:space="preserve">
+    <value>{0}에 대한 식이 {1}의 각 인스턴스에 대해 값 집합을 반환합니다. 이 식은 엔터티의 각 인스턴스에 대해 단일 값을 반환해야 합니다.</value>
+  </data>
+  <data name="TopLevelSetExpression_Filter" xml:space="preserve">
+    <value>{0}에 대한 필터 식이 {1}의 각 인스턴스에 대해 값 집합을 반환합니다. 이 식은 엔터티의 각 인스턴스에 대해 단일 값을 반환해야 합니다.</value>
+  </data>
+  <data name="UnusedParameterValue" xml:space="preserve">
+    <value>"{1}" 매개 변수를 지정했는데 이 이름의 매개 변수가 {0}에 정의되어 있지 않습니다.</value>
+  </data>
+  <data name="ValidationException_MessageWithAdditionalMessages" xml:space="preserve">
+    <value>{0}
+{1}개의 추가 오류 및/또는 경고가 발생했습니다.</value>
+  </data>
+  <data name="WrongNumberOfArguments" xml:space="preserve">
+    <value>{0}에 인수의 개수가 잘못된 "{1}" 함수가 있습니다.</value>
+  </data>
+  <data name="WrongSemanticModel_ModelItem" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {1}과(와) 같은 SemanticModel에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItem" xml:space="preserve">
+    <value>{1}의 {0} 속성이 쿼리에서 참조한 SemanticModel에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItemMultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 쿼리에서 참조한 SemanticModel에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="WrongSemanticQuery" xml:space="preserve">
+    <value>{1}의 {0} 속성이 {1}과(와) 같은 SemanticQuery에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="WrongSemanticQuery_MultipleProperties" xml:space="preserve">
+    <value>{1}의 {0} 속성 중 하나가 {1}과(와) 같은 SemanticQuery에 없는 {2}을(를) 참조합니다.</value>
+  </data>
+  <data name="XmlValidationException_MessageWithLineInfo" xml:space="preserve">
+    <value>{0} 줄 {1}, 위치 {2}.</value>
+  </data>
+  <data name="Xml_NodeMismatch" xml:space="preserve">
+    <value>{2} 네임스페이스에 {0} "{1}"이(가) 필요한데 {5} 네임스페이스에 {3} "{4}"이(가) 있습니다.</value>
+  </data>
+</root>

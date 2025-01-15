@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CouldNotFindElement" xml:space="preserve">
+    <value>Ошибка при анализе файла конфигурации. Элемент {0} не найден.</value>
+  </data>
+  <data name="DataSourceConnectionErrorNotVisible" xml:space="preserve">
+    <value>Не удалось соединиться с источником данных. Подробные сведения недоступны, поскольку на сервере отключены сообщения об ошибках соединения с источником данных.</value>
+  </data>
+  <data name="DuplicateConfigElement" xml:space="preserve">
+    <value>Элемент {0} несколько раз встречается в файле конфигурации.</value>
+  </data>
+  <data name="EmptyExtensionName" xml:space="preserve">
+    <value>Обнаружен модуль без имени.</value>
+  </data>
+  <data name="GetExternalImagesInvalidNamespace" xml:space="preserve">
+    <value>Пространство имен запроса GetExternalImages является недопустимым.</value>
+  </data>
+  <data name="GetExternalImagesInvalidSyntax" xml:space="preserve">
+    <value>Синтаксис запроса GetExternalImages недопустим или не поддерживается этой версией служб Reporting Services.</value>
+  </data>
+  <data name="InvalidConfigElement" xml:space="preserve">
+    <value>Файл конфигурации содержит недопустимый элемент. Элемент {0} не является элементом файла конфигурации.</value>
+  </data>
+  <data name="InvalidKeyValue" xml:space="preserve">
+    <value>Недопустимая комбинация ключа и значения.</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidNamespace" xml:space="preserve">
+    <value>Пространство имен запроса LogClientTraceEvents является недопустимым.</value>
+  </data>
+  <data name="LogClientTraceEventsInvalidSyntax" xml:space="preserve">
+    <value>Синтаксис запроса LogClientTraceEvents недопустим или не поддерживается этой версией служб Reporting Services.</value>
+  </data>
+  <data name="MultipleSessionCatalogItemsNotSupported" xml:space="preserve">
+    <value>Свойство "sessionCatalogItems" должно содержать не более одного элемента. Публикация нескольких элементов за сеанс не поддерживается.</value>
+  </data>
+  <data name="NoEventForEventProcessor" xml:space="preserve">
+    <value>В обработчике событий {0} нет настроенных событий.</value>
+  </data>
+  <data name="ProductNamePBIRS" xml:space="preserve">
+    <value>Сервер отчетов Microsoft Power BI</value>
+  </data>
+  <data name="ProductNamePBIRSAndVersion" xml:space="preserve">
+    <value>Сервер отчетов Microsoft Power BI версии {0}</value>
+  </data>
+  <data name="ProductNameSSRS" xml:space="preserve">
+    <value>Microsoft SQL Server Reporting Services</value>
+  </data>
+  <data name="ProductNameSSRSAndVersion" xml:space="preserve">
+    <value>Версия {0} Microsoft SQL Server Reporting Services</value>
+  </data>
+  <data name="SameEventType" xml:space="preserve">
+    <value>Для типа событий "{0}" обнаружено более одного определения.</value>
+  </data>
+  <data name="SameExtensionName" xml:space="preserve">
+    <value>Более одного расширения этого типа используют одинаковое имя. Присвойте одному из расширений имя, отличное от {0}.</value>
+  </data>
+  <data name="SkuCaching" xml:space="preserve">
+    <value>Кэширование отчета</value>
+  </data>
+  <data name="SkuCommentAlerting" xml:space="preserve">
+    <value>Уведомления о комментариях к отчетам</value>
+  </data>
+  <data name="SkuComponentLibrary" xml:space="preserve">
+    <value>Галерея элементов отчетов</value>
+  </data>
+  <data name="SkuCrescent" xml:space="preserve">
+    <value>Power View</value>
+  </data>
+  <data name="SkuCustomAuth" xml:space="preserve">
+    <value>Настраиваемые модули безопасности</value>
+  </data>
+  <data name="SkuCustomRolesSecurity" xml:space="preserve">
+    <value>Настройка ролей безопасности</value>
+  </data>
+  <data name="SkuDataAlerting" xml:space="preserve">
+    <value>Предупреждение об изменении данных</value>
+  </data>
+  <data name="SkuDataDrivenSubscriptions" xml:space="preserve">
+    <value>Управляемыми данными подписки на отчеты</value>
+  </data>
+  <data name="SkuDelivery" xml:space="preserve">
+    <value>Поставка отчета</value>
+  </data>
+  <data name="SkuDynamicDrillthrough" xml:space="preserve">
+    <value>Бесконечное число переходов Report Builder</value>
+  </data>
+  <data name="SkuEventGeneration" xml:space="preserve">
+    <value>Создание события</value>
+  </data>
+  <data name="SkuExecutionSnapshots" xml:space="preserve">
+    <value>Снимки состояния выполнения отчетов</value>
+  </data>
+  <data name="SkuExtensibility" xml:space="preserve">
+    <value>Модули сервера отчетов</value>
+  </data>
+  <data name="SkuHistory" xml:space="preserve">
+    <value>Моментальные снимки журнала отчета</value>
+  </data>
+  <data name="SkuKpiItems" xml:space="preserve">
+    <value>Элементы ключевых показателей эффективности</value>
+  </data>
+  <data name="SkuMobileReportItems" xml:space="preserve">
+    <value>Элементы мобильного отчета</value>
+  </data>
+  <data name="SkuModelItemSecurity" xml:space="preserve">
+    <value>Безопасность элемента модели отчета</value>
+  </data>
+  <data name="SkuNoCpuThrottling" xml:space="preserve">
+    <value>Неограниченное количество процессоров</value>
+  </data>
+  <data name="SkuNoMemoryThrottling" xml:space="preserve">
+    <value>Неограниченный объем памяти</value>
+  </data>
+  <data name="SkuNonSqlDataSources" xml:space="preserve">
+    <value>Используемый выпуск служб Reporting Services в качестве источников данных для отчета поддерживает только реляционные базы данных SQL Server.</value>
+  </data>
+  <data name="SkuOtherSkuDatasources" xml:space="preserve">
+    <value>Выбранный экземпляр ядра СУБД не подходит для этого выпуска служб Reporting Services, так как он не соответствует требованиям выпуска к источникам данных отчетов или к базе данных сервера отчетов.</value>
+  </data>
+  <data name="SkuRemoteDataSources" xml:space="preserve">
+    <value>Используемый выпуск служб Reporting Services требует, чтобы в качестве источников данных отчета и базы данных сервера отчетов применялись локальные реляционные базы данных SQL Server.</value>
+  </data>
+  <data name="SkuReportBuilder" xml:space="preserve">
+    <value>Report Builder и модели отчетов</value>
+  </data>
+  <data name="SkuScaleOut" xml:space="preserve">
+    <value>Масштабное развертывание</value>
+  </data>
+  <data name="SkuScheduling" xml:space="preserve">
+    <value>Запланированное выполнение отчета</value>
+  </data>
+  <data name="SkuSharedDataset" xml:space="preserve">
+    <value>Общий набор данных</value>
+  </data>
+  <data name="SkuSharepoint" xml:space="preserve">
+    <value>Интеграция служб Windows SharePoint Services</value>
+  </data>
+  <data name="SkuSubscriptions" xml:space="preserve">
+    <value>Подписки на отчеты</value>
+  </data>
+  <data name="UIServerLoopback" xml:space="preserve">
+    <value>Файл конфигурации сервера отчетов определяет рабочую станцию для имени веб-сервера. Вместо этого для сервера отчетов требуется указать имя компьютера.</value>
+  </data>
+  <data name="UserNameUnknown" xml:space="preserve">
+    <value>[Неизвестно]</value>
+  </data>
+  <data name="cannotBuildExternalConnectionString" xml:space="preserve">
+    <value>Предпринята попытка создать строку подключения для внешнего источника данных "{0}".</value>
+  </data>
+  <data name="internalDataSourceNotFound" xml:space="preserve">
+    <value>Не найден внутренний источник данных в списке источников данных токенов.</value>
+  </data>
+  <data name="rFeedColumnTypeMismatchException" xml:space="preserve">
+    <value>Столбец потока данных "{0}" имеет непредвиденный тип данных.</value>
+  </data>
+  <data name="rsAccessDenied" xml:space="preserve">
+    <value>Предоставленные пользователю "{0}" разрешения недостаточны для выполнения данной операции.</value>
+  </data>
+  <data name="rsAccessDeniedToSecureData" xml:space="preserve">
+    <value>Веб-службе сервера отчетов не удается получить доступ к защищенным данным на сервере отчетов. Убедитесь, что в файле конфигурации сервера отчетов правильно указана учетная запись WebServiceAccount.</value>
+  </data>
+  <data name="rsApiVersionDiscontinued" xml:space="preserve">
+    <value>Минимальная поддерживаемая сервером версия — "{0}", а клиент имеет версию "{1}". Обновите клиент.</value>
+  </data>
+  <data name="rsApiVersionNotRecognized" xml:space="preserve">
+    <value>Сервер функционирует на версии "{0}" и не поддерживает версию клиента "{1}".</value>
+  </data>
+  <data name="rsAppDomainManagerError" xml:space="preserve">
+    <value>При попытке запустить домен приложения {0} в службах сервера отчетов произошла ошибка.</value>
+  </data>
+  <data name="rsAssemblyNotPermissioned" xml:space="preserve">
+    <value>Невозможно загрузить сборку "{0}", так как для нее не определены разрешения кода.</value>
+  </data>
+  <data name="rsAuthenticationExtensionError" xml:space="preserve">
+    <value>Модуль проверки подлинности создал непредвиденное исключение или вернул недопустимое значение: {0}.</value>
+  </data>
+  <data name="rsAuthorizationExtensionError" xml:space="preserve">
+    <value>При вызове модуля авторизации произошла ошибка.</value>
+  </data>
+  <data name="rsAuthorizationTokenInvalidOrExpired" xml:space="preserve">
+    <value>Токен авторизации недопустим, или истек срок его действия</value>
+  </data>
+  <data name="rsBackupKeyPasswordInvalid" xml:space="preserve">
+    <value>Неверный пароль ключа архивации.</value>
+  </data>
+  <data name="rsBatchNotFound" xml:space="preserve">
+    <value>Невозможно найти пакет "{0}". Эта ошибка происходит, если пакет ранее не открывался с помощью метода CreateBatch. Она также происходит, когда пакет открыт слишком долго, в результате чего истекает время ожидания.</value>
+  </data>
+  <data name="rsCacheRefreshPlanNotFound" xml:space="preserve">
+    <value>Не удалось найти план обновления кэша "{0}". Не удалось найти в серверной базе данных отчетов идентификатор плана обновления кэша, переданный в операцию.</value>
+  </data>
+  <data name="rsCachingNotEnabled" xml:space="preserve">
+    <value>Для элемента "{0}" не включено кэширование. Для выполнения этого действия необходимо включить кэширование.</value>
+  </data>
+  <data name="rsCannotActivateSubscription" xml:space="preserve">
+    <value>В данный момент невозможно активировать выбранную подписку. Модуль поставки больше не существует.</value>
+  </data>
+  <data name="rsCannotDeleteRootPolicy" xml:space="preserve">
+    <value>Невозможно удалить назначение ролей для корневой папки. Необходимо определить хотя бы одно постоянное назначение ролей для корневой папки.</value>
+  </data>
+  <data name="rsCannotPrepareQuery" xml:space="preserve">
+    <value>Невозможно создать набор данных. Ошибка при соединении с источником данных или недопустимый запрос для источника данных.</value>
+  </data>
+  <data name="rsCannotRetrieveModel" xml:space="preserve">
+    <value>При загрузке модели для элемента или источника данных "{0}" произошла ошибка. Убедитесь, что сведения о соединении верны и у вас есть разрешение на доступ к источнику данных.</value>
+  </data>
+  <data name="rsCannotSubscribeToEvent" xml:space="preserve">
+    <value>Невозможно выполнить подписку на событие типа "{0}".</value>
+  </data>
+  <data name="rsCannotValidateEncryptedData" xml:space="preserve">
+    <value>Серверу отчетов не удалось проверить целостность зашифрованных данных, хранящихся в базе данных.</value>
+  </data>
+  <data name="rsCertificateMissingOrInvalid" xml:space="preserve">
+    <value>Сертификат {0} отсутствует или недопустим.</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenError" xml:space="preserve">
+    <value>Не удается преобразовать идентификатор утверждений в токен Windows.</value>
+  </data>
+  <data name="rsClaimsToWindowsTokenLoginTypeError" xml:space="preserve">
+    <value>Не удалось преобразовать удостоверение утверждений в токен Windows. Возможно, пользователь не вошел в систему с помощью учетных данных Windows.</value>
+  </data>
+  <data name="rsClosingRegisteredStreamException" xml:space="preserve">
+    <value>При закрытии зарегистрированного потока произошла ошибка.</value>
+  </data>
+  <data name="rsComponentPublishingError" xml:space="preserve">
+    <value>В ходе публикации компонента произошла ошибка.</value>
+  </data>
+  <data name="rsContainerNotSupported" xml:space="preserve">
+    <value>Указанное расположение не поддерживается сервером отчетов. Файл определения отчета (с расширением RDL), файл модели отчета (с расширением SMDL), файл ресурсов или файл общего источника данных (с расширением RSDS) должны располагаться в библиотеке или в папке в пределах библиотеки.</value>
+  </data>
+  <data name="rsDataCacheMismatch" xml:space="preserve">
+    <value>Недопустимый кэш данных для сеанса изменения отчета. Перезапустите отчет, чтобы создать новый допустимый кэш данных.</value>
+  </data>
+  <data name="rsDataExtensionNotFound" xml:space="preserve">
+    <value>Предпринята попытка использования модуля обработки данных "{0}", который либо не зарегистрирован для этого сервера отчетов, либо не поддерживается в этом выпуске служб Reporting Services.</value>
+  </data>
+  <data name="rsDataSetExecutionError" xml:space="preserve">
+    <value>Не удалось выполнить общий набор данных "{0}".</value>
+  </data>
+  <data name="rsDataSetNotFound" xml:space="preserve">
+    <value>Не удалось найти набор данных "{0}".</value>
+  </data>
+  <data name="rsDataSetParameterValueNotSet" xml:space="preserve">
+    <value>В этом наборе данных для параметра "{0}" требуется значение по умолчанию или определяемое пользователем значение. Для выполнения этого набора данных необходимо указать значение параметра.</value>
+  </data>
+  <data name="rsDataSourceDisabled" xml:space="preserve">
+    <value>Отключен источник данных, связанный с отчетом.</value>
+  </data>
+  <data name="rsDataSourceNoPromptException" xml:space="preserve">
+    <value>Предпринята попытка задать учетные данные для связанного с отчетом источника данных "{0}". Заданы параметры источника данных отчета, которые препятствуют отправке учетных данных на сервер отчетов.</value>
+  </data>
+  <data name="rsDataSourceNotFound" xml:space="preserve">
+    <value>Невозможно найти источник данных "{0}".</value>
+  </data>
+  <data name="rsDatasourceCredentialsNoLongerValid" xml:space="preserve">
+    <value>Учетные данные для одного или нескольких источников данных больше не действительны.</value>
+  </data>
+  <data name="rsDeliverError" xml:space="preserve">
+    <value>Произошла ошибка поставки.</value>
+  </data>
+  <data name="rsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>Предпринята попытка использовать не зарегистрированный для этого сервера отчетов модуль поставки.</value>
+  </data>
+  <data name="rsElementTypeMismatch" xml:space="preserve">
+    <value>Указанное для поля {0} значение недопустимо для данного типа поля. Невозможно преобразовать строковое значение в требуемый тип.</value>
+  </data>
+  <data name="rsEmptyRole" xml:space="preserve">
+    <value>В создаваемой настраиваемой роли нет задач. В определении роли должна содержаться хотя бы одна задача.</value>
+  </data>
+  <data name="rsEncryptedDataUnavailable" xml:space="preserve">
+    <value>Серверу отчетов не удается получить доступ к зашифрованным данным. Примените ключ резервного копирования или удалите все зашифрованные данные.</value>
+  </data>
+  <data name="rsErrorNotVisibleToRemoteBrowsers" xml:space="preserve">
+    <value>Для получения дополнительных сведений об этой ошибке перейдите к серверу отчетов на локальном сервере или включите удаленный контроль ошибок</value>
+  </data>
+  <data name="rsErrorOpeningConnection" xml:space="preserve">
+    <value>Не удалось соединиться с источником данных "{0}".</value>
+  </data>
+  <data name="rsEvaluationCopyExpired" xml:space="preserve">
+    <value>Истек период оценки данного экземпляра Microsoft SQL Server Reporting Services. Требуется лицензия.</value>
+  </data>
+  <data name="rsEventExtensionNotFoundException" xml:space="preserve">
+    <value>Не определено расширение для события {0}.</value>
+  </data>
+  <data name="rsEventLogSourceNotFound" xml:space="preserve">
+    <value>Источник событий "{0}" не существует.</value>
+  </data>
+  <data name="rsEventMaxRetryExceededException" xml:space="preserve">
+    <value>Превышено максимальное количество попыток для события {0}. Обработка события пропущена.</value>
+  </data>
+  <data name="rsExecuteQueriesFailure" xml:space="preserve">
+    <value>Произошла ошибка при выполнении запроса к источнику данных "{0}".</value>
+  </data>
+  <data name="rsExecutionNotFound" xml:space="preserve">
+    <value>Срок выполнения отчета "{0}" истек, или не удается найти отчет.</value>
+  </data>
+  <data name="rsFailedToDecryptConfigInformation" xml:space="preserve">
+    <value>Невозможно расшифровать зашифрованное значение для параметра конфигурации "{0}".</value>
+  </data>
+  <data name="rsFailedToExportSymmetricKey" xml:space="preserve">
+    <value>Не удалось экспортировать симметричный ключ с помощью открытого ключа текущей установки.</value>
+  </data>
+  <data name="rsFeedValueOutOfRange" xml:space="preserve">
+    <value>Значение столбца потока данных "{0}" выходит за пределы допустимых значений для столбца этого типа данных.</value>
+  </data>
+  <data name="rsFileExtensionRequired" xml:space="preserve">
+    <value>Не удается завершить операцию, поскольку расширение файла отсутствует или является недопустимым. Допустимые расширения файлов: RDL для определений отчетов, SMDL для моделей отчетов, RSDS для общих источников данных, RSD для общих наборов данных и RSC для компонентов отчетов. Введите расширение для этого файла и повторите операцию.</value>
+  </data>
+  <data name="rsFileExtensionViolation" xml:space="preserve">
+    <value>Расширение целевого файла "{0}" не соответствует расширению исходного файла "{1}". Исходный и целевой файлы должны иметь одинаковые расширения: RDL, RSDS, ODC, RSD, RSC или SMDL. Измените расширение целевого файла, чтобы оно соответствовало расширению исходного файла.</value>
+  </data>
+  <data name="rsFileSize" xml:space="preserve">
+    <value>Размер файла превышает предел, заданный для этого сервера отчетов.</value>
+  </data>
+  <data name="rsFileSizeNotSupported" xml:space="preserve">
+    <value>Размер файла превышает поддерживаемый сейчас системой максимальный размер в 2000 МБ.</value>
+  </data>
+  <data name="rsHasUserProfileDependencies" xml:space="preserve">
+    <value>Отчет или общий набор данных "{0}" содержит зависимости пользовательского профиля, и его нельзя выполнить в автоматическом режиме.</value>
+  </data>
+  <data name="rsHttpRuntimeClientDisconnectionError" xml:space="preserve">
+    <value>Соединение между клиентом и доменом приложения {0} веб-службы сервера отчетов было прекращено. Действий по исправлению не требуется. Код ошибки отправлен в ASP.NET для освобождения соединения. Код ошибки: {1}.</value>
+  </data>
+  <data name="rsHttpRuntimeError" xml:space="preserve">
+    <value>Произошла ошибка в объекте времени выполнения HTTP для домена приложения {0}. Скорее всего, HTTP-запрос содержит неподдерживаемую команду или имеет недопустимый синтаксис.</value>
+  </data>
+  <data name="rsHttpRuntimeInternalError" xml:space="preserve">
+    <value>Произошла внутренняя или системная ошибка в объекте среды выполнения HTTP для домена приложения {0}.</value>
+  </data>
+  <data name="rsIdentityClaimsMissingOrInvalid" xml:space="preserve">
+    <value>Идентификационные утверждения "{0}" для локального подключения отсутствуют или недопустимы.</value>
+  </data>
+  <data name="rsInheritedPolicy" xml:space="preserve">
+    <value>Элемент "{0}" наследует политику безопасности родительского элемента. Наследуемые политики удалить невозможно.</value>
+  </data>
+  <data name="rsInheritedPolicyModelItem" xml:space="preserve">
+    <value>Элемент "{0}" с идентификатором "{1}" наследует политику безопасности от родительского элемента. Наследуемые политики нельзя удалять.</value>
+  </data>
+  <data name="rsInternalError" xml:space="preserve">
+    <value>Внутренняя ошибка на сервере отчетов. Дополнительные сведения см. в журнале ошибок.</value>
+  </data>
+  <data name="rsInternalResourceNotFoundError" xml:space="preserve">
+    <value>Серверу отчетов не удалось найти внутренний ресурс "{0}".</value>
+  </data>
+  <data name="rsInternalResourceNotSpecifiedError" xml:space="preserve">
+    <value>Должно быть указано имя внутреннего ресурса, если используется команда GET сервера отчетов. Проверьте, указано ли имя внутреннего ресурса, и повторите попытку.</value>
+  </data>
+  <data name="rsInvalidCatalogRecord" xml:space="preserve">
+    <value>В каталоге обнаружена неверная запись. Дополнительные сведения см. в журнале ошибок.</value>
+  </data>
+  <data name="rsInvalidConcurrentRenderEditSessionRequest" xml:space="preserve">
+    <value>Недопустимый параллельный запрос RenderEdit для сеанса {0}.</value>
+  </data>
+  <data name="rsInvalidDataSetReference" xml:space="preserve">
+    <value>Серверу отчетов не удается обработать отчет. Недопустимая ссылка на общий набор данных "{0}".</value>
+  </data>
+  <data name="rsInvalidDataSourceCount" xml:space="preserve">
+    <value>Сервер отчетов не может загрузить модель "{0}", так как ссылки на источник данных отсутствуют или отчет ссылается на несколько источников данных.  Модели могут быть загружены только для тех отчетов, которые ссылаются на один источник данных.</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSetting" xml:space="preserve">
+    <value>Не удается завершить текущее действие. Учетные данные пользовательского источника данных не отвечают требованиям для запуска этого отчета или общего набора данных. Учетные данные пользовательского источника данных не хранятся в базе данных сервера отчетов, или конфигурация пользовательского источника данных не требует учетных данных, но не задана учетная запись автоматического выполнения.</value>
+  </data>
+  <data name="rsInvalidDataSourceCredentialSettingForITokenDataExtension" xml:space="preserve">
+    <value>Не удается завершить текущее действие. Учетные данные пользовательского источника данных не отвечают требованиям для запуска этого отчета или общего набора данных. Параметры Stored или Prompt расширений данных, реализующих интерфейс ITokenDataExtension для сервера отчетов, настроенного в режиме интеграции с SharePoint, поддерживаются только учетными данными пользователей Windows. Укажите учетные данные Windows или настройте в источнике данных использование других параметров.</value>
+  </data>
+  <data name="rsInvalidDataSourceReference" xml:space="preserve">
+    <value>Серверу отчетов не удалось обработать отчет или общий набор данных. Недопустимый общий источник данных "{0}" для сервера отчетов. Перейдите на сервер или сайт и выберите другой общий источник данных.</value>
+  </data>
+  <data name="rsInvalidDataSourceType" xml:space="preserve">
+    <value>Не удается завершить текущее действие. Тип модуля обработки данных для источника данных "{0}" не подходит для этой операции.</value>
+  </data>
+  <data name="rsInvalidDestination" xml:space="preserve">
+    <value>Элементы "{0}" и "{1}" для этой операции не могут располагаться на разных узлах SharePoint. При перемещении элемента следует выбрать библиотеку, расположенную на том же узле SharePoint. Если создается подписка на отчет с особым общим расписанием, то отчет и расписание должны располагаться на одном узле SharePoint.</value>
+  </data>
+  <data name="rsInvalidElement" xml:space="preserve">
+    <value>В поле {0} содержится недопустимое значение.</value>
+  </data>
+  <data name="rsInvalidElementCombination" xml:space="preserve">
+    <value>Недопустимое сочетание значений в полях {0} и {1}.</value>
+  </data>
+  <data name="rsInvalidExtensionParameter" xml:space="preserve">
+    <value>Один из параметров расширения недопустим по следующей причине: {0}</value>
+  </data>
+  <data name="rsInvalidItemName" xml:space="preserve">
+    <value>Недопустимое имя элемента "{0}". Число символов в имени должно быть не больше {1}. Имя не должно начинаться с косой черты (/) или содержать зарезервированные символы. Существуют и другие ограничения. Дополнительные сведения о допустимых именах элементов см. на странице https://go.microsoft.com/fwlink/?LinkId=398858.</value>
+  </data>
+  <data name="rsInvalidItemPath" xml:space="preserve">
+    <value>Недопустимый путь к элементу "{0}". Полный путь не должен содержать более {1} символов. Применяются также другие ограничения. Если сервер отчетов работает в собственном режиме, то путь должен начинаться с косой черты.</value>
+  </data>
+  <data name="rsInvalidModelDrillthroughReport" xml:space="preserve">
+    <value>Недопустимый детализированный отчет {0}.</value>
+  </data>
+  <data name="rsInvalidMove" xml:space="preserve">
+    <value>Невозможно переместить папку "{0}" в указанное расположение. Целевая папка "{1}" вложена в исходную папку "{0}".</value>
+  </data>
+  <data name="rsInvalidMultipleElementCombination" xml:space="preserve">
+    <value>Недопустимое сочетание значений в полях {0}, {1} и {2}.</value>
+  </data>
+  <data name="rsInvalidOperation" xml:space="preserve">
+    <value>Указана недопустимая операция.</value>
+  </data>
+  <data name="rsInvalidParameter" xml:space="preserve">
+    <value>Недопустимое значение параметра "{0}".</value>
+  </data>
+  <data name="rsInvalidParameterCombination" xml:space="preserve">
+    <value>Для функции предоставлено недопустимое сочетание значений параметров.</value>
+  </data>
+  <data name="rsInvalidPolicyDefinition" xml:space="preserve">
+    <value>Недопустимая политика "{0}" для пользователя или группы. Назначение ролей пусто, определяет имя пользователя или группы, которое уже используется в существующем назначении ролей для выбранного элемента, либо указывает повторяющиеся роли для одного и того же пользователя или группы.</value>
+  </data>
+  <data name="rsInvalidProgressiveFormatError" xml:space="preserve">
+    <value>Недопустимый формат команды {0}.</value>
+  </data>
+  <data name="rsInvalidRSDSSchema" xml:space="preserve">
+    <value>Выбран недопустимый RSDS-файл. Он не имеет структуры XML, которая ожидается для файлов этого типа.</value>
+  </data>
+  <data name="rsInvalidReportLink" xml:space="preserve">
+    <value>Серверу отчетов не удается выполнить операцию по отчету. Ссылка на отчет больше недействительна.</value>
+  </data>
+  <data name="rsInvalidReportParameter" xml:space="preserve">
+    <value>Недопустимое значение по умолчанию или значение, предоставленное для параметра отчета "{0}".</value>
+  </data>
+  <data name="rsInvalidReportServerDatabase" xml:space="preserve">
+    <value>Версия базы данных сервера отчетов имеет недопустимый формат или ее не удается прочитать. Обнаружена версия "{0}". Ожидается версия "{1}".</value>
+  </data>
+  <data name="rsInvalidSearchOperator" xml:space="preserve">
+    <value>Недопустимый оператор поиска "{0}".</value>
+  </data>
+  <data name="rsInvalidSessionCatalogItems" xml:space="preserve">
+    <value>Свойство "sessionCatalogItems" не задано, имеет недопустимое содержимое или не поддерживается этой версией служб отчетов. Подробности: {0}.</value>
+  </data>
+  <data name="rsInvalidSessionId" xml:space="preserve">
+    <value>Недопустимый идентификатор сеанса {0}.</value>
+  </data>
+  <data name="rsInvalidSqlAgentJob" xml:space="preserve">
+    <value>Обнаружено недопустимое задание агента SQL Server "{0}".</value>
+  </data>
+  <data name="rsInvalidSubscription" xml:space="preserve">
+    <value>Обнаружена недопустимая подписка "{0}". Необходимо удалить и снова создать подписку.</value>
+  </data>
+  <data name="rsInvalidXml" xml:space="preserve">
+    <value>Входной документ XML не соответствует схеме. Грамматика XML описана в документации API. Дополнительную информацию по использованию XML в отчетах см. в синтаксисе языка определения отчетов.</value>
+  </data>
+  <data name="rsItemAlreadyExists" xml:space="preserve">
+    <value>Элемент "{0}" уже существует.</value>
+  </data>
+  <data name="rsItemContentInvalid" xml:space="preserve">
+    <value>Элемент "{0}" имеет недопустимое содержимое.</value>
+  </data>
+  <data name="rsItemNotFound" xml:space="preserve">
+    <value>Не удалось найти элемент "{0}".</value>
+  </data>
+  <data name="rsItemPathLengthExceeded" xml:space="preserve">
+    <value>Путь к элементу "{0}" превышает максимальную длину {1}. Имя пути состоит из имени самого элемента и имен родительских папок, содержащих его.</value>
+  </data>
+  <data name="rsJobWasCanceled" xml:space="preserve">
+    <value>Администратор отменил задание.</value>
+  </data>
+  <data name="rsKeyStateNotValid" xml:space="preserve">
+    <value>Сервер отчетов не может получить доступ к закрытому ключу для учетной записи службы. Этот ключ используется для дешифрования симметричного ключа, который защищает содержимое в базе данных сервера отчетов. Это состояние может возникнуть после переопределения пароля учетной записи службы сервера отчетов. Необходимо либо восстановить резервную копию ключа, либо удалить все зашифрованное содержимое.</value>
+  </data>
+  <data name="rsLogonFailed" xml:space="preserve">
+    <value>Не удалось выполнить вход. Проверьте правильность имени пользователя и пароля.</value>
+  </data>
+  <data name="rsMalformedXml" xml:space="preserve">
+    <value>Входной XML-документ имеет неправильный формат. У одного или нескольких элементов отсутствуют закрывающие теги или используются непарные теги: {0}.</value>
+  </data>
+  <data name="rsMaxCountComments" xml:space="preserve">
+    <value>Достигнуто максимальное количество комментариев.</value>
+  </data>
+  <data name="rsMissingElement" xml:space="preserve">
+    <value>Во входной структуре отсутствует требуемое поле {0}.</value>
+  </data>
+  <data name="rsMissingFeedColumnException" xml:space="preserve">
+    <value>Столбец потока данных "{0}" не найден.</value>
+  </data>
+  <data name="rsMissingParameter" xml:space="preserve">
+    <value>Не указано значение параметра "{0}". Оно либо пропущено в вызове функции, либо равно NULL.</value>
+  </data>
+  <data name="rsMissingRequiredPropertyForItemType" xml:space="preserve">
+    <value>Не указано значение свойства "{0}". Свойство отсутствует или его значение равно NULL.</value>
+  </data>
+  <data name="rsMissingSessionId" xml:space="preserve">
+    <value>Отсутствует идентификатор сеанса. Для этой операции он является обязательным.</value>
+  </data>
+  <data name="rsMixedTasks" xml:space="preserve">
+    <value>В описании настраиваемой роли не могут содержаться задачи системного и несистемного уровня одновременно для одного и того же определения роли. Для каждой категории задач необходимо указать разные роли.</value>
+  </data>
+  <data name="rsModelGenerationError" xml:space="preserve">
+    <value>Ошибка во время построения модели.</value>
+  </data>
+  <data name="rsModelGenerationNotSupported" xml:space="preserve">
+    <value>Модуль обработки данных не поддерживает построение модели.</value>
+  </data>
+  <data name="rsModelIDMismatch" xml:space="preserve">
+    <value>Идентификатор отправленной модели должен соответствовать идентификатору текущей модели.</value>
+  </data>
+  <data name="rsModelItemNotFound" xml:space="preserve">
+    <value>Элемент "{1}" не найден в модели "{0}".</value>
+  </data>
+  <data name="rsModelNotGenerated" xml:space="preserve">
+    <value>Указанная модель должна быть созданной моделью.</value>
+  </data>
+  <data name="rsModelRetrievalCanceled" xml:space="preserve">
+    <value>Получение модели отменено.</value>
+  </data>
+  <data name="rsModelRootPolicyRequired" xml:space="preserve">
+    <value>Требуется корневая политика модели</value>
+  </data>
+  <data name="rsNotEnabled" xml:space="preserve">
+    <value>Запрошенная функциональность сейчас отключена.</value>
+  </data>
+  <data name="rsNotSupported" xml:space="preserve">
+    <value>Запрашиваемая функциональность не поддерживается.</value>
+  </data>
+  <data name="rsODCVersionNotSupported" xml:space="preserve">
+    <value>Сервер отчетов поддерживает только ODC-файлы, созданные в Office 12 и более поздних версиях. Убедитесь, что ODC-файл создан в приложении Office 12, и повторите попытку.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderConnectionStringMissing" xml:space="preserve">
+    <value>Строка подключения для локального подключения пуста или имеет значение null.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderMissingEffectiveUsername" xml:space="preserve">
+    <value>Отсутствует обязательное действующее свойство имени пользователя для локального подключения.</value>
+  </data>
+  <data name="rsOnPremConnectionBuilderUnknownError" xml:space="preserve">
+    <value>Произошла неизвестная ошибка при создании локальной строки подключения. Подробности см. во внутреннем исключении.</value>
+  </data>
+  <data name="rsOperationNotSupported" xml:space="preserve">
+    <value>Функция: "{0}" не поддерживается в этом выпуске служб Reporting Services.</value>
+  </data>
+  <data name="rsOperationNotSupportedNativeMode" xml:space="preserve">
+    <value>Эта операция не поддерживается в собственном режиме сервера отчетов.</value>
+  </data>
+  <data name="rsOperationNotSupportedSharePointMode" xml:space="preserve">
+    <value>Эта операция не поддерживается на сервере отчетов, настроенном для работы в режиме интеграции с SharePoint.</value>
+  </data>
+  <data name="rsOperationPreventsUnattendedExecution" xml:space="preserve">
+    <value>Изменение параметров отчета или источников данных на указанные значения недопустимо. Отчет настроен для автоматического запуска. Использование указанных значений запрещает автоматическую обработку отчета.</value>
+  </data>
+  <data name="rsPBIServiceUnavailable" xml:space="preserve">
+    <value>В настоящий момент Power BI не удается обработать запросы. Обратитесь в службу поддержки Power BI, корреляция: {0}.</value>
+  </data>
+  <data name="rsParameterTypeMismatch" xml:space="preserve">
+    <value>Предоставленное для "{0}" значение параметра не соответствует типу параметра.</value>
+  </data>
+  <data name="rsProcessingError" xml:space="preserve">
+    <value>Ошибки во время обработки отчета.</value>
+  </data>
+  <data name="rsProgressiveFormatElementMissingError" xml:space="preserve">
+    <value>Отсутствует элемент сообщения "{0}".</value>
+  </data>
+  <data name="rsProgressiveMessageWriteElementError" xml:space="preserve">
+    <value>Произошла ошибка при записи элемента сообщения "{0}" для команды {1}.</value>
+  </data>
+  <data name="rsProgressiveMessageWriteError" xml:space="preserve">
+    <value>Произошла ошибка при записи ответа для команды {0}.</value>
+  </data>
+  <data name="rsPropertyDisabled" xml:space="preserve">
+    <value>На сервере отчетов, работающем в режиме интеграции с SharePoint, нельзя присваивать и получать значения свойств SiteName, EnableMyReports и MyReportsRole. Исключите эти свойства из запроса и повторите попытку.</value>
+  </data>
+  <data name="rsPropertyDisabledNativeMode" xml:space="preserve">
+    <value>Значение RDLXReportTimeout не может быть получено или задано на сервере отчетов, работающем в собственном режиме. Исключите эти свойства из запроса и повторите попытку.</value>
+  </data>
+  <data name="rsQueryExecutionNotAllowed" xml:space="preserve">
+    <value>Операция не поддерживается, так как выполнение запроса запрещено.</value>
+  </data>
+  <data name="rsQueryTimeout" xml:space="preserve">
+    <value>Ошибка во время проверки параметров отчета. Истекло время ожидания запроса к источнику данных.</value>
+  </data>
+  <data name="rsRdceExtraElementError" xml:space="preserve">
+    <value>Нельзя указывать больше одного элемента "{0}" в настраиваемом RDL-файле. Удалите повторяющиеся элементы и повторите попытку.</value>
+  </data>
+  <data name="rsRdceInvalidCacheOptionError" xml:space="preserve">
+    <value>Нельзя задавать свойства модуля настройки определения отчета (RDCE) для отчета, который подготавливается к просмотру из кэша. Измените параметр кэширования отчета и повторите попытку.</value>
+  </data>
+  <data name="rsRdceInvalidConfigurationError" xml:space="preserve">
+    <value>Нельзя задать свойства модуля настройки определения отчета (RDCE), поскольку этот модуль отключен или не указан в конфигурации сервера отчетов. Убедитесь, что на сервере отчетов задан в конфигурации и включен модуль RDCE, а для сервера отчета и свойства RDCE задано одинаковое имя модуля RDCE.</value>
+  </data>
+  <data name="rsRdceInvalidExecutionOptionError" xml:space="preserve">
+    <value>Нельзя задать свойства модуля настройки определения отчета (RDCE) в отчете, где включен журнал отчета, или в случае, если отчет подготавливается к просмотру из моментального снимка. Измените параметр выполнения отчета и повторите попытку.</value>
+  </data>
+  <data name="rsRdceInvalidItemTypeError" xml:space="preserve">
+    <value>Нельзя задать свойства для модуля настройки определения отчета (RDCE) в элементе типа "{0}". Свойства модуля RDCE можно задавать только для элементов отчета. Свойства модуля RDCE нельзя задавать для связанных отчетов и элементов других типов.</value>
+  </data>
+  <data name="rsRdceInvalidRdlError" xml:space="preserve">
+    <value>Модуль настройки определения отчета (RDCE) возвратил недопустимый RDL-файл или значение NULL. Убедитесь, что RDL-файл содержит допустимый XML-код.</value>
+  </data>
+  <data name="rsRdceMismatchError" xml:space="preserve">
+    <value>Имя модуля настройки определения отчета (RDCE), указанное в отчете, не совпадает с именем модуля RDCE, указанного в конфигурации сервера отчетов. В отчете указан модуль "{0}", но для сервера отчетов указан модуль "{1}". Убедитесь, что в отчете и на сервере отчетов указано одно и то же имя модуля.</value>
+  </data>
+  <data name="rsRdceMismatchRdlVersion" xml:space="preserve">
+    <value>Модуль настройки определения отчета (RDCE) вернул версию языка определения отчетов, отличную от ранее переданной ему. Возвращаемая версия языка определения отчетов должна совпадать со входящей.</value>
+  </data>
+  <data name="rsRdceWrappedException" xml:space="preserve">
+    <value>Ошибка при вызове модуля настройки определения отчета (RDCE).</value>
+  </data>
+  <data name="rsReadOnlyDataSetParameter" xml:space="preserve">
+    <value>Параметр набора данных "{0}" доступен только для чтения, и его нельзя изменить.</value>
+  </data>
+  <data name="rsReadOnlyProperty" xml:space="preserve">
+    <value>Невозможно удалить или изменить свойство "{0}", так как оно доступно только для чтения.</value>
+  </data>
+  <data name="rsReadOnlyReportParameter" xml:space="preserve">
+    <value>Невозможно изменить параметр отчета "{0}", так как он доступен только для чтения.</value>
+  </data>
+  <data name="rsRemotePublicKeyUnavailable" xml:space="preserve">
+    <value>Новый узел веб-фермы не поместил в базу данных свой открытый ключ. Возможно, не удалось соединиться с требуемой базой данных или не запущена служба Windows.</value>
+  </data>
+  <data name="rsReportBuilderFileTransmissionError" xml:space="preserve">
+    <value>Серверу отчетов не удалось передать файл, поскольку файл {0} не установлен или отсутствуют необходимые разрешения на доступ к нему.</value>
+  </data>
+  <data name="rsReportHistoryNotFound" xml:space="preserve">
+    <value>Невозможно найти моментальный снимок отчета "{1}" для отчета "{0}". Невозможно найти идентификатор моментального снимка в базе данных сервера отчетов.</value>
+  </data>
+  <data name="rsReportNotReady" xml:space="preserve">
+    <value>Выбранный отчет не готов для просмотра. Выполняется подготовка отчета к отображению, или недоступен моментальный снимок отчета.</value>
+  </data>
+  <data name="rsReportParameterTypeMismatch" xml:space="preserve">
+    <value>Указанное для параметра отчета "{0}" значение недопустимо для данного типа.</value>
+  </data>
+  <data name="rsReportParameterValueNotSet" xml:space="preserve">
+    <value>Для параметра отчета "{0}" требуется значение по умолчанию или значение, определенное пользователем. Для запуска этого отчета или подписки необходимо предоставить значение параметра.</value>
+  </data>
+  <data name="rsReportSerializationError" xml:space="preserve">
+    <value>При сериализации отчета произошла ошибка.</value>
+  </data>
+  <data name="rsReportServerDatabaseError" xml:space="preserve">
+    <value>В базе данных сервера отчетов произошла ошибка. Это могло произойти из-за ошибки соединения, истечения времени ожидания или нехватки места на диске базы данных.</value>
+  </data>
+  <data name="rsReportServerDatabaseLogonFailed" xml:space="preserve">
+    <value>Серверу отчетов не удается установить соединение с базой данных сервера отчетов. Не удалось выполнить вход.</value>
+  </data>
+  <data name="rsReportServerDatabaseUnavailable" xml:space="preserve">
+    <value>Серверу отчетов не удается установить соединение с базой данных сервера отчетов. Для всех запросов и обработки требуется соединение с базой данных.</value>
+  </data>
+  <data name="rsReportServerDisabled" xml:space="preserve">
+    <value>Сервер отчетов не может расшифровать симметричный ключ, используемый для доступа к конфиденциальным или зашифрованным данным в базе данных сервера отчетов. Необходимо либо восстановить резервную копию ключа, либо удалить все зашифрованное содержимое.</value>
+  </data>
+  <data name="rsReportServerKeyContainerError" xml:space="preserve">
+    <value>Не удалось включить службы Reporting Services с помощью учетной записи {0}.</value>
+  </data>
+  <data name="rsReportServerNotActivated" xml:space="preserve">
+    <value>Установка сервера отчетов не инициализирована.</value>
+  </data>
+  <data name="rsReportServerServiceUnavailable" xml:space="preserve">
+    <value>Не запущена служба Windows сервера отчетов "{0}". Для использования сервера отчетов необходимо, чтобы эта служба была запущена.</value>
+  </data>
+  <data name="rsReportServerStorageRefreshConnectionNotValidated" xml:space="preserve">
+    <value>Подключение обновления с идентификатором "{1}" для модели с идентификатором "{0}" не прошло проверку.</value>
+  </data>
+  <data name="rsReportServerStorageSingleRefreshConnectionExpected" xml:space="preserve">
+    <value>Поддерживается только одно подключение обновления, а для модели с идентификатором {0} их обнаружено {1}.</value>
+  </data>
+  <data name="rsReportSnapshotEnabled" xml:space="preserve">
+    <value>Операция не поддерживается для отчетов, настроенных для запуска в снимках состояния выполнения отчета.</value>
+  </data>
+  <data name="rsReportSnapshotNotEnabled" xml:space="preserve">
+    <value>Создание или обновление моментального снимка запрещено параметрами журнала или выполнения отчета.</value>
+  </data>
+  <data name="rsReportTimeoutExpired" xml:space="preserve">
+    <value>Истекло время ожидания операции. Операция отменена сервером отчетов.</value>
+  </data>
+  <data name="rsRequestEncodingFormatException" xml:space="preserve">
+    <value>Операцию нельзя выполнить, так как формат шифрования запроса не соответствует формату, заданному в заголовке запроса.</value>
+  </data>
+  <data name="rsRequestThroughHttpRedirectorNotSupportedError" xml:space="preserve">
+    <value>Этот перенаправитель HTTP нельзя использовать для обработки запроса. Дополнительные сведения см. в журнале трассировки сервера отчетов.</value>
+  </data>
+  <data name="rsReservedItem" xml:space="preserve">
+    <value>Папка "{0}" зарезервирована, поэтому ее невозможно создать, удалить или переместить.</value>
+  </data>
+  <data name="rsReservedRole" xml:space="preserve">
+    <value>Невозможно удалить роль {0}, так как она зарезервирована или используется.</value>
+  </data>
+  <data name="rsResolutionFailureException" xml:space="preserve">
+    <value>В Reporting Services произошла ошибка при попытке разрешения метаданных для базы данных {0}.</value>
+  </data>
+  <data name="rsRestrictedItem" xml:space="preserve">
+    <value>Элемент "{0}" ограничен SKU.</value>
+  </data>
+  <data name="rsRoleAlreadyExists" xml:space="preserve">
+    <value>Невозможно создать роль "{0}", так как она уже существует.</value>
+  </data>
+  <data name="rsRoleNotFound" xml:space="preserve">
+    <value>Не удается найти роль "{0}".</value>
+  </data>
+  <data name="rsSPSiteNotFound" xml:space="preserve">
+    <value>Не удалось найти сайт SharePoint с идентификатором {0}.</value>
+  </data>
+  <data name="rsScheduleAlreadyExists" xml:space="preserve">
+    <value>Невозможно создать или переименовать расписание "{0}", так как оно уже существует. Эта ошибка возникает, если имя расписания не является уникальным.</value>
+  </data>
+  <data name="rsScheduleDateTimeRangeException" xml:space="preserve">
+    <value>Определение расписания содержит недопустимую дату. Дата должна быть в диапазоне от 01.01.1990 до 31.12.9999.</value>
+  </data>
+  <data name="rsScheduleNotFound" xml:space="preserve">
+    <value>Не удалось найти расписание "{0}". Указанный для операции идентификатор расписания невозможно найти в каталоге.</value>
+  </data>
+  <data name="rsSchedulerNotResponding" xml:space="preserve">
+    <value>Служба SQL Agent не запущена. Она требуется для этой операции.</value>
+  </data>
+  <data name="rsSchedulerNotRespondingPreventsPinning" xml:space="preserve">
+    <value>Сейчас закрепить это в Power BI невозможно, так как служба, планирующая обновление плиток панелей мониторинга (агент SQL Server), не запущена на сервере отчетов.</value>
+  </data>
+  <data name="rsSecureConnectionRequired" xml:space="preserve">
+    <value>Для операции требуется безопасное соединение (HTTPS).</value>
+  </data>
+  <data name="rsSecureStoreAmbiguousCredentialFields" xml:space="preserve">
+    <value>Не удалось извлечь учетные данные из службы Secure Store. Целевое приложение "{0}" возвратило больше одного поля одного и того же типа, например два имени пользователя Windows. Оно должно возвращать не больше одного поля любого конкретного типа.</value>
+  </data>
+  <data name="rsSecureStoreCannotRetrieveCredentials" xml:space="preserve">
+    <value>Невозможно извлечь учетные данные из службы Secure Store: {0}</value>
+  </data>
+  <data name="rsSecureStoreContextUrlNotSpecified" xml:space="preserve">
+    <value>Не удалось извлечь учетные данные из службы Secure Store. Контекст SharePoint для текущего сеанса неизвестен. В запросе на определение сеанса не указан HTTP-заголовок X-BI-Context-URL.</value>
+  </data>
+  <data name="rsSecureStoreInvalidLookupContext" xml:space="preserve">
+    <value>Не удалось извлечь учетные данные из службы Secure Store. Указателю LookupContext назначено значение Unattended, но не настроена учетная запись автоматического выполнения на сервере отчетов. Настройте учетную запись автоматического выполнения, чтобы обеспечить получение учетных данных для этой учетной записи.</value>
+  </data>
+  <data name="rsSecureStoreMissingCredentialFields" xml:space="preserve">
+    <value>Невозможно извлечь учетные данные из службы Secure Store. В целевом приложении "{0}" отсутствует обязательное поле. Оно должно возвращать одно имя пользователя Windows и один пароль Windows.</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedCredentialField" xml:space="preserve">
+    <value>Невозможно извлечь учетные данные из службы Secure Store. Целевое приложение "{0}" возвратило поле неподдерживаемого типа. Оно должно возвращать только имя пользователя Windows и пароль Windows.</value>
+  </data>
+  <data name="rsSecureStoreUnsupportedSharePointVersion" xml:space="preserve">
+    <value>Невозможно получить учетные данные из службы SharePoint Secure Store. Службы Reporting Services не поддерживают службу Secure Store для установленной версии SharePoint.</value>
+  </data>
+  <data name="rsSecurityZoneNotSupported" xml:space="preserve">
+    <value>Указанный путь ссылается на зону SharePoint, которая не поддерживается. Должна использоваться зона по умолчанию.</value>
+  </data>
+  <data name="rsSemanticQueryExtensionNotFound" xml:space="preserve">
+    <value>Предпринята попытка использовать модуль семантического запроса, связанный с незарегистрированным для этого сервера отчетов модулем обработки данных "{0}".</value>
+  </data>
+  <data name="rsServerBusy" xml:space="preserve">
+    <value>Сервер отчетов не может обрабатывать запросы, пока не станут доступны ресурсы памяти или обработки.</value>
+  </data>
+  <data name="rsServerConfigurationError" xml:space="preserve">
+    <value>Сервер отчетов обнаружил ошибку конфигурации. {0}</value>
+  </data>
+  <data name="rsSessionNotFound" xml:space="preserve">
+    <value>Не удалось найти сеанс "{0}" для пользователя: "{1}".</value>
+  </data>
+  <data name="rsSharePointContentDBAccessError" xml:space="preserve">
+    <value>Серверу отчетов не удалось получить доступ к содержимому базы данных этого веб-приложения. Возможно, у учетной записи пула приложений нет необходимых разрешений. Перейдите на страницу свойств этого приложения служб SQL Server Reporting Services и убедитесь в наличии необходимых разрешений.</value>
+  </data>
+  <data name="rsSharePointError" xml:space="preserve">
+    <value>Сервер отчетов обнаружил ошибку SharePoint.</value>
+  </data>
+  <data name="rsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Параметр конфигурации SharePointIntegrated имеет значение True, однако загрузить объектную модель SharePoint не удалось. Ошибка: {0}.</value>
+  </data>
+  <data name="rsSharePoitScheduleAlreadyExists" xml:space="preserve">
+    <value>Расписание "{0}" на узле SharePoint "{1}" уже существует и не может быть создано или переименовано. Эта ошибка возникает в том случае, когда имя расписания не является уникальным в пределах узла.</value>
+  </data>
+  <data name="rsSnapshotVersionMismatch" xml:space="preserve">
+    <value>Обнаружен моментальный снимок служб SQL Reporting Services версии 2000. Можно предпринять попытку автоматического обновления.</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleError" xml:space="preserve">
+    <value>Недопустимая начальная часть.</value>
+  </data>
+  <data name="rsSoapExtensionInvalidPreambleLengthError" xml:space="preserve">
+    <value>Недопустимая длина начальной части. Длина составляет {0} байт.</value>
+  </data>
+  <data name="rsStoredCredentialsOutOfSync" xml:space="preserve">
+    <value>Недопустимый файл источника данных {0}. Этот файл был изменен без синхронизации с сервером отчетов.</value>
+  </data>
+  <data name="rsStoredParameterNotFound" xml:space="preserve">
+    <value>Не обнаружен параметр, определяемый "{0}".</value>
+  </data>
+  <data name="rsStreamNotFound" xml:space="preserve">
+    <value>Не удалось найти поток. Невозможно найти указанный для операции идентификатор потока в базе данных сервера отчетов.</value>
+  </data>
+  <data name="rsStreamOperationFailed" xml:space="preserve">
+    <value>Произошла внутренняя ошибка при выполнении потоковой операции. Дополнительные сведения см. в журнале ошибок.</value>
+  </data>
+  <data name="rsSubreportFromSnapshot" xml:space="preserve">
+    <value>Эта операция не поддерживается, если вложенный отчет настроен для выполнения в качестве моментального снимка отчета.</value>
+  </data>
+  <data name="rsSubscriptionNotFound" xml:space="preserve">
+    <value>Не удалось найти подписку "{0}". Указанный для операции идентификатор подписки невозможно найти в базе данных сервера отчетов.</value>
+  </data>
+  <data name="rsSystemResourcePackageItemContentTypeMismatch" xml:space="preserve">
+    <value>Для типа пакета системных ресурсов необходимо, чтобы элемент "{0}" имел тип содержимого "{1}".</value>
+  </data>
+  <data name="rsSystemResourcePackageItemExtensionMismatch" xml:space="preserve">
+    <value>Для типа пакета системных ресурсов необходимо, чтобы элемент "{0}" имел расширение файла "{1}".</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataInvalid" xml:space="preserve">
+    <value>Файл метаданных для пакета системных ресурсов недопустим.</value>
+  </data>
+  <data name="rsSystemResourcePackageMetadataNotFound" xml:space="preserve">
+    <value>Пакет системных ресурсов не содержит файл metadata.xml.</value>
+  </data>
+  <data name="rsSystemResourcePackageReferencedItemMissing" xml:space="preserve">
+    <value>Метаданные пакета системных ресурсов ссылаются на элемент "{0}", но его не удалось найти.</value>
+  </data>
+  <data name="rsSystemResourcePackageRequiredItemMissing" xml:space="preserve">
+    <value>Для типа пакета системных ресурсов требуется элемент "{0}", но его не удалось найти.</value>
+  </data>
+  <data name="rsSystemResourcePackageValidationFailed" xml:space="preserve">
+    <value>Пакет системных ресурсов недопустим.</value>
+  </data>
+  <data name="rsSystemResourcePackageWrongType" xml:space="preserve">
+    <value>Указанный пакет системных ресурсов не относится к типу "{0}".</value>
+  </data>
+  <data name="rsTaskNotFound" xml:space="preserve">
+    <value>Задача "{0}" не существует.</value>
+  </data>
+  <data name="rsUnhandledHttpApplicationError" xml:space="preserve">
+    <value>Сервер отчетов обнаружил необработанное исключение в классе HttpApplication.</value>
+  </data>
+  <data name="rsUnknownDataSetParameter" xml:space="preserve">
+    <value>Выполнена попытка установить параметр набора данных "{0}", который не определен в этом наборе данных.</value>
+  </data>
+  <data name="rsUnknownEventType" xml:space="preserve">
+    <value>Предпринята попытка использовать тип событий "{0}", не зарегистрированный на этом сервере отчетов для внешнего использования.</value>
+  </data>
+  <data name="rsUnknownFeedColumnType" xml:space="preserve">
+    <value>Столбец потока данных "{0}" имеет неподдерживаемый тип данных.</value>
+  </data>
+  <data name="rsUnknownReportParameter" xml:space="preserve">
+    <value>Предпринята попытка задать не определенный для данного отчета параметр "{0}".</value>
+  </data>
+  <data name="rsUnknownUserName" xml:space="preserve">
+    <value>Не распознано имя "{0}" пользователя или группы.</value>
+  </data>
+  <data name="rsUnrecognizedXmlElement" xml:space="preserve">
+    <value>Входной XML не соответствует документации по API-интерфейсу: нераспознанный элемент "{0}" во входном XML.</value>
+  </data>
+  <data name="rsUnsupportedParameterForMode" xml:space="preserve">
+    <value>Параметр "{1}" не поддерживается на сервере отчетов, работающем в режиме {0}. Его нужно установить в значение NULL.</value>
+  </data>
+  <data name="rsUrlRemapError" xml:space="preserve">
+    <value>Не удается сопоставить URL-адрес "{0}" с общедоступным URL-адресом в этой среде SharePoint.</value>
+  </data>
+  <data name="rsUserCannotOwnSubscription" xml:space="preserve">
+    <value>Не удается назначить указанного пользователя владельцем этой подписки. У пользователя отсутствуют необходимые разрешения на подписку на отчет, связанный с этой подпиской.</value>
+  </data>
+  <data name="rsVersionMismatch" xml:space="preserve">
+    <value>Версии надстройки служб Reporting Services для SharePoint и приложения служб Reporting Services несовместимы или не поддерживают эту функцию.</value>
+  </data>
+  <data name="rsWinAuthz" xml:space="preserve">
+    <value>Windows возвратила ошибку "{1}" при попытке служб Reporting Services вызвать интерфейсы API авторизации Windows (Windows Authz). Если проблема будет повторяться, это может означать, что в Windows имеются проблемы с подключением к домену или учетной записи служб Reporting Services не предоставлено разрешение на выполнение проверок в рамках процедуры проверки подлинности. Дополнительные сведения и подробности о диагностировании проблем см. в документации по Windows Authz. Метод авторизации: "{0}", код ошибки: "{1}", имя пользователя: "{2}".</value>
+  </data>
+  <data name="rsWinAuthz1355" xml:space="preserve">
+    <value>Windows возвратила ошибку ERROR_NO_SUCH_DOMAIN при попытке служб Reporting Services вызвать интерфейсы API авторизации Windows (Windows Authz). Если проблема будет повторяться, это может означать, что в Windows имеются проблемы с подключением к домену. Дополнительные сведения и подробности о диагностировании проблем см. в документации по Windows Authz. Метод авторизации: "{0}", код ошибки: 1355, имя пользователя: "{1}".</value>
+  </data>
+  <data name="rsWinAuthz5" xml:space="preserve">
+    <value>Windows возвратила ошибку ERROR_ACCESS_DENIED при попытке служб Reporting Services вызвать интерфейсы API авторизации Windows (Windows Authz). Если проблема будет повторяться, это может означать, что учетной записи служб Reporting Services не предоставлено разрешение на выполнение проверок в рамках процедуры проверки подлинности. Дополнительные сведения и подробности о диагностировании проблем см. в документации по Windows Authz. Метод авторизации: "{0}", код ошибки: 5, имя пользователя: "{1}".</value>
+  </data>
+  <data name="rsWindowsIntegratedSecurityDisabled" xml:space="preserve">
+    <value>Этот источник данных настроен для использования встроенной безопасности Windows. Для этого сервера отчетов отключена встроенная безопасность Windows, либо сервер использует режим доверенных учетных записей.</value>
+  </data>
+  <data name="rsWrongItemType" xml:space="preserve">
+    <value>Операция, запрошенная для элемента "{0}", не поддерживается для этого типа элемента.</value>
+  </data>
+</root>

@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace Microsoft.AnalysisServices.MsoId
+{
+	// Token: 0x0200011A RID: 282
+	internal enum IDENTITY_FLAG
+	{
+		// Token: 0x040009FF RID: 2559
+		IDENTITY_ALL_BIT = 8191,
+		// Token: 0x04000A00 RID: 2560
+		IDENTITY_SHARE_ALL = 255,
+		// Token: 0x04000A01 RID: 2561
+		IDENTITY_LOAD_FROM_PERSISTED_STORE,
+		// Token: 0x04000A02 RID: 2562
+		IDENTITY_AUTHSTATE_ENCRYPTED = 512,
+		// Token: 0x04000A03 RID: 2563
+		IDENTITY_DEVICEID_LOGICAL = 4096
+	}
+}

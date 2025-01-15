@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog", "NLog\NLog.csproj", "{443929B4-EB56-4498-B827-FF404C247366}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{443929B4-EB56-4498-B827-FF404C247366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443929B4-EB56-4498-B827-FF404C247366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443929B4-EB56-4498-B827-FF404C247366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443929B4-EB56-4498-B827-FF404C247366}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

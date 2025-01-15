@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A7F3477-4712-4271-8688-4CD8850815DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ApplicationInsights</RootNamespace>
+    <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Channel\IAiSerializableTelemetry.cs" />
+    <Compile Include="Channel\InMemoryChannel.cs" />
+    <Compile Include="Channel\InMemoryTransmitter.cs" />
+    <Compile Include="Channel\ITelemetry.cs" />
+    <Compile Include="Channel\ITelemetryChannel.cs" />
+    <Compile Include="Channel\TelemetryBuffer.cs" />
+    <Compile Include="Channel\Transmission.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataContracts\AvailabilityTelemetry.cs" />
+    <Compile Include="DataContracts\DependencyTelemetry.cs" />
+    <Compile Include="DataContracts\EventTelemetry.cs" />
+    <Compile Include="DataContracts\ExceptionDetailsInfo.cs" />
+    <Compile Include="DataContracts\ExceptionHandledAt.cs" />
+    <Compile Include="DataContracts\ExceptionInfo.cs" />
+    <Compile Include="DataContracts\ExceptionTelemetry.cs" />
+    <Compile Include="DataContracts\IJsonWriter.cs" />
+    <Compile Include="DataContracts\InnerExceptionCountExceededException.cs" />
+    <Compile Include="DataContracts\ISupportMetrics.cs" />
+    <Compile Include="DataContracts\ISupportProperties.cs" />
+    <Compile Include="DataContracts\ISupportSampling.cs" />
+    <Compile Include="DataContracts\MetricTelemetry.cs" />
+    <Compile Include="DataContracts\PageViewPerformanceTelemetry.cs" />
+    <Compile Include="DataContracts\PageViewTelemetry.cs" />
+    <Compile Include="DataContracts\PerformanceCounterTelemetry.cs" />
+    <Compile Include="DataContracts\RequestTelemetry.cs" />
+    <Compile Include="DataContracts\SessionState.cs" />
+    <Compile Include="DataContracts\SessionStateTelemetry.cs" />
+    <Compile Include="DataContracts\SeverityLevel.cs" />
+    <Compile Include="DataContracts\StackFrame.cs" />
+    <Compile Include="DataContracts\TelemetryContext.cs" />
+    <Compile Include="DataContracts\TraceTelemetry.cs" />
+    <Compile Include="Extensibility\AutocollectedMetricsExtractor.cs" />
+    <Compile Include="Extensibility\IApplicationIdProvider.cs" />
+    <Compile Include="Extensibility\IDebugOutput.cs" />
+    <Compile Include="Extensibility\IExtension.cs" />
+    <Compile Include="Extensibility\Implementation\ApplicationId\ApplicationIdHelper.cs" />
+    <Compile Include="Extensibility\Implementation\ApplicationId\ApplicationInsightsApplicationIdProvider.cs" />
+    <Compile Include="Extensibility\Implementation\ApplicationId\DictionaryApplicationIdProvider.cs" />
+    <Compile Include="Extensibility\Implementation\ApplicationId\FailedRequestsManager.cs" />
+    <Compile Include="Extensibility\Implementation\ApplicationId\ProfileServiceWrapper.cs" />
+    <Compile Include="Extensibility\Implementation\CallContextHelpers.cs" />
+    <Compile Include="Extensibility\Implementation\CloudContext.cs" />
+    <Compile Include="Extensibility\Implementation\ComponentContext.cs" />
+    <Compile Include="Extensibility\Implementation\DeviceContext.cs" />
+    <Compile Include="Extensibility\Implementation\DictionarySerializationWriter.cs" />
+    <Compile Include="Extensibility\Implementation\ExceptionConverter.cs" />
+    <Compile Include="Extensibility\Implementation\External\AvailabilityData.cs" />
+    <Compile Include="Extensibility\Implementation\External\Base.cs" />
+    <Compile Include="Extensibility\Implementation\External\ContextTagKeys.cs" />
+    <Compile Include="Extensibility\Implementation\External\Data.cs" />
+    <Compile Include="Extensibility\Implementation\External\DataPoint.cs" />
+    <Compile Include="Extensibility\Implementation\External\DataPointType.cs" />
+    <Compile Include="Extensibility\Implementation\External\Domain.cs" />
+    <Compile Include="Extensibility\Implementation\External\Envelope.cs" />
+    <Compile Include="Extensibility\Implementation\External\EventData.cs" />
+    <Compile Include="Extensibility\Implementation\External\ExceptionData.cs" />
+    <Compile Include="Extensibility\Implementation\External\ExceptionDetails.cs" />
+    <Compile Include="Extensibility\Implementation\External\MessageData.cs" />
+    <Compile Include="Extensibility\Implementation\External\MetricData.cs" />
+    <Compile Include="Extensibility\Implementation\External\PageViewData.cs" />
+    <Compile Include="Extensibility\Implementation\External\PageViewPerfData.cs" />
+    <Compile Include="Extensibility\Implementation\External\RemoteDependencyData.cs" />
+    <Compile Include="Extensibility\Implementation\External\RequestData.cs" />
+    <Compile Include="Extensibility\Implementation\External\SeverityLevel.cs" />
+    <Compile Include="Extensibility\Implementation\External\StackFrame.cs" />
+    <Compile Include="Extensibility\Implementation\External\Tags.cs" />
+    <Compile Include="Extensibility\Implementation\HttpWebResponseWrapper.cs" />
+    <Compile Include="Extensibility\Implementation\InternalContext.cs" />
+    <Compile Include="Extensibility\Implementation\IPlatform.cs" />
+    <Compile Include="Extensibility\Implementation\IPlatformDispatcher.cs" />
+    <Compile Include="Extensibility\Implementation\IRandomNumberBatchGenerator.cs" />
+    <Compile Include="Extensibility\Implementation\JsonSerializationWriter.cs" />
+    <Compile Include="Extensibility\Implementation\JsonSerializer.cs" />
+    <Compile Include="Extensibility\Implementation\LocationContext.cs" />
+    <Compile Include="Extensibility\Implementation\Metrics\DependencyMetricsExtractor.cs" />
+    <Compile Include="Extensibility\Implementation\Metrics\ISpecificAutocollectedMetricsExtractor.cs" />
+    <Compile Include="Extensibility\Implementation\Metrics\MetricTerms.cs" />
+    <Compile Include="Extensibility\Implementation\Metrics\RequestMetricsExtractor.cs" />
+    <Compile Include="Extensibility\Implementation\OperationContext.cs" />
+    <Compile Include="Extensibility\Implementation\OperationContextForCallContext.cs" />
+    <Compile Include="Extensibility\Implementation\OperationHolder.cs" />
+    <Compile Include="Extensibility\Implementation\OperationTelemetry.cs" />
+    <Compile Include="Extensibility\Implementation\Platform\PlatformImplementation.cs" />
+    <Compile Include="Extensibility\Implementation\Platform\PlatformSingleton.cs" />
+    <Compile Include="Extensibility\Implementation\Property.cs" />
+    <Compile Include="Extensibility\Implementation\RichPayloadEventSource.cs" />
+    <Compile Include="Extensibility\Implementation\SdkVersionUtils.cs" />
+    <Compile Include="Extensibility\Implementation\SessionContext.cs" />
+    <Compile Include="Extensibility\Implementation\SeverityLevelExtensions.cs" />
+    <Compile Include="Extensibility\Implementation\SnapshottingCollection.cs" />
+    <Compile Include="Extensibility\Implementation\SnapshottingList.cs" />
+    <Compile Include="Extensibility\Implementation\TaskTimer.cs" />
+    <Compile Include="Extensibility\Implementation\TaskTimerInternal.cs" />
+    <Compile Include="Extensibility\Implementation\Telemetry.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryConfigurationFactory.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryContextExtensions.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryDebugWriter.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryModules.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryProcessorChain.cs" />
+    <Compile Include="Extensibility\Implementation\TelemetryProcessorChainBuilder.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\ApplicationNameProvider.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\BaseDefaultHeartbeatPropertyProvider.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\CoreEventSource.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnoisticsEventCounters.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnoisticsEventThrottling.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnoisticsEventThrottlingDefaults.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnoisticsEventThrottlingManager.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnoisticsEventThrottlingScheduler.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnosticsEventListener.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnosticsListener.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\DiagnosticsTelemetryModule.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventMetaData.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventSourceKeywords.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\Extensions.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\HeartbeatDefaultPayload.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\HeartbeatPropertyPayload.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\HeartbeatProvider.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IDiagnoisticsEventThrottling.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IDiagnoisticsEventThrottlingManager.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IDiagnoisticsEventThrottlingScheduler.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IDiagnosticsSender.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IHeartbeatDefaultPayloadProvider.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IHeartbeatPropertyManager.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\IHeartbeatProvider.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\PortalDiagnosticsQueueSender.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\PortalDiagnosticsSender.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\SpinWait.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\ThreadResourceLock.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\TraceEvent.cs" />
+    <Compile Include="Extensibility\Implementation\TransmissionProcessor.cs" />
+    <Compile Include="Extensibility\Implementation\TypeExtensions.cs" />
+    <Compile Include="Extensibility\Implementation\UserContext.cs" />
+    <Compile Include="Extensibility\Implementation\Utils.cs" />
+    <Compile Include="Extensibility\Implementation\WeakConcurrentRandom.cs" />
+    <Compile Include="Extensibility\Implementation\XorshiftRandomBatchGenerator.cs" />
+    <Compile Include="Extensibility\IOperationHolder.cs" />
+    <Compile Include="Extensibility\ISerializableWithWriter.cs" />
+    <Compile Include="Extensibility\ISerializationWriter.cs" />
+    <Compile Include="Extensibility\ITelemetryInitializer.cs" />
+    <Compile Include="Extensibility\ITelemetryModule.cs" />
+    <Compile Include="Extensibility\ITelemetryProcessor.cs" />
+    <Compile Include="Extensibility\OperationCorrelationTelemetryInitializer.cs" />
+    <Compile Include="Extensibility\SdkInternalOperationsMonitor.cs" />
+    <Compile Include="Extensibility\SequencePropertyInitializer.cs" />
+    <Compile Include="Extensibility\TelemetryConfiguration.cs" />
+    <Compile Include="Extensibility\TelemetrySink.cs" />
+    <Compile Include="Extensibility\TelemetrySinkCollection.cs" />
+    <Compile Include="Extensibility\W3C\W3CActivityExtensions.cs" />
+    <Compile Include="Extensibility\W3C\W3CConstants.cs" />
+    <Compile Include="Extensibility\W3C\W3COperationCorrelationTelemetryInitializer.cs" />
+    <Compile Include="Extensibility\W3C\W3CUtilities.cs" />
+    <Compile Include="Metric.cs" />
+    <Compile Include="MetricAggregationScope.cs" />
+    <Compile Include="MetricConfigurations.cs" />
+    <Compile Include="MetricConfigurationsExtensions.cs" />
+    <Compile Include="MetricDimensionNames.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\GrowingCollection.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\MultidimensionalCube.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\MultidimensionalCube2.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\MultidimensionalCubeDimension.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\MultidimensionalPointResult.cs" />
+    <Compile Include="Metrics\ConcurrentDatastructures\MultidimensionalPointResultCodes.cs" />
+    <Compile Include="Metrics\DefaultAggregationPeriodCycle.cs" />
+    <Compile Include="Metrics\Extensibility\AggregationPeriodSummary.cs" />
+    <Compile Include="Metrics\Extensibility\ApplicationInsightsTelemetryPipeline.cs" />
+    <Compile Include="Metrics\Extensibility\IMetricAggregateToTelemetryPipelineConverter.cs" />
+    <Compile Include="Metrics\Extensibility\IMetricSeriesAggregator.cs" />
+    <Compile Include="Metrics\Extensibility\IMetricSeriesFilter.cs" />
+    <Compile Include="Metrics\Extensibility\IMetricTelemetryPipeline.cs" />
+    <Compile Include="Metrics\Extensibility\IMetricValueFilter.cs" />
+    <Compile Include="Metrics\Extensibility\MemoryMetricTelemetryPipeline.cs" />
+    <Compile Include="Metrics\Extensibility\MetricAggregateToApplicationInsightsPipelineConverterBase.cs" />
+    <Compile Include="Metrics\Extensibility\MetricAggregateToTelemetryPipelineConverters.cs" />
+    <Compile Include="Metrics\Extensibility\MetricAggregationCycleKind.cs" />
+    <Compile Include="Metrics\Extensibility\MetricConfigurationExtensions.cs" />
+    <Compile Include="Metrics\Extensibility\MetricExtensions.cs" />
+    <Compile Include="Metrics\Extensibility\MetricManagerExtensions.cs" />
+    <Compile Include="Metrics\Extensibility\MetricSeriesAggregatorBase.cs" />
+    <Compile Include="Metrics\Extensibility\MetricSeriesExtensions.cs" />
+    <Compile Include="Metrics\Extensibility\MetricValuesBufferBase.cs" />
+    <Compile Include="Metrics\Extensibility\MetricValuesBuffer_Double.cs" />
+    <Compile Include="Metrics\Extensibility\MetricValuesBuffer_Object.cs" />
+    <Compile Include="Metrics\Extensibility\TelemetryClientExtensions.cs" />
+    <Compile Include="Metrics\IMetricSeriesConfiguration.cs" />
+    <Compile Include="Metrics\MeasurementAggregateToApplicationInsightsPipelineConverter.cs" />
+    <Compile Include="Metrics\MeasurementAggregator.cs" />
+    <Compile Include="Metrics\MetricAggregate.cs" />
+    <Compile Include="Metrics\MetricAggregationManager.cs" />
+    <Compile Include="Metrics\MetricConfiguration.cs" />
+    <Compile Include="Metrics\MetricConfigurationForMeasurement.cs" />
+    <Compile Include="Metrics\MetricIdentifier.cs" />
+    <Compile Include="Metrics\MetricManager.cs" />
+    <Compile Include="Metrics\MetricsCollection.cs" />
+    <Compile Include="Metrics\MetricSeries.cs" />
+    <Compile Include="Metrics\MetricSeriesConfigurationForMeasurement.cs" />
+    <Compile Include="Metrics\TelemetryConfigurationExtensions.cs" />
+    <Compile Include="Metrics\Util.cs" />
+    <Compile Include="OperationTelemetryExtensions.cs" />
+    <Compile Include="PreciseTimestamp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\Extensibility\Implementation\BroadcastProcessor.cs" />
+    <Compile Include="Shared\Extensibility\Implementation\PassThroughProcessor.cs" />
+    <Compile Include="System\FormattableString.cs" />
+    <Compile Include="System\Runtime\CompilerServices\FormattableStringFactory.cs" />
+    <Compile Include="TelemetryClient.cs" />
+    <Compile Include="TelemetryClientExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

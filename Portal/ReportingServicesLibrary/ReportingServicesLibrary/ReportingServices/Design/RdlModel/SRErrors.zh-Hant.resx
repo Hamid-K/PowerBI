@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeserializationFailed" xml:space="preserve">
+    <value>還原序列化失敗: {0}</value>
+  </data>
+  <data name="DeserializationFailedMethod" xml:space="preserve">
+    <value>方法 {0} 的還原序列化失敗。</value>
+  </data>
+  <data name="InvalidColor" xml:space="preserve">
+    <value>{0} 不是有效的色彩。</value>
+  </data>
+  <data name="InvalidIdentifier" xml:space="preserve">
+    <value>識別碼 '{0}' 無效。</value>
+  </data>
+  <data name="InvalidParamBetween" xml:space="preserve">
+    <value>值必須介於 {0} 和 {1} 之間。</value>
+  </data>
+  <data name="InvalidParamGreaterThan" xml:space="preserve">
+    <value>值不得低於 {0}。</value>
+  </data>
+  <data name="InvalidParamLessThan" xml:space="preserve">
+    <value>值最多只能為 {0}。</value>
+  </data>
+  <data name="InvalidUnitType" xml:space="preserve">
+    <value>{0} 不是有效的單位指示項。有效的單位指示項包括 in、mm、cm、pt 和 pc。</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>{0} 不是有效值。</value>
+  </data>
+  <data name="NoRootElement" xml:space="preserve">
+    <value>找不到報表元素。</value>
+  </data>
+  <data name="TextParseFailedFormat" xml:space="preserve">
+    <value>無法剖析文字 {0}。文字應該是 {1} 格式。</value>
+  </data>
+  <data name="UnitParseNoDigits" xml:space="preserve">
+    <value>{0} 無法剖析為單位，因為它不包含數值。有效的單位字串範例為 "1pt" 和 ".5in"。</value>
+  </data>
+  <data name="UnitParseNoUnit" xml:space="preserve">
+    <value>{0} 不包含單位規格。有效的單位字串範例為 "1pt" 和 ".5in"。</value>
+  </data>
+  <data name="UnitParseNumericPart" xml:space="preserve">
+    <value>{0} 的數值部分無法剖析成類型 {2} 的單位。</value>
+  </data>
+</root>

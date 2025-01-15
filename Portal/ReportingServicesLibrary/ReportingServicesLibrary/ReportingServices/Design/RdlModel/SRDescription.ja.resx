@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccentSensitivity" xml:space="preserve">
+    <value>データでアクセントを区別するかどうかを示します。</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>レポート アイテムと関連付けられているハイパーリンクなどのアクション。</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>レポートの作成者。</value>
+  </data>
+  <data name="AutoRefresh" xml:space="preserve">
+    <value>HTML 形式で表示したときにレポート ページを自動更新する間隔 (秒単位)。</value>
+  </data>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>背景色。</value>
+  </data>
+  <data name="BackgroundImage" xml:space="preserve">
+    <value>レポート アイテムの背景画像。</value>
+  </data>
+  <data name="BackgroundRepeat" xml:space="preserve">
+    <value>残りの領域における背景画像の繰り返し方法を示します。</value>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>ブックマーク アクションの対象となる可能性のあるアイテム。</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>罫線の色。</value>
+  </data>
+  <data name="BorderColorBottom" xml:space="preserve">
+    <value>下罫線の色。</value>
+  </data>
+  <data name="BorderColorDefault" xml:space="preserve">
+    <value>罫線の色 (ただし、このプロパティの一部がオーバーライドされた場合を除きます)。</value>
+  </data>
+  <data name="BorderColorLeft" xml:space="preserve">
+    <value>左罫線の色。</value>
+  </data>
+  <data name="BorderColorRight" xml:space="preserve">
+    <value>右罫線の色。</value>
+  </data>
+  <data name="BorderColorTop" xml:space="preserve">
+    <value>上罫線の色。</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>罫線のスタイル。</value>
+  </data>
+  <data name="BorderStyleBottom" xml:space="preserve">
+    <value>下罫線のスタイル。</value>
+  </data>
+  <data name="BorderStyleDefault" xml:space="preserve">
+    <value>罫線のスタイル (ただし、このプロパティの一部がオーバーライドされた場合を除きます)。</value>
+  </data>
+  <data name="BorderStyleLeft" xml:space="preserve">
+    <value>左罫線のスタイル。</value>
+  </data>
+  <data name="BorderStyleRight" xml:space="preserve">
+    <value>右罫線のスタイル。</value>
+  </data>
+  <data name="BorderStyleTop" xml:space="preserve">
+    <value>上罫線のスタイル。</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>罫線の幅。</value>
+  </data>
+  <data name="BorderWidthBottom" xml:space="preserve">
+    <value>下罫線の幅。</value>
+  </data>
+  <data name="BorderWidthDefault" xml:space="preserve">
+    <value>罫線の幅 (ただし、このプロパティの一部がオーバーライドされた場合を除きます)。</value>
+  </data>
+  <data name="BorderWidthLeft" xml:space="preserve">
+    <value>左罫線の幅。</value>
+  </data>
+  <data name="BorderWidthRight" xml:space="preserve">
+    <value>右罫線の幅。</value>
+  </data>
+  <data name="BorderWidthTop" xml:space="preserve">
+    <value>上罫線の幅。</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>日付の書式設定に使用するカレンダーを示します。</value>
+  </data>
+  <data name="CanGrow" xml:space="preserve">
+    <value>テキスト ボックスのサイズを長い値に合わせて自動的に変更するかどうかを決定します。</value>
+  </data>
+  <data name="CanShrink" xml:space="preserve">
+    <value>テキスト ボックスのサイズを小さい値に合わせて縮小するかどうかを決定します。</value>
+  </data>
+  <data name="CaseSensitivity" xml:space="preserve">
+    <value>データで大文字小文字を区別するかどうかを示します。</value>
+  </data>
+  <data name="CellDataElementName" xml:space="preserve">
+    <value>セル要素の名前。</value>
+  </data>
+  <data name="CellDataElementOutput" xml:space="preserve">
+    <value>セルの内容をデータに反映するかどうかを示します。</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>グラフに表示するデータ フィールド。</value>
+  </data>
+  <data name="ChartDefinition" xml:space="preserve">
+    <value>グラフの定義。</value>
+  </data>
+  <data name="ChartParameters" xml:space="preserve">
+    <value>グラフへのパラメーター。</value>
+  </data>
+  <data name="ClassID" xml:space="preserve">
+    <value>コントロールのクラス ID。</value>
+  </data>
+  <data name="Classes" xml:space="preserve">
+    <value>レポートの初期化中にインスタンスを作成する対象となるクラス。</value>
+  </data>
+  <data name="CodeBase" xml:space="preserve">
+    <value>コントロールのダウンロード元であるコードベースの URL。</value>
+  </data>
+  <data name="CodeModules" xml:space="preserve">
+    <value>レポートの式で使用できるアセンブリ。</value>
+  </data>
+  <data name="Collation" xml:space="preserve">
+    <value>データの並べ替えの照合順序に使用するロケール。</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>文字列の色。</value>
+  </data>
+  <data name="ColumnSpacing" xml:space="preserve">
+    <value>各列の間隔。</value>
+  </data>
+  <data name="ColumnWidth" xml:space="preserve">
+    <value>各列の幅。</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>表示レポートの列数。</value>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>データ ソースの接続文字列。</value>
+  </data>
+  <data name="DataElementName" xml:space="preserve">
+    <value>このレポート アイテムのデータ要素または属性の名前。</value>
+  </data>
+  <data name="DataElementOutput" xml:space="preserve">
+    <value>アイテムをデータに反映するかどうかを示します。</value>
+  </data>
+  <data name="DataElementStyle" xml:space="preserve">
+    <value>テキスト ボックスを、要素として表示するか属性として表示するかを示します。</value>
+  </data>
+  <data name="DataInstanceElementOutput" xml:space="preserve">
+    <value>リスト インスタンスをデータに表示するかどうかを示します。</value>
+  </data>
+  <data name="DataInstanceName" xml:space="preserve">
+    <value>この一覧の各インスタンスのデータ要素に使用する名前。</value>
+  </data>
+  <data name="DataSchema" xml:space="preserve">
+    <value>レポート データを表示するときに使用するスキーマまたは名前空間。</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>このデータ領域で使用するデータセット。</value>
+  </data>
+  <data name="DataSourceType" xml:space="preserve">
+    <value>データ ソースの種類。</value>
+  </data>
+  <data name="DataTransform" xml:space="preserve">
+    <value>レポート データの表示に適用する変換。</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>レポートの説明。</value>
+  </data>
+  <data name="DetailDataCollectionName" xml:space="preserve">
+    <value>このグループのすべてのインスタンスに、コレクションのデータ要素名を指定します。</value>
+  </data>
+  <data name="DetailDataElementName" xml:space="preserve">
+    <value>このグループのインスタンスのデータ要素の名前。</value>
+  </data>
+  <data name="DetailDataElementOutput" xml:space="preserve">
+    <value>詳細をデータに表示するかどうかを示します。</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>文字列を左から右方向に記述するか、または右から左方向に記述するかを示します。</value>
+  </data>
+  <data name="DrawGrid" xml:space="preserve">
+    <value>位置グリッドを表示するかどうかを示します。</value>
+  </data>
+  <data name="EmbeddedImages" xml:space="preserve">
+    <value>レポートの埋め込み画像。</value>
+  </data>
+  <data name="EndPoint" xml:space="preserve">
+    <value>行末の位置。</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>データ領域に適用するフィルターのコレクション。</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>文字列の表示に使用するフォント。</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>フォント ファミリの名前。</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>フォント サイズ。</value>
+  </data>
+  <data name="FontStyle" xml:space="preserve">
+    <value>フォント スタイル。</value>
+  </data>
+  <data name="FontWeight" xml:space="preserve">
+    <value>フォントの太さ。</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>書式設定の文字列。</value>
+  </data>
+  <data name="GridSize" xml:space="preserve">
+    <value>位置グリッドのサイズを設定します。</value>
+  </data>
+  <data name="Grouping" xml:space="preserve">
+    <value>データのグループ化に使用される式。</value>
+  </data>
+  <data name="GroupsBeforeRowHeaders" xml:space="preserve">
+    <value>行ヘッダーの左側 (右から左のマトリックスでは、行ヘッダーの右側) に表示できる最も外側にある列グループのインスタンス数。</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>レポート セクションの高さ。</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>アイテムを初期状態で非表示にするかどうかを示します。</value>
+  </data>
+  <data name="HideDuplicates" xml:space="preserve">
+    <value>アイテムの値が 1 つ前の行の値と同じ場合にアイテムを非表示にします。このプロパティの値は、非表示にするアイテムを含むグループ化またはデータセットの名前になります。</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>画像ソースの種類。</value>
+  </data>
+  <data name="ImageValue" xml:space="preserve">
+    <value>画像ソース。</value>
+  </data>
+  <data name="KanatypeSensitivity" xml:space="preserve">
+    <value>データでかなを区別するかどうかを示します。</value>
+  </data>
+  <data name="KeepTogether" xml:space="preserve">
+    <value>可能な場合は、データ領域 (すべての繰り返しセクション) を同じページにまとめる必要があることを示します。</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>ドキュメント マップでレポート アイテムのインスタンスを識別するラベル。</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>文字列の第一言語。</value>
+  </data>
+  <data name="LayoutDirection" xml:space="preserve">
+    <value>マトリックス列を左から右方向に展開するか、または右から左方向に展開するかを示します。</value>
+  </data>
+  <data name="LineColor" xml:space="preserve">
+    <value>線の色。</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>文字列の行間。</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>線のスタイル。</value>
+  </data>
+  <data name="LineWidth" xml:space="preserve">
+    <value>線の幅。</value>
+  </data>
+  <data name="LinkToChild" xml:space="preserve">
+    <value>ドキュメント マップ ラベルの対象となるレポート アイテムの名前。このレポート アイテムは、現在のレポート アイテム内に直接含める必要があります。</value>
+  </data>
+  <data name="ListFillPage" xml:space="preserve">
+    <value>一覧をページの下まで展開するかどうかを示します。</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>コンテナーに対するレポート アイテムの左上の位置。</value>
+  </data>
+  <data name="MIMEType" xml:space="preserve">
+    <value>画像の MIME の種類。</value>
+  </data>
+  <data name="Margins" xml:space="preserve">
+    <value>レポートの余白。</value>
+  </data>
+  <data name="MatrixGroupings" xml:space="preserve">
+    <value>マトリックスの行および列グループ化のセット。</value>
+  </data>
+  <data name="MergeTransactions" xml:space="preserve">
+    <value>親レポートとサブレポートの両方のデータ ソースで同じ接続を使用している場合に、サブレポートのトランザクションが親レポートのトランザクションに結合されることを示します。その結果、これらのレポートのトランザクションは、1 つのトランザクションに統合されます。</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>レポート アイテムの名前。</value>
+  </data>
+  <data name="NoRows" xml:space="preserve">
+    <value>使用できるデータ行がない場合に、データ領域に表示するメッセージ。</value>
+  </data>
+  <data name="NumeralLanguage" xml:space="preserve">
+    <value>第一言語で指定されている数字の形式。</value>
+  </data>
+  <data name="NumeralVariant" xml:space="preserve">
+    <value>使用する数字の形式の変化形。</value>
+  </data>
+  <data name="OverwriteDataSources" xml:space="preserve">
+    <value>プロジェクトの配置時にレポート サーバー上にあるデータ ソース定義の上書きを許可するかどうかを示します。</value>
+  </data>
+  <data name="Padding" xml:space="preserve">
+    <value>オブジェクト内部の余白。</value>
+  </data>
+  <data name="PaddingBottom" xml:space="preserve">
+    <value>オブジェクト下部の余白。</value>
+  </data>
+  <data name="PaddingLeft" xml:space="preserve">
+    <value>オブジェクト左側の余白。</value>
+  </data>
+  <data name="PaddingRight" xml:space="preserve">
+    <value>オブジェクト右側の余白。</value>
+  </data>
+  <data name="PaddingTop" xml:space="preserve">
+    <value>オブジェクト上部の余白。</value>
+  </data>
+  <data name="PageBreakAtEnd" xml:space="preserve">
+    <value>表示拡張機能がグループの最後に改ページを挿入することを指定します。</value>
+  </data>
+  <data name="PageBreakAtStart" xml:space="preserve">
+    <value>表示拡張機能がグループの先頭に改ページを挿入することを指定します。</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>レポート ページの既定サイズ。</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>親レポート アイテムの名前。</value>
+  </data>
+  <data name="PreviewAs" xml:space="preserve">
+    <value>PreviewAs</value>
+  </data>
+  <data name="PrintOnFirstPage" xml:space="preserve">
+    <value>レポートの最初のページにページ ヘッダーまたはフッターを表示することを指定します。</value>
+  </data>
+  <data name="PrintOnLastPage" xml:space="preserve">
+    <value>レポートの最後のページにページ ヘッダーまたはフッターを表示することを指定します。</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>レポートのデータを取得するために実行するクエリ。</value>
+  </data>
+  <data name="RepeatFooterOnNewPage" xml:space="preserve">
+    <value>テーブルを含んでいる各ページにフッターを表示するかどうかを示します。</value>
+  </data>
+  <data name="RepeatHeaderOnNewPage" xml:space="preserve">
+    <value>テーブルを含んでいる各ページにヘッダーを表示するかどうかを示します。</value>
+  </data>
+  <data name="RepeatOnNewPage" xml:space="preserve">
+    <value>テーブルを含んでいる各ページにヘッダーまたはフッターのすべての行を表示するかどうかを示します。</value>
+  </data>
+  <data name="RepeatWith" xml:space="preserve">
+    <value>データ領域が複数ページにわたる場合に、レポート アイテムを繰り返し表示するのに使用するデータ領域の名前。</value>
+  </data>
+  <data name="ReportDataElementName" xml:space="preserve">
+    <value>レポート データを表す最上位要素の名前。</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>サブレポートとして表示するレポートの URL。</value>
+  </data>
+  <data name="ReportParameters" xml:space="preserve">
+    <value>レポートのパラメーター。</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>行の高さ。</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>レポート アイテムのサイズ。</value>
+  </data>
+  <data name="Sizing" xml:space="preserve">
+    <value>指定のサイズに合わない場合の画像の外観。</value>
+  </data>
+  <data name="SnapToGrid" xml:space="preserve">
+    <value>コントロールを位置グリッドに合わせるかどうかを設定します。</value>
+  </data>
+  <data name="StartItem" xml:space="preserve">
+    <value>デバッガーの起動時に実行するレポート。</value>
+  </data>
+  <data name="SubreportParameters" xml:space="preserve">
+    <value>サブレポートに渡すパラメーター。</value>
+  </data>
+  <data name="SubreportReportName" xml:space="preserve">
+    <value>サブレポートのパス。</value>
+  </data>
+  <data name="SubtotalDataElementName" xml:space="preserve">
+    <value>この集計に使用する名前。</value>
+  </data>
+  <data name="SubtotalPosition" xml:space="preserve">
+    <value>この集計列または行を、詳細列または行の前 (左または上) あるいは後 (右または下) に表示するかどうかを示します。</value>
+  </data>
+  <data name="TableFillPage" xml:space="preserve">
+    <value>テーブルをページの下まで展開するかどうかを示します。</value>
+  </data>
+  <data name="TableGroups" xml:space="preserve">
+    <value>テーブルのグループ (グループ式、ヘッダー、およびフッター)。</value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>配置されたプロジェクトを含むフォルダーのパス。</value>
+  </data>
+  <data name="TargetServerURL" xml:space="preserve">
+    <value>プロジェクトを配置するレポート サーバーの URL。たとえば、http://hostname/ReportServer です。</value>
+  </data>
+  <data name="TextAlign" xml:space="preserve">
+    <value>文字の配置 (横方向)。</value>
+  </data>
+  <data name="TextDecoration" xml:space="preserve">
+    <value>特別なテキストの形式を指定します。</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>テキスト ボックスに値が表示される式。</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>レポート アイテムのテキスト ラベル。これは、HTML 形式のレポートの TITLE 属性や ALT 属性を表示するのに使用します。</value>
+  </data>
+  <data name="ToggleImage" xml:space="preserve">
+    <value>表示切り替えイメージの初期状態を設定します。</value>
+  </data>
+  <data name="ToggleItem" xml:space="preserve">
+    <value>このレポート アイテムを表示するか非表示にするのに使用するテキスト ボックスの名前。</value>
+  </data>
+  <data name="UnicodeBiDi" xml:space="preserve">
+    <value>アイテムの本文に双方向テキストがどのように組み込まれるかを示します。</value>
+  </data>
+  <data name="VerticalAlign" xml:space="preserve">
+    <value>文字の配置 (縦方向)。</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>アイテムを非表示にするかどうかを示します。</value>
+  </data>
+  <data name="WidthSensitivity" xml:space="preserve">
+    <value>データで幅を区別するかどうかを示します。</value>
+  </data>
+  <data name="WritingMode" xml:space="preserve">
+    <value>文字を横書きにするか、または縦書きにするかを示します。</value>
+  </data>
+  <data name="Zindex" xml:space="preserve">
+    <value>オブジェクト内のレポート アイテムの描画順序。</value>
+  </data>
+</root>

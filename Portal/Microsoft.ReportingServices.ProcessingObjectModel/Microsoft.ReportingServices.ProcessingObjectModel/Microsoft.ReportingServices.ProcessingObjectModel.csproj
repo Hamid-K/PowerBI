@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{675B807C-5EA8-4144-8AB4-72482F346F51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.ProcessingObjectModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ActionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ActionInfoExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\AggregateParamExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\BackFrameExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\BaseGaugeImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CalcFieldExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CapImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CellExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\Chart3DPropertiesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartAreaExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartAxisExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartAxisScaleBreakExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartAxisTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartBorderSkinExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartCustomPaletteColorExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartDataLabelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartDataPointExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartDataPointInLegendExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartDerivedSeriesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartElementPositionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartEmptyPointsExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartFormulaParameterExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartGridLinesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendColumnExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendColumnHeaderExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendCustomItemCellExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendCustomItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartLegendTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartMarkerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartMemberExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartNoMoveDirectionsExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartSeriesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartSmartLabelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartStripLineExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartTickMarksExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartTitleBaseExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ChartTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CustomCodeProxyBase.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CustomLabelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\CustomReportItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataCellExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataGroupExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataRegionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataSetExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataSourceExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\DataValueExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\FilterExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\FrameBackgroundExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\FrameImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeCellExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeInputValueExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeLabelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeMemberExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugePanelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugePanelItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugePointerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeScaleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GaugeTickMarksExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\GroupExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IMemberNode.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IndexedExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IndicatorImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IndicatorStateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IReportObjectModelProxyForCustomCode.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\IVisibilityHiddenExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\JoinConditionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\LinearGaugeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\LinearPointerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\LinearScaleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\LookupDestExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\LookupExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapAppearanceRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapBindingFieldPairExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapBorderSkinExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapBucketExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapColorPaletteRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapColorRangeRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapColorRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapColorScaleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapColorScaleTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapCustomColorExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapCustomColorRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapCustomViewExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapDataBoundViewExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapDataRegionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapDistanceScaleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapDockableSubItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapElementViewExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapFieldNameExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapGridLinesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLegendExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLegendTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLimitsExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLineExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLineLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLineRulesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLineTemplateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapLocationExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapMarkerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapMarkerImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapMarkerRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapMarkerTemplateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapMemberExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPointExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPointLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPointRulesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPointTemplateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPolygonExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPolygonLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPolygonRulesExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapPolygonTemplateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapShapefileExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSizeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSizeRuleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSpatialDataExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSpatialDataRegionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSpatialDataSetExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSpatialElementExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSpatialElementTemplateExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapSubItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapTileExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapTileLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapTitleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapVectorLayerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapViewExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MapViewportExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\MemberNodeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\NumericIndicatorExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\NumericIndicatorRangeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\PageBreakExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ParagraphExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ParamExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\PinLabelExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\PointerCapExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\PointerImageExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\RadialGaugeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\RadialPointerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\RadialScaleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\RemoteArrayWrapper.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\RemoteMemberArrayWrapper.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ReportExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ReportItemExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ReportObjectModelProxy.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ReportParamExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ReportSectionExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ScaleLabelsExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ScalePinExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ScaleRangeExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\SortExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\StateIndicatorExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\StyleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\SubreportExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TablixCellExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TablixExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TablixMemberExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TextBoxExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TextRunExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\ThermometerExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TickMarkStyleExprHost.cs" />
+    <Compile Include="RdlExpressions\ExpressionHostObjectModel\TopImageExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ActionExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ActionInfoExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ActiveXControlExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\AggregateParamExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\AxisExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\CalcFieldExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ChartDataPointExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ChartDynamicGroupExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ChartExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ChartTitleExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\CustomCodeProxyBase.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\CustomReportItemExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataCellExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataGroupingExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataRegionExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataSetExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataSourceExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DataValueExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\DynamicGroupExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\FilterExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\GroupingExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ImageExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\IndexedExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\IReportObjectModelProxyForCustomCode.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\IVisibilityHiddenExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ListExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\MatrixDynamicGroupExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\MatrixExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\MultiChartExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\OWCChartExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ParamExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\RemoteArrayWrapper.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ReportExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ReportItemExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ReportObjectModelProxy.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\ReportParamExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\SortingExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\StyleExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\SubreportExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\TableExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\TableGroupExprHost.cs" />
+    <Compile Include="ReportProcessing\ExprHostObjectModel\TextBoxExprHost.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Lookup.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Lookups.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\OnDemandObjectModel.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Paragraph.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Paragraphs.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Scope.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Scopes.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\TextRun.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\TextRuns.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Variable.cs" />
+    <Compile Include="ReportProcessing\OnDemandReportObjectModel\Variables.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Aggregates.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\CalculatedFieldWrapper.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\DataSet.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\DataSets.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\DataSource.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\DataSources.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Field.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Fields.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Globals.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\ObjectModel.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Parameter.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\Parameters.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\ReadOnlyNameValueCollection.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\RenderFormat.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\RenderFormatImplBase.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\ReportItem.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\ReportItems.cs" />
+    <Compile Include="ReportProcessing\ReportObjectModel\User.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

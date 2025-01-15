@@ -1,0 +1,11 @@
+﻿using System;
+using System.CodeDom.Compiler;
+using System.ComponentModel;
+
+namespace Microsoft.SqlServer.ReportingServices2010
+{
+	// Token: 0x020000EB RID: 235
+	// (Invoke) Token: 0x0600086A RID: 2154
+	[GeneratedCode("wsdl", "2.0.50727.3038")]
+	public delegate void SetSystemPoliciesCompletedEventHandler(object sender, AsyncCompletedEventArgs e);
+}

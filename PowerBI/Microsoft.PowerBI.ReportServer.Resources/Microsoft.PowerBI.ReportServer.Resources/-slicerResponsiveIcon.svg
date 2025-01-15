@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>slicerResponsiveIcon</title>
+    <defs></defs>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M13,18 L13,12.2890625 L19,6.2890625 L19,6 L5,6 L5,6.2890625 L11,12.2890625 L11,18 L13,18 Z M4,5 L20,5 L20,6.7109375 L14,12.7109375 L14,19 L10,19 L10,12.7109375 L4,6.7109375 L4,5 Z" id=""></path>
+        </g>
+    </g>
+</svg>

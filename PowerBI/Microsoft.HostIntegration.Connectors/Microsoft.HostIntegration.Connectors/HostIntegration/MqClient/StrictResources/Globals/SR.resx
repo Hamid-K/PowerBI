@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExactLength" xml:space="preserve">
+    <value>Value must have a length of {0}</value>
+  </data>
+  <data name="MaximumLength" xml:space="preserve">
+    <value>Value can have a maximum length of {0}</value>
+  </data>
+  <data name="MqReturnCode" xml:space="preserve">
+    <value>Websphere MQ returned Reason Code: {0}</value>
+  </data>
+  <data name="QOpenFailedFinalizing" xml:space="preserve">
+    <value>The Queue Open failed because the related Queue Manager was still finalizing a Transaction</value>
+  </data>
+  <data name="QOpenFailedQmFailed" xml:space="preserve">
+    <value>The Queue Open failed because the related Queue Manager failed</value>
+  </data>
+  <data name="QOpenFailedQmQuiesced" xml:space="preserve">
+    <value>The Queue Open failed because the related Queue Manager is shut down</value>
+  </data>
+  <data name="QOpenFailedTcpFailed" xml:space="preserve">
+    <value>The Queue Open failed because the related socket was closed unexpectedly</value>
+  </data>
+  <data name="QReceiveFailedQmFailed" xml:space="preserve">
+    <value>The Queue Receive failed because the related Queue Manager failed</value>
+  </data>
+  <data name="QReceiveFailedQmQuiesced" xml:space="preserve">
+    <value>The Queue Receive failed because the related Queue Manager is shut down</value>
+  </data>
+  <data name="QReceiveFailedUnknown" xml:space="preserve">
+    <value>The Queue Receive failed because the an unknown protocol element was received</value>
+  </data>
+  <data name="QSendFailedQmFailed" xml:space="preserve">
+    <value>The Queue Send failed because the related Queue Manager failed</value>
+  </data>
+  <data name="QSendFailedQmQuiesced" xml:space="preserve">
+    <value>The Queue Send failed because the related Queue Manager is shut down</value>
+  </data>
+  <data name="QSendFailedUnknown" xml:space="preserve">
+    <value>The Queue Send failed because the an unknown protocol element was received</value>
+  </data>
+  <data name="QSendMaximumMessageSize" xml:space="preserve">
+    <value>The Message is larger than the maximum negotiated message size</value>
+  </data>
+  <data name="QmAsyncStatusFailedHandle" xml:space="preserve">
+    <value>Asynchronous Status information could not be obtained from the server as a Microsoft Client for MQ internal error occurred</value>
+  </data>
+  <data name="QmAsyncStatusFailedQuiescing" xml:space="preserve">
+    <value>Asynchronous Status information could not be obtained from the server as it is Quiesced</value>
+  </data>
+  <data name="QmConnectCipherSpec" xml:space="preserve">
+    <value>The negotiated CipherSpec value was rejected at the remote Host/Port</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedCcsid" xml:space="preserve">
+    <value>The Websphere MQ Server rejected our Initial Data value of CCSID</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedConversations0" xml:space="preserve">
+    <value>We rejected the Websphere MQ Server value of 0 for Conversations per Socket</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedEncoding" xml:space="preserve">
+    <value>The Websphere MQ Server rejected our Initial Data value of Encoding</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedErrorFlag2" xml:space="preserve">
+    <value>The Websphere MQ Server rejected our Initial Data values</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedFap" xml:space="preserve">
+    <value>The Websphere MQ Server rejected our Initial Data value of FAP Level</value>
+  </data>
+  <data name="QmConnectInitialDataRejectedTransmissionSize" xml:space="preserve">
+    <value>The Websphere MQ Server rejected our Initial Data value of Transmission Size</value>
+  </data>
+  <data name="QmConnectMqConnFailed" xml:space="preserve">
+    <value>A second(or later) Queue Manager could not be connected on the socket</value>
+  </data>
+  <data name="QmConnectNoChannel" xml:space="preserve">
+    <value>The Channel name is unknown at the remote Host/Port</value>
+  </data>
+  <data name="QmConnectSslExpected" xml:space="preserve">
+    <value>The Server was expecting an SSL connection</value>
+  </data>
+  <data name="QmConnectTcpConnectFailed" xml:space="preserve">
+    <value>Could not connect to the target Host/Port</value>
+  </data>
+  <data name="QmConnectTcpDisconnected" xml:space="preserve">
+    <value>The TCP Socket was disconnected during the initial handshake</value>
+  </data>
+  <data name="QmConnectUnexpected" xml:space="preserve">
+    <value>During the initial handshake an unexpected message was received from the Websphere MQ Server</value>
+  </data>
+  <data name="StaleTransaction" xml:space="preserve">
+    <value>Could not enlist in the XA Transaction, as it is already Completed</value>
+  </data>
+  <data name="TcpConnectFailed" xml:space="preserve">
+    <value>Could not connect to the target Host/Port</value>
+  </data>
+  <data name="TcpPoolingDifferentSsl" xml:space="preserve">
+    <value>Could not connect to the target Host/Port, already opened with a different SSL setting</value>
+  </data>
+  <data name="TcpSslConnectFailed" xml:space="preserve">
+    <value>Could not connect to the target Host/Port, SSL handshake failed</value>
+  </data>
+  <data name="ValueRange" xml:space="preserve">
+    <value>Value must be in the range {0} - {1} inclusive</value>
+  </data>
+  <data name="XaDuplicateXid" xml:space="preserve">
+    <value>The XID already exists</value>
+  </data>
+  <data name="XaEndClosing" xml:space="preserve">
+    <value>Ending a Transaction failed because the related Queue Manager is shutting down</value>
+  </data>
+  <data name="XaEndDisconnecting" xml:space="preserve">
+    <value>Ending a Transaction failed because of socket failure</value>
+  </data>
+  <data name="XaEnlistmentFailed" xml:space="preserve">
+    <value>Could not enlist in the XA Transaction</value>
+  </data>
+  <data name="XaFinalizeClosing" xml:space="preserve">
+    <value>Completing a Transaction failed because the related Queue Manager is shutting down</value>
+  </data>
+  <data name="XaFinalizeDisconnecting" xml:space="preserve">
+    <value>Completing a Transaction failed because of socket failure</value>
+  </data>
+  <data name="XaHeuristicCommit" xml:space="preserve">
+    <value>The transaction branch has been heuristically committed</value>
+  </data>
+  <data name="XaHeuristicHazard" xml:space="preserve">
+    <value>The transaction branch may have been heuristically completed</value>
+  </data>
+  <data name="XaHeuristicMix" xml:space="preserve">
+    <value>The transaction branch has been heuristically committed and rolled back</value>
+  </data>
+  <data name="XaHeuristicRollback" xml:space="preserve">
+    <value>The transaction branch has been heuristically rolled back</value>
+  </data>
+  <data name="XaInvalidArguments" xml:space="preserve">
+    <value>Invalid arguments were given</value>
+  </data>
+  <data name="XaInvalidXid" xml:space="preserve">
+    <value>The XID is invalid</value>
+  </data>
+  <data name="XaNoMigrate" xml:space="preserve">
+    <value>Resumption didn't occur where the suspension occurred</value>
+  </data>
+  <data name="XaOutstandingAsynchronousOperation" xml:space="preserve">
+    <value>An Asynchronous operation was already outstanding</value>
+  </data>
+  <data name="XaPrepareClosing" xml:space="preserve">
+    <value>Preparing a Transaction failed because the related Queue Manager is shutting down</value>
+  </data>
+  <data name="XaPrepareDisconnecting" xml:space="preserve">
+    <value>Preparing a Transaction failed because of socket failure</value>
+  </data>
+  <data name="XaProtocol" xml:space="preserve">
+    <value>The routine was invoked in an improper context</value>
+  </data>
+  <data name="XaReadOnly" xml:space="preserve">
+    <value>The transaction branch was read-only and has been committed</value>
+  </data>
+  <data name="XaResourceManagerError" xml:space="preserve">
+    <value>A resource manager error occurred in the transaction branch</value>
+  </data>
+  <data name="XaResourceManagerUnavailable" xml:space="preserve">
+    <value>The resource manager is unavailable</value>
+  </data>
+  <data name="XaRetry" xml:space="preserve">
+    <value>Routine had no effect and may be retried</value>
+  </data>
+  <data name="XaRollback" xml:space="preserve">
+    <value>Rollback was caused by an unspecified reason</value>
+  </data>
+  <data name="XaRollbackCommunicationFailure" xml:space="preserve">
+    <value>Rollback was caused by a communication failure</value>
+  </data>
+  <data name="XaRollbackDeadlock" xml:space="preserve">
+    <value>Rollback was caused by a Deadlock</value>
+  </data>
+  <data name="XaRollbackIntegrity" xml:space="preserve">
+    <value>Rollback was caused by a condition violating the integrity of resources</value>
+  </data>
+  <data name="XaRollbackOther" xml:space="preserve">
+    <value>Rollback was caused by another reason</value>
+  </data>
+  <data name="XaRollbackProtocol" xml:space="preserve">
+    <value>Rollback was caused by a protocol error in a resource manager</value>
+  </data>
+  <data name="XaRollbackTimeout" xml:space="preserve">
+    <value>Rollback was caused by a timeout</value>
+  </data>
+  <data name="XaRollbackTransient" xml:space="preserve">
+    <value>Transaction branch can be retried</value>
+  </data>
+  <data name="XaStartClosing" xml:space="preserve">
+    <value>Starting a Transaction failed because the related Queue Manager is shutting down</value>
+  </data>
+  <data name="XaStartDisconnecting" xml:space="preserve">
+    <value>Starting a Transaction failed because of socket failure</value>
+  </data>
+  <data name="XaWorkOutsideTransaction" xml:space="preserve">
+    <value>The resource manager is doing work outside the global transaction</value>
+  </data>
+</root>

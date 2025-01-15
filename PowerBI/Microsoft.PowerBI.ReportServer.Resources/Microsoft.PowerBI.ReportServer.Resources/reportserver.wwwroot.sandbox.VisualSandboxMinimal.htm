@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visual Sandbox Host (Minimal)</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/powerbi/libs/styles/visualsandbox.css" />
+</head>
+<body class="visual-sandbox">
+    <div id="sandbox-host" class="visual"></div>
+    <script>
+        var powerbi = {
+            common: {}
+        };
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visualsandbox.minimal.externals.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/customVisualsHost.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            powerbi.visualSandbox.createSandboxHost($('#sandbox-host'), true);
+        });
+    </script>
+</body>
+</html>

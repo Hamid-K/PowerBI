@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rdlValidationInvalidElement" xml:space="preserve">
+    <value>Das {0}-Berichtsdefinitionselement enthält in Zeile {2}, Position {3}, mehrere untergeordnete Elemente vom Typ "{1}".</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedAttribute" xml:space="preserve">
+    <value>Das {0}-Attribut ist im {1}-Element ungültig. "{0}" in Zeile {2}, Position {3}.</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedElement" xml:space="preserve">
+    <value>Das {0}-Element ist innerhalb des übergeordneten {1}-Elements ungültig. "{0}" in Zeile {2}, Position {3}.</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceAttribute" xml:space="preserve">
+    <value>Das {0}-Attribut ist kein gültiges RDL-Attribut. Im {1}-Namespace sind keine Attribute zulässig. "{0}" in Zeile {2}, Position {3}.</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceElement" xml:space="preserve">
+    <value>Das {0}-Element ist kein gültiges RDL-Element. Im {1}-Namespace sind keine Elemente zulässig. "{0}" in Zeile {2}, Position {3}.</value>
+  </data>
+  <data name="rdlValidationInvalidParent" xml:space="preserve">
+    <value>Das {0}-Berichtsdefinitionselement im {1}-Namespace verfügt in Zeile {3}, Position {4}, über das ungültige übergeordnete Element "{2}".</value>
+  </data>
+  <data name="rdlValidationMissingChildElement" xml:space="preserve">
+    <value>Das {0}-Berichtsdefinitionselement ist in Zeile {2}, Position {3} leer. Ihm fehlt ein verbindliches untergeordnetes Element vom Typ "{1}".</value>
+  </data>
+  <data name="rdlValidationMultipleUndefinedSchemaNamespaces" xml:space="preserve">
+    <value>Die Präfixe "{0}" innerhalb des Attributs "{1}" weisen in Zeile {2} an Position {3} kein definiertes Schema auf.</value>
+  </data>
+  <data name="rdlValidationNoElementDecl" xml:space="preserve">
+    <value>Für das Berichtsdefinitionselement "{0}" in Zeile {3} wurde im {2}-Namespace keine Deklaration gefunden. Überlegen Sie, welcher Namespace für das {1}-Element geeignet ist, und ändern Sie das Element mit dem entsprechenden Präfix.</value>
+  </data>
+  <data name="rdlValidationUndefinedSchemaNamespace" xml:space="preserve">
+    <value>Das Präfix "{0}" innerhalb des Attributs "{1}" weist in Zeile {2} an Position {3} kein definiertes Schema auf.</value>
+  </data>
+  <data name="rdlValidationUnknownRequiredNamespaces" xml:space="preserve">
+    <value>Das Schema "{0}" mit Präfix "{1}" ist erforderlich, wird jedoch von "{2}" in Zeile {3} an Position {4} nicht erkannt.</value>
+  </data>
+  <data name="rdlValidationUnsupportedSchema" xml:space="preserve">
+    <value>Das Schema "{0}" mit Präfix "{1}" in Zeile {2} an Position {3} wird von dieser Version von Reporting Services nicht unterstützt.</value>
+  </data>
+</root>

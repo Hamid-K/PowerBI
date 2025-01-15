@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8F1E93B-4D79-4C9D-BE3A-1D0AAE1E87A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Storage</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Editions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Editions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.UpgradeScripts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.UpgradeScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportingServicesAppDomainManager">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\ReportingServicesAppDomainManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportingServicesNativeClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\ReportingServicesNativeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Library\CachedSystemProperties.cs" />
+    <Compile Include="Library\CancelableSqlCommand.cs" />
+    <Compile Include="Library\CatalogQuery.cs" />
+    <Compile Include="Library\ConnectionConfig.cs" />
+    <Compile Include="Library\ConnectionManager.cs" />
+    <Compile Include="Library\ConnectionTransactionType.cs" />
+    <Compile Include="Library\DataProtection.cs" />
+    <Compile Include="Library\DataProtectionMode.cs" />
+    <Compile Include="Library\DataReaderHelper.cs" />
+    <Compile Include="Library\DBPoll.cs" />
+    <Compile Include="Library\EncryptionTags.cs" />
+    <Compile Include="Library\EventExtensionNotFoundException.cs" />
+    <Compile Include="Library\EventManager.cs" />
+    <Compile Include="Library\EventQueueItem.cs" />
+    <Compile Include="Library\EventQueueWorker.cs" />
+    <Compile Include="Library\HandledSqlDataReader.cs" />
+    <Compile Include="Library\InstrumentedSqlCommand.cs" />
+    <Compile Include="Library\InstrumentedSqlDataReader.cs" />
+    <Compile Include="Library\InvalidCatalogRecordException.cs" />
+    <Compile Include="Library\InvalidConcurrentRenderEditSessionRequest.cs" />
+    <Compile Include="Library\InvalidProgressiveFormatException.cs" />
+    <Compile Include="Library\InvalidReportServerDatabaseException.cs" />
+    <Compile Include="Library\InvalidSessionIdException.cs" />
+    <Compile Include="Library\InvalidSqlAgentJobException.cs" />
+    <Compile Include="Library\InvalidSubscriptionException.cs" />
+    <Compile Include="Library\IRSConnectionManager.cs" />
+    <Compile Include="Library\IRSStorage.cs" />
+    <Compile Include="Library\ItemPropertyNames.cs" />
+    <Compile Include="Library\KeyContainerCreateException.cs" />
+    <Compile Include="Library\KeyStateNotValidException.cs" />
+    <Compile Include="Library\KeyStorage.cs" />
+    <Compile Include="Library\MultithreadedConnectionManager.cs" />
+    <Compile Include="Library\Native.cs" />
+    <Compile Include="Library\NativeShared.cs" />
+    <Compile Include="Library\NtPermMask.cs" />
+    <Compile Include="Library\PollWorker.cs" />
+    <Compile Include="Library\ProcessorUtilities.cs" />
+    <Compile Include="Library\ProgressiveFormatElementMissingException.cs" />
+    <Compile Include="Library\ProgressiveMessageWriteException.cs" />
+    <Compile Include="Library\PropertyHashTable.cs" />
+    <Compile Include="Library\QueueItem.cs" />
+    <Compile Include="Library\QueuePollWorker.cs" />
+    <Compile Include="Library\RepLibRes.Designer.cs">
+      <DependentUpon>RepLibRes.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Library\ReportServerDatabaseUnavailableException.cs" />
+    <Compile Include="Library\ReportServerDisabledException.cs" />
+    <Compile Include="Library\ReportServerNotActivatedException.cs" />
+    <Compile Include="Library\RequestQueueTimeoutException.cs" />
+    <Compile Include="Library\RpcEncryption.cs" />
+    <Compile Include="Library\SessionNotFoundException.cs" />
+    <Compile Include="Library\SqlAgentScheduler.cs" />
+    <Compile Include="Library\SqlScheduleHelper.cs" />
+    <Compile Include="Library\SQLScheduleParameter.cs" />
+    <Compile Include="Library\SQLScheduleParameters.cs" />
+    <Compile Include="Library\SQLScheduleSet.cs" />
+    <Compile Include="Library\Storage.cs" />
+    <Compile Include="Library\SystemPropertyNames.cs" />
+    <Compile Include="Library\ThreadSafeSqlCommand.cs" />
+    <Compile Include="Library\UnexpectedCountOfPowerViewDataSourcesException.cs" />
+    <Compile Include="Library\UnSupportedHigherApiVersion.cs" />
+    <Compile Include="Library\UnSupportedLowerApiVersion.cs" />
+    <Compile Include="Library\UpgradeMutex.cs" />
+    <Compile Include="Library\UserCannotOwnSubscriptionException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicKeyConstants.cs" />
+    <Compile Include="TestPublicKeyConstants.cs" />
+    <Compile Include="WmiProvider\ErrorCodes.cs" />
+    <Compile Include="WmiProvider\WMIProviderException.cs" />
+    <Compile Include="WmiProvider\WMIProviderExceptionStrings.Designer.cs">
+      <DependentUpon>WMIProviderExceptionStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Library\RepLibRes.de.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.es.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.fr.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.it.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.ja.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.ko.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.pt.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RepLibRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\RepLibRes.ru.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Library\RepLibRes.zh-Hant.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.de.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.es.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.fr.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.it.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.ja.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.ko.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.pt.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WMIProviderExceptionStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.ru.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.zh-Hans.resx" />
+    <EmbeddedResource Include="WmiProvider\WMIProviderExceptionStrings.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

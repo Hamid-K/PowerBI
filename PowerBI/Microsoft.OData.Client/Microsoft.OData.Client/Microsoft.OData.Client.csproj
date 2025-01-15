@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E77F8D9D-02C4-4A93-8BE7-C910C2AE3E06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.OData</RootNamespace>
+    <AssemblyName>Microsoft.OData.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.OData.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="Client\ActionDescriptor.cs" />
+    <Compile Include="Client\AddNewEndingTokenVisitor.cs" />
+    <Compile Include="Client\ALinqExpressionVisitor.cs" />
+    <Compile Include="Client\ALinq\UriParser\AggregateExpressionToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\AggregateToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\AggregateTokenBase.cs" />
+    <Compile Include="Client\ALinq\UriParser\AllToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\AnyToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ApplyTransformationToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\BinaryOperatorToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ComputeExpressionToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ComputeToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\CustomQueryOptionToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\DottedIdentifierToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\EndPathToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\EntitySetAggregateToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ExceptionUtils.cs" />
+    <Compile Include="Client\ALinq\UriParser\ExpandTermToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ExpandToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\FunctionCallToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\FunctionParameterAliasToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\FunctionParameterToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\GroupByToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\InnerPathToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\InToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\IPathSegmentTokenVisitor.2.cs" />
+    <Compile Include="Client\ALinq\UriParser\IPathSegmentTokenVisitor.cs" />
+    <Compile Include="Client\ALinq\UriParser\ISyntacticTreeVisitor.cs" />
+    <Compile Include="Client\ALinq\UriParser\LambdaToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\LiteralToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\NamedValue.cs" />
+    <Compile Include="Client\ALinq\UriParser\NonSystemToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\OrderByToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\PathSegmentToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\PathToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\QueryToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\QueryTokenKind.cs" />
+    <Compile Include="Client\ALinq\UriParser\RangeVariableToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\ReadOnlyEnumerableForUriParser.cs" />
+    <Compile Include="Client\ALinq\UriParser\SelectExpandTermToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\SelectTermToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\SelectToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\StarToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\SyntacticTreeVisitor.cs" />
+    <Compile Include="Client\ALinq\UriParser\SystemToken.cs" />
+    <Compile Include="Client\ALinq\UriParser\UnaryOperatorToken.cs" />
+    <Compile Include="Client\Annotation\AnnotationHelper.cs" />
+    <Compile Include="Client\Annotation\InstanceAnnotationDictWeakKeyComparer.cs" />
+    <Compile Include="Client\ArraySet.cs" />
+    <Compile Include="Client\AtomMaterializerLog.cs" />
+    <Compile Include="Client\BaseAsyncResult.cs" />
+    <Compile Include="Client\BaseEntityType.cs" />
+    <Compile Include="Client\BaseSaveResult.cs" />
+    <Compile Include="Client\BatchSaveResult.cs" />
+    <Compile Include="Client\BinaryTypeConverter.cs" />
+    <Compile Include="Client\BindingEntityInfo.cs" />
+    <Compile Include="Client\BindingGraph.cs" />
+    <Compile Include="Client\BindingObserver.cs" />
+    <Compile Include="Client\BindingPropertyKind.cs" />
+    <Compile Include="Client\BindingUtils.cs" />
+    <Compile Include="Client\BodyOperationParameter.cs" />
+    <Compile Include="Client\BooleanTypeConverter.cs" />
+    <Compile Include="Client\BuildingRequestEventArgs.cs" />
+    <Compile Include="Client\ByteArrayTypeConverter.cs" />
+    <Compile Include="Client\ByteTypeConverter.cs" />
+    <Compile Include="Client\ChangeOperationResponse.cs" />
+    <Compile Include="Client\CharArrayTypeConverter.cs" />
+    <Compile Include="Client\CharTypeConverter.cs" />
+    <Compile Include="Client\ClientConvert.cs" />
+    <Compile Include="Client\ClientEdmCollectionValue.cs" />
+    <Compile Include="Client\ClientEdmModel.cs" />
+    <Compile Include="Client\ClientEdmStructuredValue.cs" />
+    <Compile Include="Client\ClrTypeConverter.cs" />
+    <Compile Include="Client\CommonUtil.cs" />
+    <Compile Include="Client\ContentStream.cs" />
+    <Compile Include="Client\ContentTypeUtil.cs" />
+    <Compile Include="Client\ConventionalODataEntityMetadataBuilder.cs" />
+    <Compile Include="Client\CountOption.cs" />
+    <Compile Include="Client\DataServiceActionQuery.2.cs" />
+    <Compile Include="Client\DataServiceActionQuery.cs" />
+    <Compile Include="Client\DataServiceActionQuerySingle.cs" />
+    <Compile Include="Client\DataServiceALinqExpressionVisitor.cs" />
+    <Compile Include="Client\DataServiceClientConfigurations.cs" />
+    <Compile Include="Client\DataServiceClientException.cs" />
+    <Compile Include="Client\DataServiceClientFormat.cs" />
+    <Compile Include="Client\DataServiceClientRequestMessage.cs" />
+    <Compile Include="Client\DataServiceClientRequestMessageArgs.cs" />
+    <Compile Include="Client\DataServiceClientRequestPipelineConfiguration.cs" />
+    <Compile Include="Client\DataServiceClientResponsePipelineConfiguration.cs" />
+    <Compile Include="Client\DataServiceCollection.cs" />
+    <Compile Include="Client\DataServiceContext.cs" />
+    <Compile Include="Client\DataServiceQuery.2.cs" />
+    <Compile Include="Client\DataServiceQuery.cs" />
+    <Compile Include="Client\DataServiceQueryContinuation.2.cs" />
+    <Compile Include="Client\DataServiceQueryContinuation.cs" />
+    <Compile Include="Client\DataServiceQueryException.cs" />
+    <Compile Include="Client\DataServiceQueryProvider.cs" />
+    <Compile Include="Client\DataServiceQuerySingle.cs" />
+    <Compile Include="Client\DataServiceRequest.2.cs" />
+    <Compile Include="Client\DataServiceRequest.cs" />
+    <Compile Include="Client\DataServiceRequestArgs.cs" />
+    <Compile Include="Client\DataServiceRequestException.cs" />
+    <Compile Include="Client\DataServiceResponse.cs" />
+    <Compile Include="Client\DataServiceResponsePreference.cs" />
+    <Compile Include="Client\DataServiceSaveStream.cs" />
+    <Compile Include="Client\DataServiceStreamLink.cs" />
+    <Compile Include="Client\DataServiceStreamResponse.cs" />
+    <Compile Include="Client\DataServiceTransportException.cs" />
+    <Compile Include="Client\DataServiceUrlKeyDelimiter.cs" />
+    <Compile Include="Client\DataStringEscapeBuilder.cs" />
+    <Compile Include="Client\DateTimeOffsetTypeConverter.cs" />
+    <Compile Include="Client\DateTimeTypeConverter.cs" />
+    <Compile Include="Client\DateTypeConverter.cs" />
+    <Compile Include="Client\DecimalTypeConverter.cs" />
+    <Compile Include="Client\Descriptor.cs" />
+    <Compile Include="Client\DescriptorKind.cs" />
+    <Compile Include="Client\DictionaryExtensions.cs" />
+    <Compile Include="Client\DoubleTypeConverter.cs" />
+    <Compile Include="Client\DynamicProxyMethodGenerator.cs" />
+    <Compile Include="Client\EdmValueParser.cs" />
+    <Compile Include="Client\EdmValueUtils.cs" />
+    <Compile Include="Client\EdmValueWriter.cs" />
+    <Compile Include="Client\EntityChangedParams.cs" />
+    <Compile Include="Client\EntityCollectionChangedParams.cs" />
+    <Compile Include="Client\EntityDescriptor.cs" />
+    <Compile Include="Client\EntityParameterSendOption.cs" />
+    <Compile Include="Client\EntitySetAttribute.cs" />
+    <Compile Include="Client\EntityStates.cs" />
+    <Compile Include="Client\EntityTracker.cs" />
+    <Compile Include="Client\EntityTrackerBase.cs" />
+    <Compile Include="Client\EntityTypeAttribute.cs" />
+    <Compile Include="Client\Error.cs" />
+    <Compile Include="Client\Evaluator.cs" />
+    <Compile Include="Client\ExpandOnlyPathToStringVisitor.cs" />
+    <Compile Include="Client\ExpressionNormalizer.cs" />
+    <Compile Include="Client\ExpressionWriter.cs" />
+    <Compile Include="Client\FilterQueryOptionExpression.cs" />
+    <Compile Include="Client\FunctionDescriptor.cs" />
+    <Compile Include="Client\GeographyTypeConverter.cs" />
+    <Compile Include="Client\GeometryTypeConverter.cs" />
+    <Compile Include="Client\GetReadStreamResult.cs" />
+    <Compile Include="Client\GuidTypeConverter.cs" />
+    <Compile Include="Client\HasStreamAttribute.cs" />
+    <Compile Include="Client\HeaderCollection.cs" />
+    <Compile Include="Client\HttpStack.cs" />
+    <Compile Include="Client\HttpWebRequestMessage.cs" />
+    <Compile Include="Client\HttpWebResponseMessage.cs" />
+    <Compile Include="Client\IgnoreClientPropertyAttribute.cs" />
+    <Compile Include="Client\InputBinder.cs" />
+    <Compile Include="Client\InputReferenceExpression.cs" />
+    <Compile Include="Client\InstancePrimitiveParserToken.cs" />
+    <Compile Include="Client\Int16TypeConverter.cs" />
+    <Compile Include="Client\Int32TypeConverter.cs" />
+    <Compile Include="Client\Int64TypeConverter.cs" />
+    <Compile Include="Client\InternalError.cs" />
+    <Compile Include="Client\InternalODataRequestMessage.cs" />
+    <Compile Include="Client\InvokeResponse.cs" />
+    <Compile Include="Client\KeyAttribute.cs" />
+    <Compile Include="Client\KeySerializer.cs" />
+    <Compile Include="Client\LinkDescriptor.cs" />
+    <Compile Include="Client\LinkInfo.cs" />
+    <Compile Include="Client\LiteralFormatter.cs" />
+    <Compile Include="Client\LoadCompletedEventArgs.cs" />
+    <Compile Include="Client\LoadPropertyResponseInfo.cs" />
+    <Compile Include="Client\LoadPropertyResult.cs" />
+    <Compile Include="Client\Materialization\CollectionValueMaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\EntityTrackingAdapter.cs" />
+    <Compile Include="Client\Materialization\EntryValueMaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\EnumValueMaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\FeedAndEntryMaterializerAdapter.cs" />
+    <Compile Include="Client\Materialization\InstanceAnnotationMaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\IODataMaterializerContext.cs" />
+    <Compile Include="Client\Materialization\MaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\MaterializerEntry.cs" />
+    <Compile Include="Client\Materialization\MaterializerFeed.cs" />
+    <Compile Include="Client\Materialization\MaterializerNavigationLink.cs" />
+    <Compile Include="Client\Materialization\ODataCollectionMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataEntityMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataEntityMaterializerInvoker.cs" />
+    <Compile Include="Client\Materialization\ODataEntriesEntityMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataItemExtensions.cs" />
+    <Compile Include="Client\Materialization\ODataLinksMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataLoadNavigationPropertyMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataMaterializerContext.cs" />
+    <Compile Include="Client\Materialization\ODataMessageReaderMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataPropertyMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataReaderEntityMaterializer.cs" />
+    <Compile Include="Client\Materialization\ODataReaderWrapper.cs" />
+    <Compile Include="Client\Materialization\ODataValueMaterializer.cs" />
+    <Compile Include="Client\Materialization\PrimitivePropertyConverter.cs" />
+    <Compile Include="Client\Materialization\PrimitiveValueMaterializationPolicy.cs" />
+    <Compile Include="Client\Materialization\StructuralValueMaterializationPolicy.cs" />
+    <Compile Include="Client\MaterializeAtom.cs" />
+    <Compile Include="Client\MaterializedEntityArgs.cs" />
+    <Compile Include="Client\MediaEntryAttribute.cs" />
+    <Compile Include="Client\MemberAssignmentAnalysis.cs" />
+    <Compile Include="Client\MergeOption.cs" />
+    <Compile Include="Client\MessageReaderSettingsArgs.cs" />
+    <Compile Include="Client\MessageWriterSettingsArgs.cs" />
+    <Compile Include="Client\Metadata\ClientPropertyAnnotation.cs" />
+    <Compile Include="Client\Metadata\ClientTypeAnnotation.cs" />
+    <Compile Include="Client\Metadata\ClientTypeCache.cs" />
+    <Compile Include="Client\Metadata\ClientTypeUtil.cs" />
+    <Compile Include="Client\MimeTypePropertyAttribute.cs" />
+    <Compile Include="Client\NamedStreamAttribute.cs" />
+    <Compile Include="Client\NamedStreamTypeConverter.cs" />
+    <Compile Include="Client\NavigationPropertySingletonExpression.cs" />
+    <Compile Include="Client\NewTreeBuilder.cs" />
+    <Compile Include="Client\ODataAnnotatableExtensions.cs" />
+    <Compile Include="Client\ODataItemWrapper.cs" />
+    <Compile Include="Client\ODataMessageReadingHelper.cs" />
+    <Compile Include="Client\ODataMessageWritingHelper.cs" />
+    <Compile Include="Client\ODataNestedResourceInfoWrapper.cs" />
+    <Compile Include="Client\ODataPropertyConverter.cs" />
+    <Compile Include="Client\ODataProtocolVersion.cs" />
+    <Compile Include="Client\ODataRequestMessageWrapper.cs" />
+    <Compile Include="Client\ODataResourceMetadataBuilder.cs" />
+    <Compile Include="Client\ODataResourceSetWrapper.cs" />
+    <Compile Include="Client\ODataResourceWrapper.cs" />
+    <Compile Include="Client\ODataUriBuilder.cs" />
+    <Compile Include="Client\ODataWriterHelper.cs" />
+    <Compile Include="Client\ODataWriterWrapper.cs" />
+    <Compile Include="Client\OperationDescriptor.cs" />
+    <Compile Include="Client\OperationParameter.cs" />
+    <Compile Include="Client\OperationResponse.cs" />
+    <Compile Include="Client\OrderByQueryOptionExpression.cs" />
+    <Compile Include="Client\OriginalNameAttribute.cs" />
+    <Compile Include="Client\PlatformHelper.cs" />
+    <Compile Include="Client\PrimitiveParserToken.cs" />
+    <Compile Include="Client\PrimitiveType.cs" />
+    <Compile Include="Client\PrimitiveTypeConverter.cs" />
+    <Compile Include="Client\ProjectionAnalyzer.cs" />
+    <Compile Include="Client\ProjectionPath.cs" />
+    <Compile Include="Client\ProjectionPathBuilder.cs" />
+    <Compile Include="Client\ProjectionPathSegment.cs" />
+    <Compile Include="Client\ProjectionPlan.cs" />
+    <Compile Include="Client\ProjectionPlanCompiler.cs" />
+    <Compile Include="Client\ProjectionQueryOptionExpression.cs" />
+    <Compile Include="Client\ProjectionRewriter.cs" />
+    <Compile Include="Client\Providers\EdmComplexTypeWithDelayLoadedProperties.cs" />
+    <Compile Include="Client\Providers\EdmEntityTypeWithDelayLoadedProperties.cs" />
+    <Compile Include="Client\Providers\EdmEnumTypeWithDelayLoadedMembers.cs" />
+    <Compile Include="Client\QueryableResourceExpression.cs" />
+    <Compile Include="Client\QueryComponents.cs" />
+    <Compile Include="Client\QueryOperationResponse.2.cs" />
+    <Compile Include="Client\QueryOperationResponse.cs" />
+    <Compile Include="Client\QueryOptionExpression.cs" />
+    <Compile Include="Client\QueryResult.cs" />
+    <Compile Include="Client\ReadingEntryArgs.cs" />
+    <Compile Include="Client\ReadingFeedArgs.cs" />
+    <Compile Include="Client\ReadingNestedResourceInfoArgs.cs" />
+    <Compile Include="Client\ReceivingResponseEventArgs.cs" />
+    <Compile Include="Client\ReferenceEqualityComparer.2.cs" />
+    <Compile Include="Client\ReferenceEqualityComparer.cs" />
+    <Compile Include="Client\ReflectionUtil.cs" />
+    <Compile Include="Client\RemoveWildcardVisitor.cs" />
+    <Compile Include="Client\RequestInfo.cs" />
+    <Compile Include="Client\ResourceBinder.cs" />
+    <Compile Include="Client\ResourceExpression.cs" />
+    <Compile Include="Client\ResourceExpressionType.cs" />
+    <Compile Include="Client\ResourceSetExpression.cs" />
+    <Compile Include="Client\ResponseInfo.cs" />
+    <Compile Include="Client\SaveChangesEventArgs.cs" />
+    <Compile Include="Client\SaveChangesOptions.cs" />
+    <Compile Include="Client\SaveResult.cs" />
+    <Compile Include="Client\SByteTypeConverter.cs" />
+    <Compile Include="Client\SelectExpandPathBuilder.cs" />
+    <Compile Include="Client\SelectExpandPathToStringVisitor.cs" />
+    <Compile Include="Client\SendingRequest2EventArgs.cs" />
+    <Compile Include="Client\SendingRequestEventArgs.cs" />
+    <Compile Include="Client\SequenceMethod.cs" />
+    <Compile Include="Client\Serializer.cs" />
+    <Compile Include="Client\SimpleLazy.cs" />
+    <Compile Include="Client\SingletonResourceExpression.cs" />
+    <Compile Include="Client\SingleTypeConverter.cs" />
+    <Compile Include="Client\SkipQueryOptionExpression.cs" />
+    <Compile Include="Client\StreamDescriptor.cs" />
+    <Compile Include="Client\Strings.cs" />
+    <Compile Include="Client\StringTypeConverter.cs" />
+    <Compile Include="Client\TakeQueryOptionExpression.cs" />
+    <Compile Include="Client\TextPrimitiveParserToken.cs" />
+    <Compile Include="Client\TextRes.cs" />
+    <Compile Include="Client\TimeOfDayConvert.cs" />
+    <Compile Include="Client\TimeSpanTypeConverter.cs" />
+    <Compile Include="Client\TrackingMode.cs" />
+    <Compile Include="Client\TypeResolver.cs" />
+    <Compile Include="Client\TypeSystem.cs" />
+    <Compile Include="Client\UInt16TypeConverter.cs" />
+    <Compile Include="Client\UInt32TypeConverter.cs" />
+    <Compile Include="Client\UInt64TypeConverter.cs" />
+    <Compile Include="Client\UndeclaredPropertyBehavior.cs" />
+    <Compile Include="Client\UriEntityOperationParameter.cs" />
+    <Compile Include="Client\UriHelper.cs" />
+    <Compile Include="Client\UriOperationParameter.cs" />
+    <Compile Include="Client\UriResolver.cs" />
+    <Compile Include="Client\UriTypeConverter.cs" />
+    <Compile Include="Client\UriUtil.cs" />
+    <Compile Include="Client\UriWriter.cs" />
+    <Compile Include="Client\Util.cs" />
+    <Compile Include="Client\Utility.cs" />
+    <Compile Include="Client\VertexColor.cs" />
+    <Compile Include="Client\WeakDictionary.cs" />
+    <Compile Include="Client\WeakKeyComparer.cs" />
+    <Compile Include="Client\WeakKeyReference.cs" />
+    <Compile Include="Client\WebUtil.cs" />
+    <Compile Include="Client\WritingEntityReferenceLinkArgs.cs" />
+    <Compile Include="Client\WritingEntryArgs.cs" />
+    <Compile Include="Client\WritingNestedResourceInfoArgs.cs" />
+    <Compile Include="Client\XDocumentTypeConverter.cs" />
+    <Compile Include="Client\XElementTypeConverter.cs" />
+    <Compile Include="Client\XmlConstants.cs" />
+    <Compile Include="InternalErrorCodesCommon.cs" />
+    <Compile Include="Json\JsonSharedUtils.cs" />
+    <Compile Include="Metadata\EdmLibraryExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Client.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

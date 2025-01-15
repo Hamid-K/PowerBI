@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39E1DBC2-C048-4351-9D28-56F50F6D500A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices.Portal.Interfaces</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Portal.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BIServer.HostingEnvironment">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.BIServer.HostingEnvironment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.CatalogAccessInterfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.CatalogAccessInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Diagnostics">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Soap">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\System.Web.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\ReportingServices\DataValidationException.cs" />
+    <Compile Include="Microsoft\ReportingServices\PortalException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Configuration\IOAuthClientConfigurationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Configuration\IPortalConfiguration.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Configuration\IPortalConfigurationManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Configuration\IRsConfigProvider.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Configuration\IWebConfigurationManager.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\EncryptionServiceExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\CatalogItemType.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\ErrorCode.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\ErrorReason.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\KnownDeliveryExtensions.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\KpiDataItemType.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\KpiValueFormat.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\KpiVisualization.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\LogonType.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\MobileReportResourceType.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Enums\ProductSku.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\CatalogItemInvalidException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\CatalogItemPropertyInvalidException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\DatabaseUnavailableException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\DataSetRenderingSoapException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\ExcelWorkbookContentInvalidException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\ExcelWorkbookWopiInvalidUrlException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\FailedToSetDataModelParameterException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\InvalidDataFormatException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\InvalidDataModelParameterException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\PowerBIMigrateInvalidUrlException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\PowerBIReportContentInvalidException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\PowerBIReportNotSupportedException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\SystemResourcePackageException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\SystemResourceProcessingException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Exceptions\UploadFileCanceledException.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\IEncryptionService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Logging\ILoggerScope.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\ICatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IDataSetField.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IDataSetParameter.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IDataSetSchema.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IExcelWorkbookCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IFolderCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifest.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifestDataSetItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifestItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifestResourceGroup.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifestResourceItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportManifestThumbnailItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IMobileReportResourceCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\Impl\ItemPolicy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\Impl\Policy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\Impl\Role.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\Impl\Subscription.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IPowerBIReportCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Models\IResourceCatalogItem.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Repositories\ICatalogRepository.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Repositories\ISubscriptionService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Repositories\ISystemService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\ICatalogService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\IDatabaseService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\IDataService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\INotificationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\IPowerBIIntegrationService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\ISystemResourceService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\ITelemetryConfigurationFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\ITelemetryService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\Services\IUserInfoService.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\CreateReportEditSessionResult.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\DataDrivenSubscriptionProperties.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\ISoapRS2010Proxy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\ISoapRSExecutionProxy.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\ISoapRSExecutionProxyFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\RenderResults.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SoapProxy\SubscriptionProperties.cs" />
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Microsoft\ReportingServices\Portal\Interfaces\WebApi\IAssembliesResolverFactory.cs" />
+    <Compile Include="Microsoft\ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="Microsoft\ReportingServices\TestPublicKeyConstants.cs" />
+    <Compile Include="Model\AlertSubscription.cs" />
+    <Compile Include="Model\AllowedAction.cs" />
+    <Compile Include="Model\BulkOperationsResult.cs" />
+    <Compile Include="Model\CacheOptions.cs" />
+    <Compile Include="Model\CacheRefreshPlan.cs" />
+    <Compile Include="Model\CatalogItem.cs" />
+    <Compile Include="Model\CatalogItemAccessToken.cs" />
+    <Compile Include="Model\CatalogItemAccessTokenContent.cs" />
+    <Compile Include="Model\CatalogItemDrillthroughTarget.cs" />
+    <Compile Include="Model\CatalogItemParameter.cs" />
+    <Compile Include="Model\CatalogItemType.cs" />
+    <Compile Include="Model\Comment.cs" />
+    <Compile Include="Model\Component.cs" />
+    <Compile Include="Model\CredentialRetrievalType.cs" />
+    <Compile Include="Model\CredentialsStoredInServer.cs" />
+    <Compile Include="Model\CredentialsSuppliedByUser.cs" />
+    <Compile Include="Model\DailyRecurrence.cs" />
+    <Compile Include="Model\DataModelDataSource.cs" />
+    <Compile Include="Model\DataModelDataSourceAuthType.cs" />
+    <Compile Include="Model\DataModelDataSourceKind.cs" />
+    <Compile Include="Model\DataModelDataSourceType.cs" />
+    <Compile Include="Model\DataModelParameter.cs" />
+    <Compile Include="Model\DataModelRole.cs" />
+    <Compile Include="Model\DataModelRoleAssignment.cs" />
+    <Compile Include="Model\DataRetrievalPlan.cs" />
+    <Compile Include="Model\DataSet.cs" />
+    <Compile Include="Model\DataSetField.cs" />
+    <Compile Include="Model\DataSetParameter.cs" />
+    <Compile Include="Model\DataSetParameterInfo.cs" />
+    <Compile Include="Model\DataSetRow.cs" />
+    <Compile Include="Model\DataSetSchema.cs" />
+    <Compile Include="Model\DataSource.cs" />
+    <Compile Include="Model\DataSourceCheckResult.cs" />
+    <Compile Include="Model\DaysOfWeekSelector.cs" />
+    <Compile Include="Model\DeliveryExtension.cs" />
+    <Compile Include="Model\DrillthroughTarget.cs" />
+    <Compile Include="Model\DrillthroughTargetType.cs" />
+    <Compile Include="Model\ExcelWorkbook.cs" />
+    <Compile Include="Model\ExecutionLogEventType.cs" />
+    <Compile Include="Model\ExecutionLogExecType.cs" />
+    <Compile Include="Model\ExecutionLogInfo.cs" />
+    <Compile Include="Model\ExecutionLogLevel.cs" />
+    <Compile Include="Model\ExpirationReference.cs" />
+    <Compile Include="Model\Extension.cs" />
+    <Compile Include="Model\ExtensionParameter.cs" />
+    <Compile Include="Model\ExtensionSettings.cs" />
+    <Compile Include="Model\ExtensionType.cs" />
+    <Compile Include="Model\FavoriteItem.cs" />
+    <Compile Include="Model\Folder.cs" />
+    <Compile Include="Model\HistorySnapshot.cs" />
+    <Compile Include="Model\HistorySnapshotOptions.cs" />
+    <Compile Include="Model\IssueType.cs" />
+    <Compile Include="Model\ItemExecutionType.cs" />
+    <Compile Include="Model\ItemHistoryOptions.cs" />
+    <Compile Include="Model\ItemPolicy.cs" />
+    <Compile Include="Model\Kpi.cs" />
+    <Compile Include="Model\KpiData.cs" />
+    <Compile Include="Model\KpiDataItem.cs" />
+    <Compile Include="Model\KpiDataItemType.cs" />
+    <Compile Include="Model\KpiSharedDataItem.cs" />
+    <Compile Include="Model\KpiSharedDataItemAggregation.cs" />
+    <Compile Include="Model\KpiStaticDataItem.cs" />
+    <Compile Include="Model\KpiValueFormat.cs" />
+    <Compile Include="Model\KpiValues.cs" />
+    <Compile Include="Model\KpiVisualization.cs" />
+    <Compile Include="Model\LinkedReport.cs" />
+    <Compile Include="Model\MinuteRecurrence.cs" />
+    <Compile Include="Model\MobileReport.cs" />
+    <Compile Include="Model\MobileReportDataSetType.cs" />
+    <Compile Include="Model\MobileReportManifest.cs" />
+    <Compile Include="Model\MobileReportResourceGroupType.cs" />
+    <Compile Include="Model\MobileReportThumbnailType.cs" />
+    <Compile Include="Model\MonthlyDOWRecurrence.cs" />
+    <Compile Include="Model\MonthlyRecurrence.cs" />
+    <Compile Include="Model\MonthsOfYearSelector.cs" />
+    <Compile Include="Model\Notification.cs" />
+    <Compile Include="Model\ParameterValue.cs" />
+    <Compile Include="Model\Policy.cs" />
+    <Compile Include="Model\PowerBIReport.cs" />
+    <Compile Include="Model\PowerBIUserInfo.cs" />
+    <Compile Include="Model\PowerBIUserStatus.cs" />
+    <Compile Include="Model\ProductType.cs" />
+    <Compile Include="Model\Property.cs" />
+    <Compile Include="Model\Query.cs" />
+    <Compile Include="Model\Report.cs" />
+    <Compile Include="Model\ReportHistorySnapshot.cs" />
+    <Compile Include="Model\ReportHistorySnapshotsOptions.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Model\ReportParameterDefinition.cs" />
+    <Compile Include="Model\ReportParameterDefinitionPatch.cs" />
+    <Compile Include="Model\ReportParameterProperties.cs" />
+    <Compile Include="Model\ReportParameterState.cs" />
+    <Compile Include="Model\ReportParameterType.cs" />
+    <Compile Include="Model\ReportParameterVisibility.cs" />
+    <Compile Include="Model\ReportServerInfo.cs" />
+    <Compile Include="Model\Resource.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\Schedule.cs" />
+    <Compile Include="Model\ScheduleDefinition.cs" />
+    <Compile Include="Model\ScheduleRecurrence.cs" />
+    <Compile Include="Model\ScheduleReference.cs" />
+    <Compile Include="Model\ScheduleStateEnum.cs" />
+    <Compile Include="Model\ServiceState.cs" />
+    <Compile Include="Model\Subscription.cs" />
+    <Compile Include="Model\SubscriptionExecutionType.cs" />
+    <Compile Include="Model\SubscriptionHistory.cs" />
+    <Compile Include="Model\SubscriptionStatus.cs" />
+    <Compile Include="Model\System.cs" />
+    <Compile Include="Model\SystemPolicy.cs" />
+    <Compile Include="Model\SystemResource.cs" />
+    <Compile Include="Model\SystemResourceItem.cs" />
+    <Compile Include="Model\SystemResourcePackage.cs" />
+    <Compile Include="Model\SystemResourceType.cs" />
+    <Compile Include="Model\Telemetry.cs" />
+    <Compile Include="Model\TelemetryHostData.cs" />
+    <Compile Include="Model\UrlDrillthroughTarget.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserSettings.cs" />
+    <Compile Include="Model\ValidValue.cs" />
+    <Compile Include="Model\WeeklyRecurrence.cs" />
+    <Compile Include="Model\WeekNumberEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.de.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.es.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.fr.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.it.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.ja.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.ko.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.pt.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.ru.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.zh-Hans.resx" />
+    <EmbeddedResource Include="Microsoft\ReportingServices\Portal\Interfaces\SR.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

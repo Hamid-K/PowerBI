@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateWithNonAggregateArgument" xml:space="preserve">
+    <value>The {0} contains the function "Aggregate" with a non-aggregate argument. The Aggregate function can not take non-aggregate arguments.</value>
+  </data>
+  <data name="ArgumentCardinalityMismatch" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" that is not valid. Scalar arguments cannot use a set of values.</value>
+  </data>
+  <data name="ArgumentDataTypeMismatch" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" of the data type "{3}" that is not valid.</value>
+  </data>
+  <data name="ArgumentValueOutOfRange" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" that is not valid. The value of the argument is outside the range of allowable values.</value>
+  </data>
+  <data name="BaseEntityMismatch" xml:space="preserve">
+    <value>One of the {0} properties for the {1} does not match the Hierarchy BaseEntity property. If Hierarchy is present, {0} must match the Hierarchy BaseEntity.</value>
+  </data>
+  <data name="BinaryEntityColumn" xml:space="preserve">
+    <value>The Column property of the {0} refers to the {1}, which has the data type Binary. The Column property of an Entity cannot reference a column with a binary data type.</value>
+  </data>
+  <data name="BinaryGroupingExpression" xml:space="preserve">
+    <value>The Grouping {0} returns the data type Binary. The Grouping Expression cannot return binary data.</value>
+  </data>
+  <data name="CalculatedAttributeNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the CalculatedAttribute Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="CalculatedAttributeNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the CalculatedAttribute Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="CircularInheritance" xml:space="preserve">
+    <value>The {0} property of the {1} specifies direct or indirect inheritance from itself. Loops in inheritance are not allowed.</value>
+  </data>
+  <data name="ColumnDataTypeMismatch" xml:space="preserve">
+    <value>The DataType property for the {0} is {2}, but the {1} has the data type {3}. The DataType property for the Attribute must match the data type of the Column.</value>
+  </data>
+  <data name="ColumnNullableMismatch" xml:space="preserve">
+    <value>The Nullable property for the {0} is false, but the referenced {1} is nullable. The Nullable property for the Attribute must match the nullability of the Column.</value>
+  </data>
+  <data name="CyclicExpression" xml:space="preserve">
+    <value>The {0} contains an Expression with a direct or indirect reference to itself. Loops in expressions are not allowed.</value>
+  </data>
+  <data name="CyclicExpression_ExpressionObject" xml:space="preserve">
+    <value>The {0} contains a direct or indirect reference to itself. Loops in expressions are not allowed.</value>
+  </data>
+  <data name="DuplicateEntityName" xml:space="preserve">
+    <value>More than one Entity in the {0} has the name "{1}". Entity names must be unique within a SemanticModel.</value>
+  </data>
+  <data name="DuplicateExpressionName" xml:space="preserve">
+    <value>More than one Expression in the {0} has the name "{1}". Expression names must be unique within a SemanticQuery.</value>
+  </data>
+  <data name="DuplicateFieldName" xml:space="preserve">
+    <value>More than one Field in the {0} has the name "{1}". Field names must be unique within an Entity.</value>
+  </data>
+  <data name="DuplicateGroupingName" xml:space="preserve">
+    <value>More than one Grouping in the {0} has the name "{1}". Grouping names must be unique within a SemanticQuery.</value>
+  </data>
+  <data name="DuplicateItemID" xml:space="preserve">
+    <value>More than one item in the model has the ID "{0}". Item IDs must be unique within a model.</value>
+  </data>
+  <data name="DuplicateItemName" xml:space="preserve">
+    <value>More than one item in the {0} has the name "{1}". Item names must be unique among immediate siblings.</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>More than one parameter in the {0} has the name "{1}". Parameter names must be unique within a SemanticQuery.</value>
+  </data>
+  <data name="EmptySemanticQuery" xml:space="preserve">
+    <value>The {0} does not contain any Groupings or MeasureGroups. SemanticQuery must contain at least one of these elements. This typically occurs because the user does not have permission to the items referenced by the query or the items referenced by the query have been deleted in the underlying model.</value>
+  </data>
+  <data name="EntityKeyTypeMismatch" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" that is not valid. Cannot convert from a {3} entity key to a {4} entity key.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext" xml:space="preserve">
+    <value>The {0} property of the {1} references the {2}. Based on the Path used to reach the {2}, this property can only reference the {3} or any Entity derived from it.</value>
+  </data>
+  <data name="EntityReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}. Based on the Path used to reach the {2}, this property can only reference the {3} or any Entity derived from it.</value>
+  </data>
+  <data name="ExpressionDataTypeMismatch" xml:space="preserve">
+    <value>The DataType property for the {0} is {2}, but the Expression for "{1}" returns the data type {3}. The DataType property for the Attribute must match the data type returned by the Expression.</value>
+  </data>
+  <data name="ExpressionNullableMismatch" xml:space="preserve">
+    <value>The Nullable property for the {0} is false, but the Expression for "{1}" is nullable. The Nullable property for the Attribute must match the nullability of the Expression.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext" xml:space="preserve">
+    <value>The {0} property of the {1} references the {2}. Based on the Path used to reach the {2}, this property can only reference Fields in the {3} or any Entity derived from it.</value>
+  </data>
+  <data name="FieldReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}. Based on the Path used to reach the {2}, this property can only reference Fields in the {3} or any Entity derived from it.</value>
+  </data>
+  <data name="GroupingNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the Grouping "{2}", which does not exist.</value>
+  </data>
+  <data name="GroupingNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the Grouping "{2}", which does not exist.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded" xml:space="preserve">
+    <value>The ID property for the {0} has a local name that exceeds the maximum length of {1} characters.</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded_NoContext" xml:space="preserve">
+    <value>The specified ID has a local name that exceeds the maximum length of {0} characters.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded" xml:space="preserve">
+    <value>The ID property for the {0} has a namespace that exceeds the maximum length of {1} characters.</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded_NoContext" xml:space="preserve">
+    <value>The specified ID has a namespace that exceeds the maximum length of {0} characters.</value>
+  </data>
+  <data name="ImplicitDecimalCastToFloat" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" which takes Argument "{2}" with data type Float but the value supplied has data type Decimal. Casting a Decimal value as a Float may result in loss of precision.</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>An internal error occurred in the modeling object model. See the error log for more details.</value>
+  </data>
+  <data name="InvalidAggregateAttributeReference" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}, which is an aggregate Attribute. This property must reference a non-aggregate Attribute.</value>
+  </data>
+  <data name="InvalidAttributeRef" xml:space="preserve">
+    <value>The {0} contains an AttributeRef that has both or neither of the following: AttributeID and AttributeName. AttributeRef must have exactly one of these elements.</value>
+  </data>
+  <data name="InvalidBinding" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2} in the DataSourceView, which does not exist.</value>
+  </data>
+  <data name="InvalidColumnDataType" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which has an unsupported data type.</value>
+  </data>
+  <data name="InvalidColumnReferenceInColumnEntity" xml:space="preserve">
+    <value>The {0} property of the {1} references the {2}. This property can only reference the {3}.</value>
+  </data>
+  <data name="InvalidColumnTableName" xml:space="preserve">
+    <value>The Column property of the {0} refers to the {1}, which does not match the {2} for the containing Entity.</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>The {0} property for the {1} has the value "{2}", which is not a valid ISO culture.</value>
+  </data>
+  <data name="InvalidDataSourceView" xml:space="preserve">
+    <value>The data source view is not valid. Details: {0}</value>
+  </data>
+  <data name="InvalidDateIntervalArgument" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" that is not valid. Literal without a Path is required.</value>
+  </data>
+  <data name="InvalidDateIntervalValue" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with the literal value "{3}" for Argument "{2}". The interval value must be one of the following: {4}.</value>
+  </data>
+  <data name="InvalidDrillSelectedItems" xml:space="preserve">
+    <value>The SelectedItems property of the DrillthroughContext parameter refers to items in more than one context. SelectedItems must contain either a reference to a single grouping expression or references to expressions which are all in the same measure group or in the same details collection.</value>
+  </data>
+  <data name="InvalidDrillSelectedPath" xml:space="preserve">
+    <value>The SelectedPath property of the DrillthroughContext parameter is "{0}", which is not equal to or a subset of the longest allowed path "{1}".</value>
+  </data>
+  <data name="InvalidDrillTargetEntity" xml:space="preserve">
+    <value>The BaseEntity of the {0} is the {1}. Based on the SelectedPath, the specified DrillthroughContext can be used only if the BaseEntity is the {2} or any Entity derived from it.</value>
+  </data>
+  <data name="InvalidDrillthroughContext" xml:space="preserve">
+    <value>The drillthrough context is not valid. Details: {0}</value>
+  </data>
+  <data name="InvalidEntityBinding" xml:space="preserve">
+    <value>The {0} has both of the following elements: Table and Column. Entity must have exactly one of these elements.</value>
+  </data>
+  <data name="InvalidEntityKeyPart" xml:space="preserve">
+    <value>The EntityKey part value "{0}" is not convertible to the key part type "{1}".</value>
+  </data>
+  <data name="InvalidEntityKeyValue" xml:space="preserve">
+    <value>The EntityKey value "{0}" cannot be parsed as a key for the {1}.</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>The {0} contains an Expression that has none or more than one of the following: Function, AttributeRef, EntityRef, ParameterRef, Literal, Null. Expression must have exactly one of these elements.</value>
+  </data>
+  <data name="InvalidExpression_TopLevel" xml:space="preserve">
+    <value>The {0} has none or more than one of the following: Function, AttributeRef, EntityRef, ParameterRef, Literal, Null. Expression must have exactly one of these elements.</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>The Filter Expression for the {0} returns the data type {1}. Filter Expression must return the data type Boolean.</value>
+  </data>
+  <data name="InvalidFunctionName" xml:space="preserve">
+    <value>The {0} contains a FunctionName with the value "{1}", which is not a valid function name.</value>
+  </data>
+  <data name="InvalidGuid" xml:space="preserve">
+    <value>The ID property for the {0} is in the empty (or SMDL) namespace but it is not a GUID. IDs in the empty (or SMDL) namespace must match the following GUID format: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidGuid_NoContext" xml:space="preserve">
+    <value>The specified ID is in the empty (or SMDL) namespace but it is not a GUID. IDs in the empty (or SMDL) namespace must match the following GUID format: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidHiddenAttributeReference" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}, which is a hidden Attribute. This property should reference a non-hidden Attribute.</value>
+  </data>
+  <data name="InvalidInSetArgument" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an Argument "{2}" that is not valid. The argument must contain a ParameterRef, a static function or a Literal without a Path.</value>
+  </data>
+  <data name="InvalidInheritanceRelationTable" xml:space="preserve">
+    <value>The {0} property of the {1} references the {2}. This property must reference a Relation for which the Source is the {3} and the Target is the {4}.</value>
+  </data>
+  <data name="InvalidLinguistics" xml:space="preserve">
+    <value>The Linguistics property is specified for the {0}, but the Name property is omitted. Linguistics cannot be specified for a Role if Name is omitted.</value>
+  </data>
+  <data name="InvalidLiteral" xml:space="preserve">
+    <value>The {0} contains a Literal that has both or neither of the following elements: Value and Values. Literal must have exactly one of these elements.</value>
+  </data>
+  <data name="InvalidLiteralSetArgument" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with a literal set for Argument "{2}". This argument cannot take a literal set as a value.</value>
+  </data>
+  <data name="InvalidLiteralValue" xml:space="preserve">
+    <value>The {0} contains a Literal with the Value "{1}", which is not a valid {2} value. {3}</value>
+  </data>
+  <data name="InvalidModelGenerationRules" xml:space="preserve">
+    <value>The model generation rules are not valid. Details: {0}</value>
+  </data>
+  <data name="InvalidModelItemInPerspective" xml:space="preserve">
+    <value>The {1} cannot be included in the {0}.</value>
+  </data>
+  <data name="InvalidNonFilterAttributeReference" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}, which is not a filter Attribute. This property must reference a filter Attribute.</value>
+  </data>
+  <data name="InvalidOptionalityOfRoleForColumnBoundEntity" xml:space="preserve">
+    <value>The {0} from the {1} to the {2} is optional, but the {3} is bound to a column. All roles involving entities bound to columns are treated as mandatory.</value>
+  </data>
+  <data name="InvalidParameterExpression" xml:space="preserve">
+    <value>The default value Expression for the {0} contains one or more of the following: Path, Function, AttributeRef, EntityRef, ParameterRef. Parameter Expression cannot contain these elements.</value>
+  </data>
+  <data name="InvalidParameterName" xml:space="preserve">
+    <value>A parameter in the {0} has the name "{1}". Parameter names cannot be the reserved name "{2}".</value>
+  </data>
+  <data name="InvalidParameterValueCardinality" xml:space="preserve">
+    <value>The parameter "{0}" requires a single value. However, the value provided for the parameter is a set.</value>
+  </data>
+  <data name="InvalidParameterValueType" xml:space="preserve">
+    <value>The data type of the parameter "{0}" is {1}. However, the value provided for the parameter cannot be converted to this type.</value>
+  </data>
+  <data name="InvalidParameterValueType_MultipleValues" xml:space="preserve">
+    <value>The data type of the parameter "{0}" is {1}. However, one or more of the values provided for the parameter cannot be converted to this type.</value>
+  </data>
+  <data name="InvalidReferencedItem" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not one of the following types: {3}.</value>
+  </data>
+  <data name="InvalidReferencedItem_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the {2}, which is not one of the following types: {3}.</value>
+  </data>
+  <data name="InvalidRoleRelationTable" xml:space="preserve">
+    <value>The Relation property of the {0} references the {1} end of the {2}. This property must reference a Relation end that refers to the {3}.</value>
+  </data>
+  <data name="InvalidScalarAttributeReference" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}, which is a non-aggregate Attribute. This property must reference an aggregate Attribute.</value>
+  </data>
+  <data name="InvalidSemanticModel" xml:space="preserve">
+    <value>The semantic model is not valid. Details: {0}</value>
+  </data>
+  <data name="InvalidSemanticQuery" xml:space="preserve">
+    <value>The semantic query is not valid. Details: {0}</value>
+  </data>
+  <data name="InvalidSetAttributeReference" xml:space="preserve">
+    <value>One of the {0} properties of the {1} references the {2}, which is not an aggregate Attribute. Based on the Path used to reach the {2}, this property must reference an aggregate Attribute.</value>
+  </data>
+  <data name="IsAggregateWithColumn" xml:space="preserve">
+    <value>The IsAggregate property for the {0} is true, but a Column binding is specified. IsAggregate cannot be true if a Column binding is specified.</value>
+  </data>
+  <data name="IsAggregateWithDefaultAggregate" xml:space="preserve">
+    <value>The DefaultAggregateAttributeID property for the {0} is specified, but the IsAggregate property is true. A default aggregate cannot be specified for aggregate attributes.</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the item "{2}", which does not exist.</value>
+  </data>
+  <data name="ItemNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the item "{2}", which does not exist.</value>
+  </data>
+  <data name="LoopInSecurityFilters" xml:space="preserve">
+    <value>A security filter of {0} indirectly depends on itself. Loops in security filters are not allowed.</value>
+  </data>
+  <data name="MeasureNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the Measure Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="MeasureNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the Measure Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="MissingBaseEntity" xml:space="preserve">
+    <value>The {0} property is missing for the {1}.</value>
+  </data>
+  <data name="MissingBaseEntity_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties is missing for the {1}.</value>
+  </data>
+  <data name="MissingBinding_Attribute" xml:space="preserve">
+    <value>The binding is missing for the {0}. Attribute must have exactly one Column binding if Expression is not specified.</value>
+  </data>
+  <data name="MissingBinding_Entity" xml:space="preserve">
+    <value>The binding is missing for the {0}. Entity must have exactly one of the following: Table, Column.</value>
+  </data>
+  <data name="MissingBinding_Inheritance" xml:space="preserve">
+    <value>The binding is missing for the Inheritance of the {0}. Inheritance must have exactly one Relation binding.</value>
+  </data>
+  <data name="MissingBinding_Role" xml:space="preserve">
+    <value>The binding is missing for the {0}. Role must have exactly one Relation binding, unless the containing Entity is bound to a Table and the related Entity is bound to a Column in this Table (or vice versa).</value>
+  </data>
+  <data name="MissingColumnTableName" xml:space="preserve">
+    <value>The Column.TableName is missing for the {0}. TableName must be specified for Column bindings of Entities.</value>
+  </data>
+  <data name="MissingDataSourceView" xml:space="preserve">
+    <value>The DataSourceView is missing for the {0}. SemanticModel must have exactly one DataSourceView element.</value>
+  </data>
+  <data name="MissingExpressionName" xml:space="preserve">
+    <value>Name is missing for an Expression in the {0}.</value>
+  </data>
+  <data name="MissingGroupingExpression" xml:space="preserve">
+    <value>The Expression is missing for the {0}. Grouping must have exactly one Expression.</value>
+  </data>
+  <data name="MissingGroupingName" xml:space="preserve">
+    <value>Name is missing for a Grouping in the {0}.</value>
+  </data>
+  <data name="MissingIdentifyingAttributes" xml:space="preserve">
+    <value>The {0} does not have any IdentifyingAttributes. Entity must have at least one IdentifyingAttribute.</value>
+  </data>
+  <data name="MissingItemName" xml:space="preserve">
+    <value>The Name is missing for the {0}.</value>
+  </data>
+  <data name="MissingMeasures" xml:space="preserve">
+    <value>One of the MeasureGroups for the {0} does not have any Measures. MeasureGroup must have at least one Measure.</value>
+  </data>
+  <data name="MissingMimeType" xml:space="preserve">
+    <value>The MimeType is missing for the {0}. MimeType should be specified for an Attribute with the data type Binary.</value>
+  </data>
+  <data name="MissingParameterName" xml:space="preserve">
+    <value>Name is missing for a parameter in the {0}.</value>
+  </data>
+  <data name="MissingParameterValue" xml:space="preserve">
+    <value>A value must be provided for the parameter "{0}".</value>
+  </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which does not have a primary key.</value>
+  </data>
+  <data name="MissingRelatedRole" xml:space="preserve">
+    <value>The RelatedRoleID is missing for the {0}.</value>
+  </data>
+  <data name="MissingRelationEnd" xml:space="preserve">
+    <value>The Relation.RelationEnd is missing for the {0}.</value>
+  </data>
+  <data name="MultipleHierarchies" xml:space="preserve">
+    <value>The {0} contains multiple Hierarchies, which is not supported.</value>
+  </data>
+  <data name="MultipleMeasureGroups" xml:space="preserve">
+    <value>The {0} contains multiple MeasureGroups, which is not supported.</value>
+  </data>
+  <data name="NestedVariations" xml:space="preserve">
+    <value>The {0} is a variation and contains nested variations. Variation fields cannot be nested inside other variation fields.</value>
+  </data>
+  <data name="NonAggregateAsDefaultAggregate" xml:space="preserve">
+    <value>The DefaultAggregateAttributeID property for the {0} refers to the {1}, which is not an aggregate attribute.</value>
+  </data>
+  <data name="NonAggregateExpression_Attribute" xml:space="preserve">
+    <value>The Expression for the {0} is not an aggregate expression, but the IsAggregate property is true. An aggregate expression must be provided if IsAggregate is true.</value>
+  </data>
+  <data name="NonAggregateExpression_Measure" xml:space="preserve">
+    <value>The {0} is not an aggregate expression. Measure Expressions must be aggregate expressions.</value>
+  </data>
+  <data name="NonBooleanFilterAttribute" xml:space="preserve">
+    <value>The {0} is a Filter attribute but returns the data type {1}. Filter attributes must return the data type Boolean.</value>
+  </data>
+  <data name="NonEntityGroupingWithDetails" xml:space="preserve">
+    <value>The {0} contains Details, but the Grouping {1} is not an EntityRef. The Grouping may contain Details only if the Grouping Expression is an EntityRef.</value>
+  </data>
+  <data name="NonPrimaryDataSource" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not in the primary data source.</value>
+  </data>
+  <data name="NonUniqueInheritanceRelationColumns" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not bound to a set of uniquely constrained columns for the {3}.</value>
+  </data>
+  <data name="NonUniqueRoleRelationColumns" xml:space="preserve">
+    <value>The Relation property of the {0} refers to the {1} end of the {2}, which is not bound to a set of uniquely constrained columns for the {3}. Roles with Cardinality of One or OptionalOne require relations bound to uniquely constrained columns of the table.</value>
+  </data>
+  <data name="NonVariationAsDefaultAggregate" xml:space="preserve">
+    <value>The DefaultAggregateAttributeID property for the {0} refers to the {2}, which is not a variation of "{1}". The default aggregate must be a variation of the attribute.</value>
+  </data>
+  <data name="NullParameterValue" xml:space="preserve">
+    <value>The parameter "{0}" cannot accept a null value.</value>
+  </data>
+  <data name="ObjectDescriptor_TypeAndName" xml:space="preserve">
+    <value>{0} "{1}"</value>
+  </data>
+  <data name="ParameterExpressionCardinalityMismatch" xml:space="preserve">
+    <value>The Cardinality property for the {0} is One, but the default value Expression for "{1}" returns a set. The default value Expression must return a single value if the Cardinality of the Parameter is One.</value>
+  </data>
+  <data name="ParameterExpressionDataTypeMismatch" xml:space="preserve">
+    <value>The DataType property for the {0} is {2}, but the default value Expression for "{1}" returns the data type {3}. The data type returned by the default value Expression must match the DataType property for the Parameter.</value>
+  </data>
+  <data name="ParameterExpressionNullableMismatch" xml:space="preserve">
+    <value>The Nullable property for the {0} is false, but the default value Expression for "{1}" is nullable. The nullability of the default value Expression must match the Nullable property for the Parameter.</value>
+  </data>
+  <data name="ParameterNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the Parameter "{2}", which does not exist.</value>
+  </data>
+  <data name="ParameterNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the Parameter "{2}", which does not exist.</value>
+  </data>
+  <data name="PromoteLookupForNonLookupEntity" xml:space="preserve">
+    <value>The PromoteLookup property of the {0} is true but the IsLookup property of the {1} is not true. Both the entity containing the role and the entity containing the related role must be lookup entities.</value>
+  </data>
+  <data name="RelatedRolesMismatch" xml:space="preserve">
+    <value>The RelatedRoleID property for the {0} refers to the {2}, but the RelatedRoleID for "{3}" does not refer to "{1}". The RelatedRoleID properties must refer to each other.</value>
+  </data>
+  <data name="ResultExpressionNotFound" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="ResultExpressionNotFound_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the Expression "{2}", which does not exist.</value>
+  </data>
+  <data name="RoleRelationEndsMismatch" xml:space="preserve">
+    <value>The Relation property of the {0} references the {2} end of the {3}, but the Relation property of the RelatedRole "{1}" also references the {2} end. The RelationEnds for a Role and its RelatedRole must not be the same.</value>
+  </data>
+  <data name="RoleRelationsMismatch" xml:space="preserve">
+    <value>The Relation property of the {0} references the {2}, but the Relation property of the RelatedRole "{1}" references the {3}. The Relation for a Role and its RelatedRole must be the same.</value>
+  </data>
+  <data name="SelfReferentialRole" xml:space="preserve">
+    <value>The RelatedRoleID property for the {0} is a self-reference. The RelatedRoleID property of a Role must refer to a Role other than itself.</value>
+  </data>
+  <data name="SemanticModel_PerspectiveNotFound" xml:space="preserve">
+    <value>The specified perspective "{0}" does not exist in the model.</value>
+  </data>
+  <data name="TopLevelSetExpression" xml:space="preserve">
+    <value>The {0} returns a set of values for each instance of the {1}. This expression must return a single value for each instance of the entity.</value>
+  </data>
+  <data name="TopLevelSetExpression_Attribute" xml:space="preserve">
+    <value>The Expression for the {0} returns a set of values for each instance of the {1}. This expression must return a single value for each instance of the entity.</value>
+  </data>
+  <data name="TopLevelSetExpression_Filter" xml:space="preserve">
+    <value>The Filter Expression for the {0} returns a set of values for each instance of the {1}. This expression must return a single value for each instance of the entity.</value>
+  </data>
+  <data name="UnusedParameterValue" xml:space="preserve">
+    <value>A parameter "{1}" was provided, but a parameter with this name is not defined in the {0}.</value>
+  </data>
+  <data name="ValidationException_MessageWithAdditionalMessages" xml:space="preserve">
+    <value>{0}
+{1} additional errors and/or warnings occurred.</value>
+  </data>
+  <data name="WrongNumberOfArguments" xml:space="preserve">
+    <value>The {0} contains a Function "{1}" with an incorrect number of Arguments.</value>
+  </data>
+  <data name="WrongSemanticModel_ModelItem" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not in the same SemanticModel as the {1}.</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItem" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not in the SemanticModel referenced by the query.</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItemMultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the {2}, which is not in the SemanticModel referenced by the query.</value>
+  </data>
+  <data name="WrongSemanticQuery" xml:space="preserve">
+    <value>The {0} property of the {1} refers to the {2}, which is not in the same SemanticQuery as the {1}.</value>
+  </data>
+  <data name="WrongSemanticQuery_MultipleProperties" xml:space="preserve">
+    <value>One of the {0} properties of the {1} refers to the {2}, which is not in the same SemanticQuery as the {1}.</value>
+  </data>
+  <data name="XmlValidationException_MessageWithLineInfo" xml:space="preserve">
+    <value>{0} Line {1}, position {2}.</value>
+  </data>
+  <data name="Xml_NodeMismatch" xml:space="preserve">
+    <value>Expected {0} "{1}" in namespace {2}, instead {3} "{4}" in namespace {5}.</value>
+  </data>
+</root>

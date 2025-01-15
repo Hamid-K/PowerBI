@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{8AFCECEE-B2DE-4855-A019-36F5D8B600B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.SqlServer.XEvent</RootNamespace>
+    <AssemblyName>Microsoft.SqlServer.XEvent</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.XE.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.SqlServer.XE.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.XEvent.PackageParser" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$_s__CatchableTypeArray$_extraBytes_24.cs" />
+    <Compile Include="$_s__CatchableTypeArray$_extraBytes_32.cs" />
+    <Compile Include="$_s__RTTIBaseClassArray$_extraBytes_16.cs" />
+    <Compile Include="$_s__RTTIBaseClassArray$_extraBytes_24.cs" />
+    <Compile Include="$_s__RTTIBaseClassArray$_extraBytes_32.cs" />
+    <Compile Include="$_s__RTTIBaseClassArray$_extraBytes_8.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_18.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_20.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_23.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_24.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_25.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_27.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_31.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_33.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_34.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_63.cs" />
+    <Compile Include="$_TypeDescriptor$_extraBytes_67.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00$$CB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00Q6MPEBXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY01Q6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY01U-$atomic@_K@std@@.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY02$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY02Q6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY03QEB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY03UXERelativeObjectId@@.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY04$$CB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY06$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY06Q6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY07$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY07$$CB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY08Q6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AHXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BA@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BC@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BF@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BK@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0M@$$CB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0N@$$CB_W.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0O@$$CBD.cs" />
+    <Compile Include="-CrtImplementationDetails-\LanguageSupport.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadExceptionHandlerException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleUninitializer.cs" />
+    <Compile Include="-CrtImplementationDetails-\Progress.cs" />
+    <Compile Include="-CrtImplementationDetails-\ThisModule.cs" />
+    <Compile Include="-CrtImplementationDetails-\TriBool.cs" />
+    <Compile Include="-Module-.cs" />
+    <Compile Include="BaseXEvent.cs" />
+    <Compile Include="Causality.cs" />
+    <Compile Include="CAutoBase-Microsoft.2.cs" />
+    <Compile Include="CAutoBase-Microsoft.cs" />
+    <Compile Include="CAutoBase-void-.cs" />
+    <Compile Include="CAutoBase-XEEvent-.cs" />
+    <Compile Include="CAutoBase-XEMap-.cs" />
+    <Compile Include="CAutoBase-XETarget-.cs" />
+    <Compile Include="CAutoBase-_GUID-.cs" />
+    <Compile Include="CAutoP-Microsoft.2.cs" />
+    <Compile Include="CAutoP-Microsoft.3.cs" />
+    <Compile Include="CAutoP-Microsoft.cs" />
+    <Compile Include="CAutoP-XEEvent-.cs" />
+    <Compile Include="CAutoP-XEMap-.cs" />
+    <Compile Include="CAutoP-XETarget-.cs" />
+    <Compile Include="CAutoP-_GUID-.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="ComplianceTag.cs" />
+    <Compile Include="EHExceptionRecord.cs" />
+    <Compile Include="ExternalStorage.cs" />
+    <Compile Include="gcroot-cli.2.cs" />
+    <Compile Include="gcroot-cli.cs" />
+    <Compile Include="gcroot-Microsoft.2.cs" />
+    <Compile Include="gcroot-Microsoft.cs" />
+    <Compile Include="gcroot-System.2.cs" />
+    <Compile Include="gcroot-System.3.cs" />
+    <Compile Include="gcroot-System.4.cs" />
+    <Compile Include="gcroot-System.cs" />
+    <Compile Include="GenericEvent.cs" />
+    <Compile Include="ICLRRuntimeHost.cs" />
+    <Compile Include="ICorRuntimeHost.cs" />
+    <Compile Include="Internal\BufferProcessor.cs" />
+    <Compile Include="Internal\GeneratedEvent.cs" />
+    <Compile Include="Internal\GenericInteropEvent.cs" />
+    <Compile Include="Internal\PublishDelegate.cs" />
+    <Compile Include="Internal\ReservedResources.cs" />
+    <Compile Include="Internal\ResourcesMgr.cs" />
+    <Compile Include="Internal\TargetCreator.cs" />
+    <Compile Include="Internal\TargetSerializer.cs" />
+    <Compile Include="Internal\XEventAutoObject-XEEvent-.cs" />
+    <Compile Include="Internal\XEventAutoObject-XEMap-.cs" />
+    <Compile Include="Internal\XEventAutoObject-XETarget-.cs" />
+    <Compile Include="Internal\XEventManagedPackage.cs" />
+    <Compile Include="Internal\XEventPackageRegistrar.cs" />
+    <Compile Include="Internal\XEventPackageSet.cs" />
+    <Compile Include="Internal\XEventRegisterAutoLoader.cs" />
+    <Compile Include="Internal\XEventTargetForwarder.cs" />
+    <Compile Include="Internal\XEventTypeMapping.cs" />
+    <Compile Include="Internal\XE_ObjectSList.cs" />
+    <Compile Include="Internal\XE_ObjectSListEntry.cs" />
+    <Compile Include="IUnknown.cs" />
+    <Compile Include="ListBase.cs" />
+    <Compile Include="msclr\_detail\callback_cdecl_struct2-bool,wchar_t const -,XEEvent const --.cs" />
+    <Compile Include="msclr\_detail\callback_cdecl_struct2-bool,XEBuffer const -,Microsoft.cs" />
+    <Compile Include="msclr\_detail\callback_cdecl_void_struct1-Microsoft.cs" />
+    <Compile Include="NonPublishedAttribute.cs" />
+    <Compile Include="OpCodes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEList-Microsoft.cs" />
+    <Compile Include="SEListElem.cs" />
+    <Compile Include="SESList-XESessionContext,56-.cs" />
+    <Compile Include="SinglyLinkedListBase.cs" />
+    <Compile Include="SList.cs" />
+    <Compile Include="std\basic_string-char,std.cs" />
+    <Compile Include="std\_Fake_allocator.cs" />
+    <Compile Include="TSinglyLinkedList-Microsoft.cs" />
+    <Compile Include="XBitmap-ExternalStorage-.cs" />
+    <Compile Include="XEActionDataDescriptor.cs" />
+    <Compile Include="XEActivityId.cs" />
+    <Compile Include="XEAPI.cs" />
+    <Compile Include="XEBuffer.cs" />
+    <Compile Include="XECollectedActionData.cs" />
+    <Compile Include="XECollectedEvent.cs" />
+    <Compile Include="XECustomizableAttribute.cs" />
+    <Compile Include="XEDataAttribute.cs" />
+    <Compile Include="XEEngineClientAPI.cs" />
+    <Compile Include="XEEngineRegisterAPI.cs" />
+    <Compile Include="XEEngineServicesAPI.cs" />
+    <Compile Include="XEError.cs" />
+    <Compile Include="XEErrorContext.cs" />
+    <Compile Include="XEEvent.cs" />
+    <Compile Include="XEEventBufferHeader.cs" />
+    <Compile Include="XELogMessage.cs" />
+    <Compile Include="XEMap.cs" />
+    <Compile Include="XEMapCapabilities.cs" />
+    <Compile Include="XEMapEntry.cs" />
+    <Compile Include="XEObject.cs" />
+    <Compile Include="XEObjectCollection.cs" />
+    <Compile Include="XEObjectType.cs" />
+    <Compile Include="XEPackage.cs" />
+    <Compile Include="XEPackageAPI.cs" />
+    <Compile Include="XEPackageMetadata.cs" />
+    <Compile Include="XERelativeObjectId.cs" />
+    <Compile Include="XESessionContext.cs" />
+    <Compile Include="XEStaticAttribute.cs" />
+    <Compile Include="XETarget.cs" />
+    <Compile Include="XETargetAPI.cs" />
+    <Compile Include="XEventAttribute.cs" />
+    <Compile Include="XEventAutoEngineLoad.cs" />
+    <Compile Include="XEventFieldAttribute.cs" />
+    <Compile Include="XEventInvalidEventTypeException.cs" />
+    <Compile Include="XEventInvalidMapException.cs" />
+    <Compile Include="XEventMapAttribute.cs" />
+    <Compile Include="XEventNamingException.cs" />
+    <Compile Include="XEventPackageAttribute.cs" />
+    <Compile Include="XEventPackageRegistrationFailure.cs" />
+    <Compile Include="XEventTooManyKeywordsException.cs" />
+    <Compile Include="XEventTooMayObjectsExcpeption.cs" />
+    <Compile Include="XEventUnsupportedTypeException.cs" />
+    <Compile Include="XEWaitResult.cs" />
+    <Compile Include="XEWaitType.cs" />
+    <Compile Include="XE_AutoEngineMutex.cs" />
+    <Compile Include="XE_AutoResource-void -,136-.cs" />
+    <Compile Include="XE_BufferCollector.cs" />
+    <Compile Include="XE_ErrorContext.cs" />
+    <Compile Include="XE_IPackage.cs" />
+    <Compile Include="XE_PackageEnumerator.cs" />
+    <Compile Include="XE_PackageManager.cs" />
+    <Compile Include="XE_SessionContextList.cs" />
+    <Compile Include="XE_SessionCtxtPublishEnum.cs" />
+    <Compile Include="XE_TCollection-0,0-.cs" />
+    <Compile Include="_EXCEPTION_POINTERS.cs" />
+    <Compile Include="_GUID.cs" />
+    <Compile Include="_s__CatchableType.cs" />
+    <Compile Include="_s__RTTIBaseClassDescriptor.cs" />
+    <Compile Include="_s__RTTIClassHierarchyDescriptor.cs" />
+    <Compile Include="_s__RTTICompleteObjectLocator2.cs" />
+    <Compile Include="_s__ThrowInfo.cs" />
+    <Compile Include="__scrt_native_startup_state.cs" />
+    <Compile Include="__std_exception_data.cs" />
+    <Compile Include="__s_GUID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\SqlServer\XEvent.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

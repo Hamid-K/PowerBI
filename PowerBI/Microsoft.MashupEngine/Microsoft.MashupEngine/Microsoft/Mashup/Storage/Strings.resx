@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="API_Key_Not_Specified" xml:space="preserve">
+    <value>An API key value wasn't specified</value>
+  </data>
+  <data name="Content_Storage_ContentMissing" xml:space="preserve">
+    <value>Content referenced by the document cannot be located and could have been deleted.</value>
+  </data>
+  <data name="EmailAddress_Not_Specified" xml:space="preserve">
+    <value>An email address wasn't specified</value>
+  </data>
+  <data name="EmailAddress_Not_Valid" xml:space="preserve">
+    <value>The email address specified isn't valid</value>
+  </data>
+  <data name="Feed_Key_Not_Specified" xml:space="preserve">
+    <value>An account key wasn't specified</value>
+  </data>
+  <data name="FirewallFlow_BadEmbedding" xml:space="preserve">
+    <value>The embedded query couldn't be used.</value>
+  </data>
+  <data name="IdentitySource_Not_Valid" xml:space="preserve">
+    <value>The IdentitySource specified isn't valid.</value>
+  </data>
+  <data name="Local_Storage_Unable_To_File_Storage" xml:space="preserve">
+    <value>We were unable to file storage part.</value>
+  </data>
+  <data name="Local_Storage_Unable_To_Remove_File" xml:space="preserve">
+    <value>We were unable to remove file storage part.</value>
+  </data>
+  <data name="Local_Storage_Unable_To_Save_File" xml:space="preserve">
+    <value>We were unable to save file storage part.</value>
+  </data>
+  <data name="MashupTooLarge" xml:space="preserve">
+    <value>We were unable to open the queries because they exceed the size limit of {0}MB.</value>
+  </data>
+  <data name="PackagePartStorage_EmbeddedPartTooLarge" xml:space="preserve">
+    <value>We were unable to update the queries because they exceed the size limit of {0}MB.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToAccessPart" xml:space="preserve">
+    <value>We were unable to access package part.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToAccessPartContentType" xml:space="preserve">
+    <value>We were unable to access package part content type.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToAccessPartContents" xml:space="preserve">
+    <value>We were unable to access package part contents.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToAccessPartNames" xml:space="preserve">
+    <value>We were unable to access package part names.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToAddPart" xml:space="preserve">
+    <value>We were unable to add package part.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToRemovePart" xml:space="preserve">
+    <value>We were unable remove package part.</value>
+  </data>
+  <data name="PackagePartStorage_UnableToSavePartContents" xml:space="preserve">
+    <value>We were unable to save package part contents.</value>
+  </data>
+  <data name="Package_Unable_To_Access" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Package_Unable_To_Load" xml:space="preserve">
+    <value>We were unable to load the queries.</value>
+  </data>
+  <data name="Package_Unable_To_Load_Too_Large" xml:space="preserve">
+    <value>We were unable to load the queries because they exceed the size limit of {0}MB.</value>
+  </data>
+  <data name="Package_Unrecognized_File_Format" xml:space="preserve">
+    <value>Unrecognized file format</value>
+  </data>
+  <data name="Thread_Not_Yet_Supported" xml:space="preserve">
+    <value>The 'Thread' IdentitySource is not yet supported.</value>
+  </data>
+  <data name="User_Name_Not_Specified" xml:space="preserve">
+    <value>A user name wasn't specified</value>
+  </data>
+  <data name="User_Name_Not_Valid" xml:space="preserve">
+    <value>The user name or password specified isn't valid for this IdentitySource.</value>
+  </data>
+  <data name="User_Not_Signed_In" xml:space="preserve">
+    <value>The current user isn't signed in.</value>
+  </data>
+</root>

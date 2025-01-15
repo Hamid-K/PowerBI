@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BadInputNumericEdited" xml:space="preserve">
+    <value>HISMPCB0016 In BasePrimitiveConverter the expected input was not found when processing a numeric-edited item.  Input data is: {0}, state machine value is: {1}, state machine index is: {2}.</value>
+  </data>
+  <data name="BadPackedDec" xml:space="preserve">
+    <value>HISMPCB0014 In BasePrimitiveConverter an invalid packed decimal value was encountered.</value>
+  </data>
+  <data name="BadZonedDec" xml:space="preserve">
+    <value>HISMPCB0015 In BasePrimitiveConverter an invalid zoned decimal value was encountered.</value>
+  </data>
+  <data name="CharConversionFailed" xml:space="preserve">
+    <value>HISMPCB0003 In BasePrimitiveConverter method {0} an error occurred when converting a character string.</value>
+  </data>
+  <data name="CharStringTooBig" xml:space="preserve">
+    <value>HISMPCB0022 In BasePrimitiveConverter an error occurred when converting a character string, the string exceeds the maximum length for the variable and trunction is not allowed.</value>
+  </data>
+  <data name="CorruptedHashTable" xml:space="preserve">
+    <value>HISMPCB0034 In BasePrimitiveConverter when an internal processing error occurred when attempting to obtain codepage information.</value>
+  </data>
+  <data name="DateConvertError" xml:space="preserve">
+    <value>HISMPCB0024 In BasePrimitiveConverter an error occurred when converting a Windows DateTime type to a packed or zoned decimal date.</value>
+  </data>
+  <data name="DateConvertError2" xml:space="preserve">
+    <value>HISMPCB0021 In BasePrimitiveConverter an error occurred when converting a packed or zoned decimal date to a Windows DateTime type.</value>
+  </data>
+  <data name="DateConvertError3" xml:space="preserve">
+    <value>HISMPCB0025 In BasePrimitiveConverter an error occurred when converting a Windows DateTime type to a character string.</value>
+  </data>
+  <data name="DateConvertError4" xml:space="preserve">
+    <value>HISMPCB0026 In BasePrimitiveConverter when processing a Windows DateTime type an error occurred converting a character string to an integer.</value>
+  </data>
+  <data name="DbcsConversionLengthError" xml:space="preserve">
+    <value>HISMPCB0037 In BasePrimitiveConverter a Double Byte character set conversion produced an incorrect length. {0} characters produced {1} bytes, using {2} of the characters.</value>
+  </data>
+  <data name="DbcsLengthError" xml:space="preserve">
+    <value>HISMPCB0036 In BasePrimitiveConverter a Double Byte character set conversion produced an incorrect length. {0} characters produced {1} bytes.</value>
+  </data>
+  <data name="DecimalFloatFailedExponent" xml:space="preserve">
+    <value>HISMPCB0046 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value a scale factor ({0}) larger than 28 was found.</value>
+  </data>
+  <data name="DecimalFloatFailedInfinityNegative" xml:space="preserve">
+    <value>HISMPCB0042 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value a negative infinity was found.</value>
+  </data>
+  <data name="DecimalFloatFailedInfinityPositive" xml:space="preserve">
+    <value>HISMPCB0043 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value a positive infinity was found.</value>
+  </data>
+  <data name="DecimalFloatFailedNaN" xml:space="preserve">
+    <value>HISMPCB0044 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value Not a Number was found.</value>
+  </data>
+  <data name="DecimalFloatFailedPositiveExponent" xml:space="preserve">
+    <value>HISMPCB0045 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value a positive exponent ({0}) was found.</value>
+  </data>
+  <data name="DecimalFloatFailedSignificand" xml:space="preserve">
+    <value>HISMPCB0047 In BasePrimitiveConverter while extracting digits from a Decimal Floating Point value the significand was too big to fit in a Decimal.</value>
+  </data>
+  <data name="DecimalOverflow" xml:space="preserve">
+    <value>HISMPCB0010 In BasePrimitiveConverter while extracting digits from a Decimal value an overflow has occurred.</value>
+  </data>
+  <data name="DoubleExponentOverflow" xml:space="preserve">
+    <value>HISMPCB0008 In BasePrimitiveConverter while extracting digits from a Double value an exponent overflow has occurred.</value>
+  </data>
+  <data name="DoubleMantissaOverflow" xml:space="preserve">
+    <value>HISMPCB0007 In BasePrimitiveConverter while extracting digits from a Double value a mantissa overflow has occurred.</value>
+  </data>
+  <data name="ExceptionOccurred" xml:space="preserve">
+    <value>HISMPCB0001 In BasePrimitiveConverter an exception has occurred.  Exception description: {0}</value>
+  </data>
+  <data name="ExpectedInputNotFound" xml:space="preserve">
+    <value>HISMPCB0004 In BasePrimitiveConverter an expected input not found when processing numeric-edited item.</value>
+  </data>
+  <data name="FloatExponentOverflow" xml:space="preserve">
+    <value>HISMPCB0006 In BasePrimitiveConverter while extracting digits from a Float (Single) value an exponent overflow has occurred.</value>
+  </data>
+  <data name="FloatMantissaOverflow" xml:space="preserve">
+    <value>HISMPCB0005 In BasePrimitiveConverter while extracting digits from a Float (Single) value a mantissa overflow has occurred.</value>
+  </data>
+  <data name="InputBufferExhausted" xml:space="preserve">
+    <value>HISMPCB0028 In BasePrimitiveConverter the input buffer has been exhausted and more data is expected.</value>
+  </data>
+  <data name="InvalidCodepage" xml:space="preserve">
+    <value>HISMPCB0002 In BasePrimitiveConverter the SetCodePage method has been called with a invalid codepage: {0}.</value>
+  </data>
+  <data name="InvalidDBCSString" xml:space="preserve">
+    <value>HISMPCB0049 In BasePrimitiveConverter a double byte character string contained an invalid double-byte character.</value>
+  </data>
+  <data name="InvalidDateEditMask" xml:space="preserve">
+    <value>HISMPCB0032 In BasePrimitiveConverter when processing a Date conversion the conversion edit mask was found to be invalid.</value>
+  </data>
+  <data name="InvalidEditedDate" xml:space="preserve">
+    <value>HISMPCB0033 In BasePrimitiveConverter when processing a Date conversion the input date has an invalid {0} element.</value>
+  </data>
+  <data name="InvalidEditedDateCharacter" xml:space="preserve">
+    <value>HISMPCB0039 In BasePrimitiveConverter when processing a Date conversion '{0}' was expected, the input date has '{1}'.</value>
+  </data>
+  <data name="InvalidEditedTimeSpan" xml:space="preserve">
+    <value>HISMPCB0040 In BasePrimitiveConverter when processing a TimeSpan conversion the input date has an invalid {0} element.</value>
+  </data>
+  <data name="InvalidEditedTimeSpanCharacter" xml:space="preserve">
+    <value>HISMPCB0041 In BasePrimitiveConverter when processing a TimeSpan conversion '{0}' was expected, the input timespan has '{1}'.</value>
+  </data>
+  <data name="MbcsConversionLengthError" xml:space="preserve">
+    <value>HISMPCB0038 In BasePrimitiveConverter a Mixed Byte character set conversion produced an incorrect length. {0} characters produced {1} bytes, using {2} of the characters.</value>
+  </data>
+  <data name="NotSignSeparateOrUnsigned" xml:space="preserve">
+    <value>HISMPCB0017 In BasePrimitiveConverter a data conversion mapping has been encountered and the sign is not separate and/or the value is not unsigned.</value>
+  </data>
+  <data name="NumericOverflow" xml:space="preserve">
+    <value>HISMPCB0009 In BasePrimitiveConverter the value of the input data exceeds the maximum allowed for the output field.</value>
+  </data>
+  <data name="OutputBufferOverflow" xml:space="preserve">
+    <value>HISMPCB0023 In BasePrimitiveConverter an error occurred when converting a character string, the result exceeds the output buffer.</value>
+  </data>
+  <data name="PrecisionLoss" xml:space="preserve">
+    <value>HISMPCB0030 In BasePrimitiveConverter a loss of numeric precision has occurred.</value>
+  </data>
+  <data name="PrecisionOverflow" xml:space="preserve">
+    <value>HISMPCB0027 In BasePrimitiveConverter a characteristic overflow has occurred when converting a floating point number.</value>
+  </data>
+  <data name="PrecisionTooLarge" xml:space="preserve">
+    <value>HISMPCB0029 In BasePrimitiveConverter the precision exceeded the maximum allowed.</value>
+  </data>
+  <data name="SbcsConversionLengthError" xml:space="preserve">
+    <value>HISMPCB0035 In BasePrimitiveConverter a Single Byte character set conversion produced an incorrect length. {0} characters produced {1} bytes.</value>
+  </data>
+  <data name="ScaleTooLarge" xml:space="preserve">
+    <value>HISMPCB0019 In BasePrimitiveConverter the number of digits following the decimal point exceeds the configured maximum</value>
+  </data>
+  <data name="StringTooShortPaddingNotAllowed" xml:space="preserve">
+    <value>HISMPCB0031 In BasePrimitiveConverter a string conversion has failed because the input string contains fewer characters that required and padding is not allowed.</value>
+  </data>
+  <data name="ToDecimalFloatFailedSignificand" xml:space="preserve">
+    <value>HISMPCB0048 In BasePrimitiveConverter while setting digits in a Decimal Floating Point value the number of digits in the Decimal was too large.</value>
+  </data>
+  <data name="UnsignedHost" xml:space="preserve">
+    <value>HISMPCB0013 In BasePrimitiveConverter a host data value is negative and is expected to be unsigned.</value>
+  </data>
+  <data name="UnsignedWindows" xml:space="preserve">
+    <value>HISMPCB0011 In BasePrimitiveConverter a negative Windows value has been encountered and is assigned to an unsigned host data type.</value>
+  </data>
+  <data name="UnsupportedCharConversion" xml:space="preserve">
+    <value>HISMPCB0020 In BasePrimitiveConverter a double byte character string has been passed to a single byte character string conversion routine.</value>
+  </data>
+  <data name="UnsupportedConversion" xml:space="preserve">
+    <value>HISMPCB0018 In BasePrimitiveConverter an unsupported data conversion mapping has been encountered in method {0}.</value>
+  </data>
+  <data name="ValueNegativeNoSeparateSign" xml:space="preserve">
+    <value>HISMPCB0012 In BasePrimitiveConverter a negative Windows value has been encountered and is assigned to an host data type without sign is separate support.</value>
+  </data>
+</root>

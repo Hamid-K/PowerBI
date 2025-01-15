@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE9A479F-B9F6-480D-A4D4-8B2C3EE54C5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.BIServer.HostingEnvironment</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper.StrongName">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Dapper.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.BIServer.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Editions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.ReportingServices.Editions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Web.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="BIServer\HostingEnvironment\AccountCredentials.cs" />
+    <Compile Include="BIServer\HostingEnvironment\AccountType.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Args.cs" />
+    <Compile Include="BIServer\HostingEnvironment\BIProcess.cs" />
+    <Compile Include="BIServer\HostingEnvironment\BIServerTelemetryConfiguration.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Contracts\ContractExtensions.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\Crypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\CryptoSimulator.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\CryptoTags.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\Exceptions\CannotValidateEncryptedDataException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\Exceptions\CryptoException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\Exceptions\KeysAlreadyInitializedException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\Exceptions\SymmetricKeyNotInitializedException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\ICrypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\MachineKeyCrypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\NoCrypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\SymmetricKeyCrypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Cryptography\UserKeyCrypto.cs" />
+    <Compile Include="BIServer\HostingEnvironment\DefaultTraceLogger.cs" />
+    <Compile Include="BIServer\HostingEnvironment\DictionaryExtensions.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Exceptions\AccountDoesNotExistException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Exceptions\HostingEnvironmentException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Exceptions\InvalidTrustedProcessTokenException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Exceptions\TrustedProcessTokenExpiredException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ExponentialBackoff.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\CatalogConfigDefaults.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\CatalogConfigUpgrade.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\ConfigSettings.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\ConfigSwitchDefaults.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\ConfigSwitches.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\CorsCongfigSettings.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\DatabaseValidationStatus.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\HostingState.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingInfo\ManagementState.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HostingUrlSettings.cs" />
+    <Compile Include="BIServer\HostingEnvironment\HttpListenerLogger.cs" />
+    <Compile Include="BIServer\HostingEnvironment\IClock.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ILogger.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ImpersonationContext.cs" />
+    <Compile Include="BIServer\HostingEnvironment\InstallationInfo.cs" />
+    <Compile Include="BIServer\HostingEnvironment\IUserContextContainer.cs" />
+    <Compile Include="BIServer\HostingEnvironment\LogFileInfo.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Logger.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ManagementAdapter\IManagementService.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ManagementAdapter\ManagementException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ManagementAdapter\ManagementService.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ManagementObjectEnumeratorExtensions.cs" />
+    <Compile Include="BIServer\HostingEnvironment\MeterCollector.cs" />
+    <Compile Include="BIServer\HostingEnvironment\OsInfoProvider.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Request\IOwinRequestExtensions.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Request\RequestContext.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Request\TrustedProcessToken.cs" />
+    <Compile Include="BIServer\HostingEnvironment\RSPath.cs" />
+    <Compile Include="BIServer\HostingEnvironment\SafeTokenHandle.cs" />
+    <Compile Include="BIServer\HostingEnvironment\ScopeMeter.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Sha256Hasher.cs" />
+    <Compile Include="BIServer\HostingEnvironment\StaticConfig.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\Exceptions\DatabaseConfigurationException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\Exceptions\DatabaseException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\Exceptions\DatabaseLoginFailedException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\Exceptions\DatabaseUnavailableException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\ISqlAccess.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\MeteredSqlConnection.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\ReferenceSqlAccess.cs" />
+    <Compile Include="BIServer\HostingEnvironment\Storage\ScopedSqlTransaction.cs" />
+    <Compile Include="BIServer\HostingEnvironment\SystemClock.cs" />
+    <Compile Include="BIServer\HostingEnvironment\TimeMeter.cs" />
+    <Compile Include="BIServer\HostingEnvironment\TrustedWebApiProxy.cs" />
+    <Compile Include="BIServer\HostingEnvironment\WebApiException.cs" />
+    <Compile Include="BIServer\HostingEnvironment\WebApiExceptionLogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="ReportingServices\TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

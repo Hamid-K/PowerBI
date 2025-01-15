@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Power BI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no"/>
+    <script type="text/javascript" src="powerbi/assets/js/rs-utils.js"></script>
+    <script type="text/javascript">
+        var viewLoadingStarted = Date.now();
+        var initializeContainerStartTime = new Date();
+
+        var baseUrl = window.location.protocol + '//' + window.location.host;
+        var powerbi = {
+            session: {
+                userInfo: {},
+            },
+        };
+
+        // https://webpack.js.org/guides/public-path/#on-the-fly
+        powerbi.build = '/powerbi/libs';
+        const path = '/powerbi/libs/scripts/';
+        __webpack_public_path__ = path;
+
+        var reportId = RSUtils.getQueryParameterValue('id');
+
+        // The Portal service knows if telemetry is enabled, we reuse this by passing it in via the url of the iframe
+        var rsHostData = RSUtils.getQueryParameterValue('hostdata', '{"IsEnabled":false}');
+        var telemetryConfigConnectionString = RSUtils.getQueryParameterValue('telemetryConfigConnectionString', '');
+        var hostData = JSON.parse(decodeURIComponent(rsHostData));
+        var decodedConnectionString = decodeURIComponent(telemetryConfigConnectionString);
+
+        // This is the global used by minerva to craft URL to make calls to get resources from.
+        var resourceLoaderUrl = '/explore/resourcePackageItem/' + reportId + '/';
+        var publicBuild = false;
+
+        if (hostData.IsEnabled) {
+            publicBuild = hostData.IsPublicBuild;
+            var criticalErrorSampleRate = 0;
+            if (!publicBuild) {
+                criticalErrorSampleRate = 1;
+            }
+            powerbi.telemetrySamplingRules = {
+                appInsights: [
+                    { purpose: 'CriticalError', sampleRate: criticalErrorSampleRate },
+                    { purpose: 'CustomerAction', sampleRate: 1 },
+                    { purpose: 'Verbose', sampleRate: 1 },
+                    { purpose: 'Trace', sampleRate: 0 },
+                ],
+            };
+        } else {
+            powerbi.telemetrySamplingRules = 'none';
+        }
+
+        // Previously the flag disableTelemetry in appInsightsConfig didn't actually work.
+        // Set this global flag to disable telemetry logging if users opt out.
+        var isTelemetryDisabled = !hostData.IsEnabled;
+        var allowTelemetry = !isTelemetryDisabled;
+
+        // Set this flag to that telemetry host service can strip urls, unknown aiTags, and unknown aiEnvelopes
+        // from appInsights telemetry.
+        var cleanUpAppInsightsEvents = true;
+
+        var appInsightsConfig = {
+            connectionString: decodedConnectionString,
+            enableDebug: false,
+            verboseLogging: false,
+            disableExceptionTracking: publicBuild, // Exception tracking can have PII
+            disableAjaxTracking: publicBuild, // The URLs in the AJAX tracking can have PII
+            // Vortex requires that events must be separated by a new line character,
+            // so specifying the following option to tell AppInsights to add \n between
+            // events. https://github.com/Microsoft/ApplicationInsights-JS/blob/906b94acc7ddebb24a68454b34aa425cbe93f7c5/JavaScript/JavaScriptSDK/SendBuffer.ts#L85-L92
+            emitLineDelimitedJson: true,
+        };
+        var clusterUri = 'powerbi/api';
+        var embedUserId = 'powerbi/api';
+
+        function guid() {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+            }
+
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+        }
+
+        var telemetrySessionId = guid();
+        powerbi.common = {};
+        powerbi.common.cultureInfo = 'en-US';
+        powerbi.common.unmappedCultureInfo = 'en-US';
+        powerbi.common.isCurrentContextRtl = 'False';
+        powerbi.common.localizedStrings = '';
+
+        // PowerBICommon scripts expect the variables below to be defined
+        var isReportControllerInitialized = false;
+        var powerBIAccessToken = 'any';
+        var skipCheckPowerBIAccessToken = true;
+        var previousTenantId = '';
+        var initialDashboardContainer;
+
+        // Temporarily setting these variables till Hao refactors StandaloneReportHost to accept config setting to skip tokenRefresh calls and authentication checks respecitvely
+        var powerBIResourceKey = 'any';
+        var isAppTokenEmbed = true;
+    </script>
+    <link rel="stylesheet" href="powerbi/assets/css/powerbi-loading.css"/>
+    <link rel="stylesheet" href="powerbi/libs/styles/reportServerHostModern.bundle.css"/>
+</head>
+<body>
+<div id="pbi-loading"></div>
+<div id="pbiAppPlaceHolder">
+    <ui-view></ui-view>
+</div>
+
+<script type="text/javascript" src="powerbi/libs/scripts/globalize.js" defer></script>
+<script type="text/javascript" src="powerbi/libs/scripts/globalize.cultures.js" defer></script>
+<script type="text/javascript" src="powerbi/libs/scripts/powerbiportal.dependencies.externals.withoutangularjs.bundle.js"></script>
+<script type="text/javascript" src="powerbi/libs/scripts/styleLibrary.js"></script>
+<script type="text/javascript" src="powerbi/libs/scripts/require.js"></script>
+<script type="text/javascript" src="powerbi/libs/scripts/reportServerHostModern.js"></script>
+<script type="text/javascript">
+    if (!hostData || hostData.IsPublicBuild) {
+        // Disable Page Views since they can have PII
+        appInsights.trackPageView = function (name, url) { };
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateWithNonAggregateArgument" xml:space="preserve">
+    <value>{0} に、集計ではない引数を持つ関数 "集計" が含まれています。集計関数は、集計以外の引数は受け取りません。</value>
+  </data>
+  <data name="ArgumentCardinalityMismatch" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の Argument "{2}" が無効です。スカラー引数は値のセットを使用できません。</value>
+  </data>
+  <data name="ArgumentDataTypeMismatch" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の引数 "{2}" のデータ型 "{3}" が無効です。</value>
+  </data>
+  <data name="ArgumentValueOutOfRange" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の Argument "{2}" が無効です。引数の値が、許可されている値の範囲外です。</value>
+  </data>
+  <data name="BaseEntityMismatch" xml:space="preserve">
+    <value>{1} の {0} プロパティのいずれかが、Hierarchy BaseEntity プロパティと一致しません。Hierarchy が存在する場合、{0} は、Hierarchy BaseEntity と一致する必要があります。</value>
+  </data>
+  <data name="BinaryEntityColumn" xml:space="preserve">
+    <value>{0} の Column プロパティで Binary データ型の {1} が参照されています。Entity の Column プロパティでは、バイナリ型の列を参照できません。</value>
+  </data>
+  <data name="BinaryGroupingExpression" xml:space="preserve">
+    <value>Grouping {0} で Binary データ型が返されます。Grouping Expression では、バイナリ データを返すことができません。</value>
+  </data>
+  <data name="CalculatedAttributeNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しない CalculatedAttribute Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="CalculatedAttributeNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しない CalculatedAttribute Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="CircularInheritance" xml:space="preserve">
+    <value>{1} の {0} プロパティには、プロパティ自身の直接参照または間接参照が指定されています。継承ではループは許可されていません。</value>
+  </data>
+  <data name="ColumnDataTypeMismatch" xml:space="preserve">
+    <value>{0} の DataType プロパティは {2} ですが、{1} のデータ型は {3} です。Attribute の DataType プロパティは、Column のデータ型と一致する必要があります。</value>
+  </data>
+  <data name="ColumnNullableMismatch" xml:space="preserve">
+    <value>{0} の Nullable プロパティは false ですが、参照されている {1} では NULL 値が許容されます。Attribute の Nullable プロパティは、列の NULL 値の許容と一致する必要があります。</value>
+  </data>
+  <data name="CyclicExpression" xml:space="preserve">
+    <value>{0} 内の Expression に、式自身の直接参照または間接参照が含まれています。式ではループは許可されていません。</value>
+  </data>
+  <data name="CyclicExpression_ExpressionObject" xml:space="preserve">
+    <value>{0} には、自己の直接参照または間接参照が含まれています。式ではループは許可されていません。</value>
+  </data>
+  <data name="DuplicateEntityName" xml:space="preserve">
+    <value>{0} の複数の Entity に "{1}" という名前が指定されています。Entity の名前は SemanticModel 内で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateExpressionName" xml:space="preserve">
+    <value>{0} の複数の Expression に "{1}" という名前が指定されています。Expression の名前は SemanticQuery 内で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateFieldName" xml:space="preserve">
+    <value>{0} の複数の Field に "{1}" という名前が指定されています。Field の名前は Entity 内で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateGroupingName" xml:space="preserve">
+    <value>{0} の複数の Grouping に "{1}" という名前が指定されています。Grouping の名前は SemanticQuery 内で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateItemID" xml:space="preserve">
+    <value>モデルの複数のアイテムに "{0}" という ID が指定されています。アイテム ID はモデル内で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateItemName" xml:space="preserve">
+    <value>{0} の複数のアイテムに "{1}" という名前が指定されています。アイテム名は直接の兄弟の間で一意である必要があります。</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>{0} の複数のパラメーターに "{1}" という名前が指定されています。パラメーター名は SemanticQuery 内で一意である必要があります。</value>
+  </data>
+  <data name="EmptySemanticQuery" xml:space="preserve">
+    <value>{0} に Grouping または MeasureGroups が含まれていません。SemanticQuery には、これらの要素が少なくとも 1 つ含まれている必要があります。これは通常、クエリによって参照されているアイテムに対する権限をユーザーが持っていないか、クエリによって参照されているアイテムが基になるモデルで削除されているために起こります。</value>
+  </data>
+  <data name="EntityKeyTypeMismatch" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の引数 "{2}" が無効です。{3} エンティティ キーを {4} エンティティ キーに変換できません。</value>
+  </data>
+  <data name="EntityReferenceOutOfContext" xml:space="preserve">
+    <value>{1} の {0} プロパティで {2} が参照されています。{2} の参照に使用した Path に基づいて、このプロパティでは {3} またはそこから派生した Entity のみを参照できます。</value>
+  </data>
+  <data name="EntityReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで {2} が参照されています。{2} の参照に使用した Path に基づいて、このプロパティでは {3} またはそこから派生した Entity のみを参照できます。</value>
+  </data>
+  <data name="ExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0} の DataType プロパティは {2} ですが、"{1}" の Expression から返されるデータ型は {3} です。Attribute の DataType プロパティは、Expression から返されるデータ型と一致する必要があります。</value>
+  </data>
+  <data name="ExpressionNullableMismatch" xml:space="preserve">
+    <value>{0} の Nullable プロパティは false ですが、"{1}" の Expression では NULL 値が許容されます。Attribute の Nullable プロパティは、Expression の NULL 値の許容と一致する必要があります。</value>
+  </data>
+  <data name="FieldReferenceOutOfContext" xml:space="preserve">
+    <value>{1} の {0} プロパティで {2} が参照されています。{2} の参照に使用した Path に基づいて、このプロパティでは {3} 内の Field またはそこから派生した Entity のみを参照できます。</value>
+  </data>
+  <data name="FieldReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで {2} が参照されています。{2} の参照に使用した Path に基づいて、このプロパティでは {3} 内の Field またはそこから派生した Entity のみを参照できます。</value>
+  </data>
+  <data name="GroupingNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しない Grouping "{2}" が参照されています。</value>
+  </data>
+  <data name="GroupingNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しない Grouping "{2}" が参照されています。</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded" xml:space="preserve">
+    <value>{0} の ID プロパティに、{1} 文字の最大長を超えるローカル名が使用されています。</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded_NoContext" xml:space="preserve">
+    <value>指定した ID に、{0} 文字の最大長を超えるローカル名が使用されています。</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded" xml:space="preserve">
+    <value>{0} の ID プロパティに、{1} 文字の最大長を超える名前空間が使用されています。</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded_NoContext" xml:space="preserve">
+    <value>指定した ID に、{0} 文字の最大長を超える名前空間が使用されています。</value>
+  </data>
+  <data name="ImplicitDecimalCastToFloat" xml:space="preserve">
+    <value>{0} に含まれている関数 "{1}" は float データ型の引数 "{2}" を受け取りますが、指定された値のデータ型は decimal です。decimal 型の値を float 型としてキャストすると、有効桁数が失われる場合があります。</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>モデリング オブジェクト モデルで内部エラーが発生しました。詳細については、エラー ログを参照してください。</value>
+  </data>
+  <data name="InvalidAggregateAttributeReference" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、集計 Attribute である {2} が参照されています。このプロパティでは、非集計 Attribute を参照する必要があります。</value>
+  </data>
+  <data name="InvalidAttributeRef" xml:space="preserve">
+    <value>{0} 内の AttributeRef に、AttributeID と AttributeName の両方が含まれているか、またはどちらも含まれていません。AttributeRef には、この 2 つの要素のどちらか 1 つだけが含まれている必要があります。</value>
+  </data>
+  <data name="InvalidBinding" xml:space="preserve">
+    <value>{1} の {0} プロパティで、DataSourceView 内に存在しない {2} が参照されています。</value>
+  </data>
+  <data name="InvalidColumnDataType" xml:space="preserve">
+    <value>{1} の {0} プロパティで、サポートされていないデータ型を持つ {2} が参照されています。</value>
+  </data>
+  <data name="InvalidColumnReferenceInColumnEntity" xml:space="preserve">
+    <value>{1} の {0} プロパティで {2} が参照されています。このプロパティでは、{3} のみを参照できます。</value>
+  </data>
+  <data name="InvalidColumnTableName" xml:space="preserve">
+    <value>{0} の Column プロパティで、親エンティティの {2} と一致しない {1} が参照されています。</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>{1} の {0} プロパティの値が "{2}" です。この値は有効な ISO カルチャではありません。</value>
+  </data>
+  <data name="InvalidDataSourceView" xml:space="preserve">
+    <value>データ ソース ビューが有効ではありません。詳細: {0}</value>
+  </data>
+  <data name="InvalidDateIntervalArgument" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の引数 "{2}" が無効です。Path を含まない Literal が必要です。</value>
+  </data>
+  <data name="InvalidDateIntervalValue" xml:space="preserve">
+    <value>{0} には、引数 "{2}" のリテラル値 "{3}" を持つ関数 "{1}" が含まれています。間隔の値は、次のいずれかである必要があります: {4}。</value>
+  </data>
+  <data name="InvalidDrillSelectedItems" xml:space="preserve">
+    <value>DrillthroughContext パラメーターの SelectedItems プロパティが、複数のコンテキストに含まれているアイテムを参照しています。SelectedItems には、単一のグループ化式への参照、または同一メジャー グループか同一詳細コレクションに含まれている式への参照のいずれかを含める必要があります。</value>
+  </data>
+  <data name="InvalidDrillSelectedPath" xml:space="preserve">
+    <value>DrillthroughContext パラメーターの SelectedPath プロパティが "{0}" です。これは、許可される最長のパス "{1}" に等しくないかまたはそのサブセットではありません。</value>
+  </data>
+  <data name="InvalidDrillTargetEntity" xml:space="preserve">
+    <value>{0} の BaseEntity が {1} です。SelectedPath に基づくと、指定された DrillthroughContext は、BaseEntity が {2} またはそこから派生した Entity の場合にのみ使用できます。</value>
+  </data>
+  <data name="InvalidDrillthroughContext" xml:space="preserve">
+    <value>ドリルスルー コンテキストが無効です。詳細: {0}</value>
+  </data>
+  <data name="InvalidEntityBinding" xml:space="preserve">
+    <value>{0} に Table と Column の両方の要素が含まれています。Entity には、この 2 つの要素のどちらか 1 つだけが含まれている必要があります。</value>
+  </data>
+  <data name="InvalidEntityKeyPart" xml:space="preserve">
+    <value>EntityKey 部の値 "{0}" は、キー部の型 "{1}" に変換できません。</value>
+  </data>
+  <data name="InvalidEntityKeyValue" xml:space="preserve">
+    <value>EntityKey 値 "{0}" を {1} のキーとして解析できません。</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>{0} 内の Expression に、Function、AttributeRef、EntityRef、ParameterRef、Literal、および Null のいずれの要素も存在しないか、または複数の要素が含まれています。Expression には、これらの要素の 1 つだけが含まれている必要があります。</value>
+  </data>
+  <data name="InvalidExpression_TopLevel" xml:space="preserve">
+    <value>{0} 内に、Function、AttributeRef、EntityRef、ParameterRef、Literal、および Null のいずれの要素も含まれていないか、または複数の要素が含まれています。Expression には、これらの要素の 1 つだけが含まれている必要があります。</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>{0} の Filter Expression では {1} データ型が返されます。Filter Expression では、Boolean データ型が返される必要があります。</value>
+  </data>
+  <data name="InvalidFunctionName" xml:space="preserve">
+    <value>{0} の FunctionName の値が "{1}" です。この値は有効な関数名ではありません。</value>
+  </data>
+  <data name="InvalidGuid" xml:space="preserve">
+    <value>{0} の ID プロパティは空の (または SMDL) 名前空間内に設定されていますが、GUID ではありません。空の (または SMDL) 名前空間内の ID は、GUID 形式 Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx で指定する必要があります。</value>
+  </data>
+  <data name="InvalidGuid_NoContext" xml:space="preserve">
+    <value>指定した ID は空の (または SMDL) 名前空間内に設定されていますが、GUID ではありません。空の (または SMDL) 名前空間内の ID は、GUID 形式 Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx で指定する必要があります。</value>
+  </data>
+  <data name="InvalidHiddenAttributeReference" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、非表示の Attribute である {2} が参照されています。このプロパティでは、非表示でない Attribute を参照する必要があります。</value>
+  </data>
+  <data name="InvalidInSetArgument" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の Argument "{2}" が無効です。この引数には、ParameterRef、静的関数、または Path を含まない Literal が含まれている必要があります。</value>
+  </data>
+  <data name="InvalidInheritanceRelationTable" xml:space="preserve">
+    <value>{1} の {0} プロパティで {2} が参照されています。このプロパティでは、Source が {3} で Target が {4} の Relation を参照する必要があります。</value>
+  </data>
+  <data name="InvalidLinguistics" xml:space="preserve">
+    <value>Linguistics プロパティは {0} に指定されていますが、Name プロパティが省略されています。Name を省略した場合、Linguistics を Role に対して指定することはできません。</value>
+  </data>
+  <data name="InvalidLiteral" xml:space="preserve">
+    <value>{0} 内の Literal に、Value と Values の両方の要素が含まれているか、またはどちらも含まれていません。Literal には、この 2 つの要素のどちらか 1 つだけが含まれている必要があります。</value>
+  </data>
+  <data name="InvalidLiteralSetArgument" xml:space="preserve">
+    <value>{0} 内の Function "{1}" に Argument "{2}" のリテラル セットが含まれています。この引数は、リテラル セットを値として受け取ることはできません。</value>
+  </data>
+  <data name="InvalidLiteralValue" xml:space="preserve">
+    <value>{0} に含まれている Literal の Value が "{1}" です。この値は有効な {2} 値ではありません。{3}</value>
+  </data>
+  <data name="InvalidModelGenerationRules" xml:space="preserve">
+    <value>モデル生成ルールが無効です。詳細: {0}</value>
+  </data>
+  <data name="InvalidModelItemInPerspective" xml:space="preserve">
+    <value>{1} を {0} に含めることはできません。</value>
+  </data>
+  <data name="InvalidNonFilterAttributeReference" xml:space="preserve">
+    <value>{1} の {0} プロパティのいずれかで {2} が参照されています。これはフィルター属性ではありません。このプロパティでは、フィルター属性を参照する必要があります。</value>
+  </data>
+  <data name="InvalidOptionalityOfRoleForColumnBoundEntity" xml:space="preserve">
+    <value>{1} から {2} までの {0} は省略可能ですが、{3} は列にバインドされています。列にバインドされたエンティティを含むロールはすべて必須として扱われます。</value>
+  </data>
+  <data name="InvalidParameterExpression" xml:space="preserve">
+    <value>{0} の既定値 Expression に、Path、Function、AttributeRef、EntityRef、または ParameterRef の要素が 1 つ以上含まれています。パラメーター Expression には、これらの要素を含めることができません。</value>
+  </data>
+  <data name="InvalidParameterName" xml:space="preserve">
+    <value>{0} のパラメーターの名前が "{1}" です。予約された名前 "{2}" をパラメーター名に使用することはできません。</value>
+  </data>
+  <data name="InvalidParameterValueCardinality" xml:space="preserve">
+    <value>単独の値を指定する必要があるパラメーター "{0}" に、値のセットが指定されています。</value>
+  </data>
+  <data name="InvalidParameterValueType" xml:space="preserve">
+    <value>パラメーター "{0}" のデータ型は {1} ですが、パラメーターに指定された値はこの型に変換できません。</value>
+  </data>
+  <data name="InvalidParameterValueType_MultipleValues" xml:space="preserve">
+    <value>パラメーター "{0}" のデータ型は {1} ですが、パラメーターに指定された 1 つ以上の値はこの型に変換できません。</value>
+  </data>
+  <data name="InvalidReferencedItem" xml:space="preserve">
+    <value>{1} の {0} プロパティで {2} が参照されていますが、その型は次のいずれの型にも該当しません: {3}。</value>
+  </data>
+  <data name="InvalidReferencedItem_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで {2} が参照されていますが、その型は次のいずれの型にも該当しません: {3}。</value>
+  </data>
+  <data name="InvalidRoleRelationTable" xml:space="preserve">
+    <value>{0} の Relation プロパティで {2} の {1} エンドが参照されています。このプロパティでは、{3} を参照する Relation エンドを参照する必要があります。</value>
+  </data>
+  <data name="InvalidScalarAttributeReference" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで非集計 Attribute である {2} が参照されています。このプロパティでは、集計 Attribute を参照する必要があります。</value>
+  </data>
+  <data name="InvalidSemanticModel" xml:space="preserve">
+    <value>セマンティック モデルが無効です。詳細: {0}</value>
+  </data>
+  <data name="InvalidSemanticQuery" xml:space="preserve">
+    <value>セマンティック クエリが無効です。詳細: {0}</value>
+  </data>
+  <data name="InvalidSetAttributeReference" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、集計 Attribute ではない {2} が参照されています。{2} を参照した際の Path に基づくと、このプロパティでは、集計 Attribute を参照する必要があります。</value>
+  </data>
+  <data name="IsAggregateWithColumn" xml:space="preserve">
+    <value>{0} の IsAggregate プロパティは true ですが、Column バインドが指定されています。Column バインドを指定した場合は、IsAggregate を true に設定することはできません。</value>
+  </data>
+  <data name="IsAggregateWithDefaultAggregate" xml:space="preserve">
+    <value>{0} に DefaultAggregateAttributeID プロパティが指定されていますが、IsAggregate プロパティは true に設定されています。集計属性に対して既定の集計を指定することはできません。</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しないアイテム "{2}" が参照されています。</value>
+  </data>
+  <data name="ItemNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しないアイテム "{2}" が参照されています。</value>
+  </data>
+  <data name="LoopInSecurityFilters" xml:space="preserve">
+    <value>{0} のセキュリティ フィルターが間接的に自己依存しています。セキュリティ フィルターのループは禁止されています。</value>
+  </data>
+  <data name="MeasureNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しない Measure Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="MeasureNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しない Measure Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="MissingBaseEntity" xml:space="preserve">
+    <value>{1} に {0} プロパティがありません。</value>
+  </data>
+  <data name="MissingBaseEntity_MultipleProperties" xml:space="preserve">
+    <value>{1} にいずれかの {0} プロパティがありません。</value>
+  </data>
+  <data name="MissingBinding_Attribute" xml:space="preserve">
+    <value>{0} にバインドがありません。Expression が指定されていない場合、Attribute には、Column バインドが 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingBinding_Entity" xml:space="preserve">
+    <value>{0} にバインドがありません。Entity には、Table または Column のどちらかが 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingBinding_Inheritance" xml:space="preserve">
+    <value>{0} の Inheritance にバインドがありません。Inheritance には、Relation バインドが 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingBinding_Role" xml:space="preserve">
+    <value>{0} にバインドがありません。親 Entity が Table にバインドされ、関連 Entity がこの Table 内の Column にバインドされている場合 (またはその逆の場合) を除き、Role には Relation バインドが 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingColumnTableName" xml:space="preserve">
+    <value>{0} に Column.TableName がありません。Entity の Column バインドに対して TableName を指定する必要があります。</value>
+  </data>
+  <data name="MissingDataSourceView" xml:space="preserve">
+    <value>{0} に DataSourceView がありません。SemanticModel には、DataSourceView 要素が 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingExpressionName" xml:space="preserve">
+    <value>{0} の Expression に Name がありません。</value>
+  </data>
+  <data name="MissingGroupingExpression" xml:space="preserve">
+    <value>{0} に Expression がありません。Grouping には、Expression が 1 つだけ含まれている必要があります。</value>
+  </data>
+  <data name="MissingGroupingName" xml:space="preserve">
+    <value>{0} の Grouping に Name がありません。</value>
+  </data>
+  <data name="MissingIdentifyingAttributes" xml:space="preserve">
+    <value>{0} に IdentifyingAttributes が含まれていません。Entity には、少なくとも 1 つの IdentifyingAttribute が含まれている必要があります。</value>
+  </data>
+  <data name="MissingItemName" xml:space="preserve">
+    <value>{0} に Name がありません。</value>
+  </data>
+  <data name="MissingMeasures" xml:space="preserve">
+    <value>{0} のいずれかの MeasureGroups に Measure がありません。MeasureGroup には、少なくとも 1 つの Measure が含まれている必要があります。</value>
+  </data>
+  <data name="MissingMimeType" xml:space="preserve">
+    <value>{0} に MimeType がありません。Binary データ型の Attribute には、MimeType を指定する必要があります。</value>
+  </data>
+  <data name="MissingParameterName" xml:space="preserve">
+    <value>{0} のパラメーターに Name がありません。</value>
+  </data>
+  <data name="MissingParameterValue" xml:space="preserve">
+    <value>パラメーター "{0}" に値を指定する必要があります。</value>
+  </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>{1} の {0} プロパティで、主キーを持たない {2} が参照されています。</value>
+  </data>
+  <data name="MissingRelatedRole" xml:space="preserve">
+    <value>{0} に RelatedRoleID がありません。</value>
+  </data>
+  <data name="MissingRelationEnd" xml:space="preserve">
+    <value>{0} に Relation.RelationEnd がありません。</value>
+  </data>
+  <data name="MultipleHierarchies" xml:space="preserve">
+    <value>{0} に複数の Hierarchy が含まれています。このような設定はサポートされていません。</value>
+  </data>
+  <data name="MultipleMeasureGroups" xml:space="preserve">
+    <value>{0} に複数の MeasureGroups が含まれています。このような設定はサポートされていません。</value>
+  </data>
+  <data name="NestedVariations" xml:space="preserve">
+    <value>{0} はバリエーションであり、入れ子にしたバリエーションを含んでいます。バリエーション フィールドを他のバリエーション フィールド内に入れ子にすることはできません。</value>
+  </data>
+  <data name="NonAggregateAsDefaultAggregate" xml:space="preserve">
+    <value>{0} の DefaultAggregateAttributeID プロパティで、集計属性ではない {1} が参照されています。</value>
+  </data>
+  <data name="NonAggregateExpression_Attribute" xml:space="preserve">
+    <value>{0} の Expression は集計式ではありませんが、IsAggregate プロパティが true に設定されています。IsAggregate が true の場合は、集計式を指定する必要があります。</value>
+  </data>
+  <data name="NonAggregateExpression_Measure" xml:space="preserve">
+    <value>{0} は集計式ではありません。Measure Expression は集計式である必要があります。</value>
+  </data>
+  <data name="NonBooleanFilterAttribute" xml:space="preserve">
+    <value>{0} はフィルター属性ですが、{1} データ型が返されます。フィルター属性では Boolean データ型が返される必要があります。</value>
+  </data>
+  <data name="NonEntityGroupingWithDetails" xml:space="preserve">
+    <value>{0} に Details が含まれていますが、Grouping {1} が EntityRef ではありません。Grouping Expression が EntityRef の場合にのみ、Grouping に Details を含めることができます。</value>
+  </data>
+  <data name="NonPrimaryDataSource" xml:space="preserve">
+    <value>{1} の {0} プロパティで、プライマリ データ ソースに含まれていない {2} が参照されています。</value>
+  </data>
+  <data name="NonUniqueInheritanceRelationColumns" xml:space="preserve">
+    <value>{1} の {0} プロパティで、{3} に対する一意な制約列のセットにバインドされていない {2} が参照されています。</value>
+  </data>
+  <data name="NonUniqueRoleRelationColumns" xml:space="preserve">
+    <value>{0} の Relation プロパティで、{3} に対する一意な制約列のセットにバインドされていない {2} の {1} エンドが参照されています。カーディナリティが One または OptionalOne に設定された Role では、テーブルの一意な制約列にバインドされているリレーションが必要です。</value>
+  </data>
+  <data name="NonVariationAsDefaultAggregate" xml:space="preserve">
+    <value>{0} の DefaultAggregateAttributeID プロパティで、"{1}" のバリエーションではない {2} が参照されています。既定の集計は、属性のバリエーションである必要があります。</value>
+  </data>
+  <data name="NullParameterValue" xml:space="preserve">
+    <value>パラメーター "{0}" は NULL 値を受け付けられません。</value>
+  </data>
+  <data name="ObjectDescriptor_TypeAndName" xml:space="preserve">
+    <value>{0} "{1}"</value>
+  </data>
+  <data name="ParameterExpressionCardinalityMismatch" xml:space="preserve">
+    <value>{0} のカーディナリティ プロパティは One に設定されていますが、"{1}" の既定値 Expression ではセットが返されます。Parameter のカーディナリティが One に設定されている場合、既定値 Expression は単独の値を返す必要があります。</value>
+  </data>
+  <data name="ParameterExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0} の DataType プロパティは {2} に設定されていますが、"{1}" の既定値 Expression ではデータ型 {3} が返されます。既定値 Expression から返されるデータ型は、Parameter の DataType プロパティと一致する必要があります。</value>
+  </data>
+  <data name="ParameterExpressionNullableMismatch" xml:space="preserve">
+    <value>{0} の Nullable プロパティは false に設定されていますが、"{1}" の既定値 Expression では NULL 値が許容されます。既定値 Expression の NULL 値の許容は、Parameter の Nullable プロパティと一致する必要があります。</value>
+  </data>
+  <data name="ParameterNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しない Parameter "{2}" が参照されています。</value>
+  </data>
+  <data name="ParameterNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しない Parameter "{2}" が参照されています。</value>
+  </data>
+  <data name="PromoteLookupForNonLookupEntity" xml:space="preserve">
+    <value>{0} の PromoteLookup プロパティは true に設定されていますが、{1} の IsLookup プロパティが true に設定されていません。ロールを含むエンティティと関連ロールを含むエンティティは、どちらも参照エンティティである必要があります。</value>
+  </data>
+  <data name="RelatedRolesMismatch" xml:space="preserve">
+    <value>{0} の RelatedRoleID プロパティで {2} が参照されていますが、"{3}" の RelatedRoleID で "{1}" が参照されていません。これらの RelatedRoleID プロパティは互いを参照する必要があります。</value>
+  </data>
+  <data name="ResultExpressionNotFound" xml:space="preserve">
+    <value>{1} の {0} プロパティで、存在しない Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="ResultExpressionNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで、存在しない Expression "{2}" が参照されています。</value>
+  </data>
+  <data name="RoleRelationEndsMismatch" xml:space="preserve">
+    <value>{0} の Relation プロパティで {3} の {2} エンドが参照されていますが、RelatedRole "{1}" の Relation プロパティでも {2} エンドが参照されています。Role およびその RelatedRole の RelationEnds が同じであってはいけません。</value>
+  </data>
+  <data name="RoleRelationsMismatch" xml:space="preserve">
+    <value>{0} の Relation プロパティで {2} が参照されていますが、RelatedRole "{1}" の Relation プロパティで {3} が参照されています。Role およびその RelatedRole の Relation は同じである必要があります。</value>
+  </data>
+  <data name="SelfReferentialRole" xml:space="preserve">
+    <value>{0} の RelatedRoleID プロパティは自己を参照しています。Role の RelatedRoleID プロパティは、自己以外の Role を参照する必要があります。</value>
+  </data>
+  <data name="SemanticModel_PerspectiveNotFound" xml:space="preserve">
+    <value>指定されたパースペクティブ "{0}" は、このモデルに存在しません。</value>
+  </data>
+  <data name="TopLevelSetExpression" xml:space="preserve">
+    <value>{0} では、{1} のインスタンスごとに値のセットが返されます。この式では、エンティティのインスタンスごとに単独の値を返す必要があります。</value>
+  </data>
+  <data name="TopLevelSetExpression_Attribute" xml:space="preserve">
+    <value>{0} の Expression では、{1} のインスタンスごとに値のセットが返されます。この式では、エンティティのインスタンスごとに単独の値を返す必要があります。</value>
+  </data>
+  <data name="TopLevelSetExpression_Filter" xml:space="preserve">
+    <value>{0} の Filter Expression では、{1} のインスタンスごとに値のセットが返されます。この式では、エンティティのインスタンスごとに単独の値を返す必要があります。</value>
+  </data>
+  <data name="UnusedParameterValue" xml:space="preserve">
+    <value>パラメーター "{1}" が指定されていますが、この名前を持つパラメーターが {0} に定義されていません。</value>
+  </data>
+  <data name="ValidationException_MessageWithAdditionalMessages" xml:space="preserve">
+    <value>{0}
+{1} 個の関連エラーまたは警告が発生しました。</value>
+  </data>
+  <data name="WrongNumberOfArguments" xml:space="preserve">
+    <value>{0} に含まれている Function "{1}" の引数の数に誤りがあります。</value>
+  </data>
+  <data name="WrongSemanticModel_ModelItem" xml:space="preserve">
+    <value>{1} の {0} プロパティで参照されている {2} は、{1} と同じ SemanticModel に含まれていません。</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItem" xml:space="preserve">
+    <value>{1} の {0} プロパティで参照されている {2} は、クエリから参照されている SemanticModel に含まれていません。</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItemMultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで参照されている {2} は、クエリから参照されている SemanticModel に含まれていません。</value>
+  </data>
+  <data name="WrongSemanticQuery" xml:space="preserve">
+    <value>{1} の {0} プロパティで参照されている {2} は、{1} と同じ SemanticQuery に含まれていません。</value>
+  </data>
+  <data name="WrongSemanticQuery_MultipleProperties" xml:space="preserve">
+    <value>{1} のいずれかの {0} プロパティで参照されている {2} は、{1} と同じ SemanticQuery に含まれていません。</value>
+  </data>
+  <data name="XmlValidationException_MessageWithLineInfo" xml:space="preserve">
+    <value>{0} 行 {1}、場所 {2}。</value>
+  </data>
+  <data name="Xml_NodeMismatch" xml:space="preserve">
+    <value>名前空間 {2} の {0} "{1}" が想定されますが、名前空間 {5} の {3} "{4}" が指定されています。</value>
+  </data>
+</root>

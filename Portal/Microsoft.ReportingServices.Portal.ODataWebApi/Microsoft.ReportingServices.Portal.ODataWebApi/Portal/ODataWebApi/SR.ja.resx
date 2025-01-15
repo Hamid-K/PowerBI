@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataSetProcessingException" xml:space="preserve">
+    <value>このデータセットは処理できませんでした。</value>
+  </data>
+  <data name="DataSetProcessingSoapException" xml:space="preserve">
+    <value>レポート サーバー Web サービスからデータを取得する際に問題が発生しました: {0}</value>
+  </data>
+  <data name="ErrorPbixUpload" xml:space="preserve">
+    <value>.pbix ファイルのアップロードでエラーが発生しました。ファイルが破損していないこと、およびファイル拡張子がファイルの形式に合致していることをご確認ください。</value>
+  </data>
+  <data name="Error_SearchTextNullOrEmpty" xml:space="preserve">
+    <value>検索文字列が空です。</value>
+  </data>
+  <data name="InvalidAggregation" xml:space="preserve">
+    <value>無効な集計が指定されました。</value>
+  </data>
+  <data name="InvalidDataSourceForTestConnectionPbi" xml:space="preserve">
+    <value>このレポートのデータ ソースは、接続のテスト用には有効ではありません。</value>
+  </data>
+  <data name="NotExpectedTypeException" xml:space="preserve">
+    <value>引数が予期された型ではありません。予期された型は '{0}' です。</value>
+  </data>
+  <data name="NotSupportedException" xml:space="preserve">
+    <value>この機能はサポートされていません。</value>
+  </data>
+  <data name="ParameterValueNotSupplied" xml:space="preserve">
+    <value>パラメーター '{0}' には空でない値が必要です。</value>
+  </data>
+  <data name="PropertyNullException" xml:space="preserve">
+    <value>プロパティを Null や空にすることはできません。</value>
+  </data>
+  <data name="SystemResourcePackageException" xml:space="preserve">
+    <value>このシステムリソースパッケージには問題があります。</value>
+  </data>
+  <data name="SystemResourceProcessingException" xml:space="preserve">
+    <value>システム リソースを処理できませんでした。</value>
+  </data>
+  <data name="UploadFileCanceled" xml:space="preserve">
+    <value>ファイルのアップロードが取り消されました。</value>
+  </data>
+</root>

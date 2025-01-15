@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCodes_ASPNetNotRegistered" xml:space="preserve">
+    <value>ASP.Net は、コンピューターに登録されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_AlreadyActivated" xml:space="preserve">
+    <value>レポート サーバーは既に初期化されています。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ApplicationPoolAlreadyExists" xml:space="preserve">
+    <value>アプリケーション プールは既に存在します。一意のアプリケーション プール名を指定してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPool" xml:space="preserve">
+    <value>アプリケーション プールは存在しません。既存のアプリケーション プールの名前を指定してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadApplicationPoolName" xml:space="preserve">
+    <value>指定されたアプリケーション プールは無効です。指定された名前が長すぎないこと、および無効な文字 (/ など) が含まれていないことを確認してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadConfigurationFile" xml:space="preserve">
+    <value>レポート サーバーで構成の問題が発生しました。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadCredentialsType" xml:space="preserve">
+    <value>資格情報の種類が無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadLcid" xml:space="preserve">
+    <value>ロケール識別子 (LCID) が無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadVerson" xml:space="preserve">
+    <value>バージョンが、サポートされているバージョンではありません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_BadWebsiteConfiguration" xml:space="preserve">
+    <value>アプリケーション プールが無効です。使用可能なアプリケーション プールを指定して、操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_CantConnectCatalog" xml:space="preserve">
+    <value>レポート サーバー データベースへの接続を確立できません。ネットワーク上で SQL Server データベースにアクセスできることを確認してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ConfigurationFileNotFound" xml:space="preserve">
+    <value>レポート サーバーの構成ファイルが見つかりませんでした。
+
+</value>
+  </data>
+  <data name="ErrorCodes_FailedToEnumerateInstances" xml:space="preserve">
+    <value>WMI インスタンスを列挙中にエラーが発生しました。</value>
+  </data>
+  <data name="ErrorCodes_FailedToLoadResources" xml:space="preserve">
+    <value>この操作を完了するのに必要なリソースが見つかりませんでした。
+
+</value>
+  </data>
+  <data name="ErrorCodes_GrantLoginToPasswordRequired" xml:space="preserve">
+    <value>ユーザー アカウントのパスワードが必要です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_IISNotInstalled" xml:space="preserve">
+    <value>インターネット インフォメーション サービス (IIS) がコンピューターにインストールされていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_IllformedAccountString" xml:space="preserve">
+    <value>アカウント名が無効です。"ドメイン\別名" の形式でアカウントを指定してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InsufficientPrivilege" xml:space="preserve">
+    <value>このタスクを実行するのに適切な権限がありません。管理者特権を持つユーザー アカウントを指定して、操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidIISPath" xml:space="preserve">
+    <value>IIS の実行中に指定された ADSI パスが無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidParameter" xml:space="preserve">
+    <value>少なくとも 1 つのパラメーターが無効でした。すべてのパラメーターに有効な値を指定して操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidPortNumber" xml:space="preserve">
+    <value>ポート番号が無効です。レポート サーバーの仮想ディレクトリでは、親 Web サイトのポート番号を使用する必要があります。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidSecureConnectionLevel" xml:space="preserve">
+    <value>セキュリティで保護された接続レベルが無効です。次のいずれかの値を指定してください: 0、1、2、3。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUrlParameterSet" xml:space="preserve">
+    <value>WMI プロバイダーの呼び出し時に渡された URL が無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidUser" xml:space="preserve">
+    <value>指定されたユーザー アカウントが無効であるか、パスワードが正しくありません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_InvalidVersionString" xml:space="preserve">
+    <value>バージョン文字列の形式が無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_LocalServiceIsLocalOnly" xml:space="preserve">
+    <value>リモート データベース サーバーに接続している場合は LocalSystem を指定できません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_MustCreateVirtualDirectory" xml:space="preserve">
+    <value>この操作を実行する前に、まず仮想ディレクトリを作成する必要があります。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAdmin" xml:space="preserve">
+    <value>このタスクを実行するのに適切な権限がありません。指定されたユーザー アカウントには、コンピューター "{0}" での管理者特権がありません。管理者特権を持つユーザー アカウントを指定して、操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotAnnounced" xml:space="preserve">
+    <value>レポート サーバー データベースにレポート サーバーのキー情報がありません。キーを追加するには、レポート サーバー Windows サービスが実行されていることを確認し、レポート サーバー Web サービスに接続してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInNativeMode" xml:space="preserve">
+    <value>この操作は、SharePoint 統合モード用に構成されているレポート サーバーでのみサポートされています。ネイティブ モードのレポート サーバーでこの操作を実行することはできません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_NotSupportedInSharePointMode" xml:space="preserve">
+    <value>この操作は SharePoint 統合モードではサポートされていません。サポートされている操作の詳細については、製品ドキュメントを参照してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_OperatingSystemNotSupported" xml:space="preserve">
+    <value>オペレーティング システムがサポートされていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RPCServerNotListening" xml:space="preserve">
+    <value>レポート サーバーのリモート プロシージャ呼び出し (RPC) エンド ポイントに接続しようとして、エラーが発生しました。レポート サーバー Windows サービスが実行されていることを確認し、操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionLevelType" xml:space="preserve">
+    <value>拡張保護レベルが無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsBadExtendedProtectionScenarioType" xml:space="preserve">
+    <value>拡張保護シナリオが無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsDeliveryExtensionNotFound" xml:space="preserve">
+    <value>電子メール配信拡張機能が構成ファイルに見つかりませんでした。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidApplication" xml:space="preserve">
+    <value>このアプリケーションは有効ではありません。有効なアプリケーションは、ReportServerWebService、ReportManager、ReportServerWebApp、PowerBIWebApp のみです。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsInvalidSSLCertificate" xml:space="preserve">
+    <value>この証明書は信頼されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsIpAddressNotFound" xml:space="preserve">
+    <value>この IP アドレスはこのコンピューターにありません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsLocalServiceNotAllowedXP" xml:space="preserve">
+    <value>Local Service アカウントは、Windows XP では無効です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineApplicationFirst" xml:space="preserve">
+    <value>アプリケーションが見つかりません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsMustDefineAuthenticationFirst" xml:space="preserve">
+    <value>認証が定義されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLBindingConflict" xml:space="preserve">
+    <value>指定された IP アドレスとポートの組み合わせに対して HTTPS バインドが既に存在します。この既存のバインドは、現在の要求とは異なる証明書を使用します。IP アドレスとポートの組み合わせごとに使用できる証明書の数は 1 つだけです。問題を解決するには、既存のバインドと同じ証明書を使用するか、既存の SSL バインドを削除し、現在の要求の証明書を使用して新しいバインドを作成してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSSLCertificateNotRegistered" xml:space="preserve">
+    <value>この証明書は登録されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsServerConfigurationError" xml:space="preserve">
+    <value>レポート サーバーを起動できません。1 つ以上の構成ファイルが無効です。詳細については、ログ ファイルを確認してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointError" xml:space="preserve">
+    <value>Windows SharePoint Services オブジェクト モデルのメソッドを呼び出すときにエラーが発生したため、操作が失敗しました。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsSharePointObjectModelNotInstalled" xml:space="preserve">
+    <value>Windows SharePoint Services オブジェクト モデルがレポート サーバーにインストールされていないため、操作が失敗しました。Windows SharePoint Services のインストールと構成を行い、要求を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLAlreadyReserved" xml:space="preserve">
+    <value>この URL は既に予約されています。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLMustNotExist" xml:space="preserve">
+    <value>レポート サーバー WMI プロバイダーが仮想ディレクトリを作成できません。このエラーは、SetVirtualDirectory を呼び出したときに UrlString が既に予約されている場合に発生します。続行するには、RemoveURL を呼び出してすべての URL 予約を消去してから再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsURLNotReserved" xml:space="preserve">
+    <value>URL は構成ファイルに記述されていますが、httpsys では予約されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsUrlAlreadyReservedDifferentName" xml:space="preserve">
+    <value>この URL は既に別のユーザー アカウントに予約されています。
+
+</value>
+  </data>
+  <data name="ErrorCodes_RsexecRoleDoesNotExist" xml:space="preserve">
+    <value>データベース ロール RSExec がデータベースに存在しません。データベースがレポート サーバー データベースであることを確認してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceDisabled" xml:space="preserve">
+    <value>Reporting Services Windows サービスが無効になっています。
+
+</value>
+  </data>
+  <data name="ErrorCodes_ServiceNotActivated" xml:space="preserve">
+    <value>Reporting Services Windows サービスがアクティブ化されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SharePointNotInstalled" xml:space="preserve">
+    <value>Windows SharePoint Services がインストールされていません。現在の操作を実行するには、Windows SharePoint Services インスタンスが必要です。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SqlAdminUserInsufficientPrivilege" xml:space="preserve">
+    <value>SQL Server データベースでこのタスクを実行するのに適切な権限がありません。管理者特権を持つ SQL Server ユーザー アカウントを指定して、操作を再試行してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_SslCertificateNotFound" xml:space="preserve">
+    <value>Web サイトで HTTPS 証明書が構成されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_Success" xml:space="preserve">
+    <value>操作は正常に完了しました。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseError" xml:space="preserve">
+    <value>SQL Server データベース エンジンでスクリプトを実行中にエラーが発生しました。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnexpectedDatabaseResult" xml:space="preserve">
+    <value>データベース クエリで予期しない結果が生成されました。
+
+</value>
+  </data>
+  <data name="ErrorCodes_UnknownOrUnmappedException" xml:space="preserve">
+    <value>WMI プロバイダーで不明なエラーが発生しました。エラー コード {0:X}
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryAlreadyExists" xml:space="preserve">
+    <value>指定された仮想ディレクトリは既に存在します。別の名前を指定してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_VirtualDirectoryInvalid" xml:space="preserve">
+    <value>指定された仮想ディレクトリは無効です。指定された名前が長すぎないこと、および無効な文字 (; など) が含まれていないことを確認してください。
+
+</value>
+  </data>
+  <data name="ErrorCodes_WebServiceAccountNotSet" xml:space="preserve">
+    <value>レポート サーバー Web サービスのサービス アカウントが設定されていません。
+
+</value>
+  </data>
+  <data name="ErrorCodes_WindowsServiceAccountNotSet" xml:space="preserve">
+    <value>レポート サーバー Windows サービスのサービス アカウントが設定されていません。
+
+</value>
+  </data>
+  <data name="Exception_Generic" xml:space="preserve">
+    <value>予期しないエラーが発生しました。詳細:
+
+{0}</value>
+  </data>
+  <data name="GenericWMIError" xml:space="preserve">
+    <value>WMI エラーが発生しました。利用できる追加のエラー情報はありません。</value>
+  </data>
+  <data name="GenericWMIErrorWithCode" xml:space="preserve">
+    <value>WMI エラーが発生しました。返されたエラー:
+
+{0}.</value>
+  </data>
+  <data name="ManagementException_AccessDenied" xml:space="preserve">
+    <value>コンピューターへの接続を確立できません。</value>
+  </data>
+  <data name="ManagementException_Generic" xml:space="preserve">
+    <value>レポート サーバー WMI プロバイダー エラー:
+
+{0}</value>
+  </data>
+  <data name="UnableToConnect" xml:space="preserve">
+    <value>レポート サーバー {0} に接続できませんでした。</value>
+  </data>
+</root>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CountAggregateAttributeName" xml:space="preserve">
+    <value>#$1</value>
+  </data>
+  <data name="CreateAttributesRuleDescription" xml:space="preserve">
+    <value>검색된 각 열에 대해 특성을 만듭니다.</value>
+  </data>
+  <data name="CreateAttributesRuleName" xml:space="preserve">
+    <value>특성 만들기</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleDescription" xml:space="preserve">
+    <value>각 자동 증가 열에 대해 숨겨진 특성을 만듭니다.</value>
+  </data>
+  <data name="CreateAutoIncrementAttributesRuleName" xml:space="preserve">
+    <value>각 자동 증가 열에 대해 특성 만들기</value>
+  </data>
+  <data name="CreateCountAggregatesRuleDescription" xml:space="preserve">
+    <value>각 새 엔터티에 대해 Count 집계를 만듭니다.</value>
+  </data>
+  <data name="CreateCountAggregatesRuleName" xml:space="preserve">
+    <value>Count 집계 만들기</value>
+  </data>
+  <data name="CreateDateAggregatesRuleDescription" xml:space="preserve">
+    <value>날짜 특성에 대해 First 및 Last 집계를 만듭니다.</value>
+  </data>
+  <data name="CreateDateAggregatesRuleName" xml:space="preserve">
+    <value>Date 집계 만들기</value>
+  </data>
+  <data name="CreateDateVariationsRuleDescription" xml:space="preserve">
+    <value>서로 다른 날짜 부분을 기반으로 날짜 특성의 변형을 만듭니다.</value>
+  </data>
+  <data name="CreateDateVariationsRuleName" xml:space="preserve">
+    <value>날짜 변형 만들기</value>
+  </data>
+  <data name="CreateEntitiesRuleDescription" xml:space="preserve">
+    <value>검색된 각 테이블에 대해 엔터티를 만듭니다.</value>
+  </data>
+  <data name="CreateEntitiesRuleName" xml:space="preserve">
+    <value>모든 테이블에 대해 엔터티 만들기</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleDescription" xml:space="preserve">
+    <value>검색된 열 중 비어 있지 않은 각각의 열에 대해 특성을 만듭니다.</value>
+  </data>
+  <data name="CreateNonEmptyAttributesRuleName" xml:space="preserve">
+    <value>비어 있지 않은 열에 대해 특성 만들기</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleDescription" xml:space="preserve">
+    <value>검색된 테이블 중 비어 있지 않은 각각의 테이블에 대해 엔터티를 만듭니다.</value>
+  </data>
+  <data name="CreateNonEmptyEntitiesRuleName" xml:space="preserve">
+    <value>비어 있지 않은 테이블에 대해 엔터티 만들기</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleDescription" xml:space="preserve">
+    <value>숫자 특성에 대해 Sum, Avg, Min 및 Max 집계를 만듭니다.</value>
+  </data>
+  <data name="CreateNumericAggregatesRuleName" xml:space="preserve">
+    <value>숫자 집계 만들기</value>
+  </data>
+  <data name="CreateRolesRuleDescription" xml:space="preserve">
+    <value>검색된 각 관계에 대해 역할을 만듭니다.</value>
+  </data>
+  <data name="CreateRolesRuleName" xml:space="preserve">
+    <value>역할 만들기</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleDescription" xml:space="preserve">
+    <value>시간 특성에 대해 First 및 Last 집계를 만듭니다.</value>
+  </data>
+  <data name="CreateTimeAggregatesRuleName" xml:space="preserve">
+    <value>Time 집계 만들기</value>
+  </data>
+  <data name="DateAggregateMaxName" xml:space="preserve">
+    <value>마지막 {AttributeName}</value>
+  </data>
+  <data name="DateAggregateMinName" xml:space="preserve">
+    <value>첫 번째 {AttributeName}</value>
+  </data>
+  <data name="DateFormattingRuleDescription" xml:space="preserve">
+    <value>날짜 특성에 날짜 형식만 지정합니다.</value>
+  </data>
+  <data name="DateFormattingRuleName" xml:space="preserve">
+    <value>날짜 형식 지정</value>
+  </data>
+  <data name="DateVariationDayName" xml:space="preserve">
+    <value>{AttributeName} 일</value>
+  </data>
+  <data name="DateVariationMonthName" xml:space="preserve">
+    <value>{AttributeName} 월</value>
+  </data>
+  <data name="DateVariationQuarterName" xml:space="preserve">
+    <value>{AttributeName} 분기</value>
+  </data>
+  <data name="DateVariationYearName" xml:space="preserve">
+    <value>{AttributeName} 년</value>
+  </data>
+  <data name="DateVariation_DateOfX_Date" xml:space="preserve">
+    <value>날짜</value>
+  </data>
+  <data name="DateVariation_DateOfX_Of" xml:space="preserve">
+    <value>의</value>
+  </data>
+  <data name="DateVariation_QuarterFormat" xml:space="preserve">
+    <value>Q0</value>
+  </data>
+  <data name="DecimalFormattingRuleDescription" xml:space="preserve">
+    <value>10진수 특성에 형식을 지정합니다.</value>
+  </data>
+  <data name="DecimalFormattingRuleName" xml:space="preserve">
+    <value>10진수 형식 지정</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_NonPreferred" xml:space="preserve">
+    <value>주소1|주소|팩스|우편번호1|PostalCode|우편번호2|ZipCode</value>
+  </data>
+  <data name="DefaultDetailAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="DefaultMimeTypeRuleDescription" xml:space="preserve">
+    <value>이진 특성에 기본 MIME 형식을 설정합니다.</value>
+  </data>
+  <data name="DefaultMimeTypeRuleName" xml:space="preserve">
+    <value>기본 MIME 형식</value>
+  </data>
+  <data name="DiscourageGroupingRuleDescription" xml:space="preserve">
+    <value>고유성이 높은 특성에 대해 그룹화를 억제합니다.</value>
+  </data>
+  <data name="DiscourageGroupingRuleName" xml:space="preserve">
+    <value>그룹화 억제</value>
+  </data>
+  <data name="DropdownValueSelectionRuleDescription" xml:space="preserve">
+    <value>매우 적은 개수의 고유 값이 있는 특성에 드롭다운 값 선택을 설정합니다.</value>
+  </data>
+  <data name="DropdownValueSelectionRuleName" xml:space="preserve">
+    <value>드롭다운 값 선택</value>
+  </data>
+  <data name="ExcludeAuditColumnsRuleName" xml:space="preserve">
+    <value>감사 열 제외</value>
+  </data>
+  <data name="ExcludeSystemTablesRuleName" xml:space="preserve">
+    <value>시스템 테이블 제외</value>
+  </data>
+  <data name="ExcludeSystemViewsRuleName" xml:space="preserve">
+    <value>시스템 뷰 제외</value>
+  </data>
+  <data name="FloatFormattingRuleDescription" xml:space="preserve">
+    <value>부동 소수점 숫자 특성에 형식을 지정합니다.</value>
+  </data>
+  <data name="FloatFormattingRuleName" xml:space="preserve">
+    <value>부동 소수점 수 형식 지정</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_ForeignKey" xml:space="preserve">
+    <value>ID|Code|Key|Number|Num</value>
+  </data>
+  <data name="IdentifierColumnSuffixes_NoAggregates" xml:space="preserve">
+    <value>ID|Code|Key</value>
+  </data>
+  <data name="IdentifyingAttributeNames_NonPreferred" xml:space="preserve">
+    <value>주소1|주소|팩스|우편번호1|PostalCode|우편번호2|ZipCode</value>
+  </data>
+  <data name="IdentifyingAttributeNames_Preferred" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description</value>
+  </data>
+  <data name="IncludeColumnsRuleName" xml:space="preserve">
+    <value>모든 사용자 열 포함</value>
+  </data>
+  <data name="IncludeRelationsRuleName" xml:space="preserve">
+    <value>모든 사용자 관계 포함</value>
+  </data>
+  <data name="IncludeUserTablesRuleName" xml:space="preserve">
+    <value>모든 사용자 테이블 포함</value>
+  </data>
+  <data name="IncludeUserViewsRuleName" xml:space="preserve">
+    <value>모든 사용자 뷰 포함</value>
+  </data>
+  <data name="IntegerFormattingRuleDescription" xml:space="preserve">
+    <value>정수 특성에 형식을 지정합니다.</value>
+  </data>
+  <data name="IntegerFormattingRuleName" xml:space="preserve">
+    <value>정수 형식 지정</value>
+  </data>
+  <data name="ListValueSelectionRuleDescription" xml:space="preserve">
+    <value>적정한 개수의 고유 값이 있는 특성에 목록 값 선택을 설정합니다.</value>
+  </data>
+  <data name="ListValueSelectionRuleName" xml:space="preserve">
+    <value>목록 값 선택</value>
+  </data>
+  <data name="LookupFolderName" xml:space="preserve">
+    <value>조회</value>
+  </data>
+  <data name="MarkLargeListsRuleDescription" xml:space="preserve">
+    <value>많은 개수의 인스턴스가 있는 엔터티에 대해 필터링된 목록 선택을 사용합니다.</value>
+  </data>
+  <data name="MarkLargeListsRuleName" xml:space="preserve">
+    <value>긴 목록</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleDescription" xml:space="preserve">
+    <value>특성이 하나인 엔터티를 조회 엔터티로 간주합니다.</value>
+  </data>
+  <data name="MarkLookupEntitiesRuleName" xml:space="preserve">
+    <value>조회 엔터티</value>
+  </data>
+  <data name="MarkMediumListsRuleDescription" xml:space="preserve">
+    <value>보통 개수의 인스턴스가 있는 엔터티에 대해 목록 선택을 사용합니다.</value>
+  </data>
+  <data name="MarkMediumListsRuleName" xml:space="preserve">
+    <value>보통 목록</value>
+  </data>
+  <data name="MarkSmallListsRuleDescription" xml:space="preserve">
+    <value>적은 개수의 인스턴스가 있는 엔터티에 대해 드롭다운 선택을 사용합니다.</value>
+  </data>
+  <data name="MarkSmallListsRuleName" xml:space="preserve">
+    <value>짧은 목록</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleDescription" xml:space="preserve">
+    <value>매우 많은 개수의 인스턴스가 있는 엔터티에 대해 필수 필터 선택을 사용합니다.</value>
+  </data>
+  <data name="MarkVeryLargeListsRuleName" xml:space="preserve">
+    <value>매우 긴 목록</value>
+  </data>
+  <data name="NumericAggregateAvgName" xml:space="preserve">
+    <value>평균 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMaxName" xml:space="preserve">
+    <value>최대 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateMinName" xml:space="preserve">
+    <value>최소 {AttributeName}</value>
+  </data>
+  <data name="NumericAggregateSumName" xml:space="preserve">
+    <value>합계 {AttributeName}</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleDescription" xml:space="preserve">
+    <value>숫자 및 날짜 특성에 내림차순 정렬을 설정합니다.</value>
+  </data>
+  <data name="NumericAndDateFormattingRuleName" xml:space="preserve">
+    <value>숫자/날짜 형식 지정</value>
+  </data>
+  <data name="RoleNameOnlyRuleDescription" xml:space="preserve">
+    <value>일반적으로 이름이 지정된 식별 특성에 대해 역할 이름만 사용합니다.</value>
+  </data>
+  <data name="RoleNameOnlyRuleName" xml:space="preserve">
+    <value>역할 이름만</value>
+  </data>
+  <data name="RoleOnlyContextualNames" xml:space="preserve">
+    <value>Name|Desc|Descr|Descrip|Description|Type</value>
+  </data>
+  <data name="RulesDescription" xml:space="preserve">
+    <value>데이터 원본 뷰에서 의미 체계 모델을 생성하는 데 사용되는 표준 규칙입니다.</value>
+  </data>
+  <data name="RulesName" xml:space="preserve">
+    <value>기본 모델 생성 규칙</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleDescription" xml:space="preserve">
+    <value>각 엔터티에 기본 세부 특성을 설정합니다.</value>
+  </data>
+  <data name="SetDefaultDetailAttributesRuleName" xml:space="preserve">
+    <value>기본 세부 특성 설정</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleDescription" xml:space="preserve">
+    <value>각 엔터티에 식별 특성을 설정합니다.</value>
+  </data>
+  <data name="SetIdentifyingAttributesRuleName" xml:space="preserve">
+    <value>식별 특성 설정</value>
+  </data>
+  <data name="TimeAggregateMaxName" xml:space="preserve">
+    <value>마지막 {AttributeName}</value>
+  </data>
+  <data name="TimeAggregateMinName" xml:space="preserve">
+    <value>첫 번째 {AttributeName}</value>
+  </data>
+</root>

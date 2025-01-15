@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace Microsoft.Mashup.Engine1.Library
+{
+	// Token: 0x0200026A RID: 618
+	internal class ListModule
+	{
+		// Token: 0x0400079A RID: 1946
+		public const string Source = "// Copyright (c) Microsoft Corporation.  All rights reserved.\r\n    \r\nsection List;\r\n\r\nshared List.NonNullCount = (list as list) as number => List.Count(List.RemoveNulls(list));\r\n\r\nshared List.MatchesAll = (list as list, condition as function) as logical => not List.MatchesAny(list, (item) => not condition(item));\r\n\r\nshared List.MatchesAny = (list as list, condition as function) as logical => not List.IsEmpty(List.Select(list, condition));\r\n\r\nshared List.Range = (list as list, offset as number, optional count as number) as list =>\r\nlet\r\n    skippedInput = List.Skip(list, offset)\r\nin\r\n    if (count = null) then skippedInput\r\n    else List.FirstN(skippedInput, count);\r\n\r\nshared List.RemoveItems = (list1 as list, list2 as list) as list =>\r\n    List.Select(list1, (x) => not List.Contains(list2, x));\r\n\r\nshared List.ReplaceValue = (\r\n    list as list,\r\n    oldValue,\r\n    newValue,\r\n    replacer as function\r\n) as list =>\r\n    let\r\n        f = (val) => try replacer(val, oldValue, newValue) otherwise val\r\n    in\r\n        List.Transform(list, f);\r\n\r\nshared List.FindText = (list as list, text as text) as list =>\r\n    List.Select(list, each ContainsTextWithin(_, {text}));\r\n\r\nshared List.RemoveLastN = (list as list, optional countOrCondition) as list => \r\n    List.Reverse(List.Skip(List.Reverse(list), countOrCondition));\r\n\r\nshared List.RemoveFirstN = List.Skip;\r\n\r\nContainsTextWithin = (value as any, strings as list) as logical =>\r\n    if (value is text) then\r\n    (\r\n        not List.IsEmpty(List.Select(strings, each Text.Contains(value, _)))\r\n    )\r\n    else if (value is list) then\r\n    (\r\n        not List.IsEmpty(List.Select(value, each @ContainsTextWithin(_, strings)))\r\n    )\r\n    else if (value is record) then\r\n    (\r\n        not List.IsEmpty(List.Select(Table.ToRecords(Record.ToTable(value)), each @ContainsTextWithin([Value], strings)))\r\n    )\r\n    else\r\n    (\r\n        false\r\n    );\r\n\r\n    ";
+	}
+}

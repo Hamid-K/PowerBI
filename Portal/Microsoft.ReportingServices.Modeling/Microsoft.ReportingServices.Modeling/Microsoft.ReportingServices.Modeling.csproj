@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31C58FF8-53F9-4D85-80D4-6850B4CDEE97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.Modeling</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportingServices.Exceptions">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.ProcessingRenderingCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.ProcessingRenderingCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ArrayUtil.cs" />
+    <Compile Include="Common\AttributeUtil.cs" />
+    <Compile Include="Common\Bag.cs" />
+    <Compile Include="Common\CollectionUtil.cs" />
+    <Compile Include="Common\CreatorGetter.cs" />
+    <Compile Include="Common\DataExtensionsHelper.cs" />
+    <Compile Include="Common\DateTimeUtil.cs" />
+    <Compile Include="Common\EnumeratorMapping.cs" />
+    <Compile Include="Common\EnumUtil.cs" />
+    <Compile Include="Common\Iterators.cs" />
+    <Compile Include="Common\ObjectReferenceComparer.cs" />
+    <Compile Include="Common\Operation.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="Common\ThreadingUtil.cs" />
+    <Compile Include="Common\XmlUtils.cs" />
+    <Compile Include="Modeling\Alignment.cs" />
+    <Compile Include="Modeling\AttributeContextualName.cs" />
+    <Compile Include="Modeling\AttributeReference.cs" />
+    <Compile Include="Modeling\AttributeReferenceCollection.cs" />
+    <Compile Include="Modeling\AttributeReferenceCompilation.cs" />
+    <Compile Include="Modeling\AttributeRefNode.cs" />
+    <Compile Include="Modeling\AttributeValueSelection.cs" />
+    <Compile Include="Modeling\Binding.cs" />
+    <Compile Include="Modeling\CachedDsvItem.cs" />
+    <Compile Include="Modeling\Cardinality.cs" />
+    <Compile Include="Modeling\CardinalityContext.cs" />
+    <Compile Include="Modeling\CheckedCollection.cs" />
+    <Compile Include="Modeling\ColumnBinding.cs" />
+    <Compile Include="Modeling\CombinedCardinality.cs" />
+    <Compile Include="Modeling\CompilationContext.cs" />
+    <Compile Include="Modeling\CustomProperty.cs" />
+    <Compile Include="Modeling\CustomPropertyCollection.cs" />
+    <Compile Include="Modeling\DataSourceView.cs" />
+    <Compile Include="Modeling\DataType.cs" />
+    <Compile Include="Modeling\DataTypeMapper.cs" />
+    <Compile Include="Modeling\DefaultValidationScope.cs" />
+    <Compile Include="Modeling\DeserializationContext.cs" />
+    <Compile Include="Modeling\DevExceptionMessages.cs" />
+    <Compile Include="Modeling\DrillthroughContext.cs" />
+    <Compile Include="Modeling\DrillthroughContextBuilder.cs" />
+    <Compile Include="Modeling\DsvColumn.cs" />
+    <Compile Include="Modeling\DsvColumnCollection.cs" />
+    <Compile Include="Modeling\DsvCompareInfo.cs" />
+    <Compile Include="Modeling\DsvConstraint.cs" />
+    <Compile Include="Modeling\DsvConstraintCollection.cs" />
+    <Compile Include="Modeling\DsvForeignKeyConstraint.cs" />
+    <Compile Include="Modeling\DsvItem.cs" />
+    <Compile Include="Modeling\DsvItemCollection.cs" />
+    <Compile Include="Modeling\DsvRelation.cs" />
+    <Compile Include="Modeling\DsvRelationCollection.cs" />
+    <Compile Include="Modeling\DsvTable.cs" />
+    <Compile Include="Modeling\DsvTableCollection.cs" />
+    <Compile Include="Modeling\DsvTableType.cs" />
+    <Compile Include="Modeling\DsvUniqueConstraint.cs" />
+    <Compile Include="Modeling\EntityInheritance.cs" />
+    <Compile Include="Modeling\EntityInstanceSelection.cs" />
+    <Compile Include="Modeling\EntityKey.cs" />
+    <Compile Include="Modeling\EntityKeyBuilder.cs" />
+    <Compile Include="Modeling\EntityRefNode.cs" />
+    <Compile Include="Modeling\Expression.cs" />
+    <Compile Include="Modeling\ExpressionCollection.cs" />
+    <Compile Include="Modeling\ExpressionCompilationFlags.cs" />
+    <Compile Include="Modeling\ExpressionCopyManager.cs" />
+    <Compile Include="Modeling\ExpressionNode.cs" />
+    <Compile Include="Modeling\ExpressionPath.cs" />
+    <Compile Include="Modeling\ExtensibleModelingObject.cs" />
+    <Compile Include="Modeling\FunctionInfo.cs" />
+    <Compile Include="Modeling\FunctionName.cs" />
+    <Compile Include="Modeling\FunctionNode.cs" />
+    <Compile Include="Modeling\Grouping.cs" />
+    <Compile Include="Modeling\Hierarchy.cs" />
+    <Compile Include="Modeling\IBindingContext.cs" />
+    <Compile Include="Modeling\ICompileable.cs" />
+    <Compile Include="Modeling\IDeserializationCallback.cs" />
+    <Compile Include="Modeling\IFolderItem.cs" />
+    <Compile Include="Modeling\IHasFriendlyName.cs" />
+    <Compile Include="Modeling\ILazyCloneable.cs" />
+    <Compile Include="Modeling\IMappedClrTypeAction.cs" />
+    <Compile Include="Modeling\IndirectReadOnlyCollection.cs" />
+    <Compile Include="Modeling\InheritancePathItem.cs" />
+    <Compile Include="Modeling\Internal.cs" />
+    <Compile Include="Modeling\InternalModelingException.cs" />
+    <Compile Include="Modeling\IOwned.cs" />
+    <Compile Include="Modeling\IOwnedModelItemCollection.cs" />
+    <Compile Include="Modeling\IPathItem.cs" />
+    <Compile Include="Modeling\IQueryAttribute.cs" />
+    <Compile Include="Modeling\IQueryAttributeInternal.cs" />
+    <Compile Include="Modeling\IQueryEntity.cs" />
+    <Compile Include="Modeling\IQueryEntityInternal.cs" />
+    <Compile Include="Modeling\IValidationScope.cs" />
+    <Compile Include="Modeling\IXmlLoadable.cs" />
+    <Compile Include="Modeling\IXmlWriteable.cs" />
+    <Compile Include="Modeling\Linguistics\ILinguisticInfo.cs" />
+    <Compile Include="Modeling\LiteralNode.cs" />
+    <Compile Include="Modeling\MeasureGroup.cs" />
+    <Compile Include="Modeling\ModelAttribute.cs" />
+    <Compile Include="Modeling\ModelCompilationOptions.cs" />
+    <Compile Include="Modeling\ModelEntity.cs" />
+    <Compile Include="Modeling\ModelEntityFolder.cs" />
+    <Compile Include="Modeling\ModelEntityFolderItem.cs" />
+    <Compile Include="Modeling\ModelEntityFolderItemCollection.cs" />
+    <Compile Include="Modeling\ModelField.cs" />
+    <Compile Include="Modeling\ModelFieldCollection.cs" />
+    <Compile Include="Modeling\ModelFieldFolder.cs" />
+    <Compile Include="Modeling\ModelFieldFolderItem.cs" />
+    <Compile Include="Modeling\ModelFieldFolderItemCollection.cs" />
+    <Compile Include="Modeling\ModelGenerationSchema.cs" />
+    <Compile Include="Modeling\ModelGeneration\AsyncCallCompleteEventArgs.cs" />
+    <Compile Include="Modeling\ModelGeneration\AttributeRuleBase.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateAttributeRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateColumnEntityRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateCountAttributeRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateEntityRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateRoleRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\CreateVariationAttributeRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\DsvItemMapper.cs" />
+    <Compile Include="Modeling\ModelGeneration\EntityAttributesAssignment.cs" />
+    <Compile Include="Modeling\ModelGeneration\EntityRuleBase.cs" />
+    <Compile Include="Modeling\ModelGeneration\EvaluateDsvItemRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\ExistingBindingContext.cs" />
+    <Compile Include="Modeling\ModelGeneration\ExistingBindingInfo.cs" />
+    <Compile Include="Modeling\ModelGeneration\ExistingColumnBindingInfo.cs" />
+    <Compile Include="Modeling\ModelGeneration\ExistingRelationBindingInfo.cs" />
+    <Compile Include="Modeling\ModelGeneration\ExistingTableBindingInfo.cs" />
+    <Compile Include="Modeling\ModelGeneration\FieldCountFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\Filter.cs" />
+    <Compile Include="Modeling\ModelGeneration\FilterCollection.cs" />
+    <Compile Include="Modeling\ModelGeneration\FilterGroup.cs" />
+    <Compile Include="Modeling\ModelGeneration\FilterGroupOperator.cs" />
+    <Compile Include="Modeling\ModelGeneration\FormatUtil.cs" />
+    <Compile Include="Modeling\ModelGeneration\ICancelEvent.cs" />
+    <Compile Include="Modeling\ModelGeneration\IColumnFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\IColumnProcessingRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\IDsvItemFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\IDsvStatisticsProvider.cs" />
+    <Compile Include="Modeling\ModelGeneration\IModelGenEvents.cs" />
+    <Compile Include="Modeling\ModelGeneration\IProcessingRuleCallback.cs" />
+    <Compile Include="Modeling\ModelGeneration\IRelationFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\IRelationProcessingRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\ITableFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\ITableProcessingRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\IXmlObjectFactory.cs" />
+    <Compile Include="Modeling\ModelGeneration\LogEntryType.cs" />
+    <Compile Include="Modeling\ModelGeneration\LogEventArgs.cs" />
+    <Compile Include="Modeling\ModelGeneration\ModelGen.cs" />
+    <Compile Include="Modeling\ModelGeneration\ModelGenCompleteEventArgs.cs" />
+    <Compile Include="Modeling\ModelGeneration\ModelGenLogEventArgs.cs" />
+    <Compile Include="Modeling\ModelGeneration\ModelGenResult.cs" />
+    <Compile Include="Modeling\ModelGeneration\ModelRuleProcessor.cs" />
+    <Compile Include="Modeling\ModelGeneration\NameFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\NumericCompareExpression.cs" />
+    <Compile Include="Modeling\ModelGeneration\ProcessingRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\ProgressEventArgs.cs" />
+    <Compile Include="Modeling\ModelGeneration\PropertyFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\Renamer.cs" />
+    <Compile Include="Modeling\ModelGeneration\RenamerCollection.cs" />
+    <Compile Include="Modeling\ModelGeneration\RowCountFilter.cs" />
+    <Compile Include="Modeling\ModelGeneration\Rule.cs" />
+    <Compile Include="Modeling\ModelGeneration\RuleCollection.cs" />
+    <Compile Include="Modeling\ModelGeneration\RuleProcessResult.cs" />
+    <Compile Include="Modeling\ModelGeneration\RuleSet.cs" />
+    <Compile Include="Modeling\ModelGeneration\ScoreModifier.cs" />
+    <Compile Include="Modeling\ModelGeneration\ScoreModifierCollection.cs" />
+    <Compile Include="Modeling\ModelGeneration\SetAttributePropertiesRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\SetEntityAttributesRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\SetEntityPropertiesRule.cs" />
+    <Compile Include="Modeling\ModelGeneration\SqlDsvStatisticsProvider.cs" />
+    <Compile Include="Modeling\ModelGeneration\SqlDsvStatisticsProviderException.cs" />
+    <Compile Include="Modeling\ModelGeneration\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Modeling\ModelGeneration\SyncModelItemIDsAlgorithm.cs" />
+    <Compile Include="Modeling\ModelingErrorCode.cs" />
+    <Compile Include="Modeling\ModelingObject.cs" />
+    <Compile Include="Modeling\ModelingReference.cs" />
+    <Compile Include="Modeling\ModelingSerializationOptions.cs" />
+    <Compile Include="Modeling\ModelingXmlLoaderBase.cs" />
+    <Compile Include="Modeling\ModelingXmlReader.cs" />
+    <Compile Include="Modeling\ModelingXmlSchema.cs" />
+    <Compile Include="Modeling\ModelingXmlWriter.cs" />
+    <Compile Include="Modeling\ModelItem.cs" />
+    <Compile Include="Modeling\ModelItemCollection.cs" />
+    <Compile Include="Modeling\ModelItemEventArgs.cs" />
+    <Compile Include="Modeling\ModelRole.cs" />
+    <Compile Include="Modeling\NameGenerator.cs" />
+    <Compile Include="Modeling\NullNode.cs" />
+    <Compile Include="Modeling\Optionality.cs" />
+    <Compile Include="Modeling\OwnedCollection.cs" />
+    <Compile Include="Modeling\OwnedModelItemCollection.cs" />
+    <Compile Include="Modeling\Parameter.cs" />
+    <Compile Include="Modeling\ParameterRefNode.cs" />
+    <Compile Include="Modeling\PathAlgorithms.cs" />
+    <Compile Include="Modeling\PathItem.cs" />
+    <Compile Include="Modeling\Perspective.cs" />
+    <Compile Include="Modeling\PerspectiveCollection.cs" />
+    <Compile Include="Modeling\QName.cs" />
+    <Compile Include="Modeling\QueryCompilationOptions.cs" />
+    <Compile Include="Modeling\RelationBinding.cs" />
+    <Compile Include="Modeling\RelationEnd.cs" />
+    <Compile Include="Modeling\ResultType.cs" />
+    <Compile Include="Modeling\RoleContextualName.cs" />
+    <Compile Include="Modeling\RolePathItem.cs" />
+    <Compile Include="Modeling\RuleConfigurationException.cs" />
+    <Compile Include="Modeling\SemanticModel.cs" />
+    <Compile Include="Modeling\SemanticModelingSchema.cs" />
+    <Compile Include="Modeling\SemanticQuery.cs" />
+    <Compile Include="Modeling\Severity.cs" />
+    <Compile Include="Modeling\SortAttribute.cs" />
+    <Compile Include="Modeling\SortAttributeCollection.cs" />
+    <Compile Include="Modeling\SortAttributeDirection.cs" />
+    <Compile Include="Modeling\SortDirection.cs" />
+    <Compile Include="Modeling\SRErrors.Designer.cs">
+      <DependentUpon>SRErrors.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Modeling\SRInvalidReferenceMethod.cs" />
+    <Compile Include="Modeling\SRObjectDescriptor.cs" />
+    <Compile Include="Modeling\StringManipulation.Designer.cs">
+      <DependentUpon>StringManipulation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Modeling\SubtotalSet.cs" />
+    <Compile Include="Modeling\TableBinding.cs" />
+    <Compile Include="Modeling\ValidationContext.cs" />
+    <Compile Include="Modeling\ValidationException.cs" />
+    <Compile Include="Modeling\ValidationMessage.cs" />
+    <Compile Include="Modeling\ValidationMessageCollection.cs" />
+    <Compile Include="Modeling\XmlNamespacePrefixCollection.cs" />
+    <Compile Include="Modeling\XmlUtil.cs" />
+    <Compile Include="Modeling\XmlValidationException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportIntermediateFormat\Pair.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\ArrayOfReferencesAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\CreateDictionary.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\Declaration.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\EqualityComparers.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\GlobalIDOwnerCollection.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\HashtableOfReferencesAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IGlobalIDOwner.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IGloballyReferenceable.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\INameObjectCollection.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IncompatibleFormatVersionException.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IncompatibleRIFVersionException.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IntermediateFormatReader.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IntermediateFormatVersion.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IntermediateFormatWriter.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IPersistable.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IReferenceable.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\IRIFObjectCreator.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\Lifetime.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\MemberInfo.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\MemberName.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\MemberReference.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\NonPersistentAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\ObjectType.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistedWithinRequestOnlyAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceBinaryReader.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceBinaryWriter.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceConstants.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceFlags.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceHelper.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistenceValidator.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\PersistMethod.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\ReadOnlyMemberInfo.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\ReferenceAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\SkipMemberStaticValidationAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\SkipStaticValidationAttribute.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\Token.cs" />
+    <Compile Include="ReportIntermediateFormat\Persistence\VersionStamp.cs" />
+    <Compile Include="ReportProcessing\Global.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.de.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.es.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.fr.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.it.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.ja.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.ko.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.ru.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SR.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.de.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.es.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.fr.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.it.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.ja.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.ko.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.ru.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\ModelGeneration\SRRuleTokens.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\Schema\DataSourceView.xsd" />
+    <EmbeddedResource Include="Modeling\Schema\ModelGeneration.xsd" />
+    <EmbeddedResource Include="Modeling\Schema\SemanticModeling.xsd" />
+    <EmbeddedResource Include="Modeling\Schema\SemanticModelingFragment.xslt" />
+    <EmbeddedResource Include="Modeling\Schema\SemanticModelingRelaxed.xslt" />
+    <EmbeddedResource Include="Modeling\SRErrors.de.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.es.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.fr.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.it.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.ja.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.ko.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SRErrors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeling\SRErrors.ru.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\SRErrors.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringManipulation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeling\StringManipulation.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_de.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_en.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_es.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_fr.zh-Hant.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.de.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.es.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.fr.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.ja.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.ko.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.ru.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.zh-Hans.resx" />
+    <EmbeddedResource Include="Modeling\StringManipulation_it.zh-Hant.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,60 @@
+{
+	"phrases": [
+		{"phrase": "every (?<num2>\\d+)(?:st|nd|rd|th) line(?:s)? starting (?:with |from )?(?:the )?(?<num1>\\d+)(?:st|nd|rd|th)", "symbol":"FS", "ast":"IterFilter(new Tuple<int, int>({{num1}}, {{num2}}), SplitLines(v))"},
+		{"phrase": "(?:every|all) line(?:s)? starting (?:with |from )?(?:the )?(?<num1>\\d+)(?:st|nd|rd|th)", "symbol":"FS", "ast":"IterFilter(new Tuple<int, int>({{num1}}, 1), SplitLines(v))"},
+		{"phrase": "every (?<num2>\\d+)(?:st|nd|rd|th) line(?:s)?", "symbol":"FS", "ast":"IterFilter(new Tuple<int, int>(0, {{num2}}), SplitLines(v))"},
+		{"phrase": "(?:every|all) line(?:s)?", "symbol":"FS", "ast":"IterFilter(new Tuple<int, int>(0, 1), SplitLines(v))"},
+
+		{"phrase": "all", "symbol":"LS", "ast":"LinesFilter(True(), ?FS)"},
+
+		{"phrase": "(?:last line|line before|preceding line) start(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredStartsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) start(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredStartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) start(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(PredStartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) end(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredEndsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) end(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredEndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) end(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(PredEndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? an alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? a number(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), 1), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), 1), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? (?<k>\\d+) alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? (?<k>\\d+) number(?:s)?", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), {{k}}), ?FS)"},
+		{"phrase": "(?:last line|line before|preceding line) contain(?:s|ing)? (?<k>\\d+) \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(PredContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), {{k}}), ?FS)"},
+
+		{"phrase": "(?:next line|line after|following line) start(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccStartsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "(?:next line|line after|following line) start(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccStartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) start(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(SuccStartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) end(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccEndsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "(?:next line|line after|following line) end(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccEndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) end(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(SuccEndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? an alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? a number(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), 1), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), 1), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? (?<k>\\d+) alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? (?<k>\\d+) number(?:s)?", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), {{k}}), ?FS)"},
+		{"phrase": "(?:next line|line after|following line) contain(?:s|ing)? (?<k>\\d+) \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(SuccContains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), {{k}}), ?FS)"},
+
+		{"phrase": "start(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(StartsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "start(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(StartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "start(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(StartsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "end(?:s|ing)? with (?:an )?alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(EndsWith(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false))) , ?FS)"},
+		{"phrase": "end(?:s|ing)? with (?:a )?number(?:s)?", "symbol":"LS", "ast":"LinesFilter(EndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false))), ?FS)"},
+		{"phrase": "end(?:s|ing)? with \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(EndsWith(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false))), ?FS)"},
+		{"phrase": "contain(?:s|ing)? an alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "contain(?:s|ing)? a number(?:s)?", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), 1), ?FS)"},
+		{"phrase": "contain(?:s|ing)? \"(?<str>[A-Za-z0-9]+)\"", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), 1), ?FS)"},
+		{"phrase": "contain(?:s|ing)? (?<k>\\d+) alphabet(?:s)?", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(\"[\\\\p{Lu}\\\\p{Ll}]+\", \"Alphabet\", 0, false)), 1) , ?FS)"},
+		{"phrase": "contain(?:s|ing)? (?<k>\\d+) number(?:s)?", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"[0-9]+(\\\\,[0-9]{3})*(\\\\.[0-9]+)?\"), \"Number\", 0, false)), {{k}}), ?FS)"},
+		{"phrase": "contain(?:s|ing)? (?<k>\\d+) \"(?<str>[A-Za-z0-9 ]+)\"", "symbol":"LS", "ast":"LinesFilter(Contains(GetLine4(v, s4), new RegularExpression(new Token(new Regex(\"{{str}}\"), \"str\", 0, false)), {{k}}), ?FS)"},
+
+		{"phrase": "from (?:the )?(?<k>\\d+)(?:st|nd|rd|th)", "symbol":"T1", "ast":"PositionPair(AbsPos1(GetLine1(v, s1), {{k}}), ?P1)"},
+		{"phrase": "to (?:the )?(?<k>\\d+)(?:st|nd|rd|th)", "symbol":"P1", "ast":"AbsPos1(GetLine1(v, s1), {{k}})"},
+
+		{"phrase": "from (?:the )?end of \"(?<str1>[A-Za-z0-9 ]+)\" and (?:the )?start of \"(?<str2>[A-Za-z0-9 ]+)\"", "symbol":"T1", "ast":"PositionPair(RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"{{str1}}\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"{{str2}}\"), \"str\", 0, false))), 0), ?P1)"},
+		{"phrase": "from (?:the )?end of \"(?<str1>[A-Za-z0-9 ]+)\"", "symbol":"T1", "ast":"PositionPair(RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"{{str1}}\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"\\\\.\"), \"str\", 0, false))), 0), ?P1)"},
+		{"phrase": "from (?:the )?start of \"(?<str2>[A-Za-z0-9 ]+)\"", "symbol":"T1", "ast":"PositionPair(RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"\\\\.\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"{{str2}}\"), \"str\", 0, false))), 0), ?P1)"},
+
+		{"phrase": "to (?:the )?end of \"(?<str1>[A-Za-z0-9 ]+)\" and (?:the )?start of \"(?<str2>[A-Za-z0-9 ]+)\"", "symbol":"P1", "ast":"RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"{{str1}}\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"{{str2}}\"), \"str\", 0, false))), 0)"},
+		{"phrase": "to (?:the )?end of \"(?<str1>[A-Za-z0-9 ]+)\"", "symbol":"P1", "ast":"RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"{{str1}}\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"\\\\.\"), \"str\", 0, false))), 0)"},
+		{"phrase": "to (?:the )?start of \"(?<str2>[A-Za-z0-9 ]+)\"", "symbol":"P1", "ast":"RegPos1(GetLine1(v, s1), RegexPair(new RegularExpression(new Token(new Regex(\"\\\\.\"), \"str\", 0, false)), new RegularExpression(new Token(new Regex(\"{{str2}}\"), \"str\", 0, false))), 0)"}
+	]
+}

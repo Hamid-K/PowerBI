@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23ECE6CA-DD23-429B-9732-2D68488E12C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.ReportServer.AsServer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.AdomdClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.AnalysisServices.AppLocal.AdomdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.Azure.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.AnalysisServices.Azure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.HostingEnvironment">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.BIServer.HostingEnvironment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BIServer.Telemetry">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.BIServer.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Mashup">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.Data.Mashup.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MashupEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.MashupEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Amo.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Amo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.ReportServer.PbixLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.ReportServer.PbixLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Tabular">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Tabular.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AMODataResultReader.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesBuiltInRoles.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesEvent.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesEvictor.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesServer.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AnalysisServicesSettings.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Artifacts\DataModelArtifacts.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Artifacts\DataModelArtifactsProvider.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Artifacts\IDataModelArtifactsProvider.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Artifacts\PbixModelParameter.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Artifacts\PbixModelRole.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AsConnectionException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\AsConnectionExceptionErrorCode.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\CheckConnectionServices.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\DataAccessObject\ModelInfoEntity.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\DatabaseNotFoundException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\DatabaseType.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\DatasourceTelemetryInfo.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Exceptions\InvalidModelVersionException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Exceptions\TOMClientServerRefreshException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ExceptionUtils.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\IAnalysisServicesFactory.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\IAnalysisServicesServer.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ICheckConnectionServices.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\IDataResultReader.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\IDataSourceReader.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\IModelDataAccessor.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\InvalidDataSourceException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\InvalidMashupStringException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\InvalidModelParameterException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\LoadDatabaseResult.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\MashupStringNotFoundException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Mashup\DataSourceKey.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\Mashup\MashupProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ModelDataAccessor.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\PbixDataSourceCheckResult.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\IProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\OleDbProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\OracleProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\ProviderDataSourceCredentials.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\ProviderDataSourceInfo.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\ProviderResolver.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\SqlProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\ProviderManager\TeradataProviderManager.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\SR.Designer.cs">
+      <DependentUpon>SR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PowerBI\ReportServer\AsServer\TOMDataSourceReader.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\TOMWrapper.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\UnsuportedDataSourceKindException.cs" />
+    <Compile Include="PowerBI\ReportServer\AsServer\UnsupportedProviderException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingServices\PublicKeyConstants.cs" />
+    <Compile Include="ReportingServices\TestPublicKeyConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PowerBI\ReportServer\AsServer\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

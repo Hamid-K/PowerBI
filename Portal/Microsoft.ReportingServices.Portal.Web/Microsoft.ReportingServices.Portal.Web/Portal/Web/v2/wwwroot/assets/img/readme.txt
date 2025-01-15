@@ -1,0 +1,1 @@
+﻿Images go here. Currently only a logo.png file exists and is meant for custom branding purposes; it's an example file. Brand packages will overwrite it.

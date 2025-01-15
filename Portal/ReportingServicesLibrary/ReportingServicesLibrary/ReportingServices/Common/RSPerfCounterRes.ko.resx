@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>활성 세션 수입니다.</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>경고: 이벤트 큐 길이</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>총 애플리케이션 도메인 재활용 수입니다.</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>초당 요청 수입니다.</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>총 요청 수입니다.</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>총 보고서 실행 서버 캐시 업데이트 수입니다.</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>초당 캐시 플러시 수입니다.</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>총 보고서 서버 캐시 적중 수입니다.</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>초당 보고서 서버 캐시 적중 수입니다.</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>총 캐시 누락 수입니다.</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>초당 캐시에서 보고서를 검색할 수 없는 횟수입니다.</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>총 배달 수입니다.</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>초당 배달 수입니다.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>초당 데이터 원본 연결 실패 횟수입니다.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>총 데이터 원본 연결 실패 횟수입니다.</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>총 이벤트 수입니다.</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>초당 이벤트 수입니다.</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>기존 세션에서 처리되는 초당 요청 수입니다.</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>기존 세션에서 처리된 총 요청 수입니다.</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>초당 시작한 새 사용자 세션 수입니다.</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>초당 실패 횟수입니다.</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>총 실패 횟수입니다.</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>마지막 1초 동안 서버에서 발행한 축소 알림 수입니다. 서버가 메모리 가중이 있다고 인식하는 빈도를 나타냅니다.</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>메모리 내 캐시에서의 총 캐시 적중 수입니다.</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>초당 메모리 내 캐시에서 보고서를 검색할 수 있는 횟수입니다.</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>메모리 내 캐시에서의 총 캐시 누락 수입니다.</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>초당 메모리 내 캐시에서 보고서를 검색할 수 없는 횟수입니다.</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>서버의 현재 메모리 상태를 나타내는 1에서 5 사이의 숫자입니다. 1:가중 없음, 2:낮은 가중, 3:중간 가중, 4:높은 가중, 5:최고 가중</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>서버가 축소하도록 요청한 바이트 수입니다.</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>모델 캐시에서의 총 캐시 적중 수입니다.</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>초당 캐시에서 모델을 검색할 수 있는 횟수입니다.</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>모델 캐시에서의 총 캐시 누락 수입니다.</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>초당 캐시에서 모델을 검색할 수 없는 횟수입니다.</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>활성 모델 요청 수입니다.</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>모델 요청 평균 기간입니다.</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>초당 모델 요청 수입니다.</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>총 모델 요청 수입니다.</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>기존 세션에 열려 있는 보고서에 대한 초당 요청 수입니다.</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>새 세션에서 처리되는 초당 요청 수입니다.</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>새 세션에서 처리된 총 요청 수입니다.</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>총 처리 오류 수입니다.</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>SQL Report Server 서비스 Power View 보고서 관련 통계</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>활성 쿼리 요청 수입니다.</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>쿼리 요청 평균 기간입니다.</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>초당 쿼리 요청 수입니다.</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>총 쿼리 요청 수입니다.</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>스레드 가중으로 인해 거부된 총 스레드 수입니다.</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>활성 보고서 요청 수입니다.</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>실행된 총 보고서 수입니다.</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>초당 실행된 보고서 수입니다.</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>초당 요청 수입니다.</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>활성 보고서 요청 수입니다.</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>보고서 요청 평균 기간입니다.</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>초당 보고서 요청 수입니다.</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>총 보고서 요청 수입니다.</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>총 보고서 실행 스냅샷 업데이트 수입니다.</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>초당 스냅샷 업데이트 수입니다.</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>활성 세션 수입니다.</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>SQL Report Server 서비스 관련 통계</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>처리 중인 총 요청 수입니다.</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>활성 스레드 수입니다.</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>경고: 이벤트 처리됨 - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>MSRS 2011 웹 서비스</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>MSRS 2011 Windows 서비스</value>
+  </data>
+</root>

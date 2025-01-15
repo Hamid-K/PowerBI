@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCAB8DC4-74DE-4983-8B9F-8494B6693352}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.DataIntegration.FuzzyMatchingCommon</RootNamespace>
+    <AssemblyName>Microsoft.DataIntegration.FuzzyMatchingCommon</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitOperations.cs" />
+    <Compile Include="CharacterMap.cs" />
+    <Compile Include="CharArray.cs" />
+    <Compile Include="Collections\AccessibleKeyValuePair.cs" />
+    <Compile Include="Collections\Array.cs" />
+    <Compile Include="Collections\ArrayConvert.cs" />
+    <Compile Include="Collections\ArrayReference.cs" />
+    <Compile Include="Collections\ArraySegment32.cs" />
+    <Compile Include="Collections\ArraySegmentBuilder.cs" />
+    <Compile Include="Collections\BigDictionary.cs" />
+    <Compile Include="Collections\BitHash.cs" />
+    <Compile Include="Collections\BitVector.cs" />
+    <Compile Include="Collections\BlockedSegmentArray.cs" />
+    <Compile Include="Collections\BlockedSegmentArray64.cs" />
+    <Compile Include="Collections\BloomFilter.cs" />
+    <Compile Include="Collections\BoundedHeap.cs" />
+    <Compile Include="Collections\ByteSegmentAllocator.cs" />
+    <Compile Include="Collections\CachedDictionary.cs" />
+    <Compile Include="Collections\CastEnumerator.cs" />
+    <Compile Include="Collections\CastList.cs" />
+    <Compile Include="Collections\CharCostLookup.cs" />
+    <Compile Include="Collections\CharLookup.cs" />
+    <Compile Include="Collections\CollectionSerialization.cs" />
+    <Compile Include="Collections\CompactStringSet.cs" />
+    <Compile Include="Collections\CompactStringSetBase.cs" />
+    <Compile Include="Collections\CompactStringSetLongId.cs" />
+    <Compile Include="Collections\CompactStringStore.cs" />
+    <Compile Include="Collections\ComparerShim.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentFastDictionary.2.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentFastDictionary.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentFastIntToIntDictionary.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentFastIntToRefDictionary.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentFastRefToDoubleDictionary.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\ConcurrentDictionary.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\ConcurrentHashSet.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\ConcurrentQueue.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\ConcurrentStack.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\IConcurrentCollection.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\IProducerConsumerCollection.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\SystemCollectionsConcurrent_ProducerConsumerCollectionDebugV.cs" />
+    <Compile Include="Collections\Concurrent\DotNet4\SystemThreadingCollections_ConcurrentStackDebugView.cs" />
+    <Compile Include="Collections\Concurrent\FastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\GenericConcurrentFastIntToIntDictionary.cs" />
+    <Compile Include="Collections\Concurrent\IFastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\IntToIntFastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\IntToRefFastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\LockFreeStack.cs" />
+    <Compile Include="Collections\Concurrent\LongToRefFastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\RefToDoubleFastHashHelper.cs" />
+    <Compile Include="Collections\Concurrent\RefToRefFastHashHelper.cs" />
+    <Compile Include="Collections\ConversionEnumerator.cs" />
+    <Compile Include="Collections\ConversionList.cs" />
+    <Compile Include="Collections\ConvertEnumerable.cs" />
+    <Compile Include="Collections\Default.cs" />
+    <Compile Include="Collections\DotNet4\IStructuralComparable.cs" />
+    <Compile Include="Collections\DotNet4\IStructuralEquatable.cs" />
+    <Compile Include="Collections\DotNet4\StructuralComparer.cs" />
+    <Compile Include="Collections\DotNet4\StructuralComparisons.cs" />
+    <Compile Include="Collections\DotNet4\StructuralEqualityComparer.cs" />
+    <Compile Include="Collections\DynamicBloomFilter.cs" />
+    <Compile Include="Collections\EditTrie.cs" />
+    <Compile Include="Collections\EnumerableExtensionMethods.cs" />
+    <Compile Include="Collections\EnumerableWrapper.cs" />
+    <Compile Include="Collections\EqualityComparerShim.2.cs" />
+    <Compile Include="Collections\EqualityComparerShim.cs" />
+    <Compile Include="Collections\ExtensionMethods.cs" />
+    <Compile Include="Collections\FastInt64HashSet.cs" />
+    <Compile Include="Collections\FastInt64ToIntHash.cs" />
+    <Compile Include="Collections\FastIntHashSet.cs" />
+    <Compile Include="Collections\FastIntPairToIntHash.cs" />
+    <Compile Include="Collections\FastIntToInt64Hash.cs" />
+    <Compile Include="Collections\FastIntToIntHash.cs" />
+    <Compile Include="Collections\FastIntToIntHash2.2.cs" />
+    <Compile Include="Collections\FastIntToIntHash2.cs" />
+    <Compile Include="Collections\HashMultiSet.cs" />
+    <Compile Include="Collections\HashSetWithTryGetValue.cs" />
+    <Compile Include="Collections\Heap.cs" />
+    <Compile Include="Collections\HeapSegmentAllocator.cs" />
+    <Compile Include="Collections\IAllocator.cs" />
+    <Compile Include="Collections\IArray.cs" />
+    <Compile Include="Collections\IArraySegment.cs" />
+    <Compile Include="Collections\IBlockAllocator.cs" />
+    <Compile Include="Collections\IFastDictionary.cs" />
+    <Compile Include="Collections\IHashAdapter.cs" />
+    <Compile Include="Collections\IndexableStack.cs" />
+    <Compile Include="Collections\Int32HashAdapter.cs" />
+    <Compile Include="Collections\IntHashSet.cs" />
+    <Compile Include="Collections\IntHashSetEnumerable.cs" />
+    <Compile Include="Collections\IntHashTable.cs" />
+    <Compile Include="Collections\IObjectAllocator.cs" />
+    <Compile Include="Collections\IReadWriteArraySegment.cs" />
+    <Compile Include="Collections\IReset.cs" />
+    <Compile Include="Collections\ISegmentAllocator.cs" />
+    <Compile Include="Collections\ISet.cs" />
+    <Compile Include="Collections\IZoneAllocator.cs" />
+    <Compile Include="Collections\ListCollection.cs" />
+    <Compile Include="Collections\Matrix.cs" />
+    <Compile Include="Collections\MruCachedDictionary.cs" />
+    <Compile Include="Collections\ObjectAllocator.cs" />
+    <Compile Include="Collections\ObjectVector.cs" />
+    <Compile Include="Collections\PriorityQueue.cs" />
+    <Compile Include="Collections\Trie.cs" />
+    <Compile Include="Collections\Vector.cs" />
+    <Compile Include="Collections\ZoneAllocator.cs" />
+    <Compile Include="Data\DataReaderDelegateImplBase.cs" />
+    <Compile Include="Data\DataRecordImplBase.cs" />
+    <Compile Include="Data\EnumeratorToDataReaderAdapter.cs" />
+    <Compile Include="Data\ExtensionMethods.cs" />
+    <Compile Include="Data\IDataRecordProvider.cs" />
+    <Compile Include="Data\NullDataRecord.cs" />
+    <Compile Include="Data\ObjectToDataRecordAdapter.cs" />
+    <Compile Include="Data\OffsetDataRecord.cs" />
+    <Compile Include="Data\RecordTransformingDataReader.cs" />
+    <Compile Include="Data\SchemaUtils.cs" />
+    <Compile Include="Data\SimpleDataReader.cs" />
+    <Compile Include="Data\SimpleDataRecord.cs" />
+    <Compile Include="Data\Sql\BulkInsertStreamWriter.cs" />
+    <Compile Include="Data\Sql\EmptySqlName.cs" />
+    <Compile Include="Data\Sql\SqlConstants.cs" />
+    <Compile Include="Data\Sql\SqlName.cs" />
+    <Compile Include="Data\Sql\SqlUtils.cs" />
+    <Compile Include="DDMath.cs" />
+    <Compile Include="Diagnostics\AppEventSink.cs" />
+    <Compile Include="Diagnostics\DDSDebug.cs" />
+    <Compile Include="Diagnostics\ExtensionMethods.cs" />
+    <Compile Include="Diagnostics\IEventSink.cs" />
+    <Compile Include="Diagnostics\IStatistics.cs" />
+    <Compile Include="Diagnostics\IStatisticsRecord.cs" />
+    <Compile Include="Diagnostics\MemoryManager.cs" />
+    <Compile Include="Diagnostics\ProgressBar.cs" />
+    <Compile Include="Diagnostics\SqlEventSink.cs" />
+    <Compile Include="Diagnostics\StatisticAttribute.cs" />
+    <Compile Include="Diagnostics\StatisticsBase.cs" />
+    <Compile Include="Diagnostics\Trace.cs" />
+    <Compile Include="Diagnostics\VoidSink.cs" />
+    <Compile Include="DotNet4\Environment40.cs" />
+    <Compile Include="DotNet4\ITuple.cs" />
+    <Compile Include="DotNet4\Tuple.2.cs" />
+    <Compile Include="DotNet4\Tuple.3.cs" />
+    <Compile Include="DotNet4\Tuple.4.cs" />
+    <Compile Include="DotNet4\Tuple.5.cs" />
+    <Compile Include="DotNet4\Tuple.6.cs" />
+    <Compile Include="DotNet4\Tuple.7.cs" />
+    <Compile Include="DotNet4\Tuple.8.cs" />
+    <Compile Include="DotNet4\Tuple.9.cs" />
+    <Compile Include="DotNet4\Tuple.cs" />
+    <Compile Include="EventSupport.cs" />
+    <Compile Include="ExceptionUtils.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="FullEstimator.cs" />
+    <Compile Include="IDDSEventSink.cs" />
+    <Compile Include="IInterlocked.cs" />
+    <Compile Include="IMemoryLimit.cs" />
+    <Compile Include="IMemoryUsage.cs" />
+    <Compile Include="Int32EqualityComparer.cs" />
+    <Compile Include="Int32EqualityComparerWithRobustHashing.cs" />
+    <Compile Include="Int32Interlocked.cs" />
+    <Compile Include="Int64EqualityComparer.cs" />
+    <Compile Include="Int64EqualityComparerWithRobustHashing.cs" />
+    <Compile Include="Int64Interlocked.cs" />
+    <Compile Include="Interlocked.cs" />
+    <Compile Include="Internal\DotNet4\Error.cs" />
+    <Compile Include="Internal\DotNet4\TraceHelpers.cs" />
+    <Compile Include="IO\EncapsulatedStream.cs" />
+    <Compile Include="IO\EndianType.cs" />
+    <Compile Include="IO\ISerializer.cs" />
+    <Compile Include="IO\StreamExtensions.cs" />
+    <Compile Include="IO\StreamUtilities.cs" />
+    <Compile Include="IO\TemporaryFile.cs" />
+    <Compile Include="IO\TraceSourceTextWriter.cs" />
+    <Compile Include="IRawSerializable.cs" />
+    <Compile Include="ISelfJoinEstimator.cs" />
+    <Compile Include="IStreamSerializable.cs" />
+    <Compile Include="IString.cs" />
+    <Compile Include="Linq\DotNet4\Enumerable_DotNet4.cs" />
+    <Compile Include="MemoryConstants.cs" />
+    <Compile Include="Microsoft.DataIntegration.Common.Resources.Designer.cs">
+      <DependentUpon>Microsoft.DataIntegration.Common.Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="NoopEventSink.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefEqualityComparer.cs" />
+    <Compile Include="Reflection\ReflectionUtilities.cs" />
+    <Compile Include="SketchEstimator.cs" />
+    <Compile Include="StringExtent.cs" />
+    <Compile Include="StringExtentEqualityComparer.cs" />
+    <Compile Include="StringNormalization.cs" />
+    <Compile Include="StringWrapper.cs" />
+    <Compile Include="Text\ExtensionMethods.cs" />
+    <Compile Include="Threading\DotNet4\SpinWait.cs" />
+    <Compile Include="Threading\Internal\DotNet4\NativeMethods.cs" />
+    <Compile Include="Threading\Internal\DotNet4\Platform.cs" />
+    <Compile Include="UInt32EqualityComparer.cs" />
+    <Compile Include="UInt32EqualityComparerWithRobustHashing.cs" />
+    <Compile Include="UInt64EqualityComparer.cs" />
+    <Compile Include="UInt64EqualityComparerWithRobustHashing.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft.DataIntegration.Common.Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Microsoft.DataIntegration.Common.Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51930289-13E8-4A22-9188-21098739CD57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataShaping.ServiceContracts</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataShaping.ServiceContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataExtension.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataExtension.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\ActivityKind.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\AdditionalMessage.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataReductionConfiguration.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataShapeEngineErrorCodes.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataShapeEngineErrorInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataShapeEngineException.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataShapingEvents.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\DataVolumeLevel.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\EngineMessageSeverity.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\FeatureSwitchKind.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IConnectionUserImpersonator.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IDataShapingDataSourceInfo.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IDumper.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IExecuteSemanticQueryResultWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IFeatureSwitchProvider.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IsRetriableFailure.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IStreamingStructureEncodedWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\IStreamingStructureWriter.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\ITelemetryService.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\ITracer.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\ModelKind.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\QueryExecutionOptions.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\QueryPatternKind.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\QueryTranslation\ClusteringTranslationResult.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\QueryTranslation\SemanticQueryToDaxTranslationResult.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\QueryTranslation\TranslateSemanticQueryConfigKind.cs" />
+    <Compile Include="Microsoft\DataShaping\ServiceContracts\WriteTrackerStream.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

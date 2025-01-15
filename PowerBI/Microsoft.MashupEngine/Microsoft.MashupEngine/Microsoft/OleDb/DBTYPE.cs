@@ -1,0 +1,93 @@
+﻿using System;
+
+namespace Microsoft.OleDb
+{
+	// Token: 0x02001EC4 RID: 7876
+	public enum DBTYPE : ushort
+	{
+		// Token: 0x04006346 RID: 25414
+		EMPTY,
+		// Token: 0x04006347 RID: 25415
+		NULL,
+		// Token: 0x04006348 RID: 25416
+		I2,
+		// Token: 0x04006349 RID: 25417
+		I4,
+		// Token: 0x0400634A RID: 25418
+		R4,
+		// Token: 0x0400634B RID: 25419
+		R8,
+		// Token: 0x0400634C RID: 25420
+		CY,
+		// Token: 0x0400634D RID: 25421
+		DATE,
+		// Token: 0x0400634E RID: 25422
+		BSTR,
+		// Token: 0x0400634F RID: 25423
+		IDISPATCH,
+		// Token: 0x04006350 RID: 25424
+		ERROR,
+		// Token: 0x04006351 RID: 25425
+		BOOL,
+		// Token: 0x04006352 RID: 25426
+		VARIANT,
+		// Token: 0x04006353 RID: 25427
+		IUNKNOWN,
+		// Token: 0x04006354 RID: 25428
+		DECIMAL,
+		// Token: 0x04006355 RID: 25429
+		UI1 = 17,
+		// Token: 0x04006356 RID: 25430
+		ARRAY = 8192,
+		// Token: 0x04006357 RID: 25431
+		BYREF = 16384,
+		// Token: 0x04006358 RID: 25432
+		I1 = 16,
+		// Token: 0x04006359 RID: 25433
+		UI2 = 18,
+		// Token: 0x0400635A RID: 25434
+		UI4,
+		// Token: 0x0400635B RID: 25435
+		I8,
+		// Token: 0x0400635C RID: 25436
+		UI8,
+		// Token: 0x0400635D RID: 25437
+		FILETIME = 64,
+		// Token: 0x0400635E RID: 25438
+		GUID = 72,
+		// Token: 0x0400635F RID: 25439
+		VECTOR = 4096,
+		// Token: 0x04006360 RID: 25440
+		RESERVED = 32768,
+		// Token: 0x04006361 RID: 25441
+		BYTES = 128,
+		// Token: 0x04006362 RID: 25442
+		STR,
+		// Token: 0x04006363 RID: 25443
+		WSTR,
+		// Token: 0x04006364 RID: 25444
+		NUMERIC,
+		// Token: 0x04006365 RID: 25445
+		UDT,
+		// Token: 0x04006366 RID: 25446
+		DBDATE,
+		// Token: 0x04006367 RID: 25447
+		DBTIME,
+		// Token: 0x04006368 RID: 25448
+		DBTIMESTAMP,
+		// Token: 0x04006369 RID: 25449
+		VARNUMERIC = 139,
+		// Token: 0x0400636A RID: 25450
+		XML = 141,
+		// Token: 0x0400636B RID: 25451
+		DBTIME2 = 145,
+		// Token: 0x0400636C RID: 25452
+		DBTIMESTAMPOFFSET,
+		// Token: 0x0400636D RID: 25453
+		DBDURATION = 1600,
+		// Token: 0x0400636E RID: 25454
+		STRUCTUREDENTITY = 2300,
+		// Token: 0x0400636F RID: 25455
+		TYPEDVARIANT
+	}
+}

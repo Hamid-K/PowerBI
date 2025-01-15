@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescription" xml:space="preserve">
+    <value>Hiermit werden Kommentare in Berichten erstellt, angezeigt, bearbeitet und gelöscht.</value>
+  </data>
+  <data name="CommentName" xml:space="preserve">
+    <value>Berichte kommentieren</value>
+  </data>
+  <data name="ConfigureAccessDescription" xml:space="preserve">
+    <value>Sicherheitseinstellungen für Berichte, Ordner, Ressourcen und freigegebene Datenquellen anzeigen und ändern.</value>
+  </data>
+  <data name="ConfigureAccessName" xml:space="preserve">
+    <value>Sicherheit für einzelne Elemente festlegen</value>
+  </data>
+  <data name="ConsumeReportsDescription" xml:space="preserve">
+    <value>Liest Berichtsdefinitionen</value>
+  </data>
+  <data name="ConsumeReportsName" xml:space="preserve">
+    <value>Berichte lesen</value>
+  </data>
+  <data name="CreateLinkedReportsDescription" xml:space="preserve">
+    <value>Verknüpfte Berichte erstellen und diese in einem Berichtsserverordner veröffentlichen.</value>
+  </data>
+  <data name="CreateLinkedReportsName" xml:space="preserve">
+    <value>Verknüpfte Berichte erstellen</value>
+  </data>
+  <data name="ExecuteReportDefinitionsDescription" xml:space="preserve">
+    <value>Die Ausführung von der Berichtsdefinition starten, ohne diese auf dem Berichtsserver zu veröffentlichen.</value>
+  </data>
+  <data name="ExecuteReportDefinitionsName" xml:space="preserve">
+    <value>Berichtsdefinitionen ausführen</value>
+  </data>
+  <data name="GenerateEventsDescription" xml:space="preserve">
+    <value>Stellt eine Anwendung bereit, die Ereignisse im Namespace des Berichtsservers generieren kann.</value>
+  </data>
+  <data name="GenerateEventsName" xml:space="preserve">
+    <value>Ereignisse generieren</value>
+  </data>
+  <data name="ManageAnySubscriptionDescription" xml:space="preserve">
+    <value>Jedes Abonnement unabhängig davon, wer sein Besitzer ist, anzeigen, ändern und löschen.</value>
+  </data>
+  <data name="ManageAnySubscriptionName" xml:space="preserve">
+    <value>Alle Abonnements verwalten</value>
+  </data>
+  <data name="ManageCommentsDescription" xml:space="preserve">
+    <value>Hiermit werden die Kommentare anderer Benutzer in Berichten gelöscht.</value>
+  </data>
+  <data name="ManageCommentsName" xml:space="preserve">
+    <value>Kommentare verwalten</value>
+  </data>
+  <data name="ManageDatasourceDescription" xml:space="preserve">
+    <value>Freigegebene Datenquellenelemente erstellen und löschen sowie Datenquelleneigenschaften ändern.</value>
+  </data>
+  <data name="ManageDatasourceName" xml:space="preserve">
+    <value>Datenquellen verwalten</value>
+  </data>
+  <data name="ManageFoldersDescription" xml:space="preserve">
+    <value>Hiermit werden Ordner erstellt, angezeigt und gelöscht sowie Ordnereigenschaften angezeigt und geändert.</value>
+  </data>
+  <data name="ManageFoldersName" xml:space="preserve">
+    <value>Ordner verwalten</value>
+  </data>
+  <data name="ManageJobsDescription" xml:space="preserve">
+    <value>Ausgeführte Aufträge anzeigen und abbrechen.</value>
+  </data>
+  <data name="ManageJobsName" xml:space="preserve">
+    <value>Aufträge verwalten</value>
+  </data>
+  <data name="ManageModelsDescription" xml:space="preserve">
+    <value>Erstellen, Anzeigen und Löschen von Modellen sowie Anzeigen und Ändern von Modelleigenschaften.</value>
+  </data>
+  <data name="ManageModelsName" xml:space="preserve">
+    <value>Modelle verwalten</value>
+  </data>
+  <data name="ManageReportHistoryDescription" xml:space="preserve">
+    <value>Berichtsverlaufs-Momentaufnahme erstellen, anzeigen und löschen sowie Berichtsverlaufeigenschaften ändern.</value>
+  </data>
+  <data name="ManageReportHistoryName" xml:space="preserve">
+    <value>Berichtsverlauf verwalten</value>
+  </data>
+  <data name="ManageReportsDescription" xml:space="preserve">
+    <value>Hiermit werden Berichte erstellt und gelöscht sowie Berichteigenschaften geändert.</value>
+  </data>
+  <data name="ManageReportsName" xml:space="preserve">
+    <value>Berichte verwalten</value>
+  </data>
+  <data name="ManageResourcesDescription" xml:space="preserve">
+    <value>Ressourcen erstellen, ändern und löschen sowie Ressourceneigenschaften ändern.</value>
+  </data>
+  <data name="ManageResourcesName" xml:space="preserve">
+    <value>Ressourcen verwalten</value>
+  </data>
+  <data name="ManageRolesDescription" xml:space="preserve">
+    <value>Rollendefinitionen erstellen, anzeigen, ändern und löschen.</value>
+  </data>
+  <data name="ManageRolesName" xml:space="preserve">
+    <value>Rollen verwalten</value>
+  </data>
+  <data name="ManageSharedSchedulesDescription" xml:space="preserve">
+    <value>Freigegebene Zeitpläne erstellen, anzeigen, ändern und löschen, mit denen Berichte ausgeführt oder aktualisiert werden.</value>
+  </data>
+  <data name="ManageSharedSchedulesName" xml:space="preserve">
+    <value>Freigegebene Zeitpläne verwalten</value>
+  </data>
+  <data name="ManageSystemPropertiesDescription" xml:space="preserve">
+    <value>Eigenschaften anzeigen und ändern, die für den Berichtsserver sowie für Elemente gelten, die vom Berichtsserver verwaltet werden.</value>
+  </data>
+  <data name="ManageSystemPropertiesName" xml:space="preserve">
+    <value>Berichtsservereigenschaften verwalten</value>
+  </data>
+  <data name="ManageSystemSecurityDescription" xml:space="preserve">
+    <value>Systemweite Rollenzuweisungen anzeigen und ändern.</value>
+  </data>
+  <data name="ManageSystemSecurityName" xml:space="preserve">
+    <value>Berichtsserversicherheit verwalten</value>
+  </data>
+  <data name="SubscribeDescription" xml:space="preserve">
+    <value>Jeder Benutzer kann eigene Abonnements erstellen, anzeigen, ändern und löschen.</value>
+  </data>
+  <data name="SubscribeName" xml:space="preserve">
+    <value>Einzelne Abonnements verwalten</value>
+  </data>
+  <data name="ViewDatasourceDescription" xml:space="preserve">
+    <value>Freigegebene Datenquellenelemente in der Ordnerhierarchie anzeigen und Datenquelleneigenschaften anzeigen.</value>
+  </data>
+  <data name="ViewDatasourceName" xml:space="preserve">
+    <value>Datenquellen anzeigen</value>
+  </data>
+  <data name="ViewFoldersDescription" xml:space="preserve">
+    <value>Ordnerelemente in der Ordnerhierarchie anzeigen und Ordnereigenschaften anzeigen.</value>
+  </data>
+  <data name="ViewFoldersName" xml:space="preserve">
+    <value>Ordner anzeigen</value>
+  </data>
+  <data name="ViewModelItemsDescription" xml:space="preserve">
+    <value>Anzeigen der Elemente eines bestimmten Modells.</value>
+  </data>
+  <data name="ViewModelItemsName" xml:space="preserve">
+    <value>Modellelemente anzeigen</value>
+  </data>
+  <data name="ViewModelsDescription" xml:space="preserve">
+    <value>Anzeigen von Modellen in der Ordnerhierarchie, Verwenden von Modellen als Datenquellen für einen Bericht und Ausführen von Abfragen für das Modell, um Daten abzurufen.</value>
+  </data>
+  <data name="ViewModelsName" xml:space="preserve">
+    <value>Modelle anzeigen</value>
+  </data>
+  <data name="ViewReportsDescription" xml:space="preserve">
+    <value>Berichte und verknüpfte Berichte in der Ordnerhierarchie anzeigen sowie Berichtsverlaufs-Momentaufnahmen und Berichtseigenschaften anzeigen.</value>
+  </data>
+  <data name="ViewReportsName" xml:space="preserve">
+    <value>Berichte anzeigen</value>
+  </data>
+  <data name="ViewResourcesDescription" xml:space="preserve">
+    <value>Ressourcen in der Ordnerhierarchie anzeigen und Ressourceneigenschaften anzeigen.</value>
+  </data>
+  <data name="ViewResourcesName" xml:space="preserve">
+    <value>Ressourcen anzeigen</value>
+  </data>
+  <data name="ViewSharedSchedulesDescription" xml:space="preserve">
+    <value>Einen vordefinierten Zeitplan anzeigen, der allgemein verfügbar gemacht wurde.</value>
+  </data>
+  <data name="ViewSharedSchedulesName" xml:space="preserve">
+    <value>Freigegebene Zeitpläne anzeigen</value>
+  </data>
+  <data name="ViewSystemPropertiesDescription" xml:space="preserve">
+    <value>Eigenschaften anzeigen, die für den Berichtsserver gelten.</value>
+  </data>
+  <data name="ViewSystemPropertiesName" xml:space="preserve">
+    <value>Berichtsservereigenschaften anzeigen</value>
+  </data>
+</root>

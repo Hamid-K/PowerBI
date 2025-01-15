@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggregateWithNonAggregateArgument" xml:space="preserve">
+    <value>{0} 包含具有非彙總引數的函數 "Aggregate"。彙總函式不能使用非彙總引數。</value>
+  </data>
+  <data name="ArgumentCardinalityMismatch" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的引數 "{2}"。純量引數不能使用值集合。</value>
+  </data>
+  <data name="ArgumentDataTypeMismatch" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的資料類型 "{3}" 引數 "{2}"。</value>
+  </data>
+  <data name="ArgumentValueOutOfRange" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的引數 "{2}"。引數值已超出容許值的範圍。</value>
+  </data>
+  <data name="BaseEntityMismatch" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一與 Hierarchy BaseEntity 屬性不相符。如果有階層存在，{0} 必須與 Hierarchy BaseEntity 屬性相符。</value>
+  </data>
+  <data name="BinaryEntityColumn" xml:space="preserve">
+    <value>{0} 的 Column 屬性參考 {1}，其資料類型為 Binary。實體的 Column 屬性不能參考二進位資料類型的資料行。</value>
+  </data>
+  <data name="BinaryGroupingExpression" xml:space="preserve">
+    <value>群組 {0} 傳回資料類型 Binary。群組運算式不能傳回二進位資料。</value>
+  </data>
+  <data name="CalculatedAttributeNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的 CalculatedAttribute 運算式 "{2}"。</value>
+  </data>
+  <data name="CalculatedAttributeNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的 CalculatedAttribute 運算式 "{2}"。</value>
+  </data>
+  <data name="CircularInheritance" xml:space="preserve">
+    <value>{1} 的 {0} 屬性指定從本身直接或間接繼承。繼承中不允許有迴圈。</value>
+  </data>
+  <data name="ColumnDataTypeMismatch" xml:space="preserve">
+    <value>{0} 的 DataType 屬性為 {2}，但是 {1} 具有資料類型 {3}。屬性 (Attribute) 的 DataType 屬性必須與資料行的資料類型相符。</value>
+  </data>
+  <data name="ColumnNullableMismatch" xml:space="preserve">
+    <value>{0} 的 Nullable 屬性 (Property) 是 False，但是參考的 {1} 可為 Null。屬性 (Attribute) 的 Nullable 屬性 (Property) 必須與資料行的 Null 屬性相符。</value>
+  </data>
+  <data name="CyclicExpression" xml:space="preserve">
+    <value>{0} 包含有直接或間接參考其本身的運算式。運算式中不允許有迴圈。</value>
+  </data>
+  <data name="CyclicExpression_ExpressionObject" xml:space="preserve">
+    <value>{0} 包含直接或間接對本身的參考。運算式中不允許有迴圈。</value>
+  </data>
+  <data name="DuplicateEntityName" xml:space="preserve">
+    <value>{0} 中有一個以上的實體名稱為 "{1}"。實體名稱在 SemanticModel 內必須是唯一的。</value>
+  </data>
+  <data name="DuplicateExpressionName" xml:space="preserve">
+    <value>{0} 中有一個以上的運算式名稱為 "{1}"。運算式名稱在 SemanticQuery 內必須是唯一的。</value>
+  </data>
+  <data name="DuplicateFieldName" xml:space="preserve">
+    <value>{0} 中有一個以上的欄位名稱為 "{1}"。欄位名稱在實體內必須是唯一的。</value>
+  </data>
+  <data name="DuplicateGroupingName" xml:space="preserve">
+    <value>{0} 中有一個以上的群組名稱為 "{1}"。群組名稱在 SemanticQuery 內必須是唯一的。</value>
+  </data>
+  <data name="DuplicateItemID" xml:space="preserve">
+    <value>模型中有一個以上的項目識別碼為 "{0}"。項目識別碼在模型內必須是唯一的。</value>
+  </data>
+  <data name="DuplicateItemName" xml:space="preserve">
+    <value>{0} 中有一個以上的項目名稱為 "{1}"。項目名稱在直系同層級之間必須是唯一的。</value>
+  </data>
+  <data name="DuplicateParameterName" xml:space="preserve">
+    <value>{0} 中有一個以上的參數名稱為 "{1}"。參數名稱在 SemanticQuery 內必須是唯一的。</value>
+  </data>
+  <data name="EmptySemanticQuery" xml:space="preserve">
+    <value>{0} 不包含任何 Groupings 或 MeasureGroups 元素。SemanticQuery 至少必須包含其中一個元素。這通常是因為使用者沒有擁有查詢所參考之項目的權限，或是基礎模型中已經刪除查詢所參考之項目。</value>
+  </data>
+  <data name="EntityKeyTypeMismatch" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的引數 "{2}"。無法從 {3} 實體索引鍵轉換成 {4} 實體索引鍵。</value>
+  </data>
+  <data name="EntityReferenceOutOfContext" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}。根據用以存取 {2} 的路徑，此屬性只能參考 {3}，或從中衍生的任何實體。</value>
+  </data>
+  <data name="EntityReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}。根據用以存取 {2} 的路徑，此屬性只能參考 {3}，或從中衍生的任何實體。</value>
+  </data>
+  <data name="ExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0} 的 DataType 屬性 (Property) 是 {2}，但是 "{1}" 的運算式傳回資料類型 {3}。屬性 (Attribute) 的 DataType 屬性 (Property) 必須與運算式所傳回的資料類型相符。</value>
+  </data>
+  <data name="ExpressionNullableMismatch" xml:space="preserve">
+    <value>{0} 的 Nullable 屬性 (Property) 是 False，但 "{1}" 的運算式可為 Null。屬性 (Attribute) 的 Nullable 屬性 (Property) 必須與運算式的 Null 屬性相符。</value>
+  </data>
+  <data name="FieldReferenceOutOfContext" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}。根據用以存取 {2} 的路徑，此屬性只能參考 {3} 中的欄位，或從中衍生的任何實體。</value>
+  </data>
+  <data name="FieldReferenceOutOfContext_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}。根據用以存取 {2} 的路徑，此屬性只能參考 {3} 中的欄位，或從中衍生的任何實體。</value>
+  </data>
+  <data name="GroupingNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的群組 "{2}"。</value>
+  </data>
+  <data name="GroupingNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的群組 "{2}"。</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded" xml:space="preserve">
+    <value>{0} 的 ID 屬性本機名稱超過最大長度 {1} 個字元。</value>
+  </data>
+  <data name="IDLocalNameLengthExceeded_NoContext" xml:space="preserve">
+    <value>指定識別碼的本機名稱超過最大長度 {0} 個字元。</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded" xml:space="preserve">
+    <value>{0} 的 ID 屬性命名空間超過最大長度 {1} 個字元。</value>
+  </data>
+  <data name="IDNamespaceLengthExceeded_NoContext" xml:space="preserve">
+    <value>指定識別碼的命名空間超過最大長度 {0} 個字元。</value>
+  </data>
+  <data name="ImplicitDecimalCastToFloat" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 使用資料類型為浮點的引數 "{2}"，但提供的值資料類型卻是十進位。將十進位值轉換成浮點會遺失有效位數。</value>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>建立物件模型中發生內部錯誤。請參閱錯誤記錄以取得更多詳細資料。</value>
+  </data>
+  <data name="InvalidAggregateAttributeReference" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考彙總屬性 (Attribute) {2}。此屬性必須參考非彙總屬性 (Attribute)。</value>
+  </data>
+  <data name="InvalidAttributeRef" xml:space="preserve">
+    <value>{0} 包含的 AttributeRef 同時具備或同時不具備下列兩者: AttributeID 以及 AttributeName。AttributeRef 必須只有其中一個元素。</value>
+  </data>
+  <data name="InvalidBinding" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 DataSourceView 中並不存在的 {2}。</value>
+  </data>
+  <data name="InvalidColumnDataType" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，其中含有不受支援的資料類型。</value>
+  </data>
+  <data name="InvalidColumnReferenceInColumnEntity" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}。此屬性只能參考 {3}。</value>
+  </data>
+  <data name="InvalidColumnTableName" xml:space="preserve">
+    <value>{0} 的 Column 屬性參考 {1}，與其所屬實體的 {2} 不相符。</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>{1} 的 {0} 屬性包含值 "{2}"，這不是有效的 ISO 文化特性。</value>
+  </data>
+  <data name="InvalidDataSourceView" xml:space="preserve">
+    <value>資料來源檢視無效。詳細資料: {0}</value>
+  </data>
+  <data name="InvalidDateIntervalArgument" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的引數 "{2}": 需要沒有路徑的常值。</value>
+  </data>
+  <data name="InvalidDateIntervalValue" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}"，其引數 "{2}" 有常值 "{3}"。間隔值必須為下列其中之一: {4}。</value>
+  </data>
+  <data name="InvalidDrillSelectedItems" xml:space="preserve">
+    <value>DrillthroughContext 參數的 SelectedItems 屬性參考一個以上之內容中的項目。SelectedItems 必須是包含單一群組運算式的參考，或是全部運算式都在相同量值群組或相同詳細資料集合中的參考。</value>
+  </data>
+  <data name="InvalidDrillSelectedPath" xml:space="preserve">
+    <value>DrillthroughContext 參數的 SelectedPath 屬性為 "{0}"，它不等於允許的最長路徑 "{1}" 亦並非其子集。</value>
+  </data>
+  <data name="InvalidDrillTargetEntity" xml:space="preserve">
+    <value>{0} 的 BaseEntity 是 {1}。根據 SelectedPath，只有 BaseEntity 是 {2} 或從中衍生的任何實體，才能使用指定的 DrillthroughContext。</value>
+  </data>
+  <data name="InvalidDrillthroughContext" xml:space="preserve">
+    <value>鑽研內容無效。詳細資料: {0}</value>
+  </data>
+  <data name="InvalidEntityBinding" xml:space="preserve">
+    <value>{0} 同時具有下列兩項元素: 資料表和資料行。實體必須只有其中一個元素。</value>
+  </data>
+  <data name="InvalidEntityKeyPart" xml:space="preserve">
+    <value>EntityKey 部分值 "{0}" 無法轉換成索引鍵部分類型 "{1}"。</value>
+  </data>
+  <data name="InvalidEntityKeyValue" xml:space="preserve">
+    <value>EntityKey 值 "{0}" 無法剖析為 {1} 的索引鍵。</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>{0} 包含的運算式完全不具下列元素或具有一個以上: Function、AttributeRef、EntityRef、ParameterRef、Literal、Null。運算式只能有其中一個元素。</value>
+  </data>
+  <data name="InvalidExpression_TopLevel" xml:space="preserve">
+    <value>{0} 完全不具下列元素或具有一個以上: Function、AttributeRef、EntityRef、ParameterRef、Literal、Null。運算式只能有其中一個元素。</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>{0} 的篩選運算式傳回資料類型 {1}。篩選運算式必須傳回資料類型 Boolean。</value>
+  </data>
+  <data name="InvalidFunctionName" xml:space="preserve">
+    <value>{0} 包含的 FunctionName 具有值 "{1}"，這不是有效的函數名稱。</value>
+  </data>
+  <data name="InvalidGuid" xml:space="preserve">
+    <value>{0} 的 ID 屬性是在空的 (或 SMDL) 命名空間中，但它並不是 GUID。在空的 (或 SMDL) 命名空間中的識別碼，必須符合下列 GUID 格式: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidGuid_NoContext" xml:space="preserve">
+    <value>指定的識別碼是在空的 (或 SMDL) 命名空間中，但它並不是 GUID。在空的 (或 SMDL) 命名空間中的識別碼，必須符合下列 GUID 格式: Gxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</value>
+  </data>
+  <data name="InvalidHiddenAttributeReference" xml:space="preserve">
+    <value>{1} 的 {0} 屬性 (Property) 之一參考 {2}，但它是隱藏的屬性 (Attribute)。此屬性 (Property) 應參考非隱藏的屬性 (Attribute)。</value>
+  </data>
+  <data name="InvalidInSetArgument" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 具有無效的引數 "{2}"。引數必須包含 ParameterRef、靜態函數或沒有路徑的常值。</value>
+  </data>
+  <data name="InvalidInheritanceRelationTable" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}。此屬性必須參考來源為 {3} 而目標為 {4} 的關聯性。</value>
+  </data>
+  <data name="InvalidLinguistics" xml:space="preserve">
+    <value>已指定 {0} 的 Linguistics 屬性，但卻省略 Name 屬性。若省略了 Name，Linguistics 就無法指定給角色。</value>
+  </data>
+  <data name="InvalidLiteral" xml:space="preserve">
+    <value>{0} 包含的常值同時具備或同時不具備下列兩個元素: Value 和 Values。常值必須只有其中一個元素。</value>
+  </data>
+  <data name="InvalidLiteralSetArgument" xml:space="preserve">
+    <value>{0} 包含的函數 "{1}" 在引數 "{2}" 中具有常值集。此引數不能以常值集作為其值。</value>
+  </data>
+  <data name="InvalidLiteralValue" xml:space="preserve">
+    <value>{0} 包含的常值具有 Value "{1}"，此值不是有效的 {2} 值。{3}</value>
+  </data>
+  <data name="InvalidModelGenerationRules" xml:space="preserve">
+    <value>模型產生規則無效。詳細資料: {0}</value>
+  </data>
+  <data name="InvalidModelItemInPerspective" xml:space="preserve">
+    <value>{1} 不能包含在 {0} 中。</value>
+  </data>
+  <data name="InvalidNonFilterAttributeReference" xml:space="preserve">
+    <value>{1} 的 {0} 屬性 (property) 之一參考了不是篩選屬性 (attribute) 的 {2}。此屬性必須參考篩選屬性。</value>
+  </data>
+  <data name="InvalidOptionalityOfRoleForColumnBoundEntity" xml:space="preserve">
+    <value>從 {1} 到 {2} 的 {0} 是選擇性的，但 {3} 繫結至資料行。如果實體繫結至資料行，則涉及此實體的所有角色都視為強制性的。</value>
+  </data>
+  <data name="InvalidParameterExpression" xml:space="preserve">
+    <value>{0} 的預設值運算式包含下列一個或多個項目: Path、Function、AttributeRef、EntityRef、ParameterRef。參數運算式不能包含這些元素。</value>
+  </data>
+  <data name="InvalidParameterName" xml:space="preserve">
+    <value>{0} 中的參數名稱為 "{1}"。參數名稱不可以是保留的名稱 "{2}"。</value>
+  </data>
+  <data name="InvalidParameterValueCardinality" xml:space="preserve">
+    <value>參數 "{0}" 需要單一值，但是提供給參數的值是集合。</value>
+  </data>
+  <data name="InvalidParameterValueType" xml:space="preserve">
+    <value>參數 "{0}" 的資料類型為 {1}，但是提供給參數的值無法轉換成此類型。</value>
+  </data>
+  <data name="InvalidParameterValueType_MultipleValues" xml:space="preserve">
+    <value>參數 "{0}" 的資料類型為 {1}，但是提供給參數的一個或多個值無法轉換成此類型。</value>
+  </data>
+  <data name="InvalidReferencedItem" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，它不屬於下列類型之一: {3}。</value>
+  </data>
+  <data name="InvalidReferencedItem_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}，它不屬於下列類型之一: {3}。</value>
+  </data>
+  <data name="InvalidRoleRelationTable" xml:space="preserve">
+    <value>{0} 的 Relation 屬性參考 {2} 的 {1} 端。此屬性必須參考指向 {3} 的關聯性端。</value>
+  </data>
+  <data name="InvalidScalarAttributeReference" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考非彙總屬性 (Attribute) {2}。此屬性必須參考彙總屬性 (Attribute)。</value>
+  </data>
+  <data name="InvalidSemanticModel" xml:space="preserve">
+    <value>語意模型無效。詳細資料: {0}</value>
+  </data>
+  <data name="InvalidSemanticQuery" xml:space="preserve">
+    <value>語意查詢無效。詳細資料: {0}</value>
+  </data>
+  <data name="InvalidSetAttributeReference" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}，它不是彙總屬性 (Attribute)。根據到達 {2} 的路徑，此屬性必須參考彙總屬性 (Attribute)。</value>
+  </data>
+  <data name="IsAggregateWithColumn" xml:space="preserve">
+    <value>{0} 的 IsAggregate 屬性是 True，但已指定資料行繫結。若已指定資料行繫結，則 IsAggregate 不可以是 True。</value>
+  </data>
+  <data name="IsAggregateWithDefaultAggregate" xml:space="preserve">
+    <value>{0} 指定了 DefaultAggregateAttributeID 屬性，但是 IsAggregate 屬性為 True。不能為彙總屬性指定預設彙總。</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的項目 "{2}"。</value>
+  </data>
+  <data name="ItemNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的項目 "{2}"。</value>
+  </data>
+  <data name="LoopInSecurityFilters" xml:space="preserve">
+    <value>{0} 的安全性篩選間接地相依於本身。安全性篩選中不允許有迴圈。</value>
+  </data>
+  <data name="MeasureNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的量值運算式 "{2}"。</value>
+  </data>
+  <data name="MeasureNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的量值運算式 "{2}"。</value>
+  </data>
+  <data name="MissingBaseEntity" xml:space="preserve">
+    <value>{1} 遺漏 {0} 屬性。</value>
+  </data>
+  <data name="MissingBaseEntity_MultipleProperties" xml:space="preserve">
+    <value>{1} 中遺漏 {0} 屬性之一。</value>
+  </data>
+  <data name="MissingBinding_Attribute" xml:space="preserve">
+    <value>{0} 遺漏繫結。若未指定運算式，則屬性必須只有一個資料行繫結。</value>
+  </data>
+  <data name="MissingBinding_Entity" xml:space="preserve">
+    <value>{0} 遺漏繫結。實體必須只有下列項目之一: 資料表、資料行。</value>
+  </data>
+  <data name="MissingBinding_Inheritance" xml:space="preserve">
+    <value>{0} 的繼承遺漏繫結。繼承必須只有一個關聯性繫結。</value>
+  </data>
+  <data name="MissingBinding_Role" xml:space="preserve">
+    <value>{0} 遺漏繫結。角色必須只有一個關聯性繫結，除非所包含的實體繫結至資料表，而關聯的實體繫結至此資料表中的資料行 (或者相反情形)。</value>
+  </data>
+  <data name="MissingColumnTableName" xml:space="preserve">
+    <value>{0} 遺漏 Column.TableName。實體的資料行繫結必須指定 TableName。</value>
+  </data>
+  <data name="MissingDataSourceView" xml:space="preserve">
+    <value>{0} 遺漏 DataSourceView。SemanticModel 必須只有一個 DataSourceView 元素。</value>
+  </data>
+  <data name="MissingExpressionName" xml:space="preserve">
+    <value>{0} 中有運算式遺漏名稱。</value>
+  </data>
+  <data name="MissingGroupingExpression" xml:space="preserve">
+    <value>{0} 遺漏運算式。群組必須只有一個運算式。</value>
+  </data>
+  <data name="MissingGroupingName" xml:space="preserve">
+    <value>{0} 中有群組遺漏名稱。</value>
+  </data>
+  <data name="MissingIdentifyingAttributes" xml:space="preserve">
+    <value>{0} 沒有任何 IdentifyingAttributes。實體必須至少有一個 IdentifyingAttribute。</value>
+  </data>
+  <data name="MissingItemName" xml:space="preserve">
+    <value>{0} 遺漏名稱。</value>
+  </data>
+  <data name="MissingMeasures" xml:space="preserve">
+    <value>{0} 的 MeasureGroups 之一沒有任何量值。MeasureGroup 必須至少有一個量值。</value>
+  </data>
+  <data name="MissingMimeType" xml:space="preserve">
+    <value>{0} 遺漏 MimeType。資料類型為 Binary 的屬性 (Attribute) 應該要指定 MimeType。</value>
+  </data>
+  <data name="MissingParameterName" xml:space="preserve">
+    <value>{0} 中有參數遺漏名稱。</value>
+  </data>
+  <data name="MissingParameterValue" xml:space="preserve">
+    <value>必須提供值給參數 "{0}"。</value>
+  </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考沒有主索引鍵的 {2}。</value>
+  </data>
+  <data name="MissingRelatedRole" xml:space="preserve">
+    <value>{0} 遺漏 RelatedRoleID。</value>
+  </data>
+  <data name="MissingRelationEnd" xml:space="preserve">
+    <value>{0} 遺漏 Relation.RelationEnd。</value>
+  </data>
+  <data name="MultipleHierarchies" xml:space="preserve">
+    <value>{0} 包含多個階層，因此不受支援。</value>
+  </data>
+  <data name="MultipleMeasureGroups" xml:space="preserve">
+    <value>{0} 包含多個 MeasureGroups，因此不受支援。</value>
+  </data>
+  <data name="NestedVariations" xml:space="preserve">
+    <value>{0} 是一個變數，且包含巢狀變數。變數欄位無法在其他變數欄位中成為巢狀。</value>
+  </data>
+  <data name="NonAggregateAsDefaultAggregate" xml:space="preserve">
+    <value>{0} 的 DefaultAggregateAttributeID 屬性參考 {1}，但它不是彙總屬性 (attribute)。</value>
+  </data>
+  <data name="NonAggregateExpression_Attribute" xml:space="preserve">
+    <value>{0} 的運算式不是彙總運算式，但 IsAggregate 屬性為 True。若 IsAggregate 為 True，就必須提供彙總運算式。</value>
+  </data>
+  <data name="NonAggregateExpression_Measure" xml:space="preserve">
+    <value>{0} 不是彙總運算式。量值運算式必須是彙總運算式。</value>
+  </data>
+  <data name="NonBooleanFilterAttribute" xml:space="preserve">
+    <value>{0} 為篩選屬性，但傳回資料類型 {1}。篩選屬性必須傳回布林資料類型。</value>
+  </data>
+  <data name="NonEntityGroupingWithDetails" xml:space="preserve">
+    <value>{0} 包含詳細資料，但群組 {1} 不是 EntityRef。群組只有在群組運算式為 EntityRef 時才可以包含詳細資料。</value>
+  </data>
+  <data name="NonPrimaryDataSource" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考不在主要資料來源中的 {2}。</value>
+  </data>
+  <data name="NonUniqueInheritanceRelationColumns" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，它並未繫結至 {3} 的唯一條件約束資料行集。</value>
+  </data>
+  <data name="NonUniqueRoleRelationColumns" xml:space="preserve">
+    <value>{0} 的 Relation 屬性參考 {2} 的 {1} 端，它並未繫結至 {3} 的唯一條件約束資料行集合。基數為一或 OptionalOne 的角色需要繫結至資料表唯一條件約束資料行的關聯性。</value>
+  </data>
+  <data name="NonVariationAsDefaultAggregate" xml:space="preserve">
+    <value>{0} 的 DefaultAggregateAttributeID 屬性 (Property) 參考 {2}，但它不是 "{1}" 的變數。預設彙總必須是屬性 (Attribute) 的變數。</value>
+  </data>
+  <data name="NullParameterValue" xml:space="preserve">
+    <value>參數 "{0}" 無法接受 Null 值。</value>
+  </data>
+  <data name="ObjectDescriptor_TypeAndName" xml:space="preserve">
+    <value>{0} "{1}"</value>
+  </data>
+  <data name="ParameterExpressionCardinalityMismatch" xml:space="preserve">
+    <value>{0} 的 Cardinality 屬性是一，但是 "{1}" 的預設值運算式傳回值集合。如果參數的基數是一，預設值運算式必須傳回單一值。</value>
+  </data>
+  <data name="ParameterExpressionDataTypeMismatch" xml:space="preserve">
+    <value>{0} 的 DataType 屬性是 {2}，但是 "{1}" 的預設值運算式傳回資料類型 {3}。預設值運算式所傳回的資料類型必須與參數的 DataType 屬性相符。</value>
+  </data>
+  <data name="ParameterExpressionNullableMismatch" xml:space="preserve">
+    <value>{0} 的 Nullable 屬性 (Property) 是 False，但 "{1}" 的預設值運算式可為 Null。預設值運算式的 Null 屬性 (Property) 必須與參數的 Nullable 屬性相符。</value>
+  </data>
+  <data name="ParameterNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的參數 "{2}"。</value>
+  </data>
+  <data name="ParameterNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的參數 "{2}"。</value>
+  </data>
+  <data name="PromoteLookupForNonLookupEntity" xml:space="preserve">
+    <value>{0} 的 PromoteLookup 屬性為 True，但是 {1} 的 IsLookup 屬性非 True。包含角色的實體與包含相關角色的實體都必須是查閱實體。</value>
+  </data>
+  <data name="RelatedRolesMismatch" xml:space="preserve">
+    <value>{0} 的 RelatedRoleID 屬性參考 {2}，但是 "{3}" 的 RelatedRoleID 不參考 "{1}"。RelatedRoleID 屬性必須彼此參考。</value>
+  </data>
+  <data name="ResultExpressionNotFound" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考並不存在的運算式 "{2}"。</value>
+  </data>
+  <data name="ResultExpressionNotFound_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考並不存在的運算式 "{2}"。</value>
+  </data>
+  <data name="RoleRelationEndsMismatch" xml:space="preserve">
+    <value>{0} 的 Relation 屬性參考 {3} 的 {2} 端，但是 RelatedRole "{1}" 的 Relation 屬性也參考 {2} 端。角色的 RelationEnds 及其 RelatedRole 不可相同。</value>
+  </data>
+  <data name="RoleRelationsMismatch" xml:space="preserve">
+    <value>{0} 的 Relation 屬性參考 {2}，但是 RelatedRole "{1}" 的 Relation 屬性參考 {3}。角色的 Relation 及其 RelatedRole 必須相同。</value>
+  </data>
+  <data name="SelfReferentialRole" xml:space="preserve">
+    <value>{0} 的 RelatedRoleID 屬性是自我參考。角色的 RelatedRoleID 屬性必須參考本身以外的角色。</value>
+  </data>
+  <data name="SemanticModel_PerspectiveNotFound" xml:space="preserve">
+    <value>指定的檢視方塊 "{0}" 不在此模型中。</value>
+  </data>
+  <data name="TopLevelSetExpression" xml:space="preserve">
+    <value>{0} 傳回 {1} 各執行個體的值集合。此運算式必須傳回實體各執行個體的單一值。</value>
+  </data>
+  <data name="TopLevelSetExpression_Attribute" xml:space="preserve">
+    <value>{0} 的運算式傳回 {1} 各執行個體的值集合。此運算式必須傳回實體各執行個體的單一值。</value>
+  </data>
+  <data name="TopLevelSetExpression_Filter" xml:space="preserve">
+    <value>{0} 的篩選運算式傳回 {1} 各執行個體的值集合。此運算式必須傳回實體各執行個體的單一值。</value>
+  </data>
+  <data name="UnusedParameterValue" xml:space="preserve">
+    <value>提供了參數 "{1}"，但 {0} 中並未定義此名稱的參數。</value>
+  </data>
+  <data name="ValidationException_MessageWithAdditionalMessages" xml:space="preserve">
+    <value>{0}
+發生 {1} 個其他的錯誤及/或警告。</value>
+  </data>
+  <data name="WrongNumberOfArguments" xml:space="preserve">
+    <value>{0} 包含有引數數目不正確的函數 "{1}"。</value>
+  </data>
+  <data name="WrongSemanticModel_ModelItem" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，它不在與 {1} 相同的 SemanticModel 中。</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItem" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，它不在查詢所參考的 SemanticModel 中。</value>
+  </data>
+  <data name="WrongSemanticModel_QueryItemMultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}，它並不在查詢所參考的 SemanticModel 中。</value>
+  </data>
+  <data name="WrongSemanticQuery" xml:space="preserve">
+    <value>{1} 的 {0} 屬性參考 {2}，它不在與 {1} 相同的 SemanticQuery 中。</value>
+  </data>
+  <data name="WrongSemanticQuery_MultipleProperties" xml:space="preserve">
+    <value>{1} 的 {0} 屬性之一參考 {2}，它並不在與 {1} 相同的 SemanticQuery 中。</value>
+  </data>
+  <data name="XmlValidationException_MessageWithLineInfo" xml:space="preserve">
+    <value>{0} 行 {1}，位置 {2}。</value>
+  </data>
+  <data name="Xml_NodeMismatch" xml:space="preserve">
+    <value>必須是 {0} "{1}" (在命名空間 {2} 中)，而不是 {3} "{4}" (在命名空間 {5} 中)。</value>
+  </data>
+</root>

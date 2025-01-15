@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (c) Microsoft.  All rights reserved. -->
+<xsd:schema targetNamespace="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling"
+            elementFormDefault="qualified"
+            xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:dsv="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <xsd:annotation>
+        <xsd:documentation>
+            The following schema for Microsoft SQL Server 2005 describes
+            the Semantic Model Definition Language (SMDL) for defining semantic models.
+
+            Microsoft does not make any representation or warranty regarding the
+            schema or any product or item developed based on the schema. The schema
+            is provided to you on an AS IS basis.  Microsoft disclaims all express,
+            implied and statutory warranties, including but not limited to the implied
+            warranties of merchantability, fitness for a particular purpose, and freedom
+            from infringement. Without limiting the generality of the foregoing,
+            Microsoft does not make any warranty of any kind that any item developed
+            based on the schema, or any portion of the schema, will not infringe any
+            copyright, patent, trade secret, or other intellectual property right of any
+            person or entity in any country. It is your responsibility to seek licenses
+            for such intellectual property rights where appropriate.
+
+            MICROSOFT SHALL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING OUT OF OR
+            IN CONNECTION WITH THE USE OF THE SCHEMA, INCLUDING WITHOUT LIMITATION, ANY
+            DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING ANY LOST PROFITS),
+            PUNITIVE OR SPECIAL DAMAGES, WHETHER OR NOT MICROSOFT HAS BEEN ADVISED OF
+            SUCH DAMAGES.
+
+
+            (c) Microsoft Corporation. All rights reserved.
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2003/engine" schemaLocation="DataSourceView.xsd" />
+    <xsd:element name="SemanticModel">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+                <xsd:element name="Version" type="xsd:string" minOccurs="0" />
+                <xsd:element name="Culture" type="xsd:language" minOccurs="0" />
+                <xsd:element name="Entities" type="EntitiesType" minOccurs="0" />
+                <xsd:element name="Perspectives" type="PerspectivesType" minOccurs="0" />
+                <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+                <xsd:element ref="dsv:DataSourceView" minOccurs="0" />
+            </xsd:all>
+            <xsd:attribute name="ID" type="xsd:QName" use="required" />
+        </xsd:complexType>
+        <xsd:unique name="ID">
+            <xsd:selector xpath=".|.//*" />
+            <xsd:field xpath="@ID" />
+        </xsd:unique>
+    </xsd:element>
+    <xsd:simpleType name="NonEmptyString">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="CustomPropertiesType">
+        <xsd:sequence>
+            <xsd:element name="CustomProperty" type="CustomPropertyType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CustomPropertyType">
+        <xsd:all>
+            <xsd:element name="Value" type="xsd:anySimpleType" minOccurs="0"/>
+        </xsd:all>
+        <xsd:attribute name="Name" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="EntitiesType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="Entity" type="EntityType" />
+            <xsd:element name="EntityFolder" type="EntityFolderType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="EntityFolderType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Hidden" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            <xsd:element name="Entities" type="EntitiesType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="EntityType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Hidden" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            <xsd:element name="CollectionName" type="NonEmptyString" minOccurs="0" />
+            <xsd:element name="IdentifyingAttributes" type="AttributeReferencesType" />
+            <xsd:element name="DefaultDetailAttributes" type="AttributeReferencesType" minOccurs="0" />
+            <xsd:element name="DefaultAggregateAttributes" type="AttributeReferencesType" minOccurs="0" />
+            <xsd:element name="SortAttributes" type="SortAttributesType" minOccurs="0" />
+            <xsd:element name="InstanceSelection">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="FilteredList" />
+                        <xsd:enumeration value="Dropdown" />
+                        <xsd:enumeration value="List" />
+                        <xsd:enumeration value="MandatoryFilter" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="IsLookup" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="Inheritance" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="InheritsFromEntityID" type="xsd:QName" />
+                        <xsd:element name="Relation" type="RelationType" minOccurs="0" />
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="DisjointInheritance" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="Fields" type="FieldsType" minOccurs="0" />
+            <xsd:element name="SecurityFilters" type="AttributeReferencesType" minOccurs="0" />
+            <xsd:element name="DefaultSecurityFilter" type="DefaultSecurityFilterType" minOccurs="0" />
+            <xsd:element name="Table" type="TableType" minOccurs="0" />
+            <xsd:element name="Column" type="ColumnType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="AttributeReferencesType">
+        <xsd:sequence>
+            <xsd:element name="AttributeReference" type="AttributeReferenceType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AttributeReferenceType">
+        <xsd:all>
+            <xsd:element name="Path" type="PathType" minOccurs="0" />
+            <xsd:element name="AttributeID" type="xsd:QName" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="SortAttributesType">
+        <xsd:sequence>
+            <xsd:element name="SortAttribute" type="SortAttributeType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SortAttributeType">
+        <xsd:all>
+            <xsd:element name="AttributeReference" type="AttributeReferenceType" />
+            <xsd:element name="SortDirection" type="SortAttributeDirectionEnum" minOccurs="0" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:simpleType name="SortAttributeDirectionEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Ascending" />
+            <xsd:enumeration value="Descending" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="DefaultSecurityFilterType">
+        <xsd:all>
+            <xsd:element name="AttributeReference" type="AttributeReferenceType" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="FieldsType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="Attribute" type="AttributeType" />
+            <xsd:element name="Role" type="RoleType" />
+            <xsd:element name="FieldFolder" type="FieldFolderType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="FieldFolderType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Hidden" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            <xsd:element name="Fields" type="FieldsType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="VariationsType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="Attribute" type="AttributeType" />
+            <xsd:element name="Role" type="RoleType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="AttributeType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" minOccurs="0" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Hidden" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            <xsd:element name="Variations" type="VariationsType" minOccurs="0" />
+            <xsd:element name="DataType" type="DataTypeEnum" />
+            <xsd:element name="Nullable" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="Expression" type="ExpressionType" minOccurs="0" />
+            <xsd:element name="IsAggregate" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="IsFilter" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="OmitSecurityFilters" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="SortDirection" type="SortDirectionEnum" minOccurs="0" />
+            <xsd:element name="Width" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:int">
+                        <xsd:minInclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Alignment" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="General" />
+                        <xsd:enumeration value="Left" />
+                        <xsd:enumeration value="Center" />
+                        <xsd:enumeration value="Right" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Format" type="xsd:string" minOccurs="0" />
+            <xsd:element name="MimeType" type="NonEmptyString" minOccurs="0" />
+            <xsd:element name="DataCulture" type="xsd:language" minOccurs="0" />
+            <xsd:element name="DiscourageGrouping" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="EnableDrillthrough" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="ContextualName" type="AttributeContextualNameEnum" minOccurs="0"/>
+            <xsd:element name="DefaultAggregateAttributeID" type="xsd:QName" minOccurs="0" />
+            <xsd:element name="ValueSelection" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="None" />
+                        <xsd:enumeration value="Dropdown" />
+                        <xsd:enumeration value="List" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Column" type="ColumnType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:simpleType name="DataTypeEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="String" />
+            <xsd:enumeration value="Integer" />
+            <xsd:enumeration value="Decimal" />
+            <xsd:enumeration value="Float" />
+            <xsd:enumeration value="Boolean" />
+            <xsd:enumeration value="DateTime" />
+            <xsd:enumeration value="Time" />
+            <xsd:enumeration value="Binary" />
+            <xsd:enumeration value="EntityKey" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="SortDirectionEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="None" />
+            <xsd:enumeration value="Ascending" />
+            <xsd:enumeration value="Descending" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AttributeContextualNameEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Attribute" />
+            <xsd:enumeration value="Role" />
+            <xsd:enumeration value="Merge" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="RoleType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" minOccurs="0" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Hidden" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            <xsd:element name="Variations" type="VariationsType" minOccurs="0" />
+            <xsd:element name="Linguistics" type="LinguisticsType" minOccurs="0" />
+            <xsd:element name="RelatedRoleID" type="xsd:QName" />
+            <xsd:element name="Cardinality">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="One" />
+                        <xsd:enumeration value="Many" />
+                        <xsd:enumeration value="OptionalOne" />
+                        <xsd:enumeration value="OptionalMany" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="ContextualName" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Default" />
+                        <xsd:enumeration value="Role" />
+                        <xsd:enumeration value="Merge" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="HiddenFields" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="FieldFolderItemID" type="xsd:QName" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Preferred" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="PromoteLookup" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="ExpandInline" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="Relation" type="RelationType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="LinguisticsType">
+        <xsd:all>
+            <xsd:element name="SingularName" type="NonEmptyString" minOccurs="0" />
+            <xsd:element name="PluralName" type="NonEmptyString" minOccurs="0" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="TableType">
+        <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="ColumnType">
+        <xsd:attribute name="TableName" type="NonEmptyString" use="optional" />
+        <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="RelationType">
+        <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+        <xsd:attribute name="RelationEnd" use="optional">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Source" />
+                    <xsd:enumeration value="Target" />
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="PerspectivesType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="Perspective" type="PerspectiveType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="PerspectiveType">
+        <xsd:all>
+            <xsd:element name="Name" type="NonEmptyString" />
+            <xsd:element name="Description" type="xsd:string" minOccurs="0" />
+            <xsd:element name="ModelItems" type="ModelItemsType" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="ID" type="xsd:QName" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="ModelItemsType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="ModelItemID" type="xsd:QName" />
+        </xsd:choice>
+    </xsd:complexType>
+    <!-- Semantic Model Query Language (SMQL) elements -->
+    <xsd:element name="SemanticQuery">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="Hierarchies" type="HierarchiesType" minOccurs="0" />
+                <xsd:element name="MeasureGroups" type="MeasureGroupsType" minOccurs="0" />
+                <xsd:element name="CalculatedAttributes" type="ExpressionsType" minOccurs="0" />
+                <xsd:element name="Parameters" type="ParametersType" minOccurs="0" />
+                <xsd:element name="EnableDrillthrough" type="xsd:boolean" minOccurs="0" />
+                <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="HierarchiesType">
+        <xsd:sequence>
+            <xsd:element name="Hierarchy" type="HierarchyType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="HierarchyType">
+        <xsd:all>
+            <xsd:element name="BaseEntity" type="BaseEntityType" />
+            <xsd:element name="Groupings" type="GroupingsType" minOccurs="0" />
+            <xsd:element name="Filter" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="Expression" type="ExpressionType" />
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="BaseEntityType">
+        <xsd:all>
+            <xsd:element name="EntityID" type="xsd:QName" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="GroupingsType">
+        <xsd:sequence>
+            <xsd:element name="Grouping" type="GroupingType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GroupingType">
+        <xsd:all>
+            <xsd:element name="Expression" type="ExpressionType" />
+            <xsd:element name="Details" type="ExpressionsType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="MeasureGroupsType">
+        <xsd:sequence>
+            <xsd:element name="MeasureGroup" type="MeasureGroupType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="MeasureGroupType">
+        <xsd:all>
+            <xsd:element name="BaseEntity" type="BaseEntityType" />
+            <xsd:element name="Measures" type="ExpressionsType" />
+            <xsd:element name="SubtotalSets" type="SubtotalSetsType" minOccurs="0" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="SubtotalSetsType">
+        <xsd:sequence>
+            <xsd:element name="SubtotalSet" type="SubtotalSetType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SubtotalSetType">
+        <xsd:all>
+            <xsd:element name="SubtotalGroupings" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="GroupingName" type="xsd:string" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="SubtotalMeasures" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="MeasureName" type="xsd:string" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="ParametersType">
+        <xsd:sequence>
+            <xsd:element name="Parameter" type="ParameterType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ParameterType">
+        <xsd:all>
+            <xsd:element name="DataType" type="LiteralDataTypeEnum" />
+            <xsd:element name="Nullable" type="xsd:boolean" minOccurs="0" />
+            <xsd:element name="Cardinality" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="One" />
+                        <xsd:enumeration value="Many" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Expression" type="ExpressionType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="ExpressionType">
+        <xsd:all>
+            <xsd:element name="Path" type="PathType" minOccurs="0" />
+            <xsd:element name="Function" type="FunctionType" minOccurs="0" />
+            <xsd:element name="AttributeRef" type="AttributeRefType" minOccurs="0" />
+            <xsd:element name="EntityRef" type="EntityRefType" minOccurs="0" />
+            <xsd:element name="ParameterRef" type="ParameterRefType" minOccurs="0" />
+            <xsd:element name="Literal" type="LiteralType" minOccurs="0" />
+            <xsd:element name="Null" type="NullType" minOccurs="0" />
+            <xsd:element name="CustomProperties" type="CustomPropertiesType" minOccurs="0" />
+        </xsd:all>
+        <xsd:attribute name="Name" type="NonEmptyString" use="optional" />
+    </xsd:complexType>
+    <xsd:complexType name="ExpressionsType">
+        <xsd:sequence>
+            <xsd:element name="Expression" type="ExpressionType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PathType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="RolePathItem" type="RolePathItemType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="RolePathItemType">
+        <xsd:all>
+            <xsd:element name="RoleID" type="xsd:QName" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="FunctionType">
+        <xsd:all>
+            <xsd:element name="FunctionName" type="xsd:string" />
+            <xsd:element name="Arguments" type="ExpressionsType" minOccurs="0" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="AttributeRefType">
+        <xsd:all>
+            <xsd:element name="AttributeID" type="xsd:QName" minOccurs="0" />
+            <xsd:element name="AttributeName" type="xsd:string" minOccurs="0" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="EntityRefType">
+        <xsd:all>
+            <xsd:element name="EntityID" type="xsd:QName" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="ParameterRefType">
+        <xsd:all>
+            <xsd:element name="ParameterName" type="xsd:string" />
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="LiteralType">
+        <xsd:all>
+            <xsd:element name="DataType" type="LiteralDataTypeEnum" />
+            <xsd:element name="Value" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Values" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Value" type="xsd:string" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:simpleType name="LiteralDataTypeEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="String" />
+            <xsd:enumeration value="Integer" />
+            <xsd:enumeration value="Decimal" />
+            <xsd:enumeration value="Float" />
+            <xsd:enumeration value="Boolean" />
+            <xsd:enumeration value="DateTime" />
+            <xsd:enumeration value="Time" />
+            <xsd:enumeration value="EntityKey" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="NullType" />
+    <xsd:element name="DrillthroughContext">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="SelectedItems" type="SelectedItemsType" />
+                <xsd:element name="SelectedPath" type="SelectedPathType" minOccurs="0" />
+                <xsd:element name="GroupingValues" type="GroupingValuesType" minOccurs="0">
+                    <xsd:unique name="GroupingNames">
+                        <xsd:selector xpath=".//*" />
+                        <xsd:field xpath="@Name" />
+                    </xsd:unique>
+                </xsd:element>
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SelectedItemsType">
+        <xsd:sequence>
+            <xsd:element name="SelectedItemName" type="NonEmptyString" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SelectedPathType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="RolePathItem" type="RolePathItemType" />
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="GroupingValuesType">
+        <xsd:sequence>
+            <xsd:element name="GroupingValue" nillable="true" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute name="Name" type="NonEmptyString" use="required" />
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

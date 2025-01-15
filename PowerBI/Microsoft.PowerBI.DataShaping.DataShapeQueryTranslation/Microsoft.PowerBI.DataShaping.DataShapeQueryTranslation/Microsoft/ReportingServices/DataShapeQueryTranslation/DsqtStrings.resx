@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComplexHighlightsNotAllowed" xml:space="preserve">
+    <value>The query contains an unsupported highlight filter on measure '{3}'. Highlight filter conditions must not specify multiple tuples of values for columns from different tables against this model. This message often indicates unsupported selection of multiple items in a nearby visual.</value>
+  </data>
+  <data name="ComplexSlicerNotAllowedWithMeasures" xml:space="preserve">
+    <value>The DataShape '{1}' filters on a measure with complex filters. Using columns from multiple tables which do not have a hierarchical relationship introduces a complex disjunction which cannot be represented in the query alongside a measure. Consider removing the measure or simplifying the filter.</value>
+  </data>
+  <data name="DaxExternalContent_ExtensionColumn" xml:space="preserve">
+    <value>extension column {0}</value>
+  </data>
+  <data name="DaxExternalContent_ExtensionMeasure" xml:space="preserve">
+    <value>extension measure {0}</value>
+  </data>
+  <data name="DaxExternalContent_Inline" xml:space="preserve">
+    <value>query</value>
+  </data>
+  <data name="InTableFilterNotSupportedForModel" xml:space="preserve">
+    <value>The query contains an In table filter condition, and the model does not support the In operator. This filter condition cannot be used with this model.</value>
+  </data>
+  <data name="InternalDataShapeQueryError" xml:space="preserve">
+    <value>Data Shape Query translation failed with error code: '{0}'. Check the report server logs for more information.</value>
+  </data>
+  <data name="InvalidDataShapeNoOutputData" xml:space="preserve">
+    <value>The {0} '{1}' does not require any output data. Data shapes must contain at least one group or calculation used to output data.</value>
+  </data>
+  <data name="InvalidDataShapeQuery" xml:space="preserve">
+    <value>The DataShape query is not valid or supported by this version of Reporting Services. The DataShape query may have been created with a later version of Reporting Services, or contain content that is not well-formed or not valid based on Reporting Services schemas. Details: {0}.</value>
+  </data>
+  <data name="InvalidDeepComplexSlicer" xml:space="preserve">
+    <value>The {0} '{1}' has {2} that refer to multiple entities and has exceeded the maximum nesting depth. These {2} should not contain more than {3} levels.</value>
+  </data>
+  <data name="InvalidExtensionDax_MissingToken" xml:space="preserve">
+    <value>The {3} contains an invalid DAX expression. The expression is missing a '{4}' at line {5} position {6}.</value>
+  </data>
+  <data name="InvalidExtensionDax_UnexpectedToken" xml:space="preserve">
+    <value>The {3} contains an invalid DAX expression. The expression contains an unexpected '{4}' at line {5} position {6}.</value>
+  </data>
+  <data name="InvalidFilterConditionExceedsMaxNumberOfDisjunctionsForSubqueryRewrite" xml:space="preserve">
+    <value>The query contains a filter with too many values for columns from multiple tables. For queries against this model and server, the maximum number of values allowed in a single filter is {3}. Please reduce the number of selected values in the filter.</value>
+  </data>
+  <data name="InvalidFilterConditionExceedsMaxNumberOfValuesForInFilter" xml:space="preserve">
+    <value>The {0} '{1}' contains a filter with too many values.  The maximum number of values in an In filter operator is {3}.</value>
+  </data>
+  <data name="InvalidFilterConditionExceedsMaxNumberOfValuesForInFilterTreeRewrite" xml:space="preserve">
+    <value>The query contains a filter with too many values. For queries against this model and server, the maximum number of values allowed in a single filter is {3}. Please reduce the number of selected values in the filter.</value>
+  </data>
+  <data name="InvalidInFilterWithDuplicateColumns" xml:space="preserve">
+    <value>The {0} '{1}' contains a filter with duplicate columns and distinct values for the duplicate columns, which is not allowed.</value>
+  </data>
+  <data name="InvalidUnconstrainedJoin" xml:space="preserve">
+    <value>Not showing data for {0} '{1}' because it's not clear how these fields are related.</value>
+  </data>
+  <data name="IsRelatedToManyNotSupportedForDetailTable" xml:space="preserve">
+    <value>The expression in property '{2}' on {0} '{1}' refers to the field '{3}' which is not to one with the detail identity. Expressions may only refer to fields that have a single value when evaluated at the detail table identity.</value>
+  </data>
+  <data name="ModelGroupingInstructionsIgnored" xml:space="preserve">
+    <value>The {0} '{1}' groups on a key '{3}' that the model indicates should be grouped on another field.  This may cause generated queries to fail.</value>
+  </data>
+  <data name="ModelMeasuresNotSupportedForDetailTable" xml:space="preserve">
+    <value>A model measure '{3}' is used in {0} '{1}'. Model measures are not allowed in a Detail table.</value>
+  </data>
+  <data name="ModelUnavailable" xml:space="preserve">
+    <value>The model referenced by {0} '{1}' could not be retrieved. Missing data sources or missing model.</value>
+  </data>
+  <data name="NaNLiteralNotSupported" xml:space="preserve">
+    <value>The property '{2}' on {0} '{1}' contains an invalid value or expression. The 'NaN' (NotANumber) literal is not supported.</value>
+  </data>
+  <data name="NoUniqueKeyForDetailTable" xml:space="preserve">
+    <value>The detail table on {0} '{1}' does not have a unique key. We can't display a detail table for this data source without a unique key.</value>
+  </data>
+  <data name="OverlappingKeysOnOppositeHierarchies" xml:space="preserve">
+    <value>The {0} '{1}'  has overlapping groups in the primary axis and the secondary axis. Groups in the primary axis must not have the same keys as groups in the secondary axis.</value>
+  </data>
+  <data name="SubtotalAndNonSubtotalCalculations" xml:space="preserve">
+    <value>The property '{2}' on {0} '{1}' contains subtotal calculations and non-subtotal calculations. Mixing subtotal calculations with non-subtotal calculations in the same {0} is not supported.</value>
+  </data>
+  <data name="SuppressJoinPredicateOnNonMeasure" xml:space="preserve">
+    <value>The property '{2}' on {0} '{1}' has the value 'true' but the {0} does not reference a measure.</value>
+  </data>
+  <data name="TranslationMaximumDurationExceeded" xml:space="preserve">
+    <value>The maximum duration of {0} milliseconds alloted for the Data Shape Query Translation has been exceeded. </value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred in Data Shape Query Translation.</value>
+  </data>
+  <data name="UnsupportedDateTimeLiteral" xml:space="preserve">
+    <value>The DateTime expression in property '{2}' on {0} '{1}' contains a value '{3}' that is not supported.  DateTime values must be greater than or equal to '{4}'</value>
+  </data>
+  <data name="UnsupportedNegatedTuplesFilter" xml:space="preserve">
+    <value>The query contains a negated filter {0} that uses columns from multiple tables. Filters using both 'not' and columns from multiple tables are not supported.</value>
+  </data>
+  <data name="UnsupportedStringMinMaxColumn" xml:space="preserve">
+    <value>The data set '{1}' uses a min or max aggregate over a string column.  Using min or max over a string column is not allowed against the current model.</value>
+  </data>
+  <data name="UnsupportedStringMinMaxExpression" xml:space="preserve">
+    <value>The data set '{1}' uses a min or max aggregate over a string expression or aggregate.  Using min or max over a string expression or aggregate is not allowed against the current model.</value>
+  </data>
+</root>

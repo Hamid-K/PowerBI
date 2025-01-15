@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVESESSIONS" xml:space="preserve">
+    <value>Число активных сеансов.</value>
+  </data>
+  <data name="ALERTINGQUEUESIZE" xml:space="preserve">
+    <value>Предупреждение: длина очереди событий</value>
+  </data>
+  <data name="APPDOMAINRECYCLES" xml:space="preserve">
+    <value>Общее число очисток домена приложений.</value>
+  </data>
+  <data name="AllRequestsPerSecond" xml:space="preserve">
+    <value>Запросов в секунду.</value>
+  </data>
+  <data name="AllRequestsTotal" xml:space="preserve">
+    <value>Общее количество запросов.</value>
+  </data>
+  <data name="CACHEFLUSHES" xml:space="preserve">
+    <value>Общее число обновлений для кэша сервера выполнения отчетов.</value>
+  </data>
+  <data name="CACHEFLUSHESPERSECOND" xml:space="preserve">
+    <value>Количество операций записи кэша на диск в секунду.</value>
+  </data>
+  <data name="CACHEHITS" xml:space="preserve">
+    <value>Общее число попаданий в кэш сервера отчетов.</value>
+  </data>
+  <data name="CACHEHITSPERSECOND" xml:space="preserve">
+    <value>Число попаданий в кэш сервера отчетов за секунду.</value>
+  </data>
+  <data name="CACHEMISSES" xml:space="preserve">
+    <value>Общее число промахов кэша.</value>
+  </data>
+  <data name="CACHEMISSESPERSECOND" xml:space="preserve">
+    <value>Число ситуаций, в которых отчет не удалось получить из кэша, в секунду.</value>
+  </data>
+  <data name="CREATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - CreateSchedule</value>
+  </data>
+  <data name="DELETESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - DeleteSchedule</value>
+  </data>
+  <data name="DELIVERALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - DeliverAlert</value>
+  </data>
+  <data name="DELIVERIES" xml:space="preserve">
+    <value>Общее число доставок.</value>
+  </data>
+  <data name="DELIVERIESPERSECOND" xml:space="preserve">
+    <value>Число доставок в секунду.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresPerSecond" xml:space="preserve">
+    <value>Сбоев соединений с источником данных в секунду.</value>
+  </data>
+  <data name="DataSourceConnectionFailuresTotal" xml:space="preserve">
+    <value>Общее количество сбоев соединений с источником данных.</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>Общее число событий.</value>
+  </data>
+  <data name="EVENTSPERSECOND" xml:space="preserve">
+    <value>Число событий в секунду.</value>
+  </data>
+  <data name="ExistingSessionPerSecond" xml:space="preserve">
+    <value>Количество запросов в секунду, которые обрабатываются в существующем сеансе.</value>
+  </data>
+  <data name="ExistingSessionTotal" xml:space="preserve">
+    <value>Общее количество запросов, которые были обработаны в существующем сеансе.</value>
+  </data>
+  <data name="FIREALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - FireAlert</value>
+  </data>
+  <data name="FIRESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - FireSchedule</value>
+  </data>
+  <data name="FIRSTSESSIONPERSECOND" xml:space="preserve">
+    <value>Число новых пользовательских сеансов, начатых за секунду.</value>
+  </data>
+  <data name="FailuresPerSecond" xml:space="preserve">
+    <value>Количество сбоев в секунду.</value>
+  </data>
+  <data name="FailuresTotal" xml:space="preserve">
+    <value>Общее количество сбоев.</value>
+  </data>
+  <data name="GENERATEALERTEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - GenerateAlert</value>
+  </data>
+  <data name="MEMNOTIFICATIONPERSECOND" xml:space="preserve">
+    <value>Число уведомлений о сжатии памяти, выданных сервером за последнюю секунду.  Указывает, как часто сервер полагает, что имеется нехватка памяти.</value>
+  </data>
+  <data name="MEMORYCACHEHITS" xml:space="preserve">
+    <value>Общее число попаданий в кэш памяти.</value>
+  </data>
+  <data name="MEMORYCACHEHITSPERSECOND" xml:space="preserve">
+    <value>Число ситуаций, в которых отчет удалось получить из кэша памяти, в секунду.</value>
+  </data>
+  <data name="MEMORYCACHEMISSES" xml:space="preserve">
+    <value>Общее число промахов кэша памяти.</value>
+  </data>
+  <data name="MEMORYCACHEMISSESPERSECOND" xml:space="preserve">
+    <value>Число ситуаций, в которых отчет не удалось получить из кэша памяти, в секунду.</value>
+  </data>
+  <data name="MEMORYPRESSURELEVEL" xml:space="preserve">
+    <value>Число от 1 до 5, указывающее текущее состояние памяти на сервере.  1: нехватка отсутствует, 2: низкая нехватка, 3: средняя нехватка, 4: большая нехватка, 5: чрезмерная нехватка.</value>
+  </data>
+  <data name="MEMORYSHRINKAMOUNT" xml:space="preserve">
+    <value>Число байтов, запрашиваемое сервером для сжатия.</value>
+  </data>
+  <data name="MODELCACHEHITS" xml:space="preserve">
+    <value>Общее число попаданий в кэш моделей.</value>
+  </data>
+  <data name="MODELCACHEHITSPERSECOND" xml:space="preserve">
+    <value>Число ситуаций, в которых модель удалось получить из кэша, в секунду.</value>
+  </data>
+  <data name="MODELCACHEMISS" xml:space="preserve">
+    <value>Общее число промахов кэша моделей.</value>
+  </data>
+  <data name="MODELCACHEMISSPERSECOND" xml:space="preserve">
+    <value>Число ситуаций, в которых модель не удалось получить из кэша, в секунду.</value>
+  </data>
+  <data name="ModelRequestsActive" xml:space="preserve">
+    <value>Количество активных запросов модели.</value>
+  </data>
+  <data name="ModelRequestsAverageDuration" xml:space="preserve">
+    <value>Среднее время существования запросов модели.</value>
+  </data>
+  <data name="ModelRequestsPerSecond" xml:space="preserve">
+    <value>Запросов модели в секунду.</value>
+  </data>
+  <data name="ModelRequestsTotal" xml:space="preserve">
+    <value>Общее количество запросов модели.</value>
+  </data>
+  <data name="NEXTSESSIONPERSECOND" xml:space="preserve">
+    <value>Число поступивших за секунду запросов на отчеты, открытые в существующем сеансе.</value>
+  </data>
+  <data name="NewSessionPerSecond" xml:space="preserve">
+    <value>Количество запросов в секунду, которые обработаны в новом сеансе.</value>
+  </data>
+  <data name="NewSessionTotal" xml:space="preserve">
+    <value>Общее количество запросов, которые были обработаны в новом сеансе.</value>
+  </data>
+  <data name="PROCESSINGFAILURES" xml:space="preserve">
+    <value>Общее количество ошибок при обработке.</value>
+  </data>
+  <data name="ProgressiveReportsCategory" xml:space="preserve">
+    <value>Статистические данные, относящиеся к отчетам Power View службы сервера отчетов SQL</value>
+  </data>
+  <data name="QueryRequestsActive" xml:space="preserve">
+    <value>Количество активных запросов.</value>
+  </data>
+  <data name="QueryRequestsAverageDuration" xml:space="preserve">
+    <value>Среднее время существования запросов.</value>
+  </data>
+  <data name="QueryRequestsPerSecond" xml:space="preserve">
+    <value>Выполнение запросов в секунду.</value>
+  </data>
+  <data name="QueryRequestsTotal" xml:space="preserve">
+    <value>Общее количество запросов.</value>
+  </data>
+  <data name="REJECTEDTHREADS" xml:space="preserve">
+    <value>Общее количество потоков, отклоненных из-за большой плотности потоков.</value>
+  </data>
+  <data name="REPORTREQUESTS" xml:space="preserve">
+    <value>Число активных запросов отчетов.</value>
+  </data>
+  <data name="REPORTSEXECUTED" xml:space="preserve">
+    <value>Общее число выполненных отчетов.</value>
+  </data>
+  <data name="REPORTSEXECUTEDPERSECOND" xml:space="preserve">
+    <value>Число отчетов, выполненных за секунду.</value>
+  </data>
+  <data name="REQUESTSPERSECOND" xml:space="preserve">
+    <value>Число запросов в секунду.</value>
+  </data>
+  <data name="ReportRequestsActive" xml:space="preserve">
+    <value>Число активных запросов отчетов.</value>
+  </data>
+  <data name="ReportRequestsAverageDuration" xml:space="preserve">
+    <value>Среднее время существования запросов отчетов.</value>
+  </data>
+  <data name="ReportRequestsPerSecond" xml:space="preserve">
+    <value>Количество запросов отчетов в секунду.</value>
+  </data>
+  <data name="ReportRequestsTotal" xml:space="preserve">
+    <value>Общее количество запросов отчетов.</value>
+  </data>
+  <data name="SNAPSHOTUPDATES" xml:space="preserve">
+    <value>Общее число обновлений моментальных снимков состояния выполнения отчета.</value>
+  </data>
+  <data name="SNAPSHOTUPDATESPERSECOND" xml:space="preserve">
+    <value>Число обновлений моментальных снимков за секунду.</value>
+  </data>
+  <data name="SessionsActive" xml:space="preserve">
+    <value>Число активных сеансов.</value>
+  </data>
+  <data name="SharePointService" xml:space="preserve">
+    <value>Статистические данные, относящиеся к службе сервера отчетов SQL</value>
+  </data>
+  <data name="TOTALREQUESTS" xml:space="preserve">
+    <value>Общее число обрабатываемых запросов.</value>
+  </data>
+  <data name="ThreadsActive" xml:space="preserve">
+    <value>Количество активных потоков.</value>
+  </data>
+  <data name="UPDATESCHEDULEEVENTSPROCESSED" xml:space="preserve">
+    <value>Предупреждение: обработано событий - UpdateSchedule</value>
+  </data>
+  <data name="WebService" xml:space="preserve">
+    <value>Веб-служба MSRS 2011</value>
+  </data>
+  <data name="WinService" xml:space="preserve">
+    <value>Служба Windows для служб MSRS 2011</value>
+  </data>
+</root>

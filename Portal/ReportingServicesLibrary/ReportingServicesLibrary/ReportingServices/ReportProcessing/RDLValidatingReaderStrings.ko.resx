@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rdlValidationInvalidElement" xml:space="preserve">
+    <value>줄 {2}, 위치 {3}의 보고서 정의 요소 '{0}'에 '{1}' 유형의 자식 요소가 둘 이상 있습니다.</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedAttribute" xml:space="preserve">
+    <value>요소 {1} 내의 특성 '{0}'이(가) 잘못되었습니다. 줄 {2}, 위치 {3}의 '{0}'.</value>
+  </data>
+  <data name="rdlValidationInvalidMicroVersionedElement" xml:space="preserve">
+    <value>부모 요소 {1} 내에서 '{0}' 요소가 잘못되었습니다. {0}: 줄 {2}, 위치 {3}.</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceAttribute" xml:space="preserve">
+    <value>특성 '{0}'은(는) 올바른 Rdl 특성이 아닙니다. 네임스페이스 '{1}'의 특성은 허용되지 않습니다. 줄 {2}, 위치 {3}의 '{0}'.</value>
+  </data>
+  <data name="rdlValidationInvalidNamespaceElement" xml:space="preserve">
+    <value>요소 '{0}'은(는) 올바른 Rdl 요소가 아닙니다. 네임스페이스 '{1}'의 요소는 허용되지 않습니다. 줄 {2}, 위치 {3}의 '{0}'.</value>
+  </data>
+  <data name="rdlValidationInvalidParent" xml:space="preserve">
+    <value>줄 {3}, 위치 {4}의 네임스페이스 '{1}'의 보고서 정의 요소 '{0}'에 잘못된 부모 요소 '{2}'이(가) 있습니다.</value>
+  </data>
+  <data name="rdlValidationMissingChildElement" xml:space="preserve">
+    <value>줄 {2}, 위치 {3}에 보고서 정의 요소 '{0}'이(가) 비어 있습니다. '{1}' 유형의 필수 자식 요소가 없습니다.</value>
+  </data>
+  <data name="rdlValidationMultipleUndefinedSchemaNamespaces" xml:space="preserve">
+    <value>특성 '{1}' 내 접두사 '{0}'의 줄 {2} 위치 {3}에 스키마가 정의되어 있지 않습니다.</value>
+  </data>
+  <data name="rdlValidationNoElementDecl" xml:space="preserve">
+    <value>{2} 네임스페이스의 줄 {3}에 보고서 정의 요소 '{0}'에 대한 선언이 없습니다. '{1}' 요소에 대한 올바른 네임스페이스를 다시 생각해 보고 올바른 접두사로 요소를 수정하십시오.</value>
+  </data>
+  <data name="rdlValidationUndefinedSchemaNamespace" xml:space="preserve">
+    <value>특성 '{1}' 내 접두사 '{0}'의 줄 {2} 위치 {3}에 스키마가 정의되어 있지 않습니다.</value>
+  </data>
+  <data name="rdlValidationUnknownRequiredNamespaces" xml:space="preserve">
+    <value>접두사 '{1}'이(가) 포함된 스키마 '{0}'이(가) 필요하지만 {2}이(가) 줄 {3} 위치 {4}에서 해당 스키마를 확인할 수 없습니다.</value>
+  </data>
+  <data name="rdlValidationUnsupportedSchema" xml:space="preserve">
+    <value>줄 {2}, 위치 {3}에 접두사 '{1}'이(가) 포함된 스키마 {0}은(는) 이 Reporting Services 버전에서 지원되지 않습니다.</value>
+  </data>
+</root>

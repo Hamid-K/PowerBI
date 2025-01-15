@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A57538A-B04C-4F35-AE50-EFE57CCD19DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices.SafeReportExpressions.VisualBasic</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.SafeReportExpressions.VisualBasic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic" />
+    <Reference Include="Microsoft.ReportingServices.SafeReportExpressions.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.ReportingServices.SafeReportExpressions.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\ArithmeticEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\BinaryExpressionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\ConversionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\DateTimeFunctionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\ExecutionFlowFunctionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\InspectionFunctionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\MathFunctionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\StringFunctionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\UnaryExpressionEvaluator.cs" />
+    <Compile Include="Microsoft\ReportingServices\RdlExpressions\SafeExpressions\VisualBasic\VbConstantIdentifierEvaluator.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

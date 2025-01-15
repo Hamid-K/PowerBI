@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExitCodeOutputAndError" xml:space="preserve">
+    <value>Exit Code: {0}
+Standard Output:
+{1}
+Standard Error:
+{2}</value>
+  </data>
+  <data name="InitializationError" xml:space="preserve">
+    <value>We encountered an error when initializing the web browser.</value>
+  </data>
+  <data name="InvalidSelector" xml:space="preserve">
+    <value>The specified CSS selector is invalid.</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>The supplied URL must be a valid http or https URL.</value>
+  </data>
+  <data name="OnlyAnonymousAuthenticationSupported" xml:space="preserve">
+    <value>{0} currently supports only Anonymous authentication.</value>
+  </data>
+  <data name="OnlyAnonymousWindowsWebApiBasicAuthenticationSupported" xml:space="preserve">
+    <value>{0} currently supports only Anonymous, Windows, Web API, or Basic authentication.</value>
+  </data>
+  <data name="ProcessFailed" xml:space="preserve">
+    <value>The web browser exited unexpectedly.</value>
+  </data>
+  <data name="RuntimeMissing" xml:space="preserve">
+    <value>We were unable to find the WebView2 runtime. You can manually download the runtime installer here: https://go.microsoft.com/fwlink/p/?LinkId=2124703</value>
+  </data>
+  <data name="TimedOutWaitingForInitialization" xml:space="preserve">
+    <value>We timed out waiting for initialization of the web browser.</value>
+  </data>
+  <data name="TimedOutWaitingForJavascript" xml:space="preserve">
+    <value>We timed out waiting for javascript to retrieve the contents of the web page.</value>
+  </data>
+  <data name="TimedOutWaitingForPageLoad" xml:space="preserve">
+    <value>We timed out waiting for the web page to load.</value>
+  </data>
+  <data name="TimedOutWaitingForSelector" xml:space="preserve">
+    <value>We timed out waiting for the CSS selector to exist on the web page.</value>
+  </data>
+  <data name="TooManyRedirects" xml:space="preserve">
+    <value>The web page performed more than {0} redirects.</value>
+  </data>
+  <data name="UnableToRetrieveTheContentsOfTheWebPage" xml:space="preserve">
+    <value>We were unable to retrieve the contents of the web page.</value>
+  </data>
+  <data name="UnableToUseSelectorOnPage" xml:space="preserve">
+    <value>We were unable to use the CSS selector on the web page.</value>
+  </data>
+  <data name="WebBrowserContentsChallengeTitle" xml:space="preserve">
+    <value>Web Browser Contents</value>
+  </data>
+  <data name="Web_BrowserContents" xml:space="preserve">
+    <value>Returns the HTML for the specified URL, as viewed by a web browser.</value>
+  </data>
+  <data name="Web_BrowserContents_Category" xml:space="preserve">
+    <value>Accessing data</value>
+  </data>
+  <data name="Web_BrowserContents_Description" xml:space="preserve">
+    <value>Returns the HTML for the specified {0}, as viewed by a web browser. An optional record parameter, {1}, may be provided to specify additional properties. The record can contain the following fields:
+     &lt;ul&gt;
+        &lt;li&gt;&lt;code&gt;ApiKeyName&lt;/code&gt;: If the target site has a notion of an API key, this parameter can be used to specify the name (not the value) of the key parameter that must be used in the URL. The actual key value is provided in the credential.&lt;/li&gt;
+        &lt;li&gt;&lt;code&gt;WaitFor&lt;/code&gt;: Specifies a condition to wait for before downloading the HTML, in addition to waiting for the page to load (which is always done). Can be a record containing Timeout and/or Selector fields. If only a Timeout is specified, the function will wait the amount of time specified before downloading the HTML. If both a Selector and Timeout are specified, and the Timeout elapses before the Selector exists on the page, an error will be thrown. If a Selector is specified with no Timeout, a default Timeout of 30 seconds is applied.&lt;/li&gt;
+      &lt;/ul&gt;
+    </value>
+  </data>
+  <data name="Web_BrowserContents_Example1" xml:space="preserve">
+    <value>Returns the HTML for https://microsoft.com.</value>
+  </data>
+  <data name="Web_BrowserContents_Example1_Code" xml:space="preserve">
+    <value>Web.BrowserContents("https://microsoft.com")</value>
+  </data>
+  <data name="Web_BrowserContents_Example1_Result" xml:space="preserve">
+    <value>"&lt;!DOCTYPE html&gt;&lt;html xmlns=..."</value>
+  </data>
+  <data name="Web_BrowserContents_Example2" xml:space="preserve">
+    <value>Returns the HTML for https://microsoft.com after waiting for a CSS selector to exist.</value>
+  </data>
+  <data name="Web_BrowserContents_Example2_Code" xml:space="preserve">
+    <value>Web.BrowserContents("https://microsoft.com", [WaitFor = [Selector = "div.ready"]])</value>
+  </data>
+  <data name="Web_BrowserContents_Example2_Result" xml:space="preserve">
+    <value>"&lt;!DOCTYPE html&gt;&lt;html xmlns=..."</value>
+  </data>
+  <data name="Web_BrowserContents_Example3" xml:space="preserve">
+    <value>Returns the HTML for https://microsoft.com after waiting ten seconds.</value>
+  </data>
+  <data name="Web_BrowserContents_Example3_Code" xml:space="preserve">
+    <value>Web.BrowserContents("https://microsoft.com", [WaitFor = [Timeout = #duration(0,0,0,10)]])</value>
+  </data>
+  <data name="Web_BrowserContents_Example3_Result" xml:space="preserve">
+    <value>"&lt;!DOCTYPE html&gt;&lt;html xmlns=..."</value>
+  </data>
+  <data name="Web_BrowserContents_Example4" xml:space="preserve">
+    <value>Returns the HTML for https://microsoft.com after waiting up to ten seconds for a CSS selector to exist.</value>
+  </data>
+  <data name="Web_BrowserContents_Example4_Code" xml:space="preserve">
+    <value>Web.BrowserContents("https://microsoft.com", [WaitFor = [Selector = "div.ready", Timeout = #duration(0,0,0,10)]])</value>
+  </data>
+  <data name="Web_BrowserContents_Example4_Result" xml:space="preserve">
+    <value>"&lt;!DOCTYPE html&gt;&lt;html xmlns=..."</value>
+  </data>
+</root>

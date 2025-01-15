@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFD96EB4-D856-42BB-B727-1EBB692D59B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.OData</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AutoScope.cs" />
+    <Compile Include="OData\DebugUtils.cs" />
+    <Compile Include="OData\Json\Errors.cs" />
+    <Compile Include="OData\Json\Extension\JsonWriterExtension.cs" />
+    <Compile Include="OData\Json\IndentedTextWriter.cs" />
+    <Compile Include="OData\Json\JsonConstants.cs" />
+    <Compile Include="OData\Json\JsonValueUtils.cs" />
+    <Compile Include="OData\Json\JsonWriter.cs" />
+    <Compile Include="OData\Json\JsonWriterBase.cs" />
+    <Compile Include="OData\Json\JsonWriterSettings.cs" />
+    <Compile Include="OData\Json\Scope.cs" />
+    <Compile Include="OData\Json\ScopeType.cs" />
+    <Compile Include="OData\ODataJsonDateTimeFormat.cs" />
+    <Compile Include="OData\ODataVersion.cs" />
+    <Compile Include="OData\PlatformHelper.cs" />
+    <Compile Include="OData\Query\ExpressionConstants.cs" />
+    <Compile Include="OData\Query\ODataUriConversionUtils.cs" />
+    <Compile Include="OData\Query\PrimitiveTypeKind.cs" />
+    <Compile Include="OData\Query\UriPrimitiveTypeParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContract\AdditionalMessage.cs" />
+    <Compile Include="ServiceContract\AzureValue.cs" />
+    <Compile Include="ServiceContract\LocalizedMessage.cs" />
+    <Compile Include="ServiceContract\OdataError.cs" />
+    <Compile Include="ServiceContract\OdataErrorContainer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

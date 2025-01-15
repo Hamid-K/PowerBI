@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Html_Table" xml:space="preserve">
+    <value>Returns a table containing the results of running the specified CSS selectors against the provided HTML.</value>
+  </data>
+  <data name="Html_Table_Category" xml:space="preserve">
+    <value>Accessing data</value>
+  </data>
+  <data name="Html_Table_Description" xml:space="preserve">
+    <value>Returns a table containing the results of running the specified CSS selectors against the provided {0}. An optional record parameter, {2}, may be provided to specify additional properties. The record can contain the following fields:
+    {2:type}
+    </value>
+  </data>
+  <data name="Html_Table_Example1" xml:space="preserve">
+    <value>Returns a table from a sample html text value.</value>
+  </data>
+  <data name="Html_Table_Example1_Code" xml:space="preserve">
+    <value>Html.Table("&lt;div class=""name""&gt;Jo&lt;/div&gt;&lt;span&gt;Manager&lt;/span&gt;", {{"Name", ".name"}, {"Title", "span"}}, [RowSelector=".name"])</value>
+  </data>
+  <data name="Html_Table_Example1_Result" xml:space="preserve">
+    <value>#table({"Name", "Title"}, {{"Jo", "Manager"}})</value>
+  </data>
+  <data name="Html_Table_Example2" xml:space="preserve">
+    <value>Extracts all the hrefs from a sample html text value.</value>
+  </data>
+  <data name="Html_Table_Example2_Code" xml:space="preserve">
+    <value>Html.Table("&lt;a href=""/test.html""&gt;Test&lt;/a&gt;", {{"Link", "a", each [Attributes][href]}})</value>
+  </data>
+  <data name="Html_Table_Example2_Result" xml:space="preserve">
+    <value>#table({"Link"}, {{"/test.html"}})</value>
+  </data>
+  <data name="RowSelectorRequired" xml:space="preserve">
+    <value>The RowSelector option is required when more than one column is specified.</value>
+  </data>
+</root>

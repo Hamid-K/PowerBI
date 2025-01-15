@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{862203B2-04D9-4F23-B250-E67149F1D23E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerBI.DataShaping.DataShapeQueryGeneration</RootNamespace>
+    <AssemblyName>Microsoft.PowerBI.DataShaping.DataShapeQueryGeneration</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.InfoNav.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InfoNav.Data.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.InfoNav.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core" />
+    <Reference Include="Microsoft.OData.Edm" />
+    <Reference Include="Microsoft.PowerBI.DataShaping.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.InternalContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.InternalContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.DataShaping.ServiceContracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.DataShaping.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Query.Contracts">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Microsoft.PowerBI.Query.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Power BI Report Server\PBIRS\PowerBI\System.ValueTuple.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\AggregateContextOnlyImpact.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\AllowedExpressionContent.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\AllowedExpressionContentFlags.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Annotations\IntermediateTableFilterUsageAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Annotations\IntermediateTableUsage.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Annotations\SemanticQueryDataShapeAnnotationAnalyzer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Annotations\SemanticQueryDataShapeAnnotationExpressionAnalyzer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Annotations\SemanticQueryDataShapeAnnotations.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\AuxiliarySelectBindingBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\CommonSubqueryEliminationTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Constants.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ContextFilterQueryMemberNormalizer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataMemberBuilderPair.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionAlgorithmScopeTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionAlgorithmTelemetryState.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionAlgorithmTelemetryStateCollectionConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionAxisTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionFallbackReasons.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionLoader.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionMath.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionTelemetryFlags.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataReductionWindowExpansionStateValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeAggregatesBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBindingAggregateKindExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBindingExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBindingLimitUpgrader.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBuilderContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBuilderExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBuilderGroupValueGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeBuilderUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeExpressionsAxisBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeExpressionsAxisGroupingBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeExpressionsAxisGroupingKeyBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeExpressionsAxisGroupingSortKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeExpressionsAxisSynchronizationBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeFilterResolutionResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationErrorCode.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationErrorContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationErrorContextAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationException.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationInternalContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationMessage.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationMessagePhrase.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationMessagePhrases.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationMessages.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationOptions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationResultWriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeGenerationTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeIdGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeLimitsBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeQueryGeneratorAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DataShapeQueryGeneratorFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DateTimeProvider.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DateTimeProviderFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DiscreteColumnValueState.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DiscreteFilterAnalyzer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DiscreteFilterState.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqDataReductionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAggregateBase.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAggregateKind.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAggregates.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAggregatesExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAggregatesVisitorBase.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionAverageAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionCountAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionMaxAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionMedianAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionMinAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionPercentileAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqExpressionSubtotalAggregate.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqFilterConditionGenerationOptions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqFilterConditionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqFilterGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqFilterType.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqGenerationUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqIntersectionBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqScopeLookup.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqSortKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqSortKeyExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqSortKeyExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqSortKeyProjection.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqTableExpressionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqTargetResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DsqWindowExpansionStateGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\DataShapeBuilderUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\DsqTransformBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\GroupSynchronizationBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateDataShapeReferenceSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateDataShapeReferenceSchemaBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateGroupingDetailValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateGroupingKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateGroupSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\IntermediateSortingKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\ModelParametersGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\ResolvedCommandDataShapeBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\DSQ\SemanticQueryDataShapeBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ExceptionHandlingDataShapeGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ExpressionAnalysis\ResolvedQueryTypeExpressionEvaluator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ExpressionContent.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ExpressionContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ExpressionToExtensionSchemaItemCommandRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\FederatedConceptualSchemaExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\FilterConversionStatus.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\FilterRestrictions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\GeneratedDsqExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\GeneratedFilter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\GeneratedFilterCondition.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ICalculatedGroupProjection.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IDataShapeGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IDataShapeQueryGeneratorFactory.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IDsqFilterConditionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IDsqSortKeyVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IDsqTargetResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IIntermediateQueryTransformResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IIntermediateTableSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IIntermediateTableSchemaItem.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\InFilterFlatteningTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateBinnedLineSampleLimit.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDataReduction.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDataShapeTableSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDataShapeTableSchemaBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDataWindow.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimit.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimitBlock.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimitEvenDistributionBlock.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimitPrimarySecondaryBlock.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimitRange.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateDynamicLimits.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateExpressionTableSchema.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateOverlappingPointsSampleLimit.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediatePlotAxisBinding.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryParameter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransform.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformGeneratorResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformInput.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformOutput.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformParameter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformTable.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformTableColumn.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryTransformTrimmer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateQueryValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateReductionAlgorithm.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateReductionScope.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateScopedReductionAlgorithm.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateSimpleLimit.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateSimpleLimitKind.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateTableSchemaColumn.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateTableSchemaKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateTableSchemaSerializationUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntermediateTopNPerLevelSampleLimit.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IntervalGroupProjection.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IProjectedDsqExpressionValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\IQueryGroupValueVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\MatchStatus.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ModelSortBindingInfo.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ODataFilterProcessingException.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ODataQueryFilterProcessingErrorCode.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ODataQueryFilterProcessor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\CommonSubqueryEliminationOptimizer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\CommonSubqueryEliminationQueryRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\CommonSubqueryEliminationResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\EquivalentQueryGroup.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\ExpressionRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\LetBindingGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\MergeableSubqueryCollector.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\MergeableSubqueryCollectorResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\CommonSubqueryElimination\QueryShape.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\QueryOptimizer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\ResolvedExpressionDataShapeEquivalenceComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Optimization\ResolvedQueryDataShapeEquivalenceComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ProjectedDsqExpression.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ProjectedDsqExpressionExtensions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ProjectedDsqExpressionValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryAutomaticProjectionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryBindingProjectionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryColumnAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryConceptualColumnAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryDefinitionProjectionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryDetailGroupIdentity.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryExtensionSchemaValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryFilters.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryFiltersBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryFiltersGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryFromClauseTranslator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroup.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupBindingHints.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupBuilderOptions.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupIntervalValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupKeyBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupSingleValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupSortKey.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupValueBindingHints.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupValueBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryGroupValueProjectionVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryLetClauseTranslator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryLetReferenceContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryMeasureCalculationGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryMember.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryMemberBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryModelParametersCollector.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryOptimizerTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryParameterReferenceContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryParametersClauseTranslator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryProjectionGeneratorResult.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryProjections.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryProjectionsBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryRollupGroupingScope.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QuerySchemaExtender.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryScopedSortAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QuerySortGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QuerySourceExpressionReferenceContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryTransformColumnAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryTranslationContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\QueryUtils.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\ExtensionEntityMapping.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\ExtensionPropertyMapping.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\QueryExtensionReferenceReplacer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\QueryExtensionSchemaContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\QueryExtensionSchemaResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Resolution\QuerySchemaMapping.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedCommandQueryProjectionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedQueryDefinitionRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedQueryDsqRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedQueryExpressionDsqRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedQueryExpressionReferenceRewriter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedQueryExpressionValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedSemanticQueryDataShape.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedSemanticQueryDataShapeCommand.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ResolvedSemanticQueryDataShapeCommandVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\ScopedDataReductionGroupCoverageResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SelectBindingsBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SelectBindingValue.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SelectIdentityKeyBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SelectSortIdentityKeyBuilder.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryDataShapeCommandResolver.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryDataShapeCommandUpgrader.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryDataShapeCommandValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryDataShapeCommandVisitor.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryObjectType.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SemanticQueryProjectionGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SlicerTargetsTelemetry.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SortKeyVisitorContext.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\SourceRefColumnAdapter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\StructuralToScopedDataReductionConverter.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\TargetComparer.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\TargetMatchStatus.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\TelemetryDataShapeGenerator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\TransformTableColumnActAs.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\DataReductionValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\DataShapeGenerationQueryDefinitionValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\DataShapeGenerationQueryExpressionValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\HiddenProjectionsValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\IHiddenProjectionsValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\IResolvedSemanticQueryDataShapeCommandValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\ISuppressedJoinPredicatesByNameValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\ITransformQueryValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\IVisualShapeValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\ResolvedSemanticQueryDataShapeCommandValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\SuppressedJoinPredicatesByNameValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\TransformQueryValidator.cs" />
+    <Compile Include="Microsoft\InfoNav\DataShapeQueryGeneration\Validation\ResolvedCommandValidation\VisualShapeValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

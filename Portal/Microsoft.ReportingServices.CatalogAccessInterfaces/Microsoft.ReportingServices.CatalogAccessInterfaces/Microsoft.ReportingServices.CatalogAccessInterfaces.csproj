@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B42EFBF-0C79-42E9-97AA-B58AD2DC2A28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.ReportingServices.CatalogAccess</RootNamespace>
+    <AssemblyName>Microsoft.ReportingServices.CatalogAccessInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersionInfo.cs" />
+    <Compile Include="CatalogItemPropertiesEntity.cs" />
+    <Compile Include="CommentEntity.cs" />
+    <Compile Include="ConfigurationInfoEntity.cs" />
+    <Compile Include="DataAccessObject\DataModelDataSourceEntity.cs" />
+    <Compile Include="DataAccessObject\DataModelRoleAssignmentEntity.cs" />
+    <Compile Include="DataAccessObject\DataModelRoleEntity.cs" />
+    <Compile Include="DataAccessObject\ErrorDetails.cs" />
+    <Compile Include="DataAccessObject\EventEntity.cs" />
+    <Compile Include="DataAccessObject\PolicyEntity.cs" />
+    <Compile Include="DataAccessObject\RoleEntity.cs" />
+    <Compile Include="DataAccessObject\SubscriptionEntity.cs" />
+    <Compile Include="DataAccessObject\SubscriptionExecutionType.cs" />
+    <Compile Include="DataAccessObject\SubscriptionHistoryEntity.cs" />
+    <Compile Include="DataAccessObject\SubscriptionHistoryResult.cs" />
+    <Compile Include="DataAccessObject\SubscriptionStatus.cs" />
+    <Compile Include="DataAccessObject\XmlPolicyEntity.cs" />
+    <Compile Include="DataSetEntity.cs" />
+    <Compile Include="DataSourceEntity.cs" />
+    <Compile Include="ExecutionLogInfoEntity.cs" />
+    <Compile Include="ExtendedContentType.cs" />
+    <Compile Include="ICatalogConfiguration.cs" />
+    <Compile Include="ICatalogDataAccessor.cs" />
+    <Compile Include="ICatalogDataModelDataSourceAccessor.cs" />
+    <Compile Include="ICatalogDataModelRoleAccessor.cs" />
+    <Compile Include="ICatalogEventAccessor.cs" />
+    <Compile Include="ICatalogItemAccessor.cs" />
+    <Compile Include="IConfigurationInfoDataAccessor.cs" />
+    <Compile Include="IPolicyAcessor.cs" />
+    <Compile Include="IProductInfoDataAccessor.cs" />
+    <Compile Include="ISubscriptionDataAccessor.cs" />
+    <Compile Include="ISubscriptionHistoryDataAccessor.cs" />
+    <Compile Include="ProductInfoEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

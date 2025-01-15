@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body class="dialog-sandbox">
+    <div id="sandbox-host" class="visual"></div>
+    <script>
+        if (origin !== 'null') {
+            throw "non-sandboxed iframe";
+        }
+
+        let dialogContentLoaded = false;
+        const hostOrigin = location.origin;
+        window.addEventListener(
+            "message",
+            (event) => {
+                if (event.source == parent &&
+                    event.origin == hostOrigin &&
+                    event.data.messageType == 'DialogContent' &&
+                    !dialogContentLoaded) {
+
+                    dialogContentLoaded = true;
+                    let style = document.createElement("style");
+                    style.innerHTML = event.data.style;
+                    document.head.appendChild(style);
+
+                    let script = document.createElement("script");
+                    script.innerHTML = event.data.scriptContent;
+                    script.setAttribute('name', 'dialog_script');
+                    document.body.appendChild(script);
+                }
+            });
+    </script>
+</body>
+
+</html>

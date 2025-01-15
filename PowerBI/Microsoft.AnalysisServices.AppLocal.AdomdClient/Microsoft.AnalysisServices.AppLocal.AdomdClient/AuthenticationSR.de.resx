@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataverseRequest_GetDatasetDetails" xml:space="preserve">
+    <value>Abrufen von Dataverse-Datasetdetails</value>
+  </data>
+  <data name="DataverseRequest_GetEmbeddedToken" xml:space="preserve">
+    <value>Eingebettetes Dataverse-Token wird generiert</value>
+  </data>
+  <data name="DataverseRequest_UnexpectedResponse" xml:space="preserve">
+    <value>Unerwartete Antwort</value>
+  </data>
+  <data name="Exception_ADTranslationNotSupportedOnNonWindows" xml:space="preserve">
+    <value>Die AD-Übersetzung wird nur auf der Windows-Plattform unterstützt.</value>
+  </data>
+  <data name="Exception_AcquireTokenFailure" xml:space="preserve">
+    <value>Das Authentifizierungstoken kann mit den angegebenen Anmeldeinformationen nicht abgerufen werden.</value>
+  </data>
+  <data name="Exception_AdalIsNoLongerSupported" xml:space="preserve">
+    <value>Usage of the ADAL AAD library against the V! authentication endpoind is no longer supported.</value>
+  </data>
+  <data name="Exception_AssemblyMissingInEmbeddedResources" xml:space="preserve">
+    <value>"{0}" fehlt in den eingebetteten Ressourcen.</value>
+  </data>
+  <data name="Exception_CantObtainUserInfoOnTokenRefresh" xml:space="preserve">
+    <value>Die Kontoinformationen für "{0}" können beim Aktualisieren des Tokens nicht abgerufen werden.</value>
+  </data>
+  <data name="Exception_DataverseRequestFailed" xml:space="preserve">
+    <value>Fehler bei der Dataverse-Anforderung.{3}{3}Aktion: {0}{3}{3}Beschreibung: {1}{2}</value>
+  </data>
+  <data name="Exception_EnumValueMissingInAdalAssembly" xml:space="preserve">
+    <value>Der Enumerationswert "{0}.{1}" fehlt in der eingebetteten ADAL-Assembly "{2}".</value>
+  </data>
+  <data name="Exception_InteractiveLoginRequired" xml:space="preserve">
+    <value>Das Authentifizierungstoken kann mit den angegebenen Anmeldeinformationen nicht abgerufen werden. Wenn der Administrator für Ihren Active Directory-Mandanten Multi-Factor Authentication konfiguriert hat oder wenn es sich bei Ihrem Konto um ein Microsoft-Konto handelt, entfernen Sie den Benutzernamen und das Kennwort aus der Verbindungszeichenfolge, und wiederholen Sie den Vorgang. Sie werden dann aufgefordert, Ihre Anmeldeinformationen einzugeben.</value>
+  </data>
+  <data name="Exception_InvalidAuthorityFormat" xml:space="preserve">
+    <value>"{0}" ist ein ungültiger Wert für eine Anspruchstokenautorität.</value>
+  </data>
+  <data name="Exception_InvalidCertificateThumbprint" xml:space="preserve">
+    <value>Das Zertifikat mit dem Fingerabdruck "{0}" konnte nicht gefunden werden.</value>
+  </data>
+  <data name="Exception_InvalidEndpointType" xml:space="preserve">
+    <value>Endpunkt vom Typ "{0}" wird nicht unterstützt:</value>
+  </data>
+  <data name="Exception_InvalidIdentityProvider" xml:space="preserve">
+    <value>"{0}" ist ein ungültiger Wert für einen Identitätsanbieterindikator.</value>
+  </data>
+  <data name="Exception_InvalidPBIPCapacity" xml:space="preserve">
+    <value>Interner Fehler: Der Kapazitäts-URI des Power BI Premium-Arbeitsbereichs ist NULL oder leer.</value>
+  </data>
+  <data name="Exception_InvalidServiceAppId" xml:space="preserve">
+    <value>Die angegebene Dienstanwendungs-ID "{0}" ist ungültig.</value>
+  </data>
+  <data name="Exception_MFARequiredAndSupported" xml:space="preserve">
+    <value>Das Authentifizierungstoken kann nicht unter Verwendung der angegebenen Anmeldeinformationen abgerufen werden. Ihr Active Directory-Mandantenadministrator hat eine Multi-Faktor-Authentifizierung als erforderlich festgelegt.</value>
+  </data>
+  <data name="Exception_MethodMissingInAdalAssembly" xml:space="preserve">
+    <value>Die Methode "{0}.{1}({2})" fehlt in der eingebetteten ADAL-Assembly "{3}".</value>
+  </data>
+  <data name="Exception_MissingDeviceCodeCallback" xml:space="preserve">
+    <value>Ein Authentifizierungsfluss mit Gerätecode ist erforderlich, und es wurde kein Benachrichtigungsrückruf bereitgestellt.</value>
+  </data>
+  <data name="Exception_PbiRequestFailed" xml:space="preserve">
+    <value>Fehler bei Power BI-Anforderung.{3}{3}Aktion: {0}{3}{3}Beschreibung: {1}{2}</value>
+  </data>
+  <data name="Exception_PropertyMissingInAdalAssembly" xml:space="preserve">
+    <value>Die Eigenschaft "{0}.{1}" fehlt in der eingebetteten ADAL-Assembly "{2}".</value>
+  </data>
+  <data name="Exception_RedirectionFailWithThrottling" xml:space="preserve">
+    <value>Der Power BI-Dienst ist zurzeit ausgelastet, und die Anforderung wurde gedrosselt. Versuchen Sie es später noch mal.</value>
+  </data>
+  <data name="Exception_RedirectionInfoNotFound" xml:space="preserve">
+    <value>Die zum Herstellen dieser Verbindung erforderlichen Informationen wurden nicht gefunden. Möglicherweise verfügt Ihre Clientanwendung derzeit nicht über die erforderlichen Komponenten. Installieren Sie die neueste Version Ihrer Clientanwendung, oder wenden Sie sich an den technischen Support.</value>
+  </data>
+  <data name="Exception_RedirectionTokenAsPasswordIsNotSupported" xml:space="preserve">
+    <value>Auf den umgeleiteten AS Azure-Server kann nicht zugegriffen werden, wenn das externe Zugriffstoken kein gültiges AAD-Token für eine Power BI-Ressource ist.</value>
+  </data>
+  <data name="Exception_S2STokenMissing" xml:space="preserve">
+    <value>S2SToken sollte angegeben werden, wenn zusätzliche Berechtigungen für die Verbindung angewendet werden.</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutPassword" xml:space="preserve">
+    <value>Zum Abrufen von Token für den Dienstprinzipal ist ein Kennwort\Zertifikatfingerabdruck erforderlich.</value>
+  </data>
+  <data name="Exception_SpnAuthenticationWithoutTenant" xml:space="preserve">
+    <value>Aufgrund unvollständiger Kontoinformationen kann keine Verbindung mit dem Dataset hergestellt werden. Stellen Sie für Dienstprinzipale sicher, dass Sie die Mandanten-ID zusammen mit der App-ID im Format "app:&lt;app-id&gt;@&lt;tenant-id&gt;" angeben; versuchen Sie es dann erneut.</value>
+  </data>
+  <data name="Exception_TypeMissingInAdalAssembly" xml:space="preserve">
+    <value>Der Typ "{0}" fehlt in der eingebetteten ADAL-Assembly "{1}".</value>
+  </data>
+  <data name="Exception_UnknownAuthenticationInfo" xml:space="preserve">
+    <value>Fehler bei der Authentifizierung; wir können Azure Active Directory in Ihrer Umgebung nicht finden. Möglicherweise verfügt Ihre Clientanwendung derzeit nicht über die erforderlichen Komponenten. Installieren Sie die neueste Version Ihrer Clientanwendung, oder wenden Sie sich an den technischen Support.</value>
+  </data>
+  <data name="Exception_UserAuthenticationWithServicePrincipalProfile" xml:space="preserve">
+    <value>Service principal profile is only supported in service-principal authentication flows.</value>
+  </data>
+  <data name="PbiRequest_GetDatabaseName" xml:space="preserve">
+    <value>Abrufen des PBI-Namens für die freigegebene Datenbank</value>
+  </data>
+  <data name="PbiRequest_GetMwcToken" xml:space="preserve">
+    <value>MWC-Token wird generiert</value>
+  </data>
+  <data name="PbiRequest_GetRedirectInfo" xml:space="preserve">
+    <value>Abrufen der AS-Azure Umleitungsinformationen</value>
+  </data>
+  <data name="PbiRequest_ResolveWorkspace" xml:space="preserve">
+    <value>Auflösen des PBI-Arbeitsbereichs</value>
+  </data>
+</root>
